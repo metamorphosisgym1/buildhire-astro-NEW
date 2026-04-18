@@ -1,0 +1,160 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  canonicalPath = '/',
+  ogImage = '/assets/excavator.jpg',
+} = Astro.props;
+
+const BASE_URL = 'https://buildhire.com.au';
+const canonicalUrl = `${BASE_URL}${canonicalPath}`;
+const ogImageUrl = `${BASE_URL}${ogImage}`;
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BuildHire",
+  "url": "https://buildhire.com.au",
+  "logo": "https://buildhire.com.au/favicon.png",
+  "description": "Sydney's top-rated excavator and construction equipment hire company. Mini excavator dry hire from $200/day with next-day delivery across NSW.",
+  "telephone": "+611300157882",
+  "email": "info@buildhire.com.au",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sydney",
+    "addressRegion": "NSW",
+    "addressCountry": "AU"
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "New South Wales",
+    "containsPlace": [
+      { "@type": "City", "name": "Sydney" },
+      { "@type": "City", "name": "Newcastle" },
+      { "@type": "City", "name": "Wollongong" },
+      { "@type": "City", "name": "Central Coast" }
+    ]
+  },
+  "sameAs": [
+    "https://www.facebook.com/people/Build-Hire/61586999393373/",
+    "https://www.instagram.com/buildhiresydney/"
+  ],
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "06:00",
+      "closes": "20:00"
+    }
+  ]
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BuildHire",
+  "image": "https://buildhire.com.au/assets/excavator.jpg",
+  "url": "https://buildhire.com.au",
+  "telephone": "+611300157882",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sydney",
+    "addressRegion": "NSW",
+    "postalCode": "2000",
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -33.8688,
+    "longitude": 151.2093
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "06:00",
+      "closes": "20:00"
+    }
+  ],
+  "priceRange": "$$",
+  "servesCuisine": null,
+  "description": "Sydney's top-rated excavator and construction equipment hire. Mini excavator dry hire from $200/day with next-day delivery and collection across NSW."
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "BuildHire",
+  "url": "https://buildhire.com.au",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://buildhire.com.au/?s={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+};
+---
+
+<!-- Primary Meta Tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Performance: Preload critical assets -->
+<link rel="preload" href="/video/hero-bg.mp4" as="video" type="video/mp4" />
+<link rel="dns-prefetch" href="https://wa.me" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="author" content="BuildHire" />
+<meta name="theme-color" content="#f5a623" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/favicon.png" />
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="BuildHire" />
+<meta property="og:locale" content="en_AU" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={canonicalUrl} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageUrl} />
+
+<!-- Geo Tags for Local SEO -->
+<meta name="geo.region" content="AU-NSW" />
+<meta name="geo.placename" content="Sydney" />
+<meta name="geo.position" content="-33.8688;151.2093" />
+<meta name="ICBM" content="-33.8688, 151.2093" />
+
+<!-- Speakable for AEO / Voice Search -->
+<link rel="speakable" href={canonicalUrl} />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+
+<!-- Google Fonts Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
