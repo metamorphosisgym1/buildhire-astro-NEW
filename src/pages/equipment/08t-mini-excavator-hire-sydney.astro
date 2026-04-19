@@ -1,0 +1,252 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "0.8T Mini Excavator Hire Sydney",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "BuildHire",
+    "url": "https://buildhire.com.au",
+    "telephone": "+611300157882",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "addressCountry": "AU"
+    }
+  },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "0.8T Yanmar SV08 mini excavator dry hire in Sydney from $200/day. Perfect for tight access, landscaping, and residential projects. Next-day delivery across NSW.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AUD",
+    "price": "200",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "200",
+      "priceCurrency": "AUD",
+      "unitText": "DAY"
+    }
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to hire a 0.8T mini excavator in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BuildHire's 0.8T Yanmar SV08 mini excavator starts from $200/day (incl GST). Delivery & collection is $110. Weekly and monthly rates are available at a discount."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a licence to operate a 0.8T mini excavator in NSW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can a 0.8T mini excavator be used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 0.8T mini excavator is ideal for tight access work including landscaping, garden excavation, pool digging, trench digging, and small demolition jobs in backyards and narrow sites."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can BuildHire deliver a mini excavator in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer next-day delivery for bookings placed before 12pm. Same-day delivery may be available — call 1300 157 882 to check availability."
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="0.8T Mini Excavator Hire Sydney | From $200/day — BuildHire"
+  description="Hire a 0.8T Yanmar SV08 mini excavator in Sydney from $200/day. Perfect for tight access, landscaping & residential projects. Next-day delivery across NSW."
+  canonicalPath="/equipment/08t-mini-excavator-hire-sydney"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <!-- Hero Section -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-10">
+          <span class="inline-block bg-[var(--color-primary)] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Available Now</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">
+            0.8T Mini Excavator Hire Sydney
+          </h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">
+            Yanmar SV08 — Sydney's most popular tight-access mini excavator. From <strong class="text-[var(--color-primary)]">$200/day</strong> incl GST. Next-day delivery across Sydney & NSW.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">
+              Book Now — Instant Pricing →
+            </a>
+            <a href="https://wa.me/611300157882" target="_blank" rel="noopener" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">
+              WhatsApp for a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs & Pricing -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Machine Specs & Pricing</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- Specs -->
+          <div class="bg-[var(--color-bg)] rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-[var(--color-text)] mb-6">Yanmar SV08 Specifications</h3>
+            <table class="w-full text-sm">
+              <tbody class="divide-y divide-gray-200">
+                <tr class="py-2"><td class="py-3 text-[var(--color-text-muted)] font-medium">Machine Weight</td><td class="py-3 font-semibold text-[var(--color-text)]">920 kg</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Operating Weight</td><td class="py-3 font-semibold text-[var(--color-text)]">0.8 Tonne</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Digging Depth</td><td class="py-3 font-semibold text-[var(--color-text)]">1,800 mm</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Bucket Capacity</td><td class="py-3 font-semibold text-[var(--color-text)]">0.03 m³</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Track Width</td><td class="py-3 font-semibold text-[var(--color-text)]">980 mm (retracted)</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Engine</td><td class="py-3 font-semibold text-[var(--color-text)]">Yanmar diesel</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Tail Swing</td><td class="py-3 font-semibold text-[var(--color-text)]">Zero tail swing</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Pricing -->
+          <div class="bg-[var(--color-bg)] rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-[var(--color-text)] mb-6">Hire Rates</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Daily Rate</span>
+                <span class="text-2xl font-bold text-[var(--color-primary)]">$200/day</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Weekly Rate</span>
+                <span class="text-xl font-bold text-[var(--color-text)]">Call for quote</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Monthly Rate</span>
+                <span class="text-xl font-bold text-[var(--color-text)]">Call for quote</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Delivery & Collection</span>
+                <span class="text-xl font-bold text-[var(--color-text)]">$110</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[var(--color-text-muted)]">Bond (refundable)</span>
+                <span class="text-xl font-bold text-[var(--color-text)]">$200</span>
+              </div>
+            </div>
+            <p class="text-xs text-[var(--color-text-muted)] mt-4">All prices include GST. Fuel not included.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-4 text-center">What Is a 0.8T Mini Excavator Used For?</h2>
+        <p class="text-center text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto">The Yanmar SV08 is Sydney's go-to machine for tight-access residential and landscaping work. Its compact size means it fits through a standard 900mm gate.</p>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {[
+            { title: "Landscaping", desc: "Excavate garden beds, reshape lawns, and clear vegetation with precision." },
+            { title: "Pool Excavation", desc: "Dig pool shells in residential backyards where larger machines can't reach." },
+            { title: "Trench Digging", desc: "Lay pipes, cables, and drainage in tight residential sites." },
+            { title: "Stump Removal", desc: "Remove tree stumps and roots without damaging surrounding areas." },
+            { title: "Footing Excavation", desc: "Dig footings for sheds, retaining walls, and small structures." },
+            { title: "Demolition", desc: "Break up concrete paths, driveways, and small slabs." }
+          ].map(item => (
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <h3 class="font-bold text-[var(--color-text)] mb-2">{item.title}</h3>
+              <p class="text-sm text-[var(--color-text-muted)]">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Why BuildHire -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Why Hire From BuildHire?</h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {[
+            { icon: "🚛", title: "Next-Day Delivery", desc: "Book before 12pm for next-day on-site arrival across Sydney." },
+            { icon: "💰", title: "Transparent Pricing", desc: "No hidden fees. The price you see is the price you pay." },
+            { icon: "🔧", title: "Well-Maintained Fleet", desc: "Low-hour Yanmar machines serviced to the highest standards." },
+            { icon: "📞", title: "24/7 Support", desc: "Round-the-clock support if anything comes up on site." }
+          ].map(item => (
+            <div class="text-center p-6 bg-[var(--color-bg)] rounded-xl">
+              <div class="text-4xl mb-3">{item.icon}</div>
+              <h3 class="font-bold text-[var(--color-text)] mb-2">{item.title}</h3>
+              <p class="text-sm text-[var(--color-text-muted)]">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          {[
+            { q: "How much does it cost to hire a 0.8T mini excavator in Sydney?", a: "BuildHire's 0.8T Yanmar SV08 starts from $200/day (incl GST). Delivery & collection is $110. Weekly and monthly rates are available at a discount — call 1300 157 882 for a quote." },
+            { q: "Do I need a licence to operate a 0.8T mini excavator in NSW?", a: "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required. Always check with your site supervisor." },
+            { q: "What can a 0.8T mini excavator be used for?", a: "The 0.8T mini excavator is ideal for landscaping, garden excavation, pool digging, trench digging, stump removal, footing excavation, and small demolition jobs in backyards and narrow sites." },
+            { q: "How quickly can BuildHire deliver a mini excavator in Sydney?", a: "We offer next-day delivery for bookings placed before 12pm. Same-day delivery may be available — call 1300 157 882 to check availability." }
+          ].map(item => (
+            <details class="bg-white rounded-xl p-6 shadow-sm group">
+              <summary class="font-semibold text-[var(--color-text)] cursor-pointer list-none flex justify-between items-center">
+                {item.q}
+                <span class="text-[var(--color-primary)] ml-4 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-4 text-[var(--color-text-muted)] text-sm leading-relaxed">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book Your 0.8T Mini Excavator?</h2>
+        <p class="text-white/80 mb-8 text-lg">Book online in 60 seconds or call us for an instant quote. Next-day delivery available across Sydney & NSW.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

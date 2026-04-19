@@ -1,0 +1,253 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Mini Excavator Hire Sydney",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "BuildHire",
+    "url": "https://buildhire.com.au",
+    "telephone": "+611300157882",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "addressCountry": "AU"
+    }
+  },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "Mini excavator dry hire in Sydney from $200/day. Choose from 0.8T, 1.7T, and 3.5T Yanmar machines. Next-day delivery across Sydney and NSW.",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "AUD",
+    "lowPrice": "200",
+    "highPrice": "325",
+    "offerCount": "3"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does mini excavator hire cost in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mini excavator hire in Sydney starts from $200/day for a 0.8T machine, $205/day for a 1.7T, and $325/day for a 3.5T. All prices include GST. Delivery & collection is charged separately from $110."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What size mini excavator do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For tight access residential work (landscaping, small trenches, pool digging), a 0.8T or 1.7T is ideal. For heavier earthworks, site preparation, or deeper digging, a 3.5T is recommended. Call 1300 157 882 and our team will help you choose the right machine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a licence to operate a mini excavator in NSW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can BuildHire deliver a mini excavator in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer next-day delivery for bookings placed before 12pm. Same-day delivery may be available — call 1300 157 882 to check availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas of Sydney does BuildHire deliver to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BuildHire delivers across all of Greater Sydney including the CBD, Eastern Suburbs, Inner West, North Shore, Northern Beaches, Western Sydney, Hills District, and beyond. We also deliver NSW-wide — contact us for regional pricing."
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="Mini Excavator Hire Sydney | From $200/day Dry Hire — BuildHire"
+  description="Mini excavator hire Sydney from $200/day. 0.8T, 1.7T & 3.5T Yanmar machines available for dry hire. Next-day delivery across Sydney & NSW. Book online instantly."
+  canonicalPath="/equipment/mini-excavator-hire-sydney"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <!-- Hero -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-10">
+          <span class="inline-block bg-[var(--color-primary)] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Sydney's Top-Rated Mini Excavator Hire</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">
+            Mini Excavator Hire Sydney
+          </h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">
+            Dry hire from <strong class="text-[var(--color-primary)]">$200/day</strong>. Choose from our fleet of 0.8T, 1.7T, and 3.5T Yanmar machines. Next-day delivery across Sydney & NSW. No hidden fees.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">
+              Get Instant Pricing →
+            </a>
+            <a href="https://wa.me/611300157882" target="_blank" rel="noopener" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">
+              WhatsApp for a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Machine Comparison -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-4 text-center">Choose Your Machine</h2>
+        <p class="text-center text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto">Not sure which size you need? Here's a quick comparison of our three most popular excavators.</p>
+        <div class="grid md:grid-cols-3 gap-6">
+          {[
+            {
+              name: "0.8T Mini Excavator",
+              model: "Yanmar SV08",
+              price: "$200/day",
+              delivery: "$110",
+              depth: "1,800mm",
+              best: "Tight access, landscaping, small residential jobs",
+              href: "/equipment/08t-mini-excavator-hire-sydney"
+            },
+            {
+              name: "1.7T Mini Excavator",
+              model: "Yanmar ViO17",
+              price: "$205/day",
+              delivery: "$110",
+              depth: "2,500mm",
+              best: "Landscaping, pool digging, trenching, earthworks",
+              href: "/equipment/17t-mini-excavator-hire-sydney",
+              popular: true
+            },
+            {
+              name: "3.5T Excavator",
+              model: "Yanmar ViO35-7",
+              price: "$325/day",
+              delivery: "$150",
+              depth: "3,400mm",
+              best: "Bulk earthworks, site prep, demolition, civil",
+              href: "/equipment/35t-excavator-hire-sydney"
+            }
+          ].map(m => (
+            <div class={`rounded-2xl p-8 border-2 ${m.popular ? 'border-[var(--color-primary)] bg-[var(--color-primary)]/5' : 'border-gray-200 bg-[var(--color-bg)]'} relative`}>
+              {m.popular && <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[var(--color-primary)] text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>}
+              <h3 class="text-lg font-bold text-[var(--color-text)] mb-1">{m.name}</h3>
+              <p class="text-sm text-[var(--color-text-muted)] mb-4">{m.model}</p>
+              <div class="text-3xl font-bold text-[var(--color-primary)] mb-4">{m.price}</div>
+              <div class="space-y-2 text-sm mb-6">
+                <div class="flex justify-between"><span class="text-[var(--color-text-muted)]">Delivery & Collection</span><span class="font-semibold">{m.delivery}</span></div>
+                <div class="flex justify-between"><span class="text-[var(--color-text-muted)]">Max Dig Depth</span><span class="font-semibold">{m.depth}</span></div>
+              </div>
+              <p class="text-xs text-[var(--color-text-muted)] mb-6"><strong>Best for:</strong> {m.best}</p>
+              <a href={m.href} class="block text-center bg-[var(--color-primary)] text-white font-bold py-3 rounded-lg hover:opacity-90 transition">
+                View Details →
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Why BuildHire -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Why Sydney Chooses BuildHire</h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {[
+            { icon: "🚛", title: "Next-Day Delivery", desc: "Book before 12pm for next-day on-site arrival across Sydney." },
+            { icon: "💰", title: "Transparent Pricing", desc: "No hidden fees. The price you see is the price you pay." },
+            { icon: "🔧", title: "Well-Maintained Fleet", desc: "Low-hour Yanmar machines serviced to the highest standards." },
+            { icon: "📞", title: "24/7 Support", desc: "Round-the-clock support if anything comes up on site." }
+          ].map(item => (
+            <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div class="text-4xl mb-3">{item.icon}</div>
+              <h3 class="font-bold text-[var(--color-text)] mb-2">{item.title}</h3>
+              <p class="text-sm text-[var(--color-text-muted)]">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Delivery Areas -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-4 text-center">Sydney Delivery Areas</h2>
+        <p class="text-center text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto">We deliver mini excavators across all of Greater Sydney and NSW. Standard delivery & collection from $110 within the Sydney metro area.</p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          {["Sydney CBD", "Eastern Suburbs", "Inner West", "North Shore", "Northern Beaches", "Western Sydney", "Hills District", "South West Sydney", "Parramatta", "Blacktown", "Penrith", "Liverpool", "Sutherland Shire", "Cronulla", "Manly", "Chatswood"].map(area => (
+            <div class="bg-[var(--color-bg)] rounded-lg px-4 py-3 text-sm font-medium text-[var(--color-text)] text-center">
+              {area}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          {[
+            { q: "How much does mini excavator hire cost in Sydney?", a: "Mini excavator hire in Sydney starts from $200/day for a 0.8T machine, $205/day for a 1.7T, and $325/day for a 3.5T. All prices include GST. Delivery & collection is charged separately from $110." },
+            { q: "What size mini excavator do I need?", a: "For tight access residential work (landscaping, small trenches, pool digging), a 0.8T or 1.7T is ideal. For heavier earthworks, site preparation, or deeper digging, a 3.5T is recommended. Call 1300 157 882 and our team will help you choose." },
+            { q: "Do I need a licence to operate a mini excavator in NSW?", a: "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required." },
+            { q: "How quickly can BuildHire deliver in Sydney?", a: "We offer next-day delivery for bookings placed before 12pm. Same-day delivery may be available — call 1300 157 882 to check availability." },
+            { q: "What areas of Sydney does BuildHire deliver to?", a: "BuildHire delivers across all of Greater Sydney including the CBD, Eastern Suburbs, Inner West, North Shore, Northern Beaches, Western Sydney, Hills District, and beyond. We also deliver NSW-wide." }
+          ].map(item => (
+            <details class="bg-white rounded-xl p-6 shadow-sm group">
+              <summary class="font-semibold text-[var(--color-text)] cursor-pointer list-none flex justify-between items-center">
+                {item.q}
+                <span class="text-[var(--color-primary)] ml-4 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-4 text-[var(--color-text-muted)] text-sm leading-relaxed">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Hire a Mini Excavator in Sydney?</h2>
+        <p class="text-white/80 mb-8 text-lg">Book online in 60 seconds or call us for an instant quote. Next-day delivery available across Sydney & NSW.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

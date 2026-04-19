@@ -1,0 +1,237 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Tipper Truck Hire Sydney",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "BuildHire",
+    "url": "https://buildhire.com.au",
+    "telephone": "+611300157882",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "addressCountry": "AU"
+    }
+  },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "Isuzu NQR450 tipper truck dry hire in Sydney from $280/day. Perfect for soil removal, material delivery, and construction waste. Next-day delivery across NSW.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AUD",
+    "price": "280",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "280",
+      "priceCurrency": "AUD",
+      "unitText": "DAY"
+    }
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to hire a tipper truck in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BuildHire's Isuzu NQR450 tipper truck starts from $280/day (incl GST). Call 1300 157 882 for weekly and monthly rates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What licence do I need to drive a tipper truck in NSW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Isuzu NQR450 requires a Medium Rigid (MR) licence to drive in NSW. Ensure your licence is current and appropriate for the vehicle before booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can a tipper truck be used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A tipper truck is ideal for removing excavated soil, transporting gravel, sand, and fill, delivering mulch and landscaping materials, and removing construction waste and demolition debris."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I hire a tipper truck and excavator together?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — BuildHire offers combined hire of excavators and tipper trucks. Hiring both together is the most efficient way to excavate and remove material from site in a single operation. Contact us for a combined quote."
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="Tipper Truck Hire Sydney | From $280/day — BuildHire"
+  description="Hire an Isuzu NQR450 tipper truck in Sydney from $280/day. Perfect for soil removal, material delivery & construction waste. Next-day delivery across NSW."
+  canonicalPath="/equipment/tipper-truck-hire-sydney"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <!-- Hero -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-10">
+          <span class="inline-block bg-[var(--color-primary)] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Available Now</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">
+            Tipper Truck Hire Sydney
+          </h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">
+            Isuzu NQR450 — the perfect partner for your excavator. From <strong class="text-[var(--color-primary)]">$280/day</strong> incl GST. Next-day delivery across Sydney & NSW.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">
+              Book Now — Instant Pricing →
+            </a>
+            <a href="https://wa.me/611300157882" target="_blank" rel="noopener" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">
+              WhatsApp for a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs & Pricing -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Vehicle Specs & Pricing</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div class="bg-[var(--color-bg)] rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-[var(--color-text)] mb-6">Isuzu NQR450 Specifications</h3>
+            <table class="w-full text-sm">
+              <tbody class="divide-y divide-gray-200">
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Model</td><td class="py-3 font-semibold text-[var(--color-text)]">Isuzu NQR450</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Licence Required</td><td class="py-3 font-semibold text-[var(--color-text)]">Medium Rigid (MR)</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Body Type</td><td class="py-3 font-semibold text-[var(--color-text)]">Tipper</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Payload</td><td class="py-3 font-semibold text-[var(--color-text)]">Call for details</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Engine</td><td class="py-3 font-semibold text-[var(--color-text)]">Isuzu diesel</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Transmission</td><td class="py-3 font-semibold text-[var(--color-text)]">Manual</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bg-[var(--color-bg)] rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-[var(--color-text)] mb-6">Hire Rates</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Daily Rate</span>
+                <span class="text-2xl font-bold text-[var(--color-primary)]">$280/day</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Weekly Rate</span>
+                <span class="text-xl font-bold text-[var(--color-text)]">Call for quote</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Monthly Rate</span>
+                <span class="text-xl font-bold text-[var(--color-text)]">Call for quote</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[var(--color-text-muted)]">Bond (refundable)</span>
+                <span class="text-xl font-bold text-[var(--color-text)]">$200</span>
+              </div>
+            </div>
+            <p class="text-xs text-[var(--color-text-muted)] mt-4">All prices include GST. Fuel not included. MR licence required.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-4 text-center">What Is a Tipper Truck Used For?</h2>
+        <p class="text-center text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto">Pair a tipper truck with one of our excavators to create the ultimate earthmoving combo — dig and remove material from site in a single, efficient operation.</p>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {[
+            { title: "Soil Removal", desc: "Remove excavated soil, clay, and fill from residential and commercial sites." },
+            { title: "Gravel & Sand Delivery", desc: "Deliver aggregate, road base, sand, and fill material to your site." },
+            { title: "Landscaping Materials", desc: "Transport mulch, topsoil, and landscaping supplies in bulk." },
+            { title: "Construction Waste", desc: "Remove demolition debris, concrete rubble, and construction waste." },
+            { title: "Pool Excavation", desc: "Remove soil from pool excavations quickly and efficiently." },
+            { title: "Civil Projects", desc: "Support civil construction with bulk material transport." }
+          ].map(item => (
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <h3 class="font-bold text-[var(--color-text)] mb-2">{item.title}</h3>
+              <p class="text-sm text-[var(--color-text-muted)]">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Combo Hire CTA -->
+    <section class="bg-white py-16">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/20 rounded-2xl p-10 text-center">
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mb-4">💡 Hire a Tipper Truck + Excavator Together</h2>
+          <p class="text-[var(--color-text-muted)] mb-6 max-w-xl mx-auto">Combine a tipper truck with one of our mini excavators for the ultimate earthmoving setup. Dig, load, and remove — all in one efficient operation. Ask us about combined hire rates.</p>
+          <a href="tel:1300157882" class="inline-block bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">
+            Call 1300 157 882 for a Combined Quote
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          {[
+            { q: "How much does it cost to hire a tipper truck in Sydney?", a: "BuildHire's Isuzu NQR450 tipper truck starts from $280/day (incl GST). Call 1300 157 882 for weekly and monthly rates." },
+            { q: "What licence do I need to drive a tipper truck in NSW?", a: "The Isuzu NQR450 requires a Medium Rigid (MR) licence to drive in NSW. Ensure your licence is current before booking." },
+            { q: "What can a tipper truck be used for?", a: "A tipper truck is ideal for removing excavated soil, transporting gravel, sand and fill, delivering landscaping materials, and removing construction waste and demolition debris." },
+            { q: "Can I hire a tipper truck and excavator together?", a: "Yes — BuildHire offers combined hire of excavators and tipper trucks. Hiring both together is the most efficient way to excavate and remove material from site. Contact us for a combined quote." }
+          ].map(item => (
+            <details class="bg-white rounded-xl p-6 shadow-sm group">
+              <summary class="font-semibold text-[var(--color-text)] cursor-pointer list-none flex justify-between items-center">
+                {item.q}
+                <span class="text-[var(--color-primary)] ml-4 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-4 text-[var(--color-text-muted)] text-sm leading-relaxed">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book Your Tipper Truck?</h2>
+        <p class="text-white/80 mb-8 text-lg">Book online in 60 seconds or call us for an instant quote. Next-day delivery available across Sydney & NSW.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

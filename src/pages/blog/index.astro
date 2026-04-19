@@ -1,0 +1,102 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+
+const posts = [
+  {
+    title: "How to Hire an Excavator in Sydney: A Complete Guide",
+    description: "Everything you need to know — what size to choose, how much it costs, what licence you need, and how to book.",
+    href: "/blog/how-to-hire-an-excavator-in-sydney",
+    tag: "Hiring Guide",
+    readTime: "8 min read"
+  },
+  {
+    title: "How Much Does Excavator Hire Cost in Sydney? (2026 Price Guide)",
+    description: "A complete breakdown of excavator hire costs — daily rates, delivery fees, weekly rates, and what affects the price.",
+    href: "/blog/excavator-hire-cost-sydney",
+    tag: "Pricing Guide",
+    readTime: "6 min read"
+  },
+  {
+    title: "Do You Need a Licence to Operate a Mini Excavator in NSW?",
+    description: "A clear guide to NSW licence requirements — private property, worksites, and public roads.",
+    href: "/blog/mini-excavator-licence-nsw",
+    tag: "Licence Guide",
+    readTime: "5 min read"
+  },
+  {
+    title: "Dry Hire vs Wet Hire: Which Is Right for Your Sydney Project?",
+    description: "Should you hire an excavator with or without an operator? A clear comparison to help you decide.",
+    href: "/blog/dry-hire-vs-wet-hire-excavator-sydney",
+    tag: "Hiring Guide",
+    readTime: "5 min read"
+  }
+];
+---
+
+<Layout
+  title="Excavator Hire Guides & Tips | BuildHire Blog — Sydney"
+  description="Expert guides on excavator hire in Sydney — costs, licence requirements, how to choose the right machine, and more. Updated 2026."
+  canonicalPath="/blog"
+  ogImage="/og-image.png"
+>
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <!-- Header -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">
+          Excavator Hire Guides & Tips
+        </h1>
+        <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">
+          Expert advice on hiring excavators and construction equipment in Sydney — from costs and licences to choosing the right machine for your project.
+        </p>
+      </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="bg-white py-16">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-8">
+          {posts.map(post => (
+            <a href={post.href} class="group bg-[var(--color-bg)] rounded-2xl p-8 hover:shadow-lg transition-shadow border border-transparent hover:border-[var(--color-primary)]/20">
+              <span class="inline-block bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-semibold px-3 py-1 rounded-full mb-4">{post.tag}</span>
+              <h2 class="text-xl font-bold text-[var(--color-text)] mb-3 group-hover:text-[var(--color-primary)] transition-colors leading-snug">
+                {post.title}
+              </h2>
+              <p class="text-[var(--color-text-muted)] text-sm mb-4 leading-relaxed">{post.description}</p>
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-[var(--color-text-muted)]">{post.readTime}</span>
+                <span class="text-[var(--color-primary)] font-semibold text-sm group-hover:underline">Read more →</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book Your Equipment?</h2>
+        <p class="text-white/80 mb-8 text-lg">Book online in 60 seconds or call us for an instant quote. Next-day delivery available across Sydney & NSW.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

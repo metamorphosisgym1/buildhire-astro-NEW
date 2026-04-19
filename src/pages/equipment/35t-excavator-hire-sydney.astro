@@ -1,0 +1,250 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "3.5T Excavator Hire Sydney",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "BuildHire",
+    "url": "https://buildhire.com.au",
+    "telephone": "+611300157882",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "addressCountry": "AU"
+    }
+  },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "3.5T Yanmar ViO35-7 excavator dry hire in Sydney from $325/day. Perfect for bulk earthworks, site preparation, and commercial projects. Next-day delivery across NSW.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AUD",
+    "price": "325",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "325",
+      "priceCurrency": "AUD",
+      "unitText": "DAY"
+    }
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to hire a 3.5T excavator in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BuildHire's 3.5T Yanmar ViO35-7 excavator starts from $325/day (incl GST). Delivery & collection is $150. Call 1300 157 882 for weekly and monthly rates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What projects is a 3.5T excavator suited for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 3.5T excavator is ideal for bulk earthworks, site preparation, house demolition, deep trenching, commercial landscaping, and civil construction projects where a mini excavator lacks the power or reach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a licence to operate a 3.5T excavator in NSW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No licence is required to operate an excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is a 3.5T excavator delivered in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 3.5T Yanmar ViO35-7 is delivered via tilt-tray truck. Delivery & collection is $150 within Sydney metro. Third-party transport pricing applies outside metro areas — contact us for a quote."
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="3.5T Excavator Hire Sydney | From $325/day — BuildHire"
+  description="Hire a 3.5T Yanmar ViO35-7 excavator in Sydney from $325/day. Ideal for bulk earthworks, site prep & commercial projects. Next-day delivery across NSW."
+  canonicalPath="/equipment/35t-excavator-hire-sydney"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <!-- Hero -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-10">
+          <span class="inline-block bg-[var(--color-primary)] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Available Now</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">
+            3.5T Excavator Hire Sydney
+          </h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">
+            Yanmar ViO35-7 — serious power for demanding projects. From <strong class="text-[var(--color-primary)]">$325/day</strong> incl GST. Next-day delivery across Sydney & NSW.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">
+              Book Now — Instant Pricing →
+            </a>
+            <a href="https://wa.me/611300157882" target="_blank" rel="noopener" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">
+              WhatsApp for a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs & Pricing -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Machine Specs & Pricing</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div class="bg-[var(--color-bg)] rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-[var(--color-text)] mb-6">Yanmar ViO35-7 Specifications</h3>
+            <table class="w-full text-sm">
+              <tbody class="divide-y divide-gray-200">
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Operating Weight</td><td class="py-3 font-semibold text-[var(--color-text)]">3.5 Tonne</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Digging Depth</td><td class="py-3 font-semibold text-[var(--color-text)]">3,400 mm</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Bucket Capacity</td><td class="py-3 font-semibold text-[var(--color-text)]">0.11 m³</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Engine</td><td class="py-3 font-semibold text-[var(--color-text)]">Yanmar diesel</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Tail Swing</td><td class="py-3 font-semibold text-[var(--color-text)]">Zero tail swing</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Attachments</td><td class="py-3 font-semibold text-[var(--color-text)]">Digga compatible</td></tr>
+                <tr><td class="py-3 text-[var(--color-text-muted)] font-medium">Transport</td><td class="py-3 font-semibold text-[var(--color-text)]">Tilt-tray delivery</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bg-[var(--color-bg)] rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-[var(--color-text)] mb-6">Hire Rates</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Daily Rate</span>
+                <span class="text-2xl font-bold text-[var(--color-primary)]">$325/day</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Weekly Rate</span>
+                <span class="text-xl font-bold text-[var(--color-text)]">Call for quote</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Monthly Rate</span>
+                <span class="text-xl font-bold text-[var(--color-text)]">Call for quote</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Delivery & Collection</span>
+                <span class="text-xl font-bold text-[var(--color-text)]">$150</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[var(--color-text-muted)]">Bond (refundable)</span>
+                <span class="text-xl font-bold text-[var(--color-text)]">$200</span>
+              </div>
+            </div>
+            <p class="text-xs text-[var(--color-text-muted)] mt-4">All prices include GST. Fuel not included.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-4 text-center">What Is a 3.5T Excavator Used For?</h2>
+        <p class="text-center text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto">The Yanmar ViO35-7 is the workhorse of the BuildHire fleet — capable of tackling serious earthworks while remaining compact enough for residential and commercial sites.</p>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {[
+            { title: "Bulk Earthworks", desc: "Move large volumes of material quickly on residential and commercial sites." },
+            { title: "Site Preparation", desc: "Level and prepare building sites for construction, extensions, and developments." },
+            { title: "House Demolition", desc: "Demolish small structures, garages, and outbuildings efficiently." },
+            { title: "Deep Trenching", desc: "Excavate deep trenches for sewer, stormwater, and service infrastructure." },
+            { title: "Commercial Landscaping", desc: "Handle large-scale landscaping and earthmoving for commercial properties." },
+            { title: "Civil Construction", desc: "Support civil works including road preparation, drainage, and utility installation." }
+          ].map(item => (
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <h3 class="font-bold text-[var(--color-text)] mb-2">{item.title}</h3>
+              <p class="text-sm text-[var(--color-text-muted)]">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Why BuildHire -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Why Hire From BuildHire?</h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {[
+            { icon: "🚛", title: "Next-Day Delivery", desc: "Book before 12pm for next-day on-site arrival across Sydney." },
+            { icon: "💰", title: "Transparent Pricing", desc: "No hidden fees. The price you see is the price you pay." },
+            { icon: "🔧", title: "Well-Maintained Fleet", desc: "Low-hour Yanmar machines serviced to the highest standards." },
+            { icon: "📞", title: "24/7 Support", desc: "Round-the-clock support if anything comes up on site." }
+          ].map(item => (
+            <div class="text-center p-6 bg-[var(--color-bg)] rounded-xl">
+              <div class="text-4xl mb-3">{item.icon}</div>
+              <h3 class="font-bold text-[var(--color-text)] mb-2">{item.title}</h3>
+              <p class="text-sm text-[var(--color-text-muted)]">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          {[
+            { q: "How much does it cost to hire a 3.5T excavator in Sydney?", a: "BuildHire's 3.5T Yanmar ViO35-7 starts from $325/day (incl GST). Delivery & collection is $150. Call 1300 157 882 for weekly and monthly rates." },
+            { q: "What projects is a 3.5T excavator suited for?", a: "The 3.5T excavator is ideal for bulk earthworks, site preparation, house demolition, deep trenching, commercial landscaping, and civil construction projects." },
+            { q: "Do I need a licence to operate a 3.5T excavator in NSW?", a: "No licence is required on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) is required for excavators over 3 tonnes." },
+            { q: "How is a 3.5T excavator delivered in Sydney?", a: "The 3.5T Yanmar ViO35-7 is delivered via tilt-tray truck. Delivery & collection is $150 within Sydney metro. Contact us for pricing outside metro areas." }
+          ].map(item => (
+            <details class="bg-white rounded-xl p-6 shadow-sm group">
+              <summary class="font-semibold text-[var(--color-text)] cursor-pointer list-none flex justify-between items-center">
+                {item.q}
+                <span class="text-[var(--color-primary)] ml-4 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-4 text-[var(--color-text-muted)] text-sm leading-relaxed">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book Your 3.5T Excavator?</h2>
+        <p class="text-white/80 mb-8 text-lg">Book online in 60 seconds or call us for an instant quote. Next-day delivery available across Sydney & NSW.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

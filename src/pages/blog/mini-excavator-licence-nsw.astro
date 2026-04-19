@@ -1,0 +1,196 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Do You Need a Licence to Operate a Mini Excavator in NSW?",
+  "description": "A clear guide to NSW licence requirements for operating mini excavators — on private property, worksites, and public roads.",
+  "author": { "@type": "Organization", "name": "BuildHire" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BuildHire",
+    "logo": { "@type": "ImageObject", "url": "https://buildhire.com.au/og-image.png" }
+  },
+  "datePublished": "2026-04-01",
+  "dateModified": "2026-04-01",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/mini-excavator-licence-nsw" }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a licence to operate a mini excavator in NSW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) class CN (Excavator) is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What licence do I need to operate an excavator on a worksite in NSW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On a registered worksite in NSW, you need a High Risk Work Licence (HRWL) class CN (Excavator) to operate an excavator. This is issued by SafeWork NSW after completing an approved training course."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I operate a mini excavator in my backyard without a licence in NSW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In NSW, no licence is required to operate a mini excavator under 10 tonnes on private property (such as your own backyard). However, you should always call Dial Before You Dig (1100) before any excavation to identify underground services."
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="Do You Need a Licence to Operate a Mini Excavator in NSW? — BuildHire"
+  description="Clear guide to NSW licence requirements for operating mini excavators — private property, worksites, and public roads. Updated April 2026."
+  canonicalPath="/blog/mini-excavator-licence-nsw"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <!-- Article Header -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-12">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="mb-6">
+          <a href="/blog" class="text-[var(--color-primary)] text-sm font-medium hover:underline">← All Guides</a>
+        </div>
+        <span class="inline-block bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-semibold px-3 py-1 rounded-full mb-4">Licence Guide</span>
+        <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-6 leading-tight">
+          Do You Need a Licence to Operate a Mini Excavator in NSW?
+        </h1>
+        <p class="text-xl text-[var(--color-text-muted)] mb-6">
+          A clear guide to NSW licence requirements — private property, worksites, and public roads.
+        </p>
+        <div class="flex items-center gap-4 text-sm text-[var(--color-text-muted)]">
+          <span>By <strong class="text-[var(--color-text)]">BuildHire</strong></span>
+          <span>·</span>
+          <span>Updated April 2026</span>
+          <span>·</span>
+          <span>5 min read</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="bg-white py-12">
+      <div class="max-w-3xl mx-auto px-6">
+
+        <p class="text-[var(--color-text-muted)] text-lg mb-8">One of the most common questions we receive at BuildHire is: <em>do I need a licence to operate a mini excavator in NSW?</em> The short answer is: it depends on where you're operating. Here's a clear breakdown.</p>
+
+        <!-- Quick Answer Box -->
+        <div class="bg-[var(--color-primary)]/10 border-l-4 border-[var(--color-primary)] rounded-r-xl p-6 mb-10">
+          <h2 class="font-bold text-[var(--color-text)] mb-3 text-lg">Quick Answer</h2>
+          <ul class="space-y-2 text-[var(--color-text-muted)]">
+            <li class="flex items-start gap-2"><span class="text-green-500 font-bold mt-0.5">✓</span> <strong class="text-[var(--color-text)]">Private property:</strong> No licence required for machines under 10 tonnes</li>
+            <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">✗</span> <strong class="text-[var(--color-text)]">Registered worksite:</strong> High Risk Work Licence (HRWL) required</li>
+            <li class="flex items-start gap-2"><span class="text-yellow-500 font-bold mt-0.5">!</span> <strong class="text-[var(--color-text)]">Public roads:</strong> Additional permits may be required — check with your council</li>
+          </ul>
+        </div>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Operating on Private Property</h2>
+        <p class="text-[var(--color-text-muted)] mb-4">In NSW, <strong class="text-[var(--color-text)]">no licence is required</strong> to operate a mini excavator under 10 tonnes on private property. This means if you're digging in your own backyard, landscaping your garden, or excavating a pool on a residential property, you can legally operate the machine without any formal certification.</p>
+        <p class="text-[var(--color-text-muted)] mb-8">This is why dry hire is so popular with homeowners and DIY enthusiasts in Sydney — you can hire a machine, operate it yourself, and complete your project without needing a licence.</p>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Operating on a Registered Worksite</h2>
+        <p class="text-[var(--color-text-muted)] mb-4">If you're operating on a <strong class="text-[var(--color-text)]">registered worksite</strong> (any site where a principal contractor is required to have a WHS management plan), you need a <strong class="text-[var(--color-text)]">High Risk Work Licence (HRWL)</strong>.</p>
+        <p class="text-[var(--color-text-muted)] mb-4">The relevant HRWL class for excavators is:</p>
+        <div class="bg-[var(--color-bg)] rounded-xl p-6 mb-8">
+          <div class="flex items-start gap-4">
+            <div class="bg-[var(--color-primary)] text-white font-bold text-xl w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">CN</div>
+            <div>
+              <h3 class="font-bold text-[var(--color-text)] mb-1">Class CN — Excavator</h3>
+              <p class="text-sm text-[var(--color-text-muted)]">Authorises the holder to operate an excavator on a registered worksite in NSW. Issued by SafeWork NSW after completing an approved training course with a Registered Training Organisation (RTO).</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-[var(--color-text-muted)] mb-8">To obtain a HRWL class CN, you need to complete a training course with an approved RTO and pass a practical assessment. The licence is then issued by SafeWork NSW. For more information, visit <a href="https://www.safework.nsw.gov.au/licences-and-registrations/high-risk-work-licences" target="_blank" rel="noopener" class="text-[var(--color-primary)] font-semibold">SafeWork NSW</a>.</p>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">What Counts as a "Registered Worksite"?</h2>
+        <p class="text-[var(--color-text-muted)] mb-4">A registered worksite is generally any construction site where:</p>
+        <ul class="space-y-2 mb-8 text-[var(--color-text-muted)]">
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">•</span> A principal contractor is required to have a WHS management plan (typically projects over $250,000)</li>
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">•</span> A construction induction card (white card) is required to enter</li>
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">•</span> Multiple trades are working simultaneously</li>
+        </ul>
+        <p class="text-[var(--color-text-muted)] mb-8">If you're unsure whether your site qualifies, check with your site supervisor or contact SafeWork NSW on 13 10 50.</p>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Always Call Dial Before You Dig</h2>
+        <p class="text-[var(--color-text-muted)] mb-4">Regardless of whether you need a licence, <strong class="text-[var(--color-text)]">always call Dial Before You Dig (1100)</strong> before any excavation work. This is a free service that identifies underground services (gas, water, electricity, telecommunications) in your area.</p>
+        <p class="text-[var(--color-text-muted)] mb-8">Striking an underground service can be extremely dangerous and costly. It takes just a few minutes to submit a request online at <a href="https://www.1100.com.au" target="_blank" rel="noopener" class="text-[var(--color-primary)]">1100.com.au</a> and is mandatory before any excavation in NSW.</p>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Summary: Licence Requirements at a Glance</h2>
+        <div class="bg-[var(--color-bg)] rounded-xl overflow-hidden mb-8">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-[var(--color-primary)] text-white">
+                <th class="text-left px-6 py-4 font-semibold">Location</th>
+                <th class="text-left px-6 py-4 font-semibold">Licence Required?</th>
+                <th class="text-left px-6 py-4 font-semibold">Licence Type</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 font-medium text-[var(--color-text)]">Private property (residential)</td>
+                <td class="px-6 py-4 text-green-600 font-bold">No</td>
+                <td class="px-6 py-4 text-[var(--color-text-muted)]">—</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 font-medium text-[var(--color-text)]">Registered worksite</td>
+                <td class="px-6 py-4 text-red-500 font-bold">Yes</td>
+                <td class="px-6 py-4 text-[var(--color-text-muted)]">HRWL class CN (Excavator)</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 font-medium text-[var(--color-text)]">Public roads</td>
+                <td class="px-6 py-4 text-yellow-600 font-bold">Possibly</td>
+                <td class="px-6 py-4 text-[var(--color-text-muted)]">Check with local council</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/20 rounded-xl p-6 mb-8">
+          <h3 class="font-bold text-[var(--color-text)] mb-2">⚠️ Disclaimer</h3>
+          <p class="text-sm text-[var(--color-text-muted)]">This guide is for general information only and does not constitute legal advice. Regulations may change. Always verify current requirements with <a href="https://www.safework.nsw.gov.au" target="_blank" rel="noopener" class="text-[var(--color-primary)]">SafeWork NSW</a> before operating any plant or equipment on a worksite.</p>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Hire a Mini Excavator in Sydney?</h2>
+        <p class="text-white/80 mb-8 text-lg">Book online in 60 seconds or call us for an instant quote. Next-day delivery available across Sydney & NSW.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

@@ -1,0 +1,197 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Hire an Excavator in Sydney: A Complete Guide",
+  "description": "Everything you need to know about hiring an excavator in Sydney — what size to choose, how much it costs, what licence you need, and how to book.",
+  "author": { "@type": "Organization", "name": "BuildHire" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BuildHire",
+    "logo": { "@type": "ImageObject", "url": "https://buildhire.com.au/og-image.png" }
+  },
+  "datePublished": "2026-04-01",
+  "dateModified": "2026-04-01",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/how-to-hire-an-excavator-in-sydney" }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to hire an excavator in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Excavator hire in Sydney starts from $200/day for a 0.8T mini excavator, through to $325/day for a 3.5T machine. Larger excavators (5T+) typically cost $345–$470/day. Delivery & collection is charged separately, starting from $110 within Sydney metro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a licence to hire an excavator in NSW?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For dry hire on private property in NSW, no licence is required to operate an excavator under 10 tonnes. On a registered worksite, a High Risk Work Licence (HRWL) is required. Always check with your site supervisor or SafeWork NSW."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What size excavator do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For tight access residential work (landscaping, pool digging, small trenches), a 0.8T or 1.7T mini excavator is ideal. For bulk earthworks, site preparation, or deeper digging, a 3.5T or larger machine is recommended."
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="How to Hire an Excavator in Sydney: Complete Guide 2026 — BuildHire"
+  description="Everything you need to know about hiring an excavator in Sydney — what size to choose, how much it costs, what licence you need, and how to book online."
+  canonicalPath="/blog/how-to-hire-an-excavator-in-sydney"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <!-- Article Header -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-12">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="mb-6">
+          <a href="/blog" class="text-[var(--color-primary)] text-sm font-medium hover:underline">← All Guides</a>
+        </div>
+        <span class="inline-block bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-semibold px-3 py-1 rounded-full mb-4">Hiring Guide</span>
+        <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-6 leading-tight">
+          How to Hire an Excavator in Sydney: A Complete Guide
+        </h1>
+        <p class="text-xl text-[var(--color-text-muted)] mb-6">
+          Everything you need to know — what size to choose, how much it costs, what licence you need, and how to book.
+        </p>
+        <div class="flex items-center gap-4 text-sm text-[var(--color-text-muted)]">
+          <span>By <strong class="text-[var(--color-text)]">BuildHire</strong></span>
+          <span>·</span>
+          <span>Updated April 2026</span>
+          <span>·</span>
+          <span>8 min read</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="bg-white py-12">
+      <div class="max-w-3xl mx-auto px-6 prose prose-lg prose-headings:text-[var(--color-text)] prose-p:text-[var(--color-text-muted)] max-w-none">
+
+        <p>Whether you're digging a pool, laying drainage, landscaping your backyard, or preparing a building site, hiring an excavator in Sydney is one of the most cost-effective ways to get the job done. This guide covers everything you need to know before you book.</p>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Step 1: Choose the Right Size Excavator</h2>
+        <p>The most important decision is choosing the right machine for your job. Using a machine that's too small will slow you down; too large and you may not be able to access your site.</p>
+
+        <div class="bg-[var(--color-bg)] rounded-xl p-6 my-6 not-prose">
+          <h3 class="font-bold text-[var(--color-text)] mb-4">Quick Size Guide</h3>
+          <div class="space-y-4">
+            {[
+              { size: "0.8T Mini Excavator", price: "From $200/day", best: "Tight access, landscaping, small residential jobs, pool digging in narrow backyards" },
+              { size: "1.7T Mini Excavator", price: "From $205/day", best: "Most residential earthworks, pool excavation, trenching, landscaping" },
+              { size: "3.5T Excavator", price: "From $325/day", best: "Bulk earthworks, site preparation, demolition, commercial landscaping" },
+              { size: "5.5T Excavator", price: "From $345/day", best: "Heavy civil works, large site preparation, deep excavation" }
+            ].map(row => (
+              <div class="flex flex-col sm:flex-row sm:items-center gap-2 border-b border-gray-200 pb-4">
+                <div class="font-semibold text-[var(--color-text)] sm:w-48">{row.size}</div>
+                <div class="text-[var(--color-primary)] font-bold sm:w-32">{row.price}</div>
+                <div class="text-sm text-[var(--color-text-muted)] flex-1">{row.best}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <p>Not sure which size you need? Call BuildHire on <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold">1300 157 882</a> and our team will recommend the right machine for your project.</p>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Step 2: Understand the Costs</h2>
+        <p>Excavator hire in Sydney typically involves three cost components:</p>
+        <ul class="space-y-2 my-4 text-[var(--color-text-muted)]">
+          <li><strong class="text-[var(--color-text)]">Machine hire rate</strong> — the daily, weekly, or monthly rate for the excavator itself</li>
+          <li><strong class="text-[var(--color-text)]">Delivery & collection</strong> — the cost to transport the machine to and from your site (from $110 within Sydney metro)</li>
+          <li><strong class="text-[var(--color-text)]">Fuel</strong> — you are responsible for refuelling the machine during your hire period</li>
+        </ul>
+        <p>At BuildHire, there are no hidden fees. The rate you see online is the rate you pay. A $200 refundable bond is required to confirm your booking, with the hire balance due on delivery.</p>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Step 3: Check Licence Requirements</h2>
+        <p>One of the most common questions we receive is: <em>do I need a licence to operate a mini excavator in NSW?</em></p>
+        <p>The answer depends on where you're operating:</p>
+        <ul class="space-y-2 my-4 text-[var(--color-text-muted)]">
+          <li><strong class="text-[var(--color-text)]">Private property</strong> — No licence is required to operate an excavator under 10 tonnes on private property in NSW.</li>
+          <li><strong class="text-[var(--color-text)]">Registered worksite</strong> — A High Risk Work Licence (HRWL) is required. The relevant class is CN (Excavator).</li>
+          <li><strong class="text-[var(--color-text)]">Public roads</strong> — Additional permits may be required. Contact your local council.</li>
+        </ul>
+        <p>If you're unsure, contact <a href="https://www.safework.nsw.gov.au" target="_blank" rel="noopener" class="text-[var(--color-primary)]">SafeWork NSW</a> or speak to your site supervisor.</p>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Step 4: Prepare Your Site</h2>
+        <p>Before your excavator arrives, make sure your site is ready:</p>
+        <ul class="space-y-2 my-4 text-[var(--color-text-muted)]">
+          <li>Mark any underground services (call <strong class="text-[var(--color-text)]">Dial Before You Dig</strong> on 1100 — it's free and mandatory)</li>
+          <li>Ensure there is adequate access for the delivery truck and machine</li>
+          <li>Clear the work area of obstacles, vehicles, and people</li>
+          <li>Have a plan for where excavated material will be placed or removed</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Step 5: Book Your Excavator</h2>
+        <p>With BuildHire, booking is simple:</p>
+        <ol class="space-y-3 my-4 text-[var(--color-text-muted)]">
+          <li><strong class="text-[var(--color-text)]">1. Choose your machine</strong> — browse our fleet online and select the excavator that suits your project</li>
+          <li><strong class="text-[var(--color-text)]">2. Select your dates</strong> — use our online booking calculator to choose your hire period</li>
+          <li><strong class="text-[var(--color-text)]">3. Enter your site details</strong> — provide your delivery address and contact information</li>
+          <li><strong class="text-[var(--color-text)]">4. Pay the $200 bond</strong> — secure your booking via Stripe's secure checkout</li>
+          <li><strong class="text-[var(--color-text)]">5. Receive your machine</strong> — we deliver next-day for bookings placed before 12pm</li>
+        </ol>
+
+        <div class="bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/20 rounded-xl p-6 my-8 not-prose">
+          <h3 class="font-bold text-[var(--color-text)] mb-2">💡 Pro Tip: Hire a Tipper Truck Too</h3>
+          <p class="text-sm text-[var(--color-text-muted)]">If you need to remove excavated material from site, consider hiring a tipper truck alongside your excavator. BuildHire's Isuzu NQR450 tipper truck starts from $280/day and pairs perfectly with our mini excavators for efficient dig-and-remove operations.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Frequently Asked Questions</h2>
+
+        <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">How much does it cost to hire an excavator in Sydney?</h3>
+        <p>Excavator hire in Sydney starts from $200/day for a 0.8T mini excavator, through to $325/day for a 3.5T machine. Delivery & collection starts from $110 within Sydney metro.</p>
+
+        <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">Do I need a licence to hire an excavator in NSW?</h3>
+        <p>No licence is required on private property for machines under 10 tonnes. On a registered worksite, a High Risk Work Licence (HRWL) is required.</p>
+
+        <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">How quickly can I get an excavator delivered in Sydney?</h3>
+        <p>BuildHire offers next-day delivery for bookings placed before 12pm. Same-day delivery may be available — call 1300 157 882 to check.</p>
+
+      </div>
+    </article>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Hire an Excavator in Sydney?</h2>
+        <p class="text-white/80 mb-8 text-lg">Book online in 60 seconds or call us for an instant quote. Next-day delivery available across Sydney & NSW.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

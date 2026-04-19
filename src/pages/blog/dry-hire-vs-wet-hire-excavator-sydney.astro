@@ -1,0 +1,191 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Dry Hire vs Wet Hire: Which Is Right for Your Sydney Project?",
+  "description": "Should you hire an excavator with or without an operator? A clear comparison of dry hire vs wet hire for Sydney construction and landscaping projects.",
+  "author": { "@type": "Organization", "name": "BuildHire" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BuildHire",
+    "logo": { "@type": "ImageObject", "url": "https://buildhire.com.au/og-image.png" }
+  },
+  "datePublished": "2026-04-01",
+  "dateModified": "2026-04-01",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/dry-hire-vs-wet-hire-excavator-sydney" }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between dry hire and wet hire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dry hire means you hire the machine only — you operate it yourself. Wet hire means you hire the machine with an operator included. Dry hire is cheaper; wet hire is better if you don't have the skills or licence to operate the machine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dry hire cheaper than wet hire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Dry hire is significantly cheaper than wet hire because you are not paying for an operator. A 1.7T mini excavator dry hire costs from $205/day, whereas wet hire with an operator typically costs $600–$900/day or more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I operate a dry hire excavator without experience?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mini excavators are relatively straightforward to operate with basic instruction. BuildHire provides a full machine induction on delivery. However, if you have no experience with plant equipment, wet hire may be a safer and more efficient option."
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="Dry Hire vs Wet Hire Excavator Sydney: Which Is Right for You? — BuildHire"
+  description="Should you hire an excavator with or without an operator? A clear comparison of dry hire vs wet hire for Sydney projects — costs, pros, cons, and when to choose each."
+  canonicalPath="/blog/dry-hire-vs-wet-hire-excavator-sydney"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <!-- Article Header -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-12">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="mb-6">
+          <a href="/blog" class="text-[var(--color-primary)] text-sm font-medium hover:underline">← All Guides</a>
+        </div>
+        <span class="inline-block bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-semibold px-3 py-1 rounded-full mb-4">Hiring Guide</span>
+        <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-6 leading-tight">
+          Dry Hire vs Wet Hire: Which Is Right for Your Sydney Project?
+        </h1>
+        <p class="text-xl text-[var(--color-text-muted)] mb-6">
+          Should you hire an excavator with or without an operator? Here's a clear comparison to help you decide.
+        </p>
+        <div class="flex items-center gap-4 text-sm text-[var(--color-text-muted)]">
+          <span>By <strong class="text-[var(--color-text)]">BuildHire</strong></span>
+          <span>·</span>
+          <span>Updated April 2026</span>
+          <span>·</span>
+          <span>5 min read</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="bg-white py-12">
+      <div class="max-w-3xl mx-auto px-6">
+
+        <p class="text-[var(--color-text-muted)] text-lg mb-8">When hiring construction equipment in Sydney, you'll often see two options: <strong class="text-[var(--color-text)]">dry hire</strong> and <strong class="text-[var(--color-text)]">wet hire</strong>. Understanding the difference — and knowing which is right for your project — can save you significant time and money.</p>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">What Is Dry Hire?</h2>
+        <p class="text-[var(--color-text-muted)] mb-4"><strong class="text-[var(--color-text)]">Dry hire</strong> means you hire the machine only. You are responsible for operating it yourself. The hire company delivers the machine to your site, provides a brief induction, and collects it at the end of your hire period.</p>
+        <p class="text-[var(--color-text-muted)] mb-8">BuildHire is a dry hire specialist. All of our equipment — from mini excavators to tipper trucks — is available on a dry hire basis.</p>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">What Is Wet Hire?</h2>
+        <p class="text-[var(--color-text-muted)] mb-8"><strong class="text-[var(--color-text)]">Wet hire</strong> means you hire the machine <em>with an operator included</em>. The hire company supplies both the equipment and a qualified operator to run it. You direct the work; the operator does the digging.</p>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Cost Comparison</h2>
+        <p class="text-[var(--color-text-muted)] mb-6">Cost is the most significant difference between the two options:</p>
+        <div class="bg-[var(--color-bg)] rounded-xl overflow-hidden mb-8">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-[var(--color-primary)] text-white">
+                <th class="text-left px-6 py-4 font-semibold"></th>
+                <th class="text-left px-6 py-4 font-semibold">Dry Hire</th>
+                <th class="text-left px-6 py-4 font-semibold">Wet Hire</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              {[
+                { label: "1.7T Mini Excavator (daily)", dry: "$205/day", wet: "$600–$900/day" },
+                { label: "3.5T Excavator (daily)", dry: "$325/day", wet: "$900–$1,400/day" },
+                { label: "Operator included", dry: "No — you operate", wet: "Yes — operator supplied" },
+                { label: "Licence required", dry: "No (private property)", wet: "No — operator is licensed" },
+                { label: "Flexibility", dry: "High — work at your own pace", wet: "Lower — operator sets pace" },
+              ].map(row => (
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 font-medium text-[var(--color-text)]">{row.label}</td>
+                  <td class="px-6 py-4 text-green-600 font-semibold">{row.dry}</td>
+                  <td class="px-6 py-4 text-[var(--color-text-muted)]">{row.wet}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">When to Choose Dry Hire</h2>
+        <p class="text-[var(--color-text-muted)] mb-4">Dry hire is the right choice when:</p>
+        <ul class="space-y-2 mb-8 text-[var(--color-text-muted)]">
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> You have some experience operating plant equipment (or are willing to learn)</li>
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> You're working on private property (no HRWL required)</li>
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> You want to work at your own pace, on your own schedule</li>
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> You want to keep costs as low as possible</li>
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> Your project runs for multiple days and you want flexibility</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">When to Choose Wet Hire</h2>
+        <p class="text-[var(--color-text-muted)] mb-4">Wet hire is the better option when:</p>
+        <ul class="space-y-2 mb-8 text-[var(--color-text-muted)]">
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> You have no experience with plant equipment</li>
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> You're working on a registered worksite and don't hold a HRWL</li>
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> The job requires a high level of precision (e.g. working near existing structures)</li>
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> You need the work completed as quickly as possible by an experienced operator</li>
+        </ul>
+
+        <div class="bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/20 rounded-xl p-6 mb-8">
+          <h3 class="font-bold text-[var(--color-text)] mb-2">💡 BuildHire Tip</h3>
+          <p class="text-sm text-[var(--color-text-muted)]">Mini excavators are surprisingly easy to learn. Most people can operate a 0.8T or 1.7T machine competently within a few hours. BuildHire provides a full machine induction on delivery — we'll walk you through the controls and make sure you're comfortable before we leave. If you're on the fence, give us a call on 1300 157 882 and we'll help you decide.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Frequently Asked Questions</h2>
+
+        <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">What is the difference between dry hire and wet hire?</h3>
+        <p class="text-[var(--color-text-muted)] mb-4">Dry hire means you hire the machine only and operate it yourself. Wet hire means you hire the machine with an operator included. Dry hire is cheaper; wet hire is better if you don't have the skills or licence to operate the machine.</p>
+
+        <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">Is dry hire cheaper than wet hire?</h3>
+        <p class="text-[var(--color-text-muted)] mb-4">Yes — significantly. A 1.7T mini excavator dry hire costs from $205/day, whereas wet hire with an operator typically costs $600–$900/day or more.</p>
+
+        <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">Can I operate a dry hire excavator without experience?</h3>
+        <p class="text-[var(--color-text-muted)] mb-4">Mini excavators are relatively straightforward to operate with basic instruction. BuildHire provides a full machine induction on delivery. If you have no experience at all, wet hire may be a safer option — or call us and we'll advise you.</p>
+
+      </div>
+    </article>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book Dry Hire in Sydney?</h2>
+        <p class="text-white/80 mb-8 text-lg">Book online in 60 seconds or call us for an instant quote. Next-day delivery available across Sydney & NSW.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>
