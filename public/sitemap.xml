@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://buildhire.com.au/</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://buildhire.com.au/payment-success/</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://buildhire.com.au/payment-cancelled/</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
+  <url><loc>https://buildhire.com.au/</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://buildhire.com.au/equipment/mini-excavator-hire-sydney</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://buildhire.com.au/equipment/08t-mini-excavator-hire-sydney</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://buildhire.com.au/equipment/17t-mini-excavator-hire-sydney</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://buildhire.com.au/equipment/35t-excavator-hire-sydney</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://buildhire.com.au/equipment/tipper-truck-hire-sydney</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://buildhire.com.au/blog</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://buildhire.com.au/blog/how-to-hire-an-excavator-in-sydney</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://buildhire.com.au/blog/excavator-hire-cost-sydney</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://buildhire.com.au/blog/mini-excavator-licence-nsw</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://buildhire.com.au/blog/dry-hire-vs-wet-hire-excavator-sydney</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://buildhire.com.au/payment-success/</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://buildhire.com.au/payment-cancelled/</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>
