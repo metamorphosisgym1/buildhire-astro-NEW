@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Payment Cancelled — BuildHire Excavator Hire Sydney"
+  description="Your payment was cancelled. No charges were made. Return to BuildHire to complete your excavator hire booking."
+  canonicalPath="/payment-cancelled"
+>
+  <div class="min-h-screen bg-background flex items-center justify-center px-6">
+    <div class="max-w-lg w-full text-center">
+      <div class="w-20 h-20 bg-muted rounded-full flex items-center justify-center mx-auto mb-6">
+        <span class="text-3xl">↩️</span>
+      </div>
+      <h1 class="text-2xl font-bold text-foreground mb-4">Payment Cancelled</h1>
+      <p class="text-muted-foreground mb-6">
+        No charges have been made. You can return to the booking page to try again or contact us at{" "}
+        <a href="mailto:info@buildhire.com.au" class="text-primary underline">info@buildhire.com.au</a>.
+      </p>
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-md font-semibold hover:scale-[1.02] transition-transform"
+      >
+        ← Back to Home
+      </a>
+    </div>
+  </div>
+</Layout>
