@@ -1,15 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-
 const stats = [
-  { value: 200, suffix: "+", label: "Pieces of Equipment" },
+  { value: 15, suffix: "+", label: "Items of Equipment" },
   { value: "Next-Day", suffix: "", label: "Delivery & Collection" },
-  { value: 500, suffix: "+", label: "Projects Completed" },
+  { value: "100%", suffix: "", label: "Satisfied Clients" },
 ];
-
 function AnimatedNumber({ target, suffix }: { target: number | string; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [count, setCount] = useState(0);
-
   useEffect(() => {
     if (typeof target !== "number") return;
     const steps = 60;
@@ -35,7 +32,6 @@ function AnimatedNumber({ target, suffix }: { target: number | string; suffix: s
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, [target]);
-
   if (typeof target === "string") {
     return <span ref={ref}>{target}</span>;
   }
@@ -45,7 +41,6 @@ function AnimatedNumber({ target, suffix }: { target: number | string; suffix: s
     </span>
   );
 }
-
 export default function StatsBar() {
   return (
     <section id="stats" className="bg-primary py-10 px-6">
