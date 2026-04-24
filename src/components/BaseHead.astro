@@ -9,13 +9,13 @@ export interface Props {
 const {
   title,
   description,
-  canonicalPath = '/',
-  ogImage = '/og-image.png',
+  canonicalPath,
+  ogImage = '/og-image.png'
 } = Astro.props;
 
-const BASE_URL = 'https://buildhire.com.au';
-const canonicalUrl = `${BASE_URL}${canonicalPath}`;
-const ogImageUrl = `${BASE_URL}${ogImage}`;
+const canonicalUrl = canonicalPath 
+  ? new URL(canonicalPath, Astro.site || 'https://buildhire.com.au' ) 
+  : new URL(Astro.url.pathname, Astro.site || 'https://buildhire.com.au' );
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -54,14 +54,21 @@ const organizationSchema = {
       "opens": "06:00",
       "closes": "20:00"
     }
-  ]
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "6",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "BuildHire",
-  "image": "https://buildhire.com.au/assets/og-image.png",
+  "image": "https://buildhire.com.au/og-image.png",
   "url": "https://buildhire.com.au",
   "telephone": "+611300157882",
   "address": {
@@ -85,7 +92,13 @@ const localBusinessSchema = {
     }
   ],
   "priceRange": "$$",
-  "servesCuisine": null,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "6",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
   "description": "Sydney's top-rated excavator and construction equipment hire. Mini excavator dry hire from $200/day with next-day delivery and collection across NSW."
 };
 
@@ -119,51 +132,21 @@ const websiteSchema = {
 <meta name="author" content="BuildHire" />
 <meta name="theme-color" content="#f5a623" />
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="/favicon.png" />
-<link rel="apple-touch-icon" href="/favicon.png" />
-
-<!-- Open Graph / Facebook / LinkedIn -->
+<!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonicalUrl} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={ogImageUrl} />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:site_name" content="BuildHire" />
-<meta property="og:locale" content="en_AU" />
+<meta property="og:image" content={new URL(ogImage, Astro.site || 'https://buildhire.com.au' )} />
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:url" content={canonicalUrl} />
-<meta name="twitter:title" content={title} />
-<meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={ogImageUrl} />
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={canonicalUrl} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(ogImage, Astro.site || 'https://buildhire.com.au' )} />
 
-<!-- Geo Tags for Local SEO -->
-<meta name="geo.region" content="AU-NSW" />
-<meta name="geo.placename" content="Sydney" />
-<meta name="geo.position" content="-33.8688;151.2093" />
-<meta name="ICBM" content="-33.8688, 151.2093" />
-
-<!-- Speakable for AEO / Voice Search -->
-<link rel="speakable" href={canonicalUrl} />
-
-<!-- JSON-LD Structured Data -->
+<!-- Schema.org Markup -->
 <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
 <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
 <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
-
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8W2E1TCKN2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag( ){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-8W2E1TCKN2');
-</script>
-
-<!-- Google Fonts Preconnect -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
