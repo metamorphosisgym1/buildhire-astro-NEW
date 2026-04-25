@@ -1,6 +1,7 @@
 import { useState } from "react";
 const boxTrailerImg = "/assets/box-trailer.jpg";
 const sv08Img = "/assets/sv08-excavator.png";
+const kubotaU10Img = "/assets/kubota-u10-5-branded.png";
 const vio17Img = "/assets/vio17-excavator.png";
 
 const vio35Img = "/assets/vio35-excavator.png";
@@ -67,6 +68,23 @@ const availableEquipment: EquipmentItem[] = [
       "Engine Power": "7.1 kW",
       "Tail Swing": "Zero",
       "Transport Width": "700 mm",
+    },
+  },
+  {
+    name: "1T Mini Excavator (Kubota U10-5)",
+    category: "Excavators",
+    image: kubotaU10Img,
+    rate: "$200/day",
+    badge: "available",
+    deliveryNote: "$110 Delivery & Collection*",
+    brochureUrl: "/brochures/kubota-u10-5.pdf",
+    specs: {
+      "Operating Weight": "1,200 kg",
+      "Dig Depth": "1,800 mm",
+      "Dig Radius": "3,380 mm",
+      "Engine Power": "7.7 kW",
+      "Tail Swing": "Zero",
+      "Transport Width": "750-990 mm",
     },
   },
   {

@@ -31,6 +31,7 @@ const MiniDumperIcon = ({ size = 28, className = "" }: { size?: number; classNam
   </svg>
 );
 const sv08Img = "/assets/sv08-excavator.png";
+const kubotaU10Img = "/assets/kubota-u10-5-branded.png";
 const boxTrailerImg = "/assets/box-trailer.jpg";
 const vio17Img = "/assets/vio17-excavator.png";
 
@@ -61,6 +62,7 @@ const categoryIcons: Record<string, React.ComponentType<any>> = {
 
 const machineImages: Record<string, string> = {
   "0.8T Mini Excavator (SV08 Yanmar)": sv08Img,
+  "1T Mini Excavator (Kubota U10-5)": kubotaU10Img,
   "1.7T Mini Excavator (ViO17 Yanmar)": vio17Img,
   "3.5T Excavator (ViO35-7 Yanmar)": vio35Img,
   "5.5T Excavator (ViO55 Yanmar)": vio55Img,
@@ -87,6 +89,7 @@ const machineImages: Record<string, string> = {
 const equipmentData: Record<string, { name: string; rate: number; comingSoon?: boolean }[]> = {
   Excavators: [
     { name: "0.8T Mini Excavator (SV08 Yanmar)", rate: 200 },
+    { name: "1T Mini Excavator (Kubota U10-5)", rate: 200 },
     { name: "1.7T Mini Excavator (ViO17 Yanmar)", rate: 205 },
     { name: "3.5T Excavator (ViO35-7 Yanmar)", rate: 325 },
     { name: "5.5T Excavator (ViO55 Yanmar)", rate: 345 },
@@ -176,6 +179,7 @@ export default function BookingCalculator() {
     // 0.8T, 1.7T, Cormidi Dumpers
     if (
       machineName.includes("0.8T") ||
+      machineName.includes("1T Mini") ||
       machineName.includes("1.7T") ||
       machineName.includes("Cormidi")
     ) return 110;
