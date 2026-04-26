@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 export default defineConfig({
+  trailingSlash: 'always',
   site: 'https://buildhire.com.au',
   integrations: [
     react(),
