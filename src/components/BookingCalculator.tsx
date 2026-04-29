@@ -184,7 +184,7 @@ export default function BookingCalculator() {
       machineName.includes("Cormidi")
     ) return 110;
     // 3.5T
-    if (machineName.includes("3.5T")) return 150;
+    if (machineName.includes("3.5T")) return 230;
     // 5.5T, 8T, 14.5T — third party transport, pricing on enquiry
     if (
       machineName.includes("5.5T") ||
