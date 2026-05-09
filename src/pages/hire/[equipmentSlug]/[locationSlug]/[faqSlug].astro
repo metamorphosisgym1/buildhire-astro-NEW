@@ -1,0 +1,144 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Header from '../../../../components/Header';
+import Footer from '../../../../components/Footer';
+import ChatWidget from '../../../../components/ChatWidget';
+import StickyBottomBar from '../../../../components/StickyBottomBar';
+import { equipment } from '../../../../data/equipment';
+import { locations } from '../../../../data/locations';
+
+export function generateSlug(text: string) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)+/g, '');
+}
+
+export async function getStaticPaths() {
+  return equipment.flatMap(item =>
+    locations.flatMap(location =>
+      item.faqs.map(faq => ({
+        params: { 
+          equipmentSlug: item.slug, 
+          locationSlug: location.slug,
+          faqSlug: generateSlug(faq.q)
+        },
+        props: { item, location, faq }
+      }))
+    )
+  );
+}
+
+const { item, location, faq } = Astro.props;
+
+// Strip the question mark if present for the title
+const cleanQuestion = faq.q.replace(/\?$/, '');
+
+const title = `${cleanQuestion} - ${item.shortName} in ${location.name} | BuildHire`;
+const description = `Answer: ${faq.a.substring(0, 150)}... Learn more about ${item.shortName.toLowerCase()} hire in ${location.name}.`;
+const canonicalPath = `/hire/${item.slug}/${location.slug}/${generateSlug(faq.q)}/`;
+const parentPath = `/hire/${item.slug}/${location.slug}/`;
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Equipment Hire", "item": "https://www.buildhire.com.au/equipment" },
+    { "@type": "ListItem", "position": 3, "name": `${item.shortName} Hire ${location.name}`, "item": `https://www.buildhire.com.au${parentPath}` },
+    { "@type": "ListItem", "position": 4, "name": "FAQ", "item": `https://www.buildhire.com.au${canonicalPath}` }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+    }
+  ]
+};
+---
+
+<Layout title={title} description={description} canonicalPath={canonicalPath}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <!-- Hero / Answer Section -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-4xl mx-auto px-6">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6 flex items-center gap-2 flex-wrap">
+          <a href="/" class="hover:text-[var(--color-primary)] transition-colors">Home</a>
+          <span>/</span>
+          <a href="/equipment" class="hover:text-[var(--color-primary)] transition-colors">Equipment Hire</a>
+          <span>/</span>
+          <a href={parentPath} class="hover:text-[var(--color-primary)] transition-colors">{item.shortName} in {location.name}</a>
+          <span>/</span>
+          <span class="text-[var(--color-text)]">FAQ</span>
+        </nav>
+
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-medium mb-8">
+          ❓ Frequently Asked Question
+        </div>
+
+        <h1 class="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-8 leading-tight">
+          {faq.q}
+        </h1>
+
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 mb-10">
+          <div class="flex gap-4">
+            <div class="text-3xl">💡</div>
+            <div class="text-xl text-[var(--color-text)] leading-relaxed">
+              {faq.a}
+            </div>
+          </div>
+        </div>
+
+        <!-- Context about the machine -->
+        <div class="bg-[var(--color-primary)]/5 rounded-xl p-6 border border-[var(--color-primary)]/10">
+          <h3 class="font-bold text-[var(--color-text)] mb-2">About the {item.name}</h3>
+          <p class="text-[var(--color-text-muted)] mb-4">
+            {item.description} Available for hire in {location.name} and surrounding {location.region} areas.
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="font-bold text-[var(--color-primary)]">{item.price} <span class="text-sm font-normal text-[var(--color-text-muted)]">/day</span></div>
+            <a href={parentPath} class="text-sm font-semibold text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors">
+              View full specs & pricing →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">
+          Ready to Book Your {item.shortName} in {location.name}?
+        </h2>
+        <p class="text-white/80 mb-8 text-lg">
+          Book online in 60 seconds or call us for an instant quote. Next-day delivery available across {location.region} & NSW.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

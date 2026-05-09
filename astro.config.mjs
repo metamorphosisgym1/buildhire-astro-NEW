@@ -14,13 +14,28 @@ export default defineConfig({
         !page.includes('/payment-success') &&
         !page.includes('/payment-cancelled'),
       serialize(item) {
-        if (item.url.includes('/hire/')) {
+        // Pillar pages
+        if (item.url.match(/\/hire\/[^\/]+\/[^\/]+\/$/)) {
           item.priority = 0.9;
           item.changefreq = 'weekly';
-        } else if (item.url.includes('/compare/')) {
+        } 
+        // Use-case sub-pages
+        else if (item.url.match(/\/hire\/[^\/]+\/[^\/]+\/[^\/]+\/$/) && !item.url.includes('how') && !item.url.includes('what') && !item.url.includes('do-') && !item.url.includes('can-')) {
+          item.priority = 0.8;
+          item.changefreq = 'monthly';
+        }
+        // FAQ sub-pages
+        else if (item.url.match(/\/hire\/[^\/]+\/[^\/]+\/[^\/]+\/$/)) {
           item.priority = 0.7;
           item.changefreq = 'monthly';
-        } else {
+        }
+        // Comparison pages
+        else if (item.url.includes('/compare/')) {
+          item.priority = 0.7;
+          item.changefreq = 'monthly';
+        } 
+        // Default
+        else {
           item.priority = 0.8;
           item.changefreq = 'weekly';
         }
