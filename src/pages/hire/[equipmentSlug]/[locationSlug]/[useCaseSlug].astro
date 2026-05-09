@@ -43,6 +43,29 @@ const breadcrumbSchema = {
   ]
 };
 
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  'serviceType': 'Equipment Hire',
+  'provider': { '@type': 'LocalBusiness', 'name': 'BuildHire' },
+  'areaServed': { '@type': 'State', 'name': location.name },
+  'hasOfferCatalog': {
+    '@type': 'OfferCatalog',
+    'name': 'Equipment Hire Services',
+    'itemListElement': [{ '@type': 'Offer', 'itemOffered': { '@type': 'Product', 'name': item.name + ' Hire', 'description': item.description } }]
+  }
+};
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  'name': 'How to hire a ' + item.name + ' for ' + useCase.name + ' in ' + location.name,
+  'step': [
+    { '@type': 'HowToStep', 'name': 'Check Availability', 'text': 'Contact BuildHire to check availability of ' + item.name + ' in ' + location.name + '.' },
+    { '@type': 'HowToStep', 'name': 'Book Equipment', 'text': 'Confirm your booking dates and arrange delivery or pickup.' },
+    { '@type': 'HowToStep', 'name': 'Complete Project', 'text': 'Use the equipment to successfully complete your ' + useCase.name + ' project.' }
+  ]
+};
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -57,6 +80,8 @@ const faqSchema = {
 <Layout title={title} description={description} canonicalPath={canonicalPath}>
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
   <div class="min-h-screen pb-20">
     <Header client:load />

@@ -50,6 +50,14 @@ const breadcrumbSchema = {
   ]
 };
 
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  'serviceType': 'Equipment Hire',
+  'provider': { '@type': 'LocalBusiness', 'name': 'BuildHire' },
+  'areaServed': { '@type': 'State', 'name': location.name }
+};
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -66,6 +74,7 @@ const faqSchema = {
 <Layout title={title} description={description} canonicalPath={canonicalPath}>
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <div class="min-h-screen pb-20">
     <Header client:load />
