@@ -94,7 +94,7 @@ const equipmentData: Record<string, { name: string; rate: number; comingSoon?: b
     { name: "3.5T Excavator (ViO35-7 Yanmar)", rate: 325 },
     { name: "5.5T Excavator (ViO55 Yanmar)", rate: 345 },
     { name: "8T Excavator (ViO80 Yanmar)", rate: 420, comingSoon: true },
-    { name: "14.5T Sumitomo Excavator", rate: 470, comingSoon: true },
+    { name: "14.5T Sumitomo Excavator", rate: 470 },
   ],
   "Mini Dumpers": [
     { name: "Cormidi C7x 700kg Petrol High Tip", rate: 200 },
