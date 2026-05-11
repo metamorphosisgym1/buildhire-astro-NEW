@@ -1,0 +1,218 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Header from '../../../../components/Header';
+import Footer from '../../../../components/Footer';
+import ChatWidget from '../../../../components/ChatWidget';
+import StickyBottomBar from '../../../../components/StickyBottomBar';
+import { equipment } from '../../../../data/equipment';
+import { locations } from '../../../../data/locations';
+import { industries } from '../../../../data/industries';
+
+export async function getStaticPaths() {
+  return equipment.flatMap(item =>
+    locations.flatMap(location =>
+      industries
+        .filter(ind => ind.equipmentRecommendations.includes(item.slug))
+        .map(industry => ({
+          params: {
+            equipmentSlug: item.slug,
+            locationSlug: location.slug,
+            industrySlug: industry.slug
+          },
+          props: { item, location, industry }
+        }))
+    )
+  );
+}
+
+const { item, location, industry } = Astro.props;
+
+const title = `${item.shortName} Hire for ${industry.name} in ${location.name} | BuildHire`;
+const description = `Hire a ${item.shortName.toLowerCase()} for ${industry.name.toLowerCase()} in ${location.name}, NSW. BuildHire delivers late-model equipment next day across ${location.region}. From ${item.price} inc GST.`;
+const canonicalPath = `/hire/${item.slug}/${location.slug}/${industry.slug}/`;
+const parentPath = `/hire/${item.slug}/${location.slug}/`;
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Equipment Hire", "item": "https://www.buildhire.com.au/equipment" },
+    { "@type": "ListItem", "position": 3, "name": `${item.shortName} Hire ${location.name}`, "item": `https://www.buildhire.com.au${parentPath}` },
+    { "@type": "ListItem", "position": 4, "name": industry.name, "item": `https://www.buildhire.com.au${canonicalPath}` }
+  ]
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": `${item.shortName} Hire for ${industry.name} in ${location.name}`,
+  "serviceType": "Equipment Hire",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "BuildHire",
+    "url": "https://www.buildhire.com.au",
+    "telephone": "+611300157882",
+    "areaServed": { "@type": "City", "name": location.name, "containedInPlace": { "@type": "State", "name": "New South Wales" } }
+  },
+  "description": description,
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AUD",
+    "price": item.priceNum,
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": item.priceNum,
+      "priceCurrency": "AUD",
+      "unitText": "DAY"
+    }
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": industry.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+  }))
+};
+---
+<Layout title={title} description={description} canonicalPath={canonicalPath}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <div class="min-h-screen bg-[var(--color-bg)]">
+    <Header client:load />
+
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b border-gray-100 py-3">
+      <div class="max-w-5xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)]">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">›</span>
+          <a href="/equipment" class="hover:text-[var(--color-primary)]">Equipment Hire</a>
+          <span class="mx-2">›</span>
+          <a href={parentPath} class="hover:text-[var(--color-primary)]">{item.shortName} Hire {location.name}</a>
+          <span class="mx-2">›</span>
+          <span class="text-[var(--color-text)]">{industry.name}</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="bg-[var(--color-text)] py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="inline-block bg-[var(--color-primary)] text-white text-xs font-bold px-3 py-1 rounded-full mb-6 uppercase tracking-wider">
+          {industry.name} — {location.name}
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          {item.shortName} Hire for {industry.name} in {location.name}
+        </h1>
+        <p class="text-white/70 text-xl mb-8 max-w-2xl">
+          {industry.longDescription} Next-day delivery to {location.name} and across {location.region}.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg text-center">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-text)] transition text-lg text-center">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="bg-white py-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="bg-[var(--color-bg)] rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <div class="text-sm text-[var(--color-text-muted)] mb-1">Hire Rate (incl GST)</div>
+            <div class="text-4xl font-bold text-[var(--color-primary)]">{item.price}</div>
+            <div class="text-sm text-[var(--color-text-muted)] mt-1">+ $110 delivery & collection to {location.name}</div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 flex-1 max-w-md">
+            {item.specs.slice(0, 4).map((spec: { label: string; value: string }) => (
+              <div class="bg-white rounded-xl p-4 text-center">
+                <div class="text-xs text-[var(--color-text-muted)] mb-1">{spec.label}</div>
+                <div class="font-bold text-[var(--color-text)]">{spec.value}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why BuildHire for this industry -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-4">
+          Why {industry.name} in {location.name} Choose BuildHire
+        </h2>
+        <p class="text-[var(--color-text-muted)] text-lg mb-10">
+          {industry.description} We understand the demands of {industry.name.toLowerCase()} work and deliver equipment that performs on the job.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-6">
+          {[
+            { icon: "🚛", title: `Next-Day Delivery to ${location.name}`, desc: `Book before 12pm for next-day delivery to ${location.name} and surrounding ${location.region} areas.` },
+            { icon: "💰", title: `From ${item.price}`, desc: "All-inclusive pricing with no hidden fees, no damage waivers, and no surprises." },
+            { icon: "🔧", title: "Late-Model Fleet", desc: `Late-model ${item.shortName} machines, regularly serviced and maintained to the highest standards.` },
+            { icon: "📞", title: "7-Day Support", desc: "Our team is available 7 days a week to help with bookings, site questions, and on-site support." }
+          ].map(card => (
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <div class="text-3xl mb-3">{card.icon}</div>
+              <h3 class="font-bold text-[var(--color-text)] mb-2">{card.title}</h3>
+              <p class="text-sm text-[var(--color-text-muted)]">{card.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-white py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-4">
+          {industry.faqs.map(faq => (
+            <details class="bg-[var(--color-bg)] rounded-xl p-6 shadow-sm group">
+              <summary class="font-semibold text-[var(--color-text)] cursor-pointer list-none flex justify-between items-center">
+                {faq.q}
+                <span class="text-[var(--color-primary)] ml-4 text-xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="mt-4 text-[var(--color-text-muted)] text-sm leading-relaxed">{faq.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">
+          Ready to Hire a {item.shortName} in {location.name}?
+        </h2>
+        <p class="text-white/80 mb-8 text-lg">
+          Book online in 60 seconds or call us for an instant quote. Next-day delivery to {location.name} available.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>
