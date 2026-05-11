@@ -1,0 +1,235 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+import { equipment } from '../../data/equipment';
+import { locations } from '../../data/locations';
+import { useCases } from '../../data/use-cases';
+
+export async function getStaticPaths() {
+  const categories = [
+  {
+    slug: "excavators",
+    name: "Excavators",
+    headline: "Excavator Hire Sydney & NSW",
+    description: "Dry hire excavators from 0.8T to 5.5T. Next-day delivery across Sydney and NSW. Transparent pricing, no hidden fees.",
+    longDescription: "BuildHire's excavator fleet covers every residential and commercial application — from tight access mini excavators for pool excavation and landscaping, to heavy-duty machines for civil construction and deep trenching. All machines are late-model Yanmar and Kubota equipment, regularly serviced and delivered next day.",
+    equipmentFilter: "Excavators"
+  },
+  {
+    slug: "mini-excavators",
+    name: "Mini Excavators",
+    headline: "Mini Excavator Hire Sydney & NSW",
+    description: "Compact mini excavator hire from 0.8T to 1.7T. Perfect for tight access residential work. Next-day delivery across Sydney.",
+    longDescription: "Mini excavators are the go-to machine for residential earthworks, pool excavation, landscaping, and tight access jobs. BuildHire's mini excavator fleet includes 0.8T, 1T, and 1.7T Yanmar and Kubota machines — all rubber-tracked, low ground pressure, and capable of fitting through standard residential gates.",
+    equipmentFilter: "Excavators",
+    sizeFilter: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator"]
+  },
+  {
+    slug: "tipper-trucks",
+    name: "Tipper Trucks",
+    headline: "Tipper Truck Hire Sydney & NSW",
+    description: "Isuzu NQR450 tipper truck hire from $280/day. 4,500kg payload, 6m³ body. Pick up from our Sydney depot.",
+    longDescription: "BuildHire's Isuzu NQR450 tipper truck is the ideal companion to any excavation or landscaping job. With a 4,500kg payload and 6m³ body volume, it efficiently removes spoil, delivers aggregate, and transports materials to and from site. Available for pick-up from our Sydney depot — MR licence required.",
+    equipmentFilter: "Trucks"
+  },
+  {
+    slug: "mini-dumpers",
+    name: "Mini Dumpers",
+    headline: "Mini Dumper Hire Sydney & NSW",
+    description: "Tracked 700kg mini dumper hire from $200/day. High-tip capability. Perfect for tight access material moving.",
+    longDescription: "The Cormidi C7X tracked mini dumper is the most efficient way to move soil, aggregate, and materials across a site without manual wheelbarrowing. Its high-tip capability allows it to tip directly into skip bins and trailers. Rubber tracks handle slopes, lawns, and uneven terrain without damage.",
+    equipmentFilter: "Dumpers"
+  }
+];
+  return categories.map(cat => ({
+    params: { categorySlug: cat.slug },
+    props: { cat }
+  }));
+}
+
+const { cat } = Astro.props;
+
+const categoryEquipment = cat.sizeFilter
+  ? equipment.filter(e => cat.sizeFilter!.includes(e.slug))
+  : equipment.filter(e => e.category === cat.equipmentFilter);
+
+const title = `${cat.headline} | From $200/day — BuildHire`;
+const description = cat.description;
+const canonicalPath = `/category/${cat.slug}/`;
+
+// Top locations for this category
+const topLocations = locations.slice(0, 9);
+
+// Relevant use cases
+const relevantUseCases = useCases.filter(uc =>
+  categoryEquipment.some(e => uc.equipmentRecommendations.includes(e.slug))
+).slice(0, 6);
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Equipment Hire", "item": "https://www.buildhire.com.au/equipment" },
+    { "@type": "ListItem", "position": 3, "name": cat.name, "item": `https://www.buildhire.com.au${canonicalPath}` }
+  ]
+};
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": cat.headline,
+  "itemListElement": categoryEquipment.map((item, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": item.name,
+    "url": `https://www.buildhire.com.au/hire/${item.slug}/sydney/`
+  }))
+};
+---
+<Layout title={title} description={description} canonicalPath={canonicalPath}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  <div class="min-h-screen bg-[var(--color-bg)]">
+    <Header client:load />
+
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b border-gray-100 py-3">
+      <div class="max-w-5xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)]">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">›</span>
+          <a href="/equipment" class="hover:text-[var(--color-primary)]">Equipment Hire</a>
+          <span class="mx-2">›</span>
+          <span class="text-[var(--color-text)]">{cat.name}</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="bg-[var(--color-text)] py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          {cat.headline}
+        </h1>
+        <p class="text-white/70 text-xl mb-8 max-w-2xl">
+          {cat.longDescription}
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg text-center">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-text)] transition text-lg text-center">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipment in this category -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10">
+          Available {cat.name} for Hire
+        </h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {categoryEquipment.map(item => (
+            <a href={`/hire/${item.slug}/sydney/`} class="bg-[var(--color-bg)] rounded-xl p-6 hover:shadow-md transition group">
+              <div class="text-sm text-[var(--color-text-muted)] mb-1">{item.category}</div>
+              <h3 class="font-bold text-[var(--color-text)] mb-2 group-hover:text-[var(--color-primary)] transition">{item.shortName}</h3>
+              <div class="text-[var(--color-primary)] font-semibold mb-3">{item.price}</div>
+              <p class="text-sm text-[var(--color-text-muted)] mb-4 line-clamp-2">{item.description}</p>
+              <span class="text-xs text-[var(--color-primary)] font-semibold">View Hire Details →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases -->
+    {relevantUseCases.length > 0 && (
+      <section class="bg-[var(--color-bg)] py-16">
+        <div class="max-w-5xl mx-auto px-6">
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mb-8">
+            Common Uses for {cat.name}
+          </h2>
+          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {relevantUseCases.map(uc => (
+              <a href={`/hire/${categoryEquipment[0]?.slug}/use-case/${uc.slug}/`} class="bg-white rounded-xl px-5 py-4 hover:shadow-md transition group flex justify-between items-center">
+                <span class="font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] transition">{uc.name}</span>
+                <span class="text-[var(--color-primary)] ml-2">→</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- Location Grid -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mb-8">
+          {cat.name} Hire by Location
+        </h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {topLocations.map(loc => (
+            <a href={`/hire/${categoryEquipment[0]?.slug}/${loc.slug}/`} class="bg-[var(--color-bg)] rounded-xl px-5 py-4 hover:shadow-md transition group flex justify-between items-center">
+              <span class="font-medium text-[var(--color-text)] group-hover:text-[var(--color-primary)] transition">{cat.name} Hire {loc.name}</span>
+              <span class="text-[var(--color-primary)] ml-2">→</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Why BuildHire -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mb-10 text-center">
+          Why Choose BuildHire for {cat.name}?
+        </h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {[
+            { icon: "🚛", title: "Next-Day Delivery", desc: "Book before 12pm for next-day delivery across Greater Sydney and NSW." },
+            { icon: "💰", title: "Transparent Pricing", desc: "All prices include GST. No hidden fees, no damage waivers forced on you." },
+            { icon: "🔧", title: "Late-Model Fleet", desc: "Low-hour Yanmar and Kubota machines serviced to the highest standards." },
+            { icon: "📞", title: "7-Day Support", desc: "Our team is available 7 days a week to help with bookings and on-site support." }
+          ].map(card => (
+            <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div class="text-4xl mb-3">{card.icon}</div>
+              <h3 class="font-bold text-[var(--color-text)] mb-2">{card.title}</h3>
+              <p class="text-sm text-[var(--color-text-muted)]">{card.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">
+          Ready to Hire {cat.name} in Sydney?
+        </h2>
+        <p class="text-white/80 mb-8 text-lg">
+          Book online in 60 seconds or call us for an instant quote.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
+            Book Online Now →
+          </a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>
