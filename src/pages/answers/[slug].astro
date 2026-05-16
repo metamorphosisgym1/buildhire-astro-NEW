@@ -1,0 +1,172 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+import { aeoAnswers } from '../../data/aeo-answers';
+
+export async function getStaticPaths() {
+  return aeoAnswers.map(answer => ({
+    params: { slug: answer.slug },
+    props: { answer }
+  }));
+}
+
+const { answer } = Astro.props;
+
+const title = `${answer.question} — BuildHire Answer`;
+const description = answer.shortAnswer;
+const canonicalPath = `/answers/${answer.slug}/`;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": answer.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": answer.fullAnswer
+      }
+    },
+    ...answer.relatedQuestions.map(rq => ({
+      "@type": "Question",
+      "name": rq.q,
+      "acceptedAnswer": { "@type": "Answer", "text": rq.a }
+    }))
+  ]
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": answer.question,
+  "description": answer.shortAnswer,
+  "author": {
+    "@type": "Organization",
+    "name": "BuildHire",
+    "url": "https://buildhire.com.au"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BuildHire",
+    "url": "https://buildhire.com.au",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://buildhire.com.au/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://www.buildhire.com.au${canonicalPath}`
+  }
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": title,
+  "description": description,
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", ".speakable-short-answer", ".speakable-full-answer"]
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Answers", "item": "https://www.buildhire.com.au/answers/" },
+    { "@type": "ListItem", "position": 3, "name": answer.question, "item": `https://www.buildhire.com.au${canonicalPath}` }
+  ]
+};
+---
+<Layout title={title} description={description} canonicalPath={canonicalPath}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(speakableSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <!-- Hero -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-12">
+      <div class="max-w-3xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6 flex items-center gap-2 flex-wrap">
+          <a href="/" class="hover:text-[var(--color-primary)] transition-colors">Home</a>
+          <span>/</span>
+          <a href="/answers/" class="hover:text-[var(--color-primary)] transition-colors">Answers</a>
+          <span>/</span>
+          <span class="text-[var(--color-text)] truncate max-w-xs">{answer.question}</span>
+        </nav>
+
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-medium mb-6">
+          BuildHire Expert Answer
+        </div>
+
+        <h1 class="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-6 leading-tight">
+          {answer.question}
+        </h1>
+
+        <!-- Short Answer Box -->
+        <div class="p-6 bg-[var(--color-primary)]/5 border border-[var(--color-primary)]/20 rounded-xl mb-8">
+          <p class="text-sm font-semibold text-[var(--color-primary)] mb-2 uppercase tracking-wide">Quick Answer</p>
+          <p class="text-[var(--color-text)] font-medium leading-relaxed speakable-short-answer">{answer.shortAnswer}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Answer -->
+    <section class="bg-[var(--color-bg)] pb-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-xl font-bold text-[var(--color-text)] mb-4">Full Answer</h2>
+        <div class="prose prose-lg max-w-none text-[var(--color-text-muted)] leading-relaxed speakable-full-answer">
+          <p>{answer.fullAnswer}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Questions -->
+    {answer.relatedQuestions.length > 0 && (
+      <section class="bg-[var(--color-surface)] py-16">
+        <div class="max-w-3xl mx-auto px-6">
+          <h2 class="text-xl font-bold text-[var(--color-text)] mb-6">Related Questions</h2>
+          <div class="space-y-4">
+            {answer.relatedQuestions.map(rq => (
+              <div class="p-5 bg-[var(--color-bg)] rounded-xl border border-[var(--color-border)]">
+                <h3 class="font-semibold text-[var(--color-text)] mb-2">{rq.q}</h3>
+                <p class="text-[var(--color-text-muted)] text-sm leading-relaxed">{rq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="p-8 bg-[var(--color-surface)] rounded-2xl border border-[var(--color-border)] text-center">
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mb-3">Need Equipment for Your Project?</h2>
+          <p class="text-[var(--color-text-muted)] mb-6">Book a mini excavator, tipper truck, or mini dumper online in 2 minutes. Next-day delivery across NSW.</p>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a href="https://www.buildhire.com.au/#booking" class="inline-flex items-center gap-2 px-6 py-3 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
+              Book Online Now
+            </a>
+            <a href="tel:1300157882" class="inline-flex items-center gap-2 px-6 py-3 border border-[var(--color-border)] text-[var(--color-text)] font-semibold rounded-lg hover:border-[var(--color-primary)] transition-colors">
+              Call 1300 157 882
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </div>
+  <ChatWidget client:load />
+  <StickyBottomBar client:load />
+</Layout>
