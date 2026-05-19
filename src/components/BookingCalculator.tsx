@@ -68,6 +68,7 @@ const machineImages: Record<string, string> = {
   "5.5T Excavator (ViO55 Yanmar)": vio55Img,
   "8T Excavator (ViO80 Yanmar)": vio80Img,
   "14.5T Sumitomo Excavator": vio80Img,
+  "23T Excavator (Sumitomo SH235X-6)": vio80Img,
   "Isuzu NQR450 Tipper": isuzuTipperImg,
   "Box Trailer": boxTrailerImg,
   "Cormidi C7x 700kg Petrol High Tip": cormidiC7xImg,
@@ -95,6 +96,7 @@ const equipmentData: Record<string, { name: string; rate: number; comingSoon?: b
     { name: "5.5T Excavator (ViO55 Yanmar)", rate: 345 },
     { name: "8T Excavator (ViO80 Yanmar)", rate: 420, comingSoon: true },
     { name: "14.5T Sumitomo Excavator", rate: 470 },
+    { name: "23T Excavator (Sumitomo SH235X-6)", rate: 490 },
   ],
   "Mini Dumpers": [
     { name: "Cormidi C7x 700kg Petrol High Tip", rate: 200 },
@@ -189,7 +191,8 @@ export default function BookingCalculator() {
     if (
       machineName.includes("5.5T") ||
       machineName.includes("8T") ||
-      machineName.includes("14.5T")
+      machineName.includes("14.5T") ||
+      machineName.includes("23T")
     ) return 0;
     // Tipper
     if (machineName.includes("Tipper")) return 150;
@@ -210,7 +213,7 @@ export default function BookingCalculator() {
   };
 
   const deliveryCost = getDeliveryCost(machine);
-  const isThirdPartyDelivery = machine.includes("5.5T") || machine.includes("8T") || machine.includes("14.5T");
+  const isThirdPartyDelivery = machine.includes("5.5T") || machine.includes("8T") || machine.includes("14.5T") || machine.includes("23T");
   const totalCost = equipmentCost + attachmentCost * days + deliveryCost;
 
   const toggleAttachment = (a: string) =>
