@@ -10,9 +10,25 @@ export default defineConfig({
     react(),
     tailwind({ applyBaseStyles: false }),
     sitemap({
-      filter: (page) =>
-        !page.includes('/payment-success') &&
-        !page.includes('/payment-cancelled'),
+      filter: (page) => {
+        // Exclude payment pages
+        if (page.includes('/payment-success') || page.includes('/payment-cancelled')) return false;
+        // Exclude FAQ sub-pages (noindexed — near-duplicate content across 83 locations)
+        // Pattern: /hire/[equipment]/[location]/[faq-slug]/ where faq-slug looks like a question
+        if (page.match(/\/hire\/[^\/]+\/[^\/]+\/[^\/]+\/$/) &&
+            (page.includes('how-') || page.includes('what-') || page.includes('do-') ||
+             page.includes('can-') || page.includes('is-') || page.includes('are-') ||
+             page.includes('why-') || page.includes('when-') || page.includes('does-') ||
+             page.includes('will-') || page.includes('which-') || page.includes('cost') ||
+             page.includes('price') || page.includes('need-') || page.includes('much-'))) {
+          return false;
+        }
+        // Exclude use-case hub pages without location (noindexed — location-specific pages are canonical)
+        if (page.includes('/use-case/') && page.match(/\/hire\/[^\/]+\/use-case\/[^\/]+\/$/) ) {
+          return false;
+        }
+        return true;
+      },
       serialize(item) {
         // Homepage
         if (item.url === 'https://buildhire.com.au/') {
@@ -42,14 +58,9 @@ export default defineConfig({
           item.priority = 0.9;
           item.changefreq = 'weekly';
         } 
-        // Use-case sub-pages
-        else if (item.url.match(/\/hire\/[^\/]+\/[^\/]+\/[^\/]+\/$/) && !item.url.includes('how') && !item.url.includes('what') && !item.url.includes('do-') && !item.url.includes('can-')) {
+        // Industry sub-pages (/hire/[equipment]/[location]/[industry])
+        else if (item.url.match(/\/hire\/[^\/]+\/[^\/]+\/[^\/]+\/$/) ) {
           item.priority = 0.8;
-          item.changefreq = 'monthly';
-        }
-        // FAQ sub-pages
-        else if (item.url.match(/\/hire\/[^\/]+\/[^\/]+\/[^\/]+\/$/)) {
-          item.priority = 0.7;
           item.changefreq = 'monthly';
         }
         // Top-level competitor pages (/compare/[competitor])

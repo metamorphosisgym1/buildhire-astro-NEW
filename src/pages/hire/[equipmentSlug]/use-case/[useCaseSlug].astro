@@ -73,7 +73,8 @@ const faqSchema = {
   }))
 };
 ---
-<Layout title={title} description={description} canonicalPath={canonicalPath}>
+{/* noindex: location-specific use-case pages are the canonical source; this page is a hub without a location context */}
+<Layout title={title} description={description} canonicalPath={`/hire/${item.slug}/`} noindex={true}>
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
