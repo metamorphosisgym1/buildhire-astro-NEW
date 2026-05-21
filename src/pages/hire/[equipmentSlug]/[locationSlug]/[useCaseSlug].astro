@@ -53,7 +53,7 @@ const serviceSchema = {
   'hasOfferCatalog': {
     '@type': 'OfferCatalog',
     'name': 'Equipment Hire Services',
-    'itemListElement': [{ '@type': 'Offer', 'itemOffered': { '@type': 'Product', 'name': item.name + ' Hire', 'description': item.description } }]
+    'itemListElement': [{ '@type': 'Offer', 'itemOffered': { '@type': 'Product', 'name': item.name + ' Hire', 'description': item.description, 'offers': { '@type': 'Offer', 'priceCurrency': 'AUD', 'price': item.price.replace(/[^0-9.]/g, ''), 'priceSpecification': { '@type': 'UnitPriceSpecification', 'price': item.price.replace(/[^0-9.]/g, ''), 'priceCurrency': 'AUD', 'unitText': 'DAY' }, 'availability': 'https://schema.org/InStock', 'seller': { '@type': 'LocalBusiness', 'name': 'BuildHire', 'url': 'https://www.buildhire.com.au' } } } }]
   }
 };
 const howToSchema = {
