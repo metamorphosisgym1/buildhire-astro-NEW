@@ -1,0 +1,184 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Sumitomo SH235X-6 Hire Sydney",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "BuildHire",
+    "url": "https://buildhire.com.au",
+    "telephone": "+611300157882",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "addressCountry": "AU"
+    }
+  },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "23T Sumitomo SH235X-6 excavator dry hire in Sydney from $490/day inc GST. 25,100 kg operating weight, 6,120mm dig depth, 117.3kW engine. For major civil and commercial projects.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AUD",
+    "price": "490",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "490",
+      "priceCurrency": "AUD",
+      "unitText": "DAY"
+    }
+  }
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {
+    "@type": "Question",
+    "name": "How much does it cost to hire a 23T excavator in Sydney?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "BuildHire's 23T Sumitomo SH235X-6 is $490/day (incl GST). Delivery is via third-party transport \u2014 call 1300 157 882 for a delivery quote to your location. Weekly and monthly rates are available for ongoing projects."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "What are the specifications of the Sumitomo SH235X-6?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Sumitomo SH235X-6 has an operating weight of 25,100 kg, a maximum dig depth of 6,120mm, a bucket capacity of 0.80m\u00b3, and an Isuzu 117.3kW engine. Maximum ground-level reach is 9,790mm. Full specification sheet available \u2014 call 1300 157 882 or download the spec sheet from the Tutt Bryant website."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Do I need a licence to operate a 23T excavator in NSW?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On a registered worksite, a High Risk Work Licence (HRWL) for earthmoving equipment is required to operate a 23T excavator. On private property, no licence is required. Always check with your site supervisor and SafeWork NSW requirements."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "How is a 23T excavator delivered in Sydney?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The 23T Sumitomo SH235X-6 is delivered via third-party heavy transport. Pricing depends on your location \u2014 call 1300 157 882 for a delivery quote. We arrange all transport logistics and can advise on access and road permit requirements."
+    }
+  }
+]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Equipment", "item": "https://buildhire.com.au/equipment" },
+    { "@type": "ListItem", "position": 3, "name": "Sumitomo SH235X-6", "item": "https://buildhire.com.au/equipment/23t-excavator-hire-sydney" }
+  ]
+};
+---
+<Layout
+  title="23T Excavator Hire Sydney | Sumitomo SH235X-6 — $490/day — BuildHire"
+  description="23T Sumitomo SH235X-6 excavator dry hire in Sydney from $490/day inc GST. 25,100 kg operating weight, 6,120mm dig depth, 117.3kW engine. For major civil and commercial projects."
+  canonicalPath="/equipment/23t-excavator-hire-sydney"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/equipment/" class="hover:text-[var(--color-primary)]">Equipment</a>
+          <span class="mx-2">/</span>
+          <span class="text-[var(--color-text)]">Sumitomo SH235X-6</span>
+        </nav>
+        <div class="text-center mb-10">
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">23T Excavator Hire Sydney — Sumitomo SH235X-6</h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">Our largest and most powerful machine. The Sumitomo SH235X-6 delivers 117.3kW, a 6,120mm dig depth, and 0.80m³ bucket capacity for major civil and commercial projects. <strong>$490/day inc GST</strong>.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book This Machine →</a>
+            <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">Call 1300 157 882</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6">Specifications</h2>
+            <table class="w-full text-sm">
+              <tbody>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Operating Weight</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">25,100 kg</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Max Dig Depth</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">6,120 mm</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Bucket Capacity</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">0.80 m³</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Engine Power</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">117.3 kW (Isuzu AA-4JJ1XKSA-01)</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Max Reach at Ground</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">9,790 mm</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Max Loading Height</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">6,660 mm</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Swing Speed</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">11.0 rpm</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Travel Speed</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">5.5 km/h</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Delivery</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">Third-party transport — pricing on enquiry</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6">What It's Used For</h2>
+            <div class="space-y-4">
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Major Civil Earthworks</h3><p class="text-sm text-[var(--color-text-muted)]">The 23T is BuildHire's most powerful machine — suited to major civil earthworks, large-scale site preparation, and heavy infrastructure projects across Sydney and NSW.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Large Commercial Development</h3><p class="text-sm text-[var(--color-text-muted)]">Bulk earthworks for large commercial and mixed-use developments where the 14.5T lacks the scale or speed required.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Road Construction & Preparation</h3><p class="text-sm text-[var(--color-text-muted)]">Road construction, major drainage infrastructure, and civil earthworks at the largest scale. The 23T's 117.3kW engine and 0.80m³ bucket delivers maximum productivity.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Deep Excavation</h3><p class="text-sm text-[var(--color-text-muted)]">With a 6,120mm dig depth and 9,790mm ground-level reach, the SH235X-6 handles the deepest commercial basement and civil excavation requirements.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Quarry & Extraction Operations</h3><p class="text-sm text-[var(--color-text-muted)]">Material extraction, loading, and handling for quarry and extraction operations in NSW.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Large Retaining & Shoring Systems</h3><p class="text-sm text-[var(--color-text-muted)]">Excavate for major retaining wall, sheet piling, and shoring systems on large development and infrastructure sites.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">How much does it cost to hire a 23T excavator in Sydney?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">BuildHire's 23T Sumitomo SH235X-6 is $490/day (incl GST). Delivery is via third-party transport — call 1300 157 882 for a delivery quote to your location. Weekly and monthly rates are available for ongoing projects.</p></div>
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">What are the specifications of the Sumitomo SH235X-6?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">The Sumitomo SH235X-6 has an operating weight of 25,100 kg, a maximum dig depth of 6,120mm, a bucket capacity of 0.80m³, and an Isuzu 117.3kW engine. Maximum ground-level reach is 9,790mm. Full specification sheet available — call 1300 157 882 or download the spec sheet from the Tutt Bryant website.</p></div>
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">Do I need a licence to operate a 23T excavator in NSW?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">On a registered worksite, a High Risk Work Licence (HRWL) for earthmoving equipment is required to operate a 23T excavator. On private property, no licence is required. Always check with your site supervisor and SafeWork NSW requirements.</p></div>
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">How is a 23T excavator delivered in Sydney?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">The 23T Sumitomo SH235X-6 is delivered via third-party heavy transport. Pricing depends on your location — call 1300 157 882 for a delivery quote. We arrange all transport logistics and can advise on access and road permit requirements.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6 text-center">Other Machines Available</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
+          <a href="/equipment/08t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">0.8T Mini<br/><span class="font-bold">$200/day</span></a>
+          <a href="/equipment/1t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">1T Mini<br/><span class="font-bold">$225/day</span></a>
+          <a href="/equipment/17t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">1.7T Mini<br/><span class="font-bold">$270/day</span></a>
+          <a href="/equipment/35t-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">3.5T<br/><span class="font-bold">$325/day</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-primary)] py-14">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book the Sumitomo SH235X-6?</h2>
+        <p class="text-white/80 mb-8 text-lg">Get instant pricing and availability. Next-day delivery across Sydney.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book Now →</a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">Call 1300 157 882</a>
+        </div>
+      </div>
+    </section>
+    <Footer client:load />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

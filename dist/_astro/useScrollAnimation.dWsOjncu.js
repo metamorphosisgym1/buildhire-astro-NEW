@@ -1,1 +1,0 @@
-import{r as t}from"./index.D4fpSGDK.js";function f(n=.05){const s=t.useRef(null),[o,i]=t.useState(!1);return t.useEffect(()=>{const e=s.current;if(!e)return;const r=new IntersectionObserver(([c])=>{c.isIntersecting&&(i(!0),r.unobserve(e))},{threshold:0,rootMargin:"0px 0px 100px 0px"});return r.observe(e),()=>r.disconnect()},[n]),{ref:s,visible:o}}export{f as u};

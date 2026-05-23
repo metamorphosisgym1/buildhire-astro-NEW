@@ -1,9 +1,34 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 
-const navLinks = [
-  { label: "Our Equipment", href: "#equipment" },
+const equipmentLinks = [
+  { label: "0.8T Mini Excavator", href: "/equipment/08t-mini-excavator-hire-sydney/", price: "$200/day" },
+  { label: "1T Mini Excavator", href: "/equipment/1t-mini-excavator-hire-sydney/", price: "$225/day" },
+  { label: "1.7T Mini Excavator", href: "/equipment/17t-mini-excavator-hire-sydney/", price: "$270/day" },
+  { label: "3.5T Excavator", href: "/equipment/35t-excavator-hire-sydney/", price: "$325/day" },
+  { label: "5.5T Excavator", href: "/equipment/55t-excavator-hire-sydney/", price: "$380/day" },
+  { label: "8T Excavator", href: "/equipment/8t-excavator-hire-sydney/", price: "$420/day" },
+  { label: "14.5T Excavator", href: "/equipment/145t-excavator-hire-sydney/", price: "$450/day" },
+  { label: "23T Sumitomo SH235X-6", href: "/equipment/23t-excavator-hire-sydney/", price: "$490/day" },
+  { label: "Tipper Truck", href: "/equipment/tipper-truck-hire-sydney/", price: "From $350/day" },
+];
+
+const industriesLinks = [
+  { label: "Pool Builders", href: "/industries/pool-builders/" },
+  { label: "Landscapers", href: "/industries/landscapers/" },
+  { label: "Builders & Concreters", href: "/industries/builders/" },
+  { label: "Plumbers & Drainage", href: "/industries/plumbers/" },
+  { label: "Civil Contractors", href: "/industries/civil-contractors/" },
+  { label: "Demolition Contractors", href: "/industries/demolition-contractors/" },
+  { label: "Property Developers", href: "/industries/property-developers/" },
+  { label: "Drainage Contractors", href: "/industries/drainage-contractors/" },
+];
+
+const mobileLinks = [
+  { label: "Equipment", href: "/equipment/" },
+  { label: "Industries", href: "/industries/" },
   { label: "Service Areas", href: "#features" },
+  { label: "Blog", href: "/blog/" },
   { label: "About Us", href: "#contact" },
 ];
 
@@ -49,18 +74,66 @@ export default function Header() {
             BuildHire
           </a>
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className={`font-medium text-sm transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:rounded-full after:bg-primary after:opacity-0 hover:after:opacity-100 after:transition-opacity ${
-                  scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
-                }`}
-              >
-                {link.label}
-              </a>
-            ))}
+          <nav className="hidden md:flex items-center gap-6" aria-label="Main navigation">
+            {/* Equipment dropdown */}
+            <div className="relative group">
+              <button className={`flex items-center gap-1 font-medium text-sm transition-colors ${
+                scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
+              }`}>
+                Equipment <ChevronDown size={13} className="group-hover:rotate-180 transition-transform duration-200" />
+              </button>
+              <div className="absolute top-full left-0 mt-3 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="p-2">
+                  {equipmentLinks.map((item) => (
+                    <a key={item.href} href={item.href} className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-gray-50 text-sm text-gray-700 hover:text-primary transition-colors">
+                      <span>{item.label}</span>
+                      <span className="text-xs text-gray-400 font-medium">{item.price}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+            {/* Industries dropdown */}
+            <div className="relative group">
+              <button className={`flex items-center gap-1 font-medium text-sm transition-colors ${
+                scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
+              }`}>
+                Industries <ChevronDown size={13} className="group-hover:rotate-180 transition-transform duration-200" />
+              </button>
+              <div className="absolute top-full left-0 mt-3 w-52 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="p-2">
+                  {industriesLinks.map((item) => (
+                    <a key={item.href} href={item.href} className="block px-3 py-2 rounded-lg hover:bg-gray-50 text-sm text-gray-700 hover:text-primary transition-colors">
+                      {item.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <a
+              href="#features"
+              className={`font-medium text-sm transition-colors ${
+                scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
+              }`}
+            >
+              Service Areas
+            </a>
+            <a
+              href="/blog/"
+              className={`font-medium text-sm transition-colors ${
+                scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
+              }`}
+            >
+              Blog
+            </a>
+            <a
+              href="#contact"
+              className={`font-medium text-sm transition-colors ${
+                scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
+              }`}
+            >
+              About
+            </a>
             <a
               href="#booking"
               className="bg-primary text-primary-foreground px-6 py-2.5 rounded-md font-semibold text-sm hover:scale-105 transition-transform"
@@ -89,7 +162,7 @@ export default function Header() {
       </header>
       {/* Mobile overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-[55] bg-background flex flex-col items-center justify-center gap-8 animate-scale-in">
+        <div className="fixed inset-0 z-[55] bg-background flex flex-col items-center justify-center gap-6 animate-scale-in">
           <button
             className="absolute top-5 right-6 text-foreground"
             onClick={() => setMobileOpen(false)}
@@ -97,7 +170,7 @@ export default function Header() {
           >
             <X size={28} />
           </button>
-          {navLinks.map((link) => (
+          {mobileLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}

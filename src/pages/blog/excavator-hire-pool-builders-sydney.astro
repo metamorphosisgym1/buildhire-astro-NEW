@@ -1,0 +1,169 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Excavator Hire for Pool Builders in Sydney — What You Need to Know",
+  "description": "Pool builders in Sydney: the right excavator size, access requirements, soil types, and pricing for pool excavation across Western Sydney, Hills District, and the Northern Beaches.",
+  "author": { "@type": "Organization", "name": "BuildHire" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BuildHire",
+    "logo": { "@type": "ImageObject", "url": "https://buildhire.com.au/og-image.png" }
+  },
+  "datePublished": "2026-05-10",
+  "dateModified": "2026-05-23",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/excavator-hire-pool-builders-sydney" }
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What size excavator do I need for pool excavation in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 5.5T excavator is the standard choice for residential pool excavation in Sydney. It provides a 3,800mm dig depth, 0.21m³ bucket capacity, and 36.8kW engine — enough to complete a standard 8m × 4m pool excavation in a single day on most Sydney sites."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does excavator hire for pool excavation cost in Sydney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BuildHire's 5.5T excavator is $380/day (incl GST). Delivery & collection is $150 within Sydney metro. Most standard residential pools are excavated in 1–2 days, making the total machine hire cost $380–$760 plus delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a mini excavator excavate a pool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 3.5T can excavate a pool but will take longer than a 5.5T due to its smaller bucket (0.17m³ vs 0.21m³) and lower engine power. For tight access sites where a 5.5T cannot fit, a 3.5T is the practical choice. For standard access, the 5.5T is more efficient and cost-effective overall."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What soil types are common in Sydney pool excavation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sydney's soil varies significantly by suburb. Western Sydney (Blacktown, Penrith) typically has clay-heavy soil that is harder to excavate and may require a larger machine. The Northern Beaches and Eastern Suburbs often have sandstone — which requires rock-breaking equipment. The Hills District has a mix of clay and shale. Always confirm soil conditions before booking your machine."
+      }
+    }
+  ]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://buildhire.com.au/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Excavator Hire for Pool Builders Sydney", "item": "https://buildhire.com.au/blog/excavator-hire-pool-builders-sydney" }
+  ]
+};
+---
+<Layout
+  title="Excavator Hire for Pool Builders in Sydney — BuildHire"
+  description="Pool builders in Sydney: the right excavator size, access requirements, soil types, and pricing for pool excavation across Western Sydney, Hills District, and the Northern Beaches."
+  canonicalPath="/blog/excavator-hire-pool-builders-sydney"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <section class="bg-[var(--color-bg)] pt-28 pb-10">
+      <div class="max-w-3xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/blog/" class="hover:text-[var(--color-primary)]">Blog</a>
+          <span class="mx-2">/</span>
+          <span class="text-[var(--color-text)]">Excavator Hire for Pool Builders</span>
+        </nav>
+        <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">Excavator Hire for Pool Builders in Sydney</h1>
+        <p class="text-xl text-[var(--color-text-muted)] mb-6">The right machine, access requirements, soil considerations, and pricing — everything Sydney pool builders need to know before booking.</p>
+        <p class="text-sm text-[var(--color-text-muted)]">By BuildHire · Updated May 2026 · 5 min read</p>
+      </div>
+    </section>
+    <article class="max-w-3xl mx-auto px-6 py-10 prose prose-lg">
+      <p>Pool excavation is one of the most common jobs BuildHire's machines are booked for across Sydney. Done right, a standard residential pool excavation takes one to two days with the right machine. Done wrong — wrong machine, wrong access plan, wrong soil assessment — it can take twice as long and cost significantly more. This guide is written specifically for pool builders and owner-builders managing their own excavation in Sydney.</p>
+
+      <h2>The Right Machine for Pool Excavation</h2>
+      <p>The 5.5T excavator is the standard choice for residential pool excavation in Sydney. A standard 8m × 4m pool at 1,800mm depth requires approximately 57m³ of excavation. The 5.5T's 0.21m³ bucket completes this in roughly 270 passes — achievable in a single day on most sites. The 3,800mm dig depth also provides adequate clearance for deeper pools and allows for the over-excavation needed for formwork and pool shell installation.</p>
+      <p>The 3.5T is the alternative for tight access sites — where the gate width is under 1,200mm or the site has limited turning radius. It will take longer (typically 1.5–2 days for a standard pool) but gets the job done where the 5.5T cannot physically fit.</p>
+
+      <h2>Access Requirements: What to Check Before Booking</h2>
+      <p>Before confirming your machine booking, check three things:</p>
+      <p><strong>Gate width:</strong> The 5.5T requires a minimum gate width of approximately 1,400mm. The 3.5T requires 1,200mm. The 1.7T mini can fit through a 900mm gate. Measure your narrowest access point — not just the gate, but any path, pergola, or overhead obstruction between the street and the pool site.</p>
+      <p><strong>Ground conditions:</strong> Soft or wet ground can cause a 5.5T to sink or damage lawns and paving. If the access path is soft, consider laying timber mats or booking a smaller machine. Call BuildHire on 1300 157 882 to discuss — we can advise on ground protection options.</p>
+      <p><strong>Overhead clearance:</strong> Check for overhead power lines, pergolas, and eaves along the access path. The 5.5T has a maximum height of approximately 2,700mm in transport position.</p>
+
+      <h2>Sydney Soil Types and Their Impact on Excavation</h2>
+      <p>Sydney's geology varies significantly by suburb, and soil type directly affects excavation time and machine selection.</p>
+      <p><strong>Western Sydney (Blacktown, Penrith, Campbelltown):</strong> Heavy clay soils that are dense when dry and sticky when wet. Clay is harder to excavate than sandy soil and takes longer to load. A 5.5T is strongly recommended over a 3.5T for clay-heavy sites.</p>
+      <p><strong>Northern Beaches and Eastern Suburbs:</strong> Sandstone is common at depth across the Northern Beaches, Manly, and parts of the Eastern Suburbs. Sandstone requires rock-breaking equipment — a hydraulic rock breaker attachment — which BuildHire can discuss on enquiry. Do not assume a standard bucket will handle sandstone.</p>
+      <p><strong>Hills District (Castle Hill, Baulkham Hills, Kellyville):</strong> A mix of clay and shale. Shale is softer than sandstone but harder than clay — most 5.5T machines handle it without rock-breaking equipment, but excavation will be slower than in sandy or loam soils.</p>
+      <p><strong>Inner West and South Sydney:</strong> Generally sandy loam with some clay — the most straightforward excavation conditions in Sydney. A 5.5T will complete a standard pool in a single day on most Inner West sites.</p>
+
+      <h2>Pricing for Pool Builders</h2>
+      <p>BuildHire's pool excavation pricing is straightforward:</p>
+      <div class="not-prose overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-gray-200">
+          <thead class="bg-[var(--color-primary)] text-white">
+            <tr>
+              <th class="p-3 text-left">Machine</th>
+              <th class="p-3 text-left">Daily Rate (incl GST)</th>
+              <th class="p-3 text-left">Best For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100"><td class="p-3 font-semibold">5.5T Excavator</td><td class="p-3">$380/day</td><td class="p-3">Standard residential pools — most Sydney sites</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="p-3 font-semibold">3.5T Excavator</td><td class="p-3">$325/day</td><td class="p-3">Tight access sites — gate width under 1,400mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Delivery & collection within Sydney metro is $150. For sites outside metro, third-party transport pricing applies — call 1300 157 882 for a quote. Weekly rates are available for pool builders with multiple jobs running concurrently.</p>
+
+      <h2>Booking Tips for Pool Builders</h2>
+      <p>Book 48 hours in advance to guarantee availability. BuildHire delivers next-day across Sydney metro for bookings confirmed by 3pm the previous day. For pool builders managing multiple sites, call to discuss a weekly booking arrangement — we can hold machines for regular customers.</p>
+      <p>Always confirm soil conditions and access width before booking. If you're unsure, call 1300 157 882 and we'll help you select the right machine. Getting the machine selection right the first time saves a day of hire and a delivery charge.</p>
+
+      <div class="not-prose bg-[var(--color-primary)] rounded-xl p-8 text-center mt-10">
+        <h3 class="text-2xl font-bold text-white mb-3">Book Your Pool Excavation Machine</h3>
+        <p class="text-white/80 mb-6">5.5T from $380/day. Next-day delivery across Sydney.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:opacity-90 transition">Book Now →</a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition">Call 1300 157 882</a>
+        </div>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>What size excavator do I need for pool excavation in Sydney?</h3>
+      <p>A 5.5T excavator is the standard choice for residential pool excavation in Sydney. It provides a 3,800mm dig depth, 0.21m³ bucket capacity, and 36.8kW engine — enough to complete a standard 8m × 4m pool excavation in a single day on most Sydney sites.</p>
+      <h3>How much does excavator hire for pool excavation cost in Sydney?</h3>
+      <p>BuildHire's 5.5T excavator is $380/day (incl GST). Delivery & collection is $150 within Sydney metro. Most standard residential pools are excavated in 1–2 days, making the total machine hire cost $380–$760 plus delivery.</p>
+      <h3>What soil types are common in Sydney pool excavation?</h3>
+      <p>Sydney's soil varies significantly by suburb. Western Sydney typically has clay-heavy soil. The Northern Beaches and Eastern Suburbs often have sandstone requiring rock-breaking equipment. The Hills District has a mix of clay and shale. Always confirm soil conditions before booking your machine.</p>
+    </article>
+    <section class="bg-[var(--color-bg)] py-10">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6">Related Articles</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <a href="/blog/what-size-excavator-do-i-need/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] transition"><p class="font-semibold text-[var(--color-text)] text-sm">What Size Excavator Do I Need?</p></a>
+          <a href="/blog/excavator-hire-cost-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] transition"><p class="font-semibold text-[var(--color-text)] text-sm">Excavator Hire Cost in Sydney 2026</p></a>
+          <a href="/industries/pool-builders/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] transition"><p class="font-semibold text-[var(--color-text)] text-sm">Excavator Hire for Pool Builders →</p></a>
+        </div>
+      </div>
+    </section>
+    <Footer client:load />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

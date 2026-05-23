@@ -1,0 +1,103 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Industries We Serve", "item": "https://buildhire.com.au/industries" }
+  ]
+};
+const industries = [
+  { slug: "pool-builders", name: "Pool Builders", icon: "🏊", desc: "Pool excavation, soil removal, and tight access earthworks for residential and commercial pool installations across Sydney." },
+  { slug: "landscapers", name: "Landscapers", icon: "🌿", desc: "Retaining walls, garden bed preparation, drainage trenching, and site levelling for landscaping contractors." },
+  { slug: "builders", name: "Builders & Concreters", icon: "🏗️", desc: "Site preparation, footings excavation, slab prep, and bulk earthworks for residential and commercial builders." },
+  { slug: "plumbers", name: "Plumbers & Drainage", icon: "🔧", desc: "Utility trenching, pipe laying excavation, and reinstatement work for plumbing and drainage contractors." },
+  { slug: "civil-contractors", name: "Civil Contractors", icon: "🚧", desc: "Bulk earthworks, civil infrastructure, road preparation, and large-scale site excavation." },
+  { slug: "demolition-contractors", name: "Demolition Contractors", icon: "🏚️", desc: "Demolition excavation, material removal, and site clearing for demolition and remediation projects." },
+  { slug: "property-developers", name: "Property Developers", icon: "🏢", desc: "Multi-stage excavation, site management, and earthworks coordination for residential and commercial development projects." },
+  { slug: "drainage-contractors", name: "Drainage Contractors", icon: "💧", desc: "Stormwater drainage, detention basin excavation, and drainage trench work for drainage specialists." },
+];
+---
+<Layout
+  title="Industries We Serve | Excavator Hire for Sydney Trades — BuildHire"
+  description="BuildHire provides excavator and earthmoving equipment hire to pool builders, landscapers, builders, plumbers, civil contractors, and more across Sydney and NSW."
+  canonicalPath="/industries"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <!-- Hero -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-[var(--color-text)]">Industries</span>
+        </nav>
+        <div class="text-center mb-10">
+          <span class="inline-block bg-[var(--color-primary)] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Sydney's Trade Specialists</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">
+            Excavator Hire for Every Trade in Sydney
+          </h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">
+            BuildHire works with Sydney's most demanding trades — from pool builders and landscapers to civil contractors and property developers. The right machine, delivered next day, no operator required.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Industries Grid -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {industries.map(ind => (
+            <a href={`/industries/${ind.slug}/`} class="block rounded-2xl border-2 border-gray-200 bg-[var(--color-bg)] p-8 hover:border-[var(--color-primary)] hover:shadow-lg transition group">
+              <div class="text-4xl mb-4">{ind.icon}</div>
+              <h2 class="text-xl font-bold text-[var(--color-text)] mb-3 group-hover:text-[var(--color-primary)] transition">{ind.name}</h2>
+              <p class="text-[var(--color-text-muted)] text-sm leading-relaxed mb-4">{ind.desc}</p>
+              <span class="text-[var(--color-primary)] font-semibold text-sm">View equipment & pricing →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+    <!-- Why BuildHire for Trades -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-4 text-center">Why Sydney Trades Choose BuildHire</h2>
+        <p class="text-center text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto">We understand that your job doesn't wait. Our dry hire model gives you the machine you need, when you need it, without the overhead of a wet hire operator.</p>
+        <div class="grid md:grid-cols-3 gap-8">
+          {[
+            { title: "Next-Day Delivery", body: "Book before 12pm and we'll deliver to your Sydney site the following morning. Same-day available — call 1300 157 882." },
+            { title: "No Operator Needed", body: "All machines are available as dry hire. Run them yourself or with your own operator. No wet hire surcharge." },
+            { title: "Trade Pricing Available", body: "Regular hire customers qualify for trade rates. Call us to discuss weekly and monthly pricing for ongoing projects." },
+          ].map(f => (
+            <div class="text-center">
+              <h3 class="text-lg font-bold text-[var(--color-text)] mb-3">{f.title}</h3>
+              <p class="text-[var(--color-text-muted)] text-sm leading-relaxed">{f.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    <!-- CTA -->
+    <section class="bg-[var(--color-primary)] py-14">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book?</h2>
+        <p class="text-white/80 mb-8 text-lg">Tell us your trade, your job, and your timeline. We'll match you with the right machine and get it to your site.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Get Instant Pricing →</a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">Call 1300 157 882</a>
+        </div>
+      </div>
+    </section>
+    <Footer client:load />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

@@ -1,0 +1,154 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Excavator Hire for Builders Sydney",
+  "provider": { "@type": "LocalBusiness", "name": "BuildHire", "url": "https://buildhire.com.au", "telephone": "+611300157882" },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "Dry hire excavators for builders and concreters across Sydney. From site preparation and footings excavation to slab prep and bulk earthworks. From $200/day.",
+  "offers": { "@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "200", "highPrice": "490", "offerCount": "6" }
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What excavator do I need for footings and slab prep in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "For residential footings and slab preparation in Sydney, a 3.5T or 5.5T excavator is the most efficient choice. The 3.5T handles standard residential footings (600mm wide, 600mm deep) and slab prep on suburban blocks. For larger slabs, cut-and-fill sites, or harder ground conditions, the 5.5T or 8T is recommended for faster completion." } },
+    { "@type": "Question", "name": "Can I hire an excavator for site preparation in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. BuildHire provides excavators for all stages of site preparation — stripping topsoil, bulk earthworks, cut and fill, footings excavation, and slab preparation. We deliver across all of Greater Sydney with next-day availability for most locations." } },
+    { "@type": "Question", "name": "What is the cost of excavator hire for a building site in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Excavator hire for building sites in Sydney starts from $325/day for a 3.5T, $380/day for a 5.5T, and $420/day for an 8T. Delivery & collection is charged separately. Weekly rates are available for ongoing projects — call 1300 157 882 for trade pricing." } }
+  ]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://buildhire.com.au/industries" },
+    { "@type": "ListItem", "position": 3, "name": "Builders & Concreters", "item": "https://buildhire.com.au/industries/builders" }
+  ]
+};
+---
+<Layout
+  title="Excavator Hire for Builders & Concreters Sydney | BuildHire"
+  description="Excavator dry hire for builders and concreters in Sydney. Site prep, footings, slab excavation, and bulk earthworks. 3.5T to 14.5T available. From $325/day."
+  canonicalPath="/industries/builders"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/industries/" class="hover:text-[var(--color-primary)]">Industries</a>
+          <span class="mx-2">/</span>
+          <span class="text-[var(--color-text)]">Builders & Concreters</span>
+        </nav>
+        <div class="text-center mb-10">
+          <span class="inline-block bg-[var(--color-primary)] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Builder Specialists</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">Excavator Hire for Builders & Concreters in Sydney</h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">Site preparation, footings excavation, slab prep, and bulk earthworks — the right machine for every stage of your build. Dry hire from <strong class="text-[var(--color-primary)]">$325/day</strong>, next-day delivery across Sydney.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Get Instant Pricing →</a>
+            <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">Call 1300 157 882</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Machines for Every Stage of the Build</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          {[
+            { stage: "Site Stripping & Topsoil Removal", machines: "3.5T, 5.5T, 8T", detail: "Strip topsoil and vegetation from the building footprint before setting out. The 3.5T handles standard residential blocks; the 5.5T and 8T are faster on larger sites." },
+            { stage: "Cut & Fill Earthworks", machines: "5.5T, 8T, 14.5T", detail: "Level sloped sites, cut benches, and move bulk material. The 8T is the standard choice for residential cut-and-fill; the 14.5T handles larger commercial sites." },
+            { stage: "Footings Excavation", machines: "3.5T, 5.5T", detail: "Excavate strip footings, pad footings, and pier holes to engineer specifications. The 3.5T is ideal for standard residential footings; the 5.5T for deeper or wider commercial footings." },
+            { stage: "Slab Preparation", machines: "3.5T, 5.5T", detail: "Trim and level the formation, excavate for edge beams, and prepare for the slab pour. Precision work — the 3.5T's bucket control is well suited to this stage." },
+            { stage: "Basement & Subfloor Excavation", machines: "5.5T, 8T", detail: "Excavate basement levels and subfloor voids for split-level homes. The 5.5T and 8T provide the reach and power for deeper excavations in tight urban sites." },
+            { stage: "Backfilling & Compaction Prep", machines: "3.5T, 5.5T", detail: "Backfill around footings, retaining walls, and subfloor structures. Precise placement of fill material in layers for compaction." },
+          ].map(item => (
+            <div class="flex gap-4">
+              <span class="text-[var(--color-primary)] font-bold text-xl mt-1">→</span>
+              <div>
+                <h3 class="font-bold text-[var(--color-text)] mb-1">{item.stage}</h3>
+                <p class="text-sm text-[var(--color-primary)] font-semibold mb-1">Machines: {item.machines}</p>
+                <p class="text-sm text-[var(--color-text-muted)]">{item.detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Builder Hire Rates</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b-2 border-[var(--color-primary)]">
+                <th class="text-left py-3 font-bold text-[var(--color-text)]">Machine</th>
+                <th class="text-center py-3 font-bold text-[var(--color-text)]">Daily Rate</th>
+                <th class="text-center py-3 font-bold text-[var(--color-text)]">Delivery</th>
+                <th class="text-left py-3 font-bold text-[var(--color-text)]">Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { machine: "3.5T Excavator", rate: "$325/day", delivery: "from $150", best: "Footings, slab prep, residential earthworks" },
+                { machine: "5.5T Excavator", rate: "$380/day", delivery: "on enquiry", best: "Cut & fill, deeper footings, larger sites" },
+                { machine: "8T Excavator", rate: "$420/day", delivery: "on enquiry", best: "Bulk earthworks, basement excavation" },
+                { machine: "14.5T Excavator", rate: "$450/day", delivery: "on enquiry", best: "Large commercial sites, heavy earthworks" },
+              ].map((r, i) => (
+                <tr class={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : ''}`}>
+                  <td class="py-4 font-medium text-[var(--color-text)]">{r.machine}</td>
+                  <td class="py-4 text-center font-bold text-[var(--color-primary)]">{r.rate}</td>
+                  <td class="py-4 text-center text-[var(--color-text-muted)]">{r.delivery}</td>
+                  <td class="py-4 text-[var(--color-text-muted)]">{r.best}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="text-center text-sm text-[var(--color-text-muted)] mt-4">All prices inc. GST. Weekly and monthly rates available — <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold hover:underline">call 1300 157 882</a> for trade pricing.</p>
+      </div>
+    </section>
+    <section class="bg-white py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Builder FAQ</h2>
+        <div class="space-y-6">
+          {[
+            { q: "What excavator do I need for footings and slab prep in Sydney?", a: "For residential footings and slab preparation in Sydney, a 3.5T or 5.5T excavator is the most efficient choice. The 3.5T handles standard residential footings (600mm wide, 600mm deep) and slab prep on suburban blocks. For larger slabs, cut-and-fill sites, or harder ground conditions, the 5.5T or 8T is recommended for faster completion." },
+            { q: "Can I hire an excavator for site preparation in Sydney?", a: "Yes. BuildHire provides excavators for all stages of site preparation — stripping topsoil, bulk earthworks, cut and fill, footings excavation, and slab preparation. We deliver across all of Greater Sydney with next-day availability for most locations." },
+            { q: "What is the cost of excavator hire for a building site in Sydney?", a: "Excavator hire for building sites in Sydney starts from $325/day for a 3.5T, $380/day for a 5.5T, and $420/day for an 8T. Delivery & collection is charged separately. Weekly rates are available for ongoing projects — call 1300 157 882 for trade pricing." },
+          ].map(item => (
+            <div class="border-b border-gray-200 pb-6">
+              <h3 class="text-lg font-bold text-[var(--color-text)] mb-2">{item.q}</h3>
+              <p class="text-[var(--color-text-muted)] leading-relaxed">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-primary)] py-14">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book?</h2>
+        <p class="text-white/80 mb-8 text-lg">Get instant pricing for your building site. Next-day delivery across Sydney.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Get Instant Pricing →</a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">Call 1300 157 882</a>
+        </div>
+      </div>
+    </section>
+    <Footer client:load />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

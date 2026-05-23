@@ -1,0 +1,170 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What Size Excavator Do I Need? A Sydney Tradesman's Guide",
+  "description": "Choosing the wrong excavator size wastes money and time. This guide matches every common Sydney job type to the right machine — from 0.8T to 23T.",
+  "author": { "@type": "Organization", "name": "BuildHire" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BuildHire",
+    "logo": { "@type": "ImageObject", "url": "https://buildhire.com.au/og-image.png" }
+  },
+  "datePublished": "2026-05-01",
+  "dateModified": "2026-05-23",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/what-size-excavator-do-i-need" }
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What size excavator do I need for a pool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 5.5T excavator is the most common choice for standard residential pool excavation in Sydney (8m × 4m). For larger pools or difficult access, a 3.5T may be used in tight spaces. The 5.5T provides the digging depth (3,800mm), bucket capacity (0.21m³), and power to complete a standard pool excavation efficiently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What size excavator do I need for a house footing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For standard residential footings (600mm wide, up to 900mm deep), a 1.7T or 3.5T mini excavator is sufficient. For deeper footings over 900mm or wider than 600mm, a 5.5T provides the extra reach and power needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What size excavator do I need for landscaping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For residential landscaping — retaining walls, garden beds, drainage, and small earthworks — a 1T or 1.7T mini excavator is ideal. For larger landscaping jobs with significant earthmoving, a 3.5T or 5.5T is more productive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the smallest excavator BuildHire offers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BuildHire's smallest excavator is the 0.8T mini excavator at $200/day. It is ideal for tight access jobs — side passages, narrow gates, and confined residential spaces where a larger machine cannot fit."
+      }
+    }
+  ]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://buildhire.com.au/blog" },
+    { "@type": "ListItem", "position": 3, "name": "What Size Excavator Do I Need?", "item": "https://buildhire.com.au/blog/what-size-excavator-do-i-need" }
+  ]
+};
+---
+<Layout
+  title="What Size Excavator Do I Need? Sydney Job Guide — BuildHire"
+  description="Choosing the wrong excavator size wastes money and time. This guide matches every common Sydney job type to the right machine — from 0.8T mini to 23T Sumitomo."
+  canonicalPath="/blog/what-size-excavator-do-i-need"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <section class="bg-[var(--color-bg)] pt-28 pb-10">
+      <div class="max-w-3xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/blog/" class="hover:text-[var(--color-primary)]">Blog</a>
+          <span class="mx-2">/</span>
+          <span class="text-[var(--color-text)]">What Size Excavator Do I Need?</span>
+        </nav>
+        <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">What Size Excavator Do I Need?</h1>
+        <p class="text-xl text-[var(--color-text-muted)] mb-6">A Sydney tradesman's guide to matching the right machine to every job — from tight residential access to major civil earthworks.</p>
+        <p class="text-sm text-[var(--color-text-muted)]">By BuildHire · Updated May 2026 · 6 min read</p>
+      </div>
+    </section>
+    <article class="max-w-3xl mx-auto px-6 py-10 prose prose-lg">
+      <p>Choosing the wrong excavator size is one of the most common and costly mistakes on Sydney job sites. Too small and you're making twice as many passes, burning twice the time. Too large and you can't fit through the access, or you're paying for power you don't need. This guide cuts through the confusion with a direct job-type-to-machine match for every common Sydney project.</p>
+
+      <h2>The Quick Reference Table</h2>
+      <div class="not-prose overflow-x-auto mb-8">
+        <table class="w-full text-sm border border-gray-200">
+          <thead class="bg-[var(--color-primary)] text-white">
+            <tr>
+              <th class="p-3 text-left">Job Type</th>
+              <th class="p-3 text-left">Recommended Machine</th>
+              <th class="p-3 text-left">Rate from</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100"><td class="p-3">Tight access — side passage, narrow gate</td><td class="p-3 font-semibold">0.8T Mini</td><td class="p-3">$200/day</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="p-3">Garden beds, small drainage, planting</td><td class="p-3 font-semibold">1T Mini</td><td class="p-3">$225/day</td></tr>
+            <tr class="border-b border-gray-100"><td class="p-3">Residential footings, small retaining walls</td><td class="p-3 font-semibold">1.7T Mini</td><td class="p-3">$270/day</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="p-3">Bulk earthworks, site prep, house demolition</td><td class="p-3 font-semibold">3.5T</td><td class="p-3">$325/day</td></tr>
+            <tr class="border-b border-gray-100"><td class="p-3">Pool excavation, deeper footings, drainage</td><td class="p-3 font-semibold">5.5T</td><td class="p-3">$380/day</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="p-3">Basement excavation, civil infrastructure</td><td class="p-3 font-semibold">8T</td><td class="p-3">$420/day</td></tr>
+            <tr class="border-b border-gray-100"><td class="p-3">Large commercial earthworks, major development</td><td class="p-3 font-semibold">14.5T</td><td class="p-3">$450/day</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="p-3">Major civil, quarry, large infrastructure</td><td class="p-3 font-semibold">23T Sumitomo SH235X-6</td><td class="p-3">$490/day</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Mini Excavators (0.8T – 1.7T): Tight Access and Residential Work</h2>
+      <p>BuildHire's three mini excavators — the 0.8T, 1T, and 1.7T — are designed for jobs where access is the primary constraint. The 0.8T has a blade width of 750mm, meaning it fits through a standard side passage gate. The 1.7T is the most popular machine in this range: it handles residential footings, small retaining walls, garden drainage, and light earthworks with a 2,600mm dig depth and 1,700kg operating weight that keeps it manageable on soft residential ground.</p>
+      <p>The rule of thumb: if your access point is under 900mm wide, start with the 0.8T. If you have standard residential access (900mm+) and your job involves earthworks rather than just planting or drainage, step up to the 1.7T.</p>
+
+      <h2>3.5T: The Residential Workhorse</h2>
+      <p>The 3.5T Yanmar ViO35-7 is BuildHire's most-booked machine. It handles the full range of residential earthworks — bulk stripping, site preparation, house demolition, deep trenching, and commercial landscaping — with a 3,400mm dig depth and 24.4kW engine. At $325/day, it is the most cost-effective choice for jobs that exceed the 1.7T's capacity but don't require the power of the 5.5T.</p>
+      <p>The 3.5T is the right choice when: your job involves moving more than 20m³ of material, you need to dig deeper than 1,800mm, or you're working on a commercial landscaping or site prep project where the 1.7T would be too slow.</p>
+
+      <h2>5.5T: Pool Excavation and Deeper Footings</h2>
+      <p>The 5.5T is the standard choice for pool excavation in Sydney. A standard 8m × 4m residential pool requires approximately 50–60m³ of excavation — the 5.5T's 0.21m³ bucket and 36.8kW engine completes this in a single day for most sites. The 3,800mm dig depth also makes it the right choice for footings deeper than 900mm and drainage trenching where the 3.5T's 3,400mm limit falls short.</p>
+
+      <h2>8T and Above: Commercial and Civil Projects</h2>
+      <p>Once you move above 5.5T, you're in commercial and civil territory. The 8T (4,500mm dig depth, 0.35m³ bucket) handles basement excavation for residential and commercial developments, major drainage infrastructure, and subdivision earthworks. The 14.5T and 23T Sumitomo SH235X-6 are for large commercial developments, civil infrastructure, and major earthworks where productivity at scale is the priority.</p>
+      <p>The 23T Sumitomo SH235X-6 is BuildHire's most powerful machine — 117.3kW, 6,120mm dig depth, 0.80m³ bucket, and a 9,790mm ground-level reach. It is the right choice when the 14.5T's capacity is the bottleneck on your project.</p>
+
+      <h2>Not Sure? Call Us</h2>
+      <p>If you're unsure which machine is right for your job, call BuildHire on <a href="tel:1300157882">1300 157 882</a>. We'll ask three questions — job type, access width, and dig depth — and give you a straight answer. We'd rather you book the right machine than the most expensive one.</p>
+
+      <div class="not-prose bg-[var(--color-primary)] rounded-xl p-8 text-center mt-10">
+        <h3 class="text-2xl font-bold text-white mb-3">Book the Right Machine Today</h3>
+        <p class="text-white/80 mb-6">Instant pricing. Next-day delivery across Sydney.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:opacity-90 transition">Book Now →</a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition">Call 1300 157 882</a>
+        </div>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>What size excavator do I need for a pool?</h3>
+      <p>A 5.5T excavator is the most common choice for standard residential pool excavation in Sydney (8m × 4m). For larger pools or difficult access, a 3.5T may be used in tight spaces. The 5.5T provides the digging depth (3,800mm), bucket capacity (0.21m³), and power to complete a standard pool excavation efficiently.</p>
+      <h3>What size excavator do I need for a house footing?</h3>
+      <p>For standard residential footings (600mm wide, up to 900mm deep), a 1.7T or 3.5T mini excavator is sufficient. For deeper footings over 900mm or wider than 600mm, a 5.5T provides the extra reach and power needed.</p>
+      <h3>What size excavator do I need for landscaping?</h3>
+      <p>For residential landscaping — retaining walls, garden beds, drainage, and small earthworks — a 1T or 1.7T mini excavator is ideal. For larger landscaping jobs with significant earthmoving, a 3.5T or 5.5T is more productive.</p>
+    </article>
+    <section class="bg-[var(--color-bg)] py-10">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6">More from the BuildHire Blog</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <a href="/blog/excavator-hire-cost-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] transition"><p class="font-semibold text-[var(--color-text)] text-sm">Excavator Hire Cost in Sydney 2026</p></a>
+          <a href="/blog/dry-hire-vs-wet-hire-excavator-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] transition"><p class="font-semibold text-[var(--color-text)] text-sm">Dry Hire vs Wet Hire: Which Is Right?</p></a>
+          <a href="/blog/mini-excavator-licence-nsw/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] transition"><p class="font-semibold text-[var(--color-text)] text-sm">Do You Need a Licence in NSW?</p></a>
+        </div>
+      </div>
+    </section>
+    <Footer client:load />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

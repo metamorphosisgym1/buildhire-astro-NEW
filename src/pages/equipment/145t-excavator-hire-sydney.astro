@@ -1,0 +1,181 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "14.5T Excavator Hire Sydney",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "BuildHire",
+    "url": "https://buildhire.com.au",
+    "telephone": "+611300157882",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "addressCountry": "AU"
+    }
+  },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "14.5T excavator dry hire in Sydney from $450/day inc GST. For large commercial earthworks, heavy civil infrastructure, and major development sites. Delivery on enquiry.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AUD",
+    "price": "450",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "450",
+      "priceCurrency": "AUD",
+      "unitText": "DAY"
+    }
+  }
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {
+    "@type": "Question",
+    "name": "How much does it cost to hire a 14.5T excavator in Sydney?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "BuildHire's 14.5T excavator starts from $450/day (incl GST). Delivery is via third-party transport \u2014 call 1300 157 882 for a delivery quote to your location. Weekly and monthly rates are available for ongoing projects."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "What is the difference between an 8T and 14.5T excavator?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The 14.5T has greater digging depth (5,700mm vs 4,500mm), significantly more bucket capacity (0.60m\u00b3 vs 0.35m\u00b3), and more engine power (85.5kW vs 47.5kW). It is the better choice for large commercial earthworks, major civil infrastructure, and development sites where the 8T lacks the scale required."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Do I need a licence to operate a 14.5T excavator in NSW?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On a registered worksite, a High Risk Work Licence (HRWL) for earthmoving equipment is required to operate a 14.5T excavator. On private property, no licence is required. Always check with your site supervisor and SafeWork NSW requirements."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "How is a 14.5T excavator delivered in Sydney?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The 14.5T is delivered via third-party heavy transport. Pricing depends on your location \u2014 call 1300 157 882 for a delivery quote. We arrange all transport logistics and can advise on access requirements."
+    }
+  }
+]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Equipment", "item": "https://buildhire.com.au/equipment" },
+    { "@type": "ListItem", "position": 3, "name": "14.5T Excavator", "item": "https://buildhire.com.au/equipment/145t-excavator-hire-sydney" }
+  ]
+};
+---
+<Layout
+  title="14.5T Excavator Hire Sydney | From $450/day — BuildHire"
+  description="14.5T excavator dry hire in Sydney from $450/day inc GST. For large commercial earthworks, heavy civil infrastructure, and major development sites. Delivery on enquiry."
+  canonicalPath="/equipment/145t-excavator-hire-sydney"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/equipment/" class="hover:text-[var(--color-primary)]">Equipment</a>
+          <span class="mx-2">/</span>
+          <span class="text-[var(--color-text)]">14.5T Excavator</span>
+        </nav>
+        <div class="text-center mb-10">
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">14.5T Excavator Hire Sydney</h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">Large commercial earthworks, heavy civil infrastructure, and major development sites. From <strong>$450/day inc GST</strong>. Delivery via third-party transport across Sydney and NSW.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book This Machine →</a>
+            <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">Call 1300 157 882</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6">Specifications</h2>
+            <table class="w-full text-sm">
+              <tbody>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Operating Weight</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">14,500 kg</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Max Dig Depth</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">5,700 mm</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Bucket Capacity</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">0.60 m³</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Engine Power</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">85.5 kW</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Max Reach</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">9,200 mm</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Delivery</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">Third-party transport — pricing on enquiry</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6">What It's Used For</h2>
+            <div class="space-y-4">
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Large Commercial Earthworks</h3><p class="text-sm text-[var(--color-text-muted)]">The 14.5T is the standard choice for large commercial earthworks — major site preparation, bulk material movement, and large-scale cut and fill.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Heavy Civil Infrastructure</h3><p class="text-sm text-[var(--color-text-muted)]">Road construction, major drainage infrastructure, and civil earthworks at scale. The 14.5T's power and capacity handles the most demanding civil projects.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Major Development Sites</h3><p class="text-sm text-[var(--color-text-muted)]">Bulk earthworks for large residential and commercial developments — subdivisions, apartment sites, and mixed-use developments.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Deep Basement Excavation</h3><p class="text-sm text-[var(--color-text-muted)]">Excavate deep basement levels for commercial and apartment developments. The 14.5T's 5,700mm dig depth handles the deepest residential and commercial basements.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Large Retaining Structures</h3><p class="text-sm text-[var(--color-text-muted)]">Excavate for major retaining wall and shoring systems on large development sites.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Quarry & Extraction Support</h3><p class="text-sm text-[var(--color-text-muted)]">Material extraction and loading support for quarry and extraction operations in NSW.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">How much does it cost to hire a 14.5T excavator in Sydney?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">BuildHire's 14.5T excavator starts from $450/day (incl GST). Delivery is via third-party transport — call 1300 157 882 for a delivery quote to your location. Weekly and monthly rates are available for ongoing projects.</p></div>
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">What is the difference between an 8T and 14.5T excavator?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">The 14.5T has greater digging depth (5,700mm vs 4,500mm), significantly more bucket capacity (0.60m³ vs 0.35m³), and more engine power (85.5kW vs 47.5kW). It is the better choice for large commercial earthworks, major civil infrastructure, and development sites where the 8T lacks the scale required.</p></div>
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">Do I need a licence to operate a 14.5T excavator in NSW?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">On a registered worksite, a High Risk Work Licence (HRWL) for earthmoving equipment is required to operate a 14.5T excavator. On private property, no licence is required. Always check with your site supervisor and SafeWork NSW requirements.</p></div>
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">How is a 14.5T excavator delivered in Sydney?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">The 14.5T is delivered via third-party heavy transport. Pricing depends on your location — call 1300 157 882 for a delivery quote. We arrange all transport logistics and can advise on access requirements.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6 text-center">Other Machines Available</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
+          <a href="/equipment/08t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">0.8T Mini<br/><span class="font-bold">$200/day</span></a>
+          <a href="/equipment/1t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">1T Mini<br/><span class="font-bold">$225/day</span></a>
+          <a href="/equipment/17t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">1.7T Mini<br/><span class="font-bold">$270/day</span></a>
+          <a href="/equipment/35t-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">3.5T<br/><span class="font-bold">$325/day</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-primary)] py-14">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book the 14.5T Excavator?</h2>
+        <p class="text-white/80 mb-8 text-lg">Get instant pricing and availability. Next-day delivery across Sydney.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book Now →</a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">Call 1300 157 882</a>
+        </div>
+      </div>
+    </section>
+    <Footer client:load />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

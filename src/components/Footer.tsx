@@ -10,25 +10,63 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-emerald border-t border-emerald-foreground/10">
       <div className="container mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Logo */}
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
+          {/* Logo + description */}
+          <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-xl font-bold text-white">BuildHire</span>
             </div>
-            <p className="text-white/60 text-sm leading-relaxed">
+            <p className="text-white/60 text-sm leading-relaxed mb-4">
               Sydney's most trusted excavator hire and construction equipment rental. Reliable dry hire with next-day delivery & collection across NSW.
             </p>
+            {/* Accreditation */}
+            <div className="flex flex-wrap items-center gap-3 mt-2">
+              {accreditations.map((acc) => (
+                <div
+                  key={acc.name}
+                  className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 bg-white/5"
+                >
+                  <acc.icon size={14} className="text-white/30" />
+                  <div>
+                    <span className="text-white/40 text-xs font-bold block">{acc.name}</span>
+                    <span className="text-white/20 text-[10px]">{acc.subtitle}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          {/* Nav */}
+
+          {/* Equipment Directory */}
           <div>
-            <h4 className="label-text text-xs text-primary mb-4">Navigation</h4>
-            <ul className="space-y-3 text-sm">
-              <li><a href="#equipment" className="text-white/70 hover:text-white transition-colors">Our Equipment</a></li>
-              <li><a href="#delivery" className="text-white/70 hover:text-white transition-colors">Service Areas</a></li>
-              <li><a href="#booking" className="text-white/70 hover:text-white transition-colors">Book Now</a></li>
+            <h4 className="label-text text-xs text-primary mb-4">Equipment</h4>
+            <ul className="space-y-2 text-sm">
+              <li><a href="/equipment/08t-mini-excavator-hire-sydney/" className="text-white/70 hover:text-white transition-colors">0.8T Mini Excavator</a></li>
+              <li><a href="/equipment/1t-mini-excavator-hire-sydney/" className="text-white/70 hover:text-white transition-colors">1T Mini Excavator</a></li>
+              <li><a href="/equipment/17t-mini-excavator-hire-sydney/" className="text-white/70 hover:text-white transition-colors">1.7T Mini Excavator</a></li>
+              <li><a href="/equipment/35t-excavator-hire-sydney/" className="text-white/70 hover:text-white transition-colors">3.5T Excavator</a></li>
+              <li><a href="/equipment/55t-excavator-hire-sydney/" className="text-white/70 hover:text-white transition-colors">5.5T Excavator</a></li>
+              <li><a href="/equipment/8t-excavator-hire-sydney/" className="text-white/70 hover:text-white transition-colors">8T Excavator</a></li>
+              <li><a href="/equipment/145t-excavator-hire-sydney/" className="text-white/70 hover:text-white transition-colors">14.5T Excavator</a></li>
+              <li><a href="/equipment/23t-excavator-hire-sydney/" className="text-white/70 hover:text-white transition-colors">23T Excavator</a></li>
+              <li><a href="/equipment/tipper-truck-hire-sydney/" className="text-white/70 hover:text-white transition-colors">Tipper Truck</a></li>
             </ul>
           </div>
+
+          {/* Industries Directory */}
+          <div>
+            <h4 className="label-text text-xs text-primary mb-4">Industries</h4>
+            <ul className="space-y-2 text-sm">
+              <li><a href="/industries/pool-builders/" className="text-white/70 hover:text-white transition-colors">Pool Builders</a></li>
+              <li><a href="/industries/landscapers/" className="text-white/70 hover:text-white transition-colors">Landscapers</a></li>
+              <li><a href="/industries/builders/" className="text-white/70 hover:text-white transition-colors">Builders & Concreters</a></li>
+              <li><a href="/industries/plumbers/" className="text-white/70 hover:text-white transition-colors">Plumbers & Drainage</a></li>
+              <li><a href="/industries/civil-contractors/" className="text-white/70 hover:text-white transition-colors">Civil Contractors</a></li>
+              <li><a href="/industries/demolition-contractors/" className="text-white/70 hover:text-white transition-colors">Demolition Contractors</a></li>
+              <li><a href="/industries/property-developers/" className="text-white/70 hover:text-white transition-colors">Property Developers</a></li>
+              <li><a href="/industries/drainage-contractors/" className="text-white/70 hover:text-white transition-colors">Drainage Contractors</a></li>
+            </ul>
+          </div>
+
           {/* Contact */}
           <div>
             <h4 className="label-text text-xs text-primary mb-4">Contact</h4>
@@ -47,8 +85,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>Sydney, NSW</li>
+              <li className="pt-2 border-t border-white/10">
+                <a href="/blog/" className="hover:text-white transition-colors">Blog</a>
+              </li>
+              <li><a href="#booking" className="hover:text-white transition-colors">Book Now</a></li>
             </ul>
           </div>
+
           {/* Newsletter */}
           <div>
             <h4 className="label-text text-xs text-primary mb-4">Get Exclusive Offers & Fleet Updates</h4>
@@ -68,21 +111,6 @@ export default function Footer() {
               >
                 <ArrowRight size={18} />
               </a>
-            </div>
-            {/* Accreditation */}
-            <div className="flex flex-wrap items-center gap-3 mt-4">
-              {accreditations.map((acc) => (
-                <div
-                  key={acc.name}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg border border-white/10 bg-white/5"
-                >
-                  <acc.icon size={16} className="text-white/30" />
-                  <div>
-                    <span className="text-white/40 text-xs font-bold block">{acc.name}</span>
-                    <span className="text-white/20 text-[10px]">{acc.subtitle}</span>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>

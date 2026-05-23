@@ -1,0 +1,137 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://buildhire.com.au/industries" },
+    { "@type": "ListItem", "position": 3, "name": "Property Developers", "item": "https://buildhire.com.au/industries/property-developers" }
+  ]
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {
+    "@type": "Question",
+    "name": "Does BuildHire offer trade rates for property developers in Sydney?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Weekly and monthly rates are available for property developers with ongoing projects. We work with developers across Greater Sydney on multi-stage projects. Call 1300 157 882 to discuss pricing for your development."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "What is the largest excavator BuildHire has available in Sydney?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our largest machine is the 23T Sumitomo SH235X-6 at $490/day. It has an operating weight of 25,100 kg, a dig depth of 6,120mm, and a 0.80m\u00b3 bucket capacity. It is suited to large development sites, bulk earthworks, and major civil excavation. Delivery via third-party transport \u2014 pricing on enquiry."
+    }
+  }
+]
+};
+---
+<Layout
+  title="Excavator Hire for Property Developers Sydney | BuildHire"
+  description="Excavator dry hire for property developers in Sydney. Multi-stage excavation, site management, and earthworks for residential and commercial development. Trade rates available."
+  canonicalPath="/industries/property-developers"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/industries/" class="hover:text-[var(--color-primary)]">Industries</a>
+          <span class="mx-2">/</span>
+          <span class="text-[var(--color-text)]">Property Developers</span>
+        </nav>
+        <div class="text-center mb-10">
+          <span class="inline-block bg-[var(--color-primary)] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Property Developer Specialists</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">Excavator Hire for Property Developers in Sydney</h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">Multi-stage excavation, bulk earthworks, and site management for residential and commercial development projects. Fleet from 3.5T to 23T. Trade rates for ongoing projects.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Get Instant Pricing →</a>
+            <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">Call 1300 157 882</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Common Jobs & the Right Machine</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="flex gap-4">
+              <span class="text-[var(--color-primary)] font-bold text-xl mt-1">→</span>
+              <div>
+                <h3 class="font-bold text-[var(--color-text)] mb-1">Subdivision Site Preparation</h3>
+                <p class="text-sm text-[var(--color-primary)] font-semibold mb-1">Recommended: 8T or 14.5T</p>
+                <p class="text-sm text-[var(--color-text-muted)]">Bulk earthworks for subdivision sites — stripping, cut and fill, and preparation for multiple dwelling footprints. The 14.5T is the standard choice for medium-density residential subdivisions.</p>
+              </div>
+            </div>
+          <div class="flex gap-4">
+              <span class="text-[var(--color-primary)] font-bold text-xl mt-1">→</span>
+              <div>
+                <h3 class="font-bold text-[var(--color-text)] mb-1">Basement & Carpark Excavation</h3>
+                <p class="text-sm text-[var(--color-primary)] font-semibold mb-1">Recommended: 8T or 14.5T</p>
+                <p class="text-sm text-[var(--color-text-muted)]">Excavate basement levels and carpark structures for apartment and commercial developments. Deep excavation in urban sites requires careful planning — call us to discuss.</p>
+              </div>
+            </div>
+          <div class="flex gap-4">
+              <span class="text-[var(--color-primary)] font-bold text-xl mt-1">→</span>
+              <div>
+                <h3 class="font-bold text-[var(--color-text)] mb-1">Multi-Dwelling Footings</h3>
+                <p class="text-sm text-[var(--color-primary)] font-semibold mb-1">Recommended: 5.5T or 8T</p>
+                <p class="text-sm text-[var(--color-text-muted)]">Footings excavation for duplex, townhouse, and apartment developments. The 5.5T handles standard residential footings; the 8T for larger commercial footings.</p>
+              </div>
+            </div>
+          <div class="flex gap-4">
+              <span class="text-[var(--color-primary)] font-bold text-xl mt-1">→</span>
+              <div>
+                <h3 class="font-bold text-[var(--color-text)] mb-1">Retaining Wall Construction</h3>
+                <p class="text-sm text-[var(--color-primary)] font-semibold mb-1">Recommended: 5.5T or 8T</p>
+                <p class="text-sm text-[var(--color-text-muted)]">Large retaining wall excavation and construction for development sites with significant level changes. The 8T provides the power for heavy retaining structures.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">FAQ</h2>
+        <div class="space-y-6">
+          <div class="border-b border-gray-200 pb-6">
+              <h3 class="text-lg font-bold text-[var(--color-text)] mb-2">Does BuildHire offer trade rates for property developers in Sydney?</h3>
+              <p class="text-[var(--color-text-muted)] leading-relaxed">Yes. Weekly and monthly rates are available for property developers with ongoing projects. We work with developers across Greater Sydney on multi-stage projects. Call 1300 157 882 to discuss pricing for your development.</p>
+            </div>
+          <div class="border-b border-gray-200 pb-6">
+              <h3 class="text-lg font-bold text-[var(--color-text)] mb-2">What is the largest excavator BuildHire has available in Sydney?</h3>
+              <p class="text-[var(--color-text-muted)] leading-relaxed">Our largest machine is the 23T Sumitomo SH235X-6 at $490/day. It has an operating weight of 25,100 kg, a dig depth of 6,120mm, and a 0.80m³ bucket capacity. It is suited to large development sites, bulk earthworks, and major civil excavation. Delivery via third-party transport — pricing on enquiry.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-primary)] py-14">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book?</h2>
+        <p class="text-white/80 mb-8 text-lg">Next-day delivery across Sydney. Call us for urgent requests.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Get Instant Pricing →</a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">Call 1300 157 882</a>
+        </div>
+      </div>
+    </section>
+    <Footer client:load />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

@@ -1,0 +1,181 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "5.5T Excavator Hire Sydney",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "BuildHire",
+    "url": "https://buildhire.com.au",
+    "telephone": "+611300157882",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "addressCountry": "AU"
+    }
+  },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "5.5T excavator dry hire in Sydney from $380/day inc GST. Ideal for cut and fill, deeper footings, drainage trenching, and medium commercial earthworks. Next-day delivery.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AUD",
+    "price": "380",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "380",
+      "priceCurrency": "AUD",
+      "unitText": "DAY"
+    }
+  }
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {
+    "@type": "Question",
+    "name": "How much does it cost to hire a 5.5T excavator in Sydney?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "BuildHire's 5.5T excavator starts from $380/day (incl GST). Delivery & collection is $150 within Sydney metro. Call 1300 157 882 for weekly and monthly rates."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "What is the difference between a 3.5T and 5.5T excavator?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The 5.5T has greater digging depth (3,800mm vs 3,400mm), more bucket capacity (0.21m\u00b3 vs 0.17m\u00b3), and more engine power (36.8kW vs 24.4kW). It is the better choice for cut-and-fill, deeper footings, pool excavation, and medium commercial earthworks where the 3.5T lacks power or reach."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Do I need a licence to operate a 5.5T excavator in NSW?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No licence is required to operate an excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) is required."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "How is a 5.5T excavator delivered in Sydney?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The 5.5T is delivered via tilt-tray truck. Delivery & collection is $150 within Sydney metro. Third-party transport pricing applies outside metro areas \u2014 contact us for a quote."
+    }
+  }
+]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Equipment", "item": "https://buildhire.com.au/equipment" },
+    { "@type": "ListItem", "position": 3, "name": "5.5T Excavator", "item": "https://buildhire.com.au/equipment/55t-excavator-hire-sydney" }
+  ]
+};
+---
+<Layout
+  title="5.5T Excavator Hire Sydney | From $380/day — BuildHire"
+  description="5.5T excavator dry hire in Sydney from $380/day inc GST. Ideal for cut and fill, deeper footings, drainage trenching, and medium commercial earthworks. Next-day delivery."
+  canonicalPath="/equipment/55t-excavator-hire-sydney"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/equipment/" class="hover:text-[var(--color-primary)]">Equipment</a>
+          <span class="mx-2">/</span>
+          <span class="text-[var(--color-text)]">5.5T Excavator</span>
+        </nav>
+        <div class="text-center mb-10">
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">5.5T Excavator Hire Sydney</h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">The workhorse for cut and fill, deeper footings, drainage trenching, and medium commercial earthworks. From <strong>$380/day inc GST</strong>. Next-day delivery across Sydney.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book This Machine →</a>
+            <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">Call 1300 157 882</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6">Specifications</h2>
+            <table class="w-full text-sm">
+              <tbody>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Operating Weight</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">5,500 kg</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Max Dig Depth</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">3,800 mm</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Bucket Capacity</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">0.21 m³</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Engine Power</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">36.8 kW</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Max Reach</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">6,500 mm</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Delivery</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">Tilt-tray, $150 Sydney metro</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6">What It's Used For</h2>
+            <div class="space-y-4">
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Cut & Fill Earthworks</h3><p class="text-sm text-[var(--color-text-muted)]">The 5.5T is the standard choice for residential cut-and-fill sites — stripping, benching, and moving bulk material on sloped blocks.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Deeper Footings Excavation</h3><p class="text-sm text-[var(--color-text-muted)]">For footings deeper than 900mm or wider than 600mm, the 5.5T provides the power and reach that a 3.5T lacks.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Drainage Trenching</h3><p class="text-sm text-[var(--color-text-muted)]">Trench for stormwater, sewer, and drainage systems to 3,800mm depth — deeper than the 3.5T's 3,400mm limit.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Retaining Wall Excavation</h3><p class="text-sm text-[var(--color-text-muted)]">Excavate for retaining walls on residential and commercial sites. The 5.5T handles the heavier material associated with retaining structures.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Pool Excavation</h3><p class="text-sm text-[var(--color-text-muted)]">Excavate standard residential pools (8m × 4m) efficiently. The 5.5T is the most common machine for pool excavation in Sydney.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Commercial Site Prep</h3><p class="text-sm text-[var(--color-text-muted)]">Site preparation for commercial projects where the 3.5T lacks power — stripping, levelling, and bulk material movement.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">How much does it cost to hire a 5.5T excavator in Sydney?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">BuildHire's 5.5T excavator starts from $380/day (incl GST). Delivery & collection is $150 within Sydney metro. Call 1300 157 882 for weekly and monthly rates.</p></div>
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">What is the difference between a 3.5T and 5.5T excavator?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">The 5.5T has greater digging depth (3,800mm vs 3,400mm), more bucket capacity (0.21m³ vs 0.17m³), and more engine power (36.8kW vs 24.4kW). It is the better choice for cut-and-fill, deeper footings, pool excavation, and medium commercial earthworks where the 3.5T lacks power or reach.</p></div>
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">Do I need a licence to operate a 5.5T excavator in NSW?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">No licence is required to operate an excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) is required.</p></div>
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">How is a 5.5T excavator delivered in Sydney?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">The 5.5T is delivered via tilt-tray truck. Delivery & collection is $150 within Sydney metro. Third-party transport pricing applies outside metro areas — contact us for a quote.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6 text-center">Other Machines Available</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
+          <a href="/equipment/08t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">0.8T Mini<br/><span class="font-bold">$200/day</span></a>
+          <a href="/equipment/1t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">1T Mini<br/><span class="font-bold">$225/day</span></a>
+          <a href="/equipment/17t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">1.7T Mini<br/><span class="font-bold">$270/day</span></a>
+          <a href="/equipment/35t-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">3.5T<br/><span class="font-bold">$325/day</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-primary)] py-14">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book the 5.5T Excavator?</h2>
+        <p class="text-white/80 mb-8 text-lg">Get instant pricing and availability. Next-day delivery across Sydney.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book Now →</a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">Call 1300 157 882</a>
+        </div>
+      </div>
+    </section>
+    <Footer client:load />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

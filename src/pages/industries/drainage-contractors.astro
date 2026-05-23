@@ -1,0 +1,137 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://buildhire.com.au/industries" },
+    { "@type": "ListItem", "position": 3, "name": "Drainage Contractors", "item": "https://buildhire.com.au/industries/drainage-contractors" }
+  ]
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {
+    "@type": "Question",
+    "name": "What excavator is best for stormwater drainage work in Sydney?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For residential stormwater drainage in Sydney, a 1.7T mini excavator is the most practical choice. It digs a clean trench to 2,500mm, fits through standard access points, and causes minimal surface disturbance. For larger commercial drainage systems or detention basins, the 3.5T, 5.5T, or 8T is recommended."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Can BuildHire deliver for urgent drainage repairs in Sydney?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We offer next-day delivery for bookings placed before 12pm, and same-day delivery may be available for urgent drainage repairs \u2014 call 1300 157 882. We understand that drainage failures are time-critical and we prioritise urgent requests wherever possible."
+    }
+  }
+]
+};
+---
+<Layout
+  title="Excavator Hire for Drainage Contractors Sydney | BuildHire"
+  description="Excavator dry hire for drainage contractors in Sydney. Stormwater drainage, detention basin excavation, and drainage trench work. From $200/day, next-day delivery."
+  canonicalPath="/industries/drainage-contractors"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/industries/" class="hover:text-[var(--color-primary)]">Industries</a>
+          <span class="mx-2">/</span>
+          <span class="text-[var(--color-text)]">Drainage Contractors</span>
+        </nav>
+        <div class="text-center mb-10">
+          <span class="inline-block bg-[var(--color-primary)] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Drainage Specialists</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">Excavator Hire for Drainage Contractors in Sydney</h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">Stormwater drainage, detention basins, drainage trenching, and pit installation — the right machine for every drainage project. From <strong class="text-[var(--color-primary)]">$200/day</strong>, next-day delivery across Sydney.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Get Instant Pricing →</a>
+            <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">Call 1300 157 882</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Common Jobs & the Right Machine</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="flex gap-4">
+              <span class="text-[var(--color-primary)] font-bold text-xl mt-1">→</span>
+              <div>
+                <h3 class="font-bold text-[var(--color-text)] mb-1">Stormwater Drainage Trenching</h3>
+                <p class="text-sm text-[var(--color-primary)] font-semibold mb-1">Recommended: 1.7T or 3.5T</p>
+                <p class="text-sm text-[var(--color-text-muted)]">Trench for stormwater pipes, install pits, and connect to the kerb or council infrastructure. The 1.7T handles residential drainage; the 3.5T for larger commercial stormwater systems.</p>
+              </div>
+            </div>
+          <div class="flex gap-4">
+              <span class="text-[var(--color-primary)] font-bold text-xl mt-1">→</span>
+              <div>
+                <h3 class="font-bold text-[var(--color-text)] mb-1">Detention Basin Excavation</h3>
+                <p class="text-sm text-[var(--color-primary)] font-semibold mb-1">Recommended: 8T or 14.5T</p>
+                <p class="text-sm text-[var(--color-text-muted)]">Excavate detention basins for new residential and commercial developments. Large volume earthworks — the 8T and 14.5T provide the capacity for efficient basin excavation.</p>
+              </div>
+            </div>
+          <div class="flex gap-4">
+              <span class="text-[var(--color-primary)] font-bold text-xl mt-1">→</span>
+              <div>
+                <h3 class="font-bold text-[var(--color-text)] mb-1">Drainage Pit Installation</h3>
+                <p class="text-sm text-[var(--color-primary)] font-semibold mb-1">Recommended: 1.7T or 3.5T</p>
+                <p class="text-sm text-[var(--color-text-muted)]">Excavate for drainage pit installation, set the pit, and backfill. The 1.7T is ideal for residential pit work; the 3.5T for larger commercial pits.</p>
+              </div>
+            </div>
+          <div class="flex gap-4">
+              <span class="text-[var(--color-primary)] font-bold text-xl mt-1">→</span>
+              <div>
+                <h3 class="font-bold text-[var(--color-text)] mb-1">Gross Pollutant Trap Installation</h3>
+                <p class="text-sm text-[var(--color-primary)] font-semibold mb-1">Recommended: 3.5T or 5.5T</p>
+                <p class="text-sm text-[var(--color-text-muted)]">Excavate for GPT installation in commercial and industrial drainage systems. Depth and width requirements vary — call us to confirm the right machine.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">FAQ</h2>
+        <div class="space-y-6">
+          <div class="border-b border-gray-200 pb-6">
+              <h3 class="text-lg font-bold text-[var(--color-text)] mb-2">What excavator is best for stormwater drainage work in Sydney?</h3>
+              <p class="text-[var(--color-text-muted)] leading-relaxed">For residential stormwater drainage in Sydney, a 1.7T mini excavator is the most practical choice. It digs a clean trench to 2,500mm, fits through standard access points, and causes minimal surface disturbance. For larger commercial drainage systems or detention basins, the 3.5T, 5.5T, or 8T is recommended.</p>
+            </div>
+          <div class="border-b border-gray-200 pb-6">
+              <h3 class="text-lg font-bold text-[var(--color-text)] mb-2">Can BuildHire deliver for urgent drainage repairs in Sydney?</h3>
+              <p class="text-[var(--color-text-muted)] leading-relaxed">Yes. We offer next-day delivery for bookings placed before 12pm, and same-day delivery may be available for urgent drainage repairs — call 1300 157 882. We understand that drainage failures are time-critical and we prioritise urgent requests wherever possible.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[var(--color-primary)] py-14">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book?</h2>
+        <p class="text-white/80 mb-8 text-lg">Next-day delivery across Sydney. Call us for urgent requests.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Get Instant Pricing →</a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">Call 1300 157 882</a>
+        </div>
+      </div>
+    </section>
+    <Footer client:load />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

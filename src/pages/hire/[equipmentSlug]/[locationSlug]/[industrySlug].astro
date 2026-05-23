@@ -79,7 +79,8 @@ const faqSchema = {
   }))
 };
 ---
-<Layout title={title} description={description} canonicalPath={canonicalPath}>
+<Layout title={title} description={description} canonicalPath={canonicalPath}
+  noindex={true}>
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />

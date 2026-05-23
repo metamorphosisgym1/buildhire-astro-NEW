@@ -1,0 +1,153 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Excavator Hire for Pool Builders Sydney",
+  "provider": { "@type": "LocalBusiness", "name": "BuildHire", "url": "https://buildhire.com.au", "telephone": "+611300157882" },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "Dry hire excavators for pool builders across Sydney. Mini excavators from $200/day for residential pool excavation, soil removal, and tight access earthworks.",
+  "offers": { "@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "200", "highPrice": "490", "offerCount": "6" }
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What size excavator do I need for a residential pool dig in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "For a standard residential pool (8m x 4m) in Sydney, a 1.7T or 3.5T excavator is typically the right choice. The 1.7T is ideal for tight backyards with side access under 900mm. The 3.5T is faster for larger pools or harder ground. For pools over 50,000L or commercial installations, the 5.5T or 8T is recommended." } },
+    { "@type": "Question", "name": "How long does it take to excavate a pool in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "A standard residential pool excavation in Sydney typically takes 1–2 days with a 1.7T or 3.5T excavator, depending on soil type, pool size, and access. Clay soils in Western Sydney take longer than sandy soils on the Northern Beaches. Hard rock requires a rock breaker attachment — call us to discuss." } },
+    { "@type": "Question", "name": "Can BuildHire deliver to tight access backyards in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our 0.8T and 1.7T mini excavators are specifically designed for tight access. The 0.8T has a body width of just 980mm and can access side gates as narrow as 1,000mm. We deliver across all of Sydney including inner-city terraces, Eastern Suburbs, and North Shore properties with restricted access." } },
+    { "@type": "Question", "name": "Do I need a licence to operate an excavator for pool digging in NSW?", "acceptedAnswer": { "@type": "Answer", "text": "No licence is required to operate a mini excavator under 10 tonnes on private residential property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) for earthmoving plant may be required. Check with your certifier if unsure." } },
+    { "@type": "Question", "name": "What is the cost of excavator hire for a pool dig in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Excavator hire for pool digging in Sydney starts from $200/day for a 0.8T, $205/day for a 1.7T, and $325/day for a 3.5T. Most residential pool digs require 1–2 days of hire. Delivery & collection is charged separately from $110 depending on your Sydney suburb." } }
+  ]
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://buildhire.com.au" },
+    { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://buildhire.com.au/industries" },
+    { "@type": "ListItem", "position": 3, "name": "Pool Builders", "item": "https://buildhire.com.au/industries/pool-builders" }
+  ]
+};
+---
+<Layout
+  title="Excavator Hire for Pool Builders Sydney | From $200/day — BuildHire"
+  description="Excavator dry hire for pool builders across Sydney. 0.8T to 8T machines for pool excavation, tight access, and soil removal. Next-day delivery. From $200/day."
+  canonicalPath="/industries/pool-builders"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+          <a href="/" class="hover:text-[var(--color-primary)]">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/industries/" class="hover:text-[var(--color-primary)]">Industries</a>
+          <span class="mx-2">/</span>
+          <span class="text-[var(--color-text)]">Pool Builders</span>
+        </nav>
+        <div class="text-center mb-10">
+          <span class="inline-block bg-[var(--color-primary)] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Pool Builder Specialists</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">Excavator Hire for Pool Builders in Sydney</h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">The right machine for every pool dig — from tight inner-city backyards to large acreage installations. Dry hire from <strong class="text-[var(--color-primary)]">$200/day</strong>, next-day delivery across Sydney.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Get Instant Pricing →</a>
+            <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">Call 1300 157 882</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Choosing the Right Machine -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-4 text-center">Choosing the Right Excavator for Your Pool Job</h2>
+        <p class="text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto text-center">Pool excavation in Sydney presents unique challenges — tight side access, varying soil types from clay in the west to sandstone in the east, and strict site conditions in heritage areas. Here is how to match the machine to the job.</p>
+        <div class="grid md:grid-cols-3 gap-6">
+          {[
+            { machine: "0.8T Mini Excavator", price: "$200/day", access: "Gate width from 1,000mm", depth: "1,800mm dig depth", best: "Courtyard pools, inner-city terraces, pools under 30,000L with restricted side access", href: "/equipment/08t-mini-excavator-hire-sydney" },
+            { machine: "1.7T Mini Excavator", price: "$205/day", access: "Gate width from 1,200mm", depth: "2,500mm dig depth", best: "Standard residential pools 30,000–50,000L, landscaping and soil removal alongside the dig", href: "/equipment/17t-mini-excavator-hire-sydney", popular: true },
+            { machine: "3.5T Excavator", price: "$325/day", access: "Open access required", depth: "3,400mm dig depth", best: "Large pools over 50,000L, hard clay soils, faster completion on standard suburban blocks", href: "/equipment/35t-excavator-hire-sydney" },
+          ].map(m => (
+            <div class={`rounded-2xl p-8 border-2 ${m.popular ? 'border-[var(--color-primary)] bg-[var(--color-primary)]/5' : 'border-gray-200 bg-[var(--color-bg)]'} relative`}>
+              {m.popular && <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[var(--color-primary)] text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular for Pools</span>}
+              <h3 class="text-lg font-bold text-[var(--color-text)] mb-1">{m.machine}</h3>
+              <div class="text-2xl font-bold text-[var(--color-primary)] mb-4">{m.price}</div>
+              <div class="space-y-2 text-sm mb-4">
+                <div><span class="text-[var(--color-text-muted)]">Min. access: </span><span class="font-semibold">{m.access}</span></div>
+                <div><span class="text-[var(--color-text-muted)]">Dig depth: </span><span class="font-semibold">{m.depth}</span></div>
+              </div>
+              <p class="text-sm text-[var(--color-text-muted)] mb-4">{m.best}</p>
+              <a href={m.href} class="text-[var(--color-primary)] font-semibold text-sm hover:underline">View full specs →</a>
+            </div>
+          ))}
+        </div>
+        <p class="text-center text-[var(--color-text-muted)] mt-8 text-sm">Need a larger machine for commercial pools or hard rock? <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold hover:underline">Call 1300 157 882</a> — we have 5.5T, 8T, and 14.5T available.</p>
+      </div>
+    </section>
+    <!-- Real Job Scenario -->
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-[var(--color-text)] mb-4">A Typical Pool Dig in Sydney's Inner West</h2>
+            <p class="text-[var(--color-text-muted)] mb-4 leading-relaxed">A pool builder working in Balmain called BuildHire for a 40,000L pool on a terrace block with 1,100mm side access and heavy clay soil. The 1.7T Yanmar ViO17 was the right choice — zero tail swing meant no damage to the fence line, and the 2,500mm dig depth was sufficient for the pool shell depth.</p>
+            <p class="text-[var(--color-text-muted)] mb-4 leading-relaxed">The machine was delivered at 7am, the excavation was complete by 3pm, and the spoil was loaded into a skip on the street. The pool builder kept the machine for a second day to backfill around the shell — total hire cost: $410 plus delivery.</p>
+            <p class="text-[var(--color-text-muted)] leading-relaxed">This is the BuildHire model: the right machine, on time, with no surprises on the invoice.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h3 class="text-xl font-bold text-[var(--color-text)] mb-6">Quick Reference: Pool Dig Checklist</h3>
+            <ul class="space-y-3 text-sm text-[var(--color-text-muted)]">
+              {["Measure your side gate width before booking — our 0.8T fits gates from 1,000mm", "Check your soil type — clay in Western Sydney may require an extra half-day", "Confirm your dig depth — standard pool shells require 1,800–2,200mm", "Arrange spoil removal before the machine arrives — don't let it slow the dig", "Book delivery for 7am — most pool builders complete the dig in one day"].map(item => (
+                <li class="flex items-start gap-3">
+                  <span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section class="bg-white py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Pool Builder FAQ</h2>
+        <div class="space-y-6">
+          {[
+            { q: "What size excavator do I need for a residential pool dig in Sydney?", a: "For a standard residential pool (8m x 4m) in Sydney, a 1.7T or 3.5T excavator is typically the right choice. The 1.7T is ideal for tight backyards with side access under 900mm. The 3.5T is faster for larger pools or harder ground. For pools over 50,000L or commercial installations, the 5.5T or 8T is recommended." },
+            { q: "How long does it take to excavate a pool in Sydney?", a: "A standard residential pool excavation in Sydney typically takes 1–2 days with a 1.7T or 3.5T excavator, depending on soil type, pool size, and access. Clay soils in Western Sydney take longer than sandy soils on the Northern Beaches. Hard rock requires a rock breaker attachment — call us to discuss." },
+            { q: "Can BuildHire deliver to tight access backyards in Sydney?", a: "Yes. Our 0.8T and 1.7T mini excavators are specifically designed for tight access. The 0.8T has a body width of just 980mm and can access side gates as narrow as 1,000mm. We deliver across all of Sydney including inner-city terraces, Eastern Suburbs, and North Shore properties with restricted access." },
+            { q: "What is the cost of excavator hire for a pool dig in Sydney?", a: "Excavator hire for pool digging in Sydney starts from $200/day for a 0.8T, $205/day for a 1.7T, and $325/day for a 3.5T. Most residential pool digs require 1–2 days of hire. Delivery & collection is charged separately from $110 depending on your Sydney suburb." },
+          ].map(item => (
+            <div class="border-b border-gray-200 pb-6">
+              <h3 class="text-lg font-bold text-[var(--color-text)] mb-2">{item.q}</h3>
+              <p class="text-[var(--color-text-muted)] leading-relaxed">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    <!-- Related Industries -->
+    <section class="bg-[var(--color-bg)] py-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <h3 class="text-lg font-bold text-[var(--color-text)] mb-6 text-center">Other Industries We Serve</h3>
+        <div class="flex flex-wrap gap-3 justify-center">
+          {[["Landscapers", "/industries/landscapers/"], ["Builders", "/industries/builders/"], ["Plumbers", "/industries/plumbers/"], ["Civil Contractors", "/industries/civil-contractors/"], ["All Industries", "/industries/"]].map(([label, href]) => (
+            <a href={href} class="px-5 py-2 rounded-full border border-gray-300 text-sm font-medium text-[var(--color-text)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">{label}</a>
+          ))}
+        </div>
+      </div>
+    </section>
+    <Footer client:load />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>
