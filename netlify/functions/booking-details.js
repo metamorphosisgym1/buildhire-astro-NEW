@@ -67,8 +67,9 @@ exports.handler = async function (event) {
       customerPhone: meta.customerPhone || "",
     };
 
-    // Send notification email to BuildHire if RESEND_API_KEY is set
-    if (process.env.RESEND_API_KEY) {
+    // Send notification email to BuildHire
+    const RESEND_API_KEY = process.env.RESEND_API_KEY || "re_PFym3oDP_Ht6H1qEP1MgQ9b569vwEM9JL";
+    if (RESEND_API_KEY) {
       try {
         const emailBody = `
 New Booking Confirmed — BuildHire
@@ -94,7 +95,7 @@ ${meta.attachments ? `\nAttachments: ${meta.attachments}` : ""}
         await fetch("https://api.resend.com/emails", {
           method: "POST",
           headers: {
-            Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+            Authorization: `Bearer ${RESEND_API_KEY}`,
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
