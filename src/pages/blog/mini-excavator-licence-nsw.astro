@@ -10,15 +10,28 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Do You Need a Licence to Operate a Mini Excavator in NSW?",
   "description": "A clear guide to NSW licence requirements for operating mini excavators — on private property, worksites, and public roads.",
-  "author": { "@type": "Organization", "name": "BuildHire" },
+  "author": {
+      "@type": "Person",
+      "@id": "https://buildhire.com.au/about-us/#founder",
+      "name": "BuildHire Team",
+      "jobTitle": "Founder",
+      "url": "https://buildhire.com.au/about-us/",
+      "worksFor": { "@type": "Organization", "@id": "https://buildhire.com.au/#organization" },
+      "knowsAbout": ["Excavator Hire", "Mini Excavator Operation", "Construction Equipment", "Dry Hire", "Plant Hire NSW", "Earthmoving Sydney"]
+    },
   "publisher": {
     "@type": "Organization",
     "name": "BuildHire",
     "logo": { "@type": "ImageObject", "url": "https://buildhire.com.au/og-image.png" }
   },
   "datePublished": "2026-04-01",
-  "dateModified": "2026-04-01",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/mini-excavator-licence-nsw" }
+  "dateModified": "2026-05-27",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/mini-excavator-licence-nsw" },
+  "relatedLink": [
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/landscapers/", "name": "Excavator Hire for Landscapers Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/plumbers/", "name": "Excavator Hire for Plumbers Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/dry-hire-vs-wet-hire-excavator-sydney/", "name": "Dry Hire vs Wet Hire Excavator Sydney" }
+  ]
 };
 
 const faqSchema = {

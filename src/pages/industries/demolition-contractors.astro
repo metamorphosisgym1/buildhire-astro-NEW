@@ -13,6 +13,23 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 3, "name": "Demolition Contractors", "item": "https://buildhire.com.au/industries/demolition-contractors" }
   ]
 };
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Excavator Hire for Demolition Contractors Sydney",
+  "provider": { "@type": "LocalBusiness", "@id": "https://buildhire.com.au/#organization", "name": "BuildHire", "url": "https://buildhire.com.au", "telephone": "+611300157882" },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "Dry hire excavators for demolition contractors across Sydney. Structure demolition, site clearance, and debris removal. 3.5T to 23T available. From $325/day.",
+  "offers": { "@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "325", "highPrice": "490", "offerCount": "6" },
+  "dateModified": "2026-05-27",
+  "url": "https://buildhire.com.au/industries/demolition-contractors",
+  "relatedLink": [
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/dry-hire-vs-wet-hire-excavator-sydney/", "name": "Dry Hire vs Wet Hire Excavator Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/what-size-excavator-do-i-need/", "name": "What Size Excavator Do I Need?" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/excavator-hire-cost-sydney/", "name": "Excavator Hire Cost Sydney" }
+  ]
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -42,6 +59,7 @@ const faqSchema = {
   canonicalPath="/industries/demolition-contractors"
   ogImage="/og-image.png"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <div class="min-h-screen pb-20">

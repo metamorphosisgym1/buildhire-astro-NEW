@@ -9,7 +9,15 @@ const articleSchema = {
   "@type": "Article",
   "headline": "What Size Excavator Do I Need? A Sydney Tradesman's Guide",
   "description": "Choosing the wrong excavator size wastes money and time. This guide matches every common Sydney job type to the right machine — from 0.8T to 23T.",
-  "author": { "@type": "Organization", "name": "BuildHire" },
+  "author": {
+      "@type": "Person",
+      "@id": "https://buildhire.com.au/about-us/#founder",
+      "name": "BuildHire Team",
+      "jobTitle": "Founder",
+      "url": "https://buildhire.com.au/about-us/",
+      "worksFor": { "@type": "Organization", "@id": "https://buildhire.com.au/#organization" },
+      "knowsAbout": ["Excavator Hire", "Mini Excavator Operation", "Construction Equipment", "Dry Hire", "Plant Hire NSW", "Earthmoving Sydney"]
+    },
   "publisher": {
     "@type": "Organization",
     "name": "BuildHire",
@@ -17,7 +25,12 @@ const articleSchema = {
   },
   "datePublished": "2026-05-01",
   "dateModified": "2026-05-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/what-size-excavator-do-i-need" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/what-size-excavator-do-i-need" },
+  "relatedLink": [
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/builders/", "name": "Excavator Hire for Builders Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/pool-builders/", "name": "Excavator Hire for Pool Builders Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/landscapers/", "name": "Excavator Hire for Landscapers Sydney" }
+  ]
 };
 const faqSchema = {
   "@context": "https://schema.org",
@@ -67,6 +80,22 @@ const breadcrumbSchema = {
   ]
 };
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "https://buildhire.com.au/blog/what-size-excavator-do-i-need/#mini-excavator",
+  "name": "Mini Excavator",
+  "description": "A mini excavator is a compact excavator typically weighing between 0.8 tonnes and 6 tonnes, designed for residential and light commercial earthmoving work. Mini excavators are the most commonly hired excavator type in Sydney for tasks including pool excavation, footings, landscaping, trenching, and site preparation. BuildHire offers mini excavators from 0.8T to 5.5T for dry hire from $200/day across NSW.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "BuildHire Construction Equipment Hire Glossary",
+    "url": "https://buildhire.com.au/blog/"
+  },
+  "url": "https://buildhire.com.au/blog/what-size-excavator-do-i-need/",
+  "termCode": "mini-excavator"
+}
+</script>
 <Layout
   title="What Size Excavator Do I Need? Sydney Job Guide — BuildHire"
   description="Choosing the wrong excavator size wastes money and time. This guide matches every common Sydney job type to the right machine — from 0.8T mini to 23T Sumitomo."

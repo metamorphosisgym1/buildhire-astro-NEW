@@ -10,15 +10,28 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Dry Hire vs Wet Hire: Which Is Right for Your Sydney Project?",
   "description": "Should you hire an excavator with or without an operator? A clear comparison of dry hire vs wet hire for Sydney construction and landscaping projects.",
-  "author": { "@type": "Organization", "name": "BuildHire" },
+  "author": {
+      "@type": "Person",
+      "@id": "https://buildhire.com.au/about-us/#founder",
+      "name": "BuildHire Team",
+      "jobTitle": "Founder",
+      "url": "https://buildhire.com.au/about-us/",
+      "worksFor": { "@type": "Organization", "@id": "https://buildhire.com.au/#organization" },
+      "knowsAbout": ["Excavator Hire", "Mini Excavator Operation", "Construction Equipment", "Dry Hire", "Plant Hire NSW", "Earthmoving Sydney"]
+    },
   "publisher": {
     "@type": "Organization",
     "name": "BuildHire",
     "logo": { "@type": "ImageObject", "url": "https://buildhire.com.au/og-image.png" }
   },
   "datePublished": "2026-04-01",
-  "dateModified": "2026-04-01",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/dry-hire-vs-wet-hire-excavator-sydney" }
+  "dateModified": "2026-05-27",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/dry-hire-vs-wet-hire-excavator-sydney" },
+  "relatedLink": [
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/builders/", "name": "Excavator Hire for Builders Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/civil-contractors/", "name": "Excavator Hire for Civil Contractors Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/demolition-contractors/", "name": "Excavator Hire for Demolition Contractors Sydney" }
+  ]
 };
 
 const faqSchema = {
@@ -52,6 +65,22 @@ const faqSchema = {
   ]
 };
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "https://buildhire.com.au/blog/dry-hire-vs-wet-hire-excavator-sydney/#dry-hire",
+  "name": "Dry Hire",
+  "description": "Dry hire is the rental of construction equipment — such as an excavator — without an operator. The hirer is responsible for operating the machine themselves or arranging their own licensed operator. BuildHire offers dry hire excavators from $200/day across Sydney and NSW, with next-day delivery and collection included.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "BuildHire Construction Equipment Hire Glossary",
+    "url": "https://buildhire.com.au/blog/"
+  },
+  "url": "https://buildhire.com.au/blog/dry-hire-vs-wet-hire-excavator-sydney/",
+  "termCode": "dry-hire"
+}
+</script>
 
 <Layout
   title="Dry Hire vs Wet Hire Excavator Sydney: Which Is Right for You? — BuildHire"

@@ -9,7 +9,15 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Excavator Hire for Pool Builders in Sydney — What You Need to Know",
   "description": "Pool builders in Sydney: the right excavator size, access requirements, soil types, and pricing for pool excavation across Western Sydney, Hills District, and the Northern Beaches.",
-  "author": { "@type": "Organization", "name": "BuildHire" },
+  "author": {
+      "@type": "Person",
+      "@id": "https://buildhire.com.au/about-us/#founder",
+      "name": "BuildHire Team",
+      "jobTitle": "Founder",
+      "url": "https://buildhire.com.au/about-us/",
+      "worksFor": { "@type": "Organization", "@id": "https://buildhire.com.au/#organization" },
+      "knowsAbout": ["Excavator Hire", "Mini Excavator Operation", "Construction Equipment", "Dry Hire", "Plant Hire NSW", "Earthmoving Sydney"]
+    },
   "publisher": {
     "@type": "Organization",
     "name": "BuildHire",
@@ -17,7 +25,12 @@ const articleSchema = {
   },
   "datePublished": "2026-05-10",
   "dateModified": "2026-05-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/excavator-hire-pool-builders-sydney" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/excavator-hire-pool-builders-sydney" },
+  "relatedLink": [
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/pool-builders/", "name": "Excavator Hire for Pool Builders Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/landscapers/", "name": "Excavator Hire for Landscapers Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/what-size-excavator-do-i-need/", "name": "What Size Excavator Do I Need?" }
+  ]
 };
 const faqSchema = {
   "@context": "https://schema.org",

@@ -13,6 +13,23 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 3, "name": "Drainage Contractors", "item": "https://buildhire.com.au/industries/drainage-contractors" }
   ]
 };
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Excavator Hire for Drainage Contractors Sydney",
+  "provider": { "@type": "LocalBusiness", "@id": "https://buildhire.com.au/#organization", "name": "BuildHire", "url": "https://buildhire.com.au", "telephone": "+611300157882" },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "Dry hire excavators for drainage contractors across Sydney. Trench excavation, stormwater, sewer, and drainage installation. 1.7T to 8T available. From $200/day.",
+  "offers": { "@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "200", "highPrice": "420", "offerCount": "6" },
+  "dateModified": "2026-05-27",
+  "url": "https://buildhire.com.au/industries/drainage-contractors",
+  "relatedLink": [
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/how-to-hire-an-excavator-in-sydney/", "name": "How to Hire an Excavator in Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/mini-excavator-licence-nsw/", "name": "Mini Excavator Licence NSW" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/excavator-hire-cost-sydney/", "name": "Excavator Hire Cost Sydney" }
+  ]
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -42,6 +59,7 @@ const faqSchema = {
   canonicalPath="/industries/drainage-contractors"
   ogImage="/og-image.png"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <div class="min-h-screen pb-20">

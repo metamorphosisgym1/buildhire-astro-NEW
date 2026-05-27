@@ -13,6 +13,23 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 3, "name": "Property Developers", "item": "https://buildhire.com.au/industries/property-developers" }
   ]
 };
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Excavator Hire for Property Developers Sydney",
+  "provider": { "@type": "LocalBusiness", "@id": "https://buildhire.com.au/#organization", "name": "BuildHire", "url": "https://buildhire.com.au", "telephone": "+611300157882" },
+  "areaServed": { "@type": "State", "name": "New South Wales" },
+  "description": "Dry hire excavators for property developers across Sydney. Site preparation, bulk earthworks, footings, and slab excavation. 3.5T to 14.5T available. From $325/day.",
+  "offers": { "@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "325", "highPrice": "490", "offerCount": "6" },
+  "dateModified": "2026-05-27",
+  "url": "https://buildhire.com.au/industries/property-developers",
+  "relatedLink": [
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/excavator-hire-cost-sydney/", "name": "Excavator Hire Cost Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/what-size-excavator-do-i-need/", "name": "What Size Excavator Do I Need?" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/how-to-hire-an-excavator-in-sydney/", "name": "How to Hire an Excavator in Sydney" }
+  ]
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -42,6 +59,7 @@ const faqSchema = {
   canonicalPath="/industries/property-developers"
   ogImage="/og-image.png"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <div class="min-h-screen pb-20">

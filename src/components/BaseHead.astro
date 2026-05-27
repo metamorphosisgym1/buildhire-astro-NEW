@@ -44,9 +44,21 @@ const organizationSchema = {
       { "@type": "City", "name": "Central Coast" }
     ]
   },
+  "@id": "https://buildhire.com.au/#organization",
   "sameAs": [
     "https://www.facebook.com/people/Build-Hire/61586999393373/",
-    "https://www.instagram.com/buildhiresydney/"
+    "https://www.instagram.com/buildhiresydney/",
+    "https://www.linkedin.com/company/buildhire",
+    "https://buildhire.com.au"
+  ],
+  "knowsAbout": [
+    "Excavator Hire",
+    "Mini Excavator Dry Hire",
+    "Construction Equipment Hire",
+    "Earthmoving Equipment Sydney",
+    "Dry Hire vs Wet Hire",
+    "Plant Hire NSW",
+    "Excavator Delivery Sydney"
   ],
   "priceRange": "$$",
   "openingHoursSpecification": [
@@ -118,6 +130,23 @@ const websiteSchema = {
     "query-input": "required name=search_term_string"
   }
 };
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${canonicalUrl}#webpage`,
+  "url": canonicalUrl.toString(),
+  "name": title,
+  "description": description,
+  "inLanguage": "en-AU",
+  "isPartOf": { "@id": "https://buildhire.com.au/#website" },
+  "about": { "@id": "https://buildhire.com.au/#organization" },
+  "dateModified": "2026-05-27",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2", ".answer-short", ".answer-full", "[data-speakable]"]
+  }
+};
 ---
 
 <!-- Primary Meta Tags -->
@@ -152,3 +181,4 @@ const websiteSchema = {
 <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
 <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
 <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />

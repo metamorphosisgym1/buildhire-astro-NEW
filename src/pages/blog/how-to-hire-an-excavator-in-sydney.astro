@@ -10,15 +10,28 @@ const articleSchema = {
   "@type": "Article",
   "headline": "How to Hire an Excavator in Sydney: A Complete Guide",
   "description": "Everything you need to know about hiring an excavator in Sydney — what size to choose, how much it costs, what licence you need, and how to book.",
-  "author": { "@type": "Organization", "name": "BuildHire" },
+  "author": {
+      "@type": "Person",
+      "@id": "https://buildhire.com.au/about-us/#founder",
+      "name": "BuildHire Team",
+      "jobTitle": "Founder",
+      "url": "https://buildhire.com.au/about-us/",
+      "worksFor": { "@type": "Organization", "@id": "https://buildhire.com.au/#organization" },
+      "knowsAbout": ["Excavator Hire", "Mini Excavator Operation", "Construction Equipment", "Dry Hire", "Plant Hire NSW", "Earthmoving Sydney"]
+    },
   "publisher": {
     "@type": "Organization",
     "name": "BuildHire",
     "logo": { "@type": "ImageObject", "url": "https://buildhire.com.au/og-image.png" }
   },
   "datePublished": "2026-04-01",
-  "dateModified": "2026-04-01",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/how-to-hire-an-excavator-in-sydney" }
+  "dateModified": "2026-05-27",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/how-to-hire-an-excavator-in-sydney" },
+  "relatedLink": [
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/builders/", "name": "Excavator Hire for Builders Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/plumbers/", "name": "Excavator Hire for Plumbers Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/excavator-hire-cost-sydney/", "name": "Excavator Hire Cost Sydney" }
+  ]
 };
 
 const faqSchema = {

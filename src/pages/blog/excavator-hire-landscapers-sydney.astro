@@ -9,7 +9,15 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Excavator Hire for Landscapers in Sydney — The Complete Guide",
   "description": "Sydney landscapers: which excavator to hire for retaining walls, drainage, earthworks, and garden construction. Machine selection, access tips, and pricing from BuildHire.",
-  "author": { "@type": "Organization", "name": "BuildHire" },
+  "author": {
+      "@type": "Person",
+      "@id": "https://buildhire.com.au/about-us/#founder",
+      "name": "BuildHire Team",
+      "jobTitle": "Founder",
+      "url": "https://buildhire.com.au/about-us/",
+      "worksFor": { "@type": "Organization", "@id": "https://buildhire.com.au/#organization" },
+      "knowsAbout": ["Excavator Hire", "Mini Excavator Operation", "Construction Equipment", "Dry Hire", "Plant Hire NSW", "Earthmoving Sydney"]
+    },
   "publisher": {
     "@type": "Organization",
     "name": "BuildHire",
@@ -17,7 +25,12 @@ const articleSchema = {
   },
   "datePublished": "2026-05-15",
   "dateModified": "2026-05-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/excavator-hire-landscapers-sydney" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/excavator-hire-landscapers-sydney" },
+  "relatedLink": [
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/landscapers/", "name": "Excavator Hire for Landscapers Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/industries/property-developers/", "name": "Excavator Hire for Property Developers Sydney" },
+    { "@type": "WebPage", "url": "https://buildhire.com.au/blog/what-size-excavator-do-i-need/", "name": "What Size Excavator Do I Need?" }
+  ]
 };
 const faqSchema = {
   "@context": "https://schema.org",

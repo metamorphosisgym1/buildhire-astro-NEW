@@ -1,10 +1,35 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About BuildHire",
+  "description": "Learn about BuildHire — Sydney's trusted excavator and construction equipment hire company. Next-day delivery across NSW.",
+  "url": "https://buildhire.com.au/about-us/",
+  "mainEntity": {
+    "@type": "Organization",
+    "@id": "https://buildhire.com.au/#organization",
+    "name": "BuildHire",
+    "url": "https://buildhire.com.au",
+    "founder": {
+      "@type": "Person",
+      "@id": "https://buildhire.com.au/about-us/#founder",
+      "name": "BuildHire Team",
+      "jobTitle": "Founder",
+      "url": "https://buildhire.com.au/about-us/",
+      "worksFor": { "@type": "Organization", "@id": "https://buildhire.com.au/#organization" },
+      "knowsAbout": ["Excavator Hire", "Mini Excavator Operation", "Construction Equipment Hire", "Dry Hire", "Plant Hire NSW", "Earthmoving Sydney", "Excavator Delivery"]
+    }
+  }
+};
 ---
 <Layout
   title="About BuildHire | Sydney Excavator Hire"
   description="Learn about BuildHire — Sydney's trusted excavator and construction equipment hire company. Next-day delivery across NSW."
+  canonicalPath="/about-us"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(aboutSchema)} />
   <main>
     <h1>About BuildHire</h1>
     <p>BuildHire is Sydney's most trusted excavator and construction equipment hire company. We offer dry hire with next-day delivery and collection across NSW.</p>
