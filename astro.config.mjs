@@ -11,7 +11,7 @@ export default defineConfig({
     tailwind({ applyBaseStyles: false }),
     sitemap({
       filter: (page) => {
-        // Exclude payment pages
+        // Exclude payment pages (these should never be indexed)
         if (page.includes('/payment-success') || page.includes('/payment-cancelled')) return false;
         // Exclude FAQ sub-pages (noindexed — near-duplicate content across 83 locations)
         // Pattern: /hire/[equipment]/[location]/[faq-slug]/ where faq-slug looks like a question
@@ -68,6 +68,16 @@ export default defineConfig({
         {
           item.priority = 0.75;
           item.changefreq = 'monthly';
+        }
+        // Industries hub and sub-pages (/industries/ and /industries/[slug]/)
+        else if (item.url.includes('/industries/')) {
+          item.priority = item.url === 'https://buildhire.com.au/industries/' ? 0.9 : 0.85;
+          item.changefreq = 'weekly';
+        }
+        // Equipment pages (/equipment/[slug]/)
+        else if (item.url.includes('/equipment/')) {
+          item.priority = 0.9;
+          item.changefreq = 'weekly';
         }
         // Blog posts
         else if (item.url.includes('/blog/')) {
