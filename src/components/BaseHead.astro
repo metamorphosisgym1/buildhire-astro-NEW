@@ -182,3 +182,12 @@ const webPageSchema = {
 <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
 <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8W2E1TCKN2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8W2E1TCKN2');
+</script>
