@@ -1,0 +1,214 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+import { aeoAnswers } from '../../data/aeo-answers';
+
+const title = "Equipment Hire Answers | BuildHire NSW";
+const description = "Expert answers to the most common questions about excavator hire, mini dumper hire, and tipper truck hire in NSW. Licences, costs, delivery, and more.";
+
+// Group answers into categories for display
+const categories = [
+  {
+    name: "Licences & Compliance",
+    icon: "📋",
+    slugs: [
+      "do-i-need-a-licence-to-hire-an-excavator-in-nsw",
+      "nsw-whs-excavation-compliance",
+      "owner-builder-excavator-hire-nsw",
+      "excavator-hire-insurance",
+    ]
+  },
+  {
+    name: "Costs & Pricing",
+    icon: "💰",
+    slugs: [
+      "how-much-does-it-cost-to-hire-a-mini-excavator-in-sydney",
+      "tipper-truck-hire-sydney",
+      "how-much-does-excavator-hire-cost-per-week",
+      "excavator-hire-vs-buying",
+      "how-to-get-best-price-equipment-hire",
+    ]
+  },
+  {
+    name: "Choosing the Right Machine",
+    icon: "🔧",
+    slugs: [
+      "what-size-excavator-do-i-need-for-a-pool",
+      "mini-excavator-vs-full-size-excavator",
+      "what-is-zero-tail-swing-excavator",
+      "what-is-a-mini-dumper",
+      "excavator-hire-for-landscaping",
+      "excavator-hire-for-trenching",
+      "excavator-hire-for-rock-breaking",
+    ]
+  },
+  {
+    name: "Project-Specific Guides",
+    icon: "🏗️",
+    slugs: [
+      "excavator-hire-for-footing-excavation",
+      "excavator-hire-for-drainage",
+      "excavator-hire-for-demolition",
+      "excavator-hire-for-pool-removal",
+      "excavator-hire-for-site-clearing",
+      "excavator-hire-for-retaining-wall",
+      "excavator-hire-for-nbn",
+      "excavator-hire-for-solar",
+      "excavator-hire-for-dam-construction",
+      "excavator-hire-for-concrete-removal",
+      "excavator-hire-for-subdivision",
+      "excavator-hire-for-plumbing",
+      "excavator-hire-for-stump-removal",
+      "excavator-hire-for-driveway",
+      "excavator-hire-for-acreage",
+      "excavator-hire-for-shed-slab",
+      "how-long-does-it-take-to-excavate-a-pool",
+    ]
+  },
+  {
+    name: "Booking & Delivery",
+    icon: "📦",
+    slugs: [
+      "how-to-book-excavator-hire-online",
+      "excavator-hire-same-day-sydney",
+      "excavator-hire-weekend",
+      "excavator-hire-booking-tips",
+      "excavator-hire-delivery-nsw",
+      "how-to-load-an-excavator-on-a-trailer",
+      "what-is-dry-hire",
+      "what-is-dry-hire-excavator",
+    ]
+  },
+  {
+    name: "Location Guides",
+    icon: "📍",
+    slugs: [
+      "excavator-hire-western-sydney",
+      "excavator-hire-northern-beaches",
+      "excavator-hire-inner-west-sydney",
+      "excavator-hire-newcastle",
+      "excavator-hire-wollongong",
+      "excavator-hire-central-coast",
+    ]
+  },
+  {
+    name: "How BuildHire Works",
+    icon: "ℹ️",
+    slugs: [
+      "how-buildhire-works",
+      "list-equipment-on-buildhire",
+      "buildhire-vs-direct-hire",
+      "how-to-operate-a-mini-excavator",
+    ]
+  },
+];
+
+// Build a lookup map
+const answerMap = Object.fromEntries(aeoAnswers.map(a => [a.slug, a]));
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonicalPath="/answers/"
+>
+  <Header client:load />
+
+  <main class="min-h-screen pb-20">
+
+    <!-- Hero -->
+    <section class="bg-[var(--color-bg)] pt-28 pb-12">
+      <div class="max-w-4xl mx-auto px-6">
+        <nav class="text-sm text-[var(--color-text-muted)] mb-6 flex items-center gap-2">
+          <a href="/" class="hover:text-[var(--color-primary)] transition-colors">Home</a>
+          <span class="text-[var(--color-border)]">›</span>
+          <span class="text-[var(--color-text)]">Answers</span>
+        </nav>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-medium mb-6">
+          <span>📚</span>
+          <span>{aeoAnswers.length} Expert Answers</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4 leading-tight">
+          Equipment Hire Answers
+        </h1>
+        <p class="text-lg text-[var(--color-text-muted)] max-w-2xl leading-relaxed">
+          Straight answers to the most common questions about hiring excavators, mini dumpers, and tipper trucks in NSW. Written by the BuildHire team based on real customer questions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="bg-[var(--color-bg)] pb-20">
+      <div class="max-w-4xl mx-auto px-6 space-y-12">
+
+        {categories.map(cat => {
+          const answers = cat.slugs.map(s => answerMap[s]).filter(Boolean);
+          if (answers.length === 0) return null;
+          return (
+            <div>
+              <h2 class="text-xl font-bold text-[var(--color-text)] mb-5 flex items-center gap-3">
+                <span class="text-2xl">{cat.icon}</span>
+                {cat.name}
+              </h2>
+              <div class="grid gap-3">
+                {answers.map(answer => (
+                  <a
+                    href={`/answers/${answer.slug}/`}
+                    class="group flex items-start gap-4 p-5 bg-[var(--color-surface)] rounded-xl border border-[var(--color-border)] hover:border-[var(--color-primary)]/40 hover:bg-[var(--color-primary)]/5 transition-all"
+                  >
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center mt-0.5">
+                      <svg class="w-4 h-4 text-[var(--color-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <h3 class="font-semibold text-[var(--color-text)] group-hover:text-[var(--color-primary)] transition-colors leading-snug mb-1">
+                        {answer.question}
+                      </h3>
+                      <p class="text-sm text-[var(--color-text-muted)] line-clamp-2 leading-relaxed">
+                        {answer.shortAnswer.slice(0, 120)}…
+                      </p>
+                    </div>
+                    <svg class="flex-shrink-0 w-4 h-4 text-[var(--color-text-muted)] group-hover:text-[var(--color-primary)] transition-colors mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[var(--color-surface)] py-16">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="p-8 bg-[var(--color-bg)] rounded-2xl border border-[var(--color-border)] text-center">
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mb-3">Ready to Book?</h2>
+          <p class="text-[var(--color-text-muted)] mb-6">Book a mini excavator, tipper truck, or mini dumper online in 2 minutes. Next-day delivery across NSW.</p>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a href="https://www.buildhire.com.au/#booking" class="inline-flex items-center gap-2 px-6 py-3 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
+              Book Equipment Now
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+            <a href="/hire/0-8t-mini-excavator/sydney/" class="inline-flex items-center gap-2 px-6 py-3 border border-[var(--color-border)] text-[var(--color-text)] font-semibold rounded-lg hover:border-[var(--color-primary)] transition-colors">
+              View All Equipment
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer client:load />
+  <ChatWidget client:load />
+  <StickyBottomBar client:load />
+</Layout>

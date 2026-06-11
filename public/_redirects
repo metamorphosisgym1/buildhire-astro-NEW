@@ -1,0 +1,20 @@
+# Redirect singular category slug to correct plural
+/category/mini-excavator/ /category/mini-excavators/ 301
+/category/mini-excavator  /category/mini-excavators/ 301
+
+# Redirect old excavator singular
+/category/excavator/  /category/excavators/ 301
+/category/excavator   /category/excavators/ 301
+
+# Redirect old dumper singular
+/category/mini-dumper/  /category/mini-dumpers/ 301
+/category/mini-dumper   /category/mini-dumpers/ 301
+
+# Redirect any /answers without trailing slash
+/answers  /answers/ 301
+
+# Catch-all for any /hire/ pages without trailing slash (Netlify handles this but explicit is safer)
+/hire/:equipment/:location  /hire/:equipment/:location/ 301
+
+# Catch-all for /compare/ pages without trailing slash
+/compare/:competitor/:industry/:location  /compare/:competitor/:industry/:location/ 301
