@@ -27,7 +27,7 @@ const industriesLinks = [
 const mobileLinks = [
   { label: "Equipment", href: "/equipment/" },
   { label: "Industries", href: "/industries/" },
-  { label: "Service Areas", href: "#features" },
+  { label: "Service Areas", href: "/service-areas/" },
   { label: "Blog", href: "/blog/" },
   { label: "About Us", href: "#contact" },
 ];
@@ -111,7 +111,7 @@ export default function Header() {
               </div>
             </div>
             <a
-              href="#features"
+              href="/service-areas/"
               className={`font-medium text-sm transition-colors ${
                 scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
               }`}

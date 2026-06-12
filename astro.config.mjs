@@ -10,6 +10,10 @@ export default defineConfig({
     react(),
     tailwind({ applyBaseStyles: false }),
     sitemap({
+      customPages: [
+        'https://buildhire.com.au/service-areas/',
+        ...['sydney','parramatta','penrith','liverpool','campbelltown','blacktown','castle-hill','hornsby','sutherland','chatswood','st-george','newcastle','wollongong','manly','bondi','bankstown','inner-west','northern-beaches','eastern-suburbs','hills-district','baulkham-hills','kellyville','rouse-hill','marsden-park','box-hill','schofields','riverstone','windsor','richmond','oran-park','leppington','edmondson-park','gregory-hills','narellan','camden','picton','appin','minto','fairfield','cabramatta','cronulla','ryde','strathfield','auburn','seven-hills','merrylands'].map(s => `https://buildhire.com.au/service-areas/${s}/`),
+      ],
       filter: (page) => {
         // Exclude payment pages (these should never be indexed)
         if (page.includes('/payment-success') || page.includes('/payment-cancelled')) return false;
@@ -67,6 +71,11 @@ export default defineConfig({
         else if (item.url.match(/\/compare\/[^\/]+\/$/))
         {
           item.priority = 0.75;
+          item.changefreq = 'monthly';
+        }
+        // Service area pages (/service-areas/ and /service-areas/[slug]/)
+        else if (item.url.includes('/service-areas/')) {
+          item.priority = item.url === 'https://buildhire.com.au/service-areas/' ? 0.9 : 0.85;
           item.changefreq = 'monthly';
         }
         // Industries hub and sub-pages (/industries/ and /industries/[slug]/)

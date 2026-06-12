@@ -1,0 +1,304 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+import { serviceAreaContent, getServiceAreaBySlug } from '../../data/serviceAreaContent';
+
+export async function getStaticPaths() {
+  return serviceAreaContent.map(area => ({
+    params: { locationSlug: area.slug },
+    props: { area }
+  }));
+}
+
+const { area } = Astro.props;
+
+const title = `Excavator Hire ${area.name} | Next-Day Delivery — BuildHire`;
+const description = `BuildHire delivers excavators and construction equipment to ${area.name} and surrounding suburbs. Next-day delivery, transparent pricing, late-model Yanmar fleet. Call 1300 157 882.`;
+const canonicalPath = `/service-areas/${area.slug}/`;
+
+// LocalBusiness + Service schema
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "EquipmentRental"],
+  "name": "BuildHire",
+  "description": `Excavator and construction equipment hire in ${area.name}, ${area.state}`,
+  "url": `https://buildhire.com.au/service-areas/${area.slug}/`,
+  "telephone": "+611300157882",
+  "areaServed": {
+    "@type": "City",
+    "name": area.name,
+    "containedInPlace": {
+      "@type": "State",
+      "name": area.state
+    }
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": area.coordinates.lat,
+    "longitude": area.coordinates.lng
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": `Excavator Hire in ${area.name}`,
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mini Excavator Hire" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Excavator Hire" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tipper Truck Hire" } }
+    ]
+  }
+};
+
+// FAQPage schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": area.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+  }))
+};
+
+// BreadcrumbList schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://buildhire.com.au/" },
+    { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://buildhire.com.au/service-areas/" },
+    { "@type": "ListItem", "position": 3, "name": `Excavator Hire ${area.name}`, "item": `https://buildhire.com.au/service-areas/${area.slug}/` }
+  ]
+};
+---
+
+<Layout title={title} description={description} canonicalPath={canonicalPath}>
+  <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <!-- Hero -->
+    <section class="bg-[hsl(var(--background))] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-[hsl(var(--muted-foreground))] mb-6 flex items-center gap-2 flex-wrap">
+          <a href="/" class="hover:text-[hsl(var(--primary))] transition-colors">Home</a>
+          <span>/</span>
+          <a href="/service-areas/" class="hover:text-[hsl(var(--primary))] transition-colors">Service Areas</a>
+          <span>/</span>
+          <span class="text-[hsl(var(--foreground))]">{area.name}</span>
+        </nav>
+
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[hsl(var(--primary))]/10 text-[hsl(var(--primary))] text-sm font-semibold mb-6">
+          📍 Serving {area.name} &amp; Surrounding Suburbs
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-bold text-[hsl(var(--foreground))] mb-6 leading-tight tracking-tight">
+          Excavator Hire {area.name}
+        </h1>
+
+        <p class="text-xl text-[hsl(var(--muted-foreground))] mb-10 max-w-3xl leading-relaxed">
+          {area.intro}
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row gap-4 mb-10">
+          <a
+            href="/#booking"
+            class="bg-[hsl(var(--primary))] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg text-center"
+          >
+            Book Online Now →
+          </a>
+          <a
+            href="tel:1300157882"
+            class="border-2 border-[hsl(var(--primary))] text-[hsl(var(--primary))] font-bold px-8 py-4 rounded-lg hover:bg-[hsl(var(--primary))] hover:text-white transition text-lg text-center"
+          >
+            📞 1300 157 882
+          </a>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="flex flex-wrap gap-x-6 gap-y-2">
+          {[
+            "✓ Next-day delivery",
+            "✓ No licence required",
+            "✓ Transparent pricing",
+            "✓ Late-model fleet"
+          ].map(badge => (
+            <span class="text-sm font-semibold text-[hsl(var(--muted-foreground))]">{badge}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Body Content + Case Study -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <p class="text-xs font-bold uppercase tracking-widest text-[hsl(var(--primary))] mb-3">About This Service Area</p>
+          <h2 class="text-3xl font-bold text-[hsl(var(--foreground))] mb-6 tracking-tight">
+            Excavator Hire Across {area.name}
+          </h2>
+
+          <p class="text-[hsl(var(--muted-foreground))] leading-relaxed mb-6">
+            {area.bodyParagraph1}
+          </p>
+
+          <p class="text-[hsl(var(--muted-foreground))] leading-relaxed mb-8">
+            {area.bodyParagraph2}
+          </p>
+
+          <!-- Case Study Card -->
+          <div class="bg-[hsl(var(--background))] border border-[hsl(var(--border))] rounded-xl p-6 mb-8 relative overflow-hidden">
+            <div class="absolute left-0 top-0 bottom-0 w-1 bg-[hsl(var(--primary))] rounded-l-xl"></div>
+            <p class="text-xs font-bold uppercase tracking-widest text-[hsl(var(--primary))] mb-2">Real Project — {area.name}</p>
+            <h3 class="text-lg font-bold text-[hsl(var(--foreground))] mb-3">{area.caseStudy.client} — {area.caseStudy.projectType}</h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-white border border-[hsl(var(--border))] rounded-md px-3 py-1 text-xs font-semibold text-[hsl(var(--muted-foreground))]">
+                🚜 {area.caseStudy.equipment}
+              </span>
+              <span class="bg-white border border-[hsl(var(--border))] rounded-md px-3 py-1 text-xs font-semibold text-[hsl(var(--muted-foreground))]">
+                📍 {area.name}, {area.state}
+              </span>
+            </div>
+            <p class="text-sm text-[hsl(var(--muted-foreground))] leading-relaxed mb-4">
+              {area.caseStudy.outcome}
+            </p>
+            <blockquote class="bg-white rounded-lg p-4 border-l-0">
+              <p class="text-sm italic text-[hsl(var(--foreground))] leading-relaxed mb-2">
+                "{area.caseStudy.quote}"
+              </p>
+              <footer class="text-xs font-bold text-[hsl(var(--primary))]">
+                — {area.caseStudy.client}, {area.name} NSW ⭐⭐⭐⭐⭐
+              </footer>
+            </blockquote>
+          </div>
+
+          <p class="text-[hsl(var(--muted-foreground))] leading-relaxed">
+            {area.bodyParagraph3}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why BuildHire -->
+    <section class="bg-[hsl(var(--background))] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[hsl(var(--foreground))] mb-10 tracking-tight">
+          Why {area.name} Contractors Choose BuildHire
+        </h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {[
+            { icon: "🚛", title: "Next-Day Delivery", desc: `Book before 12pm for guaranteed next-day delivery to ${area.name}.` },
+            { icon: "💰", title: "Transparent Pricing", desc: "No hidden fees. Delivery, collection, and fuel included in every quote." },
+            { icon: "🔧", title: "Late-Model Fleet", desc: "Low-hour Yanmar and Sumitomo machines serviced to the highest standards." },
+            { icon: "📱", title: "WhatsApp Support", desc: "Message our team for same-day enquiries and booking changes." }
+          ].map(item => (
+            <div class="bg-white rounded-xl p-6 text-center shadow-sm border border-[hsl(var(--border))]">
+              <div class="text-3xl mb-3">{item.icon}</div>
+              <h3 class="font-bold text-[hsl(var(--foreground))] mb-2 text-sm">{item.title}</h3>
+              <p class="text-xs text-[hsl(var(--muted-foreground))] leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Suburbs Covered -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <p class="text-xs font-bold uppercase tracking-widest text-[hsl(var(--primary))] mb-3">Coverage</p>
+        <h2 class="text-3xl font-bold text-[hsl(var(--foreground))] mb-4 tracking-tight">
+          {area.name} Suburbs We Deliver To
+        </h2>
+        <p class="text-[hsl(var(--muted-foreground))] mb-6 max-w-xl">
+          BuildHire delivers to {area.name} and all surrounding suburbs in the {area.region} region.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          {area.suburbs.map(suburb => (
+            <span class="bg-[hsl(var(--background))] border border-[hsl(var(--border))] rounded-full px-4 py-1.5 text-sm font-medium text-[hsl(var(--muted-foreground))]">
+              {suburb}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-[hsl(var(--background))] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <p class="text-xs font-bold uppercase tracking-widest text-[hsl(var(--primary))] mb-3 text-center">Common Questions</p>
+        <h2 class="text-3xl font-bold text-[hsl(var(--foreground))] mb-10 text-center tracking-tight">
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-3">
+          {area.faqs.map((faq, i) => (
+            <details class="bg-white rounded-xl p-6 shadow-sm border border-[hsl(var(--border))] group" open={i === 0}>
+              <summary class="font-semibold text-[hsl(var(--foreground))] cursor-pointer list-none flex justify-between items-center gap-4">
+                <span>{faq.q}</span>
+                <span class="text-[hsl(var(--primary))] text-xl font-light shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
+              </summary>
+              <p class="mt-4 text-sm text-[hsl(var(--muted-foreground))] leading-relaxed">{faq.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby Service Areas -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <p class="text-xs font-bold uppercase tracking-widest text-[hsl(var(--primary))] mb-3">Explore Nearby</p>
+        <h2 class="text-3xl font-bold text-[hsl(var(--foreground))] mb-4 tracking-tight">
+          Other Service Areas Near {area.name}
+        </h2>
+        <p class="text-[hsl(var(--muted-foreground))] mb-6">BuildHire also delivers to these nearby areas:</p>
+        <div class="flex flex-wrap gap-3">
+          {area.nearbyAreas.map((nearby, i) => (
+            <a
+              href={`/service-areas/${area.nearbyAreaSlugs[i]}/`}
+              class="bg-[hsl(var(--background))] border border-[hsl(var(--border))] rounded-lg px-5 py-2.5 text-sm font-semibold text-[hsl(var(--foreground))] hover:border-[hsl(var(--primary))] hover:text-[hsl(var(--primary))] transition-colors"
+            >
+              {nearby} →
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="bg-[hsl(var(--primary))] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4 tracking-tight">
+          Ready to Book Excavator Hire in {area.name}?
+        </h2>
+        <p class="text-white/80 mb-8 text-lg leading-relaxed">
+          Book online in 60 seconds or call us for an instant quote. Next-day delivery available across {area.region} &amp; NSW.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/#booking"
+            class="bg-white text-[hsl(var(--primary))] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg"
+          >
+            Book Online Now →
+          </a>
+          <a
+            href="tel:1300157882"
+            class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[hsl(var(--primary))] transition text-lg"
+          >
+            Call 1300 157 882
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>
