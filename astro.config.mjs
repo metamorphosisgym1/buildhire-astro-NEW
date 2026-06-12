@@ -15,22 +15,12 @@ export default defineConfig({
         ...['sydney','parramatta','penrith','liverpool','campbelltown','blacktown','castle-hill','hornsby','sutherland','chatswood','st-george','newcastle','wollongong','manly','bondi','bankstown','inner-west','northern-beaches','eastern-suburbs','hills-district','baulkham-hills','kellyville','rouse-hill','marsden-park','box-hill','schofields','riverstone','windsor','richmond','oran-park','leppington','edmondson-park','gregory-hills','narellan','camden','picton','appin','minto','fairfield','cabramatta','cronulla','ryde','strathfield','auburn','seven-hills','merrylands'].map(s => `https://buildhire.com.au/service-areas/${s}/`),
       ],
       filter: (page) => {
-        // Exclude payment pages (these should never be indexed)
+        // Exclude payment pages
         if (page.includes('/payment-success') || page.includes('/payment-cancelled')) return false;
-        // Exclude FAQ sub-pages (noindexed — near-duplicate content across 83 locations)
-        // Pattern: /hire/[equipment]/[location]/[faq-slug]/ where faq-slug looks like a question
-        if (page.match(/\/hire\/[^\/]+\/[^\/]+\/[^\/]+\/$/) &&
-            (page.includes('how-') || page.includes('what-') || page.includes('do-') ||
-             page.includes('can-') || page.includes('is-') || page.includes('are-') ||
-             page.includes('why-') || page.includes('when-') || page.includes('does-') ||
-             page.includes('will-') || page.includes('which-') || page.includes('cost') ||
-             page.includes('price') || page.includes('need-') || page.includes('much-'))) {
-          return false;
-        }
-        // Exclude use-case hub pages without location (noindexed — location-specific pages are canonical)
-        if (page.includes('/use-case/') && page.match(/\/hire\/[^\/]+\/use-case\/[^\/]+\/$/) ) {
-          return false;
-        }
+        // Exclude /compare/, /for/, and /hire/ — deindexed sections
+        if (page.includes('/compare/')) return false;
+        if (page.includes('/for/')) return false;
+        if (page.includes('/hire/')) return false;
         return true;
       },
       serialize(item) {
