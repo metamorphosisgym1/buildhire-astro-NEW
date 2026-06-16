@@ -79,7 +79,7 @@ Understanding the real cost of hiring a mini excavator in Sydney requires lookin
 | 0.8T Mini Excavator | $200/day | $700/week | $110 |
 | 1T Mini Excavator | $240/day | $840/week | $110 |
 | 1.7T Mini Excavator | $280/day | $980/week | $110 |
-| 3.5T Excavator | $380/day | $1,330/week | $110 |
+| 3.5T Excavator | $370/day | $1,550/week | $110 |
 | 5.5T Excavator | $480/day | $1,680/week | $110 |
 
 All prices include GST. Delivery and collection within Greater Sydney is $110 per hire (not per day). For locations outside Greater Sydney — Newcastle, Wollongong, Central Coast, Hunter Valley — delivery costs vary by distance. Contact BuildHire for a regional delivery quote.
@@ -1592,7 +1592,7 @@ Removing old concrete slabs, driveways, paths, and footings is a common project 
 Reinforced concrete (with steel rebar) is harder to remove than plain concrete. The breaker breaks the concrete; the rebar remains and must be cut with an angle grinder or bolt cutters before the pieces can be removed. Budget for additional time when removing reinforced concrete.`,
     relatedQuestions: [
       { q: "Does BuildHire offer hydraulic breaker attachments for concrete removal?", a: "Contact BuildHire on 1300 157 882 about hydraulic breaker attachment availability for concrete removal projects." },
-      { q: "How much does concrete removal cost with a hired excavator in Sydney?", a: "A 3.5T excavator with hydraulic breaker from BuildHire costs approximately $380/day plus $110 delivery. Tipper truck hire adds $350/day. A standard residential driveway removal typically takes 1 day." },
+      { q: "How much does concrete removal cost with a hired excavator in Sydney?", a: "A 3.5T excavator with hydraulic breaker from BuildHire costs approximately $370/day plus $150 delivery. Tipper truck hire adds $350/day. A standard residential driveway removal typically takes 1 day." },
       { q: "Where can I dispose of concrete rubble in Sydney?", a: "Concrete rubble can be disposed of at licensed concrete recycling facilities in Sydney. Many facilities accept clean concrete rubble for recycling into road base." }
     ],
     schema: { type: "HowTo", speakable: true }
@@ -1879,7 +1879,7 @@ For projects lasting 5 or more days, BuildHire's weekly hire rates provide signi
 | 0.8T Mini Excavator | $200/day | $700/week | Save $300 (5 days vs 3.5 days cost) |
 | 1T Mini Excavator | $240/day | $840/week | Save $360 |
 | 1.7T Mini Excavator | $280/day | $980/week | Save $420 |
-| 3.5T Excavator | $380/day | $1,330/week | Save $570 |
+| 3.5T Excavator | $370/day | $1,550/week | Save $570 |
 | 5.5T Excavator | $480/day | $1,680/week | Save $720 |
 
 All prices include GST. Delivery and collection within Greater Sydney is $110 per hire (not per week).

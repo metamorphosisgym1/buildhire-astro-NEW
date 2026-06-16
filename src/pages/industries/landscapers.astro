@@ -25,7 +25,7 @@ const faqSchema = {
   "mainEntity": [
     { "@type": "Question", "name": "What excavator is best for landscaping in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "For most residential landscaping jobs in Sydney — retaining walls, garden bed preparation, drainage trenching — a 1.7T mini excavator is the most versatile choice. It fits through standard side gates (1,200mm+), has zero tail swing to protect fences and structures, and can dig to 2,500mm for drainage work. For larger earthworks or heavy retaining walls, the 3.5T provides more power and speed." } },
     { "@type": "Question", "name": "Can I use a mini excavator to build a retaining wall in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A 1.7T or 3.5T excavator is ideal for retaining wall construction — excavating the footing trench, placing the base course, and backfilling behind the wall. For walls over 1,000mm high, a 3.5T is recommended for the heavier lifting and backfill compaction work." } },
-    { "@type": "Question", "name": "How much does excavator hire cost for a landscaping job in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Excavator hire for landscaping in Sydney starts from $200/day for a 0.8T and $205/day for a 1.7T. Most landscaping jobs require 1–3 days depending on the scope. Delivery & collection from $110. Weekly rates are available for ongoing projects — call 1300 157 882." } },
+    { "@type": "Question", "name": "How much does excavator hire cost for a landscaping job in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Excavator hire for landscaping in Sydney starts from $200/day for a 0.8T and $205/day for a 1.7T. Most landscaping jobs require 1–3 days depending on the scope. Delivery & collection from $150. Weekly rates are available for ongoing projects — call 1300 157 882." } },
     { "@type": "Question", "name": "Do I need a licence to operate an excavator for landscaping in NSW?", "acceptedAnswer": { "@type": "Answer", "text": "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required. Most residential landscaping jobs on private property do not require a licence." } }
   ]
 };
@@ -106,10 +106,10 @@ const breadcrumbSchema = {
             <h3 class="text-xl font-bold text-[var(--color-text)] mb-6">Landscaper Hire Rates</h3>
             <div class="space-y-4">
               {[
-                { machine: "0.8T Mini Excavator", rate: "$200/day", delivery: "from $110" },
-                { machine: "1.7T Mini Excavator", rate: "$205/day", delivery: "from $110" },
-                { machine: "3.5T Excavator", rate: "$325/day", delivery: "from $150" },
-                { machine: "5.5T Excavator", rate: "$380/day", delivery: "on enquiry" },
+                { machine: "0.8T Mini Excavator", rate: "$200/day", delivery: "from $150" },
+                { machine: "1.7T Mini Excavator", rate: "$205/day", delivery: "from $150" },
+                { machine: "3.5T Excavator", rate: "$340/day", delivery: "from $150" },
+                { machine: "5.5T Excavator", rate: "$370/day", delivery: "on enquiry" },
               ].map(r => (
                 <div class="flex justify-between items-center py-3 border-b border-gray-100">
                   <span class="font-medium text-[var(--color-text)]">{r.machine}</span>
@@ -132,7 +132,7 @@ const breadcrumbSchema = {
           {[
             { q: "What excavator is best for landscaping in Sydney?", a: "For most residential landscaping jobs in Sydney — retaining walls, garden bed preparation, drainage trenching — a 1.7T mini excavator is the most versatile choice. It fits through standard side gates (1,200mm+), has zero tail swing to protect fences and structures, and can dig to 2,500mm for drainage work. For larger earthworks or heavy retaining walls, the 3.5T provides more power and speed." },
             { q: "Can I use a mini excavator to build a retaining wall in Sydney?", a: "Yes. A 1.7T or 3.5T excavator is ideal for retaining wall construction — excavating the footing trench, placing the base course, and backfilling behind the wall. For walls over 1,000mm high, a 3.5T is recommended for the heavier lifting and backfill compaction work." },
-            { q: "How much does excavator hire cost for a landscaping job in Sydney?", a: "Excavator hire for landscaping in Sydney starts from $200/day for a 0.8T and $205/day for a 1.7T. Most landscaping jobs require 1–3 days depending on the scope. Delivery & collection from $110. Weekly rates are available for ongoing projects — call 1300 157 882." },
+            { q: "How much does excavator hire cost for a landscaping job in Sydney?", a: "Excavator hire for landscaping in Sydney starts from $200/day for a 0.8T and $205/day for a 1.7T. Most landscaping jobs require 1–3 days depending on the scope. Delivery & collection from $150. Weekly rates are available for ongoing projects — call 1300 157 882." },
           ].map(item => (
             <div class="border-b border-gray-200 pb-6">
               <h3 class="text-lg font-bold text-[var(--color-text)] mb-2">{item.q}</h3>

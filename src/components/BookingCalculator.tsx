@@ -45,6 +45,7 @@ const cormidiC85Img = "/assets/cormidi-c85.jpg";
 const loaderImg = "/assets/loader-lilac.jpg";
 const bookingBg = "/assets/bg-excavator-1.jpg";
 const rockBreakerImg = "/assets/rock-breaker-buildhire.png";
+const sieveBucketImg = "/assets/sieve-bucket-tiger.png";
 const augerImg = "/assets/auger-drive.jpg";
 const rockGrabImg = "/assets/rock-grab.jpg";
 const typhoonWasherImg = "/assets/typhoon-pressure-washer.png";
@@ -67,36 +68,45 @@ const machineImages: Record<string, string> = {
   "3.5T Excavator (ViO35-7 Yanmar)": vio35Img,
   "5.5T Excavator (ViO55 Yanmar)": vio55Img,
   "8T Excavator (ViO80 Yanmar)": vio80Img,
-  "14.5T Sumitomo Excavator": vio80Img,
+  "14.5T Excavator (Case CX145C)": vio80Img,
   "23T Excavator (Sumitomo SH235X-6)": vio80Img,
   "Isuzu NQR450 Tipper": isuzuTipperImg,
   "Box Trailer": boxTrailerImg,
   "Cormidi C7x 700kg Petrol High Tip": cormidiC7xImg,
   "Cormidi C85": cormidiC85Img,
-  "Rock Breaker 1.7T": rockBreakerImg,
-  "Rock Breaker 3.5T": rockBreakerImg,
-  "Rock Breaker 5.5T": rockBreakerImg,
-  
   "Auger Drive 1.7T (200mm, 300mm, 450mm)": augerImg,
   "Auger Drive 3.5T (200mm, 300mm, 450mm)": augerImg,
   "Auger Drive 5.5T (200mm, 300mm, 450mm)": augerImg,
-  "Rock Grabs 3.5T": rockGrabImg,
-  "Rock Grabs 5.5T": rockGrabImg,
+  "Rock Grab 3.5T": rockGrabImg,
+  "Rock Grab 5.5T": rockGrabImg,
+  "Rock Grab 14.5T": rockGrabImg,
+  "Sieve Bucket 1.7T (Tiger Buckets)": sieveBucketImg,
+  "Sieve Bucket 3.5T (Tiger Buckets)": sieveBucketImg,
+  "Sieve Bucket 5.5T (Tiger Buckets)": sieveBucketImg,
+  "Sieve Bucket 14.5T (Tiger Buckets)": sieveBucketImg,
+  "Trailer (1.7T)": boxTrailerImg,
+  "Hydraulic Hammer 0.8T/1T": rockBreakerImg,
+  "Hydraulic Hammer 1.7T": rockBreakerImg,
+  "Hydraulic Hammer 3.5T": rockBreakerImg,
+  "Hydraulic Hammer 5.5T": rockBreakerImg,
+  "Hydraulic Hammer 14.5T": rockBreakerImg,
+  "Auger Drive 0.8T/1T (1 attachment)": augerImg,
+  "Auger Drive 14.5T (200mm, 300mm, 450mm)": augerImg,
   "Husqvarna K970 MKIII 16\" Concrete Saw": concreteSawImg,
   "Bosch GSH16-30 Demolition Hammer": demolitionHammerImg,
   "Typhoon TPW4200H Pressure Washer": typhoonWasherImg,
 };
 
-const equipmentData: Record<string, { name: string; rate: number; comingSoon?: boolean }[]> = {
+const equipmentData: Record<string, { name: string; rate: number; weeklyRate?: number; comingSoon?: boolean }[]> = {
   Excavators: [
-    { name: "0.8T Mini Excavator (SV08 Yanmar)", rate: 200 },
-    { name: "1T Mini Excavator (Kubota U10-5)", rate: 200 },
-    { name: "1.7T Mini Excavator (ViO17 Yanmar)", rate: 205 },
-    { name: "3.5T Excavator (ViO35-7 Yanmar)", rate: 325 },
-    { name: "5.5T Excavator (ViO55 Yanmar)", rate: 345 },
+    { name: "0.8T Mini Excavator (SV08 Yanmar)", rate: 200, weeklyRate: 1000 },
+    { name: "1T Mini Excavator (Kubota U10-5)", rate: 200, weeklyRate: 1000 },
+    { name: "1.7T Mini Excavator (ViO17 Yanmar)", rate: 205, weeklyRate: 1100 },
+    { name: "3.5T Excavator (ViO35-7 Yanmar)", rate: 340, weeklyRate: 1550 },
+    { name: "5.5T Excavator (ViO55 Yanmar)", rate: 370, weeklyRate: 1650 },
     { name: "8T Excavator (ViO80 Yanmar)", rate: 420, comingSoon: true },
-    { name: "14.5T Sumitomo Excavator", rate: 470 },
-    { name: "23T Excavator (Sumitomo SH235X-6)", rate: 490 },
+    { name: "14.5T Excavator (Case CX145C)", rate: 490, weeklyRate: 2100 },
+    { name: "23T Excavator (Sumitomo SH235X-6)", rate: 490, weeklyRate: 2100, comingSoon: true },
   ],
   "Mini Dumpers": [
     { name: "Cormidi C7x 700kg Petrol High Tip", rate: 200 },
@@ -104,18 +114,27 @@ const equipmentData: Record<string, { name: string; rate: number; comingSoon?: b
   ],
   "Tipper Trucks": [
     { name: "Isuzu NQR450 Tipper", rate: 280 },
-    { name: "Box Trailer", rate: 80 },
+    { name: "Box Trailer", rate: 150 },
   ],
   Attachments: [
-    { name: "Rock Breaker 1.7T", rate: 110 },
-    { name: "Rock Breaker 3.5T", rate: 150 },
-    { name: "Rock Breaker 5.5T", rate: 180 },
-    
+    { name: "Hydraulic Hammer 0.8T/1T", rate: 130 },
+    { name: "Hydraulic Hammer 1.7T", rate: 130 },
+    { name: "Hydraulic Hammer 3.5T", rate: 140 },
+    { name: "Hydraulic Hammer 5.5T", rate: 170 },
+    { name: "Hydraulic Hammer 14.5T", rate: 250 },
+    { name: "Auger Drive 0.8T/1T (1 attachment)", rate: 99 },
     { name: "Auger Drive 1.7T (200mm, 300mm, 450mm)", rate: 99 },
-    { name: "Auger Drive 3.5T (200mm, 300mm, 450mm)", rate: 120 },
-    { name: "Auger Drive 5.5T (200mm, 300mm, 450mm)", rate: 150 },
-    { name: "Rock Grabs 3.5T", rate: 135 },
-    { name: "Rock Grabs 5.5T", rate: 140 },
+    { name: "Auger Drive 3.5T (200mm, 300mm, 450mm)", rate: 140 },
+    { name: "Auger Drive 5.5T (200mm, 300mm, 450mm)", rate: 160 },
+    { name: "Auger Drive 14.5T (200mm, 300mm, 450mm)", rate: 230 },
+    { name: "Rock Grab 3.5T", rate: 135 },
+    { name: "Rock Grab 5.5T", rate: 150 },
+    { name: "Rock Grab 14.5T", rate: 170 },
+    { name: "Sieve Bucket 1.7T (Tiger Buckets)", rate: 50 },
+    { name: "Sieve Bucket 3.5T (Tiger Buckets)", rate: 50 },
+    { name: "Sieve Bucket 5.5T (Tiger Buckets)", rate: 50 },
+    { name: "Sieve Bucket 14.5T (Tiger Buckets)", rate: 50 },
+    { name: "Trailer (1.7T)", rate: 50 },
   ],
   "Concrete saws & other tools": [
     { name: "Husqvarna K970 MKIII 16\" Concrete Saw", rate: 140 },
@@ -172,22 +191,22 @@ export default function BookingCalculator() {
         )
       : 0;
 
-  const attachmentCost = selectedAttachments.length * 75;
   const equipmentCost = (selectedMachine?.rate ?? 0) * days;
+  const attachmentCost = selectedAttachments.length * 75;
 
   // Tiered delivery & collection pricing
   const getDeliveryCost = (machineName: string): number => {
     if (!machineName) return 0;
-    // 0.8T, 1.7T, Cormidi Dumpers
+    // 0.8T, 1T, 1.7T, Cormidi Dumpers
     if (
       machineName.includes("0.8T") ||
       machineName.includes("1T Mini") ||
       machineName.includes("1.7T") ||
       machineName.includes("Cormidi")
-    ) return 110;
+    ) return 150;
     // 3.5T
-    if (machineName.includes("3.5T")) return 230;
-    // 5.5T, 8T, 14.5T — third party transport, pricing on enquiry
+    if (machineName.includes("3.5T")) return 220;
+    // 5.5T, 8T, 14.5T, 23T — third party transport, pricing on enquiry
     if (
       machineName.includes("5.5T") ||
       machineName.includes("8T") ||
@@ -196,25 +215,37 @@ export default function BookingCalculator() {
     ) return 0;
     // Tipper
     if (machineName.includes("Tipper")) return 150;
-    // Box Trailer, Concrete Saws, Tools
+    // Box Trailer
+    if (machineName.includes("Box Trailer")) return 0;
+    // Concrete Saws, Tools
     if (
-      machineName.includes("Box Trailer") ||
       machineName.includes("Concrete Saw") ||
       machineName.includes("Demolition Hammer") ||
       machineName.includes("Pressure Washer")
     ) return 100;
     // Attachments hired standalone
     if (
-      machineName.includes("Rock Breaker") ||
+      machineName.includes("Hydraulic Hammer") ||
       machineName.includes("Auger") ||
-      machineName.includes("Rock Grabs")
+      machineName.includes("Rock Grab") ||
+      machineName.includes("Sieve Bucket") ||
+      machineName.includes("Trailer")
     ) return 100;
     return 150;
   };
 
   const deliveryCost = getDeliveryCost(machine);
   const isThirdPartyDelivery = machine.includes("5.5T") || machine.includes("8T") || machine.includes("14.5T") || machine.includes("23T");
-  const totalCost = equipmentCost + attachmentCost * days + deliveryCost;
+
+  // Weekly rate calculation — apply weekly rate for full weeks, daily rate for remaining days
+  const weeks = days >= 7 ? Math.floor(days / 7) : 0;
+  const remainingDays = days >= 7 ? days % 7 : days;
+  const weeklyRate = selectedMachine?.weeklyRate ?? 0;
+  const effectiveEquipmentCost = weeklyRate > 0 && weeks > 0
+    ? weeks * weeklyRate + remainingDays * (selectedMachine?.rate ?? 0)
+    : equipmentCost;
+
+  const totalCost = effectiveEquipmentCost + attachmentCost * days + deliveryCost;
 
   const toggleAttachment = (a: string) =>
     setSelectedAttachments((prev) =>

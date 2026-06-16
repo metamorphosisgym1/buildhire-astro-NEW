@@ -15,6 +15,7 @@ const cormidiC7xImg = "/assets/cormidi-c7x.jpg";
 const cormidiC85Img = "/assets/cormidi-c85.jpg";
 const isuzuTipperImg = "/assets/isuzu-tipper.png";
 const rockBreakerImg = "/assets/rock-breaker-buildhire.png";
+const sieveBucketImg = "/assets/sieve-bucket-tiger.png";
 const augerImg = "/assets/auger-drive.jpg";
 const rockGrabImg = "/assets/rock-grab.jpg";
 const concreteSawImg = "/assets/concrete-saw.png";
@@ -108,9 +109,9 @@ const availableEquipment: EquipmentItem[] = [
     name: "3.5T Excavator (ViO35-7 Yanmar)",
     category: "Excavators",
     image: vio35Img,
-    rate: "$325/day",
+    rate: "$340/day",
     badge: "available",
-    deliveryNote: "$230 Delivery & Collection*",
+    deliveryNote: "$220 Delivery & Collection*",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2024/06/ViO30-7ViO35-7_240620_Single_LR.pdf",
     specs: {
       "Operating Weight": "3,500 kg",
@@ -125,7 +126,7 @@ const availableEquipment: EquipmentItem[] = [
     name: "5.5T Excavator (ViO55 Yanmar)",
     category: "Excavators",
     image: vio55Img,
-    rate: "$345/day",
+    rate: "$370/day",
     badge: "high-demand",
     deliveryNote: "Delivery & Collection* (third party transport — pricing on enquiry)",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-ViO50-ViO55-Excavator-Brochure.pdf",
@@ -142,7 +143,7 @@ const availableEquipment: EquipmentItem[] = [
     name: "14.5T Excavator (Case CX145C)",
     category: "Excavators",
     image: vio80Img,
-    rate: "$470/day",
+    rate: "$490/day",
     badge: "available",
     deliveryNote: "Delivery & Collection* (third party transport — pricing on enquiry)",
     brochureUrl: "/brochures/CX145C-Specs.pdf",
@@ -192,7 +193,7 @@ const availableEquipment: EquipmentItem[] = [
     name: "Box Trailer",
     category: "Tipper Trucks",
     image: boxTrailerImg,
-    rate: "$80/day",
+    rate: "$150/day",
     badge: "available",
     specs: {
       "Type": "Box Trailer",
@@ -266,7 +267,21 @@ const availableEquipment: EquipmentItem[] = [
     useContain: true,
     specs: {
       "Type": "Hydraulic Rock Grab",
-      "Suitable For": "3.5T – 8T Excavators",
+      "Suitable For": "3.5T – 14.5T Excavators",
+    },
+  },
+  {
+    name: "Sieve Bucket (Tiger Buckets)",
+    category: "Attachments",
+    image: sieveBucketImg,
+    rate: "$50/day",
+    badge: "available",
+    deliveryNote: "Free delivery & collection when hired with a machine",
+    useContain: true,
+    specs: {
+      "Type": "Sieve / Skeleton Bucket",
+      "Brand": "Tiger Buckets & Attachments",
+      "Suitable For": "1.7T, 3.5T, 5.5T & 14.5T Excavators",
     },
   },
   {
