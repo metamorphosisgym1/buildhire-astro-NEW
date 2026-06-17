@@ -60,7 +60,7 @@ const availableEquipment: EquipmentItem[] = [
     image: sv08Img,
     rate: "$200/day",
     badge: "available",
-    deliveryNote: "$110 Delivery & Collection*",
+    deliveryNote: "$150 Delivery & Collection*",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-SV08-Excavator-Brochure.pdf",
     specs: {
       "Operating Weight": "980 kg",
@@ -77,7 +77,7 @@ const availableEquipment: EquipmentItem[] = [
     image: kubotaU10Img,
     rate: "$200/day",
     badge: "available",
-    deliveryNote: "$110 Delivery & Collection*",
+    deliveryNote: "$150 Delivery & Collection*",
     brochureUrl: "/brochures/kubota-u10-5.pdf",
     specs: {
       "Operating Weight": "1,200 kg",
@@ -94,7 +94,7 @@ const availableEquipment: EquipmentItem[] = [
     image: vio17Img,
     rate: "$205/day",
     badge: "high-demand",
-    deliveryNote: "$110 Delivery & Collection*",
+    deliveryNote: "$150 Delivery & Collection*",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-ViO17-Excavator-Brochure.pdf",
     specs: {
       "Operating Weight": "1,700 kg",
@@ -207,7 +207,7 @@ const availableEquipment: EquipmentItem[] = [
     image: cormidiC7xImg,
     rate: "$200/day",
     badge: "available",
-    deliveryNote: "$110 Delivery & Collection*",
+    deliveryNote: "$150 Delivery & Collection*",
     useContain: true,
     specs: {
       "Payload": "700 kg",
@@ -222,7 +222,7 @@ const availableEquipment: EquipmentItem[] = [
     image: cormidiC85Img,
     rate: "$200/day",
     badge: "available",
-    deliveryNote: "$110 Delivery & Collection*",
+    deliveryNote: "$150 Delivery & Collection*",
     useContain: true,
     specs: {
       "Payload": "850 kg",

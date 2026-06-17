@@ -67,7 +67,7 @@ For any questions about licence requirements or machine selection, call BuildHir
   {
     slug: "how-much-does-it-cost-to-hire-a-mini-excavator-in-sydney",
     question: "How much does it cost to hire a mini excavator in Sydney?",
-    shortAnswer: "Mini excavator hire in Sydney starts from $200/day for a 0.8T machine. Delivery and collection within Greater Sydney is $110. Weekly rates from $700. All prices include GST.",
+    shortAnswer: "Mini excavator hire in Sydney starts from $200/day for a 0.8T machine. Delivery and collection within Greater Sydney starts from $150. Weekly rates from $1,000/week. All prices include GST.",
     fullAnswer: `## Mini Excavator Hire Costs in Sydney — Complete Pricing Guide
 
 Understanding the real cost of hiring a mini excavator in Sydney requires looking beyond the headline daily rate. Many hire companies advertise low rates but add delivery fees, environmental levies, damage waivers, and fuel surcharges at checkout. BuildHire's pricing is all-inclusive — the rate you see is the rate you pay.
@@ -76,13 +76,13 @@ Understanding the real cost of hiring a mini excavator in Sydney requires lookin
 
 | Machine | Daily Rate | Weekly Rate | Delivery (Greater Sydney) |
 |---|---|---|---|
-| 0.8T Mini Excavator | $200/day | $700/week | $110 |
-| 1T Mini Excavator | $240/day | $840/week | $110 |
-| 1.7T Mini Excavator | $280/day | $980/week | $110 |
-| 3.5T Excavator | $370/day | $1,550/week | $110 |
-| 5.5T Excavator | $480/day | $1,680/week | $110 |
+| 0.8T Mini Excavator | $200/day | $1,000/week | $150 |
+| 1T Mini Excavator | $200/day | $1,000/week | $150 |
+| 1.7T Mini Excavator | $205/day | $1,100/week | $150 |
+| 3.5T Excavator | $340/day | $1,550/week | $220 |
+| 5.5T Excavator | $370/day | $1,650/week | On enquiry |
 
-All prices include GST. Delivery and collection within Greater Sydney is $110 per hire (not per day). For locations outside Greater Sydney — Newcastle, Wollongong, Central Coast, Hunter Valley — delivery costs vary by distance. Contact BuildHire for a regional delivery quote.
+All prices include GST. Delivery and collection within Greater Sydney starts from $150 per hire (not per day). For locations outside Greater Sydney — Newcastle, Wollongong, Central Coast, Hunter Valley — delivery costs vary by distance. Contact BuildHire for a regional delivery quote.
 
 ### What's Included in BuildHire's Price
 
@@ -105,9 +105,9 @@ For projects lasting 3–4 weeks, BuildHire offers monthly rates. Contact BuildH
 
 **Hiring a wet hire excavator with operator:** $600–$1,200/day. Dry hire from BuildHire starts at $200/day — a saving of $400–$1,000 per day for licensed operators or machines under 3 tonnes.
 
-**Buying a second-hand mini excavator:** A used 1.7T mini excavator in Sydney costs $25,000–$45,000. At BuildHire's daily rate of $280/day, you'd need to hire for 90–160 days before buying becomes cheaper — and that's before accounting for maintenance, registration, insurance, and storage costs.
+**Buying a second-hand mini excavator:** A used 1.7T mini excavator in Sydney costs $25,000–$45,000. At BuildHire's daily rate of $205/day for a 1.7T, you'd need to hire for 120–220 days before buying becomes cheaper — and that's before accounting for maintenance, registration, insurance, and storage costs.
 
-**Hiring from a traditional hire depot:** Traditional hire depots in Sydney typically charge $250–$400/day for a 1.7T mini excavator, plus separate delivery fees ($150–$300), damage waiver ($30–$50/day), and environmental levy ($15–$25/day). BuildHire's all-inclusive $280/day + $110 delivery is typically 15–30% cheaper than traditional depot pricing when all fees are accounted for.
+**Hiring from a traditional hire depot:** Traditional hire depots in Sydney typically charge $250–$400/day for a 1.7T mini excavator, plus separate delivery fees ($150–$300), damage waiver ($30–$50/day), and environmental levy ($15–$25/day). BuildHire's all-inclusive pricing (e.g. $205/day for a 1.7T + $150 delivery) is typically 15–30% cheaper than traditional depot pricing when all fees are accounted for.
 
 ### Factors That Affect Mini Excavator Hire Costs in Sydney
 
@@ -115,7 +115,7 @@ For projects lasting 3–4 weeks, BuildHire offers monthly rates. Contact BuildH
 
 **Hire duration:** Daily rates are highest per day. Weekly rates offer significant savings. Monthly rates offer the best value for extended projects.
 
-**Location:** Delivery within Greater Sydney is a flat $110. Regional NSW locations incur higher delivery costs based on distance.
+**Location:** Delivery within Greater Sydney starts from $150 for small machines (0.8T–1.7T) and $220 for the 3.5T. Regional NSW locations incur higher delivery costs based on distance.
 
 **Timing:** BuildHire does not charge peak-season surcharges. Rates are consistent year-round.
 
@@ -124,9 +124,11 @@ For projects lasting 3–4 weeks, BuildHire offers monthly rates. Contact BuildH
 Book online at buildhire.com.au for the fastest booking experience. If your project runs longer than expected, contact BuildHire to extend your hire — extending is typically cheaper than returning and re-hiring. For projects lasting 3+ weeks, ask about monthly rates.`,
     relatedQuestions: [
       { q: "What is included in BuildHire's mini excavator hire price in Sydney?", a: "BuildHire's hire price includes the machine, delivery to your site, collection after hire, full operating instructions, and GST. There are no additional environmental levies, damage waivers, or fuel surcharges." },
-      { q: "Is weekly hire cheaper than daily hire for a mini excavator?", a: "Yes. BuildHire's weekly rates are equivalent to 3.5 daily rates — you get 5 days for the price of 3.5. For projects lasting 5 or more days, weekly hire is significantly cheaper." },
-      { q: "How much does delivery cost for a mini excavator in Sydney?", a: "Delivery and collection within Greater Sydney is $110 (GST inclusive) per hire. For regional NSW locations, delivery costs vary by distance." },
-      { q: "How does BuildHire's pricing compare to traditional hire depots in Sydney?", a: "BuildHire's all-inclusive pricing is typically 15–30% cheaper than traditional hire depots when all fees (delivery, damage waiver, environmental levy) are accounted for." }
+      { q: "Is weekly hire cheaper than daily hire for a mini excavator?", a: "Yes. BuildHire's weekly rates offer significant savings: 0.8T and 1T at $1,000/week (5 days for the price of 5 daily rates), 1.7T at $1,100/week, 3.5T at $1,550/week, 5.5T at $1,650/week, and 14.5T at $2,100/week. For projects lasting 5 or more days, weekly hire is significantly cheaper." },
+      { q: "How much does delivery cost for a mini excavator in Sydney?", a: "Delivery and collection within Greater Sydney starts from $150 (GST inclusive) per hire — $150 for 0.8T, 1T, and 1.7T machines; $220 for the 3.5T. Larger machines (5.5T+) are delivered by third-party transport at pricing on enquiry. For regional NSW locations, delivery costs vary by distance." },
+      { q: "How does BuildHire's pricing compare to traditional hire depots in Sydney?", a: "BuildHire's all-inclusive pricing is typically 15–30% cheaper than traditional hire depots when all fees (delivery, damage waiver, environmental levy) are accounted for." },
+      { q: "How much does a sieve bucket attachment cost to hire?", a: "A sieve bucket (screening bucket) from Tiger Buckets costs $50/day when hired with a compatible excavator from BuildHire. Available on the 1.7T, 3.5T, 5.5T, and 14.5T excavators. Ideal for separating soil, screening topsoil, and sorting aggregate on site." },
+      { q: "What auger drill sizes are available with BuildHire excavators?", a: "BuildHire's auger attachments are available in 200mm, 300mm, and 450mm drill sizes for the 1.7T through 14.5T excavators. The 200mm is ideal for fence posts and small piers; the 300mm for standard footings; the 450mm for large bored piers and tree planting." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -225,7 +227,7 @@ BuildHire does not offer wet hire. If you need an operator, you'll need to sourc
 
 ### Who Uses Dry Hire Excavators?
 
-**Owner builders:** Dry hiring a mini excavator for pool excavation, footing work, or service trenching is one of the most cost-effective decisions an owner builder can make. A 2-day hire at $280/day saves $800–$1,600 compared to wet hire.
+**Owner builders:** Dry hiring a mini excavator for pool excavation, footing work, or service trenching is one of the most cost-effective decisions an owner builder can make. A 2-day hire at $205/day saves $800–$1,600 compared to wet hire.
 
 **Landscapers:** Professional landscapers hire mini excavators for retaining walls, drainage, turf preparation, and garden reshaping. Dry hire gives them the machine when they need it, for as long as they need it.
 
@@ -275,7 +277,7 @@ Visit buildhire.com.au and browse the equipment range. Each machine page include
 Choose your hire start date and end date. BuildHire's calendar shows real-time availability. For next-day delivery, book before 12pm the day before. For same-day delivery, call 1300 157 882 directly — same-day is available subject to fleet availability.
 
 **Step 3: Enter your delivery address**
-Type in your site address. BuildHire's booking system automatically calculates whether your address is within Greater Sydney (flat $110 delivery) or a regional NSW location (variable delivery cost). If you're in a regional area, the system will prompt you to contact BuildHire for a delivery quote.
+Type in your site address. BuildHire's booking system automatically calculates whether your address is within Greater Sydney (delivery from $150) or a regional NSW location (variable delivery cost). If you're in a regional area, the system will prompt you to contact BuildHire for a delivery quote.
 
 **Step 4: Review your order**
 Before payment, review your booking summary: machine, hire dates, delivery address, and total cost including GST. BuildHire's all-inclusive pricing means no surprises at checkout — the price shown is the price you pay.
@@ -347,7 +349,7 @@ BuildHire does not currently offer full-size excavators above 5.5T. For projects
 | Gate access | Fits standard residential gates | Requires large access |
 | Ground pressure | Low — rubber tracks | High — can damage surfaces |
 | Licence (NSW) | Under 3T: no licence; 3T+: HRWL | HRWL required |
-| Hire cost | $200–$480/day | $600–$1,500+/day |
+| Hire cost | $200–$490/day | $600–$1,500+/day |
 | Best for | Residential, landscaping, light commercial | Commercial, civil, bulk earthmoving |
 
 ### Which Is Right for Your Project?
@@ -627,7 +629,7 @@ The purchase price of a mini excavator is just the beginning. The true cost of o
 
 ### The Break-Even Point
 
-At BuildHire's daily rate of $280/day for a 1.7T mini excavator:
+At BuildHire's daily rate of $205/day for a 1.7T mini excavator:
 
 - 30 days of hire = $8,400
 - 50 days of hire = $14,000
@@ -664,7 +666,7 @@ Call BuildHire on 1300 157 882 to discuss your usage pattern and find the most c
   {
     slug: "tipper-truck-hire-sydney",
     question: "How much does tipper truck hire cost in Sydney?",
-    shortAnswer: "Tipper truck hire in Sydney starts from $350/day from BuildHire. Delivery within Greater Sydney is $110. A Medium Rigid (MR) or higher licence is required to drive a tipper truck.",
+    shortAnswer: "Tipper truck hire in Sydney starts from $350/day from BuildHire. Delivery within Greater Sydney starts from $150. A Medium Rigid (MR) or higher licence is required to drive a tipper truck.",
     fullAnswer: `## Tipper Truck Hire in Sydney — Complete Guide
 
 Tipper trucks are essential for any project that generates large volumes of excavated material, demolition rubble, or construction waste. BuildHire offers tipper truck hire across Greater Sydney and regional NSW as part of its dry hire equipment range.
@@ -677,7 +679,7 @@ BuildHire's tipper truck hire is dry hire — you drive the truck yourself. A Me
 |---|---|
 | Daily rate | From $350/day |
 | Weekly rate | From $1,225/week |
-| Delivery (Greater Sydney) | $110 |
+| Delivery (Greater Sydney) | from $150 |
 
 All prices include GST. For regional NSW delivery, contact BuildHire for a quote.
 
@@ -1707,10 +1709,10 @@ Call BuildHire on 1300 157 882 to discuss your plumbing project and confirm the 
   {
     slug: "excavator-hire-western-sydney",
     question: "Where can I hire an excavator in Western Sydney?",
-    shortAnswer: "BuildHire delivers excavators to all Western Sydney locations — Parramatta, Penrith, Blacktown, Liverpool, Campbelltown, and surrounding suburbs. Delivery within Greater Sydney is $110.",
+    shortAnswer: "BuildHire delivers excavators to all Western Sydney locations — Parramatta, Penrith, Blacktown, Liverpool, Campbelltown, and surrounding suburbs. Delivery within Greater Sydney starts from $150.",
     fullAnswer: `## Excavator Hire in Western Sydney
 
-BuildHire delivers excavators to all Western Sydney locations, including Parramatta, Penrith, Blacktown, Liverpool, Campbelltown, Fairfield, Auburn, Bankstown, and all surrounding suburbs. Delivery within Greater Sydney (including Western Sydney) is a flat $110.
+BuildHire delivers excavators to all Western Sydney locations, including Parramatta, Penrith, Blacktown, Liverpool, Campbelltown, Fairfield, Auburn, Bankstown, and all surrounding suburbs. Delivery within Greater Sydney (including Western Sydney) starts from $150 for small machines (0.8T–1.7T) and $220 for the 3.5T.
 
 ### Western Sydney Coverage
 
@@ -1753,19 +1755,19 @@ BuildHire's Western Sydney customers commonly hire excavators for:
 
 Book online at buildhire.com.au or call 1300 157 882 for Western Sydney excavator hire.`,
     relatedQuestions: [
-      { q: "Does BuildHire deliver to Penrith?", a: "Yes. BuildHire delivers to Penrith and all Western Sydney locations. Delivery within Greater Sydney is $110." },
+      { q: "Does BuildHire deliver to Penrith?", a: "Yes. BuildHire delivers to Penrith and all Western Sydney locations. Delivery within Greater Sydney starts from $150." },
       { q: "What excavator is best for clay soil in Western Sydney?", a: "The 1.7T is efficient in light clay. For heavy clay (common in Western Sydney), the 3.5T is more productive due to its greater digging force." },
-      { q: "How do I book an excavator for delivery to Western Sydney?", a: "Book online at buildhire.com.au or call 1300 157 882. Delivery within Greater Sydney (including Western Sydney) is $110." }
+      { q: "How do I book an excavator for delivery to Western Sydney?", a: "Book online at buildhire.com.au or call 1300 157 882. Delivery within Greater Sydney (including Western Sydney) starts from $150." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
   {
     slug: "excavator-hire-northern-beaches",
     question: "Where can I hire an excavator on the Northern Beaches of Sydney?",
-    shortAnswer: "BuildHire delivers excavators to all Northern Beaches locations — Manly, Dee Why, Narrabeen, Mona Vale, Avalon, and surrounding suburbs. Delivery within Greater Sydney is $110.",
+    shortAnswer: "BuildHire delivers excavators to all Northern Beaches locations — Manly, Dee Why, Narrabeen, Mona Vale, Avalon, and surrounding suburbs. Delivery within Greater Sydney starts from $150.",
     fullAnswer: `## Excavator Hire on Sydney's Northern Beaches
 
-BuildHire delivers excavators to all Northern Beaches locations, including Manly, Dee Why, Narrabeen, Mona Vale, Avalon, Palm Beach, Collaroy, Freshwater, and all surrounding suburbs. Delivery within Greater Sydney (including the Northern Beaches) is a flat $110.
+BuildHire delivers excavators to all Northern Beaches locations, including Manly, Dee Why, Narrabeen, Mona Vale, Avalon, Palm Beach, Collaroy, Freshwater, and all surrounding suburbs. Delivery within Greater Sydney (including the Northern Beaches) starts from $150 for small machines (0.8T–1.7T) and $220 for the 3.5T.
 
 ### Northern Beaches Coverage
 
@@ -1805,7 +1807,7 @@ BuildHire's Northern Beaches customers commonly hire excavators for:
 
 Book online at buildhire.com.au or call 1300 157 882 for Northern Beaches excavator hire.`,
     relatedQuestions: [
-      { q: "Does BuildHire deliver to Manly and the Northern Beaches?", a: "Yes. BuildHire delivers to Manly and all Northern Beaches locations. Delivery within Greater Sydney is $110." },
+      { q: "Does BuildHire deliver to Manly and the Northern Beaches?", a: "Yes. BuildHire delivers to Manly and all Northern Beaches locations. Delivery within Greater Sydney starts from $150." },
       { q: "What excavator is best for sandy soil on the Northern Beaches?", a: "The 1.7T mini excavator is ideal for Northern Beaches sandy soil — fast, efficient, and fits through most residential gates." },
       { q: "Are Northern Beaches sites typically easy or difficult for excavator access?", a: "Northern Beaches properties often have steep driveways, narrow passages, and established gardens. BuildHire's 0.8T and 1T mini excavators are ideal for tight access sites." }
     ],
@@ -1814,10 +1816,10 @@ Book online at buildhire.com.au or call 1300 157 882 for Northern Beaches excava
   {
     slug: "excavator-hire-inner-west-sydney",
     question: "Where can I hire an excavator in Sydney's Inner West?",
-    shortAnswer: "BuildHire delivers excavators to all Inner West locations — Leichhardt, Marrickville, Strathfield, Ashfield, Burwood, and surrounding suburbs. Delivery within Greater Sydney is $110.",
+    shortAnswer: "BuildHire delivers excavators to all Inner West locations — Leichhardt, Marrickville, Strathfield, Ashfield, Burwood, and surrounding suburbs. Delivery within Greater Sydney starts from $150.",
     fullAnswer: `## Excavator Hire in Sydney's Inner West
 
-BuildHire delivers excavators to all Inner West Sydney locations, including Leichhardt, Marrickville, Strathfield, Ashfield, Burwood, Concord, Drummoyne, Balmain, Rozelle, Annandale, and all surrounding suburbs. Delivery within Greater Sydney (including the Inner West) is a flat $110.
+BuildHire delivers excavators to all Inner West Sydney locations, including Leichhardt, Marrickville, Strathfield, Ashfield, Burwood, Concord, Drummoyne, Balmain, Rozelle, Annandale, and all surrounding suburbs. Delivery within Greater Sydney (including the Inner West) starts from $150 for small machines (0.8T–1.7T) and $220 for the 3.5T.
 
 ### Inner West Coverage
 
@@ -1860,14 +1862,14 @@ Book online at buildhire.com.au or call 1300 157 882 for Inner West excavator hi
     relatedQuestions: [
       { q: "Is there sandstone rock in the Inner West of Sydney?", a: "Yes. Hawkesbury Sandstone is common in the Inner West. Rock depth varies by property — it can be encountered at 300–500mm in some areas. A hydraulic rock breaker attachment is required for rock excavation." },
       { q: "Does BuildHire offer hydraulic rock breaker hire for Inner West projects?", a: "Contact BuildHire on 1300 157 882 about hydraulic rock breaker attachment availability for Inner West excavation projects." },
-      { q: "Does BuildHire deliver to Marrickville and Leichhardt?", a: "Yes. BuildHire delivers to Marrickville, Leichhardt, and all Inner West locations. Delivery within Greater Sydney is $110." }
+      { q: "Does BuildHire deliver to Marrickville and Leichhardt?", a: "Yes. BuildHire delivers to Marrickville, Leichhardt, and all Inner West locations. Delivery within Greater Sydney starts from $150." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
   {
     slug: "how-much-does-excavator-hire-cost-per-week",
     question: "How much does weekly excavator hire cost in NSW?",
-    shortAnswer: "Weekly excavator hire from BuildHire starts from $700/week for the 0.8T mini excavator. Weekly rates are equivalent to 3.5 daily rates — you get 5 days for the price of 3.5.",
+    shortAnswer: "Weekly excavator hire from BuildHire starts from $1,000/week for the 0.8T and 1T mini excavators. All weekly rates include GST and offer significant savings over daily rates for projects lasting 5 or more days.",
     fullAnswer: `## Weekly Excavator Hire Costs in NSW
 
 For projects lasting 5 or more days, BuildHire's weekly hire rates provide significant savings over daily rates. Weekly hire is the most popular option for pool builders, landscapers, and contractors with multi-day projects.
@@ -1876,13 +1878,14 @@ For projects lasting 5 or more days, BuildHire's weekly hire rates provide signi
 
 | Machine | Daily Rate | Weekly Rate | Saving vs Daily |
 |---|---|---|---|
-| 0.8T Mini Excavator | $200/day | $700/week | Save $300 (5 days vs 3.5 days cost) |
-| 1T Mini Excavator | $240/day | $840/week | Save $360 |
-| 1.7T Mini Excavator | $280/day | $980/week | Save $420 |
-| 3.5T Excavator | $370/day | $1,550/week | Save $570 |
-| 5.5T Excavator | $480/day | $1,680/week | Save $720 |
+| 0.8T Mini Excavator | $200/day | $1,000/week | Save $200 vs 5 daily rates |
+| 1T Mini Excavator | $200/day | $1,000/week | Save $200 vs 5 daily rates |
+| 1.7T Mini Excavator | $205/day | $1,100/week | Save $225 vs 5 daily rates |
+| 3.5T Excavator | $340/day | $1,550/week | Save $150 vs 5 daily rates |
+| 5.5T Excavator | $370/day | $1,650/week | Save $200 vs 5 daily rates |
+| 14.5T Excavator | $490/day | $2,100/week | Save $350 vs 5 daily rates |
 
-All prices include GST. Delivery and collection within Greater Sydney is $110 per hire (not per week).
+All prices include GST. Delivery and collection within Greater Sydney starts from $150 per hire (not per week).
 
 ### When Weekly Hire Makes Sense
 
@@ -1912,9 +1915,9 @@ Book online at buildhire.com.au — select your machine, choose your hire start 
 
 For bookings longer than 7 days, contact BuildHire directly to arrange the best rate.`,
     relatedQuestions: [
-      { q: "How much cheaper is weekly hire than daily hire for an excavator?", a: "BuildHire's weekly rate is equivalent to 3.5 daily rates. You get 5 days for the price of 3.5 — a saving of 30% compared to paying the daily rate for 5 days." },
+      { q: "How much cheaper is weekly hire than daily hire for an excavator?", a: "BuildHire's weekly rates save $150–$350 compared to booking 5 individual daily rates. The 0.8T and 1T are $1,000/week vs $1,000 for 5 days at daily rate. The 14.5T is $2,100/week vs $2,450 for 5 days at daily rate — saving $350." },
       { q: "Does BuildHire offer monthly excavator hire rates?", a: "Yes. Contact BuildHire on 1300 157 882 for monthly hire pricing. Monthly rates provide greater savings than weekly rates for extended projects." },
-      { q: "Is delivery charged per week or per hire for weekly excavator hire?", a: "Delivery and collection is charged once per hire — not per week. The $110 delivery fee covers delivery and collection for the full hire period." }
+      { q: "Is delivery charged per week or per hire for weekly excavator hire?", a: "Delivery and collection is charged once per hire — not per week. The $150 delivery fee covers delivery and collection for the full hire period." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -2188,7 +2191,7 @@ Spring (September–November) and summer (December–February) are the busiest p
 
 ### 5. Minimise Delivery Costs
 
-BuildHire's delivery fee ($110 within Greater Sydney) is charged per hire, not per day. For multi-day hires, the delivery cost is spread across more days — reducing the per-day cost. Combining multiple tasks into a single hire period minimises delivery costs.
+BuildHire's delivery fee (from $150 within Greater Sydney) is charged per hire, not per day. For multi-day hires, the delivery cost is spread across more days — reducing the per-day cost. Combining multiple tasks into a single hire period minimises delivery costs.
 
 ### 6. Plan Your Work Sequence
 
@@ -2522,10 +2525,10 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
   {
     slug: "excavator-hire-delivery-nsw",
     question: "How does BuildHire deliver excavators across NSW?",
-    shortAnswer: "BuildHire delivers excavators on low-loader trailers to all Greater Sydney locations for $110. Delivery to Newcastle, Wollongong, Central Coast, and regional NSW is available — call 1300 157 882 for pricing.",
-    fullAnswer: `## BuildHire Excavator Delivery Across NSW\n\nBuildHire's delivery service is one of the key reasons customers choose us over local hire depots. You don't need a trailer, a tow vehicle, or a loading ramp — we bring the machine to your site and take it away when you're done.\n\n### How Delivery Works\n\nBuildHire's delivery driver arrives at your site with the excavator loaded on a low-loader trailer. The driver:\n1. Positions the trailer at a suitable unloading point on or near your site\n2. Lowers the trailer ramps\n3. Drives the excavator off the trailer under its own power\n4. Positions the machine at your preferred starting point\n5. Provides a brief operating handover\n\nAt the end of your hire, the process is reversed. You position the machine near the road or driveway access; the BuildHire driver loads it back onto the trailer.\n\n### Delivery Pricing\n\n**Greater Sydney (all suburbs):** $110 flat rate per hire (delivery + collection)\n\n**Regional NSW (Newcastle, Wollongong, Central Coast, Hunter Valley, Illawarra):** Priced by distance. Call 1300 157 882 for a quote.\n\n**Rural NSW:** Delivery available to most rural NSW locations. Call 1300 157 882 for a quote.\n\n### Delivery Timing\n\n**Standard delivery:** Book at least 24–48 hours in advance. Delivery is scheduled for the morning of your hire start date (typically 7am–9am).\n\n**Same-day delivery:** Available subject to fleet availability. Call 1300 157 882 as early as possible for same-day delivery.\n\n**After-hours delivery:** Contact BuildHire to discuss after-hours delivery options for urgent projects.\n\n### Site Access Requirements\n\nBuildHire's low-loader delivery truck requires:\n- Minimum 2.5m wide access path from the road to the unloading point\n- Minimum 4m overhead clearance (trees, power lines, awnings)\n- A level or gently sloping surface for unloading\n\nIf your site has difficult access — narrow driveway, low overhead clearance, or steep gradient — contact BuildHire before booking to confirm the low-loader can access your site.\n\n### Delivery to Apartment Buildings and Units\n\nFor apartment buildings and unit complexes, the excavator is typically unloaded on the street or in the car park and walked to the work area. Contact BuildHire to discuss access arrangements for apartment sites.\n\nBook online at buildhire.com.au or call 1300 157 882 to arrange delivery.`,
+    shortAnswer: "BuildHire delivers excavators on low-loader trailers to all Greater Sydney locations from $150 (0.8T–1.7T) or $220 (3.5T). Delivery to Newcastle, Wollongong, Central Coast, and regional NSW is available — call 1300 157 882 for pricing.",
+    fullAnswer: `## BuildHire Excavator Delivery Across NSW\n\nBuildHire's delivery service is one of the key reasons customers choose us over local hire depots. You don't need a trailer, a tow vehicle, or a loading ramp — we bring the machine to your site and take it away when you're done.\n\n### How Delivery Works\n\nBuildHire's delivery driver arrives at your site with the excavator loaded on a low-loader trailer. The driver:\n1. Positions the trailer at a suitable unloading point on or near your site\n2. Lowers the trailer ramps\n3. Drives the excavator off the trailer under its own power\n4. Positions the machine at your preferred starting point\n5. Provides a brief operating handover\n\nAt the end of your hire, the process is reversed. You position the machine near the road or driveway access; the BuildHire driver loads it back onto the trailer.\n\n### Delivery Pricing\n\n**Greater Sydney (all suburbs):** From $150 per hire (delivery + collection) — $150 for 0.8T, 1T, and 1.7T; $220 for the 3.5T. Larger machines (5.5T+) via third-party transport, pricing on enquiry.\n\n**Regional NSW (Newcastle, Wollongong, Central Coast, Hunter Valley, Illawarra):** Priced by distance. Call 1300 157 882 for a quote.\n\n**Rural NSW:** Delivery available to most rural NSW locations. Call 1300 157 882 for a quote.\n\n### Delivery Timing\n\n**Standard delivery:** Book at least 24–48 hours in advance. Delivery is scheduled for the morning of your hire start date (typically 7am–9am).\n\n**Same-day delivery:** Available subject to fleet availability. Call 1300 157 882 as early as possible for same-day delivery.\n\n**After-hours delivery:** Contact BuildHire to discuss after-hours delivery options for urgent projects.\n\n### Site Access Requirements\n\nBuildHire's low-loader delivery truck requires:\n- Minimum 2.5m wide access path from the road to the unloading point\n- Minimum 4m overhead clearance (trees, power lines, awnings)\n- A level or gently sloping surface for unloading\n\nIf your site has difficult access — narrow driveway, low overhead clearance, or steep gradient — contact BuildHire before booking to confirm the low-loader can access your site.\n\n### Delivery to Apartment Buildings and Units\n\nFor apartment buildings and unit complexes, the excavator is typically unloaded on the street or in the car park and walked to the work area. Contact BuildHire to discuss access arrangements for apartment sites.\n\nBook online at buildhire.com.au or call 1300 157 882 to arrange delivery.`,
     relatedQuestions: [
-      { q: "How much does BuildHire charge for excavator delivery in Sydney?", a: "Delivery within Greater Sydney is a flat $110 per hire. This covers both delivery and collection." },
+      { q: "How much does BuildHire charge for excavator delivery in Sydney?", a: "Delivery within Greater Sydney is a flat $150 per hire (0.8T–1.7T). This covers both delivery and collection." },
       { q: "Does BuildHire deliver to regional NSW?", a: "Yes. BuildHire delivers to Newcastle, Wollongong, Central Coast, Hunter Valley, Illawarra, and rural NSW. Call 1300 157 882 for regional delivery pricing." },
       { q: "What access does BuildHire's delivery truck need?", a: "The low-loader requires a minimum 2.5m wide access path and 4m overhead clearance. Contact BuildHire before booking if you have access concerns." }
     ],

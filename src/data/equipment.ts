@@ -256,7 +256,7 @@ export const equipment: Equipment[] = [
     longDescription: "The Cormidi C7X tracked mini dumper is the perfect companion for moving materials in tight spaces and across difficult terrain. Its high-tip capability allows it to tip directly into skips and trailers.",
     price: "$200/day",
     priceNum: "200",
-    delivery: "$110 Delivery & Collection",
+    delivery: "$150 Delivery & Collection",
     specs: [
       { label: "Payload", value: "700 kg" },
       { label: "Skip Volume", value: "0.35 m³" },
@@ -270,7 +270,7 @@ export const equipment: Equipment[] = [
       { title: "Slope Work", desc: "Tracked drive handles slopes and uneven terrain with ease." }
     ],
     faqs: [
-      { q: "How much does it cost to hire the mini dumper?", a: "BuildHire's Cormidi C7X mini dumper starts from $200/day (incl GST). Delivery & collection is $110 each way." },
+      { q: "How much does it cost to hire the mini dumper?", a: "BuildHire's Cormidi C7X mini dumper starts from $200/day (incl GST). Delivery & collection starts from $150." },
       { q: "Can the mini dumper tip into a skip bin?", a: "Yes. The Cormidi C7X has a high-tip capability of 1,600mm, allowing it to tip directly into most standard skip bins and trailers." },
       { q: "Do I need a licence to operate the mini dumper?", a: "No licence is required to operate the mini dumper on private property in NSW." }
     ]

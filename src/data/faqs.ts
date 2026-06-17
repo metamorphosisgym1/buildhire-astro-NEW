@@ -47,14 +47,14 @@ export const faqs: FAQ[] = [
   {
     slug: "how-much-does-it-cost-to-hire-a-mini-excavator",
     question: "How much does it cost to hire a mini excavator in Sydney?",
-    answer: "BuildHire's mini excavator hire starts from $200/day (incl GST) for the 0.8T model, $230/day for the 1T, and $260/day for the 1.7T. Delivery and collection is $110 each way across Greater Sydney. Prices include the machine only — operator hire is not available (dry hire only).",
+    answer: "BuildHire's mini excavator hire starts from $200/day (incl GST) for the 0.8T model, $200/day for the 1T, and $205/day for the 1.7T. Delivery and collection starts from $150 across Greater Sydney. Prices include the machine only — operator hire is not available (dry hire only).",
     category: "Pricing & Booking",
     relatedEquipment: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator"]
   },
   {
     slug: "how-much-does-excavator-hire-cost-per-day",
     question: "How much does excavator hire cost per day in NSW?",
-    answer: "Excavator hire in NSW typically ranges from $200 to $500 per day depending on machine size. BuildHire's rates are: 0.8T from $200/day, 1T from $230/day, 1.7T from $260/day, 3.5T from $310/day, and 5.5T from $345/day — all including GST. Delivery is $110 each way.",
+    answer: "Excavator hire in NSW typically ranges from $200 to $500 per day depending on machine size. BuildHire's rates are: 0.8T from $200/day, 1T from $200/day, 1.7T from $205/day, 3.5T from $340/day, 5.5T from $370/day, and 14.5T from $490/day — all including GST. Delivery starts from $150.",
     category: "Pricing & Booking",
     relatedEquipment: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator"]
   },
@@ -73,7 +73,7 @@ export const faqs: FAQ[] = [
   {
     slug: "what-is-included-in-the-hire-price",
     question: "What is included in the hire price?",
-    answer: "BuildHire's hire price includes the machine, a standard bucket attachment, a full tank of fuel, and all required safety documentation. Delivery and collection is charged separately at $110 each way. Damage waiver and insurance options are available — ask when booking.",
+    answer: "BuildHire's hire price includes the machine, a standard bucket attachment, a full tank of fuel, and all required safety documentation. Delivery and collection is charged separately — $150 for 0.8T–1.7T, $220 for 3.5T. Damage waiver and insurance options are available — ask when booking.",
     category: "Pricing & Booking"
   },
   {
@@ -98,7 +98,7 @@ export const faqs: FAQ[] = [
   {
     slug: "how-much-does-delivery-cost",
     question: "How much does delivery cost for equipment hire?",
-    answer: "BuildHire charges $110 for delivery and $110 for collection across Greater Sydney. Delivery pricing for regional NSW locations (Newcastle, Wollongong, Central Coast, Hunter Valley) is available on enquiry. Call 1300 157 882 for a delivery quote.",
+    answer: "BuildHire charges from $150 for delivery and collection across Greater Sydney — $150 for 0.8T–1.7T, $220 for 3.5T. Larger machines via third-party transport. Delivery pricing for regional NSW locations (Newcastle, Wollongong, Central Coast, Hunter Valley) is available on enquiry. Call 1300 157 882 for a delivery quote.",
     category: "Delivery & Logistics"
   },
   {
@@ -351,7 +351,7 @@ export const faqs: FAQ[] = [
   { slug: "what-areas-does-buildhire-deliver-to", question: "What areas does BuildHire deliver to?", answer: "BuildHire delivers to all major Sydney suburbs and regional NSW locations including Wollongong, Newcastle, Central Coast, Blue Mountains, Hunter Valley, and beyond. Delivery charges may vary for regional locations. Call 1300 157 882 to confirm delivery availability and pricing for your area.", category: "Delivery & Logistics" },
   { slug: "how-long-does-delivery-take", question: "How long does equipment delivery take?", answer: "For next-day delivery, book before 12pm the day prior. Delivery is typically completed in the morning between 7am and 12pm, though exact times depend on the delivery schedule. You will receive a call from the driver with an estimated arrival time on the morning of delivery.", category: "Delivery & Logistics" },
   { slug: "can-buildhire-deliver-to-a-construction-site", question: "Can BuildHire deliver to a construction site?", answer: "Yes, BuildHire regularly delivers to active construction sites. Please ensure there is a clear, safe area for the delivery truck to unload. If the site has restricted access or specific delivery requirements, contact us when booking to discuss logistics.", category: "Delivery & Logistics" },
-  { slug: "what-is-the-delivery-cost-for-equipment-hire", question: "What is the delivery cost for equipment hire?", answer: "Delivery and collection is $110 each way for most Greater Sydney locations. Regional NSW delivery charges may vary depending on distance. Delivery is charged separately from the daily hire rate. Call 1300 157 882 for a delivery quote to your specific location.", category: "Delivery & Logistics" },
+  { slug: "what-is-the-delivery-cost-for-equipment-hire", question: "What is the delivery cost for equipment hire?", answer: "Delivery and collection starts from $150 for most Greater Sydney locations — $150 for 0.8T–1.7T, $220 for 3.5T. Regional NSW delivery charges may vary depending on distance. Delivery is charged separately from the daily hire rate. Call 1300 157 882 for a delivery quote to your specific location.", category: "Delivery & Logistics" },
   { slug: "can-i-pick-up-equipment-myself", question: "Can I pick up equipment from BuildHire myself?", answer: "BuildHire is primarily a delivery service and does not operate a customer pick-up depot. All equipment is delivered and collected by our team. This ensures the machine is transported safely and correctly, and that you receive a full briefing on operation at the time of delivery.", category: "Delivery & Logistics" },
   { slug: "what-do-i-need-to-prepare-for-equipment-delivery", question: "What do I need to prepare for equipment delivery?", answer: "Ensure there is a clear, level area for the delivery truck to park and unload. The driveway or street access should accommodate a large tilt-tray truck. Remove any obstacles from the delivery path. Have a valid ID ready for the driver. Ensure someone is on site at the time of delivery to receive the machine and sign the hire agreement.", category: "Delivery & Logistics" },
 
@@ -375,11 +375,11 @@ export const faqs: FAQ[] = [
   { slug: "how-long-does-it-take-to-excavate-a-house-slab", question: "How long does it take to excavate for a house slab?", answer: "For a standard residential house slab (15m x 10m, 300mm deep), excavation typically takes 4–8 hours with a 3.5T excavator. Harder ground, rock, or restricted access can extend this. A tipper truck working alongside the excavator for continuous spoil removal significantly speeds up the process.", category: "Equipment Selection", relatedEquipment: ["3-5t-excavator", "tipper-truck"] },
 
   // Pricing
-  { slug: "how-much-does-it-cost-to-hire-a-3-5t-excavator", question: "How much does it cost to hire a 3.5T excavator?", answer: "BuildHire's 3.5T excavator hire starts from $310/day including GST. Delivery and collection is $110 each way across Greater Sydney. Weekly and monthly rates are available at a discount. Call 1300 157 882 for a quote.", category: "Pricing & Booking", relatedEquipment: ["3-5t-excavator"] },
-  { slug: "how-much-does-it-cost-to-hire-a-5-5t-excavator", question: "How much does it cost to hire a 5.5T excavator?", answer: "BuildHire's 5.5T excavator hire starts from $345/day including GST. Delivery and collection is $110 each way across Greater Sydney. Weekly and monthly rates are available at a discount. Call 1300 157 882 for a quote.", category: "Pricing & Booking", relatedEquipment: ["5-5t-excavator"] },
+  { slug: "how-much-does-it-cost-to-hire-a-3-5t-excavator", question: "How much does it cost to hire a 3.5T excavator?", answer: "BuildHire's 3.5T excavator hire starts from $340/day including GST. Delivery and collection is $220 across Greater Sydney. Weekly rate $1,550/week. Weekly and monthly rates are available at a discount. Call 1300 157 882 for a quote.", category: "Pricing & Booking", relatedEquipment: ["3-5t-excavator"] },
+  { slug: "how-much-does-it-cost-to-hire-a-5-5t-excavator", question: "How much does it cost to hire a 5.5T excavator?", answer: "BuildHire's 5.5T excavator hire starts from $370/day including GST. Delivery via third-party transport — pricing on enquiry. Weekly rate $1,650/week. Weekly and monthly rates are available at a discount. Call 1300 157 882 for a quote.", category: "Pricing & Booking", relatedEquipment: ["5-5t-excavator"] },
   { slug: "how-much-does-it-cost-to-hire-a-tipper-truck", question: "How much does it cost to hire a tipper truck?", answer: "BuildHire's Isuzu NQR450 tipper truck hire starts from $350/day including GST. A Medium Rigid (MR) licence is required. Delivery and collection is $110 each way. Call 1300 157 882 for availability and pricing.", category: "Pricing & Booking", relatedEquipment: ["tipper-truck"] },
   { slug: "are-there-weekly-hire-rates-available", question: "Are there weekly hire rates available?", answer: "Yes, BuildHire offers weekly hire rates that provide significant savings over daily rates. Weekly rates are typically 15–25% cheaper than 7 individual daily rates. Contact us at 1300 157 882 or info@buildhire.com.au to get a weekly rate quote for your project.", category: "Pricing & Booking" },
-  { slug: "is-gst-included-in-buildhire-prices", question: "Are BuildHire's prices inclusive of GST?", answer: "Yes, all BuildHire hire rates are inclusive of GST. There are no hidden charges or surprise fees. The price you see is the price you pay for the equipment hire. Delivery and collection is charged separately at $110 each way.", category: "Pricing & Booking" },
+  { slug: "is-gst-included-in-buildhire-prices", question: "Are BuildHire's prices inclusive of GST?", answer: "Yes, all BuildHire hire rates are inclusive of GST. There are no hidden charges or surprise fees. The price you see is the price you pay for the equipment hire. Delivery and collection is charged separately — $150 for 0.8T–1.7T, $220 for 3.5T.", category: "Pricing & Booking" },
   { slug: "what-payment-methods-does-buildhire-accept", question: "What payment methods does BuildHire accept?", answer: "BuildHire accepts payment by credit card (Visa, Mastercard), bank transfer, and EFTPOS. Payment is required at the time of booking or before delivery. For account customers with established credit terms, invoice payment is available. Contact us to discuss account terms.", category: "Pricing & Booking" },
   { slug: "is-there-a-damage-waiver-or-insurance-required", question: "Is there a damage waiver or insurance required?", answer: "BuildHire does not charge a mandatory damage waiver. However, you are responsible for any damage to equipment during the hire period beyond normal wear and tear. We recommend ensuring your public liability insurance covers hired equipment. Contact your insurer before hiring if you are unsure.", category: "Pricing & Booking" },
 
