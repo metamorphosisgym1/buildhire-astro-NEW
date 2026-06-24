@@ -122,10 +122,10 @@ const equipmentData: Record<string, { name: string; rate: number; weeklyRate?: n
     { name: "Hydraulic Hammer 3.5T", rate: 140 },
     { name: "Hydraulic Hammer 5.5T", rate: 170 },
     { name: "Hydraulic Hammer 14.5T", rate: 250 },
-    { name: "Auger Drive 0.8T/1T (1 attachment)", rate: 99 },
-    { name: "Auger Drive 1.7T (200mm, 300mm, 450mm)", rate: 99 },
-    { name: "Auger Drive 3.5T (200mm, 300mm, 450mm)", rate: 140 },
-    { name: "Auger Drive 5.5T (200mm, 300mm, 450mm)", rate: 160 },
+    { name: "Auger Drive 0.8T/1T (1 attachment)", rate: 130 },
+    { name: "Auger Drive 1.7T (200mm, 300mm, 450mm)", rate: 130 },
+    { name: "Auger Drive 3.5T (200mm, 300mm, 450mm)", rate: 160 },
+    { name: "Auger Drive 5.5T (200mm, 300mm, 450mm)", rate: 180 },
     { name: "Auger Drive 14.5T (200mm, 300mm, 450mm)", rate: 230 },
     { name: "Rock Grab 3.5T", rate: 135 },
     { name: "Rock Grab 5.5T", rate: 150 },
@@ -197,15 +197,16 @@ export default function BookingCalculator() {
   // Tiered delivery & collection pricing
   const getDeliveryCost = (machineName: string): number => {
     if (!machineName) return 0;
-    // 0.8T, 1T, 1.7T, Cormidi Dumpers
+    // 0.8T, 1T, Cormidi Dumpers — $150
     if (
       machineName.includes("0.8T") ||
       machineName.includes("1T Mini") ||
-      machineName.includes("1.7T") ||
       machineName.includes("Cormidi")
     ) return 150;
-    // 3.5T
-    if (machineName.includes("3.5T")) return 220;
+    // 1.7T — $180
+    if (machineName.includes("1.7T")) return 180;
+    // 3.5T — $250
+    if (machineName.includes("3.5T")) return 250;
     // 5.5T, 8T, 14.5T, 23T — third party transport, pricing on enquiry
     if (
       machineName.includes("5.5T") ||

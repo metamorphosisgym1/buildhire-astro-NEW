@@ -83,7 +83,7 @@ export const equipment: Equipment[] = [
     price: "$205/day",
     priceNum: "205",
     weeklyPrice: "$1,100/week",
-    delivery: "$150 Delivery & Collection",
+    delivery: "$180 Delivery & Collection",
     specs: [
       { label: "Operating Weight", value: "1,710 kg" },
       { label: "Max Digging Depth", value: "2,500 mm" },
@@ -97,7 +97,7 @@ export const equipment: Equipment[] = [
       { title: "Demolition", desc: "Break up concrete slabs, driveways, and small structures." }
     ],
     faqs: [
-      { q: "How much does it cost to hire a 1.7T mini excavator?", a: "BuildHire's 1.7T Yanmar ViO17 starts from $205/day (incl GST). Weekly rate is $1,100/week (incl GST). Delivery & collection is $150." },
+      { q: "How much does it cost to hire a 1.7T mini excavator?", a: "BuildHire's 1.7T Yanmar ViO17 starts from $205/day (incl GST). Weekly rate is $1,100/week (incl GST). Delivery & collection is $180." },
       { q: "What is the difference between a 0.8T and 1.7T mini excavator?", a: "The 1.7T excavator is larger and more powerful, offering greater digging depth (up to 2,500mm) and bucket capacity. It handles heavier earthworks and deeper trenches while still fitting through most residential access points." },
       { q: "Do I need a licence to operate a 1.7T mini excavator in NSW?", a: "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required." },
       { q: "Can the 1.7T excavator fit through a standard gate?", a: "Yes. The Yanmar ViO17 has retractable tracks that narrow to approximately 990mm, allowing it to pass through most standard residential gates and access points." }
@@ -113,7 +113,7 @@ export const equipment: Equipment[] = [
     price: "$340/day",
     priceNum: "340",
     weeklyPrice: "$1,550/week",
-    delivery: "$220 Delivery & Collection",
+    delivery: "$250 Delivery & Collection",
     specs: [
       { label: "Operating Weight", value: "3,490 kg" },
       { label: "Max Digging Depth", value: "3,560 mm" },
@@ -127,7 +127,7 @@ export const equipment: Equipment[] = [
       { title: "Demolition", desc: "Structural demolition and concrete removal on larger sites." }
     ],
     faqs: [
-      { q: "How much does it cost to hire a 3.5T excavator?", a: "BuildHire's 3.5T Yanmar ViO35-7 starts from $340/day (incl GST). Weekly rate is $1,550/week (incl GST). Delivery & collection is $220." },
+      { q: "How much does it cost to hire a 3.5T excavator?", a: "BuildHire's 3.5T Yanmar ViO35-7 starts from $340/day (incl GST). Weekly rate is $1,550/week (incl GST). Delivery & collection is $250." },
       { q: "What size jobs is the 3.5T excavator suited for?", a: "The 3.5T is ideal for mid-to-large residential projects including pool excavations, large landscaping jobs, and commercial site preparation. It offers significantly more power and reach than a mini excavator." },
       { q: "Do I need a licence to operate a 3.5T excavator in NSW?", a: "On a registered worksite, a High Risk Work Licence (HRWL) for earthmoving equipment is required. On private property, no licence is needed." }
     ]

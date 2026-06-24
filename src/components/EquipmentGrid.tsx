@@ -111,7 +111,7 @@ const availableEquipment: EquipmentItem[] = [
     image: vio35Img,
     rate: "$340/day",
     badge: "available",
-    deliveryNote: "$220 Delivery & Collection*",
+    deliveryNote: "$250 Delivery & Collection*",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2024/06/ViO30-7ViO35-7_240620_Single_LR.pdf",
     specs: {
       "Operating Weight": "3,500 kg",
