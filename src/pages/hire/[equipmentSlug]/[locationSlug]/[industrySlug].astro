@@ -132,7 +132,7 @@ const faqSchema = {
           <div>
             <div class="text-sm text-[var(--color-text-muted)] mb-1">Hire Rate (incl GST)</div>
             <div class="text-4xl font-bold text-[var(--color-primary)]">{item.price}</div>
-            <div class="text-sm text-[var(--color-text-muted)] mt-1">+ $110 delivery & collection to {location.name}</div>
+            <div class="text-sm text-[var(--color-text-muted)] mt-1">+ {item.delivery} to {location.name}</div>
           </div>
           <div class="grid grid-cols-2 gap-4 flex-1 max-w-md">
             {item.specs.slice(0, 4).map((spec: { label: string; value: string }) => (

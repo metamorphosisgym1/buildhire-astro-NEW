@@ -155,7 +155,7 @@ export const jobTitles: JobTitle[] = [
     faqs: [
       { q: "Do owner builders need a licence to hire an excavator?", a: "In NSW, excavators under 3 tonnes do not require a formal licence. Our 0.8T, 1T, and 1.7T mini excavators are all under 3 tonnes and can be operated by owner builders without a licence." },
       { q: "Is it easy for owner builders to operate a mini excavator?", a: "Yes. Mini excavators are relatively straightforward to operate. BuildHire provides full operating instructions with every hire, and our team is available by phone to answer questions." },
-      { q: "How much does it cost for an owner builder to hire a mini excavator?", a: "Mini excavator hire starts from $200/day for the 0.8T. Delivery and collection is $110. All prices include GST. This is significantly cheaper than wet hire with an operator." }
+      { q: "How much does it cost for an owner builder to hire a mini excavator?", a: "Mini excavator hire starts from $200/day for the 0.8T. Delivery and collection starts from $150. All prices include GST. This is significantly cheaper than wet hire with an operator." }
     ]
   },
   {

@@ -31,7 +31,7 @@ export const industries: Industry[] = [
     faqs: [
       { q: "What equipment do landscapers typically hire from BuildHire?", a: "Landscapers most commonly hire mini excavators (0.8T–1.7T) for earthworks and retaining wall preparation, mini dumpers for moving soil and aggregate, and tipper trucks for spoil removal." },
       { q: "Can a mini excavator fit through a residential gate?", a: "Yes. Our 0.8T mini excavator is only 750mm wide and fits through gates as narrow as 800mm. The 1T is 900mm wide and the 1.7T is 1,300mm wide." },
-      { q: "How much does it cost to hire a mini excavator for landscaping?", a: "Mini excavator hire starts from $200/day for the 0.8T. Delivery and collection is $110. All prices include GST." }
+      { q: "How much does it cost to hire a mini excavator for landscaping?", a: "Mini excavator hire starts from $200/day for the 0.8T. Delivery and collection starts from $150. All prices include GST." }
     ]
   },
   {
