@@ -94,7 +94,7 @@ const availableEquipment: EquipmentItem[] = [
     image: vio17Img,
     rate: "$205/day",
     badge: "high-demand",
-    deliveryNote: "$150 Delivery & Collection*",
+    deliveryNote: "$180 Delivery & Collection*",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-ViO17-Excavator-Brochure.pdf",
     specs: {
       "Operating Weight": "1,700 kg",
