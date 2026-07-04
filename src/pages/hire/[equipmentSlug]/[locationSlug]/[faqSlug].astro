@@ -16,7 +16,8 @@ export function generateSlug(text: string) {
 
 export async function getStaticPaths() {
   return equipment.flatMap(item =>
-    locations.flatMap(location =>
+    // Priority filter: only build 15 priority locations to stay within Netlify build limits
+    locations.filter(l => ['sydney','parramatta','penrith','liverpool','campbelltown','blacktown','castle-hill','hornsby','sutherland','chatswood','newcastle','wollongong','inner-west','northern-beaches','eastern-suburbs'].includes(l.slug)).flatMap(location =>
       item.faqs.map(faq => ({
         params: { 
           equipmentSlug: item.slug, 

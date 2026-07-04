@@ -10,16 +10,21 @@ import { locations } from '../../../../data/locations';
 import { equipment } from '../../../../data/equipment';
 
 export async function getStaticPaths() {
+  // Wave 4: Only build all job titles × all industries × 6 priority locations
+  // Keeps build within Netlify memory limits (~1,188 pages vs 16,434)
+  const priorityLocationsFor = ['sydney','parramatta','newcastle','wollongong','central-coast','western-sydney'];
   return jobTitles.flatMap(jobTitle =>
     industries.flatMap(industry =>
-      locations.map(location => ({
-        params: {
-          jobTitleSlug: jobTitle.slug,
-          industrySlug: industry.slug,
-          locationSlug: location.slug
-        },
-        props: { jobTitle, industry, location }
-      }))
+      locations
+        .filter(l => priorityLocationsFor.includes(l.slug))
+        .map(location => ({
+          params: {
+            jobTitleSlug: jobTitle.slug,
+            industrySlug: industry.slug,
+            locationSlug: location.slug
+          },
+          props: { jobTitle, industry, location }
+        }))
     )
   );
 }

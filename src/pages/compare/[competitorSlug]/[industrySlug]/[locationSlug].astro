@@ -10,18 +10,26 @@ import { locations } from '../../../../data/locations';
 import { equipment } from '../../../../data/equipment';
 
 export async function getStaticPaths() {
-  return competitors.flatMap(competitor =>
-    industries.flatMap(industry =>
-      locations.map(location => ({
-        params: {
-          competitorSlug: competitor.slug,
-          industrySlug: industry.slug,
-          locationSlug: location.slug
-        },
-        props: { competitor, industry, location }
-      }))
-    )
-  );
+  // Wave 2: Only build top 6 competitors × all industries × 15 priority locations
+  // Keeps build within Netlify memory limits (~1,980 pages vs 41,998)
+  const priorityCompetitors = ['kennards-hire','coates-hire','conplant','brooks-hire','solution-plant-hire','allcott-hire'];
+  const priorityLocations = ['sydney','parramatta','penrith','liverpool','campbelltown','blacktown','castle-hill','hornsby','sutherland','chatswood','newcastle','wollongong','inner-west','northern-beaches','eastern-suburbs'];
+  return competitors
+    .filter(c => priorityCompetitors.includes(c.slug))
+    .flatMap(competitor =>
+      industries.flatMap(industry =>
+        locations
+          .filter(l => priorityLocations.includes(l.slug))
+          .map(location => ({
+            params: {
+              competitorSlug: competitor.slug,
+              industrySlug: industry.slug,
+              locationSlug: location.slug
+            },
+            props: { competitor, industry, location }
+          }))
+      )
+    );
 }
 
 const { competitor, industry, location } = Astro.props;
