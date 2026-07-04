@@ -1,6 +1,7 @@
 export interface AeoAnswer {
   slug: string;
   question: string;
+  category?: string;
   shortAnswer: string;
   fullAnswer: string;
   relatedQuestions: { q: string; a: string }[];
