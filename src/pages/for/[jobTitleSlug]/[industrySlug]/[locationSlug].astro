@@ -26,6 +26,10 @@ export async function getStaticPaths() {
 
 const { jobTitle, industry, location } = Astro.props;
 
+// Wave 4 priority filter — index all job titles × all industries × 6 priority locations
+const priorityLocationsFor = ['sydney','parramatta','newcastle','wollongong','central-coast','western-sydney'];
+const shouldIndexFor = priorityLocationsFor.includes(location.slug);
+
 const title = `Equipment Hire for ${jobTitle.namePlural} in ${industry.name} | ${location.name} — BuildHire`;
 const description = `${jobTitle.headline} in ${industry.name} across ${location.name}. ${jobTitle.description} Next-day delivery, transparent pricing.`;
 const canonicalPath = `/for/${jobTitle.slug}/${industry.slug}/${location.slug}/`;
@@ -100,7 +104,7 @@ const speakableSchema = {
 };
 ---
 <Layout title={title} description={description} canonicalPath={canonicalPath}
-  noindex={true}>
+  noindex={!shouldIndexFor}>
   <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />

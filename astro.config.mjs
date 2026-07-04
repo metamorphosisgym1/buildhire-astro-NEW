@@ -17,10 +17,41 @@ export default defineConfig({
       filter: (page) => {
         // Exclude payment pages
         if (page.includes('/payment-success') || page.includes('/payment-cancelled')) return false;
-        // Exclude /compare/, /for/, and /hire/ — deindexed sections
-        if (page.includes('/compare/')) return false;
-        if (page.includes('/for/')) return false;
-        if (page.includes('/hire/')) return false;
+
+        // Wave 1: Include all /hire/[equipment]/[location]/ pages (738 pages — highest commercial intent)
+        // Exclude deeper /hire/ sub-pages (industry, use-case, faq) — too large for current DA
+        if (page.includes('/hire/')) {
+          const hireParts = page.replace('https://buildhire.com.au', '').split('/').filter(Boolean);
+          // Allow /hire/[eq]/[loc]/ (3 parts) only — not /hire/[eq]/[loc]/[sub]/ (4 parts)
+          return hireParts.length === 3;
+        }
+
+        // Wave 2: Include /compare/ for top 6 competitors × all industries × 15 priority locations
+        if (page.includes('/compare/')) {
+          const priorityCompetitors = ['kennards-hire','coates-hire','conplant','brooks-hire','solution-plant-hire','allcott-hire'];
+          const priorityLocations = ['sydney','parramatta','penrith','liverpool','campbelltown','blacktown','castle-hill','hornsby','sutherland','chatswood','newcastle','wollongong','inner-west','northern-beaches','eastern-suburbs'];
+          // Allow top-level /compare/[competitor]/ pages
+          const compareParts = page.replace('https://buildhire.com.au', '').split('/').filter(Boolean);
+          if (compareParts.length === 2) {
+            return priorityCompetitors.includes(compareParts[1]);
+          }
+          // Allow /compare/[competitor]/[industry]/[location]/ for priority combos
+          if (compareParts.length === 4) {
+            return priorityCompetitors.includes(compareParts[1]) && priorityLocations.includes(compareParts[3]);
+          }
+          return false;
+        }
+
+        // Wave 4: Include /for/ for all 8 job titles × all 20 industries × 6 priority locations
+        if (page.includes('/for/')) {
+          const priorityLocationsFor = ['sydney','parramatta','newcastle','wollongong','central-coast','western-sydney'];
+          const forParts = page.replace('https://buildhire.com.au', '').split('/').filter(Boolean);
+          if (forParts.length === 4) {
+            return priorityLocationsFor.includes(forParts[3]);
+          }
+          return false;
+        }
+
         return true;
       },
       serialize(item) {

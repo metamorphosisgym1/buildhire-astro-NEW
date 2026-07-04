@@ -26,6 +26,11 @@ export async function getStaticPaths() {
 
 const { competitor, industry, location } = Astro.props;
 
+// Wave 2 priority filter — only index top 6 competitors × 15 priority locations
+const priorityCompetitors = ['kennards-hire','coates-hire','conplant','brooks-hire','solution-plant-hire','allcott-hire'];
+const priorityLocations = ['sydney','parramatta','penrith','liverpool','campbelltown','blacktown','castle-hill','hornsby','sutherland','chatswood','newcastle','wollongong','inner-west','northern-beaches','eastern-suburbs'];
+const shouldIndex = priorityCompetitors.includes(competitor.slug) && priorityLocations.includes(location.slug);
+
 const title = `BuildHire vs ${competitor.category} for ${industry.name} in ${location.name} — Equipment Hire Comparison`;
 const description = `Comparing BuildHire with ${competitor.categoryPlural} for ${industry.name.toLowerCase()} equipment hire in ${location.name}. ${competitor.buildhireAdvantage}`;
 const canonicalPath = `/compare/${competitor.slug}/${industry.slug}/${location.slug}/`;
@@ -76,7 +81,7 @@ const speakableSchema = {
 };
 ---
 <Layout title={title} description={description} canonicalPath={canonicalPath}
-  noindex={true}>
+  noindex={!shouldIndex}>
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(speakableSchema)} />
