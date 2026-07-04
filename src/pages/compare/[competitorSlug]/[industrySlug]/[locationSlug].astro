@@ -81,7 +81,7 @@ const speakableSchema = {
 };
 ---
 <Layout title={title} description={description} canonicalPath={canonicalPath}
-  noindex={!shouldIndex}>
+  noindex={true}>
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(speakableSchema)} />
