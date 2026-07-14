@@ -43,6 +43,29 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
+  // Close mobile menu on page navigation (Astro page transitions)
+  useEffect(() => {
+    const handleNavigation = () => setMobileOpen(false);
+    document.addEventListener("astro:page-load", handleNavigation);
+    document.addEventListener("astro:after-swap", handleNavigation);
+    return () => {
+      document.removeEventListener("astro:page-load", handleNavigation);
+      document.removeEventListener("astro:after-swap", handleNavigation);
+    };
+  }, []);
+
   return (
     <>
       {/* Announcement bar */}
@@ -162,7 +185,7 @@ export default function Header() {
       </header>
       {/* Mobile overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-[55] bg-background flex flex-col items-center justify-center gap-6 animate-scale-in">
+        <div className="fixed inset-0 z-[55] bg-background flex flex-col items-center justify-center gap-6 animate-scale-in overflow-y-auto py-16">
           <button
             className="absolute top-5 right-6 text-foreground"
             onClick={() => setMobileOpen(false)}
