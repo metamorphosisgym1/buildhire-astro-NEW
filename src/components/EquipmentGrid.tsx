@@ -60,7 +60,7 @@ const availableEquipment: EquipmentItem[] = [
     image: sv08Img,
     rate: "$200/day",
     badge: "available",
-    deliveryNote: "$150 Delivery & Collection*",
+    deliveryNote: "Price on request",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-SV08-Excavator-Brochure.pdf",
     specs: {
       "Operating Weight": "980 kg",
@@ -77,7 +77,7 @@ const availableEquipment: EquipmentItem[] = [
     image: kubotaU10Img,
     rate: "$200/day",
     badge: "available",
-    deliveryNote: "$150 Delivery & Collection*",
+    deliveryNote: "Price on request",
     brochureUrl: "/brochures/kubota-u10-5.pdf",
     specs: {
       "Operating Weight": "1,200 kg",
@@ -94,7 +94,7 @@ const availableEquipment: EquipmentItem[] = [
     image: vio17Img,
     rate: "$205/day",
     badge: "high-demand",
-    deliveryNote: "$180 Delivery & Collection*",
+    deliveryNote: "Price on request",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-ViO17-Excavator-Brochure.pdf",
     specs: {
       "Operating Weight": "1,700 kg",
@@ -111,7 +111,7 @@ const availableEquipment: EquipmentItem[] = [
     image: vio35Img,
     rate: "$340/day",
     badge: "available",
-    deliveryNote: "$250 Delivery & Collection*",
+    deliveryNote: "Price on request",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2024/06/ViO30-7ViO35-7_240620_Single_LR.pdf",
     specs: {
       "Operating Weight": "3,500 kg",
@@ -128,7 +128,7 @@ const availableEquipment: EquipmentItem[] = [
     image: vio55Img,
     rate: "$370/day",
     badge: "high-demand",
-    deliveryNote: "Delivery & Collection* (third party transport — pricing on enquiry)",
+    deliveryNote: "Price on request",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-ViO50-ViO55-Excavator-Brochure.pdf",
     specs: {
       "Operating Weight": "5,500 kg",
@@ -145,7 +145,7 @@ const availableEquipment: EquipmentItem[] = [
     image: vio80Img,
     rate: "$490/day",
     badge: "available",
-    deliveryNote: "Delivery & Collection* (third party transport — pricing on enquiry)",
+    deliveryNote: "Price on request",
     brochureUrl: "/brochures/CX145C-Specs.pdf",
     specs: {
       "Operating Weight": "14,500 kg",
@@ -162,7 +162,7 @@ const availableEquipment: EquipmentItem[] = [
     image: vio80Img,
     rate: "$490/day",
     badge: "available",
-    deliveryNote: "Delivery & Collection* (third party transport — pricing on enquiry)",
+    deliveryNote: "Price on request",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2020/01/Sumitomo_SH235X-6_Tutt_Bryant.pdf",
     specs: {
       "Operating Weight": "25,100 kg",
@@ -207,7 +207,7 @@ const availableEquipment: EquipmentItem[] = [
     image: cormidiC7xImg,
     rate: "$200/day",
     badge: "available",
-    deliveryNote: "$150 Delivery & Collection*",
+    deliveryNote: "Price on request",
     useContain: true,
     specs: {
       "Payload": "700 kg",
@@ -222,7 +222,7 @@ const availableEquipment: EquipmentItem[] = [
     image: cormidiC85Img,
     rate: "$200/day",
     badge: "available",
-    deliveryNote: "$150 Delivery & Collection*",
+    deliveryNote: "Price on request",
     useContain: true,
     specs: {
       "Payload": "850 kg",
@@ -237,7 +237,7 @@ const availableEquipment: EquipmentItem[] = [
     image: rockBreakerImg,
     rate: "$110/day",
     badge: "available",
-    deliveryNote: "Free delivery & collection when hired with a machine",
+    deliveryNote: "Price on request",
     useContain: true,
     specs: {
       "Type": "Hydraulic Breaker",
@@ -250,7 +250,7 @@ const availableEquipment: EquipmentItem[] = [
     image: augerImg,
     rate: "$99/day",
     badge: "available",
-    deliveryNote: "Free delivery & collection when hired with a machine",
+    deliveryNote: "Price on request",
     useContain: true,
     specs: {
       "Type": "Hydraulic Auger",
@@ -263,7 +263,7 @@ const availableEquipment: EquipmentItem[] = [
     image: rockGrabImg,
     rate: "$135/day",
     badge: "available",
-    deliveryNote: "Free delivery & collection when hired with a machine",
+    deliveryNote: "Price on request",
     useContain: true,
     specs: {
       "Type": "Hydraulic Rock Grab",
@@ -276,7 +276,7 @@ const availableEquipment: EquipmentItem[] = [
     image: sieveBucketImg,
     rate: "$50/day",
     badge: "available",
-    deliveryNote: "Free delivery & collection when hired with a machine",
+    deliveryNote: "Price on request",
     useContain: true,
     specs: {
       "Type": "Sieve / Skeleton Bucket",
@@ -290,7 +290,7 @@ const availableEquipment: EquipmentItem[] = [
     image: concreteSawImg,
     rate: "$140/day",
     badge: "available",
-    deliveryNote: "$100 Delivery & Collection*",
+    deliveryNote: "Price on request",
     useContain: true,
     specs: {
       "Type": "Concrete Saw",
@@ -304,7 +304,7 @@ const availableEquipment: EquipmentItem[] = [
     image: demolitionHammerImg,
     rate: "$110/day",
     badge: "available",
-    deliveryNote: "$100 Delivery & Collection*",
+    deliveryNote: "Price on request",
     useContain: true,
     specs: {
       "Type": "Demolition Hammer",
@@ -318,7 +318,7 @@ const availableEquipment: EquipmentItem[] = [
     image: typhoonWasherImg,
     rate: "$150/day",
     badge: "available",
-    deliveryNote: "$100 Delivery & Collection*",
+    deliveryNote: "Price on request",
     useContain: true,
     specs: {
       "Type": "Pressure Washer",
@@ -335,7 +335,7 @@ const comingSoonEquipment: EquipmentItem[] = [
     image: vio80Img,
     rate: "$420/day",
     badge: "coming-soon",
-    deliveryNote: "Delivery & Collection* (third party transport — pricing on enquiry)",
+    deliveryNote: "Price on request",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-ViO80-Excavator-Brochure.pdf",
     specs: {
       "Operating Weight": "8,000 kg",

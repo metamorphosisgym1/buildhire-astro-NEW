@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { Check, Truck, Wrench, Cog, Info, CircleDot, Hammer, Loader2 } from "lucide-react";
-
-
+import { Check, Truck, Wrench, Cog, CircleDot } from "lucide-react";
 
 // Custom SVG icon components
 const ExcavatorIcon = ({ size = 28, className = "" }: { size?: number; className?: string }) => (
@@ -30,16 +28,15 @@ const MiniDumperIcon = ({ size = 28, className = "" }: { size?: number; classNam
     <path d="M8 17h8" />
   </svg>
 );
+
 const sv08Img = "/assets/sv08-excavator.png";
 const kubotaU10Img = "/assets/kubota-u10-5-branded.png";
 const boxTrailerImg = "/assets/box-trailer.jpg";
 const vio17Img = "/assets/vio17-excavator.png";
-
 const vio35Img = "/assets/vio35-excavator.png";
 const vio55Img = "/assets/vio55-excavator.png";
 const vio80Img = "/assets/vio80-excavator.png";
 const isuzuTipperImg = "/assets/isuzu-tipper.png";
-const miniDumperImg = "/assets/mini-dumper.png";
 const cormidiC7xImg = "/assets/cormidi-c7x.jpg";
 const cormidiC85Img = "/assets/cormidi-c85.jpg";
 const loaderImg = "/assets/loader-lilac.jpg";
@@ -50,8 +47,9 @@ const augerImg = "/assets/auger-drive.jpg";
 const rockGrabImg = "/assets/rock-grab.jpg";
 const typhoonWasherImg = "/assets/typhoon-pressure-washer.png";
 const demolitionHammerImg = "/assets/demolition-hammer.png";
-
 const concreteSawImg = "/assets/concrete-saw.png";
+
+const WHATSAPP_NUMBER = "61435421324";
 
 const categoryIcons: Record<string, React.ComponentType<any>> = {
   Excavators: ExcavatorIcon,
@@ -143,12 +141,6 @@ const equipmentData: Record<string, { name: string; rate: number; weeklyRate?: n
   ],
 };
 
-const attachments = [
-  "Hammer/Breaker",
-  "Auger",
-  "Rock Grab",
-];
-
 function renderEquipmentName(name: string) {
   const match = name.match(/C7[xX]/);
   if (!match) return name;
@@ -160,21 +152,21 @@ function renderEquipmentName(name: string) {
   );
 }
 
+function formatDate(dateStr: string): string {
+  if (!dateStr) return "";
+  const d = new Date(dateStr);
+  return d.toLocaleDateString("en-AU", { day: "2-digit", month: "short", year: "numeric" });
+}
+
 export default function BookingCalculator() {
   const [step, setStep] = useState(1);
   const [category, setCategory] = useState<string>("Excavators");
   const [machine, setMachine] = useState<string>("");
-  const [selectedAttachments, setSelectedAttachments] = useState<string[]>([]);
-  const [augerDrillSize, setAugerDrillSize] = useState<string>("200mm");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
-  const [location, setLocation] = useState("");
+  const [suburb, setSuburb] = useState("");
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [acceptedTerms, setAcceptedTerms] = useState(false);
 
   const selectedMachine = Object.values(equipmentData)
     .flat()
@@ -191,109 +183,54 @@ export default function BookingCalculator() {
         )
       : 0;
 
-  const equipmentCost = (selectedMachine?.rate ?? 0) * days;
-  const attachmentCost = selectedAttachments.length * 75;
-
-  // Tiered delivery & collection pricing
-  const getDeliveryCost = (machineName: string): number => {
-    if (!machineName) return 0;
-    // 0.8T, 1T, Cormidi Dumpers — $150
-    if (
-      machineName.includes("0.8T") ||
-      machineName.includes("1T Mini") ||
-      machineName.includes("Cormidi")
-    ) return 150;
-    // 1.7T — $180
-    if (machineName.includes("1.7T")) return 180;
-    // 3.5T — $250
-    if (machineName.includes("3.5T")) return 250;
-    // 5.5T, 8T, 14.5T, 23T — third party transport, pricing on enquiry
-    if (
-      machineName.includes("5.5T") ||
-      machineName.includes("8T") ||
-      machineName.includes("14.5T") ||
-      machineName.includes("23T")
-    ) return 0;
-    // Tipper
-    if (machineName.includes("Tipper")) return 150;
-    // Box Trailer
-    if (machineName.includes("Box Trailer")) return 0;
-    // Concrete Saws, Tools
-    if (
-      machineName.includes("Concrete Saw") ||
-      machineName.includes("Demolition Hammer") ||
-      machineName.includes("Pressure Washer")
-    ) return 100;
-    // Attachments hired standalone
-    if (
-      machineName.includes("Hydraulic Hammer") ||
-      machineName.includes("Auger") ||
-      machineName.includes("Rock Grab") ||
-      machineName.includes("Sieve Bucket") ||
-      machineName.includes("Trailer")
-    ) return 100;
-    return 150;
-  };
-
-  const deliveryCost = getDeliveryCost(machine);
-  const isThirdPartyDelivery = machine.includes("5.5T") || machine.includes("8T") || machine.includes("14.5T") || machine.includes("23T");
-
   // Weekly rate calculation — apply weekly rate for full weeks, daily rate for remaining days
   const weeks = days >= 7 ? Math.floor(days / 7) : 0;
   const remainingDays = days >= 7 ? days % 7 : days;
   const weeklyRate = selectedMachine?.weeklyRate ?? 0;
-  const effectiveEquipmentCost = weeklyRate > 0 && weeks > 0
-    ? weeks * weeklyRate + remainingDays * (selectedMachine?.rate ?? 0)
-    : equipmentCost;
+  const effectiveEquipmentCost =
+    weeklyRate > 0 && weeks > 0
+      ? weeks * weeklyRate + remainingDays * (selectedMachine?.rate ?? 0)
+      : (selectedMachine?.rate ?? 0) * days;
 
-  const totalCost = effectiveEquipmentCost + attachmentCost * days + deliveryCost;
+  const buildWhatsAppMessage = () => {
+    const lines = [
+      "Hi Buildhire! I'd like to book the following:",
+      "",
+      `Equipment: ${machine}`,
+      `Start Date: ${formatDate(startDate)}`,
+      `End Date: ${formatDate(endDate)}`,
+      `Duration: ${days} day${days !== 1 ? "s" : ""}`,
+      `Estimated Hire Cost: $${effectiveEquipmentCost.toLocaleString()} (excl. delivery)`,
+      `Delivery Suburb: ${suburb}`,
+      `Delivery: Price on request`,
+      "",
+      `Name: ${name}`,
+      `Phone: ${phone}`,
+    ];
+    return encodeURIComponent(lines.join("\n"));
+  };
 
-  const toggleAttachment = (a: string) =>
-    setSelectedAttachments((prev) =>
-      prev.includes(a) ? prev.filter((x) => x !== a) : [...prev, a]
-    );
-
-  const depositAmount = 200;
-
-  if (submitted) {
-    return (
-      <section id="booking" className="relative py-24 px-6 overflow-hidden">
-        <img src={bookingBg} alt="" className="absolute inset-0 w-full h-full object-cover" aria-hidden="true" />
-        <div className="absolute inset-0 bg-black/45" />
-        <div className="container mx-auto max-w-2xl text-center animate-scale-in relative z-10">
-          <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-            <Check size={40} className="text-primary-foreground" />
-          </div>
-          <h2 className="text-3xl font-bold text-white mb-4">Bond Paid — Booking Confirmed!</h2>
-          <p className="text-white/70 mb-2">
-            Your $200 refundable bond has been received. A confirmation has been sent to <span className="text-white font-medium">{email}</span>.
-          </p>
-          <p className="text-white/50 text-sm">
-            Our team at info@buildhire.com.au has been notified and will be in touch shortly to arrange delivery & collection.
-          </p>
-        </div>
-      </section>
-    );
-  }
+  const handleBookViaWhatsApp = () => {
+    const msg = buildWhatsAppMessage();
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, "_blank");
+  };
 
   return (
     <section id="booking" className="relative py-12 md:py-24 px-4 md:px-6 overflow-hidden">
       <img src={bookingBg} alt="" className="absolute inset-0 w-full h-full object-cover" aria-hidden="true" />
       <div className="absolute inset-0 bg-black/45" />
       <div className="container mx-auto max-w-4xl relative z-10">
-        <p className="label-text text-primary text-center mb-3 text-sm">
-          Get Started
-        </p>
+        <p className="label-text text-primary text-center mb-3 text-sm">Get Started</p>
         <h2 className="text-2xl md:text-5xl font-bold text-white text-center mb-2">
           Instant Quote & Booking
         </h2>
         <p className="text-white/60 text-center text-sm mb-8 md:mb-12 max-w-xl mx-auto">
-          Book your excavator hire Sydney — get a price in seconds and secure your machine online.
+          Book your equipment hire in seconds — confirm via WhatsApp.
         </p>
 
         {/* Progress bar */}
         <div className="flex items-center justify-center gap-1 md:gap-2 mb-8 md:mb-12">
-          {[1, 2, 3, 4].map((s) => (
+          {[1, 2, 3].map((s) => (
             <div key={s} className="flex items-center gap-2">
               <div
                 className={`w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold transition-colors ${
@@ -302,29 +239,24 @@ export default function BookingCalculator() {
                     : "border-2 border-white/30 text-white/50"
                 }`}
               >
-                {s}
+                {step > s ? <Check size={18} /> : s}
               </div>
-              {s < 4 && (
-                <div
-                  className={`w-16 h-0.5 ${
-                    step > s ? "bg-primary" : "bg-white/20"
-                  }`}
-                />
+              {s < 3 && (
+                <div className={`w-16 h-0.5 ${step > s ? "bg-primary" : "bg-white/20"}`} />
               )}
             </div>
           ))}
         </div>
 
         <div className="bg-background border border-secondary rounded-2xl p-4 md:p-8">
-          {/* Step 1 */}
+
+          {/* ── Step 1: Choose equipment ── */}
           {step === 1 && (
             <div className="animate-fade-in-up">
-              <h3 className="text-xl font-bold text-foreground mb-6">Select Equipment & Dates</h3>
+              <h3 className="text-xl font-bold text-foreground mb-6">Select Equipment</h3>
 
-              {/* Category cards with icons */}
-              <label className="label-text text-xs text-muted-foreground mb-3 block">
-                Category
-              </label>
+              {/* Category cards */}
+              <label className="label-text text-xs text-muted-foreground mb-3 block">Category</label>
               <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-3 mb-6 md:mb-8">
                 {Object.keys(equipmentData).map((cat) => {
                   const Icon = categoryIcons[cat] || Cog;
@@ -348,185 +280,126 @@ export default function BookingCalculator() {
                 })}
               </div>
 
-              {/* Machine selector with thumbnails */}
-              <label className="label-text text-xs text-muted-foreground mb-3 block">
-                Machine
-              </label>
-              <div className="space-y-2 mb-6 md:mb-8 max-h-[280px] md:max-h-none overflow-y-auto">
-                {equipmentData[category]?.length === 0 ? (
-                  <p className="text-sm text-muted-foreground py-4 text-center">Coming soon — enquire for availability.</p>
-                ) : (
-                  equipmentData[category]?.map((m) => (
-                    <button
-                      key={m.name}
-                      onClick={() => !m.comingSoon && setMachine(m.name)}
-                      className={`w-full text-left px-4 py-3 rounded-xl text-sm transition-all flex items-center gap-4 ${
-                        m.comingSoon
-                          ? "border border-secondary text-muted-foreground/50 cursor-not-allowed opacity-60"
-                          : machine === m.name
-                            ? "bg-primary/10 border border-primary text-foreground"
-                            : "border border-secondary text-muted-foreground hover:border-primary/50"
-                      }`}
-                      disabled={m.comingSoon}
-                    >
-                      <img
-                        src={machineImages[m.name] || loaderImg}
-                        alt={m.name}
-                        className="w-10 h-10 rounded-lg object-contain"
-                      />
-                      <span className="flex-1 font-medium">{renderEquipmentName(m.name)}</span>
-                      {m.comingSoon ? (
-                        <span className="text-xs font-semibold bg-amber-500/90 text-white px-2 py-0.5 rounded-full">Coming Soon</span>
-                      ) : (
-                        <span className="text-primary font-semibold">
-                          {m.rate > 0 ? `$${m.rate}/day incl GST` : "POA"}
-                        </span>
-                      )}
-                    </button>
-                  ))
-                )}
+              {/* Machine list with image + daily rate */}
+              <label className="label-text text-xs text-muted-foreground mb-3 block">Machine</label>
+              <div className="space-y-2 mb-6">
+                {equipmentData[category]?.map((m) => (
+                  <button
+                    key={m.name}
+                    onClick={() => !m.comingSoon && setMachine(m.name)}
+                    disabled={m.comingSoon}
+                    className={`w-full text-left px-4 py-3 rounded-xl text-sm transition-all flex items-center gap-4 ${
+                      m.comingSoon
+                        ? "border border-secondary text-muted-foreground/50 cursor-not-allowed opacity-60"
+                        : machine === m.name
+                          ? "bg-primary/10 border border-primary text-foreground"
+                          : "border border-secondary text-muted-foreground hover:border-primary/50"
+                    }`}
+                  >
+                    <img
+                      src={machineImages[m.name] || loaderImg}
+                      alt={m.name}
+                      className="w-12 h-12 rounded-lg object-contain flex-shrink-0"
+                    />
+                    <span className="flex-1 font-medium">{renderEquipmentName(m.name)}</span>
+                    {m.comingSoon ? (
+                      <span className="text-xs font-semibold bg-amber-500/90 text-white px-2 py-0.5 rounded-full">
+                        Coming Soon
+                      </span>
+                    ) : (
+                      <span className="text-primary font-semibold whitespace-nowrap">
+                        ${m.rate}/day
+                      </span>
+                    )}
+                  </button>
+                ))}
               </div>
-
-              {/* Auger drill size selector */}
-              {machine.startsWith("Auger Drive") && (
-                <div className="animate-fade-in-up mb-6 md:mb-8">
-                  <label className="label-text text-xs text-muted-foreground mb-3 block">
-                    Select Drill Size
-                  </label>
-                  <div className="flex gap-3">
-                    {["200mm", "300mm", "450mm"].map((size) => (
-                      <button
-                        key={size}
-                        onClick={() => setAugerDrillSize(size)}
-                        className={`flex-1 px-4 py-3 rounded-xl text-sm font-medium transition-all border ${
-                          augerDrillSize === size
-                            ? "border-primary bg-primary/10 text-foreground"
-                            : "border-secondary text-muted-foreground hover:border-primary/50"
-                        }`}
-                      >
-                        {size}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Dates */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
-                <div>
-                  <label className="label-text text-xs text-muted-foreground mb-2 block">
-                    Start Date
-                  </label>
-                  <input
-                    type="date"
-                    value={startDate}
-                    onChange={(e) => setStartDate(e.target.value)}
-                    className="w-full min-w-0 box-border bg-card border border-secondary rounded-lg px-3 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors appearance-none"
-                  />
-                </div>
-                <div>
-                  <label className="label-text text-xs text-muted-foreground mb-2 block">
-                    End Date
-                  </label>
-                  <input
-                    type="date"
-                    value={endDate}
-                    onChange={(e) => setEndDate(e.target.value)}
-                    className="w-full min-w-0 box-border bg-card border border-secondary rounded-lg px-3 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors appearance-none"
-                  />
-                </div>
-              </div>
-
-              {/* Fees disclaimer */}
-              <div className="flex items-start gap-2 mb-4 md:mb-6 px-1">
-                <Info size={14} className="text-muted-foreground flex-shrink-0 mt-0.5" />
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  $200 refundable bond applies — pending cleaning condition and refuelling of the machine. Additional fees may apply for further damages.{" "}
-                  <a href="#" className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors">
-                    click to see fees, terms and conditions
-                  </a>
-                </p>
-              </div>
-
-              {/* Attachments */}
-              {machine && (
-                <div className="animate-fade-in-up">
-                  <label className="label-text text-xs text-muted-foreground mb-2 block">
-                    Attachments (prices incl GST)
-                  </label>
-                  <p className="text-xs text-muted-foreground mb-3">All machines come with standard buckets & ripper included.</p>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    {attachments.map((a) => (
-                      <label
-                        key={a}
-                        className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm cursor-pointer transition-all border ${
-                          selectedAttachments.includes(a)
-                            ? "border-primary bg-primary/10 text-foreground"
-                            : "border-secondary text-muted-foreground hover:border-primary/50"
-                        }`}
-                      >
-                        <input
-                          type="checkbox"
-                          checked={selectedAttachments.includes(a)}
-                          onChange={() => toggleAttachment(a)}
-                          className="sr-only"
-                        />
-                        <div
-                          className={`w-4 h-4 rounded border flex items-center justify-center ${
-                            selectedAttachments.includes(a)
-                              ? "bg-primary border-primary"
-                              : "border-secondary"
-                          }`}
-                        >
-                          {selectedAttachments.includes(a) && (
-                            <Check size={12} className="text-primary-foreground" />
-                          )}
-                        </div>
-                        {a}
-                      </label>
-                    ))}
-                  </div>
-                </div>
-              )}
 
               <button
                 onClick={() => setStep(2)}
-                disabled={!machine || !startDate || !endDate}
-                className="mt-6 md:mt-8 w-full bg-primary text-primary-foreground h-12 md:h-14 rounded-md font-semibold text-base md:text-lg hover:scale-[1.02] transition-transform disabled:opacity-40 disabled:hover:scale-100"
+                disabled={!machine}
+                className="w-full bg-primary text-primary-foreground h-12 md:h-14 rounded-md font-semibold text-base md:text-lg hover:scale-[1.02] transition-transform disabled:opacity-40 disabled:hover:scale-100"
               >
-                Continue to Your Details →
+                Next: Pick Dates & Delivery →
               </button>
             </div>
           )}
 
-          {/* Step 2 */}
+          {/* ── Step 2: Dates & delivery suburb ── */}
           {step === 2 && (
             <div className="animate-fade-in-up">
-              <h3 className="text-xl font-bold text-foreground mb-6">Location & Details</h3>
-
-              <div className="space-y-6 max-w-lg">
-                {[
-                  { label: "Job Site Suburb or Postcode", type: "text", value: location, set: setLocation, placeholder: "e.g. Parramatta 2150" },
-                  { label: "Full Name", type: "text", value: name, set: setName },
-                  { label: "Email", type: "email", value: email, set: setEmail },
-                  { label: "Phone", type: "tel", value: phone, set: setPhone },
-                ].map((field) => (
-                  <div key={field.label}>
-                    <label className="label-text text-xs text-muted-foreground mb-2 block">
-                      {field.label}
-                    </label>
-                    <input
-                      type={field.type}
-                      value={field.value}
-                      onChange={(e) => field.set(e.target.value)}
-                      placeholder={field.placeholder}
-                      className="w-full bg-card border border-secondary rounded-lg px-4 py-3 min-h-[48px] text-foreground focus:border-primary focus:outline-none transition-colors placeholder:text-muted-foreground/50"
-                    />
-                  </div>
-                ))}
+              <h3 className="text-xl font-bold text-foreground mb-1">Dates & Delivery</h3>
+              {/* Selected machine summary */}
+              <div className="flex items-center gap-3 mb-6 p-3 rounded-xl bg-primary/10 border border-primary/30">
+                <img
+                  src={machineImages[machine] || loaderImg}
+                  alt={machine}
+                  className="w-12 h-12 rounded-lg object-contain flex-shrink-0"
+                />
+                <div>
+                  <p className="text-sm font-semibold text-foreground">{renderEquipmentName(machine)}</p>
+                  <p className="text-xs text-primary font-medium">
+                    ${selectedMachine?.rate}/day incl GST
+                    {selectedMachine?.weeklyRate ? ` · $${selectedMachine.weeklyRate}/week` : ""}
+                  </p>
+                </div>
               </div>
 
-              <div className="flex gap-4 mt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label className="label-text text-xs text-muted-foreground mb-2 block">Start Date</label>
+                  <input
+                    type="date"
+                    value={startDate}
+                    onChange={(e) => setStartDate(e.target.value)}
+                    className="w-full bg-card border border-secondary rounded-lg px-3 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors appearance-none"
+                  />
+                </div>
+                <div>
+                  <label className="label-text text-xs text-muted-foreground mb-2 block">End Date</label>
+                  <input
+                    type="date"
+                    value={endDate}
+                    onChange={(e) => setEndDate(e.target.value)}
+                    className="w-full bg-card border border-secondary rounded-lg px-3 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors appearance-none"
+                  />
+                </div>
+              </div>
+
+              <div className="mb-4">
+                <label className="label-text text-xs text-muted-foreground mb-2 block">Delivery Suburb</label>
+                <input
+                  type="text"
+                  value={suburb}
+                  onChange={(e) => setSuburb(e.target.value)}
+                  placeholder="e.g. Parramatta 2150"
+                  className="w-full bg-card border border-secondary rounded-lg px-4 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors placeholder:text-muted-foreground/50"
+                />
+              </div>
+
+              {/* Estimated hire cost */}
+              {days > 0 && (
+                <div className="rounded-xl bg-card border border-secondary p-4 mb-4 text-sm">
+                  <div className="flex justify-between mb-1">
+                    <span className="text-muted-foreground">Duration</span>
+                    <span className="font-medium text-foreground">{days} day{days !== 1 ? "s" : ""}</span>
+                  </div>
+                  <div className="flex justify-between mb-1">
+                    <span className="text-muted-foreground">Estimated Hire Cost</span>
+                    <span className="font-semibold text-primary">${effectiveEquipmentCost.toLocaleString()} incl GST</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Delivery & Collection</span>
+                    <span className="font-medium text-foreground">Price on request</span>
+                  </div>
+                </div>
+              )}
+
+              <p className="text-xs text-muted-foreground mb-6">
+                Delivery & Collection: Price on request — our team will confirm pricing when we get in touch.
+              </p>
+
+              <div className="flex gap-4">
                 <button
                   onClick={() => setStep(1)}
                   className="border border-secondary text-foreground px-6 py-3 rounded-md font-medium hover:border-primary transition-colors"
@@ -535,73 +408,69 @@ export default function BookingCalculator() {
                 </button>
                 <button
                   onClick={() => setStep(3)}
-                  disabled={!location || !name || !email || !phone}
-                  className="flex-1 bg-primary text-primary-foreground h-14 rounded-md font-semibold text-lg hover:scale-[1.02] transition-transform disabled:opacity-40 disabled:hover:scale-100"
+                  disabled={!startDate || !endDate || !suburb}
+                  className="flex-1 bg-primary text-primary-foreground h-12 md:h-14 rounded-md font-semibold text-base md:text-lg hover:scale-[1.02] transition-transform disabled:opacity-40 disabled:hover:scale-100"
                 >
-                  Next: Review Quote
+                  Next: Your Details →
                 </button>
               </div>
             </div>
           )}
 
-          {/* Step 3 */}
+          {/* ── Step 3: Name, phone & WhatsApp CTA ── */}
           {step === 3 && (
             <div className="animate-fade-in-up">
-              <h3 className="text-xl font-bold text-foreground mb-6">Quote Summary</h3>
+              <h3 className="text-xl font-bold text-foreground mb-6">Your Details</h3>
 
-              <div className="bg-card rounded-xl p-6 mb-8 border border-secondary">
-                <table className="w-full text-sm">
-                  <tbody className="divide-y divide-secondary">
-                    <tr>
-                      <td className="py-3 text-muted-foreground">Equipment</td>
-                      <td className="py-3 text-right font-medium text-foreground">{renderEquipmentName(machine)}</td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 text-muted-foreground">Duration</td>
-                      <td className="py-3 text-right font-medium text-foreground">{days} day{days !== 1 ? "s" : ""}</td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 text-muted-foreground">Equipment Cost</td>
-                      <td className="py-3 text-right font-medium text-foreground">${equipmentCost.toLocaleString()}</td>
-                    </tr>
-                    {selectedAttachments.length > 0 && (
-                      <tr>
-                        <td className="py-3 text-muted-foreground">
-                          Attachments ({selectedAttachments.join(", ")})
-                        </td>
-                        <td className="py-3 text-right font-medium text-foreground">
-                          ${(attachmentCost * days).toLocaleString()}
-                        </td>
-                      </tr>
-                    )}
-                    <tr>
-                      <td className="py-3 text-muted-foreground">
-                        Delivery & Collection
-                        {isThirdPartyDelivery && (
-                          <span className="block text-xs text-primary/80">(third party transport)</span>
-                        )}
-                      </td>
-                      <td className="py-3 text-right font-medium text-foreground">${deliveryCost}</td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 text-muted-foreground">Location</td>
-                      <td className="py-3 text-right font-medium text-foreground">{location}</td>
-                    </tr>
-                    <tr className="border-t-2 border-primary">
-                      <td className="py-4 font-bold text-base text-foreground">Total (incl GST)</td>
-                      <td className="py-4 text-right font-bold text-base text-primary">
-                        ${totalCost.toLocaleString()}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 text-muted-foreground">Refundable Bond (held on card)</td>
-                      <td className="py-3 text-right font-semibold text-primary">${depositAmount}</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p className="text-xs text-muted-foreground mt-4">
-                  A ${depositAmount} refundable bond is authorised on your card — pending cleaning condition and refuelling of the machine. Additional fees may apply for further damages. The hire total is due on delivery & collection.
-                </p>
+              {/* Booking summary */}
+              <div className="rounded-xl bg-card border border-secondary p-4 mb-6 text-sm space-y-2">
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Equipment</span>
+                  <span className="font-medium text-foreground text-right max-w-[60%]">{renderEquipmentName(machine)}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Dates</span>
+                  <span className="font-medium text-foreground">{formatDate(startDate)} – {formatDate(endDate)}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Duration</span>
+                  <span className="font-medium text-foreground">{days} day{days !== 1 ? "s" : ""}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Est. Hire Cost</span>
+                  <span className="font-semibold text-primary">${effectiveEquipmentCost.toLocaleString()} incl GST</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Delivery Suburb</span>
+                  <span className="font-medium text-foreground">{suburb}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Delivery & Collection</span>
+                  <span className="font-medium text-foreground">Price on request</span>
+                </div>
+              </div>
+
+              <div className="space-y-4 max-w-lg mb-6">
+                <div>
+                  <label className="label-text text-xs text-muted-foreground mb-2 block">Full Name</label>
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Your full name"
+                    className="w-full bg-card border border-secondary rounded-lg px-4 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors placeholder:text-muted-foreground/50"
+                  />
+                </div>
+                <div>
+                  <label className="label-text text-xs text-muted-foreground mb-2 block">Phone Number</label>
+                  <input
+                    type="tel"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    placeholder="e.g. 0412 345 678"
+                    className="w-full bg-card border border-secondary rounded-lg px-4 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors placeholder:text-muted-foreground/50"
+                  />
+                </div>
               </div>
 
               <div className="flex gap-4">
@@ -612,119 +481,24 @@ export default function BookingCalculator() {
                   Back
                 </button>
                 <button
-                  onClick={() => setStep(4)}
-                  className="flex-1 bg-primary text-primary-foreground h-14 rounded-md font-semibold text-lg hover:scale-[1.02] transition-transform"
+                  onClick={handleBookViaWhatsApp}
+                  disabled={!name || !phone}
+                  className="flex-1 flex items-center justify-center gap-3 bg-[#25D366] text-white h-12 md:h-14 rounded-md font-semibold text-base md:text-lg hover:scale-[1.02] hover:bg-[#1ebe5d] transition-all disabled:opacity-40 disabled:hover:scale-100"
                 >
-                  Continue to Payment →
+                  {/* WhatsApp icon */}
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  Book via WhatsApp
                 </button>
               </div>
-            </div>
-          )}
 
-          {/* Step 4 — Stripe Payment */}
-          {step === 4 && (
-            <div className="animate-fade-in-up">
-              <h3 className="text-xl font-bold text-foreground mb-2">Pay Bond to Confirm</h3>
-              <p className="text-sm text-muted-foreground mb-6">
-                A $200 refundable bond is required to secure your booking — pending cleaning condition and refuelling of the machine. Additional fees may apply for further damages. The hire total is due on delivery & collection.
+              <p className="text-xs text-muted-foreground mt-4 text-center">
+                Tapping "Book via WhatsApp" will open WhatsApp with your booking details pre-filled. Our team will confirm availability and pricing.
               </p>
-
-              <div className="bg-card rounded-xl p-6 border border-secondary mb-6 max-w-lg">
-                <p className="text-sm text-muted-foreground mb-4">
-                  You'll be redirected to Stripe's secure checkout to complete your <span className="text-primary font-semibold">$200 AUD</span> refundable bond.
-                </p>
-                <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                  Secured by Stripe — your card details never touch our servers
-                </div>
-              </div>
-
-              {/* Terms checkbox */}
-              <label className="flex items-start gap-3 cursor-pointer mb-6 max-w-lg">
-                <div className="mt-0.5">
-                  <input
-                    type="checkbox"
-                    checked={acceptedTerms}
-                    onChange={(e) => setAcceptedTerms(e.target.checked)}
-                    className="sr-only"
-                  />
-                  <div
-                    className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${
-                      acceptedTerms
-                        ? "bg-primary border-primary"
-                        : "border-secondary"
-                    }`}
-                  >
-                    {acceptedTerms && (
-                      <Check size={14} className="text-primary-foreground" />
-                    )}
-                  </div>
-                </div>
-                <span className="text-sm text-muted-foreground leading-relaxed">
-                  I have read and agree to the{" "}
-                  <a href="#" className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors">
-                    Terms & Conditions
-                  </a>
-                </span>
-              </label>
-
-              <div className="flex gap-4">
-                <button
-                  onClick={() => setStep(3)}
-                  disabled={isProcessing}
-                  className="border border-secondary text-foreground px-6 py-3 rounded-md font-medium hover:border-primary transition-colors disabled:opacity-40"
-                >
-                  Back
-                </button>
-                <button
-                  disabled={isProcessing || !acceptedTerms}
-                  onClick={async () => {
-                    setIsProcessing(true);
-                    try {
-                      const resp = await fetch("/api/create-checkout", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({
-                          depositAmount,
-                          machine,
-                          days,
-                          totalCost,
-                          attachments: selectedAttachments.join(", "),
-                          location,
-                          startDate,
-                          endDate,
-                          name,
-                          email,
-                          phone,
-                        }),
-                      });
-                      const data = await resp.json();
-                      if (!resp.ok) throw new Error(data?.error || "Checkout failed");
-                      if (data?.url) {
-                        window.location.href = data.url;
-                      } else {
-                        throw new Error("No checkout URL returned");
-                      }
-                    } catch (err: any) {
-                      console.error("Checkout error:", err);
-                      alert("Could not start checkout. Please try again.");
-                      setIsProcessing(false);
-                    }
-                  }}
-                  className="flex-1 bg-primary text-primary-foreground h-14 rounded-md font-semibold text-lg hover:scale-[1.02] transition-transform disabled:opacity-70 disabled:hover:scale-100 flex items-center justify-center gap-2"
-                >
-                  {isProcessing ? (
-                    <>
-                      <Loader2 size={20} className="animate-spin" />
-                      Redirecting to Stripe...
-                    </>
-                  ) : (
-                    `Pay $200 Bond`
-                  )}
-                </button>
-              </div>
             </div>
           )}
+
         </div>
       </div>
     </section>
