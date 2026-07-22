@@ -11,7 +11,7 @@
   ],
   "headers": [
     {
-      "source": "/(.*)\\.(?:js|css|woff2?|ttf|otf|eot|ico|png|jpg|jpeg|gif|svg|webp|avif|mp4|webm)",
+      "source": "/_astro/:file",
       "headers": [
         {
           "key": "Cache-Control",
@@ -20,7 +20,25 @@
       ]
     },
     {
-      "source": "/(.*)",
+      "source": "/fonts/:file",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/:file",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
       "headers": [
         {
           "key": "Cache-Control",
