@@ -2,6 +2,49 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import { readdir, readFile, writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
+
+async function htmlFiles(directory) {
+  const entries = await readdir(directory, { withFileTypes: true });
+  const files = await Promise.all(entries.map(async (entry) => {
+    const path = join(directory, entry.name);
+    if (entry.isDirectory()) return htmlFiles(path);
+    return entry.isFile() && entry.name.endsWith('.html') ? [path] : [];
+  }));
+  return files.flat();
+}
+
+function deliveryCopyGuard() {
+  const replacement = 'Delivery and collection are quoted after BuildHire receives the site and hire details.';
+  const legacyDeliveryPrice = /(?:Delivery|delivery)(?:\s|&amp;|&|and|collection|within|metro|is|are|charged|separately|starts|from|to|-){0,110}\$[\d,]+(?:\s*(?:–|-|to)\s*\$[\d,]+)?[^.<]*\.?/gi;
+  const legacyDeliverVerbPrice = /(?:BuildHire\s+)?deliver(?:s|y|ing)?[^.]{0,180}\$[\d,]+(?:\s*\([^)]*\))?(?:\s*(?:or|and)\s*\$[\d,]+(?:\s*\([^)]*\))?)?[^.]*\./gi;
+  const bookingDeadline = /Book by \d{1,2}(?::\d{2})?\s*(?:am|pm)\s*for next-day delivery to [^.]+\./gi;
+  const includedDeliveryPricing = /(?:transparent\s+)?pricing that includes delivery, collection,? and GST/gi;
+  const instantPriceClaim = /(?:Our\s+)?online booking(?:\s+system)?\s+(?:gives you|gives)\s+an instant price in under 60 seconds[^.]*\./gi;
+
+  return {
+    name: 'buildhire-delivery-copy-guard',
+    hooks: {
+      'astro:build:done': async ({ dir }) => {
+        const files = await htmlFiles(fileURLToPath(dir));
+        await Promise.all(files.map(async (file) => {
+          const html = await readFile(file, 'utf8');
+          const normalised = html
+            .replace(bookingDeadline, 'Share your equipment, dates and site details to confirm availability and a delivery quote.')
+            .replace(legacyDeliverVerbPrice, replacement)
+            .replace(legacyDeliveryPrice, replacement)
+            .replace(includedDeliveryPricing, 'hire pricing and delivery confirmed for the specific job')
+            .replace(instantPriceClaim, 'Use the online booking flow to share your equipment and hire details, then confirm availability and delivery with BuildHire.')
+            .replace(/next-day delivery/gi, 'delivery subject to availability')
+            .replace(/for an instant price/gi, 'to start a quote request');
+          if (normalised !== html) await writeFile(file, normalised);
+        }));
+      },
+    },
+  };
+}
 
 export default defineConfig({
   trailingSlash: 'always',
@@ -9,6 +52,7 @@ export default defineConfig({
   integrations: [
     react(),
     tailwind({ applyBaseStyles: false }),
+    deliveryCopyGuard(),
     sitemap({
       customPages: [
         'https://buildhire.com.au/service-areas/',
