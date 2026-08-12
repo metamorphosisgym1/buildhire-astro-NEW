@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Check, Truck, Wrench, Cog, CircleDot } from "lucide-react";
+import { trackBuildHireEvent } from "../lib/analytics";
 
 // Custom SVG icon components
 const ExcavatorIcon = ({ size = 28, className = "" }: { size?: number; className?: string }) => (
@@ -168,6 +169,14 @@ export default function BookingCalculator() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
 
+  useEffect(() => {
+    trackBuildHireEvent("booking_step_view", {
+      booking_step: step,
+      equipment_category: category,
+      equipment_name: machine || "not_selected",
+    });
+  }, [step, category, machine]);
+
   const selectedMachine = Object.values(equipmentData)
     .flat()
     .find((m) => m.name === machine);
@@ -211,6 +220,18 @@ export default function BookingCalculator() {
   };
 
   const handleBookViaWhatsApp = () => {
+    trackBuildHireEvent("generate_lead", {
+      lead_channel: "whatsapp",
+      equipment_category: category,
+      equipment_name: machine,
+      hire_days: days,
+      delivery_suburb_provided: Boolean(suburb),
+    });
+    trackBuildHireEvent("whatsapp_booking_start", {
+      equipment_category: category,
+      equipment_name: machine,
+      hire_days: days,
+    });
     const msg = buildWhatsAppMessage();
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, "_blank");
   };
@@ -266,6 +287,9 @@ export default function BookingCalculator() {
                       onClick={() => {
                         setCategory(cat);
                         setMachine("");
+                        trackBuildHireEvent("equipment_category_selected", {
+                          equipment_category: cat,
+                        });
                       }}
                       className={`flex flex-col items-center gap-1.5 md:gap-2 p-3 md:p-5 rounded-2xl text-xs md:text-sm font-medium transition-all duration-300 ${
                         category === cat
@@ -286,7 +310,16 @@ export default function BookingCalculator() {
                 {equipmentData[category]?.map((m) => (
                   <button
                     key={m.name}
-                    onClick={() => !m.comingSoon && setMachine(m.name)}
+                    onClick={() => {
+                      if (m.comingSoon) return;
+                      setMachine(m.name);
+                      trackBuildHireEvent("select_item", {
+                        item_category: category,
+                        item_name: m.name,
+                        value: m.rate,
+                        currency: "AUD",
+                      });
+                    }}
                     disabled={m.comingSoon}
                     className={`w-full text-left px-4 py-3 rounded-xl text-sm transition-all flex items-center gap-4 ${
                       m.comingSoon
@@ -316,7 +349,14 @@ export default function BookingCalculator() {
               </div>
 
               <button
-                onClick={() => setStep(2)}
+                onClick={() => {
+                  trackBuildHireEvent("booking_step_completed", {
+                    completed_step: 1,
+                    equipment_category: category,
+                    equipment_name: machine,
+                  });
+                  setStep(2);
+                }}
                 disabled={!machine}
                 className="w-full bg-primary text-primary-foreground h-12 md:h-14 rounded-md font-semibold text-base md:text-lg hover:scale-[1.02] transition-transform disabled:opacity-40 disabled:hover:scale-100"
               >
@@ -407,7 +447,16 @@ export default function BookingCalculator() {
                   Back
                 </button>
                 <button
-                  onClick={() => setStep(3)}
+                  onClick={() => {
+                    trackBuildHireEvent("booking_step_completed", {
+                      completed_step: 2,
+                      equipment_category: category,
+                      equipment_name: machine,
+                      hire_days: days,
+                      delivery_suburb_provided: Boolean(suburb),
+                    });
+                    setStep(3);
+                  }}
                   disabled={!startDate || !endDate || !suburb}
                   className="flex-1 bg-primary text-primary-foreground h-12 md:h-14 rounded-md font-semibold text-base md:text-lg hover:scale-[1.02] transition-transform disabled:opacity-40 disabled:hover:scale-100"
                 >

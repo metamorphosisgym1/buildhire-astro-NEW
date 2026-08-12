@@ -15,9 +15,13 @@ const {
   noindex = false,
 } = Astro.props;
 
-const canonicalUrl = canonicalPath 
-  ? new URL(canonicalPath, Astro.site || 'https://buildhire.com.au' ) 
-  : new URL(Astro.url.pathname, Astro.site || 'https://buildhire.com.au' );
+const rawCanonicalPath = canonicalPath ?? Astro.url.pathname;
+const normalisedCanonicalPath = rawCanonicalPath === '/'
+  ? '/'
+  : rawCanonicalPath.endsWith('/')
+    ? rawCanonicalPath
+    : `${rawCanonicalPath}/`;
+const canonicalUrl = new URL(normalisedCanonicalPath, Astro.site || 'https://buildhire.com.au');
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -133,6 +137,7 @@ const localBusinessSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://buildhire.com.au/#website",
   "name": "BuildHire",
   "url": "https://buildhire.com.au",
   "potentialAction": {
@@ -207,4 +212,27 @@ const webPageSchema = {
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-8W2E1TCKN2');
+</script>
+
+<!-- Contact attribution: records only click context, never phone numbers or message contents. -->
+<script>
+  document.addEventListener('click', (event) => {
+    const link = event.target instanceof Element ? event.target.closest('a') : null;
+    if (!link) return;
+
+    const href = link.getAttribute('href') || '';
+    if (href.startsWith('tel:')) {
+      window.gtag?.('event', 'click_to_call', {
+        contact_channel: 'phone',
+        page_path: window.location.pathname,
+      });
+    }
+
+    if (href.includes('wa.me')) {
+      window.gtag?.('event', 'whatsapp_contact_click', {
+        contact_channel: 'whatsapp',
+        page_path: window.location.pathname,
+      });
+    }
+  });
 </script>
