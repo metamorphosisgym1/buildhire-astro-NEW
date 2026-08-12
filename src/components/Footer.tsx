@@ -84,6 +84,16 @@ export default function Footer() {
                   WhatsApp Us
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.google.com/maps/place/Build+Hire/@-33.9408948,151.1462229,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12b1f5096e47dd:0x7f336a7703f34d66!8m2!3d-33.9408948!4d151.1462229!16s%2Fg%2F11z3_y1zcp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Read our Google reviews
+                </a>
+              </li>
               <li>Sydney, NSW</li>
               <li className="pt-2 border-t border-white/10">
                 <a href="/blog/" className="hover:text-white transition-colors">Blog</a>

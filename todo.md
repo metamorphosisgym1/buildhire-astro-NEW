@@ -13,3 +13,8 @@
 - [x] Create a policy-compliant review, partnership and relevant backlink acquisition playbook with verified official outreach channels.
 - [x] Create a local-listing, analytics-key-event and organic-to-hire attribution operating guide.
 - [x] Validate the production deployment, key homepage quote-flow markers, claim cleanup and generated site build; post-hire attribution remains an operating responsibility.
+- [x] Verify BuildHire’s Google Business Profile listing and obtain its canonical public review URL.
+- [x] Add a verified Google Reviews link to the relevant BuildHire conversion and trust surfaces.
+- [x] Add a post-hire review-request message workflow that links only to the verified Google Business Profile review form.
+- [x] Deliver a prioritised 30-day founder action plan covering analytics, local listings, reviews, outreach and organic-to-hire reporting.
+- [ ] Publish and verify the confirmed Google Reviews pathway on BuildHire’s live site.

@@ -2,6 +2,14 @@
 
 This playbook supports BuildHire’s local authority, referral pipeline and backlink acquisition. It is designed for use only after genuine equipment-hire interactions. **Do not fabricate reviews, offer incentives for positive reviews, filter customers based on sentiment, or publish customer names, project details or photographs without written approval.**
 
+## Verified Google Business Profile
+
+Use this verified BuildHire Google Maps profile when a customer wishes to read or leave a genuine review:
+
+https://www.google.com/maps/place/Build+Hire/@-33.9408948,151.1462229,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12b1f5096e47dd:0x7f336a7703f34d66!8m2!3d-33.9408948!4d151.1462229!16s%2Fg%2F11z3_y1zcp
+
+The link opens BuildHire’s public Google Maps profile, where Google displays its review controls to eligible signed-in users. Do not promise an incentive, request a particular star rating or make a review conditional on feedback.
+
 ## 1. Review-request workflow
 
 Send one request after the equipment has been collected and the account contact confirms the job is complete. The same request should be available to every eligible customer, regardless of whether the expected feedback is positive or negative.
