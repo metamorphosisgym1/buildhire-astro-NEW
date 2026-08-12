@@ -166,6 +166,8 @@ export default function BookingCalculator() {
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
   const [suburb, setSuburb] = useState("");
+  const [jobType, setJobType] = useState("");
+  const [siteAccess, setSiteAccess] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
 
@@ -202,6 +204,9 @@ export default function BookingCalculator() {
       : (selectedMachine?.rate ?? 0) * days;
 
   const buildWhatsAppMessage = () => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const source = searchParams.get("utm_source") || "website";
+    const medium = searchParams.get("utm_medium") || "organic_or_direct";
     const lines = [
       "Hi Buildhire! I'd like to book the following:",
       "",
@@ -212,9 +217,14 @@ export default function BookingCalculator() {
       `Estimated Hire Cost: $${effectiveEquipmentCost.toLocaleString()} (excl. delivery)`,
       `Delivery Suburb: ${suburb}`,
       `Delivery: Price on request`,
+      `Job Type: ${jobType || "Not provided"}`,
+      `Site Access: ${siteAccess || "Not provided"}`,
       "",
       `Name: ${name}`,
       `Phone: ${phone}`,
+      "",
+      `Lead Source: ${source} / ${medium}`,
+      `Landing Page: ${window.location.pathname}`,
     ];
     return encodeURIComponent(lines.join("\n"));
   };
@@ -226,11 +236,14 @@ export default function BookingCalculator() {
       equipment_name: machine,
       hire_days: days,
       delivery_suburb_provided: Boolean(suburb),
+      job_type: jobType || "not_provided",
+      site_access: siteAccess || "not_provided",
     });
     trackBuildHireEvent("whatsapp_booking_start", {
       equipment_category: category,
       equipment_name: machine,
       hire_days: days,
+      job_type: jobType || "not_provided",
     });
     const msg = buildWhatsAppMessage();
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, "_blank");
@@ -417,6 +430,39 @@ export default function BookingCalculator() {
                 />
               </div>
 
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label className="label-text text-xs text-muted-foreground mb-2 block">What is the job for? <span className="normal-case font-normal">(optional)</span></label>
+                  <select
+                    value={jobType}
+                    onChange={(e) => setJobType(e.target.value)}
+                    className="w-full bg-card border border-secondary rounded-lg px-4 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors"
+                  >
+                    <option value="">Select a job type</option>
+                    <option value="Landscaping or retaining">Landscaping or retaining</option>
+                    <option value="Pool excavation">Pool excavation</option>
+                    <option value="Drainage or trenching">Drainage or trenching</option>
+                    <option value="Demolition or site clearing">Demolition or site clearing</option>
+                    <option value="Construction or civil works">Construction or civil works</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="label-text text-xs text-muted-foreground mb-2 block">Site access <span className="normal-case font-normal">(optional)</span></label>
+                  <select
+                    value={siteAccess}
+                    onChange={(e) => setSiteAccess(e.target.value)}
+                    className="w-full bg-card border border-secondary rounded-lg px-4 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors"
+                  >
+                    <option value="">Select site access</option>
+                    <option value="Tight or narrow access">Tight or narrow access</option>
+                    <option value="Standard residential access">Standard residential access</option>
+                    <option value="Commercial or open site">Commercial or open site</option>
+                    <option value="Unsure — need advice">Unsure — need advice</option>
+                  </select>
+                </div>
+              </div>
+
               {/* Estimated hire cost */}
               {days > 0 && (
                 <div className="rounded-xl bg-card border border-secondary p-4 mb-4 text-sm">
@@ -454,6 +500,8 @@ export default function BookingCalculator() {
                       equipment_name: machine,
                       hire_days: days,
                       delivery_suburb_provided: Boolean(suburb),
+                      job_type: jobType || "not_provided",
+                      site_access: siteAccess || "not_provided",
                     });
                     setStep(3);
                   }}

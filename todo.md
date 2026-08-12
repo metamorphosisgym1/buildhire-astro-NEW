@@ -5,6 +5,7 @@
 - [x] Normalise canonical URLs to BuildHire’s trailing-slash production policy.
 - [x] Add privacy-conscious GA4 tracking for calls, WhatsApp starts, machine selection and booking steps.
 - [ ] Add source-to-confirmed-hire attribution in BuildHire’s operational CRM or booking process.
+- [x] Capture optional job type and site-access context in the WhatsApp booking hand-off without adding friction to required booking fields.
 - [ ] Reconcile and clarify machine-rate, delivery and price-on-request language without changing actual policies.
 - [ ] Optimise the approved Tier-1 equipment, location and industry pages for commercial intent.
 - [ ] Build industry hubs, local proof modules and job-planning tools using only verified operational information.
