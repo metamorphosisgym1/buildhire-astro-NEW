@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import StatsBar from '../components/StatsBar';
 import BookingCalculator from '../components/BookingCalculator';
+import ProjectPlanner from '../components/ProjectPlanner';
 import EquipmentGrid from '../components/EquipmentGrid';
 import Testimonials from '../components/Testimonials';
 import DeliveryRegions from '../components/DeliveryRegions';
@@ -63,7 +64,7 @@ const faqSchema = {
       "name": "How do I book excavator hire in Sydney?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can book instantly using our online booking calculator. Select your equipment, choose your hire dates, enter your site details, and pay a $200 refundable bond to confirm. Alternatively, call 1300 157 882 or WhatsApp for a custom quote."
+        "text": "Use the booking calculator to select equipment, dates and site details, then send the pre-filled request to BuildHire on WhatsApp. The team confirms availability, hire pricing and delivery before the booking is finalised. You can also call 1300 157 882 for a quote."
       }
     }
   ]
@@ -86,25 +87,25 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       "name": "Select your hire dates",
-      "text": "Choose your start and end dates using our booking calculator. We offer daily, weekly, and monthly rates.",
+      "text": "Choose your start and end dates using the booking calculator. Weekly rates are shown where available.",
       "position": 2
     },
     {
       "@type": "HowToStep",
       "name": "Enter your site details",
-      "text": "Provide your delivery address and contact information so we can arrange next-day delivery and collection.",
+      "text": "Provide your delivery suburb, contact information and any useful job or access details so the team can confirm transport and availability.",
       "position": 3
     },
     {
       "@type": "HowToStep",
-      "name": "Pay the $200 refundable bond",
-      "text": "Secure your booking with a $200 refundable bond via Stripe's secure checkout. The hire balance is due on delivery.",
+      "name": "Send your WhatsApp booking request",
+      "text": "Review the pre-filled booking request and send it to BuildHire on WhatsApp. The team confirms availability, delivery pricing and the next steps.",
       "position": 4
     },
     {
       "@type": "HowToStep",
       "name": "Receive your equipment",
-      "text": "We deliver your equipment to your site, typically next-day for bookings placed before 12pm.",
+      "text": "Once availability and delivery are confirmed, BuildHire coordinates delivery to your site. Ask the team about timing for your location and hire dates.",
       "position": 5
     }
   ]
@@ -136,7 +137,7 @@ const serviceSchema = {
     "@type": "State",
     "name": "New South Wales"
   },
-  "description": "Mini excavator dry hire from $200/day with next-day delivery and collection across Sydney and NSW. No hidden fees, transparent pricing.",
+  "description": "Mini excavator dry hire from $200/day across Sydney and NSW. Delivery and collection are quoted after BuildHire receives the site and hire details.",
   "offers": {
     "@type": "Offer",
     "priceCurrency": "AUD",
@@ -153,7 +154,7 @@ const serviceSchema = {
 
 <Layout
   title="Excavator Hire Sydney | Mini Excavator Dry Hire — BuildHire"
-  description="Sydney's top-rated excavator hire. Mini excavator dry hire from $200/day with next-day delivery. Book online instantly — no hidden fees."
+  description="Sydney excavator dry hire from $200/day. Select your machine, dates and site details online, then confirm availability and a delivery quote with BuildHire on WhatsApp."
   canonicalPath="/"
   ogImage="/og-image.png"
 >
@@ -168,6 +169,7 @@ const serviceSchema = {
     <Hero client:load />
     <StatsBar client:visible />
     <BookingCalculator client:visible />
+    <ProjectPlanner client:visible />
     <EquipmentGrid client:visible />
     <Testimonials client:visible />
     <DeliveryRegions client:visible />

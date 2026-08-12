@@ -14,7 +14,7 @@ export interface Equipment {
   faqs: { q: string; a: string }[];
 }
 
-export const equipment: Equipment[] = [
+const equipmentCatalog: Equipment[] = [
   {
     slug: "0-8t-mini-excavator",
     name: "0.8T Mini Excavator (SV08 Yanmar)",
@@ -276,3 +276,20 @@ export const equipment: Equipment[] = [
     ]
   }
 ];
+
+export const equipment: Equipment[] = equipmentCatalog.map((item) => ({
+  ...item,
+  delivery: item.delivery === "Pick up only" ? item.delivery : "Price on request",
+  faqs: item.faqs.map((faq) => ({
+    ...faq,
+    a: faq.a
+      .replace(
+        /Delivery & collection (?:starts from|is) \$\d+\./,
+        "Delivery and collection are quoted for your site and hire dates."
+      )
+      .replace(
+        /Delivery is via third party transport [—–-] call 1300 157 882 for (?:a delivery )?quote(?: to your site)?\./,
+        "Delivery and collection are quoted for your site and hire dates."
+      ),
+  })),
+}));

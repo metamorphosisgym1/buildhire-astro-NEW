@@ -88,6 +88,7 @@ export default function Footer() {
               <li className="pt-2 border-t border-white/10">
                 <a href="/blog/" className="hover:text-white transition-colors">Blog</a>
               </li>
+              <li><a href="/trade-partners/" className="hover:text-white transition-colors">Trade Partners</a></li>
               <li><a href="#booking" className="hover:text-white transition-colors">Book Now</a></li>
             </ul>
           </div>
