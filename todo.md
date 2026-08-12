@@ -17,4 +17,4 @@
 - [x] Add a verified Google Reviews link to the relevant BuildHire conversion and trust surfaces.
 - [x] Add a post-hire review-request message workflow that links only to the verified Google Business Profile review form.
 - [x] Deliver a prioritised 30-day founder action plan covering analytics, local listings, reviews, outreach and organic-to-hire reporting.
-- [ ] Publish and verify the confirmed Google Reviews pathway on BuildHire’s live site.
+- [x] Publish and verify the confirmed Google Reviews pathway on BuildHire’s live site.
