@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     q: "How quickly can you deliver & collect equipment?",
-    a: "We offer next-day delivery & collection for bookings placed before 12pm. For urgent requirements, call 1300 157 882 to discuss same-day options.",
+    a: "Availability and delivery are confirmed after we receive your equipment, hire-date, suburb and access details. For urgent requirements, call 1300 157 882 to discuss options.",
   },
   {
     q: "What is your minimum hire period?",
@@ -19,11 +19,11 @@ const faqs = [
   },
   {
     q: "What is included in the hire price?",
-    a: "Our dry hire rates include the machine and standard bucket. Delivery & collection is charged separately. Fuel, insurance, and operator costs are not included in the base rate.",
+    a: "Our dry-hire rates cover the listed equipment and standard inclusions shown in the quote. Delivery and collection are quoted for the site and hire dates. Fuel, insurance and operator costs are not included unless confirmed in writing.",
   },
   {
     q: "How do I book excavator hire in Sydney?",
-    a: "You can book instantly using our online booking calculator above. Select your equipment, choose your hire dates, enter your site details, and pay a $200 refundable bond to confirm. Alternatively, call us on 1300 157 882 or WhatsApp for a custom quote.",
+    a: "Use the online booking flow to select equipment, dates and site details, then send the request to BuildHire via WhatsApp. The team confirms availability, delivery and final quote details before the booking is completed. You can also call 1300 157 882.",
   },
 ];
 

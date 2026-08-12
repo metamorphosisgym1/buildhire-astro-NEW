@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 const stats = [
   { value: 15, suffix: "+", label: "Items of Equipment" },
-  { value: "Next-Day", suffix: "", label: "Delivery & Collection" },
-  { value: "100%", suffix: "", label: "Satisfied Clients" },
+  { value: "Quote-First", suffix: "", label: "Delivery & Collection" },
+  { value: "Job-Specific", suffix: "", label: "Equipment Planning" },
 ];
 function AnimatedNumber({ target, suffix }: { target: number | string; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null);

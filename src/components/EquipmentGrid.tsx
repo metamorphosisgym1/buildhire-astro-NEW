@@ -522,7 +522,7 @@ export default function EquipmentGrid() {
             to confirm delivery & collection pricing for your location.
           </p>
         </div>
-        <p className="text-xs text-muted-foreground text-center mt-3">* Delivery & Collection prices are subject to change pending fuel prices.</p>
+        <p className="text-xs text-muted-foreground text-center mt-3">* Delivery & collection are quoted for each job based on equipment, site access and hire dates.</p>
       </div>
 
       {/* Specs Modal */}
