@@ -8,12 +8,16 @@ import { join } from 'node:path';
 
 async function htmlFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
-  const files = await Promise.all(entries.map(async (entry) => {
+  const files = [];
+  for (const entry of entries) {
     const path = join(directory, entry.name);
-    if (entry.isDirectory()) return htmlFiles(path);
-    return entry.isFile() && entry.name.endsWith('.html') ? [path] : [];
-  }));
-  return files.flat();
+    if (entry.isDirectory()) {
+      files.push(...await htmlFiles(path));
+    } else if (entry.isFile() && entry.name.endsWith('.html')) {
+      files.push(path);
+    }
+  }
+  return files;
 }
 
 function deliveryCopyGuard() {
@@ -29,7 +33,7 @@ function deliveryCopyGuard() {
     hooks: {
       'astro:build:done': async ({ dir }) => {
         const files = await htmlFiles(fileURLToPath(dir));
-        await Promise.all(files.map(async (file) => {
+        for (const file of files) {
           const html = await readFile(file, 'utf8');
           const normalised = html
             .replace(bookingDeadline, 'Share your equipment, dates and site details to confirm availability and a delivery quote.')
@@ -40,7 +44,7 @@ function deliveryCopyGuard() {
             .replace(/next-day delivery/gi, 'delivery subject to availability')
             .replace(/for an instant price/gi, 'to start a quote request');
           if (normalised !== html) await writeFile(file, normalised);
-        }));
+        }
       },
     },
   };

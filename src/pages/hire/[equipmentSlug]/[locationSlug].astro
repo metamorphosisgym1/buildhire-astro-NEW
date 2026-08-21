@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 const { item, location } = Astro.props;
 
 const title = `${item.name} Hire in ${location.name} | From ${item.price} — BuildHire`;
-const description = `Looking for ${item.shortName.toLowerCase()} hire in ${location.name}? BuildHire offers late-model ${item.shortName.toLowerCase()} from ${item.price} with next-day delivery across ${location.region}, ${location.state}.`;
+const description = `Looking for ${item.shortName.toLowerCase()} hire in ${location.name}? BuildHire offers late-model ${item.shortName.toLowerCase()} from ${item.price}, with availability and delivery confirmed for your site and hire dates.`;
 const canonicalPath = `/hire/${item.slug}/${location.slug}/`;
 const relatedEquipment = equipment
   .filter((candidate) => candidate.category === item.category && candidate.slug !== item.slug)
@@ -86,7 +86,7 @@ const faqSchema = {
       "name": `Do you deliver ${item.shortName.toLowerCase()}s to ${location.name}?`,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": `Yes, we offer next-day delivery for our ${item.shortName.toLowerCase()}s to ${location.name} and the wider ${location.region} region for bookings placed before 12pm. Call 1300 157 882 to confirm availability.`
+        "text": `Delivery to ${location.name} and the wider ${location.region} region is subject to availability. Share your site and hire details so BuildHire can confirm the right machine and transport arrangement.`
       }
     }
   ]
@@ -121,7 +121,7 @@ const faqSchema = {
           {item.name} Hire in {location.name}
         </h1>
 
-        <p class="text-xl text-[var(--color-text-muted)] mb-10 max-w-3xl leading-relaxed">
+        <p class="text-xl text-[var(--color-text-muted)] mb-10 max-w-3xl leading-relaxed" data-speakable>
           {item.longDescription} We supply premium, late-model {item.category.toLowerCase()} to contractors and builders across {location.name}.
         </p>
 
@@ -145,6 +145,9 @@ const faqSchema = {
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)]/90 transition text-lg text-center">
             Check Availability & Get a Quote →
+          </a>
+          <a href={`https://wa.me/61435421324?text=${encodeURIComponent(`Hi BuildHire, I’d like to check ${item.shortName} availability in ${location.name}. My hire dates and site details are:`)}`} class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg text-center">
+            WhatsApp for Availability
           </a>
           <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg text-center">
             Call 1300 157 882
@@ -196,7 +199,7 @@ const faqSchema = {
         </h2>
         <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { icon: "🚛", title: "Next-Day Delivery", desc: `Book before 12pm for next-day delivery to ${location.name}.` },
+            { icon: "🚛", title: "Delivery Subject to Availability", desc: `Share your site and hire details so BuildHire can confirm transport to ${location.name}.` },
             { icon: "💰", title: "Transparent Pricing", desc: "No hidden fees. The price you see is the price you pay." },
             { icon: "🔧", title: "Well-Maintained Fleet", desc: "Low-hour Yanmar machines serviced to the highest standards." },
             { icon: "📞", title: "24/7 Support", desc: "Round-the-clock support if anything comes up on site." }
@@ -266,7 +269,7 @@ const faqSchema = {
             ...item.faqs,
             {
               q: `Do you deliver ${item.shortName.toLowerCase()}s to ${location.name}?`,
-              a: `Yes, we offer next-day delivery to ${location.name} and the wider ${location.region} region for bookings placed before 12pm. Call 1300 157 882 to confirm availability for your specific area.`
+              a: `Delivery to ${location.name} and the wider ${location.region} region is subject to availability. Share your site and hire details so BuildHire can confirm the right machine and transport arrangement.`
             }
           ].map(faq => (
             <details class="bg-white rounded-xl p-6 shadow-sm group">
@@ -288,11 +291,14 @@ const faqSchema = {
           Ready to Book Your {item.shortName} in {location.name}?
         </h2>
         <p class="text-white/80 mb-8 text-lg">
-          Send your dates and site details for availability, hire pricing and a delivery quote. Next-day delivery may be available across {location.region} and NSW.
+          Send your dates and site details for availability, hire pricing and a delivery quote. Delivery is subject to availability across {location.region} and NSW.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
             Start a Quote Request →
+          </a>
+          <a href={`https://wa.me/61435421324?text=${encodeURIComponent(`Hi BuildHire, I’d like to check ${item.shortName} availability in ${location.name}. My hire dates and site details are:`)}`} class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
+            WhatsApp Us
           </a>
           <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
             Call 1300 157 882
