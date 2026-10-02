@@ -1,5 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ChatWidget from '../components/ChatWidget';
+import StickyBottomBar from '../components/StickyBottomBar';
 
 const aboutSchema = {
   "@context": "https://schema.org",
@@ -30,8 +34,39 @@ const aboutSchema = {
   canonicalPath="/about-us"
 >
   <script type="application/ld+json" set:html={JSON.stringify(aboutSchema)} />
-  <main>
-    <h1>About BuildHire</h1>
-    <p>BuildHire is a Sydney excavator and construction equipment hire company based in Arncliffe. We offer dry hire, with delivery and collection quoted for your site across Sydney and NSW.</p>
-  </main>
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <main>
+      <section class="bg-[var(--color-bg)] pt-32 pb-12">
+        <div class="max-w-3xl mx-auto px-6">
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-6">About BuildHire</h1>
+          <p class="text-xl text-[var(--color-text-muted)]">
+            BuildHire is a Sydney excavator and equipment dry hire business. Our machines sit at our yard in Arncliffe, and we deliver them to sites across Sydney and regional NSW.
+          </p>
+        </div>
+      </section>
+      <section class="bg-white py-12">
+        <div class="max-w-3xl mx-auto px-6 space-y-6 text-[var(--color-text-muted)] text-lg">
+          <p>We dry hire excavators from 0.8 to 23 tonnes, plus a tipper truck. Homeowners use our mini excavators for backyards, pools and landscaping. Builders, plumbers and civil contractors use the bigger machines for site cuts, trenching, bulk earthworks and demolition.</p>
+          <p>Daily rates are shown on each <a href="/equipment/" class="underline">machine page</a>. Delivery and collection are quoted for your site and hire dates. We also do weekly, monthly and contract hire for longer projects.</p>
+          <p>Will runs BuildHire and stays in touch with every customer through the hire. Pickups from the yard are by arrangement.</p>
+        </div>
+      </section>
+      <section class="bg-[var(--color-bg)] py-12">
+        <div class="max-w-3xl mx-auto px-6">
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mb-4">Business details</h2>
+          <ul class="space-y-2 text-[var(--color-text-muted)] text-lg">
+            <li>Build Hire Pty Ltd, trading as BuildHire</li>
+            <li>ABN 88 690 624 429</li>
+            <li>Machine yard: 178 Princes Hwy, Arncliffe NSW 2205</li>
+            <li>Phone: <a href="tel:1300157882" class="underline">1300 157 882</a></li>
+            <li>Email: <a href="mailto:info@buildhire.com.au" class="underline">info@buildhire.com.au</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
 </Layout>

@@ -99,8 +99,10 @@ export default function Footer() {
               <li className="pt-2 border-t border-white/10">
                 <a href="/blog/" className="hover:text-white transition-colors">Blog</a>
               </li>
+              <li><a href="/about-us/" className="hover:text-white transition-colors">About Us</a></li>
+              <li><a href="/contact/" className="hover:text-white transition-colors">Contact</a></li>
               <li><a href="/trade-partners/" className="hover:text-white transition-colors">Trade Partners</a></li>
-              <li><a href="#booking" className="hover:text-white transition-colors">Book Now</a></li>
+              <li><a href="/#booking" className="hover:text-white transition-colors">Book Now</a></li>
             </ul>
           </div>
 
@@ -113,12 +115,12 @@ export default function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your work email"
-                className="flex-1 bg-transparent border-b border-white/30 pb-2 text-white text-sm focus:border-primary focus:outline-none transition-colors placeholder:text-white/40"
+                className="flex-1 min-w-0 bg-transparent border-b border-white/30 pb-2 text-white text-sm focus:border-primary focus:outline-none transition-colors placeholder:text-white/40"
                 aria-label="Email address for fleet updates"
               />
               <a
                 href={`mailto:info@buildhire.com.au?subject=Fleet Updates&body=Hi, I'd like to receive exclusive offers and fleet updates. My email is: ${email}`}
-                className="bg-primary text-foreground p-2 rounded-md hover:scale-110 transition-transform"
+                className="shrink-0 bg-primary text-foreground p-2 rounded-md hover:scale-110 transition-transform"
                 aria-label="Subscribe to fleet updates"
               >
                 <ArrowRight size={18} />

@@ -33,7 +33,7 @@ export default function StickyBottomBar() {
             WhatsApp Us
           </a>
           <a
-            href="#booking"
+            href="/#booking"
             className="flex-1 sm:flex-none text-center bg-primary text-primary-foreground px-5 py-2.5 rounded-md text-sm font-semibold hover:scale-105 transition-transform"
           >
             Book Equipment Now

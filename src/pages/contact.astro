@@ -1,14 +1,39 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ChatWidget from '../components/ChatWidget';
+import StickyBottomBar from '../components/StickyBottomBar';
 ---
 <Layout
   title="Contact BuildHire | 1300 157 882"
-  description="Contact BuildHire for excavator hire in Sydney. Call 1300 157 882, email info@buildhire.com.au or WhatsApp for an instant quote."
+  description="Contact BuildHire for excavator hire in Sydney. Call 1300 157 882, WhatsApp 0435 421 324 or email info@buildhire.com.au. Machine yard in Arncliffe NSW."
+  canonicalPath="/contact/"
 >
-  <main>
-    <h1>Contact BuildHire</h1>
-    <p>Phone: <a href="tel:1300157882">1300 157 882</a></p>
-    <p>Email: <a href="mailto:info@buildhire.com.au">info@buildhire.com.au</a></p>
-    <p>Sydney, NSW, Australia</p>
-  </main>
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <main>
+      <section class="bg-[var(--color-bg)] pt-32 pb-12">
+        <div class="max-w-3xl mx-auto px-6">
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-6">Contact BuildHire</h1>
+          <p class="text-xl text-[var(--color-text-muted)]">Tell us the job, the site address and your hire dates. We will confirm the right machine and quote delivery.</p>
+        </div>
+      </section>
+      <section class="bg-white py-12">
+        <div class="max-w-3xl mx-auto px-6">
+          <ul class="space-y-4 text-lg text-[var(--color-text)]">
+            <li><strong>Phone:</strong> <a href="tel:1300157882" class="underline">1300 157 882</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="underline">0435 421 324</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@buildhire.com.au" class="underline">info@buildhire.com.au</a></li>
+            <li><strong>Machine yard:</strong> 178 Princes Hwy, Arncliffe NSW 2205 (pickups by arrangement)</li>
+            <li><strong>Hours:</strong> Open 7 days, 5am to 8pm</li>
+          </ul>
+          <p class="mt-8"><a href="https://maps.google.com/maps?cid=9165786726029020518" target="_blank" rel="noopener" class="underline">See BuildHire on Google Maps</a></p>
+        </div>
+      </section>
+    </main>
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
 </Layout>

@@ -30,6 +30,15 @@
     --stone-tint: 50 33% 95%;
     --lilac: 270 59% 77%;
     --stone: 53 26% 75%;
+
+    /* Page templates use these names. They were never defined, so every bg-[var(--color-primary)]
+       button rendered transparent (white text on a light page). Mapped to the theme above. */
+    --color-primary: hsl(186 75% 20%);
+    --color-bg: hsl(50 33% 95%);
+    --color-surface: hsl(0 0% 100%);
+    --color-text: hsl(0 0% 0%);
+    --color-text-muted: hsl(0 0% 35%);
+    --color-border: hsl(53 26% 75%);
   }
 }
 

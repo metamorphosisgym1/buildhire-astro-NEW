@@ -1,12 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ChatWidget from '../components/ChatWidget';
+import StickyBottomBar from '../components/StickyBottomBar';
 ---
 <Layout
   title="Terms & Conditions | BuildHire"
   description="BuildHire terms and conditions for equipment hire in Sydney and NSW."
+  canonicalPath="/terms/"
 >
-  <main>
-    <h1>Terms &amp; Conditions</h1>
-    <p>By hiring equipment from BuildHire, you agree to our terms and conditions. Please read them carefully before confirming your booking.</p>
-  </main>
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+    <main>
+      <section class="bg-[var(--color-bg)] pt-32 pb-16">
+        <div class="max-w-3xl mx-auto px-6">
+      <h1 class="text-4xl font-bold text-[var(--color-text)] mb-6">Terms &amp; Conditions</h1>
+      <p class="text-lg text-[var(--color-text-muted)] mb-4">By hiring equipment from BuildHire, you agree to our terms and conditions. Please read them carefully before confirming your booking.</p>
+        </div>
+      </section>
+    </main>
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
 </Layout>

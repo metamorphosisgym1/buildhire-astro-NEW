@@ -29,13 +29,17 @@ const mobileLinks = [
   { label: "Industries", href: "/industries/" },
   { label: "Service Areas", href: "/service-areas/" },
   { label: "Blog", href: "/blog/" },
-  { label: "About Us", href: "#contact" },
+  { label: "About Us", href: "/about-us/" },
 ];
 
-export default function Header() {
+export default function Header({ overHero = false }: { overHero?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [showBanner, setShowBanner] = useState(true);
+  // Only the homepage has a dark photo hero behind the header. Every other page has a light hero,
+  // so the header starts in its solid style there or the white logo and links disappear.
+
+  const solid = scrolled || !overHero;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -87,13 +91,13 @@ export default function Header() {
         className={`fixed left-0 right-0 z-50 transition-all duration-500 ${
           showBanner ? "top-[40px]" : "top-0"
         } ${
-          scrolled
+          solid
             ? "glass-header py-3 shadow-sm"
             : "bg-transparent py-5"
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-6">
-          <a href="/" className={`text-2xl font-bold tracking-tight ${scrolled ? "text-foreground" : "text-white"}`}>
+          <a href="/" className={`text-2xl font-bold tracking-tight ${solid ? "text-foreground" : "text-white"}`}>
             BuildHire
           </a>
           {/* Desktop nav */}
@@ -101,7 +105,7 @@ export default function Header() {
             {/* Equipment dropdown */}
             <div className="relative group">
               <button className={`flex items-center gap-1 font-medium text-sm transition-colors ${
-                scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
+                solid ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
               }`}>
                 Equipment <ChevronDown size={13} className="group-hover:rotate-180 transition-transform duration-200" />
               </button>
@@ -119,7 +123,7 @@ export default function Header() {
             {/* Industries dropdown */}
             <div className="relative group">
               <button className={`flex items-center gap-1 font-medium text-sm transition-colors ${
-                scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
+                solid ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
               }`}>
                 Industries <ChevronDown size={13} className="group-hover:rotate-180 transition-transform duration-200" />
               </button>
@@ -136,7 +140,7 @@ export default function Header() {
             <a
               href="/service-areas/"
               className={`font-medium text-sm transition-colors ${
-                scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
+                solid ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
               }`}
             >
               Service Areas
@@ -144,21 +148,21 @@ export default function Header() {
             <a
               href="/blog/"
               className={`font-medium text-sm transition-colors ${
-                scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
+                solid ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
               }`}
             >
               Blog
             </a>
             <a
-              href="#contact"
+              href="/about-us/"
               className={`font-medium text-sm transition-colors ${
-                scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
+                solid ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
               }`}
             >
               About
             </a>
             <a
-              href="#booking"
+              href="/#booking"
               className="bg-primary text-primary-foreground px-6 py-2.5 rounded-md font-semibold text-sm hover:scale-105 transition-transform"
             >
               Book Now
@@ -166,7 +170,7 @@ export default function Header() {
             <a
               href="tel:1300157882"
               className={`flex items-center gap-2 font-medium text-sm transition-colors ${
-                scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
+                solid ? "text-foreground/80 hover:text-foreground" : "text-white/90 hover:text-white"
               }`}
             >
               <Phone size={14} />
@@ -175,7 +179,7 @@ export default function Header() {
           </nav>
           {/* Mobile toggle */}
           <button
-            className={`md:hidden ${scrolled ? "text-foreground" : "text-white"}`}
+            className={`md:hidden ${solid ? "text-foreground" : "text-white"}`}
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle mobile menu"
           >
@@ -204,7 +208,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#booking"
+            href="/#booking"
             className="bg-primary text-primary-foreground px-8 py-3 rounded-md font-semibold text-lg mt-4"
             onClick={() => setMobileOpen(false)}
           >
