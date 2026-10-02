@@ -94,7 +94,8 @@ export default function Footer() {
                   Read our Google reviews
                 </a>
               </li>
-              <li>Sydney, NSW</li>
+              <li>178 Princes Hwy, Arncliffe NSW 2205<br />Machine yard, pickups by arrangement</li>
+              <li>Open 7 days, 5am to 8pm</li>
               <li className="pt-2 border-t border-white/10">
                 <a href="/blog/" className="hover:text-white transition-colors">Blog</a>
               </li>
@@ -129,7 +130,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs">
-            © 2026 BuildHire. All rights reserved.
+            © 2026 Build Hire Pty Ltd (BuildHire). ABN 88 690 624 429. All rights reserved.
           </p>
           <div className="flex gap-4">
             {[

@@ -56,7 +56,7 @@ const categoryEquipment = cat.sizeFilter
   ? equipment.filter(e => cat.sizeFilter!.includes(e.slug))
   : equipment.filter(e => e.category === cat.equipmentFilter);
 
-const title = `${cat.headline} | From $200/day — BuildHire`;
+const title = `${cat.headline} | From $200/day | BuildHire`;
 const description = cat.description;
 const canonicalPath = `/category/${cat.slug}/`;
 

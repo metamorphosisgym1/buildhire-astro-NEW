@@ -35,7 +35,7 @@ const { jobTitle, industry, location } = Astro.props;
 const priorityLocationsFor = ['sydney','parramatta','newcastle','wollongong','central-coast','western-sydney'];
 const shouldIndexFor = priorityLocationsFor.includes(location.slug);
 
-const title = `Equipment Hire for ${jobTitle.namePlural} in ${industry.name} | ${location.name} — BuildHire`;
+const title = `Equipment Hire for ${jobTitle.namePlural} in ${industry.name} | ${location.name} | BuildHire`;
 const description = `${jobTitle.headline} in ${industry.name} across ${location.name}. ${jobTitle.description} Next-day delivery, transparent pricing.`;
 const canonicalPath = `/for/${jobTitle.slug}/${industry.slug}/${location.slug}/`;
 
@@ -55,8 +55,10 @@ const serviceSchema = {
     "telephone": "+611300157882",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Sydney",
+      "streetAddress": "178 Princes Hwy",
+      "addressLocality": "Arncliffe",
       "addressRegion": "NSW",
+      "postalCode": "2205",
       "addressCountry": "AU"
     }
   },
@@ -138,7 +140,7 @@ const speakableSchema = {
         </h1>
 
         <p class="text-xl text-[var(--color-text-muted)] mb-8 max-w-3xl leading-relaxed speakable-summary">
-          {jobTitle.longDescription} BuildHire delivers to {location.name} and the wider {location.region} region — next-day delivery, all-inclusive pricing, late-model fleet.
+          {jobTitle.longDescription} BuildHire delivers to {location.name} and the wider {location.region} region | next-day delivery, all-inclusive pricing, late-model fleet.
         </p>
 
         <div class="flex flex-wrap gap-4">

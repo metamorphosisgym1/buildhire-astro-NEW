@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+
+const machines = [
+  { href: "/equipment/08t-mini-excavator-hire-sydney/", name: "0.8T Mini Excavator", note: "Yanmar SV08. Fits through narrow side access for backyard and landscaping work.", price: "From $200/day" },
+  { href: "/equipment/1t-mini-excavator-hire-sydney/", name: "1T Mini Excavator", note: "Kubota U10-5. Retractable tracks and a fold down frame for tight sites and indoor work.", price: "From $200/day" },
+  { href: "/equipment/17t-mini-excavator-hire-sydney/", name: "1.7T Mini Excavator", note: "Yanmar ViO17. Our most popular machine for trenching, pools, footings and retaining walls.", price: "From $205/day" },
+  { href: "/equipment/35t-excavator-hire-sydney/", name: "3.5T Excavator", note: "Yanmar ViO35. More reach and power for driveways, site cuts and bigger trenches.", price: "From $340/day" },
+  { href: "/equipment/55t-excavator-hire-sydney/", name: "5.5T Excavator", note: "Yanmar ViO55. For bulk digging and site preparation on larger residential jobs.", price: "From $370/day" },
+  { href: "/equipment/8t-excavator-hire-sydney/", name: "8T Excavator", note: "A mid size machine for heavier earthworks and civil jobs.", price: "From $420/day" },
+  { href: "/equipment/145t-excavator-hire-sydney/", name: "14.5T Excavator", note: "Case CX145C. For bulk earthworks, demolition and commercial sites.", price: "From $490/day" },
+  { href: "/equipment/23t-excavator-hire-sydney/", name: "23T Excavator", note: "Sumitomo SH235X-6. Our largest machine for major earthworks.", price: "From $490/day" },
+  { href: "/equipment/tipper-truck-hire-sydney/", name: "Tipper Truck", note: "Isuzu NQR450 tipper for moving soil, rock and spoil off site.", price: "From $280/day" },
+];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Equipment hire in Sydney",
+  "itemListElement": machines.map((m, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": `${m.name} hire Sydney`,
+    "url": `https://buildhire.com.au${m.href}`
+  }))
+};
+---
+
+<Layout
+  title="Equipment Hire Sydney | Excavators, Mini Excavators and Tippers | BuildHire"
+  description="Dry hire excavators from 0.8T to 23T, plus tipper trucks, from our Arncliffe yard. Daily rates shown online, delivery quoted for your site. Sydney and NSW."
+  canonicalPath="/equipment/"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <section class="bg-[var(--color-bg)] pt-28 pb-12">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">Equipment Hire Sydney</h1>
+        <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">
+          Dry hire excavators from 0.8 to 23 tonnes, plus tipper trucks. Daily rates are shown on each machine page. Delivery and collection are quoted for your site and hire dates.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-white py-12">
+      <div class="max-w-5xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {machines.map((m) => (
+          <a href={m.href} class="block border border-gray-200 rounded-xl p-6 hover:border-[var(--color-primary)] transition">
+            <h2 class="text-xl font-bold text-[var(--color-text)] mb-2">{m.name} Hire</h2>
+            <p class="text-[var(--color-text-muted)] mb-3">{m.note}</p>
+            <p class="font-semibold text-[var(--color-primary)]">{m.price}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="bg-[var(--color-bg)] py-12">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mb-4">Not sure which machine?</h2>
+        <p class="text-[var(--color-text-muted)] mb-4">
+          Tell us the job, the access width and the site address. We will tell you which machine fits and what delivery costs. Most backyard jobs suit a 1.7T. Bigger site cuts suit a 3.5T or 5.5T.
+        </p>
+        <p class="text-[var(--color-text-muted)]">
+          Read the <a href="/equipment/mini-excavator-hire-sydney/" class="underline">mini excavator hire guide</a> or check <a href="/blog/excavator-hire-cost-sydney/" class="underline">excavator hire costs in Sydney</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-6">Book a machine</h2>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">Get a price</a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">Call 1300 157 882</a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

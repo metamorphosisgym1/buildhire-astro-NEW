@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 
 const { area } = Astro.props;
 
-const title = `Excavator Hire ${area.name} | Next-Day Delivery — BuildHire`;
+const title = `Excavator Hire ${area.name} | Next-Day Delivery | BuildHire`;
 const description = `BuildHire delivers excavators and construction equipment to ${area.name} and surrounding suburbs. Next-day delivery, transparent pricing, late-model Yanmar fleet. Call 1300 157 882.`;
 const canonicalPath = `/service-areas/${area.slug}/`;
 
@@ -260,12 +260,18 @@ const breadcrumbSchema = {
         <p class="text-[hsl(var(--muted-foreground))] mb-6">BuildHire also delivers to these nearby areas:</p>
         <div class="flex flex-wrap gap-3">
           {area.nearbyAreas.map((nearby, i) => (
-            <a
-              href={`/service-areas/${area.nearbyAreaSlugs[i]}/`}
-              class="bg-[hsl(var(--background))] border border-[hsl(var(--border))] rounded-lg px-5 py-2.5 text-sm font-semibold text-[hsl(var(--foreground))] hover:border-[hsl(var(--primary))] hover:text-[hsl(var(--primary))] transition-colors"
-            >
-              {nearby} →
-            </a>
+            getServiceAreaBySlug(area.nearbyAreaSlugs[i]) ? (
+              <a
+                href={`/service-areas/${area.nearbyAreaSlugs[i]}/`}
+                class="bg-[hsl(var(--background))] border border-[hsl(var(--border))] rounded-lg px-5 py-2.5 text-sm font-semibold text-[hsl(var(--foreground))] hover:border-[hsl(var(--primary))] hover:text-[hsl(var(--primary))] transition-colors"
+              >
+                {nearby} →
+              </a>
+            ) : (
+              <span class="bg-[hsl(var(--background))] border border-[hsl(var(--border))] rounded-lg px-5 py-2.5 text-sm font-semibold text-[hsl(var(--foreground))]">
+                {nearby}
+              </span>
+            )
           ))}
         </div>
       </div>

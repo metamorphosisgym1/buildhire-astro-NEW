@@ -4,8 +4,8 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const features = [
   {
     icon: Clock,
-    title: "24/7 Support",
-    desc: "Round-the-clock emergency support when you need it most.",
+    title: "Support on Every Hire",
+    desc: "Call or WhatsApp us whenever a machine on hire needs help.",
   },
   {
     icon: DollarSign,

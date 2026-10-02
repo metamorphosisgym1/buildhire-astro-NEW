@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 const { item, useCase } = Astro.props;
-const title = `${item.shortName} Hire for ${useCase.name} | From ${item.price} — BuildHire`;
+const title = `${item.shortName} Hire for ${useCase.name} | From ${item.price} | BuildHire`;
 const description = `Hire a ${item.shortName.toLowerCase()} for ${useCase.name.toLowerCase()} anywhere in NSW. BuildHire offers late-model ${item.shortName.toLowerCase()} from ${item.price} with next-day delivery across Sydney and NSW.`;
 const canonicalPath = `/hire/${item.slug}/use-case/${useCase.slug}/`;
 

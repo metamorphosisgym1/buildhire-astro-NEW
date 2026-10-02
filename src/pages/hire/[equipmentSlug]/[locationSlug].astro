@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 
 const { item, location } = Astro.props;
 
-const title = `${item.name} Hire in ${location.name} | From ${item.price} — BuildHire`;
+const title = `${item.name} Hire in ${location.name} | From ${item.price} | BuildHire`;
 const description = `Looking for ${item.shortName.toLowerCase()} hire in ${location.name}? BuildHire offers late-model ${item.shortName.toLowerCase()} from ${item.price}, with availability and delivery confirmed for your site and hire dates.`;
 const canonicalPath = `/hire/${item.slug}/${location.slug}/`;
 const relatedEquipment = equipment
@@ -39,8 +39,10 @@ const serviceSchema = {
     "telephone": "+611300157882",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Sydney",
+      "streetAddress": "178 Princes Hwy",
+      "addressLocality": "Arncliffe",
       "addressRegion": "NSW",
+      "postalCode": "2205",
       "addressCountry": "AU"
     }
   },

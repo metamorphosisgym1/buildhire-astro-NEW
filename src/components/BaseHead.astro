@@ -34,8 +34,10 @@ const organizationSchema = {
   "email": "info@buildhire.com.au",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Sydney",
+    "streetAddress": "178 Princes Hwy",
+    "addressLocality": "Arncliffe",
     "addressRegion": "NSW",
+    "postalCode": "2205",
     "addressCountry": "AU"
   },
   "areaServed": {
@@ -70,7 +72,7 @@ const organizationSchema = {
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "06:00",
+      "opens": "05:00",
       "closes": "20:00"
     }
   ],
@@ -85,27 +87,28 @@ const localBusinessSchema = {
   "telephone": "+611300157882",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Sydney",
+    "streetAddress": "178 Princes Hwy",
+    "addressLocality": "Arncliffe",
     "addressRegion": "NSW",
-    "postalCode": "2000",
+    "postalCode": "2205",
     "addressCountry": "AU"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": -33.8688,
-    "longitude": 151.2093
+    "latitude": -33.9408948,
+    "longitude": 151.1462229
   },
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "06:00",
+      "opens": "05:00",
       "closes": "20:00"
     }
   ],
   "priceRange": "$$",
   "description": "Sydney excavator and construction equipment hire. Mini excavator dry hire from $200/day, with availability and delivery quoted for the site and hire dates.",
-  "hasMap": "https://www.google.com/maps/search/BuildHire+Sydney+NSW",
+  "hasMap": "https://maps.google.com/maps?cid=9165786726029020518",
   "areaServed": {
     "@type": "State",
     "name": "New South Wales",
@@ -194,9 +197,10 @@ const webPageSchema = {
 
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8W2E1TCKN2"></script>
-<script>
+<script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
   gtag('js', new Date());
   gtag('config', 'G-8W2E1TCKN2');
 </script>

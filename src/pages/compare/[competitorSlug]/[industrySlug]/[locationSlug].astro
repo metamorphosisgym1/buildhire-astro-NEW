@@ -39,7 +39,7 @@ const priorityCompetitors = ['kennards-hire','coates-hire','conplant','brooks-hi
 const priorityLocations = ['sydney','parramatta','penrith','liverpool','campbelltown','blacktown','castle-hill','hornsby','sutherland','chatswood','newcastle','wollongong','inner-west','northern-beaches','eastern-suburbs'];
 const shouldIndex = priorityCompetitors.includes(competitor.slug) && priorityLocations.includes(location.slug);
 
-const title = `BuildHire vs ${competitor.category} for ${industry.name} in ${location.name} — Equipment Hire Comparison`;
+const title = `BuildHire vs ${competitor.category} for ${industry.name} in ${location.name} | Equipment Hire Comparison`;
 const description = `Comparing BuildHire with ${competitor.categoryPlural} for ${industry.name.toLowerCase()} equipment hire in ${location.name}. ${competitor.buildhireAdvantage}`;
 const canonicalPath = `/compare/${competitor.slug}/${industry.slug}/${location.slug}/`;
 
