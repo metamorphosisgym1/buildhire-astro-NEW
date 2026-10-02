@@ -6,17 +6,384 @@ import ChatWidget from '../components/ChatWidget';
 import StickyBottomBar from '../components/StickyBottomBar';
 ---
 <Layout
-  title="Terms & Conditions | BuildHire"
-  description="BuildHire terms and conditions for equipment hire in Sydney and NSW."
+  title="Dry Hire Terms and Conditions | BuildHire"
+  description="Build Hire Pty Ltd dry hire terms and conditions and customer liability and damage schedule for excavator and equipment hire in Sydney and NSW."
   canonicalPath="/terms/"
 >
   <div class="min-h-screen pb-20">
     <Header client:load />
     <main>
-      <section class="bg-[var(--color-bg)] pt-32 pb-16">
+      <section class="bg-[var(--color-bg)] pt-32 pb-10">
         <div class="max-w-3xl mx-auto px-6">
-      <h1 class="text-4xl font-bold text-[var(--color-text)] mb-6">Terms &amp; Conditions</h1>
-      <p class="text-lg text-[var(--color-text-muted)] mb-4">By hiring equipment from BuildHire, you agree to our terms and conditions. Please read them carefully before confirming your booking.</p>
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">Dry Hire Terms and Conditions</h1>
+          <p class="text-lg text-[var(--color-text-muted)]">Build Hire Pty Ltd (ABN 88 690 624 429). Version August 2026.</p>
+          <p class="text-lg text-[var(--color-text-muted)] mt-2"><a href="#schedule" class="underline">Jump to the Customer Liability and Damage Schedule</a></p>
+        </div>
+      </section>
+      <section class="bg-white py-12">
+        <div class="max-w-3xl mx-auto px-6 text-[var(--color-text-muted)] text-base leading-relaxed">
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">1. Agreement</h2>
+          <p class="mb-4">By accepting delivery, collecting equipment, signing a hire agreement, paying an invoice, or otherwise taking possession of any equipment supplied by Build Hire Pty Ltd (&quot;Build Hire&quot;), the Customer agrees to be bound by these Terms and Conditions.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">2. Responsibility for equipment</h2>
+          <p class="mb-4">The Customer is solely responsible for the Equipment from the time:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>the Equipment is collected by the Customer;</li>
+            <li>the Equipment is delivered to the Customer&#x27;s site; or</li>
+            <li>a representative of the Customer takes possession of the Equipment,</li>
+          </ul>
+          <p class="mb-4">until such time as Build Hire has physically collected the Equipment and confirmed the Equipment has been off-hired.</p>
+          <p class="mb-4">The Equipment remains on hire and at the Customer&#x27;s risk until collected by Build Hire.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">3. Customer liability</h2>
+          <p class="mb-4">The Customer is fully responsible for:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>any loss;</li>
+            <li>theft;</li>
+            <li>damage;</li>
+            <li>vandalism;</li>
+            <li>fire;</li>
+            <li>flood damage;</li>
+            <li>malicious damage;</li>
+            <li>misuse;</li>
+            <li>accidental damage;</li>
+            <li>transport damage;</li>
+            <li>attachment damage;</li>
+            <li>rollover damage;</li>
+            <li>recovery costs;</li>
+            <li>repair costs; and</li>
+            <li>loss of hire suffered by Build Hire,</li>
+          </ul>
+          <p class="mb-4">while the Equipment is in the Customer&#x27;s possession or under the Customer&#x27;s control.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">4. Theft of equipment</h2>
+          <p class="mb-4">If Equipment is stolen during the Hire Period, the Customer will be liable for:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>(a) the full replacement value of the Equipment;</li>
+            <li>(b) the replacement value of any attachments;</li>
+            <li>(c) transport and recovery costs;</li>
+            <li>(d) loss of hire suffered by Build Hire until replacement equipment is obtained; and</li>
+            <li>(e) any insurance excess payable by Build Hire.</li>
+          </ul>
+          <p class="mb-4">The Customer must immediately:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>notify Police;</li>
+            <li>obtain a Police Event Number;</li>
+            <li>notify Build Hire within one (1) hour of becoming aware of the theft.</li>
+          </ul>
+          <p class="mb-4">Failure to secure Equipment may be treated as negligence.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">5. Security of equipment</h2>
+          <p class="mb-4">When Equipment is unattended, the Customer must:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>remove all keys;</li>
+            <li>lock all cabins;</li>
+            <li>activate security devices where fitted;</li>
+            <li>store Equipment in a secure location;</li>
+            <li>take reasonable precautions to prevent theft.</li>
+          </ul>
+          <p class="mb-4">The Customer remains responsible even if the Equipment is stolen from a supposedly secure site.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">6. Damage to equipment</h2>
+          <p class="mb-4">The Customer must immediately notify Build Hire of any damage.</p>
+          <p class="mb-4">The Customer must not undertake repairs without written approval from Build Hire.</p>
+          <p class="mb-4">Build Hire may determine whether Equipment is repaired or replaced.</p>
+          <p class="mb-4">The Customer will be liable for:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>all repair costs;</li>
+            <li>labour costs;</li>
+            <li>parts;</li>
+            <li>freight charges;</li>
+            <li>call-out fees;</li>
+            <li>assessment fees;</li>
+            <li>recovery costs; and</li>
+            <li>loss of hire during repairs.</li>
+          </ul>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">7. Loss of hire</h2>
+          <p class="mb-4">If Equipment becomes unavailable due to damage, theft or misuse while under the Customer&#x27;s control, the Customer must compensate Build Hire for lost rental income during the repair or replacement period.</p>
+          <p class="mb-4">Loss of hire will be charged at the standard daily hire rate.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">8. Customer insurance</h2>
+          <p class="mb-4">The Customer is responsible for ensuring adequate insurance cover exists for:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>hired-in plant;</li>
+            <li>public liability;</li>
+            <li>theft;</li>
+            <li>accidental damage;</li>
+            <li>third party property damage.</li>
+          </ul>
+          <p class="mb-4">Build Hire&#x27;s insurance does not cover the Customer&#x27;s liability under this Agreement.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">9. Equipment use</h2>
+          <p class="mb-4">The Customer must only use the Equipment:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>for its intended purpose;</li>
+            <li>in accordance with manufacturer recommendations;</li>
+            <li>by competent and licensed operators;</li>
+            <li>in accordance with all WHS legislation.</li>
+          </ul>
+          <p class="mb-4">The Customer must not:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>allow unauthorised persons to operate Equipment;</li>
+            <li>overload Equipment;</li>
+            <li>modify Equipment;</li>
+            <li>remove decals, GPS units or safety devices;</li>
+            <li>use Equipment unlawfully;</li>
+            <li>use Equipment while under the influence of alcohol or drugs.</li>
+          </ul>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">10. Breakdowns</h2>
+          <p class="mb-4">In the event of a mechanical breakdown not caused by the Customer:</p>
+          <p class="mb-4">Build Hire will repair or replace the Equipment as soon as reasonably practicable.</p>
+          <p class="mb-4">No refund, credit or compensation is payable for delays beyond Build Hire&#x27;s reasonable control.</p>
+          <p class="mb-4">Where a breakdown is caused by misuse, abuse, neglect or operator error, all costs are payable by the Customer.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">11. Fuel</h2>
+          <p class="mb-4">Equipment must be returned with the same fuel level as supplied.</p>
+          <p class="mb-4">Refuelling charges will be charged at:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>fuel used; plus</li>
+            <li>administration and labour costs.</li>
+          </ul>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">12. Cleaning</h2>
+          <p class="mb-4">Equipment must be returned clean and free from:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>concrete;</li>
+            <li>paint;</li>
+            <li>excessive mud;</li>
+            <li>demolition waste;</li>
+            <li>contaminated material.</li>
+          </ul>
+          <p class="mb-4">Cleaning charges will apply where Equipment is not returned in the same condition supplied.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">13. Off-hire</h2>
+          <p class="mb-4">Equipment remains on hire until:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>(a) Build Hire receives notification that the Equipment is ready for collection; and</li>
+            <li>(b) Build Hire confirms the Equipment has been off-hired.</li>
+          </ul>
+          <p class="mb-4">Equipment not accessible for collection remains on hire.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">14. Late returns</h2>
+          <p class="mb-4">Additional hire charges apply for late returns.</p>
+          <p class="mb-4">Build Hire may charge the standard daily hire rate until Equipment is returned or collected.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">15. Gps tracking</h2>
+          <p class="mb-4">The Customer acknowledges that Equipment may contain GPS tracking devices, telematics systems and recovery devices.</p>
+          <p class="mb-4">Build Hire may use tracking information for:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>recovery;</li>
+            <li>theft prevention;</li>
+            <li>location verification;</li>
+            <li>utilisation monitoring.</li>
+          </ul>
+          <p class="mb-4">Tampering with tracking devices is prohibited and all associated costs will be charged to the Customer.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">16. Indemnity</h2>
+          <p class="mb-4">The Customer indemnifies Build Hire Pty Ltd against all claims, losses, liabilities, damages, costs and expenses arising from:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>use of the Equipment;</li>
+            <li>operation of the Equipment;</li>
+            <li>damage to property;</li>
+            <li>injury to persons;</li>
+            <li>breach of these Terms and Conditions.</li>
+          </ul>
+          <p class="mb-4">This indemnity survives termination of the Hire Agreement.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">17. Title</h2>
+          <p class="mb-4">All Equipment remains the sole property of Build Hire Pty Ltd at all times.</p>
+          <p class="mb-4">No ownership interest passes to the Customer.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">18. Termination</h2>
+          <p class="mb-4">Build Hire may immediately terminate the Hire Agreement and recover Equipment where:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>payments are overdue;</li>
+            <li>Equipment is at risk;</li>
+            <li>these Terms are breached;</li>
+            <li>Equipment is being misused.</li>
+          </ul>
+          <p class="mb-4">Recovery costs will be payable by the Customer.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">19. Governing law</h2>
+          <p class="mb-4">This Agreement is governed by the laws of New South Wales, Australia.</p>
+          <p class="mb-4">Any dispute shall be heard exclusively in the courts of New South Wales.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">20. Acceptance</h2>
+          <p class="mb-4">By signing a Hire Form, paying an invoice, accepting delivery or taking possession of Equipment, the Customer acknowledges that they have read and accepted these Terms and Conditions.</p>
+
+          <h2 id="schedule" class="text-3xl font-bold text-[var(--color-text)] mt-16 mb-4 scroll-mt-32">Customer Liability and Damage Schedule</h2>
+          <p class="mb-4">This Schedule forms part of the Hire Agreement and Terms &amp; Conditions of Build Hire Pty Ltd.</p>
+          <p class="mb-4">The Customer acknowledges that they are responsible for all loss, damage, theft, misuse, recovery costs and loss of hire associated with the Equipment while it remains in their possession or under their control.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">1. Damage responsibility</h2>
+          <p class="mb-4">The Customer is responsible for all damage occurring during the Hire Period including but not limited to:</p>
+          <h3 class="text-lg font-semibold text-[var(--color-text)] mt-6 mb-2">Hydraulic System</h3>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Burst hydraulic hoses</li>
+            <li>Damaged hydraulic lines</li>
+            <li>Bent hydraulic cylinders</li>
+            <li>Damaged fittings</li>
+            <li>Oil contamination</li>
+            <li>Hydraulic leaks caused by impact</li>
+          </ul>
+          <h3 class="text-lg font-semibold text-[var(--color-text)] mt-6 mb-2">Excavator Attachments</h3>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Buckets</li>
+            <li>Mud buckets</li>
+            <li>GP buckets</li>
+            <li>Rock buckets</li>
+            <li>Rippers</li>
+            <li>Augers</li>
+            <li>Auger extensions</li>
+            <li>Hydraulic hammers</li>
+            <li>Hydraulic rock grabs</li>
+            <li>Compaction wheels</li>
+            <li>Quick hitches</li>
+            <li>Tilt hitches</li>
+          </ul>
+          <h3 class="text-lg font-semibold text-[var(--color-text)] mt-6 mb-2">Machine Components</h3>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Broken glass</li>
+            <li>Damaged mirrors</li>
+            <li>Damaged lights</li>
+            <li>Damaged cameras</li>
+            <li>Damaged handrails</li>
+            <li>Damaged panels</li>
+            <li>Damaged covers</li>
+            <li>Damaged seats</li>
+            <li>Damaged control levers</li>
+            <li>Damaged tracks</li>
+            <li>Damaged rollers</li>
+            <li>Damaged sprockets</li>
+            <li>Damaged idlers</li>
+          </ul>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">2. Operator damage</h2>
+          <p class="mb-4">The Customer is liable for all damage arising from:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Operator error</li>
+            <li>Negligence</li>
+            <li>Inexperience</li>
+            <li>Improper use</li>
+            <li>Overloading</li>
+            <li>Abuse of Equipment</li>
+            <li>Failure to carry out daily checks</li>
+          </ul>
+          <p class="mb-4">This includes damage caused by employees, contractors, subcontractors or any person permitted by the Customer to operate the Equipment.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">3. Water damage</h2>
+          <p class="mb-4">The Customer is fully responsible for any damage resulting from:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Flooding</li>
+            <li>Submersion</li>
+            <li>Salt water exposure</li>
+            <li>Water entering electrical systems</li>
+            <li>Water entering engine systems</li>
+            <li>Water entering hydraulic systems</li>
+          </ul>
+          <p class="mb-4">Any water-damaged Equipment may be deemed a total loss and charged at replacement value.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">4. Incorrect fuel</h2>
+          <p class="mb-4">The Customer is responsible for all costs associated with:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Petrol placed into diesel equipment</li>
+            <li>Diesel placed into petrol equipment</li>
+            <li>AdBlue contamination</li>
+            <li>Fuel contamination</li>
+            <li>Foreign material entering fuel systems</li>
+          </ul>
+          <p class="mb-4">All repair, recovery and loss-of-hire costs apply.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">5. Track and undercarriage damage</h2>
+          <p class="mb-4">The Customer is responsible for:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Track damage</li>
+            <li>Track derailment caused by misuse</li>
+            <li>Excessive wear caused by operation on unsuitable surfaces</li>
+            <li>Roller damage</li>
+            <li>Idler damage</li>
+            <li>Sprocket damage</li>
+          </ul>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">6. Stolen equipment</h2>
+          <p class="mb-4">If Equipment is stolen, the Customer is liable for:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Replacement value of the Equipment</li>
+            <li>Replacement value of attachments</li>
+            <li>Recovery expenses</li>
+            <li>Insurance excess</li>
+            <li>Investigation costs</li>
+            <li>Loss of hire</li>
+          </ul>
+          <p class="mb-4">The Customer must immediately:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Notify Police</li>
+            <li>Obtain a Police Event Number</li>
+            <li>Notify Build Hire</li>
+          </ul>
+          <p class="mb-4">Failure to do so may result in full liability.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">7. Recovery costs</h2>
+          <p class="mb-4">The Customer is responsible for all recovery expenses including:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Bogged machinery</li>
+            <li>Machine retrieval</li>
+            <li>Crane hire</li>
+            <li>Tilt tray hire</li>
+            <li>Transport costs</li>
+            <li>Emergency call-outs</li>
+          </ul>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">8. Rollover damage</h2>
+          <p class="mb-4">Any rollover event is considered major damage.</p>
+          <p class="mb-4">The Customer is responsible for:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Repairs</li>
+            <li>Replacement parts</li>
+            <li>Labour</li>
+            <li>Transport</li>
+            <li>Engineering inspections</li>
+            <li>Loss of hire</li>
+          </ul>
+          <p class="mb-4">Where Equipment is deemed beyond economical repair, replacement value may apply.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">9. Cleaning charges</h2>
+          <p class="mb-4">Equipment must be returned in the same condition supplied.</p>
+          <p class="mb-4">Additional charges may apply for:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Excessive mud</li>
+            <li>Concrete build-up</li>
+            <li>Asphalt build-up</li>
+            <li>Paint contamination</li>
+            <li>Grease contamination</li>
+            <li>Waste removal</li>
+          </ul>
+          <p class="mb-4">Minimum cleaning charge: $150 + GST</p>
+          <p class="mb-4">Build Hire reserves the right to charge actual cleaning costs where greater than the minimum charge.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">10. Fuel charges</h2>
+          <p class="mb-4">Equipment must be returned with the same fuel level supplied.</p>
+          <p class="mb-4">Where refuelling is required, the Customer will be charged:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Fuel used;</li>
+            <li>Labour;</li>
+            <li>Administration costs.</li>
+          </ul>
+          <p class="mb-4">Minimum refuelling charge: $50 + GST.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">11. Lost items</h2>
+          <p class="mb-4">The Customer is responsible for replacement costs relating to:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Ignition keys</li>
+            <li>Security keys</li>
+            <li>Manuals</li>
+            <li>Log books</li>
+            <li>Safety equipment</li>
+            <li>GPS devices</li>
+            <li>Attachments</li>
+            <li>Pins and retainers</li>
+          </ul>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">12. Gps tracking</h2>
+          <p class="mb-4">Build Hire Equipment may be fitted with:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>GPS tracking</li>
+            <li>Telematics systems</li>
+            <li>Immobilisation systems</li>
+            <li>Recovery devices</li>
+          </ul>
+          <p class="mb-4">Tampering with or disabling any tracking device will constitute a major breach of the Hire Agreement and all associated costs will be payable by the Customer.</p>
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">13. Loss of hire</h2>
+          <p class="mb-4">Where Equipment is:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>Damaged;</li>
+            <li>Stolen;</li>
+            <li>Misused;</li>
+            <li>Under repair due to Customer actions;</li>
+          </ul>
+          <p class="mb-4">the Customer agrees to pay Build Hire for lost rental income during the period the Equipment is unavailable for hire.</p>
+          <p class="mb-4">Loss of hire will be charged at the standard daily hire rate applicable to that Equipment.</p>
+
+          <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">Customer acknowledgement</h2>
+          <p class="mb-4">When signing the Hire Form, the Customer acknowledges that:</p>
+          <ul class="list-disc pl-6 space-y-1 mb-4">
+            <li>I have read and understood the Build Hire Terms &amp; Conditions.</li>
+            <li>I understand I am responsible for all damage, theft, loss and recovery costs associated with the Equipment while it is in my possession.</li>
+            <li>I understand Build Hire&#x27;s insurance does not remove my obligations under this Agreement.</li>
+            <li>I agree to indemnify Build Hire Pty Ltd for all losses arising from my use of the Equipment.</li>
+          </ul>
+          <p class="mt-10">Questions about these terms: call <a href="tel:1300157882" class="underline">1300 157 882</a> or email <a href="mailto:info@buildhire.com.au" class="underline">info@buildhire.com.au</a>.</p>
         </div>
       </section>
     </main>

@@ -132,7 +132,8 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs">
-            © 2026 Build Hire Pty Ltd (BuildHire). ABN 88 690 624 429. All rights reserved.
+            © 2026 Build Hire Pty Ltd (BuildHire). ABN 88 690 624 429. All rights reserved.{" "}
+            <a href="/terms/" className="underline hover:text-white transition-colors">Hire terms</a>
           </p>
           <div className="flex gap-4">
             {[
