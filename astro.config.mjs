@@ -66,6 +66,9 @@ export default defineConfig({
         // Exclude payment pages
         if (page.includes('/payment-success') || page.includes('/payment-cancelled')) return false;
 
+        // Noindex category pages stay out of the sitemap
+        if (page.includes('/category/')) return false;
+
         // Wave 1: Include all /hire/[equipment]/[location]/ pages (738 pages — highest commercial intent)
         // Exclude deeper /hire/ sub-pages (industry, use-case, faq) — too large for current DA
         if (page.includes('/hire/')) {

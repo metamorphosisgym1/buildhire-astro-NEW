@@ -13,8 +13,5 @@
 # Redirect any /answers without trailing slash
 /answers  /answers/ 301
 
-# Catch-all for any /hire/ pages without trailing slash (Netlify handles this but explicit is safer)
-/hire/:equipment/:location  /hire/:equipment/:location/ 301
-
-# Catch-all for /compare/ pages without trailing slash
-/compare/:competitor/:industry/:location  /compare/:competitor/:industry/:location/ 301
+# Old sitemap address (still submitted in Search Console) goes to the sitemap the build makes
+/sitemap.xml  /sitemap-index.xml  301
