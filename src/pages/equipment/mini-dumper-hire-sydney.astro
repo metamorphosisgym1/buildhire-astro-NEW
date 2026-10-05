@@ -1,0 +1,188 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ChatWidget from '../../components/ChatWidget';
+import StickyBottomBar from '../../components/StickyBottomBar';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Mini Dumper Hire Sydney",
+  "serviceType": "Mini dumper dry hire",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "BuildHire",
+    "url": "https://buildhire.com.au",
+    "telephone": "+611300157882",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "178 Princes Hwy",
+      "addressLocality": "Arncliffe",
+      "addressRegion": "NSW",
+      "postalCode": "2205",
+      "addressCountry": "AU"
+    }
+  },
+  "areaServed": { "@type": "City", "name": "Sydney" },
+  "description": "Tracked mini dumper dry hire in Sydney. Cormidi C7X, 700 kg payload, high tip to 1,600 mm. From $200 a day incl GST, delivery quoted for your site.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AUD",
+    "price": "200",
+    "priceSpecification": { "@type": "UnitPriceSpecification", "price": "200", "priceCurrency": "AUD", "unitText": "DAY" }
+  }
+};
+
+const specs = [
+  { label: "Machine", value: "Cormidi C7X, petrol, high tip" },
+  { label: "Payload", value: "700 kg" },
+  { label: "Skip volume", value: "0.35 m³" },
+  { label: "Track width", value: "600 mm" },
+  { label: "High tip height", value: "1,600 mm" },
+  { label: "Drive", value: "Tracked" },
+];
+
+const jobs = [
+  { title: "Tight side access", desc: "Move soil, rock and spoil through narrow side paths where a wheelbarrow is too slow and a bigger machine will not fit." },
+  { title: "Landscaping", desc: "Shift mulch, soil, sand and road base around the garden without wrecking the lawn." },
+  { title: "Pool digs", desc: "Carry the spoil from a pool dig out to the skip or truck while the excavator keeps digging." },
+  { title: "Slopes and soft ground", desc: "The tracks handle slopes and uneven ground better than a wheeled barrow." },
+];
+
+const faqs = [
+  { q: "How much does mini dumper hire cost in Sydney?", a: "The Cormidi C7X is from $200 a day incl GST. Delivery and collection are quoted for your site and hire dates. Fuel is not included." },
+  { q: "Can the mini dumper tip into a skip bin?", a: "Yes. The C7X high tips to 1,600 mm, so it empties straight into most standard skip bins and trailers." },
+  { q: "Do I need a licence to drive a mini dumper?", a: "No licence is required to operate the mini dumper on private property in NSW." },
+  { q: "Can I hire a mini dumper with a mini excavator?", a: "Yes. You can book both on the same hire. The excavator digs and loads, the dumper carries the spoil to the skip or truck." },
+];
+---
+<Layout
+  title="Mini Dumper Hire Sydney | Tracked High Tip, From $200/day | BuildHire"
+  description="Hire a tracked mini dumper in Sydney. Cormidi C7X, 700 kg payload, tips straight into a skip. From $200/day incl GST, delivery quoted from our Arncliffe yard."
+  canonicalPath="/equipment/mini-dumper-hire-sydney"
+  ogImage="/og-image.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+
+  <div class="min-h-screen pb-20">
+    <Header client:load />
+
+    <section class="bg-[var(--color-bg)] pt-28 pb-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-10">
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">Mini Dumper Hire Sydney</h1>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">
+            Tracked mini dumper hire across Sydney from our Arncliffe yard. The Cormidi C7X carries 700 kg and high tips to 1,600 mm, straight into a skip or trailer. From <strong class="text-[var(--color-primary)]">$200/day</strong> incl GST, with delivery quoted for your site.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book a Mini Dumper</a>
+            <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">Call 1300 157 882</a>
+            <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">WhatsApp Us</a>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl max-w-3xl mx-auto">
+          <img src="/assets/cormidi-c7x.jpg" alt="Cormidi C7X tracked mini dumper for hire from BuildHire, Sydney" class="w-full object-cover" width="1200" height="675" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Specs and Hire Rates</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div class="bg-[var(--color-bg)] rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-[var(--color-text)] mb-6">Cormidi C7X</h3>
+            <div class="space-y-4">
+              {specs.map(item => (
+                <div class="flex justify-between items-center border-b border-gray-200 pb-3">
+                  <span class="text-[var(--color-text-muted)] text-sm">{item.label}</span>
+                  <span class="font-semibold text-[var(--color-text)] text-sm text-right">{item.value}</span>
+                </div>
+              ))}
+            </div>
+            <p class="text-sm text-[var(--color-text-muted)] mt-4">We also run a Cormidi C85. Tell us the job and we will match the dumper to it.</p>
+          </div>
+          <div class="bg-[var(--color-bg)] rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-[var(--color-text)] mb-6">What it costs</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Daily rate</span>
+                <span class="text-2xl font-bold text-[var(--color-primary)]">From $200/day</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Delivery and collection</span>
+                <span class="text-lg font-bold text-[var(--color-text)]">Quoted for your site</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-gray-200 pb-4">
+                <span class="text-[var(--color-text-muted)]">Weekly and longer hire</span>
+                <span class="text-lg font-bold text-[var(--color-text)]">Ask for a rate</span>
+              </div>
+            </div>
+            <p class="text-xs text-[var(--color-text-muted)] mt-4">Prices include GST. Fuel is not included. The price changes with the hire length, delivery distance and whether you hire an excavator with it. See <a href="/blog/excavator-hire-cost-sydney/" class="underline">what hire costs in Sydney</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Jobs a Mini Dumper Suits</h2>
+        <div class="grid sm:grid-cols-2 gap-6">
+          {jobs.map(item => (
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <h3 class="font-bold text-[var(--color-text)] mb-2">{item.title}</h3>
+              <p class="text-sm text-[var(--color-text-muted)]">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-6 text-center">How Hire Works</h2>
+        <ol class="space-y-4 list-decimal pl-6 text-[var(--color-text-muted)]">
+          <li>Send us the job, the site address and your hire dates, online, by phone or on WhatsApp.</li>
+          <li>We confirm the dumper is free and quote delivery for your site.</li>
+          <li>We deliver the dumper to your site.</li>
+          <li>We collect it when the job is done.</li>
+        </ol>
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-12 mb-4">Hire It With a Mini Excavator</h2>
+        <p class="text-[var(--color-text-muted)]">A dumper earns its keep next to a digger. While the excavator digs and loads, the dumper runs the spoil out to the skip or truck. See our <a href="/equipment/mini-excavator-hire-sydney/" class="underline">mini excavator hire</a>, including the popular <a href="/equipment/17t-mini-excavator-hire-sydney/" class="underline">1.7T mini excavator</a>.</p>
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-12 mb-4">Who This Is Not For</h2>
+        <p class="text-[var(--color-text-muted)]">We only dry hire. You or your crew drive the dumper. If you need an operator to do the work for you, we are not the right fit.</p>
+      </div>
+    </section>
+
+    <section class="bg-[var(--color-bg)] py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Mini Dumper Hire Questions</h2>
+        <div class="space-y-4">
+          {faqs.map(item => (
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <h3 class="font-semibold text-[var(--color-text)]">{item.q}</h3>
+              <p class="mt-3 text-[var(--color-text-muted)] text-sm leading-relaxed">{item.a}</p>
+            </div>
+          ))}
+        </div>
+        <p class="text-center text-sm text-[var(--color-text-muted)] mt-8">See all our <a href="/equipment/" class="underline">equipment hire in Sydney</a>.</p>
+      </div>
+    </section>
+
+    <section class="bg-[var(--color-primary)] py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Book a Mini Dumper</h2>
+        <p class="text-white/80 mb-8 text-lg">Tell us the job and your dates. We will confirm availability and quote delivery.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">Book Online</a>
+          <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">Call 1300 157 882</a>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:visible />
+    <ChatWidget client:load />
+    <StickyBottomBar client:load />
+  </div>
+</Layout>

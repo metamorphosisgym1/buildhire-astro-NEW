@@ -49,6 +49,7 @@ export default function Footer() {
               <li><a href="/equipment/145t-excavator-hire-sydney/" className="text-white/70 hover:text-white transition-colors">14.5T Excavator</a></li>
               <li><a href="/equipment/23t-excavator-hire-sydney/" className="text-white/70 hover:text-white transition-colors">23T Excavator</a></li>
               <li><a href="/equipment/tipper-truck-hire-sydney/" className="text-white/70 hover:text-white transition-colors">Tipper Truck</a></li>
+              <li><a href="/equipment/mini-dumper-hire-sydney/" className="text-white/70 hover:text-white transition-colors">Mini Dumper</a></li>
             </ul>
           </div>
 

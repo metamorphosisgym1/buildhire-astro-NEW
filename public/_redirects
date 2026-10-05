@@ -7,8 +7,12 @@
 /category/excavator   /category/excavators/ 301
 
 # Redirect old dumper singular
-/category/mini-dumper/  /category/mini-dumpers/ 301
-/category/mini-dumper   /category/mini-dumpers/ 301
+/category/mini-dumper/  /equipment/mini-dumper-hire-sydney/ 301
+/category/mini-dumper   /equipment/mini-dumper-hire-sydney/ 301
+
+# Mini dumper category page (noindex) replaced by the mini dumper money page
+/category/mini-dumpers/  /equipment/mini-dumper-hire-sydney/ 301!
+/category/mini-dumpers   /equipment/mini-dumper-hire-sydney/ 301!
 
 # Redirect any /answers without trailing slash
 /answers  /answers/ 301
