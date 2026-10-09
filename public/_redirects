@@ -1,3 +1,7 @@
+# One hop from www and http www to the bare https domain (10 Oct 2026)
+http://www.buildhire.com.au/*   https://buildhire.com.au/:splat   301!
+https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
+
 # Redirect singular category slug to correct plural
 /category/mini-excavator/ /category/mini-excavators/ 301
 /category/mini-excavator  /category/mini-excavators/ 301

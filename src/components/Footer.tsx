@@ -3,8 +3,8 @@ import { Facebook, Instagram, Linkedin, ArrowRight, Shield } from "lucide-react"
 
 export default function Footer() {
   const [email, setEmail] = useState("");
-  const accreditations = [
-    { name: "SafeWork NSW", icon: Shield, subtitle: "Safety Certified" },
+  const accreditations: { name: string; icon: typeof Shield; subtitle: string }[] = [
+    // Add only accreditations Will can show proof of (removed "SafeWork NSW Safety Certified" 10 Oct 2026 until confirmed)
   ];
 
   return (

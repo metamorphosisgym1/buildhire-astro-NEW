@@ -8,9 +8,10 @@ export interface Props {
   canonicalPath?: string;
   ogImage?: string;
   noindex?: boolean;
+  crumbs?: { name: string; path: string }[];
 }
 
-const { title, description, canonicalPath, ogImage, noindex } = Astro.props;
+const { title, description, canonicalPath, ogImage, noindex, crumbs } = Astro.props;
 ---
 
 <!doctype html>
@@ -22,6 +23,7 @@ const { title, description, canonicalPath, ogImage, noindex } = Astro.props;
       canonicalPath={canonicalPath}
       ogImage={ogImage}
       noindex={noindex}
+      crumbs={crumbs}
     />
   </head>
   <body>

@@ -6,13 +6,13 @@ const projects = [
     equipment: "13T Excavator, 5T Mini Excavator",
   },
   {
-    image: "/assets/wheel-loader.jpg",
+    image: "/assets/wheel-loader.webp",
     title: "Parramatta Light Rail",
     description: "Material handling and site clearance for rail infrastructure.",
     equipment: "Wheel Loader, Backhoe Loader",
   },
   {
-    image: "/assets/skidsteer-lilac.jpg",
+    image: "/assets/skidsteer-lilac.webp",
     title: "Bondi Residential Development",
     description: "Tight-access earthworks for a boutique apartment complex.",
     equipment: "Skid Steer Loader, 1.7T Mini Excavator",

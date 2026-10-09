@@ -27,7 +27,8 @@ const faqSchema = {
   }))
 };
 ---
-<Layout title={title} description={description} canonicalPath={canonicalPath}>
+<Layout
+  crumbs={[{ name: "FAQ", path: "/faq/" }]} title={title} description={description} canonicalPath={canonicalPath}>
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <div class="min-h-screen bg-[var(--color-bg)]">
     <Header client:load />

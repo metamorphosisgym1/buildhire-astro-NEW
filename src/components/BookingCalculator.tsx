@@ -31,24 +31,24 @@ const MiniDumperIcon = ({ size = 28, className = "" }: { size?: number; classNam
 );
 
 const sv08Img = "/assets/sv08-excavator.png";
-const kubotaU10Img = "/assets/kubota-u10-5-branded.png";
-const boxTrailerImg = "/assets/box-trailer.jpg";
+const kubotaU10Img = "/assets/kubota-u10-5-branded.webp";
+const boxTrailerImg = "/assets/box-trailer.webp";
 const vio17Img = "/assets/vio17-excavator.png";
 const vio35Img = "/assets/vio35-excavator.png";
 const vio55Img = "/assets/vio55-excavator.png";
 const vio80Img = "/assets/vio80-excavator.png";
-const isuzuTipperImg = "/assets/isuzu-tipper.png";
+const isuzuTipperImg = "/assets/isuzu-tipper.webp";
 const cormidiC7xImg = "/assets/cormidi-c7x.jpg";
-const cormidiC85Img = "/assets/cormidi-c85.jpg";
+const cormidiC85Img = "/assets/cormidi-c85.webp";
 const loaderImg = "/assets/loader-lilac.jpg";
-const bookingBg = "/assets/bg-excavator-1.jpg";
-const rockBreakerImg = "/assets/rock-breaker-buildhire.png";
+const bookingBg = "/assets/bg-excavator-1.webp";
+const rockBreakerImg = "/assets/rock-breaker-buildhire.webp";
 const sieveBucketImg = "/assets/sieve-bucket-tiger.png";
 const augerImg = "/assets/auger-drive.jpg";
-const rockGrabImg = "/assets/rock-grab.jpg";
-const typhoonWasherImg = "/assets/typhoon-pressure-washer.png";
-const demolitionHammerImg = "/assets/demolition-hammer.png";
-const concreteSawImg = "/assets/concrete-saw.png";
+const rockGrabImg = "/assets/rock-grab.webp";
+const typhoonWasherImg = "/assets/typhoon-pressure-washer.webp";
+const demolitionHammerImg = "/assets/demolition-hammer.webp";
+const concreteSawImg = "/assets/concrete-saw.webp";
 
 const WHATSAPP_NUMBER = "61435421324";
 
@@ -170,6 +170,8 @@ export default function BookingCalculator() {
   const [siteAccess, setSiteAccess] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [foundUs, setFoundUs] = useState("");
+  const [aiAsked, setAiAsked] = useState("");
 
   useEffect(() => {
     trackBuildHireEvent("booking_step_view", {
@@ -223,6 +225,7 @@ export default function BookingCalculator() {
       `Name: ${name}`,
       `Phone: ${phone}`,
       "",
+      `Found us via: ${foundUs || "Not provided"}${aiAsked ? ` (asked: ${aiAsked})` : ""}`,
       `Lead Source: ${source} / ${medium}`,
       `Landing Page: ${window.location.pathname}`,
     ];
@@ -238,6 +241,7 @@ export default function BookingCalculator() {
       delivery_suburb_provided: Boolean(suburb),
       job_type: jobType || "not_provided",
       site_access: siteAccess || "not_provided",
+      found_us: foundUs || "not_provided",
     });
     trackBuildHireEvent("whatsapp_booking_start", {
       equipment_category: category,
@@ -568,6 +572,37 @@ export default function BookingCalculator() {
                     className="w-full bg-card border border-secondary rounded-lg px-4 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors placeholder:text-muted-foreground/50"
                   />
                 </div>
+                <div>
+                  <label htmlFor="found-us" className="label-text text-xs text-muted-foreground mb-2 block">How did you find us? (optional)</label>
+                  <select
+                    id="found-us"
+                    value={foundUs}
+                    onChange={(e) => setFoundUs(e.target.value)}
+                    className="w-full bg-card border border-secondary rounded-lg px-4 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors"
+                  >
+                    <option value="">Choose one</option>
+                    <option>Google search</option>
+                    <option>Google Maps</option>
+                    <option>AI assistant (ChatGPT, Gemini or similar)</option>
+                    <option>Facebook or Instagram</option>
+                    <option>Word of mouth</option>
+                    <option>Hired before</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                {foundUs.startsWith("AI assistant") && (
+                  <div>
+                    <label htmlFor="ai-asked" className="label-text text-xs text-muted-foreground mb-2 block">What did you ask it? (optional)</label>
+                    <input
+                      id="ai-asked"
+                      type="text"
+                      value={aiAsked}
+                      onChange={(e) => setAiAsked(e.target.value)}
+                      placeholder="e.g. mini excavator hire near me"
+                      className="w-full bg-card border border-secondary rounded-lg px-4 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors placeholder:text-muted-foreground/50"
+                    />
+                  </div>
+                )}
               </div>
 
               <div className="flex gap-4">

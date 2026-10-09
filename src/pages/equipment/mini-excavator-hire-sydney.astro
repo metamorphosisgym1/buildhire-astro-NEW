@@ -83,6 +83,7 @@ const faqSchema = {
 ---
 
 <Layout
+  crumbs={[{ name: "Equipment", path: "/equipment/" }, { name: "Mini Excavator Hire", path: "/equipment/mini-excavator-hire-sydney/" }]}
   title="Mini Excavator Hire Sydney | From $200/day Dry Hire | BuildHire"
   description="Mini excavator hire Sydney from $200/day. 0.8T, 1.7T & 3.5T Yanmar machines available for dry hire. Next-day delivery across Sydney & NSW. Book online instantly."
   canonicalPath="/equipment/mini-excavator-hire-sydney"
@@ -131,7 +132,7 @@ const faqSchema = {
               delivery: "Quoted",
               depth: "1,800mm",
               best: "Tight access, landscaping, small residential jobs",
-              href: "/equipment/08t-mini-excavator-hire-sydney"
+              href: "/equipment/08t-mini-excavator-hire-sydney/"
             },
             {
               name: "1.7T Mini Excavator",
@@ -140,7 +141,7 @@ const faqSchema = {
               delivery: "Quoted",
               depth: "2,500mm",
               best: "Landscaping, pool digging, trenching, earthworks",
-              href: "/equipment/17t-mini-excavator-hire-sydney",
+              href: "/equipment/17t-mini-excavator-hire-sydney/",
               popular: true
             },
             {
@@ -150,7 +151,7 @@ const faqSchema = {
               delivery: "Quoted",
               depth: "3,400mm",
               best: "Bulk earthworks, site prep, demolition, civil",
-              href: "/equipment/35t-excavator-hire-sydney"
+              href: "/equipment/35t-excavator-hire-sydney/"
             }
           ].map(m => (
             <div class={`rounded-2xl p-8 border-2 ${m.popular ? 'border-[var(--color-primary)] bg-[var(--color-primary)]/5' : 'border-gray-200 bg-[var(--color-bg)]'} relative`}>

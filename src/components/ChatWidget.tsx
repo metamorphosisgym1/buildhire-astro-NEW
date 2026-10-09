@@ -10,7 +10,7 @@ export default function ChatWidget() {
     <div className="fixed bottom-28 sm:bottom-6 right-6 z-50 flex flex-col items-end gap-3">
       {/* Tooltip bubble */}
       {showTooltip && (
-        <div className="relative glass-card px-4 py-3 max-w-[240px] animate-scale-in">
+        <div className="relative glass-card px-4 py-3 max-w-[240px] animate-scale-in hidden sm:block">
           <button
             onClick={() => setShowTooltip(false)}
             className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"

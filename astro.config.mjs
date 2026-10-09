@@ -6,6 +6,40 @@ import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { join } from 'node:path';
 
+import { execSync } from 'node:child_process';
+import { existsSync } from 'node:fs';
+
+// Honest sitemap lastmod: the last git commit that touched the files a page is
+// built from. If git history is not available, lastmod is left out.
+const lastmodCache = new Map();
+function gitDate(files) {
+  const list = files.filter((f) => existsSync(f));
+  if (!list.length) return undefined;
+  const key = list.join('|');
+  if (lastmodCache.has(key)) return lastmodCache.get(key);
+  let date;
+  try {
+    const out = execSync(`git log -1 --format=%cI -- ${list.map((f) => `"${f}"`).join(' ')}`, { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+    date = out || undefined;
+  } catch { date = undefined; }
+  lastmodCache.set(key, date);
+  return date;
+}
+function sourceFiles(url) {
+  const path = url.replace('https://buildhire.com.au', '');
+  const parts = path.split('/').filter(Boolean);
+  if (!parts.length) return ['src/pages/index.astro'];
+  const [top, a] = parts;
+  if (top === 'equipment' && a) return [`src/pages/equipment/${a}.astro`, 'src/data/equipment.ts'];
+  if (top === 'blog' && a) return [`src/pages/blog/${a}.astro`];
+  if (top === 'faq' && a) return ['src/data/faqs.ts', 'src/pages/faq/[slug].astro'];
+  if (top === 'answers' && a) return ['src/data/aeo-answers.ts', 'src/pages/answers/[slug].astro'];
+  if (top === 'service-areas' && a) return ['src/data/serviceAreaContent.ts', 'src/pages/service-areas/[locationSlug].astro'];
+  if (top === 'industries' && a) return [`src/pages/industries/${a}.astro`, 'src/data/industries.ts'];
+  if (top === 'hire') return ['src/pages/hire/[equipmentSlug]/[locationSlug].astro', 'src/data/locations.ts', 'src/data/equipment.ts'];
+  return [`src/pages/${parts.join('/')}.astro`, `src/pages/${parts.join('/')}/index.astro`];
+}
+
 async function htmlFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
   const files = [];
@@ -40,7 +74,7 @@ function deliveryCopyGuard() {
           // (JSON-LD), where a regex splice breaks the tag or the JSON.
           const phraseSwaps = (text) => text
             .replace(includedDeliveryPricing, 'hire pricing and delivery confirmed for the specific job')
-            .replace(/next-day delivery/gi, 'delivery subject to availability')
+            .replace(/next-day delivery/gi, (m) => (m[0] === 'N' ? 'Delivery subject to availability' : 'delivery subject to availability'))
             .replace(/for an instant price/gi, 'to start a quote request');
           const sentenceRewrites = (text) => text
             .replace(bookingDeadline, 'Share your equipment, dates and site details to confirm availability and a delivery quote.')
@@ -69,10 +103,6 @@ export default defineConfig({
     tailwind({ applyBaseStyles: false }),
     deliveryCopyGuard(),
     sitemap({
-      customPages: [
-        'https://buildhire.com.au/service-areas/',
-        ...['sydney','parramatta','penrith','liverpool','campbelltown','blacktown','castle-hill','hornsby','sutherland','chatswood','st-george','newcastle','wollongong','manly','bondi','bankstown','inner-west','northern-beaches','eastern-suburbs','hills-district','baulkham-hills','kellyville','rouse-hill','marsden-park','box-hill','schofields','riverstone','windsor','richmond','oran-park','leppington','edmondson-park','gregory-hills','narellan','camden','picton','appin','minto','fairfield','cabramatta','cronulla','ryde','strathfield','auburn','seven-hills','merrylands'].map(s => `https://buildhire.com.au/service-areas/${s}/`),
-      ],
       filter: (page) => {
         // Exclude payment pages
         if (page.includes('/payment-success') || page.includes('/payment-cancelled')) return false;
@@ -95,6 +125,8 @@ export default defineConfig({
         return true;
       },
       serialize(item) {
+        const lastmod = gitDate(sourceFiles(item.url));
+        if (lastmod) item.lastmod = lastmod;
         // Homepage
         if (item.url === 'https://buildhire.com.au/') {
           item.priority = 1.0;

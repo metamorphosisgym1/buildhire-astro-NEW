@@ -66,7 +66,7 @@ function AccordionItem({ faq, index }: { faq: typeof faqs[0]; index: number }) {
 export default function FAQ() {
   return (
     <section className="relative py-24 px-6 overflow-hidden" aria-labelledby="faq-heading">
-      <img src="/assets/bg-excavator-2.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" aria-hidden="true" />
+      <img src="/assets/bg-excavator-2.webp" alt="" className="absolute inset-0 w-full h-full object-cover" aria-hidden="true" />
       <div className="absolute inset-0 bg-black/45" />
       <div className="container mx-auto max-w-3xl relative z-10">
         <p className="label-text text-primary text-center mb-3 text-sm">

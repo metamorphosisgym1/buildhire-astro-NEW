@@ -9,10 +9,12 @@ export default function Hero() {
         loop
         muted
         playsInline
+        poster="/video/hero-poster.webp"
         className="absolute inset-0 w-full h-full object-cover scale-[2] object-[85%_35%]"
         aria-hidden="true"
       >
-        <source src="/video/hero-bg.mp4" type="video/mp4" />
+        <source src="/video/hero-bg-mobile.mp4" type="video/mp4" media="(max-width: 767px)" />
+        <source src="/video/hero-bg-desktop.mp4" type="video/mp4" />
       </video>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50" />

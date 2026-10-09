@@ -62,7 +62,7 @@ export default function Testimonials() {
   return (
     <section className="relative py-24 px-6 overflow-hidden" aria-labelledby="testimonials-heading">
       <img
-        src="/assets/isuzu-tipper.png"
+        src="/assets/isuzu-tipper.webp"
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
         aria-hidden="true"

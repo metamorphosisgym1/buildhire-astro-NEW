@@ -34,7 +34,7 @@ export default function Features() {
   return (
     <section id="features" className="relative py-16 px-6 overflow-hidden">
       <img
-        src="/assets/features-bg.png"
+        src="/assets/features-bg.webp"
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
         aria-hidden="true"

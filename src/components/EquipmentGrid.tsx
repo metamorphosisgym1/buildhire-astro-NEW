@@ -1,26 +1,26 @@
 import { useState } from "react";
-const boxTrailerImg = "/assets/box-trailer.jpg";
+const boxTrailerImg = "/assets/box-trailer.webp";
 const sv08Img = "/assets/sv08-excavator.png";
-const kubotaU10Img = "/assets/kubota-u10-5-branded.png";
+const kubotaU10Img = "/assets/kubota-u10-5-branded.webp";
 const vio17Img = "/assets/vio17-excavator.png";
 
 const vio35Img = "/assets/vio35-excavator.png";
 const vio55Img = "/assets/vio55-excavator.png";
 const vio80Img = "/assets/vio80-excavator.png";
-const loaderImg = "/assets/wheel-loader.jpg";
-const skidsteerImg = "/assets/skidsteer-lilac.jpg";
-const backhoeImg = "/assets/backhoe-loader.jpg";
-const miniDumperImg = "/assets/mini-dumper.png";
+const loaderImg = "/assets/wheel-loader.webp";
+const skidsteerImg = "/assets/skidsteer-lilac.webp";
+const backhoeImg = "/assets/backhoe-loader.webp";
+const miniDumperImg = "/assets/mini-dumper.webp";
 const cormidiC7xImg = "/assets/cormidi-c7x.jpg";
-const cormidiC85Img = "/assets/cormidi-c85.jpg";
-const isuzuTipperImg = "/assets/isuzu-tipper.png";
-const rockBreakerImg = "/assets/rock-breaker-buildhire.png";
+const cormidiC85Img = "/assets/cormidi-c85.webp";
+const isuzuTipperImg = "/assets/isuzu-tipper.webp";
+const rockBreakerImg = "/assets/rock-breaker-buildhire.webp";
 const sieveBucketImg = "/assets/sieve-bucket-tiger.png";
 const augerImg = "/assets/auger-drive.jpg";
-const rockGrabImg = "/assets/rock-grab.jpg";
-const concreteSawImg = "/assets/concrete-saw.png";
-const demolitionHammerImg = "/assets/demolition-hammer.png";
-const typhoonWasherImg = "/assets/typhoon-pressure-washer.png";
+const rockGrabImg = "/assets/rock-grab.webp";
+const concreteSawImg = "/assets/concrete-saw.webp";
+const demolitionHammerImg = "/assets/demolition-hammer.webp";
+const typhoonWasherImg = "/assets/typhoon-pressure-washer.webp";
 
 import {
   Dialog,
@@ -78,7 +78,6 @@ const availableEquipment: EquipmentItem[] = [
     rate: "$200/day",
     badge: "available",
     deliveryNote: "Price on request",
-    brochureUrl: "/brochures/kubota-u10-5.pdf",
     specs: {
       "Operating Weight": "1,200 kg",
       "Dig Depth": "1,800 mm",
