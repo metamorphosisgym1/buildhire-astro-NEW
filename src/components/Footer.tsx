@@ -159,7 +159,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-6 pt-4 border-t border-white/10 text-center">
-        <p className="text-xs text-white/30">Powered by <a href="https://www.presciaiq.com.au" target="_blank" rel="noopener" className="text-white/50 hover:text-white transition-colors">PresciaIQ</a></p>
+        <p className="text-xs text-white/30">Powered by <a href="https://www.presciaiq.com.au" target="_blank" rel="noopener nofollow" className="text-white/50 hover:text-white transition-colors">PresciaIQ</a></p>
       </div>
     </footer>
   );
