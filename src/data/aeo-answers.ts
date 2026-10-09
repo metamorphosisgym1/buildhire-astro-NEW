@@ -62,71 +62,6 @@ For any questions about licence requirements or machine selection, call BuildHir
     schema: { type: "FAQPage", speakable: true }
   },
   {
-    slug: "how-much-does-it-cost-to-hire-a-mini-excavator-in-sydney",
-    question: "How much does it cost to hire a mini excavator in Sydney?",
-    shortAnswer: "Mini excavator hire in Sydney starts from $200/day for a 0.8T machine. Delivery and collection are quoted for your site and hire dates. Weekly rates from $1,000/week. All prices include GST.",
-    fullAnswer: `## Mini Excavator Hire Costs in Sydney — Complete Pricing Guide
-
-### BuildHire's Sydney Mini Excavator Hire Rates
-
-| Machine | Daily Rate | Weekly Rate | Delivery (Greater Sydney) |
-|---|---|---|---|
-| 0.8T Mini Excavator | $200/day | $1,000/week | Quoted |
-| 1T Mini Excavator | $200/day | $1,000/week | Quoted |
-| 1.7T Mini Excavator | $205/day | $1,100/week | Quoted |
-| 3.5T Excavator | $340/day | $1,550/week | Quoted |
-| 5.5T Excavator | $370/day | $1,650/week | On enquiry |
-
-All prices include GST. Delivery and collection are quoted for your site and hire dates. For locations outside Greater Sydney — Wollongong and the Blue Mountains — delivery is quoted by distance. Contact BuildHire for a regional delivery quote.
-
-### What's Included in BuildHire's Price
-
-BuildHire's hire price covers:
-- The machine for your nominated hire period
-- Full operating instructions and handover
-- GST
-
-Delivery and collection are quoted for your site and hire dates.
-
-Return the machine with the same fuel level, or a refuelling charge applies (minimum $50 + GST). Cleaning charges may apply for mud, concrete or other build-up (minimum $150 + GST).
-
-### Weekly vs Daily Hire: Which Is Cheaper?
-
-A BuildHire week is 7 days. Against 5 daily rates, on the 3.5T and 5.5T a week costs less ($1,550 vs $1,700 and $1,650 vs $1,850). On the 0.8T and 1T a week costs the same as 5 days ($1,000), and on the 1.7T it costs $75 more ($1,100 vs $1,025).
-
-For projects lasting 3–4 weeks, BuildHire offers monthly rates. Contact BuildHire directly for monthly pricing.
-
-### How Sydney Mini Excavator Hire Costs Compare to Other Options
-
-**Hiring a wet hire excavator with operator:** $600–$1,200/day. Dry hire from BuildHire starts at $200/day — a saving of $400–$1,000 per day for licensed operators or machines under 3 tonnes.
-
-**Buying a second-hand mini excavator:** A used 1.7T mini excavator in Sydney costs $25,000–$45,000. At BuildHire's daily rate of $205/day for a 1.7T, you'd need to hire for 120–220 days before buying becomes cheaper — and that's before accounting for maintenance, registration, insurance, and storage costs.
-
-**Hiring from a traditional hire depot:** Depots often add separate fees, such as a damage waiver or an environmental levy, on top of the day rate, so compare the full cost of the hire. BuildHire's 1.7T is $205/day incl GST, with delivery and collection quoted for your site.
-
-### Factors That Affect Mini Excavator Hire Costs in Sydney
-
-**Machine size:** Larger machines cost more. The 0.8T is the most affordable; the 5.5T is the most expensive.
-
-**Hire duration:** Weekly rates are in the table above. Call 1300 157 882 for monthly pricing.
-
-**Location:** Delivery and collection are quoted for your site and hire dates. Regional NSW locations incur higher delivery costs based on distance.
-
-**Timing:** BuildHire does not charge peak-season surcharges. Rates are consistent year-round.
-
-### Getting the Best Price on Mini Excavator Hire in Sydney
-
-Book online at buildhire.com.au for the fastest booking experience. If your project runs longer than expected, contact BuildHire to extend your hire — extending is typically cheaper than returning and re-hiring. For projects lasting 3+ weeks, ask about monthly rates.`,
-    relatedQuestions: [
-      { q: "What is included in BuildHire's mini excavator hire price in Sydney?", a: "BuildHire's hire price includes the machine, full operating instructions and GST. Delivery and collection are quoted for your site and hire dates. Return the machine with the same fuel level, or a refuelling charge applies (minimum $50 + GST). Cleaning charges may apply for mud, concrete or other build-up (minimum $150 + GST)." },
-      { q: "Is weekly hire cheaper than daily hire for a mini excavator?", a: "Yes. A BuildHire week is 7 days and costs less than seven daily rates. Against 5 daily rates, a week costs the same on the 0.8T and 1T, $75 more on the 1.7T, and less on the 3.5T, 5.5T and 14.5T. Weekly rates incl GST: $1,000 for the 0.8T and 1T, $1,100 for the 1.7T, $1,550 for the 3.5T, $1,650 for the 5.5T and $2,000 for the 14.5T." },
-      { q: "How much does delivery cost for a mini excavator in Sydney?", a: "Delivery and collection are quoted for your site and hire dates. Larger machines (5.5T+) are delivered by third-party transport at pricing on enquiry. For regional NSW locations, delivery costs vary by distance." },
-      { q: "How much does a sieve bucket attachment cost to hire?", a: "A sieve bucket (screening bucket) from Tiger Buckets costs $50/day when hired with a compatible excavator from BuildHire. Available on the 1.7T, 3.5T, 5.5T, and 14.5T excavators. Ideal for separating soil, screening topsoil, and sorting aggregate on site." },
-      { q: "Does the BuildHire auger come with more than one drill?", a: "No. Each BuildHire auger drive comes with one drill, in 200, 300, 450 or 600 mm. Augers are $180/day on the 1T, $190 on the 1.7T, $200 on the 3.5T and 5.5T, and $250 on the 14.5T, incl GST and on top of the machine rate." }
-    ],
-    schema: { type: "FAQPage", speakable: true }
-  },
-  {
     slug: "what-size-excavator-do-i-need-for-a-pool",
     question: "What size excavator do I need for a pool?",
     shortAnswer: "Most residential pools use a 1.7T or 3.5T excavator. A 1.7T fits through standard gates and suits pools up to 8m. A 3.5T is faster for larger pools or difficult soil conditions.",
@@ -550,46 +485,6 @@ BuildHire hires both excavators and mini dumpers. For pool excavation, hiring bo
       { q: "How long does it take to excavate a pool in clay soil in Sydney?", a: "Clay soil is harder to excavate than sandy soil. Add 30–50% to your time estimate. A standard pool in clay may take 2–3 days with a 1.7T mini excavator." },
       { q: "Should I hire a 1.7T or 3.5T excavator for pool excavation?", a: "The 1.7T suits standard residential pools (up to 8m) in average soil. The 3.5T is faster for larger pools or difficult soil conditions (clay, rock)." },
       { q: "Can I hire a mini dumper with the excavator for a pool dig?", a: "Yes. BuildHire hires a 700kg mini dumper alongside its excavators to move spoil from the pool to the skip bin. Call 1300 157 882 to book both for your pool project." }
-    ],
-    schema: { type: "FAQPage", speakable: true }
-  },
-  {
-    slug: "what-is-a-mini-dumper",
-    question: "What is a mini dumper and when do I need one?",
-    shortAnswer: "A mini dumper (also called a power barrow or site dumper) is a small tracked or wheeled machine that transports excavated material or building supplies around a site. It's ideal for sites where a tipper truck can't access.",
-    fullAnswer: `## What Is a Mini Dumper?
-
-A mini dumper — also called a power barrow, site dumper, or tracked dumper — is a compact, self-propelled machine designed to transport loose material (soil, gravel, concrete, rubble) around a construction site. Unlike a tipper truck, which operates on public roads, a mini dumper is designed for on-site material movement in areas where larger vehicles can't access.
-
-### When Do You Need a Mini Dumper?
-
-Mini dumpers are most useful when:
-
-**Site access is restricted:** If your excavated soil needs to be moved from the backyard to a skip bin or tipper truck on the street, but the path is too narrow for a wheelbarrow to be efficient, a mini dumper dramatically speeds up the process.
-
-**Volume is too large for wheelbarrows:** A mini dumper carries 500–1,000kg per load — equivalent to 5–10 wheelbarrow loads. For pool excavations, retaining wall projects, or large landscaping jobs, a mini dumper can reduce material movement time by 60–80%.
-
-**Terrain is difficult:** Mini dumpers on rubber tracks can navigate soft ground, slopes, and uneven terrain that would bog down a wheeled machine.
-
-**You're working alongside a mini excavator:** The most efficient setup for residential excavation is a mini excavator digging and a mini dumper transporting spoil to the skip bin or tipper. This keeps both machines productive and minimises manual labour.
-
-### Mini Dumper vs Tipper Truck: What's the Difference?
-
-A tipper truck is used to transport material off-site — from your property to a disposal facility. A mini dumper is used to move material around your site — from the excavation point to the skip bin, tipper, or stockpile area.
-
-For most residential projects, you need both: a mini excavator to dig, a mini dumper to move spoil around the site, and a tipper truck (or skip bins) to remove spoil from the property.
-
-### Mini Dumper Hire from BuildHire
-
-BuildHire offers mini dumper hire as part of its equipment range. Mini dumpers can be hired alongside excavators for a complete material handling solution. Call 1300 157 882 or book online at buildhire.com.au to check availability and pricing.
-
-### Do I Need a Licence to Operate a Mini Dumper?
-
-Mini dumpers do not require a licence to operate in NSW. They are not classified as high-risk plant under the Work Health and Safety Regulation 2017. Any adult can operate a mini dumper safely with basic instruction.`,
-    relatedQuestions: [
-      { q: "What is the difference between a mini dumper and a tipper truck?", a: "A mini dumper moves material around your site. A tipper truck transports material off-site to a disposal facility. Most residential projects need both." },
-      { q: "Do I need a licence to operate a mini dumper in NSW?", a: "No. Mini dumpers are not classified as high-risk plant in NSW and do not require a licence to operate." },
-      { q: "Can I hire a mini dumper and excavator together from BuildHire?", a: "Yes. BuildHire offers mini dumper hire alongside excavator hire. Call 1300 157 882 or book online at buildhire.com.au." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -1799,61 +1694,6 @@ Book online at buildhire.com.au or call 1300 157 882 for Inner West excavator hi
     schema: { type: "FAQPage", speakable: true }
   },
   {
-    slug: "how-much-does-excavator-hire-cost-per-week",
-    question: "How much does weekly excavator hire cost in NSW?",
-    shortAnswer: "Weekly excavator hire from BuildHire starts from $1,000/week for the 0.8T and 1T mini excavators. All weekly rates include GST. A BuildHire week is 7 days, and it costs less than seven daily rates.",
-    fullAnswer: `## Weekly Excavator Hire Costs in NSW
-
-A BuildHire week is 7 days, and the weekly rate costs less than seven daily rates. Weekly hire is the most popular option for pool builders, landscapers, and contractors with multi-day projects.
-
-### BuildHire Weekly Hire Rates
-
-| Machine | Daily Rate | Weekly Rate | Saving vs Daily |
-|---|---|---|---|
-| 0.8T Mini Excavator | $200/day | $1,000/week | Same as 5 daily rates |
-| 1T Mini Excavator | $200/day | $1,000/week | Same as 5 daily rates |
-| 1.7T Mini Excavator | $205/day | $1,100/week | $75 more than 5 daily rates |
-| 3.5T Excavator | $340/day | $1,550/week | Save $150 vs 5 daily rates |
-| 5.5T Excavator | $370/day | $1,650/week | Save $200 vs 5 daily rates |
-| 14.5T Excavator | $490/day | $2,000/week | Save $450 vs 5 daily rates |
-
-All prices include GST. Delivery and collection are quoted for your site and hire dates.
-
-### When Weekly Hire Makes Sense
-
-Weekly hire is the right choice when:
-- Your project will take 6 or 7 days
-- You want the machine available for the full week without daily rebooking
-- Your project may take longer than expected and you want flexibility
-- You're sequencing multiple tasks (excavation, trenching, backfilling) over a week
-
-### Projects That Typically Require Weekly Hire
-
-**Pool builds:** Pool excavation (1–2 days) + footing preparation (1 day) + service trenching (1 day) + backfilling (1 day) = 5 days minimum.
-
-**Retaining wall projects:** Footing excavation + drainage installation + backfilling = 3–5 days.
-
-**Subdivision service trenching:** Multiple service trenches across a new lot = 5–10 days.
-
-**Landscaping projects:** Large level changes, multiple retaining walls, drainage systems = 5–10 days.
-
-### Monthly Hire Rates
-
-For projects lasting 3+ weeks, BuildHire offers monthly hire rates. Contact BuildHire on 1300 157 882 for monthly hire pricing.
-
-### How to Book Weekly Hire
-
-Book online at buildhire.com.au — select your machine, choose your hire start date, and select the weekly hire option. The weekly rate is automatically applied for 7-day bookings.
-
-For bookings longer than 7 days, contact BuildHire directly to arrange the best rate.`,
-    relatedQuestions: [
-      { q: "How much cheaper is weekly hire than daily hire for an excavator?", a: "On the 3.5T, 5.5T and 14.5T a week saves $150 to $450 against 5 daily rates, and a BuildHire week is 7 days. The 0.8T and 1T are $1,000/week, the same as 5 days at the daily rate. The 14.5T is $2,000/week vs $2,450 for 5 days at the daily rate, a saving of $450." },
-      { q: "Does BuildHire offer monthly excavator hire rates?", a: "Yes. Contact BuildHire on 1300 157 882 for monthly hire pricing. Monthly rates provide greater savings than weekly rates for extended projects." },
-      { q: "Is delivery charged per week or per hire for weekly excavator hire?", a: "Delivery and collection is charged once per hire — not per week. Delivery and collection are quoted for your site and hire dates." }
-    ],
-    schema: { type: "FAQPage", speakable: true }
-  },
-  {
     slug: "what-is-dry-hire",
     question: "What is dry hire and how is it different from wet hire?",
     shortAnswer: "Dry hire means you hire the equipment without an operator — you or your team operate the machine. BuildHire is a dry hire only platform. Wet hire includes an operator provided by the hire company.",
@@ -1900,53 +1740,6 @@ Call BuildHire on 1300 157 882 to discuss whether dry hire is right for your pro
       { q: "Does BuildHire offer wet hire (with operator)?", a: "No. BuildHire is a dry hire only platform. All equipment is hired without an operator." },
       { q: "Do I need a licence to hire a 1.7T mini excavator from BuildHire?", a: "No. Excavators under 3 tonnes do not require a licence in NSW. BuildHire's 0.8T, 1T, and 1.7T mini excavators can be operated without a licence." },
       { q: "What licence do I need to operate a 3.5T excavator in NSW?", a: "A High Risk Work Licence (HRWL) with an Excavator (EX) endorsement is required to operate excavators 3 tonnes and over in NSW." }
-    ],
-    schema: { type: "FAQPage", speakable: true }
-  },
-  {
-    slug: "how-to-get-best-price-equipment-hire",
-    question: "How do I get the best price on equipment hire in NSW?",
-    shortAnswer: "Compare prices on BuildHire's marketplace, book weekly or monthly rates for longer projects, book in advance to secure the best availability, and avoid peak periods (spring and summer).",
-    fullAnswer: `## How to Get the Best Price on Equipment Hire in NSW
-
-Equipment hire costs can vary significantly depending on how and when you book. Here are the most effective strategies for getting the best price on excavator and equipment hire in NSW.
-
-### 1. Compare Prices on BuildHire
-
-BuildHire's marketplace displays prices from multiple suppliers side by side. This transparency means you can instantly see whether you're getting a competitive rate — without calling multiple hire companies. Visit buildhire.com.au to compare prices for your equipment type and location.
-
-### 2. Book Weekly or Monthly Rates
-
-A BuildHire week is 7 days, and the weekly rate costs less than seven daily rates.
-
-For projects lasting 3+ weeks, Contact BuildHire on 1300 157 882 for monthly hire pricing.
-
-### 3. Book in Advance
-
-Equipment availability is limited — particularly during peak periods (spring and summer). Booking 1–2 weeks in advance gives you:
-- Better choice of machines
-- Confirmed delivery on your preferred date
-- No risk of paying a premium for last-minute availability
-
-### 4. Avoid Peak Periods
-
-Spring (September–November) and summer (December–February) are the busiest periods for equipment hire in NSW. Demand is highest, availability is tightest, and prices may be higher. If your project can be scheduled in autumn or winter, you may find better availability and pricing.
-
-### 5. Minimise Delivery Costs
-
-Delivery and collection are quoted for your site and hire dates. For multi-day hires, the delivery cost is spread across more days — reducing the per-day cost. Combining multiple tasks into a single hire period minimises delivery costs.
-
-### 6. Plan Your Work Sequence
-
-Maximise productive hire time by planning your work sequence before the machine arrives. Have materials on site, set out your excavation lines, and brief your team. Every hour of productive hire time reduces your effective cost per cubic metre of excavation.
-
-### 7. Choose the Right Machine Size
-
-Hiring a machine that's too large for your job wastes money. Hiring one that's too small wastes time. BuildHire's team can help you choose the right machine size for your project — call 1300 157 882 for advice.`,
-    relatedQuestions: [
-      { q: "When is the cheapest time to hire an excavator in NSW?", a: "Autumn and winter (March–August) typically have better equipment availability and potentially lower prices than the peak spring/summer period." },
-      { q: "Does BuildHire offer discounts for repeat customers?", a: "Contact BuildHire on 1300 157 882 to discuss options for regular or high-volume hirers." },
-      { q: "Is it cheaper to hire a smaller excavator for a longer period or a larger one for a shorter period?", a: "It depends on the project. A larger machine completes work faster but costs more per day. BuildHire's team can help you calculate the most cost-effective option for your specific project." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -2197,18 +1990,6 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     relatedQuestions: [
       { q: "Does BuildHire deliver to Shellharbour?", a: "Yes, Shellharbour is within our Illawarra delivery zone. Call 1300 157 882 for pricing." },
       { q: "Can I get same-day excavator hire in Wollongong?", a: "Same-day delivery to Wollongong is available subject to fleet availability. Call 1300 157 882 as early as possible." }
-    ],
-    schema: { type: "FAQPage", speakable: true }
-  },
-  {
-    slug: "mini-dumper-hire-sydney",
-    question: "Can I hire a mini dumper in Sydney?",
-    category: "Equipment",
-    shortAnswer: "Yes — BuildHire offers mini dumper hire across Sydney with next-day delivery. Mini dumpers are ideal for moving soil, gravel, and debris in tight spaces where a wheelbarrow is too slow.",
-    fullAnswer: `## Mini Dumper Hire in Sydney\n\nBuildHire's mini dumpers are available for hire across Greater Sydney with next-day delivery.\n\n### What is a Mini Dumper?\n\nA mini dumper (also called a power barrow or motorised wheelbarrow) is a compact, self-propelled machine that carries and tips loads of 300–500kg. It's ideal for:\n- Moving soil, gravel, and sand in tight garden spaces\n- Shifting demolition debris\n- Transporting materials on sites too narrow for a bobcat\n- Landscaping and retaining wall construction\n\n### Hire Rates\n\nFrom $200/day. Delivery and collection are quoted for your site and hire dates.\n\nBook online at buildhire.com.au or call 1300 157 882.`,
-    relatedQuestions: [
-      { q: "What is a mini dumper used for?", a: "Mini dumpers move soil, gravel, sand, and demolition debris in tight spaces. They're ideal for landscaping, retaining walls, and sites too narrow for a bobcat." },
-      { q: "How much does mini dumper hire cost in Sydney?", a: "From $200/day, plus delivery and collection quoted for your site." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },

@@ -196,3 +196,46 @@ https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
 /faq/what-attachments-are-available-for-hire/        /equipment/excavator-attachment-hire-sydney/  301
 /answers/excavator-hire-for-rock-breaking            /equipment/excavator-attachment-hire-sydney/  301
 /answers/excavator-hire-for-rock-breaking/           /equipment/excavator-attachment-hire-sydney/  301
+
+# Stage 3 batch 1 (merge map approved 10 Oct 2026): 20 price and mini dumper question pages fold into the page that owns the topic.
+# The 7 tipper question pages in the batch return 410 instead (owner stopped tipper hire, see the tipper block above).
+/answers/how-much-does-excavator-hire-cost-per-week                         /blog/excavator-hire-cost-sydney/  301
+/answers/how-much-does-excavator-hire-cost-per-week/                        /blog/excavator-hire-cost-sydney/  301
+/answers/how-much-does-it-cost-to-hire-a-mini-excavator-in-sydney           /blog/excavator-hire-cost-sydney/  301
+/answers/how-much-does-it-cost-to-hire-a-mini-excavator-in-sydney/          /blog/excavator-hire-cost-sydney/  301
+/answers/how-to-get-best-price-equipment-hire                               /blog/excavator-hire-cost-sydney/  301
+/answers/how-to-get-best-price-equipment-hire/                              /blog/excavator-hire-cost-sydney/  301
+/answers/mini-dumper-hire-sydney                                            /equipment/mini-dumper-hire-sydney/  301
+/answers/mini-dumper-hire-sydney/                                           /equipment/mini-dumper-hire-sydney/  301
+/answers/what-is-a-mini-dumper                                              /equipment/mini-dumper-hire-sydney/  301
+/answers/what-is-a-mini-dumper/                                             /equipment/mini-dumper-hire-sydney/  301
+/faq/are-there-weekly-hire-rates-available                                  /blog/excavator-hire-cost-sydney/  301
+/faq/are-there-weekly-hire-rates-available/                                 /blog/excavator-hire-cost-sydney/  301
+/faq/do-i-need-a-licence-for-a-mini-dumper                                  /equipment/mini-dumper-hire-sydney/  301
+/faq/do-i-need-a-licence-for-a-mini-dumper/                                 /equipment/mini-dumper-hire-sydney/  301
+/faq/does-buildhire-offer-weekly-hire-rates                                 /blog/excavator-hire-cost-sydney/  301
+/faq/does-buildhire-offer-weekly-hire-rates/                                /blog/excavator-hire-cost-sydney/  301
+/faq/how-do-i-move-soil-in-a-backyard-without-a-wheelbarrow                 /equipment/mini-dumper-hire-sydney/  301
+/faq/how-do-i-move-soil-in-a-backyard-without-a-wheelbarrow/                /equipment/mini-dumper-hire-sydney/  301
+/faq/how-much-can-a-mini-dumper-carry                                       /equipment/mini-dumper-hire-sydney/  301
+/faq/how-much-can-a-mini-dumper-carry/                                      /equipment/mini-dumper-hire-sydney/  301
+/faq/how-much-does-delivery-cost                                            /blog/excavator-hire-cost-sydney/  301
+/faq/how-much-does-delivery-cost/                                           /blog/excavator-hire-cost-sydney/  301
+/faq/how-much-does-excavator-hire-cost-per-day                              /blog/excavator-hire-cost-sydney/  301
+/faq/how-much-does-excavator-hire-cost-per-day/                             /blog/excavator-hire-cost-sydney/  301
+/faq/how-much-does-it-cost-to-hire-a-3-5t-excavator                         /blog/excavator-hire-cost-sydney/  301
+/faq/how-much-does-it-cost-to-hire-a-3-5t-excavator/                        /blog/excavator-hire-cost-sydney/  301
+/faq/how-much-does-it-cost-to-hire-a-5-5t-excavator                         /blog/excavator-hire-cost-sydney/  301
+/faq/how-much-does-it-cost-to-hire-a-5-5t-excavator/                        /blog/excavator-hire-cost-sydney/  301
+/faq/how-much-does-it-cost-to-hire-a-mini-excavator                         /blog/excavator-hire-cost-sydney/  301
+/faq/how-much-does-it-cost-to-hire-a-mini-excavator/                        /blog/excavator-hire-cost-sydney/  301
+/faq/how-much-excavator-excavator-hire-cost-per-day                         /blog/excavator-hire-cost-sydney/  301
+/faq/how-much-excavator-excavator-hire-cost-per-day/                        /blog/excavator-hire-cost-sydney/  301
+/faq/what-is-a-mini-dumper-used-for                                         /equipment/mini-dumper-hire-sydney/  301
+/faq/what-is-a-mini-dumper-used-for/                                        /equipment/mini-dumper-hire-sydney/  301
+/faq/what-is-included-in-the-hire-price                                     /blog/excavator-hire-cost-sydney/  301
+/faq/what-is-included-in-the-hire-price/                                    /blog/excavator-hire-cost-sydney/  301
+/faq/what-is-the-delivery-cost-for-equipment-hire                           /blog/excavator-hire-cost-sydney/  301
+/faq/what-is-the-delivery-cost-for-equipment-hire/                          /blog/excavator-hire-cost-sydney/  301
+/faq/what-is-the-difference-between-a-mini-dumper-and-a-wheelbarrow         /equipment/mini-dumper-hire-sydney/  301
+/faq/what-is-the-difference-between-a-mini-dumper-and-a-wheelbarrow/        /equipment/mini-dumper-hire-sydney/  301

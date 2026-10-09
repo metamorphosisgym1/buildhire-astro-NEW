@@ -29,44 +29,11 @@ export const faqs: FAQ[] = [
     category: "Licensing & Legal",
     relatedEquipment: ["3-5t-excavator"]
   },
-  {
-    slug: "do-i-need-a-licence-for-a-mini-dumper",
-    question: "Do I need a licence to operate a mini dumper?",
-    answer: "No licence is required to operate BuildHire's 700kg mini dumper on private property in NSW. It is a pedestrian-operated machine that does not require any formal certification. It is suitable for homeowners, landscapers, and tradespeople without any licensing requirements.",
-    category: "Licensing & Legal",
-    relatedEquipment: ["mini-dumper-700kg"]
-  },
   // Pricing & Booking
-  {
-    slug: "how-much-does-it-cost-to-hire-a-mini-excavator",
-    question: "How much does it cost to hire a mini excavator in Sydney?",
-    answer: "BuildHire's mini excavator hire starts from $200/day (incl GST) for the 0.8T model, $200/day for the 1T, and $205/day for the 1.7T. Delivery and collection are quoted for your site and hire dates. Prices include the machine only — operator hire is not available (dry hire only).",
-    category: "Pricing & Booking",
-    relatedEquipment: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator"]
-  },
-  {
-    slug: "how-much-does-excavator-hire-cost-per-day",
-    question: "How much does excavator hire cost per day in NSW?",
-    answer: "Excavator hire in NSW typically ranges from $200 to $500 per day depending on machine size. BuildHire's rates are: 0.8T from $200/day, 1T from $200/day, 1.7T from $205/day, 3.5T from $340/day, 5.5T from $370/day, and 14.5T from $490/day — all including GST. Delivery and collection are quoted for your site and hire dates.",
-    category: "Pricing & Booking",
-    relatedEquipment: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator"]
-  },
   {
     slug: "how-do-i-book-equipment-hire-with-buildhire",
     question: "How do I book equipment hire with BuildHire?",
     answer: "You can book with BuildHire by calling 1300 157 882 or submitting an enquiry through the website. Delivery across Greater Sydney is subject to availability. You will need to provide your delivery address, hire dates, and a valid ID.",
-    category: "Pricing & Booking"
-  },
-  {
-    slug: "does-buildhire-offer-weekly-hire-rates",
-    question: "Does BuildHire offer weekly hire rates?",
-    answer: "Yes. A BuildHire week is 7 days and the weekly rate costs less than seven daily rates. Call 1300 157 882 to discuss monthly pricing for any machine in our fleet.",
-    category: "Pricing & Booking"
-  },
-  {
-    slug: "what-is-included-in-the-hire-price",
-    question: "What is included in the hire price?",
-    answer: "BuildHire's hire price includes the machine, a mud bucket, a GP bucket and a ripper. Fuel is not included. Delivery and collection are quoted for your site and hire dates.",
     category: "Pricing & Booking"
   },
   {
@@ -86,12 +53,6 @@ export const faqs: FAQ[] = [
     slug: "what-areas-does-buildhire-deliver-to",
     question: "What areas does BuildHire deliver to?",
     answer: "BuildHire delivers across Greater Sydney including the CBD, Inner West, Eastern Suburbs, Northern Beaches, Hills District, Western Sydney, South Western Sydney, and the Sutherland Shire. We also service Wollongong and the Blue Mountains. Call 1300 157 882 to confirm delivery to your area.",
-    category: "Delivery & Logistics"
-  },
-  {
-    slug: "how-much-does-delivery-cost",
-    question: "How much does delivery cost for equipment hire?",
-    answer: "Delivery and collection are quoted for your site and hire dates. Larger machines via third-party transport. Delivery pricing for locations outside Sydney (Wollongong, Blue Mountains) is available on enquiry. Call 1300 157 882 for a delivery quote.",
     category: "Delivery & Logistics"
   },
   {
@@ -234,20 +195,6 @@ export const faqs: FAQ[] = [
     relatedEquipment: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator"]
   },
   // Mini Dumper
-  {
-    slug: "what-is-a-mini-dumper-used-for",
-    question: "What is a mini dumper used for?",
-    answer: "A mini dumper is a small, tracked machine used to transport soil, aggregate, mulch, and other materials across a site. It is ideal for moving material from a backyard excavation to a skip bin or tipper truck at the front of the property. The high-tip capability allows it to tip directly into most skip bins without manual shovelling.",
-    category: "Mini Dumper",
-    relatedEquipment: ["mini-dumper-700kg"]
-  },
-  {
-    slug: "how-much-can-a-mini-dumper-carry",
-    question: "How much can a mini dumper carry?",
-    answer: "BuildHire's Cormidi C7X mini dumper has a payload capacity of 700kg and a skip volume of 0.35 cubic metres. This is approximately equivalent to 5–7 wheelbarrow loads per trip, making it significantly faster than manual wheelbarrowing for moving material across a site.",
-    category: "Mini Dumper",
-    relatedEquipment: ["mini-dumper-700kg"]
-  },
   // General
   {
     slug: "how-far-in-advance-do-i-need-to-book",
@@ -297,7 +244,6 @@ export const faqs: FAQ[] = [
   // Landscaping
   { slug: "what-equipment-do-i-need-for-a-retaining-wall", question: "What equipment do I need to build a retaining wall?", answer: "For retaining wall construction, you typically need a mini excavator to cut the batter and prepare the footing trench, and a mini dumper to move aggregate and backfill material. A 1.7T mini excavator and 700kg mini dumper is the most common combination for residential retaining walls.", category: "Landscaping", relatedEquipment: ["1-7t-mini-excavator", "mini-dumper-700kg"] },
   { slug: "can-a-mini-excavator-level-a-backyard", question: "Can a mini excavator level a backyard?", answer: "Yes, a mini excavator is ideal for levelling a backyard. The machine can cut high spots, move soil to low areas, and create a level surface for turf, paving, or a deck. A 1.7T excavator with a grading bucket is the most efficient choice for residential backyard levelling.", category: "Landscaping", relatedEquipment: ["1-7t-mini-excavator", "1t-mini-excavator"] },
-  { slug: "how-do-i-move-soil-in-a-backyard-without-a-wheelbarrow", question: "How do I move soil in a backyard without a wheelbarrow?", answer: "A mini dumper is the most efficient alternative to a wheelbarrow for moving soil in a backyard. BuildHire's 700kg Cormidi mini dumper carries 5–7 wheelbarrow loads per trip and tips directly into skip bins. It fits through gates as narrow as 750mm and runs on rubber tracks that protect lawns.", category: "Landscaping", relatedEquipment: ["mini-dumper-700kg"] },
   { slug: "what-equipment-do-i-need-for-a-garden-renovation", question: "What equipment do I need for a large garden renovation?", answer: "For a large garden renovation, a 0.8T or 1T mini excavator handles soil removal, garden bed preparation, and stump removal. A 700kg mini dumper moves material efficiently across the site. For removing spoil from the property, book skip bins or a soil removal service.", category: "Landscaping", relatedEquipment: ["0-8t-mini-excavator", "1t-mini-excavator", "mini-dumper-700kg"] },
   { slug: "can-a-mini-excavator-remove-a-concrete-slab", question: "Can a mini excavator remove a concrete slab?", answer: "Yes, a mini excavator with a rock breaker attachment can break up and remove concrete slabs. BuildHire's excavators can be fitted with a hydraulic rock breaker for concrete and rock breaking. A 1.7T or 3.5T excavator with a rock breaker is the most efficient combination for residential slab removal.", category: "Landscaping", relatedEquipment: ["1-7t-mini-excavator", "3-5t-excavator"] },
 
@@ -307,14 +253,12 @@ export const faqs: FAQ[] = [
   { slug: "when-should-i-hire-a-3-5t-vs-1-7t-excavator", question: "When should I hire a 3.5T instead of a 1.7T excavator?", answer: "Choose a 3.5T excavator when you need more digging depth (up to 3.8m), more bucket capacity for faster earthmoving, or harder ground conditions. The 3.5T is ideal for larger pool excavations, footing excavation, civil trenching, and site clearing. If access is tight, the 1.7T is the better choice.", category: "Equipment Selection", relatedEquipment: ["3-5t-excavator", "1-7t-mini-excavator"] },
   { slug: "what-is-a-zero-tail-swing-excavator", question: "What is a zero-tail-swing excavator?", answer: "A zero-tail-swing excavator has a counterweight that does not extend beyond the width of the tracks when the machine rotates. This allows it to work safely within 200mm of walls, fences, and structures without risk of damage. BuildHire's 0.8T, 1T, and 1.7T mini excavators are all zero-tail-swing machines.", category: "Equipment Selection" },
   { slug: "what-is-the-digging-depth-of-a-mini-excavator", question: "What is the maximum digging depth of a mini excavator?", answer: "BuildHire's mini excavators have the following maximum digging depths: 0.8T — 2.1m, 1T — 2.4m, 1.7T — 2.7m. For deeper excavations, the 3.5T (3.8m) or 5.5T (4.1m) excavator is required. Pool excavations typically require 1.5–2.0m of depth, which is within the range of all our mini excavators.", category: "Equipment Selection" },
-  { slug: "what-is-the-difference-between-a-mini-dumper-and-a-wheelbarrow", question: "What is the difference between a mini dumper and a wheelbarrow?", answer: "A mini dumper carries 700kg per load (5–7 wheelbarrow loads), travels at walking pace on rubber tracks, and tips automatically. It eliminates the physical strain of wheelbarrowing and is 5–10x faster for moving material across a site. It is particularly valuable for backyard excavations where a tipper truck cannot access.", category: "Equipment Selection", relatedEquipment: ["mini-dumper-700kg"] },
 
   // Delivery & Logistics
   { slug: "how-does-buildhire-deliver-equipment", question: "How does BuildHire deliver equipment?", answer: "BuildHire delivers all equipment on a tilt-tray or low-loader truck. The driver will unload the machine at the front of your property or as close to the work area as safely possible. You are responsible for moving the machine to the work area. Delivery is available across Greater Sydney. Outside Sydney metro? Contact us to confirm delivery for your site.", category: "Delivery & Logistics" },
   { slug: "what-areas-does-buildhire-deliver-to", question: "What areas does BuildHire deliver to?", answer: "BuildHire delivers to all major Sydney suburbs and nearby areas including Wollongong and the Blue Mountains, and beyond. Delivery charges may vary for regional locations. Call 1300 157 882 to confirm delivery availability and pricing for your area.", category: "Delivery & Logistics" },
   { slug: "how-long-does-delivery-take", question: "How long does equipment delivery take?", answer: "For next-day delivery, book before 12pm the day prior. Delivery is typically completed in the morning between 7am and 12pm, though exact times depend on the delivery schedule. You will receive a call from the driver with an estimated arrival time on the morning of delivery.", category: "Delivery & Logistics" },
   { slug: "can-buildhire-deliver-to-a-construction-site", question: "Can BuildHire deliver to a construction site?", answer: "Yes, BuildHire regularly delivers to active construction sites. Please ensure there is a clear, safe area for the delivery truck to unload. If the site has restricted access or specific delivery requirements, contact us when booking to discuss logistics.", category: "Delivery & Logistics" },
-  { slug: "what-is-the-delivery-cost-for-equipment-hire", question: "What is the delivery cost for equipment hire?", answer: "Delivery and collection are quoted for your site and hire dates. Regional NSW delivery charges may vary depending on distance. Delivery is charged separately from the daily hire rate. Call 1300 157 882 for a delivery quote to your specific location.", category: "Delivery & Logistics" },
   { slug: "can-i-pick-up-equipment-myself", question: "Can I pick up equipment from BuildHire myself?", answer: "BuildHire is primarily a delivery service and does not operate a customer pick-up depot. All equipment is delivered and collected by our team. This ensures the machine is transported safely and correctly, and that you receive a full briefing on operation at the time of delivery.", category: "Delivery & Logistics" },
   { slug: "what-do-i-need-to-prepare-for-equipment-delivery", question: "What do I need to prepare for equipment delivery?", answer: "Ensure there is a clear, level area for the delivery truck to park and unload. The driveway or street access should accommodate a large tilt-tray truck. Remove any obstacles from the delivery path. Have a valid ID ready for the driver. Ensure someone is on site at the time of delivery to receive the machine and sign the hire agreement.", category: "Delivery & Logistics" },
 
@@ -338,9 +282,6 @@ export const faqs: FAQ[] = [
   { slug: "how-long-does-it-take-to-excavate-a-house-slab", question: "How long does it take to excavate for a house slab?", answer: "For a standard residential house slab (15m x 10m, 300mm deep), excavation typically takes 4 to 8 hours with a 3.5T excavator. Harder ground, rock, or restricted access can extend this. Having skip bins or trucks ready for continuous spoil removal significantly speeds up the process.", category: "Equipment Selection", relatedEquipment: ["3-5t-excavator"] },
 
   // Pricing
-  { slug: "how-much-does-it-cost-to-hire-a-3-5t-excavator", question: "How much does it cost to hire a 3.5T excavator?", answer: "BuildHire's 3.5T excavator hire starts from $340/day including GST. Delivery and collection are quoted for your site and hire dates. Weekly rate $1,550/week. Weekly and monthly rates are available at a discount. Call 1300 157 882 for a quote.", category: "Pricing & Booking", relatedEquipment: ["3-5t-excavator"] },
-  { slug: "how-much-does-it-cost-to-hire-a-5-5t-excavator", question: "How much does it cost to hire a 5.5T excavator?", answer: "BuildHire's 5.5T excavator hire starts from $370/day including GST. Delivery via third-party transport — pricing on enquiry. Weekly rate $1,650/week. Weekly and monthly rates are available at a discount. Call 1300 157 882 for a quote.", category: "Pricing & Booking", relatedEquipment: ["5-5t-excavator"] },
-  { slug: "are-there-weekly-hire-rates-available", question: "Are there weekly hire rates available?", answer: "Yes. A BuildHire week is 7 days, and the weekly rate costs less than seven daily rates. Weekly rates incl GST start from $1,000 for the 0.8T and 1T mini excavators and go up to $2,000 for the 14.5T. Contact us at 1300 157 882 or info@buildhire.com.au to get a weekly rate quote for your project.", category: "Pricing & Booking" },
   { slug: "is-gst-included-in-buildhire-prices", question: "Are BuildHire's prices inclusive of GST?", answer: "Yes, all BuildHire hire rates are inclusive of GST. There are no hidden charges or surprise fees. The price you see is the price you pay for the equipment hire. Delivery and collection are quoted for your site and hire dates.", category: "Pricing & Booking" },
   { slug: "what-payment-methods-does-buildhire-accept", question: "What payment methods does BuildHire accept?", answer: "BuildHire accepts payment by credit card (Visa, Mastercard), bank transfer, and EFTPOS. Payment is required at the time of booking or before delivery. For account customers with established credit terms, invoice payment is available. Contact us to discuss account terms.", category: "Pricing & Booking" },
   { slug: "is-there-a-damage-waiver-or-insurance-required", question: "Is there a damage waiver or insurance required?", answer: "BuildHire does not charge a mandatory damage waiver. However, you are responsible for any damage to equipment during the hire period beyond normal wear and tear. We recommend ensuring your public liability insurance covers hired equipment. Contact your insurer before hiring if you are unsure.", category: "Pricing & Booking" },

@@ -9,7 +9,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How Much Does Excavator Hire Cost in Sydney? (2026 Price Guide)",
-  "description": "A complete breakdown of excavator hire costs in Sydney — daily rates, delivery fees, weekly rates, and what affects the price.",
+  "description": "Excavator hire costs in Sydney: daily and weekly rates for every machine, what is included, delivery and what changes the price.",
   "author": {
       "@type": "Person",
       "@id": "https://buildhire.com.au/about-us/#founder",
@@ -25,7 +25,7 @@ const articleSchema = {
     "logo": { "@type": "ImageObject", "url": "https://buildhire.com.au/og-image.png" }
   },
   "datePublished": "2026-04-01",
-  "dateModified": "2026-05-27",
+  "dateModified": "2026-10-20",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://buildhire.com.au/blog/excavator-hire-cost-sydney" },
   "relatedLink": [
     { "@type": "WebPage", "url": "https://buildhire.com.au/industries/builders/", "name": "Excavator Hire for Builders Sydney" },
@@ -34,35 +34,29 @@ const articleSchema = {
   ]
 };
 
+const rates = [
+  { machine: "0.8T Mini Excavator (Yanmar SV08)", href: "/equipment/08t-mini-excavator-hire-sydney/", daily: 200, weekly: 1000 },
+  { machine: "1T Mini Excavator (Kubota U10-5)", href: "/equipment/1t-mini-excavator-hire-sydney/", daily: 200, weekly: 1000 },
+  { machine: "1.7T Mini Excavator (Yanmar ViO17)", href: "/equipment/17t-mini-excavator-hire-sydney/", daily: 205, weekly: 1100 },
+  { machine: "3.5T Excavator (Yanmar ViO35-7)", href: "/equipment/35t-excavator-hire-sydney/", daily: 340, weekly: 1550 },
+  { machine: "5.5T Excavator (Yanmar ViO55)", href: "/equipment/55t-excavator-hire-sydney/", daily: 370, weekly: 1650 },
+  { machine: "8T Excavator (Yanmar ViO80), coming soon", href: "/equipment/8t-excavator-hire-sydney/", daily: 420, weekly: null },
+  { machine: "14.5T Excavator (Case CX145C)", href: "/equipment/145t-excavator-hire-sydney/", daily: 490, weekly: 2000 },
+];
+const money = (n) => "$" + n.toLocaleString("en-AU");
+
+const faqs = [
+  { q: "How much does it cost to hire a mini excavator in Sydney per day?", a: "Mini excavator hire starts at $200 a day for the 0.8T and 1T, and $205 a day for the 1.7T. A 3.5T is $340 a day. All prices include GST. Delivery and collection are quoted for your site." },
+  { q: "How much does weekly excavator hire cost?", a: "A BuildHire week is 7 days. It is $1,000 for the 0.8T or 1T, $1,100 for the 1.7T, $1,550 for the 3.5T, $1,650 for the 5.5T and $2,000 for the 14.5T, incl GST, and it costs less than seven daily rates. Against 5 daily rates, on the 3.5T, 5.5T and 14.5T a week costs less. On the 0.8T and 1T it costs the same as 5 days, and on the 1.7T it costs $75 more. Ask us about monthly hire." },
+  { q: "How much does delivery cost?", a: "Delivery and collection are quoted for your site and hire dates, so you know the full price before you book. The 5.5T and bigger machines go by third party transport, priced on enquiry." },
+  { q: "What is included in excavator hire rates?", a: "The machine for your hire period, a mud bucket, a GP bucket and a ripper. Delivery and collection, fuel, attachments and an operator are not included. We only dry hire, so you or your crew run the machine. Return the machine with the same fuel level, or a refuelling charge applies (minimum $50 + GST). Cleaning charges may apply for mud, concrete or other build-up (minimum $150 + GST)." },
+  { q: "How can I keep the cost of excavator hire down?", a: "Pick the smallest machine that can do the job, check the weekly rate against the days you need, and plan the work so the machine is busy every day you have it. Booking early helps you get the machine on the day you want it." },
+];
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does it cost to hire a mini excavator in Sydney per day?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Mini excavator hire in Sydney starts from $200/day for a 0.8T machine and $205/day for a 1.7T machine. A 3.5T excavator costs from $340/day. All prices include GST. Delivery and collection are quoted separately for your site."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is included in excavator hire rates?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dry hire rates include the machine, a mud bucket, a GP bucket and a ripper. Delivery & collection, fuel, insurance, and operator costs are not included in the base daily rate."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are weekly excavator hire rates cheaper than daily rates?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — weekly and monthly hire rates are significantly cheaper per day than daily rates. Call BuildHire on 1300 157 882 for a weekly or monthly quote."
-      }
-    }
-  ]
+  "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }))
 };
 ---
 
@@ -90,12 +84,12 @@ const faqSchema = {
           How Much Does Excavator Hire Cost in Sydney? (2026 Price Guide)
         </h1>
         <p class="text-xl text-[var(--color-text-muted)] mb-6">
-          A complete breakdown of excavator hire costs in Sydney — daily rates, delivery fees, weekly rates, and what affects the price.
+          Excavator hire in Sydney costs $200 to $490 a day incl GST, depending on the machine. A week's hire runs from $1,000 for a 0.8T to $2,000 for a 14.5T. Delivery and collection are quoted for your site, and fuel and attachments are extra.
         </p>
         <div class="flex items-center gap-4 text-sm text-[var(--color-text-muted)]">
           <span>By <strong class="text-[var(--color-text)]">BuildHire</strong></span>
           <span>·</span>
-          <span>Updated April 2026</span>
+          <span>Updated October 2026</span>
           <span>·</span>
           <span>6 min read</span>
         </div>
@@ -108,37 +102,30 @@ const faqSchema = {
 
         <p class="text-[var(--color-text-muted)] text-lg mb-8">If you're planning an excavation project in Sydney, one of the first questions you'll ask is: <em>how much does it cost to hire an excavator?</em> The answer depends on the size of the machine, the length of your hire, and where your site is located. Here's a complete breakdown.</p>
 
-        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Excavator Hire Daily Rates in Sydney (2026)</h2>
-        <p class="text-[var(--color-text-muted)] mb-6">The following rates are BuildHire's current daily hire rates, all inclusive of GST:</p>
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Excavator Hire Rates in Sydney (2026)</h2>
+        <p class="text-[var(--color-text-muted)] mb-6">These are BuildHire's current daily and weekly rates, all including GST:</p>
 
-        <div class="bg-[var(--color-bg)] rounded-xl overflow-hidden mb-8">
+        <div class="bg-[var(--color-bg)] rounded-xl overflow-x-auto mb-8">
           <table class="w-full text-sm">
             <thead>
               <tr class="bg-[var(--color-primary)] text-white">
-                <th class="text-left px-6 py-4 font-semibold">Machine</th>
-                <th class="text-left px-6 py-4 font-semibold">Daily Rate</th>
-                <th class="text-left px-6 py-4 font-semibold">Delivery & Collection</th>
+                <th class="text-left px-4 sm:px-6 py-4 font-semibold">Machine</th>
+                <th class="text-left px-4 sm:px-6 py-4 font-semibold">Per day</th>
+                <th class="text-left px-4 sm:px-6 py-4 font-semibold">Per week</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
-              {[
-                { machine: "0.8T Mini Excavator (Yanmar SV08)", daily: "$200/day", delivery: "Quoted" },
-                { machine: "1.7T Mini Excavator (Yanmar ViO17)", daily: "$205/day", delivery: "Quoted" },
-                { machine: "3.5T Excavator (Yanmar ViO35-7)", daily: "$340/day", delivery: "Quoted" },
-                { machine: "5.5T Excavator (Yanmar ViO55)", daily: "$370/day", delivery: "On enquiry" },
-                { machine: "8T Excavator (Yanmar ViO80)", daily: "$420/day", delivery: "POA" },
-                { machine: "14.5T Excavator (Case CX145C)", daily: "$490/day", delivery: "POA" },
-              ].map(row => (
+              {rates.map(row => (
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 font-medium text-[var(--color-text)]">{row.machine}</td>
-                  <td class="px-6 py-4 font-bold text-[var(--color-primary)]">{row.daily}</td>
-                  <td class="px-6 py-4 text-[var(--color-text-muted)]">{row.delivery}</td>
+                  <td class="px-4 sm:px-6 py-4 font-medium text-[var(--color-text)]"><a href={row.href} class="hover:underline">{row.machine}</a></td>
+                  <td class="px-4 sm:px-6 py-4 font-bold text-[var(--color-primary)]">{money(row.daily)}</td>
+                  <td class="px-4 sm:px-6 py-4 text-[var(--color-text)]">{row.weekly ? money(row.weekly) : "Ask us"}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p class="text-xs text-[var(--color-text-muted)] mb-8">All prices include GST. Fuel not included. Delivery & collection prices are for Sydney metro. POA = price on application.</p>
+        <p class="text-xs text-[var(--color-text-muted)] mb-8">All prices include GST. Fuel not included. Delivery and collection are quoted for your site. The 23T is coming soon.</p>
 
         <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">What's Included in the Hire Rate?</h2>
         <p class="text-[var(--color-text-muted)] mb-4">BuildHire's dry hire rates include:</p>
@@ -153,44 +140,25 @@ const faqSchema = {
           <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">✗</span> Delivery and collection (quoted separately for your site)</li>
           <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">✗</span> Fuel (you refuel the machine during your hire)</li>
           <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">✗</span> Operator (dry hire means you operate the machine yourself)</li>
-          <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">✗</span> Attachments (rock breaker, auger, etc. — available to hire separately)</li>
+          <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">✗</span> Attachments (rock breaker, auger and more, hired separately, see <a href="/equipment/excavator-attachment-hire-sydney/" class="underline">excavator attachment hire</a>)</li>
         </ul>
 
-        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Delivery & Collection Costs</h2>
-        <p class="text-[var(--color-text-muted)] mb-6">Delivery & collection is one of the most commonly overlooked costs when budgeting for excavator hire. Here's what to expect:</p>
-        <div class="bg-[var(--color-bg)] rounded-xl p-6 mb-8">
-          <div class="space-y-3">
-            {[
-              { area: "Sydney Metro (within ~30km of CBD)", cost: "Quoted for your site" },
-              { area: "Sydney Outer Suburbs (30–60km)", cost: "Call for quote" },
-              { area: "Blue Mountains / Wollongong", cost: "Call for quote" },
-              { area: "Regional NSW", cost: "Call for quote" },
-            ].map(row => (
-              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-gray-200 pb-3">
-                <span class="font-medium text-[var(--color-text)]">{row.area}</span>
-                <span class="text-[var(--color-primary)] font-semibold">{row.cost}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Delivery and Collection Costs</h2>
+        <p class="text-[var(--color-text-muted)] mb-4">Delivery and collection are easy to forget when you budget. We quote them for your site and hire dates before you book, so there are no surprises. The price depends on the machine and how far your site is from our Arncliffe yard. The 5.5T and bigger machines go by third party transport, priced on enquiry.</p>
+        <p class="text-[var(--color-text-muted)] mb-8">Send us the site address and dates <a href="/#booking" class="text-[var(--color-primary)] font-semibold">online</a>, on <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="text-[var(--color-primary)] font-semibold">WhatsApp</a> or on <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold">1300 157 882</a> for a delivery quote.</p>
 
-        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Weekly & Monthly Rates</h2>
-        <p class="text-[var(--color-text-muted)] mb-6">If your project runs for more than 3–4 days, a weekly rate will almost always work out cheaper. BuildHire offers discounted weekly and monthly rates — call <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold">1300 157 882</a> or <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="text-[var(--color-primary)] font-semibold">WhatsApp us</a> for a custom quote.</p>
-
-        <div class="bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/20 rounded-xl p-6 mb-8">
-          <h3 class="font-bold text-[var(--color-text)] mb-2">💡 Tip: Longer Hire = Lower Daily Rate</h3>
-          <p class="text-sm text-[var(--color-text-muted)]">Weekly rates typically work out 20–30% cheaper per day than daily rates. Monthly rates offer even greater savings. If your project will take more than 3 days, always ask for a weekly quote.</p>
-        </div>
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Weekly and Monthly Rates</h2>
+        <p class="text-[var(--color-text-muted)] mb-6">A BuildHire week is 7 days. On the 3.5T, 5.5T and 14.5T, a week costs less than 5 daily rates ($1,550 vs $1,700, $1,650 vs $1,850 and $2,000 vs $2,450). On the 0.8T and 1T a week costs the same as 5 days ($1,000), and on the 1.7T it costs $75 more ($1,100 vs $1,025). For hires of a month or longer, call <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold">1300 157 882</a> or <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="text-[var(--color-primary)] font-semibold">WhatsApp us</a> for a monthly rate.</p>
 
         <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">What Affects the Cost of Excavator Hire?</h2>
         <p class="text-[var(--color-text-muted)] mb-4">Several factors influence the total cost of your excavator hire:</p>
         <div class="space-y-4 mb-8">
           {[
             { factor: "Machine size", detail: "Larger machines cost more per day. Choose the smallest machine that can do the job to keep costs down." },
-            { factor: "Hire duration", detail: "Daily rates are highest. Weekly and monthly rates offer significant discounts." },
-            { factor: "Delivery distance", detail: "The further your site from Sydney metro, the higher the delivery & collection cost." },
+            { factor: "Hire duration", detail: "Weekly rates are in the table above, and monthly rates are available." },
+            { factor: "Delivery distance", detail: "The further your site is from our Arncliffe yard, the higher the delivery and collection cost." },
             { factor: "Attachments", detail: "Rock breakers, augers, and grabs are available to hire separately and add to the total cost." },
-            { factor: "Timing", detail: "Peak demand periods (spring/summer) may affect availability. Book early to secure your machine." },
+            { factor: "Timing", detail: "Spring and summer are busy. Book early to get the machine on the day you want it." },
           ].map(item => (
             <div class="bg-[var(--color-bg)] rounded-xl p-5">
               <h3 class="font-bold text-[var(--color-text)] mb-1">{item.factor}</h3>
@@ -200,7 +168,7 @@ const faqSchema = {
         </div>
 
         <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Sample Project Cost Estimates</h2>
-        <p class="text-[var(--color-text-muted)] mb-6">Here are some typical project cost estimates to help you budget:</p>
+        <p class="text-[var(--color-text-muted)] mb-6">Rough machine hire costs for common jobs, worked out from the daily rates above. Your job may take more or less time.</p>
         <div class="bg-[var(--color-bg)] rounded-xl overflow-hidden mb-8">
           <table class="w-full text-sm">
             <thead>
@@ -232,15 +200,12 @@ const faqSchema = {
         <p class="text-xs text-[var(--color-text-muted)] mb-8">Machine hire only, incl GST. Delivery and collection (quoted for your site), fuel and attachments are extra. Your actual cost depends on the job.</p>
 
         <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Frequently Asked Questions</h2>
-
-        <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">How much does it cost to hire a mini excavator in Sydney per day?</h3>
-        <p class="text-[var(--color-text-muted)] mb-4">Mini excavator hire in Sydney starts from $200/day for a 0.8T machine and $205/day for a 1.7T. A 3.5T excavator costs from $340/day. All prices include GST.</p>
-
-        <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">What is included in excavator hire rates?</h3>
-        <p class="text-[var(--color-text-muted)] mb-4">Dry hire rates include the machine, a mud bucket, a GP bucket and a ripper. Delivery & collection, fuel, insurance, and operator costs are not included in the base daily rate.</p>
-
-        <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">Are weekly excavator hire rates cheaper than daily rates?</h3>
-        <p class="text-[var(--color-text-muted)] mb-4">Yes — weekly and monthly hire rates are significantly cheaper per day than daily rates. Call BuildHire on 1300 157 882 for a weekly or monthly quote.</p>
+        {faqs.map(item => (
+          <>
+            <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">{item.q}</h3>
+            <p class="text-[var(--color-text-muted)] mb-4">{item.a}</p>
+          </>
+        ))}
 
       </div>
     </article>
@@ -252,7 +217,7 @@ const faqSchema = {
         <p class="text-white/80 mb-8 text-lg">Book online in 60 seconds or call us for a custom quote. Delivery across Sydney, subject to availability.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
-            Get Instant Pricing →
+            Get Instant Pricing
           </a>
           <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
             Call 1300 157 882
