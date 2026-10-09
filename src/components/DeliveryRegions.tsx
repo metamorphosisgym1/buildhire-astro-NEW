@@ -34,8 +34,6 @@ export default function DeliveryRegions() {
               {[
                 { x: 480, y: 320, label: "Sydney", main: true },
                 { x: 420, y: 260, label: "Blue Mountains" },
-                { x: 350, y: 180, label: "Hunter Valley" },
-                { x: 470, y: 200, label: "Newcastle" },
                 { x: 500, y: 380, label: "Wollongong" },
                 { x: 300, y: 350, label: "Canberra Region" },
                 { x: 200, y: 250, label: "Orange / Bathurst" },
@@ -81,8 +79,6 @@ export default function DeliveryRegions() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
             {[
               "Greater Sydney",
-              "Central Coast",
-              "Hunter & Newcastle",
               "Blue Mountains",
               "Illawarra & Wollongong",
               "South Coast",

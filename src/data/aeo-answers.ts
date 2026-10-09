@@ -83,7 +83,7 @@ Understanding the real cost of hiring a mini excavator in Sydney requires lookin
 | 3.5T Excavator | $340/day | $1,550/week | $250 |
 | 5.5T Excavator | $370/day | $1,650/week | On enquiry |
 
-All prices include GST. Delivery and collection are quoted for your site and hire dates. For locations outside Greater Sydney — Newcastle, Wollongong, Central Coast, Hunter Valley — delivery costs vary by distance. Contact BuildHire for a regional delivery quote.
+All prices include GST. Delivery and collection are quoted for your site and hire dates. For locations outside Greater Sydney — Wollongong and the Blue Mountains — delivery is quoted by distance. Contact BuildHire for a regional delivery quote.
 
 ### What's Included in BuildHire's Price
 
@@ -480,7 +480,7 @@ BuildHire's same-day delivery covers Greater Sydney, including:
 - Western Sydney (Parramatta, Penrith, Blacktown, Liverpool)
 - South Sydney (Sutherland, Cronulla, Campbelltown)
 
-For locations outside Greater Sydney — Newcastle, Wollongong, Central Coast, Hunter Valley — same-day delivery may not be possible. Call BuildHire to discuss options.
+For locations outside Greater Sydney, such as Wollongong and the Blue Mountains, same-day delivery may not be possible. Call BuildHire to discuss options.
 
 ### When Same-Day Hire Is Unavailable
 
@@ -2079,59 +2079,6 @@ Call BuildHire on 1300 157 882 if you have any questions before your hire.`,
     schema: { type: "FAQPage", speakable: true }
   },
   {
-    slug: "excavator-hire-newcastle",
-    question: "Where can I hire an excavator in Newcastle NSW?",
-    shortAnswer: "BuildHire delivers excavators to Newcastle and the Hunter Region, including Maitland, Lake Macquarie, Cessnock, and surrounding areas. Call 1300 157 882 for Newcastle delivery pricing.",
-    fullAnswer: `## Excavator Hire in Newcastle and the Hunter Region
-
-BuildHire delivers excavators to Newcastle and the broader Hunter Region, including Maitland, Lake Macquarie, Cessnock, Singleton, Muswellbrook, and surrounding areas. Newcastle is NSW's second-largest city and one of Australia's most active construction markets — with significant residential development, infrastructure projects, and industrial activity.
-
-### Newcastle Coverage
-
-BuildHire's Newcastle and Hunter Region delivery coverage includes:
-
-**Newcastle City:** Newcastle CBD, Hamilton, Mayfield, Broadmeadow, Wickham, Carrington, Islington
-
-**Lake Macquarie:** Charlestown, Warners Bay, Belmont, Glendale, Cardiff, Kotara, Morisset
-
-**Maitland:** Maitland, East Maitland, Rutherford, Thornton, Beresfield, Cessnock
-
-**Hunter Valley:** Singleton, Muswellbrook, Scone, Dungog
-
-**Port Stephens:** Raymond Terrace, Medowie, Salamander Bay, Nelson Bay
-
-### Newcastle Soil Conditions
-
-Newcastle's soil conditions vary significantly by location:
-
-**Coastal areas (Newcastle Beach, Merewether, Bar Beach):** Sandy soil — easy to excavate, fast productivity.
-
-**Western suburbs (Mayfield, Broadmeadow, Lambton):** Mixed clay and sandy soils.
-
-**Hunter Valley (Maitland, Cessnock):** Heavy clay soils — harder to excavate, higher productivity with the 1.7T or 3.5T.
-
-**Sandstone:** Hawkesbury Sandstone is present in some Newcastle areas, particularly on elevated sites. Contact BuildHire about hydraulic rock breaker availability.
-
-### Newcastle Construction Market
-
-Newcastle is experiencing significant construction activity driven by:
-- The Hunter Expressway and related infrastructure
-- Newcastle Light Rail and CBD revitalisation
-- Significant residential development in Maitland, Thornton, and Chisholm
-- Industrial development in the Hunter Economic Zone
-
-BuildHire's Newcastle customers include builders, contractors, tradies, and homeowners across the region.
-
-### Newcastle Delivery Pricing
-
-Delivery to Newcastle and the Hunter Region is priced based on distance from BuildHire's Sydney depot. Call 1300 157 882 for a Newcastle delivery quote, or enter your Newcastle postcode at buildhire.com.au to see delivery pricing.`,
-    relatedQuestions: [
-      { q: "Does BuildHire deliver excavators to Maitland and the Hunter Valley?", a: "Yes. BuildHire delivers to Maitland, Cessnock, Singleton, and the broader Hunter Valley. Call 1300 157 882 for delivery pricing." },
-      { q: "What excavator is best for clay soil in the Hunter Valley?", a: "The 1.7T is efficient in light clay. For heavy clay (common in the Hunter Valley), the 3.5T is more productive due to its greater digging force." }
-    ],
-    schema: { type: "FAQPage", speakable: true }
-  },
-  {
     slug: "excavator-hire-wollongong",
     question: "Where can I hire an excavator in Wollongong NSW?",
     shortAnswer: "BuildHire delivers excavators to Wollongong and the Illawarra region, including Shellharbour, Kiama, and Nowra. Call 1300 157 882 for Wollongong delivery pricing.",
@@ -2175,52 +2122,6 @@ Delivery to Wollongong and the Illawarra is priced based on distance from BuildH
     relatedQuestions: [
       { q: "Does BuildHire deliver excavators to Shellharbour and Kiama?", a: "Yes. BuildHire delivers to Shellharbour, Kiama, and the broader Illawarra region. Call 1300 157 882 for delivery pricing." },
       { q: "Can BuildHire deliver to Nowra and the Shoalhaven?", a: "BuildHire delivers to Nowra and the Shoalhaven — call 1300 157 882 to confirm availability and delivery pricing for your specific location." }
-    ],
-    schema: { type: "FAQPage", speakable: true }
-  },
-  {
-    slug: "excavator-hire-central-coast",
-    question: "Where can I hire an excavator on the Central Coast NSW?",
-    shortAnswer: "BuildHire delivers excavators to the Central Coast, including Gosford, Wyong, Tuggerah, and surrounding areas. Call 1300 157 882 for Central Coast delivery pricing.",
-    fullAnswer: `## Excavator Hire on the Central Coast of NSW
-
-BuildHire delivers excavators to the Central Coast, including Gosford, Wyong, Tuggerah, Terrigal, The Entrance, Toukley, and surrounding areas. The Central Coast is one of NSW's fastest-growing regions, with significant residential development and infrastructure investment.
-
-### Central Coast Coverage
-
-BuildHire's Central Coast delivery coverage includes:
-
-**Gosford area:** Gosford, East Gosford, Erina, Kincumber, Wamberal, Terrigal, Avoca Beach
-
-**Wyong area:** Wyong, Tuggerah, Charmhaven, Toukley, The Entrance, Long Jetty, Bateau Bay
-
-**Northern Central Coast:** Budgewoi, Buff Point, Halekulani, San Remo
-
-**Southern Central Coast:** Kariong, Somersby, Narara, Niagara Park
-
-### Central Coast Soil Conditions
-
-The Central Coast has diverse soil conditions:
-
-**Coastal areas (Terrigal, The Entrance, Toukley):** Sandy soil — easy to excavate, fast productivity.
-
-**Inland areas (Gosford, Wyong, Tuggerah):** Mixed clay and sandy soils. The 1.7T is the standard choice.
-
-**Sandstone:** Hawkesbury Sandstone is present in many Central Coast areas, particularly on elevated sites and in the Gosford area. Contact BuildHire about hydraulic rock breaker availability.
-
-### Central Coast Construction Activity
-
-The Central Coast is experiencing strong construction growth driven by:
-- Significant residential development (Gosford City Centre revitalisation, new housing estates)
-- Infrastructure investment (Central Coast Regional Plan 2041)
-- Growing population (one of NSW's fastest-growing regions)
-
-### Central Coast Delivery Pricing
-
-Delivery to the Central Coast is priced based on distance from BuildHire's Sydney depot. Call 1300 157 882 for a Central Coast delivery quote, or enter your Central Coast postcode at buildhire.com.au.`,
-    relatedQuestions: [
-      { q: "Does BuildHire deliver excavators to Gosford and Wyong?", a: "Yes. BuildHire delivers to Gosford, Wyong, and the broader Central Coast. Call 1300 157 882 for delivery pricing." },
-      { q: "Is there sandstone rock on the Central Coast?", a: "Yes. Hawkesbury Sandstone is present in many Central Coast areas, particularly on elevated sites. A hydraulic rock breaker attachment may be required. Contact BuildHire for availability." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -2317,7 +2218,7 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     slug: "excavator-hire-for-acreage",
     question: "What excavator do I need for acreage property work in NSW?",
     shortAnswer: "The 3.5T or 5.5T excavator is the standard choice for acreage property work in NSW — dam construction, land clearing, driveway formation, and drainage. The right machine depends on the scale of work.",
-    fullAnswer: `## Excavator Hire for Acreage Properties in NSW\n\nAcreage properties across NSW — from the Hills District and Hawkesbury to the Hunter Valley, Southern Highlands, and Illawarra — regularly require excavation for dams, driveways, land clearing, drainage, and infrastructure. BuildHire delivers to rural and semi-rural NSW locations.\n\n### Common Acreage Excavation Applications\n\n**Farm dam construction:**\nThe 3.5T or 5.5T is the standard choice for small to medium farm dams. See BuildHire's dedicated guide on farm dam construction for detailed information.\n\n**Driveway formation:**\nAcreage driveways are often long (100–500m) and require significant earthworks — cutting through hills, filling low points, and installing culverts. The 3.5T or 5.5T is most productive for driveway formation.\n\n**Land clearing:**\nRemoving vegetation, tree stumps, and debris from acreage blocks requires the 3.5T or 5.5T. For large areas, multiple machines or extended hire periods may be required.\n\n**Drainage and erosion control:**\nAcreage properties often have drainage challenges — particularly on sloping blocks. The 3.5T is ideal for constructing swales, diversion drains, and erosion control structures.\n\n**Shed and infrastructure foundations:**\nLarge sheds, stables, and infrastructure on acreage properties require footing excavation. The 3.5T is the standard choice for large shed footings.\n\n**Septic system installation:**\nAcreage properties not connected to sewer require septic systems. The 1.7T or 3.5T is ideal for septic tank and absorption trench excavation.\n\n### Acreage Soil Conditions in NSW\n\nSoil conditions on acreage properties vary significantly by region:\n\n**Hills District and Hawkesbury:** Heavy clay soils with sandstone rock in places. The 3.5T is recommended for heavy clay.\n\n**Hunter Valley:** Deep clay soils — highly productive for the 3.5T or 5.5T.\n\n**Southern Highlands:** Volcanic basalt soils in some areas — very hard and may require rock breaking.\n\n**Illawarra:** Fertile agricultural soils — generally good excavation conditions.\n\n### Acreage Delivery\n\nBuildHire delivers to acreage properties across NSW. Delivery pricing for locations outside Greater Sydney is based on distance. Call 1300 157 882 for a delivery quote to your acreage property.`,
+    fullAnswer: `## Excavator Hire for Acreage Properties in NSW\n\nAcreage properties across NSW — from the Hills District and Hawkesbury to the Southern Highlands and Illawarra — regularly require excavation for dams, driveways, land clearing, drainage, and infrastructure. BuildHire delivers to rural and semi-rural NSW locations.\n\n### Common Acreage Excavation Applications\n\n**Farm dam construction:**\nThe 3.5T or 5.5T is the standard choice for small to medium farm dams. See BuildHire's dedicated guide on farm dam construction for detailed information.\n\n**Driveway formation:**\nAcreage driveways are often long (100–500m) and require significant earthworks — cutting through hills, filling low points, and installing culverts. The 3.5T or 5.5T is most productive for driveway formation.\n\n**Land clearing:**\nRemoving vegetation, tree stumps, and debris from acreage blocks requires the 3.5T or 5.5T. For large areas, multiple machines or extended hire periods may be required.\n\n**Drainage and erosion control:**\nAcreage properties often have drainage challenges — particularly on sloping blocks. The 3.5T is ideal for constructing swales, diversion drains, and erosion control structures.\n\n**Shed and infrastructure foundations:**\nLarge sheds, stables, and infrastructure on acreage properties require footing excavation. The 3.5T is the standard choice for large shed footings.\n\n**Septic system installation:**\nAcreage properties not connected to sewer require septic systems. The 1.7T or 3.5T is ideal for septic tank and absorption trench excavation.\n\n### Acreage Soil Conditions in NSW\n\nSoil conditions on acreage properties vary significantly by region:\n\n**Hills District and Hawkesbury:** Heavy clay soils with sandstone rock in places. The 3.5T is recommended for heavy clay.\n\n**Southern Highlands:** Volcanic basalt soils in some areas — very hard and may require rock breaking.\n\n**Illawarra:** Fertile agricultural soils — generally good excavation conditions.\n\n### Acreage Delivery\n\nBuildHire delivers to acreage properties across NSW. Delivery pricing for locations outside Greater Sydney is based on distance. Call 1300 157 882 for a delivery quote to your acreage property.`,
     relatedQuestions: [
       { q: "Does BuildHire deliver excavators to rural NSW acreage properties?", a: "Yes. BuildHire delivers to acreage properties across NSW. Call 1300 157 882 for a delivery quote to your specific location." },
       { q: "What excavator is best for forming a long driveway on an acreage property?", a: "The 3.5T or 5.5T excavator is most productive for acreage driveway formation. The 5.5T's larger bucket significantly reduces the time for long driveways." }
@@ -2339,11 +2240,11 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
   {
     slug: "excavator-hire-delivery-nsw",
     question: "How does BuildHire deliver excavators across NSW?",
-    shortAnswer: "Delivery and collection are quoted for your site and hire dates. Delivery to Newcastle, Wollongong, Central Coast, and regional NSW is available — call 1300 157 882 for pricing.",
-    fullAnswer: `## BuildHire Excavator Delivery Across NSW\n\nBuildHire's delivery service is one of the key reasons customers choose us over local hire depots. You don't need a trailer, a tow vehicle, or a loading ramp — we bring the machine to your site and take it away when you're done.\n\n### How Delivery Works\n\nBuildHire's delivery driver arrives at your site with the excavator loaded on a low-loader trailer. The driver:\n1. Positions the trailer at a suitable unloading point on or near your site\n2. Lowers the trailer ramps\n3. Drives the excavator off the trailer under its own power\n4. Positions the machine at your preferred starting point\n5. Provides a brief operating handover\n\nAt the end of your hire, the process is reversed. You position the machine near the road or driveway access; the BuildHire driver loads it back onto the trailer.\n\n### Delivery Pricing\n\n**Greater Sydney (all suburbs):** Delivery and collection are quoted for your site and hire dates. Larger machines (5.5T+) via third-party transport, pricing on enquiry.\n\n**Regional NSW (Newcastle, Wollongong, Central Coast, Hunter Valley, Illawarra):** Priced by distance. Call 1300 157 882 for a quote.\n\n**Rural NSW:** Delivery available to most rural NSW locations. Call 1300 157 882 for a quote.\n\n### Delivery Timing\n\n**Standard delivery:** Book at least 24–48 hours in advance. Delivery is scheduled for the morning of your hire start date (typically 7am–9am).\n\n**Same-day delivery:** Available subject to fleet availability. Call 1300 157 882 as early as possible for same-day delivery.\n\n**After-hours delivery:** Contact BuildHire to discuss after-hours delivery options for urgent projects.\n\n### Site Access Requirements\n\nBuildHire's low-loader delivery truck requires:\n- Minimum 2.5m wide access path from the road to the unloading point\n- Minimum 4m overhead clearance (trees, power lines, awnings)\n- A level or gently sloping surface for unloading\n\nIf your site has difficult access — narrow driveway, low overhead clearance, or steep gradient — contact BuildHire before booking to confirm the low-loader can access your site.\n\n### Delivery to Apartment Buildings and Units\n\nFor apartment buildings and unit complexes, the excavator is typically unloaded on the street or in the car park and walked to the work area. Contact BuildHire to discuss access arrangements for apartment sites.\n\nBook online at buildhire.com.au or call 1300 157 882 to arrange delivery.`,
+    shortAnswer: "Delivery and collection are quoted for your site and hire dates. Delivery to Wollongong, the Blue Mountains and other areas outside Sydney is available — call 1300 157 882 for pricing.",
+    fullAnswer: `## BuildHire Excavator Delivery Across NSW\n\nBuildHire's delivery service is one of the key reasons customers choose us over local hire depots. You don't need a trailer, a tow vehicle, or a loading ramp — we bring the machine to your site and take it away when you're done.\n\n### How Delivery Works\n\nBuildHire's delivery driver arrives at your site with the excavator loaded on a low-loader trailer. The driver:\n1. Positions the trailer at a suitable unloading point on or near your site\n2. Lowers the trailer ramps\n3. Drives the excavator off the trailer under its own power\n4. Positions the machine at your preferred starting point\n5. Provides a brief operating handover\n\nAt the end of your hire, the process is reversed. You position the machine near the road or driveway access; the BuildHire driver loads it back onto the trailer.\n\n### Delivery Pricing\n\n**Greater Sydney (all suburbs):** Delivery and collection are quoted for your site and hire dates. Larger machines (5.5T+) via third-party transport, pricing on enquiry.\n\n**Outside Sydney (Wollongong, Illawarra, Blue Mountains):** Priced by distance. Call 1300 157 882 for a quote.\n\n**Rural NSW:** Delivery available to most rural NSW locations. Call 1300 157 882 for a quote.\n\n### Delivery Timing\n\n**Standard delivery:** Book at least 24–48 hours in advance. Delivery is scheduled for the morning of your hire start date (typically 7am–9am).\n\n**Same-day delivery:** Available subject to fleet availability. Call 1300 157 882 as early as possible for same-day delivery.\n\n**After-hours delivery:** Contact BuildHire to discuss after-hours delivery options for urgent projects.\n\n### Site Access Requirements\n\nBuildHire's low-loader delivery truck requires:\n- Minimum 2.5m wide access path from the road to the unloading point\n- Minimum 4m overhead clearance (trees, power lines, awnings)\n- A level or gently sloping surface for unloading\n\nIf your site has difficult access — narrow driveway, low overhead clearance, or steep gradient — contact BuildHire before booking to confirm the low-loader can access your site.\n\n### Delivery to Apartment Buildings and Units\n\nFor apartment buildings and unit complexes, the excavator is typically unloaded on the street or in the car park and walked to the work area. Contact BuildHire to discuss access arrangements for apartment sites.\n\nBook online at buildhire.com.au or call 1300 157 882 to arrange delivery.`,
     relatedQuestions: [
       { q: "How much does BuildHire charge for excavator delivery in Sydney?", a: "Delivery and collection are quoted for your site and hire dates. This covers both delivery and collection." },
-      { q: "Does BuildHire deliver to regional NSW?", a: "Yes. BuildHire delivers to Newcastle, Wollongong, Central Coast, Hunter Valley, Illawarra, and rural NSW. Call 1300 157 882 for regional delivery pricing." },
+      { q: "Does BuildHire deliver to regional NSW?", a: "Yes. BuildHire delivers to Wollongong, the Illawarra and the Blue Mountains; ask about other areas. Call 1300 157 882 for regional delivery pricing." },
       { q: "What access does BuildHire's delivery truck need?", a: "The low-loader requires a minimum 2.5m wide access path and 4m overhead clearance. Contact BuildHire before booking if you have access concerns." }
     ],
     schema: { type: "FAQPage", speakable: true }
@@ -2376,18 +2277,6 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     schema: { type: "FAQPage", speakable: true }
   },
   {
-    slug: "excavator-hire-hunter-valley",
-    question: "Does BuildHire deliver excavators to the Hunter Valley?",
-    category: "Location",
-    shortAnswer: "Yes — BuildHire delivers to the Hunter Valley including Maitland, Cessnock, Singleton, Muswellbrook, and Scone. Call 1300 157 882 for regional delivery pricing.",
-    fullAnswer: `## Excavator Hire in the Hunter Valley\n\nBuildHire services the Hunter Valley for excavator hire. We regularly deliver to Maitland, Cessnock, Singleton, Muswellbrook, Scone, and surrounding areas.\n\n### Equipment Available\n\n- **0.8T Mini Excavator** — ideal for vineyard work, residential projects\n- **1.7T Mini Excavator** — most popular for Hunter Valley residential and rural\n- **3.5T Excavator** — civil, commercial, and agricultural projects\n\n### Delivery\n\nRegional delivery to Hunter Valley is priced by distance. Call 1300 157 882 for a quote. Typically $250–$400 depending on exact location.`,
-    relatedQuestions: [
-      { q: "How much does excavator delivery to the Hunter Valley cost?", a: "Regional delivery to Hunter Valley is priced by distance — typically $250–$400. Call 1300 157 882 for an exact quote." },
-      { q: "Can I hire an excavator for vineyard work in the Hunter Valley?", a: "Yes. The 0.8T and 1.7T mini excavators are popular for vineyard drainage, irrigation trenching, and earthworks." }
-    ],
-    schema: { type: "FAQPage", speakable: true }
-  },
-  {
     slug: "excavator-hire-illawarra",
     question: "Can I hire an excavator in the Illawarra region?",
     category: "Location",
@@ -2396,18 +2285,6 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     relatedQuestions: [
       { q: "Does BuildHire deliver to Shellharbour?", a: "Yes, Shellharbour is within our Illawarra delivery zone. Call 1300 157 882 for pricing." },
       { q: "Can I get same-day excavator hire in Wollongong?", a: "Same-day delivery to Wollongong is available subject to fleet availability. Call 1300 157 882 as early as possible." }
-    ],
-    schema: { type: "FAQPage", speakable: true }
-  },
-  {
-    slug: "tipper-truck-hire-newcastle",
-    question: "Can I hire a tipper truck in Newcastle?",
-    category: "Location",
-    shortAnswer: "Yes — BuildHire delivers tipper trucks to Newcastle and the Hunter region. Book online or call 1300 157 882 for availability and regional delivery pricing.",
-    fullAnswer: `## Tipper Truck Hire in Newcastle\n\nBuildHire delivers tipper trucks to Newcastle, Lake Macquarie, Maitland, and the wider Hunter region.\n\n### Available Tipper Trucks\n\n- **2T Tipper Truck** — ideal for small loads, garden waste, soil removal\n- **4T Tipper Truck** — most popular for residential and light commercial\n- **8T Tipper Truck** — civil and commercial projects\n\n### Delivery\n\nCall 1300 157 882 for Newcastle delivery pricing. Same-day delivery available subject to availability.`,
-    relatedQuestions: [
-      { q: "How much does tipper truck hire cost in Newcastle?", a: "From $350/day for a 2T tipper truck, plus regional delivery. Call 1300 157 882 for exact pricing." },
-      { q: "Does BuildHire deliver tipper trucks to Lake Macquarie?", a: "Yes, Lake Macquarie is within our Newcastle delivery zone." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },

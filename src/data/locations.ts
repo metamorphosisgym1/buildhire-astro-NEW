@@ -76,16 +76,9 @@ export const locations: Location[] = [
 
   // Regional NSW
   { slug: "wollongong", name: "Wollongong", region: "Illawarra", state: "NSW" },
-  { slug: "newcastle", name: "Newcastle", region: "Hunter", state: "NSW" },
   { slug: "blue-mountains", name: "Blue Mountains", region: "Blue Mountains", state: "NSW" },
-  { slug: "central-coast", name: "Central Coast", region: "Central Coast", state: "NSW" },
-  { slug: "hunter-valley", name: "Hunter Valley", region: "Hunter", state: "NSW" },
   { slug: "orange", name: "Orange", region: "Central West", state: "NSW" },
   { slug: "bathurst", name: "Bathurst", region: "Central West", state: "NSW" },
-  { slug: "gosford", name: "Gosford", region: "Central Coast", state: "NSW" },
-  { slug: "wyong", name: "Wyong", region: "Central Coast", state: "NSW" },
-  { slug: "maitland", name: "Maitland", region: "Hunter", state: "NSW" },
-  { slug: "cessnock", name: "Cessnock", region: "Hunter", state: "NSW" },
   { slug: "port-macquarie", name: "Port Macquarie", region: "Mid North Coast", state: "NSW" },
   { slug: "coffs-harbour", name: "Coffs Harbour", region: "Mid North Coast", state: "NSW" },
   { slug: "tamworth", name: "Tamworth", region: "New England", state: "NSW" },

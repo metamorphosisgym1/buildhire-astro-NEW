@@ -312,32 +312,6 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     coordinates: { lat: -33.9700, lng: 151.1200 }
   },
   {
-    slug: "newcastle",
-    name: "Newcastle",
-    region: "Hunter",
-    state: "NSW",
-    suburbs: ["Newcastle CBD", "Hamilton", "Mayfield", "Broadmeadow", "Jesmond", "Kotara", "Charlestown", "Merewether"],
-    intro: "BuildHire delivers excavators and construction equipment to Newcastle and the Hunter region — late-model machines, transparent pricing, and a team that understands regional NSW construction.",
-    bodyParagraph1: "Newcastle is the Hunter region's construction and infrastructure hub, with significant residential development, commercial construction, and civil infrastructure projects underway across the city and its surrounds. From the Newcastle CBD revitalisation to the residential growth corridors of Charlestown, Kotara, and Jesmond, demand for reliable plant hire is strong. BuildHire delivers to Newcastle with the same standards of equipment quality and service reliability that Sydney operators have come to expect.",
-    bodyParagraph2: "Newcastle's construction market spans a wide range of project types — from residential pool builds and landscaping in established suburbs to major civil and infrastructure projects in the Port of Newcastle and Hunter Valley precincts. Our fleet covers this full range: compact 1T and 1.7T mini excavators for residential work, 3.5T and 5.5T Yanmar machines for mid-size projects, and 14.5T and 23T Sumitomo excavators for heavy civil and commercial earthworks. Every machine is delivered by BuildHire's own team — not subcontracted.",
-    caseStudy: {
-      client: "Mac Developments",
-      projectType: "Residential development — bulk earthworks and footing excavation in Newcastle",
-      equipment: "5.5T Excavator (ViO55 Yanmar)",
-      outcome: "Newcastle residential development completed on schedule, with consistent machine performance across all stages of the project.",
-      quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
-    },
-    bodyParagraph3: "BuildHire delivers to all Newcastle suburbs and the broader Hunter region including Maitland, Cessnock, and the Hunter Valley. Get an instant online price in under 60 seconds, or WhatsApp our team for a regional quote. Delivery timelines for Newcastle may vary — contact our team to confirm availability.",
-    faqs: [
-      { q: "Do you deliver excavators to Newcastle and the Hunter region?", a: "Yes — BuildHire delivers to Newcastle and the broader Hunter region including Maitland, Cessnock, and the Hunter Valley. Contact our team to confirm delivery timelines for your specific location." },
-      { q: "What excavator sizes are available in Newcastle?", a: "Our full fleet is available in Newcastle — from the 0.8T mini excavator through to the 23T Sumitomo. Contact our team to confirm availability and delivery lead times for your project." },
-      { q: "How do I get a quote for excavator hire in Newcastle?", a: "Use our online booking tool for an instant price, or WhatsApp our team for a personalised Newcastle quote. Prices include delivery, collection, and GST." }
-    ],
-    nearbyAreas: ["Maitland", "Cessnock", "Hunter Valley", "Central Coast", "Port Macquarie"],
-    nearbyAreaSlugs: ["maitland", "cessnock", "hunter-valley", "central-coast", "port-macquarie"],
-    coordinates: { lat: -32.9283, lng: 151.7817 }
-  },
-  {
     slug: "wollongong",
     name: "Wollongong",
     region: "Illawarra",
@@ -359,8 +333,8 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       { q: "What excavator is best for coastal Wollongong projects?", a: "The 1.7T and 3.5T Yanmar excavators are the most popular choices for coastal Wollongong residential work — both handle the sandy and clay soils common in the Illawarra well." },
       { q: "Do you deliver to Kiama and Shellharbour?", a: "Yes — Kiama and Shellharbour are within our Illawarra delivery zone. Contact our team to confirm delivery lead times for these locations." }
     ],
-    nearbyAreas: ["Kiama", "Shellharbour", "Nowra", "Central Coast", "Sydney"],
-    nearbyAreaSlugs: ["kiama", "shellharbour", "nowra", "central-coast", "sydney"],
+    nearbyAreas: ["Kiama", "Shellharbour", "Nowra", "Sydney"],
+    nearbyAreaSlugs: ["kiama", "shellharbour", "nowra", "sydney"],
     coordinates: { lat: -34.4278, lng: 150.8931 }
   },
   // --- Remaining 69 locations with concise but unique copy ---

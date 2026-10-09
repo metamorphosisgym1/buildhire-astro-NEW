@@ -92,13 +92,13 @@ export const faqs: FAQ[] = [
   {
     slug: "what-areas-does-buildhire-deliver-to",
     question: "What areas does BuildHire deliver to?",
-    answer: "BuildHire delivers across Greater Sydney including the CBD, Inner West, Eastern Suburbs, Northern Beaches, Hills District, Western Sydney, South Western Sydney, and the Sutherland Shire. We also service Newcastle, Wollongong, Central Coast, and regional NSW. Call 1300 157 882 to confirm delivery to your area.",
+    answer: "BuildHire delivers across Greater Sydney including the CBD, Inner West, Eastern Suburbs, Northern Beaches, Hills District, Western Sydney, South Western Sydney, and the Sutherland Shire. We also service Wollongong and the Blue Mountains. Call 1300 157 882 to confirm delivery to your area.",
     category: "Delivery & Logistics"
   },
   {
     slug: "how-much-does-delivery-cost",
     question: "How much does delivery cost for equipment hire?",
-    answer: "Delivery and collection are quoted for your site and hire dates. Larger machines via third-party transport. Delivery pricing for regional NSW locations (Newcastle, Wollongong, Central Coast, Hunter Valley) is available on enquiry. Call 1300 157 882 for a delivery quote.",
+    answer: "Delivery and collection are quoted for your site and hire dates. Larger machines via third-party transport. Delivery pricing for locations outside Sydney (Wollongong, Blue Mountains) is available on enquiry. Call 1300 157 882 for a delivery quote.",
     category: "Delivery & Logistics"
   },
   {
@@ -348,7 +348,7 @@ export const faqs: FAQ[] = [
 
   // Delivery & Logistics
   { slug: "how-does-buildhire-deliver-equipment", question: "How does BuildHire deliver equipment?", answer: "BuildHire delivers all equipment on a tilt-tray or low-loader truck. The driver will unload the machine at the front of your property or as close to the work area as safely possible. You are responsible for moving the machine to the work area. Delivery is available across Greater Sydney and regional NSW.", category: "Delivery & Logistics" },
-  { slug: "what-areas-does-buildhire-deliver-to", question: "What areas does BuildHire deliver to?", answer: "BuildHire delivers to all major Sydney suburbs and regional NSW locations including Wollongong, Newcastle, Central Coast, Blue Mountains, Hunter Valley, and beyond. Delivery charges may vary for regional locations. Call 1300 157 882 to confirm delivery availability and pricing for your area.", category: "Delivery & Logistics" },
+  { slug: "what-areas-does-buildhire-deliver-to", question: "What areas does BuildHire deliver to?", answer: "BuildHire delivers to all major Sydney suburbs and nearby areas including Wollongong and the Blue Mountains, and beyond. Delivery charges may vary for regional locations. Call 1300 157 882 to confirm delivery availability and pricing for your area.", category: "Delivery & Logistics" },
   { slug: "how-long-does-delivery-take", question: "How long does equipment delivery take?", answer: "For next-day delivery, book before 12pm the day prior. Delivery is typically completed in the morning between 7am and 12pm, though exact times depend on the delivery schedule. You will receive a call from the driver with an estimated arrival time on the morning of delivery.", category: "Delivery & Logistics" },
   { slug: "can-buildhire-deliver-to-a-construction-site", question: "Can BuildHire deliver to a construction site?", answer: "Yes, BuildHire regularly delivers to active construction sites. Please ensure there is a clear, safe area for the delivery truck to unload. If the site has restricted access or specific delivery requirements, contact us when booking to discuss logistics.", category: "Delivery & Logistics" },
   { slug: "what-is-the-delivery-cost-for-equipment-hire", question: "What is the delivery cost for equipment hire?", answer: "Delivery and collection are quoted for your site and hire dates. Regional NSW delivery charges may vary depending on distance. Delivery is charged separately from the daily hire rate. Call 1300 157 882 for a delivery quote to your specific location.", category: "Delivery & Logistics" },
@@ -401,8 +401,6 @@ export const faqs: FAQ[] = [
   { slug: "excavator-hire-hills-district", question: "Does BuildHire deliver excavators to the Hills District?", answer: "Yes, BuildHire delivers excavators to the Hills District including Castle Hill, Baulkham Hills, Kellyville, Rouse Hill, and surrounding areas. Next-day delivery is available. Call 1300 157 882 to confirm delivery availability for your suburb.", category: "Delivery & Logistics" },
   { slug: "excavator-hire-south-western-sydney", question: "Does BuildHire deliver excavators to South Western Sydney?", answer: "Yes, BuildHire delivers excavators to South Western Sydney including Liverpool, Campbelltown, Narellan, Camden, Oran Park, Leppington, and surrounding growth corridor suburbs. Next-day delivery is available. Call 1300 157 882 for availability.", category: "Delivery & Logistics" },
   { slug: "excavator-hire-wollongong", question: "Does BuildHire deliver excavators to Wollongong?", answer: "Yes, BuildHire delivers excavators to Wollongong and the Illawarra region including Shellharbour, Kiama, and surrounding areas. Delivery charges apply for regional locations. Call 1300 157 882 to confirm delivery availability and pricing.", category: "Delivery & Logistics" },
-  { slug: "excavator-hire-newcastle", question: "Does BuildHire deliver excavators to Newcastle?", answer: "Yes, BuildHire delivers excavators to Newcastle and the Hunter region including Maitland, Cessnock, and surrounding areas. Delivery charges apply for regional locations. Call 1300 157 882 to confirm delivery availability and pricing.", category: "Delivery & Logistics" },
-  { slug: "excavator-hire-central-coast", question: "Does BuildHire deliver excavators to the Central Coast?", answer: "Yes, BuildHire delivers excavators to the Central Coast including Gosford, Wyong, and surrounding areas. Delivery charges apply for regional locations. Call 1300 157 882 to confirm delivery availability and pricing for your area.", category: "Delivery & Logistics" },
 
   // Industry Specific
   { slug: "best-excavator-for-pool-builders-sydney", question: "What is the best excavator for pool builders in Sydney?", answer: "The 1.7T mini excavator is the most popular choice for pool builders in Sydney. It fits through standard residential side gates (1,300mm wide), has a zero-tail-swing design for working near fences, and provides sufficient digging depth (2.7m) for most pool excavations. For larger pools or harder ground, the 3.5T is recommended.", category: "Pool Excavation", relatedEquipment: ["1-7t-mini-excavator", "3-5t-excavator"] },
