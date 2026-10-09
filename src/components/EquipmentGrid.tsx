@@ -484,7 +484,7 @@ export default function EquipmentGrid() {
           Premium Excavator & Equipment Hire
         </h2>
         <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-          Excavation dry hire Sydney — from mini excavators to tipper trucks, all maintained to the highest standards.
+          Dry hire across Sydney, from <a href="/equipment/mini-excavator-hire-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">mini excavator hire</a> to <a href="/equipment/tipper-truck-hire-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">tipper truck hire</a>, <a href="/equipment/mini-dumper-hire-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">mini dumpers</a> and <a href="/equipment/excavator-attachment-hire-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">excavator attachments</a>. See <a href="/blog/excavator-hire-cost-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">what excavator hire costs in Sydney</a> before you book.
         </p>
 
         {/* Filter */}
