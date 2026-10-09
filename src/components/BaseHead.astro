@@ -220,6 +220,18 @@ const webPageSchema = {
   })(window, document, "clarity", "script", "ysnroup82i");
 </script>
 
+<!-- Meta Pixel (dataset "Build Hire Pixel" 885744557677432, Build Hire business portfolio). Added 10 Oct 2026, Murphy approved; disclosed on /privacy/. Sends page views and lead and contact events only, never names, numbers or messages. -->
+<script is:inline>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '885744557677432');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=885744557677432&ev=PageView&noscript=1" /></noscript>
+
 <!-- Contact attribution: records only click context, never phone numbers or message contents. -->
 <script>
   document.addEventListener('click', (event) => {
@@ -228,6 +240,7 @@ const webPageSchema = {
 
     const href = link.getAttribute('href') || '';
     if (href.startsWith('tel:')) {
+      window.fbq?.('track', 'Contact', { content_category: 'phone' });
       window.gtag?.('event', 'click_to_call', {
         contact_channel: 'phone',
         page_path: window.location.pathname,
@@ -235,6 +248,7 @@ const webPageSchema = {
     }
 
     if (href.includes('wa.me')) {
+      window.fbq?.('track', 'Contact', { content_category: 'whatsapp' });
       window.gtag?.('event', 'whatsapp_contact_click', {
         contact_channel: 'whatsapp',
         page_path: window.location.pathname,

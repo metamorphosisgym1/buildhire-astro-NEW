@@ -4,6 +4,7 @@ type EventParams = Record<string, EventValue>;
 declare global {
   interface Window {
     gtag?: (command: "event", eventName: string, params?: Record<string, EventValue>) => void;
+    fbq?: (command: "track", eventName: string, params?: Record<string, EventValue>) => void;
   }
 }
 
@@ -12,7 +13,17 @@ declare global {
  * Customer names, phone numbers, dates and free-text messages must never be passed here.
  */
 export function trackBuildHireEvent(eventName: string, params: EventParams = {}) {
-  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  if (typeof window === "undefined") return;
+
+  // Meta Pixel: a booking sent to WhatsApp counts as a Lead. Machine and category only.
+  if (eventName === "generate_lead" && typeof window.fbq === "function") {
+    window.fbq("track", "Lead", {
+      content_category: params.equipment_category,
+      content_name: params.equipment_name,
+    });
+  }
+
+  if (typeof window.gtag !== "function") return;
 
   const safeParams = Object.fromEntries(
     Object.entries(params).filter(([, value]) => value !== undefined && value !== "")
