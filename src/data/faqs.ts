@@ -135,19 +135,6 @@ export const faqs: FAQ[] = [
     category: "Equipment Selection",
     relatedEquipment: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator"]
   },
-  {
-    slug: "can-i-hire-an-excavator-with-a-rock-breaker",
-    question: "Can I hire an excavator with a rock breaker attachment?",
-    answer: "Yes, BuildHire offers hydraulic rock breaker attachments for our excavators. Rock breakers are ideal for breaking up concrete slabs, footings, and hard rock. Ask about attachment availability when booking — additional charges apply.",
-    category: "Equipment Selection",
-    relatedEquipment: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator"]
-  },
-  {
-    slug: "what-attachments-are-available-for-hire",
-    question: "What attachments are available for hire with excavators?",
-    answer: "BuildHire offers a standard digging bucket with all excavator hires. Optional attachments including hydraulic rock breakers and grading buckets are available on request. Attachment availability varies by machine size — call 1300 157 882 to confirm what is available for your specific hire.",
-    category: "Equipment Selection"
-  },
   // Pool Excavation
   {
     slug: "what-size-excavator-do-i-need-for-a-pool",
@@ -342,7 +329,6 @@ export const faqs: FAQ[] = [
   { slug: "when-should-i-hire-a-3-5t-vs-1-7t-excavator", question: "When should I hire a 3.5T instead of a 1.7T excavator?", answer: "Choose a 3.5T excavator when you need more digging depth (up to 3.8m), more bucket capacity for faster earthmoving, or harder ground conditions. The 3.5T is ideal for larger pool excavations, footing excavation, civil trenching, and site clearing. If access is tight, the 1.7T is the better choice.", category: "Equipment Selection", relatedEquipment: ["3-5t-excavator", "1-7t-mini-excavator"] },
   { slug: "what-is-a-zero-tail-swing-excavator", question: "What is a zero-tail-swing excavator?", answer: "A zero-tail-swing excavator has a counterweight that does not extend beyond the width of the tracks when the machine rotates. This allows it to work safely within 200mm of walls, fences, and structures without risk of damage. BuildHire's 0.8T, 1T, and 1.7T mini excavators are all zero-tail-swing machines.", category: "Equipment Selection" },
   { slug: "what-is-the-digging-depth-of-a-mini-excavator", question: "What is the maximum digging depth of a mini excavator?", answer: "BuildHire's mini excavators have the following maximum digging depths: 0.8T — 2.1m, 1T — 2.4m, 1.7T — 2.7m. For deeper excavations, the 3.5T (3.8m) or 5.5T (4.1m) excavator is required. Pool excavations typically require 1.5–2.0m of depth, which is within the range of all our mini excavators.", category: "Equipment Selection" },
-  { slug: "can-i-hire-an-excavator-with-a-rock-breaker", question: "Can I hire an excavator with a rock breaker attachment?", answer: "Yes, BuildHire's excavators can be fitted with a hydraulic rock breaker attachment for breaking concrete, rock, and hard ground. The rock breaker is available as an add-on to the standard bucket. Contact us when booking to request a rock breaker and we will confirm availability.", category: "Equipment Selection" },
   { slug: "what-is-the-difference-between-a-mini-dumper-and-a-wheelbarrow", question: "What is the difference between a mini dumper and a wheelbarrow?", answer: "A mini dumper carries 700kg per load (5–7 wheelbarrow loads), travels at walking pace on rubber tracks, and tips automatically. It eliminates the physical strain of wheelbarrowing and is 5–10x faster for moving material across a site. It is particularly valuable for backyard excavations where a tipper truck cannot access.", category: "Equipment Selection", relatedEquipment: ["mini-dumper-700kg"] },
   { slug: "do-i-need-a-tipper-truck-with-an-excavator", question: "Do I need a tipper truck with an excavator?", answer: "For most excavation jobs, yes. The excavator digs the material, but you need a way to remove it from site. A tipper truck is the most efficient option for spoil removal. For backyard jobs where a truck cannot access, a mini dumper moves material to the front of the property where a skip bin or truck can collect it.", category: "Equipment Selection", relatedEquipment: ["tipper-truck", "mini-dumper-700kg"] },
 

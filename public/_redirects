@@ -176,3 +176,11 @@ https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
 /answers/excavator-hire-newcastle/  /service-areas/  301
 /answers/excavator-hire-hunter-valley/  /service-areas/  301
 /answers/tipper-truck-hire-newcastle/  /equipment/tipper-truck-hire-sydney/  301
+
+# Excavator attachment hire page, 10 Oct 2026: the 3 rock breaker and attachment question pages fold into it (Stage 3 merge map, WAIT rows).
+/faq/can-i-hire-an-excavator-with-a-rock-breaker     /equipment/excavator-attachment-hire-sydney/  301
+/faq/can-i-hire-an-excavator-with-a-rock-breaker/    /equipment/excavator-attachment-hire-sydney/  301
+/faq/what-attachments-are-available-for-hire         /equipment/excavator-attachment-hire-sydney/  301
+/faq/what-attachments-are-available-for-hire/        /equipment/excavator-attachment-hire-sydney/  301
+/answers/excavator-hire-for-rock-breaking            /equipment/excavator-attachment-hire-sydney/  301
+/answers/excavator-hire-for-rock-breaking/           /equipment/excavator-attachment-hire-sydney/  301
