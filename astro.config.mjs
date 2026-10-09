@@ -23,8 +23,8 @@ async function htmlFiles(directory) {
 function deliveryCopyGuard() {
   const replacement = 'Delivery and collection are quoted after BuildHire receives the site and hire details.';
   const legacyDeliveryPrice = /(?:Delivery|delivery)(?:\s|&amp;|&|and|collection|within|metro|is|are|charged|separately|starts|from|to|-){0,110}\$[\d,]+(?:\s*(?:–|-|to)\s*\$[\d,]+)?[^.<]*\.?/gi;
-  const legacyDeliverVerbPrice = /(?:BuildHire\s+)?deliver(?:s|y|ing)?[^.]{0,180}\$[\d,]+(?:\s*\([^)]*\))?(?:\s*(?:or|and)\s*\$[\d,]+(?:\s*\([^)]*\))?)?[^.]*\./gi;
-  const bookingDeadline = /Book by \d{1,2}(?::\d{2})?\s*(?:am|pm)\s*for next-day delivery to [^.]+\./gi;
+  const legacyDeliverVerbPrice = /(?:BuildHire\s+)?deliver(?:s|y|ing)?[^.<>]{0,180}\$[\d,]+(?:\s*\([^)<>]*\))?(?:\s*(?:or|and)\s*\$[\d,]+(?:\s*\([^)<>]*\))?)?[^.<]*\./gi;
+  const bookingDeadline = /Book by \d{1,2}(?::\d{2})?\s*(?:am|pm)\s*for next-day delivery to [^.<]+\./gi;
   const includedDeliveryPricing = /(?:transparent\s+)?pricing that includes delivery, collection,? and GST/gi;
   const instantPriceClaim = /(?:Our\s+)?online booking(?:\s+system)?\s+(?:gives you|gives)\s+an instant price in under 60 seconds[^.]*\./gi;
 
@@ -35,14 +35,25 @@ function deliveryCopyGuard() {
         const files = await htmlFiles(fileURLToPath(dir));
         for (const file of files) {
           const html = await readFile(file, 'utf8');
-          const normalised = html
+          // Phrase swaps are safe anywhere. The sentence rewrites only run on
+          // visible body text, never on <head> (titles, meta) or <script>
+          // (JSON-LD), where a regex splice breaks the tag or the JSON.
+          const phraseSwaps = (text) => text
+            .replace(includedDeliveryPricing, 'hire pricing and delivery confirmed for the specific job')
+            .replace(/next-day delivery/gi, 'delivery subject to availability')
+            .replace(/for an instant price/gi, 'to start a quote request');
+          const sentenceRewrites = (text) => text
             .replace(bookingDeadline, 'Share your equipment, dates and site details to confirm availability and a delivery quote.')
             .replace(legacyDeliverVerbPrice, replacement)
             .replace(legacyDeliveryPrice, replacement)
-            .replace(includedDeliveryPricing, 'hire pricing and delivery confirmed for the specific job')
-            .replace(instantPriceClaim, 'Use the online booking flow to share your equipment and hire details, then confirm availability and delivery with BuildHire.')
-            .replace(/next-day delivery/gi, 'delivery subject to availability')
-            .replace(/for an instant price/gi, 'to start a quote request');
+            .replace(instantPriceClaim, 'Use the online booking flow to share your equipment and hire details, then confirm availability and delivery with BuildHire.');
+          const headEnd = html.indexOf('</head>');
+          const head = headEnd === -1 ? '' : html.slice(0, headEnd);
+          const body = headEnd === -1 ? html : html.slice(headEnd);
+          const normalised = phraseSwaps(head) + body
+            .split(/(<script[\s\S]*?<\/script>)/i)
+            .map((part, i) => (i % 2 ? phraseSwaps(part) : phraseSwaps(sentenceRewrites(part))))
+            .join('');
           if (normalised !== html) await writeFile(file, normalised);
         }
       },

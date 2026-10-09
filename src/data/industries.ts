@@ -31,7 +31,7 @@ export const industries: Industry[] = [
     faqs: [
       { q: "What equipment do landscapers typically hire from BuildHire?", a: "Landscapers most commonly hire mini excavators (0.8T–1.7T) for earthworks and retaining wall preparation, mini dumpers for moving soil and aggregate, and tipper trucks for spoil removal." },
       { q: "Can a mini excavator fit through a residential gate?", a: "Yes. Our 0.8T mini excavator is only 750mm wide and fits through gates as narrow as 800mm. The 1T is 900mm wide and the 1.7T is 1,300mm wide." },
-      { q: "How much does it cost to hire a mini excavator for landscaping?", a: "Mini excavator hire starts from $200/day for the 0.8T. Delivery and collection starts from $150. All prices include GST." }
+      { q: "How much does it cost to hire a mini excavator for landscaping?", a: "Mini excavator hire starts from $200/day for the 0.8T. Delivery and collection are quoted for your site and hire dates. All prices include GST." }
     ]
   },
   {
@@ -51,7 +51,7 @@ export const industries: Industry[] = [
     slug: "plumbers",
     name: "Plumbers",
     headline: "Equipment Hire for Plumbers",
-    description: "Mini excavators for plumbing and utility trenching across NSW. Tight access, next-day delivery, from $200/day.",
+    description: "Mini excavators for plumbing and utility trenching across NSW. Tight access, from $200/day, delivery quoted for your site.",
     longDescription: "Plumbers and drainage contractors across NSW hire BuildHire's mini excavators for service trenching, pipe laying, stormwater drainage, and sewer connections. Our compact machines are ideal for tight residential sites and can dig precise trenches without disturbing surrounding areas.",
     equipmentRecommendations: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator"],
     faqs: [

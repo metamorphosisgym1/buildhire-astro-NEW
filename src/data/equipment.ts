@@ -25,7 +25,7 @@ const equipmentCatalog: Equipment[] = [
     price: "$200/day",
     priceNum: "200",
     weeklyPrice: "$1,000/week",
-    delivery: "$150 Delivery & Collection",
+    delivery: "Quoted for your site",
     specs: [
       { label: "Operating Weight", value: "800 kg" },
       { label: "Max Digging Depth", value: "1,720 mm" },
@@ -41,7 +41,7 @@ const equipmentCatalog: Equipment[] = [
     faqs: [
       { q: "What is the minimum access width for the 0.8T mini excavator?", a: "The Yanmar SV08 tracks can retract to approximately 690mm, allowing it to pass through most standard residential gates and narrow side passages." },
       { q: "Do I need a licence to operate a 0.8T mini excavator in NSW?", a: "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required." },
-      { q: "How much does it cost to hire a 0.8T mini excavator?", a: "BuildHire's 0.8T Yanmar SV08 starts from $200/day (incl GST). Weekly rate is $1,000/week (incl GST). Delivery & collection is $150." }
+      { q: "How much does it cost to hire a 0.8T mini excavator?", a: "BuildHire's 0.8T Yanmar SV08 starts from $200/day (incl GST). Weekly rate is $1,000/week (incl GST). Delivery and collection are quoted for your site and hire dates." }
     ]
   },
   {
@@ -54,7 +54,7 @@ const equipmentCatalog: Equipment[] = [
     price: "$200/day",
     priceNum: "200",
     weeklyPrice: "$1,000/week",
-    delivery: "$150 Delivery & Collection",
+    delivery: "Quoted for your site",
     specs: [
       { label: "Operating Weight", value: "1,010 kg" },
       { label: "Max Digging Depth", value: "1,850 mm" },
@@ -68,7 +68,7 @@ const equipmentCatalog: Equipment[] = [
       { title: "Driveway Preparation", desc: "Excavating and levelling ground for new driveways." }
     ],
     faqs: [
-      { q: "How much does it cost to hire a 1T mini excavator?", a: "BuildHire's 1T Kubota U10-5 starts from $200/day (incl GST). Weekly rate is $1,000/week (incl GST). Delivery & collection is $150." },
+      { q: "How much does it cost to hire a 1T mini excavator?", a: "BuildHire's 1T Kubota U10-5 starts from $200/day (incl GST). Weekly rate is $1,000/week (incl GST). Delivery and collection are quoted for your site and hire dates." },
       { q: "What is zero tail swing?", a: "Zero tail swing means the rear counterweight of the excavator does not extend beyond the track width when rotating. This allows you to work safely right up against walls, fences, and other obstacles." },
       { q: "Do I need a licence to operate a 1T mini excavator in NSW?", a: "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW." }
     ]
@@ -83,7 +83,7 @@ const equipmentCatalog: Equipment[] = [
     price: "$205/day",
     priceNum: "205",
     weeklyPrice: "$1,100/week",
-    delivery: "$180 Delivery & Collection",
+    delivery: "Quoted for your site",
     specs: [
       { label: "Operating Weight", value: "1,710 kg" },
       { label: "Max Digging Depth", value: "2,500 mm" },
@@ -97,7 +97,7 @@ const equipmentCatalog: Equipment[] = [
       { title: "Demolition", desc: "Break up concrete slabs, driveways, and small structures." }
     ],
     faqs: [
-      { q: "How much does it cost to hire a 1.7T mini excavator?", a: "BuildHire's 1.7T Yanmar ViO17 starts from $205/day (incl GST). Weekly rate is $1,100/week (incl GST). Delivery & collection is $180." },
+      { q: "How much does it cost to hire a 1.7T mini excavator?", a: "BuildHire's 1.7T Yanmar ViO17 starts from $205/day (incl GST). Weekly rate is $1,100/week (incl GST). Delivery and collection are quoted for your site and hire dates." },
       { q: "What is the difference between a 0.8T and 1.7T mini excavator?", a: "The 1.7T excavator is larger and more powerful, offering greater digging depth (up to 2,500mm) and bucket capacity. It handles heavier earthworks and deeper trenches while still fitting through most residential access points." },
       { q: "Do I need a licence to operate a 1.7T mini excavator in NSW?", a: "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required." },
       { q: "Can the 1.7T excavator fit through a standard gate?", a: "Yes. The Yanmar ViO17 has retractable tracks that narrow to approximately 990mm, allowing it to pass through most standard residential gates and access points." }
@@ -113,7 +113,7 @@ const equipmentCatalog: Equipment[] = [
     price: "$340/day",
     priceNum: "340",
     weeklyPrice: "$1,550/week",
-    delivery: "$250 Delivery & Collection",
+    delivery: "Quoted for your site",
     specs: [
       { label: "Operating Weight", value: "3,490 kg" },
       { label: "Max Digging Depth", value: "3,560 mm" },
@@ -127,7 +127,7 @@ const equipmentCatalog: Equipment[] = [
       { title: "Demolition", desc: "Structural demolition and concrete removal on larger sites." }
     ],
     faqs: [
-      { q: "How much does it cost to hire a 3.5T excavator?", a: "BuildHire's 3.5T Yanmar ViO35-7 starts from $340/day (incl GST). Weekly rate is $1,550/week (incl GST). Delivery & collection is $250." },
+      { q: "How much does it cost to hire a 3.5T excavator?", a: "BuildHire's 3.5T Yanmar ViO35-7 starts from $340/day (incl GST). Weekly rate is $1,550/week (incl GST). Delivery and collection are quoted for your site and hire dates." },
       { q: "What size jobs is the 3.5T excavator suited for?", a: "The 3.5T is ideal for mid-to-large residential projects including pool excavations, large landscaping jobs, and commercial site preparation. It offers significantly more power and reach than a mini excavator." },
       { q: "Do I need a licence to operate a 3.5T excavator in NSW?", a: "On a registered worksite, a High Risk Work Licence (HRWL) for earthmoving equipment is required. On private property, no licence is needed." }
     ]
@@ -256,7 +256,7 @@ const equipmentCatalog: Equipment[] = [
     longDescription: "The Cormidi C7X tracked mini dumper is the perfect companion for moving materials in tight spaces and across difficult terrain. Its high-tip capability allows it to tip directly into skips and trailers.",
     price: "$200/day",
     priceNum: "200",
-    delivery: "$150 Delivery & Collection",
+    delivery: "Quoted for your site",
     specs: [
       { label: "Payload", value: "700 kg" },
       { label: "Skip Volume", value: "0.35 m³" },
@@ -270,7 +270,7 @@ const equipmentCatalog: Equipment[] = [
       { title: "Slope Work", desc: "Tracked drive handles slopes and uneven terrain with ease." }
     ],
     faqs: [
-      { q: "How much does it cost to hire the mini dumper?", a: "BuildHire's Cormidi C7X mini dumper starts from $200/day (incl GST). Delivery & collection starts from $150." },
+      { q: "How much does it cost to hire the mini dumper?", a: "BuildHire's Cormidi C7X mini dumper starts from $200/day (incl GST). Delivery and collection are quoted for your site and hire dates." },
       { q: "Can the mini dumper tip into a skip bin?", a: "Yes. The Cormidi C7X has a high-tip capability of 1,600mm, allowing it to tip directly into most standard skip bins and trailers." },
       { q: "Do I need a licence to operate the mini dumper?", a: "No licence is required to operate the mini dumper on private property in NSW." }
     ]

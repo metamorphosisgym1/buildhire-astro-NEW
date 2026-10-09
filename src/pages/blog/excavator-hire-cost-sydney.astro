@@ -43,7 +43,7 @@ const faqSchema = {
       "name": "How much does it cost to hire a mini excavator in Sydney per day?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mini excavator hire in Sydney starts from $200/day for a 0.8T machine and $205/day for a 1.7T machine. A 3.5T excavator costs from $340/day. All prices include GST. Delivery & collection is charged separately from $150."
+        "text": "Mini excavator hire in Sydney starts from $200/day for a 0.8T machine and $205/day for a 1.7T machine. A 3.5T excavator costs from $340/day. All prices include GST. Delivery and collection are quoted separately for your site."
       }
     },
     {
@@ -121,9 +121,9 @@ const faqSchema = {
             </thead>
             <tbody class="divide-y divide-gray-200">
               {[
-                { machine: "0.8T Mini Excavator (Yanmar SV08)", daily: "$200/day", delivery: "$150" },
-                { machine: "1.7T Mini Excavator (Yanmar ViO17)", daily: "$205/day", delivery: "$150" },
-                { machine: "3.5T Excavator (Yanmar ViO35-7)", daily: "$340/day", delivery: "$150" },
+                { machine: "0.8T Mini Excavator (Yanmar SV08)", daily: "$200/day", delivery: "Quoted" },
+                { machine: "1.7T Mini Excavator (Yanmar ViO17)", daily: "$205/day", delivery: "Quoted" },
+                { machine: "3.5T Excavator (Yanmar ViO35-7)", daily: "$340/day", delivery: "Quoted" },
                 { machine: "5.5T Excavator (Yanmar ViO55)", daily: "$370/day", delivery: "On enquiry" },
                 { machine: "8T Excavator (Yanmar ViO80)", daily: "$420/day", delivery: "POA" },
                 { machine: "14.5T Sumitomo Excavator", daily: "$470/day", delivery: "POA" },
@@ -149,7 +149,7 @@ const faqSchema = {
         </ul>
         <p class="text-[var(--color-text-muted)] mb-4">The following are <strong class="text-[var(--color-text)]">not included</strong> in the base hire rate:</p>
         <ul class="space-y-2 mb-8 text-[var(--color-text-muted)]">
-          <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">✗</span> Delivery & collection (charged separately — from $150)</li>
+          <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">✗</span> Delivery and collection (quoted separately for your site)</li>
           <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">✗</span> Fuel (you refuel the machine during your hire)</li>
           <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">✗</span> Operator (dry hire means you operate the machine yourself)</li>
           <li class="flex items-start gap-2"><span class="text-red-400 font-bold mt-0.5">✗</span> Attachments (rock breaker, auger, etc. — available to hire separately)</li>
@@ -160,7 +160,7 @@ const faqSchema = {
         <div class="bg-[var(--color-bg)] rounded-xl p-6 mb-8">
           <div class="space-y-3">
             {[
-              { area: "Sydney Metro (within ~30km of CBD)", cost: "$110 (0.8T & 1.7T) / $150 (3.5T)" },
+              { area: "Sydney Metro (within ~30km of CBD)", cost: "Quoted for your site" },
               { area: "Sydney Outer Suburbs (30–60km)", cost: "Call for quote" },
               { area: "Blue Mountains / Central Coast / Wollongong", cost: "Call for quote" },
               { area: "Newcastle / Hunter Valley", cost: "Call for quote" },

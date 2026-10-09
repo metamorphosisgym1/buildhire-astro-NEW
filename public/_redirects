@@ -19,3 +19,20 @@
 
 # Old sitemap address (still submitted in Search Console) goes to the sitemap the build makes
 /sitemap.xml  /sitemap-index.xml  301
+
+# Stage 3, 10 Oct 2026: competitor name and marketplace question pages removed.
+# 410 tells Google they are gone for good (faster than a 404). The 404 page is shown.
+/faq/buildhire-vs-coates-hire-excavator        /404.html  410
+/faq/buildhire-vs-coates-hire-excavator/       /404.html  410
+/faq/buildhire-vs-kennards-hire-excavator      /404.html  410
+/faq/buildhire-vs-kennards-hire-excavator/     /404.html  410
+/answers/buildhire-vs-coates-hire              /404.html  410
+/answers/buildhire-vs-coates-hire/             /404.html  410
+/answers/buildhire-vs-kennards-hire            /404.html  410
+/answers/buildhire-vs-kennards-hire/           /404.html  410
+/answers/buildhire-vs-direct-hire              /404.html  410
+/answers/buildhire-vs-direct-hire/             /404.html  410
+/answers/list-equipment-on-buildhire           /404.html  410
+/answers/list-equipment-on-buildhire/          /404.html  410
+/answers/how-buildhire-works                   /404.html  410
+/answers/how-buildhire-works/                  /404.html  410
