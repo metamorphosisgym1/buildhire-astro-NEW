@@ -2094,11 +2094,7 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
 
 - SafeWork NSW: safework.nsw.gov.au
 - Dial Before You Dig: dialbeforeyoudig.com.au or 1100
-- High Risk Work Licence applications: safework.nsw.gov.au/licences-and-registrations
-
-### BuildHire's WHS Commitment
-
-BuildHire provides all hirers with a WHS information sheet at the time of booking, covering key obligations for excavation work in NSW. Call 1300 157 882 if you have questions about WHS requirements for your specific project.`,
+- High Risk Work Licence applications: safework.nsw.gov.au/licences-and-registrations`,
     relatedQuestions: [
       { q: "Do I need a licence to operate a 1.7T mini excavator in NSW?", a: "No. Excavators under 3 tonnes do not require a licence in NSW. BuildHire's 0.8T, 1T, and 1.7T mini excavators can be operated without a High Risk Work Licence." },
       { q: "When is trench shoring required in NSW?", a: "Trench shoring is required for excavations deeper than 1.5 metres under NSW WHS regulations. For sandy soil, shoring is recommended for trenches over 1.2m deep." },

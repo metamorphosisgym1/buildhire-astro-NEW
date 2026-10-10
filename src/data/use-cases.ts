@@ -79,9 +79,8 @@ export const useCases: UseCase[] = [
     description: "Road works, civil infrastructure, and large-scale earthmoving projects.",
     equipmentRecommendations: ["3-5t-excavator", "5-5t-excavator"],
     faqs: [
-      { q: "What is the largest excavator you hire?", a: "Our largest machine is the 5.5T Yanmar ViO55, which is built for heavy-duty civil and commercial construction." },
-      { q: "Do I need a licence for civil construction equipment?", a: "Yes, operating earthmoving equipment on a registered commercial or civil worksite requires a High Risk Work Licence (HRWL)." },
-      { q: "Do your machines meet civil site safety requirements?", a: "Yes, our late-model fleet is fully compliant with civil site safety standards, including risk assessments and maintenance records." }
+      { q: "What is the largest excavator you hire?", a: "Our largest machine for hire now is the 14.5T Case CX145C, built for bulk earthworks and commercial sites." },
+      { q: "Do I need a licence for civil construction equipment?", a: "Yes, operating earthmoving equipment on a registered commercial or civil worksite requires a High Risk Work Licence (HRWL)." }
     ]
   },
   {

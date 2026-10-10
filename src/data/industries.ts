@@ -213,7 +213,7 @@ export const industries: Industry[] = [
     longDescription: "Local councils and government contractors across Sydney use BuildHire's equipment for infrastructure maintenance, drainage works, park construction, and road maintenance. Our fleet is available on daily, weekly, and monthly terms with transparent pricing.",
     equipmentRecommendations: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator"],
     faqs: [
-      { q: "Does BuildHire work with local councils and government contractors?", a: "Yes. BuildHire supplies equipment to local councils and government contractors across Sydney. We can provide invoices, insurance certificates, and compliance documentation as required." }
+      { q: "Does BuildHire work with local councils and government contractors?", a: "Yes. BuildHire dry hires excavators to local councils and government contractors across Sydney. Call 1300 157 882 to talk through what your project needs." }
     ]
   },
   {
