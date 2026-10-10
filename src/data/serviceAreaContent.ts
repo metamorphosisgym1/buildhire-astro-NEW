@@ -58,7 +58,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     state: "NSW",
     suburbs: ["Parramatta", "North Parramatta", "Westmead", "Harris Park", "Rosehill", "Woodville", "Granville", "South Granville"],
     intro: "BuildHire delivers excavators and construction equipment to Parramatta and all of Western Sydney — next-day arrival, transparent pricing, and machines maintained to the highest standard.",
-    bodyParagraph1: "Parramatta is the engine room of Western Sydney's construction boom. From high-density residential development along Church Street and Church Street North to infrastructure upgrades around Westmead and the Parramatta Light Rail corridor, demand for reliable plant hire has never been higher. BuildHire services Parramatta and the surrounding Western Sydney suburbs with a full fleet of dry hire excavators, mini dumpers, and tipper trucks — all owned, maintained, and delivered by our own team.",
+    bodyParagraph1: "Parramatta is the engine room of Western Sydney's construction boom. From high-density residential development along Church Street and Church Street North to infrastructure upgrades around Westmead and the Parramatta Light Rail corridor, demand for reliable plant hire has never been higher. BuildHire services Parramatta and the surrounding Western Sydney suburbs with a full fleet of dry hire excavators, mini dumpers and attachments, all owned and maintained by our own team.",
     bodyParagraph2: "For residential builders and landscapers working in Parramatta's established suburbs, our 1T and 1.7T mini excavators are the go-to choice — compact enough for side access and residential lots, powerful enough to handle pool excavations, retaining walls, and drainage work. Commercial builders and civil contractors in the Parramatta CBD and Westmead precinct rely on our 5.5T, 14.5T, and 23T machines for bulk earthworks, footing excavations, and site preparation on larger projects.",
     caseStudy: {
       client: "Almighty Fencing",
@@ -711,7 +711,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Windsor", "Windsor Downs", "McGraths Hill", "Pitt Town", "Wilberforce", "Ebenezer", "Freemans Reach", "Cattai"],
     intro: "BuildHire delivers excavators and construction equipment to Windsor and the Hawkesbury region — next-day delivery, late-model machines, and transparent pricing.",
     bodyParagraph1: "Windsor and the Hawkesbury region combine rural residential development with a growing construction market driven by the Western Sydney Airport and the North West Growth Area. From acreage properties in Pitt Town and Wilberforce to new residential estates in Windsor Downs and McGraths Hill, BuildHire delivers the right machine for every Hawkesbury project.",
-    bodyParagraph2: "Hawkesbury projects often involve larger blocks and rural access conditions. The 3.5T and 5.5T Yanmar excavators are the most popular choices for Hawkesbury residential work, while the 14.5T and 23T Sumitomo machines handle larger civil and infrastructure projects. Our tipper trucks are also popular in the Hawkesbury for spoil removal on larger rural properties.",
+    bodyParagraph2: "Hawkesbury projects often involve larger blocks and rural access conditions. The 3.5T and 5.5T Yanmar excavators are the most popular choices for Hawkesbury residential work, while the 14.5T handles larger civil and infrastructure projects.",
     caseStudy: {
       client: "FW Building",
       projectType: "Acreage development — site clearing and drainage in Windsor",
@@ -723,7 +723,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     faqs: [
       { q: "Do you deliver excavators to Windsor and the Hawkesbury?", a: "Yes — BuildHire delivers to Windsor and all Hawkesbury suburbs including Windsor Downs, McGraths Hill, Pitt Town, and Wilberforce." },
       { q: "What excavator is best for acreage properties in Windsor?", a: "The 5.5T Yanmar ViO55 is the most popular choice for Windsor acreage projects — site clearing, drainage, and earthworks on larger rural blocks." },
-      { q: "Do you deliver tipper trucks to Windsor?", a: "Yes — tipper trucks are available alongside excavator hire and are popular in the Hawkesbury for spoil removal on larger rural properties." }
+      { q: "Can I hire attachments with an excavator in Windsor?", a: "Yes. Hydraulic hammers, augers, rock grabs and sieve buckets can be hired by the day alongside your excavator." }
     ],
     nearbyAreas: ["Richmond", "Penrith", "Rouse Hill", "Box Hill", "Hawkesbury"],
     nearbyAreaSlugs: ["richmond", "penrith", "rouse-hill", "box-hill", "marsden-park"],
@@ -737,7 +737,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Richmond", "North Richmond", "Clarendon", "Kurmond", "Glossodia", "Yarramundi", "Agnes Banks", "Londonderry"],
     intro: "BuildHire delivers excavators and construction equipment to Richmond and the Hawkesbury region — next-day delivery, late-model machines, and transparent pricing.",
     bodyParagraph1: "Richmond and North Richmond are the Hawkesbury's commercial and residential hub, with a growing construction market driven by the region's proximity to the Western Sydney Airport and the North West Growth Area. BuildHire delivers to Richmond and all Hawkesbury suburbs with late-model machines and next-day delivery.",
-    bodyParagraph2: "For Richmond residential projects, the 3.5T and 5.5T Yanmar excavators are the most popular choices. For larger acreage and rural projects in Clarendon, Kurmond, and Glossodia, the 5.5T and 14.5T machines handle the bulk earthworks and site clearing required. Our tipper trucks are also popular in the Richmond area for spoil removal.",
+    bodyParagraph2: "For Richmond residential projects, the 3.5T and 5.5T Yanmar excavators are the most popular choices. For larger acreage and rural projects in Clarendon, Kurmond, and Glossodia, the 5.5T and 14.5T machines handle the bulk earthworks and site clearing required.",
     caseStudy: {
       client: "Almighty Fencing",
       projectType: "Post-hole excavation across Richmond residential and rural projects",

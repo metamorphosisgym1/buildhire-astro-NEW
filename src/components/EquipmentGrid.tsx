@@ -13,12 +13,10 @@ const backhoeImg = "/assets/backhoe-loader.webp";
 const miniDumperImg = "/assets/mini-dumper.webp";
 const cormidiC7xImg = "/assets/cormidi-c7x.jpg";
 const cormidiC85Img = "/assets/cormidi-c85.webp";
-const isuzuTipperImg = "/assets/isuzu-tipper.webp";
 const rockBreakerImg = "/assets/rock-breaker-buildhire.webp";
 const sieveBucketImg = "/assets/sieve-bucket-tiger.png";
 const augerImg = "/assets/auger-drive.jpg";
 const rockGrabImg = "/assets/rock-grab.webp";
-const concreteSawImg = "/assets/concrete-saw.webp";
 const demolitionHammerImg = "/assets/demolition-hammer.webp";
 const typhoonWasherImg = "/assets/typhoon-pressure-washer.webp";
 
@@ -37,7 +35,7 @@ import {
 } from "@/components/ui/tooltip";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
-const categories = ["All", "Excavators", "Mini Dumpers", "Tipper Trucks", "Attachments", "Concrete saws & other tools"];
+const categories = ["All", "Excavators", "Mini Dumpers", "Attachments", "Trailers", "Other tools"];
 
 interface EquipmentItem {
   name: string;
@@ -62,6 +60,7 @@ const availableEquipment: EquipmentItem[] = [
     badge: "available",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-SV08-Excavator-Brochure.pdf",
     specs: {
+      "Included": "Mud bucket, GP bucket and ripper",
       "Operating Weight": "980 kg",
       "Dig Depth": "1,510 mm",
       "Bucket Capacity": "0.02 m³",
@@ -77,6 +76,7 @@ const availableEquipment: EquipmentItem[] = [
     rate: "$200/day",
     badge: "available",
     specs: {
+      "Included": "Mud bucket, GP bucket and ripper",
       "Operating Weight": "1,200 kg",
       "Dig Depth": "1,800 mm",
       "Dig Radius": "3,380 mm",
@@ -93,6 +93,7 @@ const availableEquipment: EquipmentItem[] = [
     badge: "available",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-ViO17-Excavator-Brochure.pdf",
     specs: {
+      "Included": "Mud bucket, GP bucket and ripper",
       "Operating Weight": "1,700 kg",
       "Dig Depth": "2,430 mm",
       "Bucket Capacity": "0.04 m³",
@@ -109,6 +110,7 @@ const availableEquipment: EquipmentItem[] = [
     badge: "available",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2024/06/ViO30-7ViO35-7_240620_Single_LR.pdf",
     specs: {
+      "Included": "Mud bucket, GP bucket and ripper",
       "Operating Weight": "3,500 kg",
       "Dig Depth": "3,200 mm",
       "Bucket Capacity": "0.10 m³",
@@ -125,6 +127,7 @@ const availableEquipment: EquipmentItem[] = [
     badge: "available",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-ViO50-ViO55-Excavator-Brochure.pdf",
     specs: {
+      "Included": "Mud bucket, GP bucket and ripper",
       "Operating Weight": "5,500 kg",
       "Dig Depth": "3,870 mm",
       "Bucket Capacity": "0.16 m³",
@@ -141,6 +144,7 @@ const availableEquipment: EquipmentItem[] = [
     badge: "available",
     brochureUrl: "/brochures/CX145C-Specs.pdf",
     specs: {
+      "Included": "Mud bucket, GP bucket and ripper",
       "Operating Weight": "14,500 kg",
       "Dig Depth": "5,830 mm",
       "Bucket Capacity": "0.55 m³",
@@ -166,24 +170,8 @@ const availableEquipment: EquipmentItem[] = [
     },
   },
   {
-    name: "Isuzu NQR450 Tipper",
-    category: "Tipper Trucks",
-    image: isuzuTipperImg,
-    rate: "$280/day",
-    badge: "available",
-    brochureUrl: undefined,
-    specs: {
-      "GVM": "8,700 kg",
-      "Payload": "4,500 kg",
-      "Engine Power": "110 kW",
-      "Tray Size": "4.2m x 2.1m",
-      "Drive": "4x2",
-      "Transmission": "6-speed AMT",
-    },
-  },
-  {
     name: "Box Trailer",
-    category: "Tipper Trucks",
+    category: "Trailers",
     image: boxTrailerImg,
     rate: "$150/day",
     badge: "available",
@@ -230,26 +218,26 @@ const availableEquipment: EquipmentItem[] = [
     useContain: true,
     specs: {
       "Type": "Hydraulic Breaker",
-      "Suitable For": "0.8T to 14.5T Excavators",
+      "Suitable For": "1T to 14.5T Excavators",
     },
   },
   {
     name: "Auger Drive",
     category: "Attachments",
     image: augerImg,
-    rate: "$130/day",
+    rate: "$180/day",
     badge: "available",
     useContain: true,
     specs: {
-      "Type": "Hydraulic Auger",
-      "Suitable For": "0.8T to 14.5T Excavators",
+      "Type": "Hydraulic Auger (one drill)",
+      "Suitable For": "1T to 14.5T Excavators",
     },
   },
   {
     name: "Rock Grab",
     category: "Attachments",
     image: rockGrabImg,
-    rate: "$135/day",
+    rate: "$140/day",
     badge: "available",
     useContain: true,
     specs: {
@@ -271,21 +259,8 @@ const availableEquipment: EquipmentItem[] = [
     },
   },
   {
-    name: "Husqvarna K970 MKIII 16\" Concrete Saw",
-    category: "Concrete saws & other tools",
-    image: concreteSawImg,
-    rate: "$140/day",
-    badge: "available",
-    useContain: true,
-    specs: {
-      "Type": "Concrete Saw",
-      "Blade Size": "16\"",
-      "Engine": "Petrol",
-    },
-  },
-  {
     name: "Bosch GSH16-30 Demolition Hammer",
-    category: "Concrete saws & other tools",
+    category: "Other tools",
     image: demolitionHammerImg,
     rate: "$110/day",
     badge: "available",
@@ -298,7 +273,7 @@ const availableEquipment: EquipmentItem[] = [
   },
   {
     name: "Typhoon TPW4200H Pressure Washer",
-    category: "Concrete saws & other tools",
+    category: "Other tools",
     image: typhoonWasherImg,
     rate: "$150/day",
     badge: "available",
@@ -467,7 +442,7 @@ export default function EquipmentGrid() {
           Premium Excavator & Equipment Hire
         </h2>
         <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-          Dry hire across Sydney, from <a href="/equipment/mini-excavator-hire-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">mini excavator hire</a> to <a href="/equipment/tipper-truck-hire-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">tipper truck hire</a>, <a href="/equipment/mini-dumper-hire-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">mini dumpers</a> and <a href="/equipment/excavator-attachment-hire-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">excavator attachments</a>. See <a href="/blog/excavator-hire-cost-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">what excavator hire costs in Sydney</a> before you book.
+          Dry hire across Sydney, from <a href="/equipment/mini-excavator-hire-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">mini excavator hire</a> to <a href="/equipment/mini-dumper-hire-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">mini dumpers</a> and <a href="/equipment/excavator-attachment-hire-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">excavator attachments</a>. See <a href="/blog/excavator-hire-cost-sydney/" className="text-primary underline underline-offset-2 hover:text-primary/80">what excavator hire costs in Sydney</a> before you book.
         </p>
 
         {/* Filter */}

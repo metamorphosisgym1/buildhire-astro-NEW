@@ -11,7 +11,7 @@ export const useCases: UseCase[] = [
     slug: "pool-excavation",
     name: "Pool Excavation",
     description: "Digging pool shells in residential backyards with precision and minimal disruption.",
-    equipmentRecommendations: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator", "mini-dumper-700kg", "tipper-truck"],
+    equipmentRecommendations: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator", "mini-dumper-700kg"],
     faqs: [
       { q: "What size excavator is best for pool excavation?", a: "For most residential pools, a 1.7T or 3.5T excavator is ideal. They offer enough digging depth while still being able to navigate typical backyard access points." },
       { q: "How do I remove the soil from a pool excavation?", a: "A mini dumper is perfect for moving soil from the backyard to a tipper truck or skip bin parked at the front of the property." },
@@ -44,7 +44,7 @@ export const useCases: UseCase[] = [
     slug: "landscaping-retaining-walls",
     name: "Landscaping & Retaining Walls",
     description: "Site preparation, levelling, and excavating footings for landscape construction.",
-    equipmentRecommendations: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator", "mini-dumper-700kg", "tipper-truck"],
+    equipmentRecommendations: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator", "mini-dumper-700kg"],
     faqs: [
       { q: "What equipment do I need to build a retaining wall?", a: "An excavator is essential for digging the footings and backfilling, while a mini dumper is great for moving gravel and materials." },
       { q: "Can an excavator be used for levelling a yard?", a: "Yes, our excavators come with a mud bucket (batter bucket) which is perfect for spreading topsoil and levelling ground." },
@@ -55,10 +55,10 @@ export const useCases: UseCase[] = [
     slug: "driveway-preparation",
     name: "Driveway Preparation",
     description: "Excavating and levelling ground for new concrete, paved, or gravel driveways.",
-    equipmentRecommendations: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator", "tipper-truck"],
+    equipmentRecommendations: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator"],
     faqs: [
       { q: "What size excavator is needed for a driveway?", a: "A 1.7T or 3.5T excavator is typically used for driveway preparation, depending on the size of the area and the amount of material to be removed." },
-      { q: "How do I dispose of the old driveway material?", a: "A tipper truck is ideal for removing broken concrete, asphalt, and soil from the site to a recycling facility." },
+      { q: "How do I dispose of the old driveway material?", a: "Book skip bins or a waste removal truck to take broken concrete, asphalt and soil to a recycling facility." },
       { q: "Can an excavator break up an existing concrete driveway?", a: "Yes, excavators can be fitted with a hydraulic rock breaker attachment to quickly demolish existing concrete slabs." }
     ]
   },
@@ -66,9 +66,9 @@ export const useCases: UseCase[] = [
     slug: "site-clearing-demolition",
     name: "Site Clearing & Demolition",
     description: "Removing vegetation, topsoil, debris, and small structures from residential blocks.",
-    equipmentRecommendations: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator", "tipper-truck"],
+    equipmentRecommendations: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator"],
     faqs: [
-      { q: "What equipment is best for clearing a residential block?", a: "A 3.5T or 5.5T excavator paired with a tipper truck provides the power and transport capacity needed for efficient site clearing." },
+      { q: "What equipment is best for clearing a residential block?", a: "A 3.5T or 5.5T excavator provides the power needed for efficient site clearing. Book skip bins or trucks to take the cleared material away." },
       { q: "Can I use an excavator to remove tree stumps?", a: "Yes, an excavator with a ripper or standard digging bucket is highly effective at digging around and extracting tree stumps." },
       { q: "Do you hire out rock breakers for demolition?", a: "Yes, we offer hydraulic rock breaker attachments for our excavators, perfect for breaking up concrete slabs and footings." }
     ]
@@ -77,7 +77,7 @@ export const useCases: UseCase[] = [
     slug: "civil-construction",
     name: "Civil Construction",
     description: "Road works, civil infrastructure, and large-scale earthmoving projects.",
-    equipmentRecommendations: ["3-5t-excavator", "5-5t-excavator", "tipper-truck"],
+    equipmentRecommendations: ["3-5t-excavator", "5-5t-excavator"],
     faqs: [
       { q: "What is the largest excavator you hire?", a: "Our largest machine is the 5.5T Yanmar ViO55, which is built for heavy-duty civil and commercial construction." },
       { q: "Do I need a licence for civil construction equipment?", a: "Yes, operating earthmoving equipment on a registered commercial or civil worksite requires a High Risk Work Licence (HRWL)." },
@@ -88,20 +88,18 @@ export const useCases: UseCase[] = [
     slug: "soil-spoil-removal",
     name: "Soil & Spoil Removal",
     description: "Efficiently removing excavated soil, spoil, and waste from construction sites.",
-    equipmentRecommendations: ["mini-dumper-700kg", "tipper-truck"],
+    equipmentRecommendations: ["mini-dumper-700kg"],
     faqs: [
       { q: "What is the best way to remove soil from a tight access site?", a: "A high-tip mini dumper can easily transport soil from the backyard and tip it directly into a skip bin or tipper truck." },
-      { q: "How much soil can a tipper truck hold?", a: "Our Isuzu NQR450 tipper truck has a payload capacity of 4,500kg and a body volume of 6 cubic metres." },
-      { q: "What licence is required to drive a tipper truck?", a: "A Medium Rigid (MR) or higher licence is required to operate our 4.5T payload tipper truck." }
+      { q: "How much can the mini dumper carry?", a: "Our Cormidi C7X mini dumper carries up to 700kg per load and high tips to 1,600mm, so it can tip straight into most skip bins." }
     ]
   },
   {
     slug: "material-transport",
     name: "Material Transport",
     description: "Delivering gravel, sand, aggregate, and landscaping supplies to site.",
-    equipmentRecommendations: ["tipper-truck", "mini-dumper-700kg"],
+    equipmentRecommendations: ["mini-dumper-700kg"],
     faqs: [
-      { q: "Can I use a tipper truck to pick up landscaping supplies?", a: "Yes, our tipper truck is perfect for collecting bulk materials like sand, gravel, and mulch from landscape suppliers." },
       { q: "How do I move bulk materials from the driveway to the backyard?", a: "A tracked mini dumper is the most efficient way to transport bulk materials across your property without damaging the lawn." },
       { q: "Does the mini dumper handle wet or muddy conditions?", a: "Yes, the rubber tracks on our mini dumper provide excellent traction and low ground pressure, making it ideal for wet or muddy sites." }
     ]

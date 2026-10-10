@@ -37,7 +37,6 @@ const vio17Img = "/assets/vio17-excavator.png";
 const vio35Img = "/assets/vio35-excavator.png";
 const vio55Img = "/assets/vio55-excavator.png";
 const vio80Img = "/assets/vio80-excavator.png";
-const isuzuTipperImg = "/assets/isuzu-tipper.webp";
 const cormidiC7xImg = "/assets/cormidi-c7x.jpg";
 const cormidiC85Img = "/assets/cormidi-c85.webp";
 const loaderImg = "/assets/loader-lilac.jpg";
@@ -48,16 +47,15 @@ const augerImg = "/assets/auger-drive.jpg";
 const rockGrabImg = "/assets/rock-grab.webp";
 const typhoonWasherImg = "/assets/typhoon-pressure-washer.webp";
 const demolitionHammerImg = "/assets/demolition-hammer.webp";
-const concreteSawImg = "/assets/concrete-saw.webp";
 
 const WHATSAPP_NUMBER = "61435421324";
 
 const categoryIcons: Record<string, React.ComponentType<any>> = {
   Excavators: ExcavatorIcon,
   "Mini Dumpers": MiniDumperIcon,
-  "Tipper Trucks": Truck,
+  Trailers: Truck,
   Attachments: Wrench,
-  "Concrete saws & other tools": CircleDot,
+  "Other tools": CircleDot,
 };
 
 const machineImages: Record<string, string> = {
@@ -69,13 +67,14 @@ const machineImages: Record<string, string> = {
   "8T Excavator (ViO80 Yanmar)": vio80Img,
   "14.5T Excavator (Case CX145C)": vio80Img,
   "23T Excavator (Sumitomo SH235X-6)": vio80Img,
-  "Isuzu NQR450 Tipper": isuzuTipperImg,
   "Box Trailer": boxTrailerImg,
   "Cormidi C7x 700kg Petrol High Tip": cormidiC7xImg,
   "Cormidi C85": cormidiC85Img,
-  "Auger Drive 1.7T (200mm, 300mm, 450mm)": augerImg,
-  "Auger Drive 3.5T (200mm, 300mm, 450mm)": augerImg,
-  "Auger Drive 5.5T (200mm, 300mm, 450mm)": augerImg,
+  "Auger Drive 1T": augerImg,
+  "Auger Drive 1.7T": augerImg,
+  "Auger Drive 3.5T": augerImg,
+  "Auger Drive 5.5T": augerImg,
+  "Auger Drive 14.5T": augerImg,
   "Rock Grab 3.5T": rockGrabImg,
   "Rock Grab 5.5T": rockGrabImg,
   "Rock Grab 14.5T": rockGrabImg,
@@ -84,14 +83,11 @@ const machineImages: Record<string, string> = {
   "Sieve Bucket 5.5T (Tiger Buckets)": sieveBucketImg,
   "Sieve Bucket 14.5T (Tiger Buckets)": sieveBucketImg,
   "Trailer (1.7T)": boxTrailerImg,
-  "Hydraulic Hammer 0.8T/1T": rockBreakerImg,
+  "Hydraulic Hammer 1T": rockBreakerImg,
   "Hydraulic Hammer 1.7T": rockBreakerImg,
   "Hydraulic Hammer 3.5T": rockBreakerImg,
   "Hydraulic Hammer 5.5T": rockBreakerImg,
   "Hydraulic Hammer 14.5T": rockBreakerImg,
-  "Auger Drive 0.8T/1T (1 attachment)": augerImg,
-  "Auger Drive 14.5T (200mm, 300mm, 450mm)": augerImg,
-  "Husqvarna K970 MKIII 16\" Concrete Saw": concreteSawImg,
   "Bosch GSH16-30 Demolition Hammer": demolitionHammerImg,
   "Typhoon TPW4200H Pressure Washer": typhoonWasherImg,
 };
@@ -104,39 +100,37 @@ const equipmentData: Record<string, { name: string; rate: number; weeklyRate?: n
     { name: "3.5T Excavator (ViO35-7 Yanmar)", rate: 340, weeklyRate: 1550 },
     { name: "5.5T Excavator (ViO55 Yanmar)", rate: 370, weeklyRate: 1650 },
     { name: "8T Excavator (ViO80 Yanmar)", rate: 420, comingSoon: true },
-    { name: "14.5T Excavator (Case CX145C)", rate: 490, weeklyRate: 2100 },
+    { name: "14.5T Excavator (Case CX145C)", rate: 490, weeklyRate: 2000 },
     { name: "23T Excavator (Sumitomo SH235X-6)", rate: 490, weeklyRate: 2100, comingSoon: true },
   ],
   "Mini Dumpers": [
-    { name: "Cormidi C7x 700kg Petrol High Tip", rate: 200 },
+    { name: "Cormidi C7x 700kg Petrol High Tip", rate: 200, weeklyRate: 1000 },
     { name: "Cormidi C85", rate: 200 },
   ],
-  "Tipper Trucks": [
-    { name: "Isuzu NQR450 Tipper", rate: 280 },
+  Trailers: [
     { name: "Box Trailer", rate: 150 },
   ],
   Attachments: [
-    { name: "Hydraulic Hammer 0.8T/1T", rate: 130 },
-    { name: "Hydraulic Hammer 1.7T", rate: 130 },
+    { name: "Hydraulic Hammer 1T", rate: 130 },
+    { name: "Hydraulic Hammer 1.7T", rate: 150 },
     { name: "Hydraulic Hammer 3.5T", rate: 140 },
     { name: "Hydraulic Hammer 5.5T", rate: 190 },
-    { name: "Hydraulic Hammer 14.5T", rate: 250 },
-    { name: "Auger Drive 0.8T/1T (1 attachment)", rate: 130 },
-    { name: "Auger Drive 1.7T (200mm, 300mm, 450mm)", rate: 130 },
-    { name: "Auger Drive 3.5T (200mm, 300mm, 450mm)", rate: 160 },
-    { name: "Auger Drive 5.5T (200mm, 300mm, 450mm)", rate: 180 },
-    { name: "Auger Drive 14.5T (200mm, 300mm, 450mm)", rate: 230 },
-    { name: "Rock Grab 3.5T", rate: 135 },
+    { name: "Hydraulic Hammer 14.5T", rate: 230 },
+    { name: "Auger Drive 1T", rate: 180 },
+    { name: "Auger Drive 1.7T", rate: 190 },
+    { name: "Auger Drive 3.5T", rate: 200 },
+    { name: "Auger Drive 5.5T", rate: 200 },
+    { name: "Auger Drive 14.5T", rate: 250 },
+    { name: "Rock Grab 3.5T", rate: 140 },
     { name: "Rock Grab 5.5T", rate: 150 },
-    { name: "Rock Grab 14.5T", rate: 180 },
+    { name: "Rock Grab 14.5T", rate: 150 },
     { name: "Sieve Bucket 1.7T (Tiger Buckets)", rate: 50 },
     { name: "Sieve Bucket 3.5T (Tiger Buckets)", rate: 50 },
     { name: "Sieve Bucket 5.5T (Tiger Buckets)", rate: 50 },
     { name: "Sieve Bucket 14.5T (Tiger Buckets)", rate: 50 },
     { name: "Trailer (1.7T)", rate: 50 },
   ],
-  "Concrete saws & other tools": [
-    { name: "Husqvarna K970 MKIII 16\" Concrete Saw", rate: 140 },
+  "Other tools": [
     { name: "Bosch GSH16-30 Demolition Hammer", rate: 110 },
     { name: "Typhoon TPW4200H Pressure Washer", rate: 150 },
   ],

@@ -38,10 +38,6 @@ The training typically takes 1–3 days depending on prior experience. The licen
 
 BuildHire's 3.5T and 5.5T excavators require a valid HRWL. When hiring these machines, BuildHire may ask for evidence of your HRWL. If you're unsure whether your licence covers the machine you want to hire, contact BuildHire before booking.
 
-### What About Tipper Trucks?
-
-Tipper trucks require a Medium Rigid (MR) or higher driver's licence — not an HRWL. If you hold a standard car licence only, you cannot legally drive a tipper truck on public roads. BuildHire's tipper truck is dry hire only, meaning you must hold the appropriate licence.
-
 ### Dry Hire and Your Responsibility
 
 Because BuildHire operates on a dry hire model — machines are delivered to your site and you operate them yourself — the responsibility for ensuring you hold the correct licence rests entirely with you as the hirer. BuildHire provides full operating instructions with every hire, but we are not responsible for verifying your licence status.
@@ -123,10 +119,10 @@ For projects lasting 3–4 weeks, BuildHire offers monthly rates. Contact BuildH
 Book online at buildhire.com.au for the fastest booking experience. If your project runs longer than expected, contact BuildHire to extend your hire — extending is typically cheaper than returning and re-hiring. For projects lasting 3+ weeks, ask about monthly rates.`,
     relatedQuestions: [
       { q: "What is included in BuildHire's mini excavator hire price in Sydney?", a: "BuildHire's hire price includes the machine, full operating instructions and GST. Delivery and collection are quoted for your site and hire dates. Return the machine with the same fuel level, or a refuelling charge applies (minimum $50 + GST). Cleaning charges may apply for mud, concrete or other build-up (minimum $150 + GST)." },
-      { q: "Is weekly hire cheaper than daily hire for a mini excavator?", a: "On the 3.5T, 5.5T and 14.5T, a week costs less than 5 daily rates. On the 0.8T and 1T it costs the same as 5 days, and on the 1.7T it costs $75 more. Weekly rates incl GST: $1,000 for the 0.8T and 1T, $1,100 for the 1.7T, $1,550 for the 3.5T, $1,650 for the 5.5T and $2,100 for the 14.5T." },
+      { q: "Is weekly hire cheaper than daily hire for a mini excavator?", a: "No. On the 0.8T and 1T a week costs the same as 5 days, and on the 1.7T it costs $75 more. On the 3.5T, 5.5T and 14.5T a week costs less than 5 daily rates. Weekly rates incl GST: $1,000 for the 0.8T and 1T, $1,100 for the 1.7T, $1,550 for the 3.5T, $1,650 for the 5.5T and $2,000 for the 14.5T." },
       { q: "How much does delivery cost for a mini excavator in Sydney?", a: "Delivery and collection are quoted for your site and hire dates. Larger machines (5.5T+) are delivered by third-party transport at pricing on enquiry. For regional NSW locations, delivery costs vary by distance." },
       { q: "How much does a sieve bucket attachment cost to hire?", a: "A sieve bucket (screening bucket) from Tiger Buckets costs $50/day when hired with a compatible excavator from BuildHire. Available on the 1.7T, 3.5T, 5.5T, and 14.5T excavators. Ideal for separating soil, screening topsoil, and sorting aggregate on site." },
-      { q: "What auger drill sizes are available with BuildHire excavators?", a: "BuildHire's auger attachments are available in 200mm, 300mm, and 450mm drill sizes for the 1.7T through 14.5T excavators. The 200mm is ideal for fence posts and small piers; the 300mm for standard footings; the 450mm for large bored piers and tree planting." }
+      { q: "Does the BuildHire auger come with more than one drill?", a: "No. Each BuildHire auger drive comes with one drill. Augers are $180/day on the 1T, $190 on the 1.7T, $200 on the 3.5T and 5.5T, and $250 on the 14.5T, incl GST and on top of the machine rate." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -186,7 +182,7 @@ Before booking your excavator for pool work, confirm:
 4. Your licence status (under 3T = no licence; 3T+ = HRWL required)
 5. Spoil removal plan (where will the excavated soil go? You'll need a tipper truck or skip bins)
 
-BuildHire can deliver both an excavator and a tipper truck for pool excavation projects. Call 1300 157 882 to discuss your project.`,
+BuildHire can deliver an excavator and a mini dumper for pool excavation projects. Call 1300 157 882 to discuss your project.`,
     relatedQuestions: [
       { q: "Can a mini excavator fit through a standard residential gate for pool work?", a: "Yes. The 1.7T mini excavator is 1,300mm wide and fits through standard residential gates. The 1T (900mm) and 0.8T (750mm) fit through narrower gates." },
       { q: "How deep can a 1.7T excavator dig for a pool?", a: "The 1.7T mini excavator has a maximum dig depth of 2,400mm, which is sufficient for most residential pool depths of 1,500–1,800mm." },
@@ -298,7 +294,7 @@ Once your booking is confirmed:
 
 **Extend your hire if needed:** If your project takes longer than expected, contact BuildHire to extend your hire. Extending is typically cheaper than returning and re-hiring, and avoids a gap in machine availability.
 
-**Combine machines:** BuildHire can deliver multiple machines to the same site. If you need both an excavator and a tipper truck, book both in a single order.
+**Combine machines:** BuildHire can deliver multiple machines to the same site. If you need both an excavator and a mini dumper, book both in a single order.
 
 **Online booking is available 24/7:** You can book at any time — evenings, weekends, public holidays. BuildHire's booking system is always open.
 
@@ -547,13 +543,13 @@ To avoid the stress of running out of hire time, BuildHire recommends booking on
 - Large pool (8–12m), average soil: Book 2 days with a 3.5T
 - Any pool in rock or heavy clay: Book 3 days and consider a rock breaker attachment
 
-### Combining Excavator and Tipper Hire
+### Combining Excavator and Mini Dumper Hire
 
-BuildHire offers both excavators and tipper trucks. For pool excavation, hiring both from BuildHire simplifies logistics — one booking, one delivery, one point of contact. Call 1300 157 882 to arrange a combined excavator and tipper hire.`,
+BuildHire hires both excavators and mini dumpers. For pool excavation, hiring both from BuildHire means one booking and one point of contact. Call 1300 157 882 to arrange a combined hire.`,
     relatedQuestions: [
       { q: "How long does it take to excavate a pool in clay soil in Sydney?", a: "Clay soil is harder to excavate than sandy soil. Add 30–50% to your time estimate. A standard pool in clay may take 2–3 days with a 1.7T mini excavator." },
       { q: "Should I hire a 1.7T or 3.5T excavator for pool excavation?", a: "The 1.7T suits standard residential pools (up to 8m) in average soil. The 3.5T is faster for larger pools or difficult soil conditions (clay, rock)." },
-      { q: "Does BuildHire hire tipper trucks for pool spoil removal?", a: "Yes. BuildHire offers tipper truck hire alongside excavator hire. Call 1300 157 882 to arrange a combined excavator and tipper hire for your pool project." }
+      { q: "Can I hire a mini dumper with the excavator for a pool dig?", a: "Yes. BuildHire hires a 700kg mini dumper alongside its excavators to move spoil from the pool to the skip bin. Call 1300 157 882 to book both for your pool project." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -658,68 +654,6 @@ Call BuildHire on 1300 157 882 to discuss your usage pattern and find the most c
       { q: "How many days per year do I need to use an excavator before buying is cheaper than hiring?", a: "The break-even point is approximately 150–200 days of use per year when all ownership costs (insurance, maintenance, transport, depreciation) are factored in." },
       { q: "What does a second-hand 1.7T mini excavator cost in NSW?", a: "A used 1.7T mini excavator (3–5 years old) costs $25,000–$45,000 in NSW. New machines cost $55,000–$75,000." },
       { q: "Does BuildHire offer long-term hire rates for frequent users?", a: "Yes. BuildHire offers weekly and monthly hire rates that provide significant savings over daily rates. Contact BuildHire on 1300 157 882 to discuss long-term hire options." }
-    ],
-    schema: { type: "FAQPage", speakable: true }
-  },
-  {
-    slug: "tipper-truck-hire-sydney",
-    question: "How much does tipper truck hire cost in Sydney?",
-    shortAnswer: "Tipper truck hire in Sydney starts from $280/day from BuildHire. Delivery and collection are quoted for your site and hire dates. A Medium Rigid (MR) or higher licence is required to drive a tipper truck.",
-    fullAnswer: `## Tipper Truck Hire in Sydney — Complete Guide
-
-Tipper trucks are essential for any project that generates large volumes of excavated material, demolition rubble, or construction waste. BuildHire offers tipper truck hire across Greater Sydney and regional NSW as part of its dry hire equipment range.
-
-### BuildHire Tipper Truck Hire Rates
-
-BuildHire's tipper truck hire is dry hire — you drive the truck yourself. A Medium Rigid (MR) or higher driver's licence is required.
-
-| Duration | Rate |
-|---|---|
-| Daily rate | From $350/day |
-| Weekly rate | On request |
-| Delivery and collection | Quoted for your site |
-
-All prices include GST. For regional NSW delivery, contact BuildHire for a quote.
-
-### What Licence Do I Need to Drive a Tipper Truck?
-
-To drive a tipper truck on NSW public roads, you must hold a Medium Rigid (MR) or higher driver's licence. A standard car licence (Class C) is not sufficient.
-
-If you don't hold an MR licence, you have two options:
-1. Hire a licensed driver separately (BuildHire does not provide drivers — this is dry hire only)
-2. Use skip bins instead of a tipper truck for spoil removal
-
-### Tipper Truck Capacity: What Can It Carry?
-
-BuildHire's tipper truck has a payload capacity of approximately 6–8 tonnes per load. For pool excavation, this equates to approximately 3–4 cubic metres of soil per load (soil weighs approximately 1.5–2 tonnes per cubic metre when loose).
-
-For a standard residential pool excavation (approximately 30–40 cubic metres of spoil), you'll need approximately 8–12 tipper loads. At $280/day, hiring a tipper for 2 days alongside your excavator is a cost-effective solution.
-
-### Combining Tipper and Excavator Hire
-
-BuildHire's most popular combination hire for pool and footing projects is:
-- 1.7T mini excavator (dig) + tipper truck (remove spoil)
-
-Both machines can be delivered to your site on the same day. Book online at buildhire.com.au or call 1300 157 882 to arrange a combined hire.
-
-### Tipper Truck vs Skip Bins: Which Is Cheaper?
-
-For large volumes of spoil (more than 4–6 cubic metres), a tipper truck is typically cheaper than skip bins. Skip bin hire in Sydney costs $350–$600 per bin (3–4 cubic metres). For a pool excavation generating 30–40 cubic metres of spoil, skip bins would cost $3,500–$6,000. A 2-day tipper hire from BuildHire costs $700–$800 — a saving of $2,700–$5,200.
-
-For small volumes (under 4 cubic metres), skip bins are more convenient — no licence required and no driving involved.
-
-### Where Can I Dispose of Excavated Soil in Sydney?
-
-Excavated soil (clean fill) can be disposed of at:
-- Council waste facilities (check your council's website for accepted materials and fees)
-- Licensed fill depots (search "clean fill disposal Sydney" for local options)
-- Construction sites accepting clean fill (many new development sites accept clean fill — check Gumtree or local construction networks)
-
-Note: Soil contaminated with asbestos, chemicals, or other hazardous materials requires specialist disposal. Contact a licensed waste contractor.`,
-    relatedQuestions: [
-      { q: "What licence do I need to drive a tipper truck in NSW?", a: "A Medium Rigid (MR) or higher driver's licence is required to drive a tipper truck on NSW public roads. A standard car licence is not sufficient." },
-      { q: "Can I hire a tipper truck and excavator together from BuildHire?", a: "Yes. BuildHire offers combined excavator and tipper truck hire. Both machines can be delivered to your site on the same day. Call 1300 157 882 or book online." },
-      { q: "How many tipper loads does a pool excavation generate?", a: "A standard residential pool generates approximately 30–40 cubic metres of spoil, requiring 8–12 tipper loads at 3–4 cubic metres per load." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -1019,7 +953,7 @@ Check your local council's website or call them to confirm the specific hours fo
 
 **Book early:** Weekends are BuildHire's busiest periods. Book at least 3–5 days in advance during spring and summer to secure your preferred machine and dates.
 
-**Plan your spoil removal:** If you're generating excavated material, arrange skip bins or tipper truck hire for the weekend. Many waste facilities have limited weekend hours — plan ahead.
+**Plan your spoil removal:** If you're generating excavated material, arrange skip bins or a soil removal service for the weekend. Many waste facilities have limited weekend hours, so plan ahead.
 
 **Have a backup plan for rain:** Sydney's weather can be unpredictable. If heavy rain is forecast, consider whether your site will be accessible and safe for excavation. Contact BuildHire to discuss rescheduling if needed.`,
     relatedQuestions: [
@@ -1179,7 +1113,7 @@ For small structures (sheds under 20 square metres, pergolas), demolition may be
 
 ### Spoil Removal After Demolition
 
-Demolition generates large volumes of waste — timber, bricks, concrete, and mixed rubble. BuildHire's tipper truck hire is ideal for removing demolition waste. A combined excavator and tipper hire from BuildHire is the most efficient solution for residential demolition projects.`,
+Demolition generates large volumes of waste: timber, bricks, concrete and mixed rubble. Book skip bins or a licensed waste removal service before work starts.`,
     relatedQuestions: [
       { q: "Do I need a permit to demolish a shed in NSW?", a: "For sheds under 20 square metres, demolition may be exempt development under the NSW Exempt Development Code. Check with your local council before starting work." },
       { q: "Can I demolish a fibro shed with a hired excavator?", a: "No — not without a professional asbestos assessment first. Fibro structures built before 1990 may contain asbestos. Contact a licensed asbestos assessor before any demolition." },
@@ -1280,7 +1214,7 @@ Pool removal requires a development application (DA) or complying development ce
 
 ### Cost of Pool Removal in Sydney
 
-A full concrete pool removal in Sydney typically costs $8,000–$20,000 depending on pool size, access, and disposal costs. Hiring the equipment yourself (3.5T excavator + hydraulic breaker + tipper) from BuildHire and managing the project yourself can significantly reduce this cost. Call 1300 157 882 for a combined hire quote.`,
+A full concrete pool removal in Sydney typically costs $8,000 to $20,000 depending on pool size, access, and disposal costs. Hiring the equipment yourself (a 3.5T excavator and hydraulic hammer) from BuildHire and managing the project yourself can significantly reduce this cost. Call 1300 157 882 for a combined hire quote.`,
     relatedQuestions: [
       { q: "Do I need a permit to remove a pool in NSW?", a: "Yes. Pool removal requires a development application (DA) or complying development certificate (CDC) in most NSW councils. The pool must also be deregistered from the NSW Swimming Pool Register." },
       { q: "Does BuildHire offer hydraulic breaker attachments for pool removal?", a: "Contact BuildHire on 1300 157 882 about hydraulic breaker attachment availability for concrete pool removal." },
@@ -1563,7 +1497,7 @@ Removing old concrete slabs, driveways, paths, and footings is a common project 
 
 **Excavator:** The 3.5T is the standard choice for residential concrete removal. The 5.5T is more productive for larger areas. The 1.7T can be used for thin slabs (under 100mm) but is less efficient for thicker concrete.
 
-**Tipper truck:** Broken concrete is heavy — a standard residential driveway (50m², 100mm thick) generates approximately 12 tonnes of concrete rubble. BuildHire's tipper truck hire is ideal for concrete removal.
+**Rubble removal:** Broken concrete is heavy. A standard residential driveway (50m², 100mm thick) generates approximately 12 tonnes of concrete rubble, so book skip bins or a waste removal truck before you start.
 
 ### Concrete Removal Process
 
@@ -1571,7 +1505,7 @@ Removing old concrete slabs, driveways, paths, and footings is a common project 
 
 2. **Break the concrete:** Use the hydraulic breaker to break the slab into pieces of 300–500mm. Work systematically across the slab.
 
-3. **Remove the pieces:** Switch to the bucket attachment and use it to load the broken concrete into the tipper truck.
+3. **Remove the pieces:** Switch to the bucket attachment and use it to load the broken concrete into the skip bin or truck.
 
 4. **Remove the base:** After the concrete is removed, the compacted base (typically 100mm of road base) can be removed with the bucket.
 
@@ -1592,7 +1526,7 @@ Removing old concrete slabs, driveways, paths, and footings is a common project 
 Reinforced concrete (with steel rebar) is harder to remove than plain concrete. The breaker breaks the concrete; the rebar remains and must be cut with an angle grinder or bolt cutters before the pieces can be removed. Budget for additional time when removing reinforced concrete.`,
     relatedQuestions: [
       { q: "Does BuildHire offer hydraulic breaker attachments for concrete removal?", a: "Contact BuildHire on 1300 157 882 about hydraulic breaker attachment availability for concrete removal projects." },
-      { q: "How much does concrete removal cost with a hired excavator in Sydney?", a: "A 3.5T excavator from BuildHire is $340/day and its hydraulic hammer is $140/day, so $480/day incl GST, plus delivery and collection quoted for your site. Tipper truck hire adds $280/day. A standard residential driveway removal typically takes 1 day." },
+      { q: "How much does concrete removal cost with a hired excavator in Sydney?", a: "A 3.5T excavator from BuildHire is $340/day and its hydraulic hammer is $140/day, so $480/day incl GST, plus delivery and collection quoted for your site. A standard residential driveway removal typically takes 1 day." },
       { q: "Where can I dispose of concrete rubble in Sydney?", a: "Concrete rubble can be disposed of at licensed concrete recycling facilities in Sydney. Many facilities accept clean concrete rubble for recycling into road base." }
     ],
     schema: { type: "HowTo", speakable: true }
@@ -1876,12 +1810,12 @@ For projects lasting 5 or more days, BuildHire's weekly hire rates provide signi
 
 | Machine | Daily Rate | Weekly Rate | Saving vs Daily |
 |---|---|---|---|
-| 0.8T Mini Excavator | $200/day | $1,000/week | Save $200 vs 5 daily rates |
-| 1T Mini Excavator | $200/day | $1,000/week | Save $200 vs 5 daily rates |
-| 1.7T Mini Excavator | $205/day | $1,100/week | Save $225 vs 5 daily rates |
+| 0.8T Mini Excavator | $200/day | $1,000/week | Same as 5 daily rates |
+| 1T Mini Excavator | $200/day | $1,000/week | Same as 5 daily rates |
+| 1.7T Mini Excavator | $205/day | $1,100/week | $75 more than 5 daily rates |
 | 3.5T Excavator | $340/day | $1,550/week | Save $150 vs 5 daily rates |
 | 5.5T Excavator | $370/day | $1,650/week | Save $200 vs 5 daily rates |
-| 14.5T Excavator | $490/day | $2,100/week | Save $350 vs 5 daily rates |
+| 14.5T Excavator | $490/day | $2,000/week | Save $450 vs 5 daily rates |
 
 All prices include GST. Delivery and collection are quoted for your site and hire dates.
 
@@ -1913,7 +1847,7 @@ Book online at buildhire.com.au — select your machine, choose your hire start 
 
 For bookings longer than 7 days, contact BuildHire directly to arrange the best rate.`,
     relatedQuestions: [
-      { q: "How much cheaper is weekly hire than daily hire for an excavator?", a: "BuildHire's weekly rates save $150–$350 compared to booking 5 individual daily rates. The 0.8T and 1T are $1,000/week vs $1,000 for 5 days at daily rate. The 14.5T is $2,100/week vs $2,450 for 5 days at daily rate — saving $350." },
+      { q: "How much cheaper is weekly hire than daily hire for an excavator?", a: "On the 3.5T, 5.5T and 14.5T a week costs less than 5 daily rates, saving $150 to $450. The 0.8T and 1T are $1,000/week, the same as 5 days at the daily rate. The 14.5T is $2,000/week vs $2,450 for 5 days at the daily rate, a saving of $450." },
       { q: "Does BuildHire offer monthly excavator hire rates?", a: "Yes. Contact BuildHire on 1300 157 882 for monthly hire pricing. Monthly rates provide greater savings than weekly rates for extended projects." },
       { q: "Is delivery charged per week or per hire for weekly excavator hire?", a: "Delivery and collection is charged once per hire — not per week. Delivery and collection are quoted for your site and hire dates." }
     ],
@@ -1952,8 +1886,6 @@ BuildHire's marketplace model is built around dry hire for several reasons:
 For excavators under 3 tonnes, no licence is required in NSW. For excavators 3 tonnes and over, a High Risk Work Licence (HRWL) — specifically the Excavator licence (EX) — is required under NSW Work Health and Safety legislation.
 
 BuildHire's 0.8T, 1T, and 1.7T mini excavators do not require a licence. The 3.5T and 5.5T excavators require an EX licence.
-
-For tipper trucks, a Heavy Rigid (HR) or Multi-Combination (MC) licence is required depending on the vehicle's GVM.
 
 ### Who Uses Dry Hire?
 
@@ -2043,13 +1975,12 @@ Before any excavation, call 1100 or visit dialbeforeyoudig.com.au to identify un
 
 - **0.8T, 1T, 1.7T mini excavators:** No licence required in NSW
 - **3.5T, 5.5T excavators:** High Risk Work Licence (HRWL) with Excavator (EX) endorsement required
-- **Tipper trucks:** Heavy Rigid (HR) or Multi-Combination (MC) licence required
 
 Ensure all operators have the required licences before the machine arrives.
 
 ### 4. Arrange Spoil Removal
 
-Excavation generates significant volumes of spoil (excavated material). Arrange skip bins or tipper truck hire before your excavator arrives. BuildHire offers tipper truck hire — book both at the same time for a combined hire.
+Excavation generates significant volumes of spoil (excavated material). Arrange skip bins or a soil removal service before your excavator arrives.
 
 ### 5. Have Your Materials Ready
 
@@ -2274,18 +2205,6 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     schema: { type: "FAQPage", speakable: true }
   },
   {
-    slug: "tipper-truck-hire-wollongong",
-    question: "Where can I hire a tipper truck in Wollongong?",
-    category: "Location",
-    shortAnswer: "BuildHire delivers tipper trucks to Wollongong and the Illawarra. Book online or call 1300 157 882 for availability.",
-    fullAnswer: `## Tipper Truck Hire in Wollongong\n\nBuildHire delivers tipper trucks to Wollongong, Shellharbour, Kiama, and the wider Illawarra region.\n\n### Available Equipment\n\n- **2T Tipper** — garden waste, soil, small loads\n- **4T Tipper** — residential and light commercial\n- **8T Tipper** — civil and commercial projects\n\n### Delivery\n\nCall 1300 157 882 for Wollongong tipper truck delivery pricing and availability.`,
-    relatedQuestions: [
-      { q: "Can I get same-day tipper truck hire in Wollongong?", a: "Same-day delivery to Wollongong is available subject to fleet availability. Call 1300 157 882 early." },
-      { q: "What size tipper truck do I need for a residential job in Wollongong?", a: "A 2T or 4T tipper is suitable for most residential jobs — soil removal, garden waste, demolition debris." }
-    ],
-    schema: { type: "FAQPage", speakable: true }
-  },
-  {
     slug: "mini-dumper-hire-sydney",
     question: "Can I hire a mini dumper in Sydney?",
     category: "Equipment",
@@ -2302,7 +2221,7 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     question: "Can I hire an excavator for civil works in NSW?",
     category: "Use Case",
     shortAnswer: "Yes. BuildHire supplies excavators from 1.7T to 8T+ for civil works including road construction, drainage, utilities, and earthworks across Sydney.",
-    fullAnswer: `## Excavator Hire for Civil Works in NSW\n\nBuildHire supplies excavators for civil works projects across Sydney. Our fleet includes machines suitable for a wide range of civil applications.\n\n### Common Civil Applications\n\n- **Road and pavement construction:** subgrade preparation, kerb and channel\n- **Drainage and stormwater:** trench excavation, pipe laying\n- **Utilities:** water, sewer, gas, and NBN trenching\n- **Earthworks:** cut and fill, bulk excavation, compaction\n- **Retaining structures:** sheet piling, bored piers, rock anchors\n\n### Equipment for Civil Works\n\n- **3.5T Excavator:** light civil, trenching, residential subdivision\n- **5.5T to 8T Excavators:** medium civil works, road construction\n- **Tipper Trucks:** spoil removal and material delivery\n\nCall 1300 157 882 for civil project pricing and availability.`,
+    fullAnswer: `## Excavator Hire for Civil Works in NSW\n\nBuildHire supplies excavators for civil works projects across Sydney. Our fleet includes machines suitable for a wide range of civil applications.\n\n### Common Civil Applications\n\n- **Road and pavement construction:** subgrade preparation, kerb and channel\n- **Drainage and stormwater:** trench excavation, pipe laying\n- **Utilities:** water, sewer, gas, and NBN trenching\n- **Earthworks:** cut and fill, bulk excavation, compaction\n- **Retaining structures:** sheet piling, bored piers, rock anchors\n\n### Equipment for Civil Works\n\n- **3.5T Excavator:** light civil, trenching, residential subdivision\n- **5.5T to 8T Excavators:** medium civil works, road construction\n\nCall 1300 157 882 for civil project pricing and availability.`,
     relatedQuestions: [
       { q: "What size excavator do I need for civil works?", a: "3.5T for light civil and trenching; 5.5T–8T for medium civil works. Call 1300 157 882 to discuss your project." },
       { q: "Does BuildHire supply excavators for road construction?", a: "Yes. We supply excavators for road construction, drainage, and earthworks across Sydney." }
@@ -2314,7 +2233,7 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     question: "Can I hire an excavator for commercial construction?",
     category: "Use Case",
     shortAnswer: "Yes. BuildHire supplies excavators for commercial construction including basement excavation, bulk earthworks, and site preparation across Sydney.",
-    fullAnswer: `## Excavator Hire for Commercial Construction\n\nBuildHire supplies excavators for commercial construction projects. We work with builders, developers, and project managers on commercial sites across Sydney.\n\n### Common Commercial Applications\n\n- **Basement and carpark excavation**\n- **Bulk earthworks and site preparation**\n- **Footing and pile cap excavation**\n- **Drainage and services trenching**\n- **Demolition and concrete removal**\n\n### Equipment\n\n- **3.5T Excavator:** light commercial, tight urban sites\n- **5.5T to 8T Excavators:** medium commercial projects\n- **Tipper Trucks:** spoil removal\n\nCall 1300 157 882 for commercial project pricing and long-term hire rates.`,
+    fullAnswer: `## Excavator Hire for Commercial Construction\n\nBuildHire supplies excavators for commercial construction projects. We work with builders, developers, and project managers on commercial sites across Sydney.\n\n### Common Commercial Applications\n\n- **Basement and carpark excavation**\n- **Bulk earthworks and site preparation**\n- **Footing and pile cap excavation**\n- **Drainage and services trenching**\n- **Demolition and concrete removal**\n\n### Equipment\n\n- **3.5T Excavator:** light commercial, tight urban sites\n- **5.5T to 8T Excavators:** medium commercial projects\n\nCall 1300 157 882 for commercial project pricing and long-term hire rates.`,
     relatedQuestions: [
       { q: "Does BuildHire offer weekly or monthly hire rates for commercial projects?", a: "Yes. Call 1300 157 882 for weekly and monthly hire rates for commercial projects." },
       { q: "Can BuildHire supply an operator with the excavator?", a: "BuildHire offers dry hire (machine only). For wet hire (machine + operator), call 1300 157 882 to discuss options." }
@@ -2349,8 +2268,8 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     slug: "owner-builder-equipment-hire-guide",
     question: "What equipment do owner-builders typically need to hire?",
     category: "Persona",
-    shortAnswer: "Owner-builders in NSW typically hire: mini excavators for footings and drainage, tipper trucks for spoil removal, and mini dumpers for moving materials on site.",
-    fullAnswer: `## Equipment Hire Guide for Owner-Builders in NSW\n\nAs an owner-builder, you're managing your own build — which means sourcing your own plant and equipment. Here's what most owner-builders hire at each stage.\n\n### Site Preparation\n\n- **Mini Excavator (1.7T)** — strip topsoil, excavate footings, dig drainage\n- **Tipper Truck** — remove spoil and excavated material\n\n### Slab and Footings\n\n- **Mini Excavator** — trench footings, excavate for slab\n- **Mini Dumper** — move concrete, gravel, and sand\n\n### Landscaping and Finishing\n\n- **Mini Excavator** — retaining walls, garden beds, drainage\n- **Mini Dumper** — move soil, mulch, and gravel\n\n### Booking Tips\n\n- Book at least 48 hours in advance for guaranteed next-day delivery\n- Confirm site access before booking (2.5m wide, 4m overhead clearance)\n- Check your owner-builder permit covers the scope of work\n\nBook online at buildhire.com.au or call 1300 157 882.`,
+    shortAnswer: "Owner-builders in NSW typically hire mini excavators for footings and drainage, and mini dumpers for moving materials on site.",
+    fullAnswer: `## Equipment Hire Guide for Owner-Builders in NSW\n\nAs an owner-builder, you're managing your own build, which means sourcing your own plant and equipment. Here's what most owner-builders hire at each stage.\n\n### Site Preparation\n\n- **Mini Excavator (1.7T):** strip topsoil, excavate footings, dig drainage\n\n### Slab and Footings\n\n- **Mini Excavator:** trench footings, excavate for slab\n- **Mini Dumper:** move concrete, gravel, and sand\n\n### Landscaping and Finishing\n\n- **Mini Excavator:** retaining walls, garden beds, drainage\n- **Mini Dumper:** move soil, mulch, and gravel\n\n### Booking Tips\n\n- Book at least 48 hours in advance for guaranteed next-day delivery\n- Confirm site access before booking (2.5m wide, 4m overhead clearance)\n- Check your owner-builder permit covers the scope of work\n\nBook online at buildhire.com.au or call 1300 157 882.`,
     relatedQuestions: [
       { q: "What size excavator do I need as an owner-builder?", a: "A 1.7T mini excavator suits most owner-builder jobs — footings, drainage, landscaping. Upgrade to 3.5T for larger excavations." },
       { q: "Can an owner-builder operate a hired excavator without a licence?", a: "Yes. No licence is required for excavators under 3T in NSW. For 3.5T and above, a High Risk Work Licence is required." }
@@ -2386,7 +2305,7 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     question: "What excavator do I need to dig a swimming pool?",
     category: "Use Case",
     shortAnswer: "A 3.5T excavator is the standard choice for residential pool excavation in Sydney. It has the reach, bucket capacity, and digging force to complete a standard pool in 1–2 days.",
-    fullAnswer: `## Excavator Hire for Swimming Pool Construction\n\nPool excavation is one of BuildHire's most common use cases. Here's exactly what you need.\n\n### Recommended Machine\n\n**3.5T Excavator** — the standard choice for residential pool excavation:\n- Digging depth: up to 4.5m\n- Bucket capacity: 0.12m³\n- Can complete a standard 8m × 4m pool in 1–2 days\n- Fits through a standard double gate (1.8m wide)\n\n### What to Expect\n\n- **Day 1:** Excavate the main pool shell, pile spoil for removal\n- **Day 2 (if needed):** Tidy up, excavate for equipment bay, load spoil into tipper truck\n\n### Also Consider\n\n- **Tipper Truck** — for removing excavated soil (a standard pool generates 30–50m³ of spoil)\n- **Mini Dumper** — for moving spoil in tight backyards\n\n### Booking Tips\n\n- Book the excavator and tipper truck together for a package rate\n- Confirm gate width before booking (minimum 1.8m for 3.5T)\n- Check for underground services before excavating (Dial Before You Dig)\n\nBook online at buildhire.com.au or call 1300 157 882.`,
+    fullAnswer: `## Excavator Hire for Swimming Pool Construction\n\nPool excavation is one of BuildHire's most common use cases. Here's exactly what you need.\n\n### Recommended Machine\n\n**3.5T Excavator:** the standard choice for residential pool excavation:\n- Digging depth: up to 4.5m\n- Bucket capacity: 0.12m³\n- Can complete a standard 8m × 4m pool in 1 to 2 days\n- Fits through a standard double gate (1.8m wide)\n\n### What to Expect\n\n- **Day 1:** Excavate the main pool shell, pile spoil for removal\n- **Day 2 (if needed):** Tidy up, excavate for equipment bay, load spoil for removal\n\n### Also Consider\n\n- **Skip bins or a soil truck:** for removing excavated soil (a standard pool generates 30 to 50m³ of spoil)\n- **Mini Dumper:** for moving spoil in tight backyards\n\n### Booking Tips\n\n- Confirm gate width before booking (minimum 1.8m for 3.5T)\n- Check for underground services before excavating (Dial Before You Dig)\n\nBook online at buildhire.com.au or call 1300 157 882.`,
     relatedQuestions: [
       { q: "How long does it take to excavate a pool with a 3.5T excavator?", a: "A standard residential pool (8m × 4m × 1.8m deep) typically takes 1–2 days with a 3.5T excavator." },
       { q: "How much soil does a pool excavation produce?", a: "A standard pool generates 30–50m³ of spoil. You'll need 3–5 tipper truck loads to remove it." }
@@ -2397,8 +2316,8 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     slug: "excavator-hire-for-house-demolition",
     question: "Can I hire an excavator for house demolition?",
     category: "Use Case",
-    shortAnswer: "Yes — BuildHire supplies excavators for residential demolition. A 5.5T–8T excavator is typically used for house demolition, with tipper trucks for debris removal.",
-    fullAnswer: `## Excavator Hire for House Demolition\n\nBuildHire supplies excavators for residential demolition projects across Sydney.\n\n### Recommended Equipment\n\n- **5.5T to 8T Excavator:** standard for house demolition; sufficient reach and force for single-storey residential\n- **Hydraulic Breaker:** for concrete slabs, footings, and brick walls\n- **Tipper Trucks:** for removing demolition debris\n\n### NSW Demolition Requirements\n\n- A demolition licence is required for buildings over a certain size, check with your local council\n- Asbestos must be removed by a licensed asbestos removalist before demolition begins\n- A Safe Work Method Statement (SWMS) is required\n\n### Booking\n\nCall 1300 157 882 for demolition project pricing. We can arrange the excavator, hydraulic breaker, and tipper trucks as a package.`,
+    shortAnswer: "Yes. BuildHire supplies excavators for residential demolition. A 5.5T to 8T excavator is typically used for house demolition, with skip bins or waste trucks for the debris.",
+    fullAnswer: `## Excavator Hire for House Demolition\n\nBuildHire supplies excavators for residential demolition projects across Sydney.\n\n### Recommended Equipment\n\n- **5.5T to 8T Excavator:** standard for house demolition; sufficient reach and force for single-storey residential\n- **Hydraulic Breaker:** for concrete slabs, footings, and brick walls\n\n### NSW Demolition Requirements\n\n- A demolition licence is required for buildings over a certain size, check with your local council\n- Asbestos must be removed by a licensed asbestos removalist before demolition begins\n- A Safe Work Method Statement (SWMS) is required\n\n### Booking\n\nCall 1300 157 882 for demolition project pricing. We can supply the excavator and hydraulic hammer together.`,
     relatedQuestions: [
       { q: "What size excavator do I need for house demolition?", a: "A 5.5T–8T excavator is standard for single-storey residential demolition. Call 1300 157 882 to discuss your project." },
       { q: "Does BuildHire supply a hydraulic breaker for demolition?", a: "Yes. Hydraulic breaker attachments are available for the 5.5T and 8T machines. Call 1300 157 882 to confirm availability." }

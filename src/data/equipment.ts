@@ -27,6 +27,7 @@ const equipmentCatalog: Equipment[] = [
     weeklyPrice: "$1,000/week",
     delivery: "Quoted for your site",
     specs: [
+      { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "800 kg" },
       { label: "Max Digging Depth", value: "1,720 mm" },
       { label: "Track Width (retracted)", value: "690 mm" },
@@ -56,6 +57,7 @@ const equipmentCatalog: Equipment[] = [
     weeklyPrice: "$1,000/week",
     delivery: "Quoted for your site",
     specs: [
+      { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "1,010 kg" },
       { label: "Max Digging Depth", value: "1,850 mm" },
       { label: "Track Width (retracted)", value: "750 mm" },
@@ -85,6 +87,7 @@ const equipmentCatalog: Equipment[] = [
     weeklyPrice: "$1,100/week",
     delivery: "Quoted for your site",
     specs: [
+      { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "1,710 kg" },
       { label: "Max Digging Depth", value: "2,500 mm" },
       { label: "Track Width (retracted)", value: "990 mm" },
@@ -115,6 +118,7 @@ const equipmentCatalog: Equipment[] = [
     weeklyPrice: "$1,550/week",
     delivery: "Quoted for your site",
     specs: [
+      { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "3,490 kg" },
       { label: "Max Digging Depth", value: "3,560 mm" },
       { label: "Track Width", value: "1,500 mm" },
@@ -144,6 +148,7 @@ const equipmentCatalog: Equipment[] = [
     weeklyPrice: "$1,650/week",
     delivery: "Delivery & Collection* (third party transport — pricing on enquiry)",
     specs: [
+      { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "5,490 kg" },
       { label: "Max Digging Depth", value: "3,960 mm" },
       { label: "Track Width", value: "1,800 mm" },
@@ -170,9 +175,10 @@ const equipmentCatalog: Equipment[] = [
     longDescription: "The Case CX145C is a high-performance 14.5-tonne excavator built for demanding civil and commercial construction. Exceptional digging depth and bucket capacity for major earthworks.",
     price: "$490/day",
     priceNum: "490",
-    weeklyPrice: "$2,100/week",
+    weeklyPrice: "$2,000/week",
     delivery: "Delivery & Collection* (third party transport \u2014 pricing on enquiry)",
     specs: [
+      { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "14,500 kg" },
       { label: "Max Digging Depth", value: "5,830 mm" },
       { label: "Bucket Capacity", value: "0.55 m\u00b3" },
@@ -185,7 +191,7 @@ const equipmentCatalog: Equipment[] = [
       { title: "Bulk Earthworks", desc: "High-volume site preparation and bulk earthmoving for major construction." }
     ],
     faqs: [
-      { q: "How much does it cost to hire a 14.5T excavator?", a: "BuildHire's 14.5T Case CX145C starts from $490/day. Weekly rate is $2,100/week (incl GST). Delivery is via third party transport \u2014 call 1300 157 882 for a quote." },
+      { q: "How much does it cost to hire a 14.5T excavator?", a: "BuildHire's 14.5T Case CX145C starts from $490/day. Weekly rate is $2,000/week (incl GST). Delivery and collection are quoted for your site. Call 1300 157 882 for a quote." },
       { q: "What is the maximum digging depth of the 14.5T excavator?", a: "The Case CX145C has a maximum digging depth of 5,830mm, making it suitable for deep civil trenches and major earthworks." },
       { q: "Do I need a licence to operate a 14.5T excavator in NSW?", a: "Yes. A High Risk Work Licence (HRWL) for earthmoving equipment is required to operate a 14.5T excavator on any registered worksite in NSW." }
     ]
@@ -220,34 +226,6 @@ const equipmentCatalog: Equipment[] = [
     ]
   },
   {
-    slug: "tipper-truck",
-    name: "Isuzu NQR450 Tipper Truck",
-    shortName: "Tipper Truck",
-    category: "Trucks",
-    description: "Reliable Isuzu tipper truck for efficient material transport, soil removal, and site cleanups.",
-    longDescription: "The Isuzu NQR450 tipper is the ideal companion to any excavation job. Efficiently remove spoil, deliver aggregate, or transport materials to and from site. Available for pick-up from our depot.",
-    price: "$280/day",
-    priceNum: "280",
-    delivery: "Pick up only",
-    specs: [
-      { label: "Payload", value: "4,500 kg" },
-      { label: "Body Volume", value: "6 m³" },
-      { label: "Drive", value: "4x2" },
-      { label: "Licence Required", value: "MR or above" }
-    ],
-    useCases: [
-      { title: "Soil Removal", desc: "Remove excavated soil and spoil from residential and commercial sites." },
-      { title: "Aggregate Delivery", desc: "Transport gravel, sand, and other aggregates to site." },
-      { title: "Site Cleanup", desc: "Efficient removal of demolition waste and construction debris." },
-      { title: "Landscaping", desc: "Deliver and remove materials for landscaping projects." }
-    ],
-    faqs: [
-      { q: "What licence do I need to drive the tipper truck?", a: "A Medium Rigid (MR) or higher licence is required to operate the Isuzu NQR450 tipper truck." },
-      { q: "How much does it cost to hire the tipper truck?", a: "BuildHire's Isuzu NQR450 tipper is available from $280/day (incl GST). Pick up only from our depot — call 1300 157 882 for the address." },
-      { q: "What is the payload capacity of the tipper truck?", a: "The Isuzu NQR450 has a payload capacity of approximately 4,500 kg and a body volume of 6 cubic metres." }
-    ]
-  },
-  {
     slug: "mini-dumper-700kg",
     name: "Cormidi C7X 700kg Petrol High Tip",
     shortName: "700kg Mini Dumper",
@@ -256,6 +234,7 @@ const equipmentCatalog: Equipment[] = [
     longDescription: "The Cormidi C7X tracked mini dumper is the perfect companion for moving materials in tight spaces and across difficult terrain. Its high-tip capability allows it to tip directly into skips and trailers.",
     price: "$200/day",
     priceNum: "200",
+    weeklyPrice: "$1,000/week",
     delivery: "Quoted for your site",
     specs: [
       { label: "Payload", value: "700 kg" },
@@ -270,7 +249,7 @@ const equipmentCatalog: Equipment[] = [
       { title: "Slope Work", desc: "Tracked drive handles slopes and uneven terrain with ease." }
     ],
     faqs: [
-      { q: "How much does it cost to hire the mini dumper?", a: "BuildHire's Cormidi C7X mini dumper starts from $200/day (incl GST). Delivery and collection are quoted for your site and hire dates." },
+      { q: "How much does it cost to hire the mini dumper?", a: "BuildHire's Cormidi C7X mini dumper starts from $200/day (incl GST). Weekly rate is $1,000/week (incl GST). Delivery and collection are quoted for your site and hire dates." },
       { q: "Can the mini dumper tip into a skip bin?", a: "Yes. The Cormidi C7X has a high-tip capability of 1,600mm, allowing it to tip directly into most standard skip bins and trailers." },
       { q: "Do I need a licence to operate the mini dumper?", a: "No licence is required to operate the mini dumper on private property in NSW." }
     ]

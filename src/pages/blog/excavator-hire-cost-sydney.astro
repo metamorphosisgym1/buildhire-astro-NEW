@@ -51,7 +51,7 @@ const faqSchema = {
       "name": "What is included in excavator hire rates?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dry hire rates include the machine and standard bucket. Delivery & collection, fuel, insurance, and operator costs are not included in the base daily rate."
+        "text": "Dry hire rates include the machine, a mud bucket, a GP bucket and a ripper. Delivery & collection, fuel, insurance, and operator costs are not included in the base daily rate."
       }
     },
     {
@@ -127,7 +127,7 @@ const faqSchema = {
                 { machine: "3.5T Excavator (Yanmar ViO35-7)", daily: "$340/day", delivery: "Quoted" },
                 { machine: "5.5T Excavator (Yanmar ViO55)", daily: "$370/day", delivery: "On enquiry" },
                 { machine: "8T Excavator (Yanmar ViO80)", daily: "$420/day", delivery: "POA" },
-                { machine: "14.5T Sumitomo Excavator", daily: "$470/day", delivery: "POA" },
+                { machine: "14.5T Excavator (Case CX145C)", daily: "$490/day", delivery: "POA" },
               ].map(row => (
                 <tr class="hover:bg-gray-50">
                   <td class="px-6 py-4 font-medium text-[var(--color-text)]">{row.machine}</td>
@@ -144,7 +144,7 @@ const faqSchema = {
         <p class="text-[var(--color-text-muted)] mb-4">BuildHire's dry hire rates include:</p>
         <ul class="space-y-2 mb-6 text-[var(--color-text-muted)]">
           <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> The machine itself for your nominated hire period</li>
-          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> Standard digging bucket</li>
+          <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> Mud bucket, GP bucket and ripper</li>
           <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> Machine induction and handover on delivery</li>
           <li class="flex items-start gap-2"><span class="text-[var(--color-primary)] font-bold mt-0.5">✓</span> 24/7 phone support during your hire period</li>
         </ul>
@@ -237,7 +237,7 @@ const faqSchema = {
         <p class="text-[var(--color-text-muted)] mb-4">Mini excavator hire in Sydney starts from $200/day for a 0.8T machine and $205/day for a 1.7T. A 3.5T excavator costs from $340/day. All prices include GST.</p>
 
         <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">What is included in excavator hire rates?</h3>
-        <p class="text-[var(--color-text-muted)] mb-4">Dry hire rates include the machine and standard bucket. Delivery & collection, fuel, insurance, and operator costs are not included in the base daily rate.</p>
+        <p class="text-[var(--color-text-muted)] mb-4">Dry hire rates include the machine, a mud bucket, a GP bucket and a ripper. Delivery & collection, fuel, insurance, and operator costs are not included in the base daily rate.</p>
 
         <h3 class="text-lg font-bold text-[var(--color-text)] mt-6 mb-2">Are weekly excavator hire rates cheaper than daily rates?</h3>
         <p class="text-[var(--color-text-muted)] mb-4">Yes — weekly and monthly hire rates are significantly cheaper per day than daily rates. Call BuildHire on 1300 157 882 for a weekly or monthly quote.</p>

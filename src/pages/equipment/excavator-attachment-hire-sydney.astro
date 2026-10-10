@@ -6,7 +6,7 @@ import ChatWidget from '../../components/ChatWidget';
 import StickyBottomBar from '../../components/StickyBottomBar';
 
 // Rates and machine matches come from the booking calculator (src/components/BookingCalculator.tsx),
-// last changed by BuildHire on 24 and 28 June 2026. Change them there and here together.
+// from the owner's price list of 10 Oct 2026. The 0.8T takes no attachments. Change them there and here together.
 const attachments = [
   {
     id: "hydraulic-hammer",
@@ -14,24 +14,24 @@ const attachments = [
     image: null,
     what: "Breaks concrete slabs, footings, sandstone and hard ground that the bucket cannot dig.",
     rates: [
-      { machine: "0.8T and 1T", href: "/equipment/08t-mini-excavator-hire-sydney/", rate: 130 },
-      { machine: "1.7T", href: "/equipment/17t-mini-excavator-hire-sydney/", rate: 130 },
+      { machine: "1T", href: "/equipment/1t-mini-excavator-hire-sydney/", rate: 130 },
+      { machine: "1.7T", href: "/equipment/17t-mini-excavator-hire-sydney/", rate: 150 },
       { machine: "3.5T", href: "/equipment/35t-excavator-hire-sydney/", rate: 140 },
       { machine: "5.5T", href: "/equipment/55t-excavator-hire-sydney/", rate: 190 },
-      { machine: "14.5T", href: "/equipment/145t-excavator-hire-sydney/", rate: 250 },
+      { machine: "14.5T", href: "/equipment/145t-excavator-hire-sydney/", rate: 230 },
     ],
   },
   {
     id: "auger-drive",
     name: "Auger Drive",
     image: { src: "/assets/auger-drive.jpg", alt: "Hydraulic auger drive attachment for excavator hire in Sydney", w: 300, h: 300 },
-    what: "Drills holes for fence posts, pier footings, retaining wall posts and stumps. 200 mm, 300 mm and 450 mm drill sizes on the 1.7T and bigger machines.",
+    what: "Drills holes for fence posts, pier footings, retaining wall posts and stumps. Each auger comes with one drill.",
     rates: [
-      { machine: "0.8T and 1T (one drill size)", href: "/equipment/1t-mini-excavator-hire-sydney/", rate: 130 },
-      { machine: "1.7T", href: "/equipment/17t-mini-excavator-hire-sydney/", rate: 130 },
-      { machine: "3.5T", href: "/equipment/35t-excavator-hire-sydney/", rate: 160 },
-      { machine: "5.5T", href: "/equipment/55t-excavator-hire-sydney/", rate: 180 },
-      { machine: "14.5T", href: "/equipment/145t-excavator-hire-sydney/", rate: 230 },
+      { machine: "1T", href: "/equipment/1t-mini-excavator-hire-sydney/", rate: 180 },
+      { machine: "1.7T", href: "/equipment/17t-mini-excavator-hire-sydney/", rate: 190 },
+      { machine: "3.5T", href: "/equipment/35t-excavator-hire-sydney/", rate: 200 },
+      { machine: "5.5T", href: "/equipment/55t-excavator-hire-sydney/", rate: 200 },
+      { machine: "14.5T", href: "/equipment/145t-excavator-hire-sydney/", rate: 250 },
     ],
   },
   {
@@ -40,9 +40,9 @@ const attachments = [
     image: { src: "/assets/rock-grab.webp", alt: "Tiger hydraulic rock grab attachment for excavator hire in Sydney", w: 1600, h: 1535 },
     what: "Picks up and places rocks, logs and rubble. Handy for retaining walls, rock placement and site clean up.",
     rates: [
-      { machine: "3.5T", href: "/equipment/35t-excavator-hire-sydney/", rate: 135 },
+      { machine: "3.5T", href: "/equipment/35t-excavator-hire-sydney/", rate: 140 },
       { machine: "5.5T", href: "/equipment/55t-excavator-hire-sydney/", rate: 150 },
-      { machine: "14.5T", href: "/equipment/145t-excavator-hire-sydney/", rate: 180 },
+      { machine: "14.5T", href: "/equipment/145t-excavator-hire-sydney/", rate: 150 },
     ],
   },
   {
@@ -60,11 +60,12 @@ const attachments = [
 ];
 
 const faqs = [
-  { q: "Can I hire an excavator with a rock breaker?", a: "Yes. We have a hydraulic hammer to suit every machine we hire, from the 0.8T up to the 14.5T. It costs $130 a day on the 0.8T, 1T and 1.7T, $140 on the 3.5T, $190 on the 5.5T and $250 on the 14.5T, on top of the machine rate. Ask for it when you book." },
-  { q: "What attachments can I hire with an excavator?", a: "Hydraulic hammers, auger drives, hydraulic rock grabs and Tiger sieve buckets. Every excavator comes with a standard digging bucket. Which attachments fit depends on the machine size, so check the table above." },
+  { q: "Can I hire an excavator with a rock breaker?", a: "Yes. We have a hydraulic hammer to suit every machine from the 1T up to the 14.5T. It costs $130 a day on the 1T, $150 on the 1.7T, $140 on the 3.5T, $190 on the 5.5T and $230 on the 14.5T, on top of the machine rate. The 0.8T does not take attachments. Ask for the hammer when you book." },
+  { q: "Can I hire an attachment for my own excavator?", a: "Yes. Tell us the make and size of your machine and we will confirm which attachment fits it and the daily rate." },
+  { q: "What attachments can I hire with an excavator?", a: "Hydraulic hammers, auger drives, hydraulic rock grabs and Tiger sieve buckets. Every excavator also comes with a mud bucket, a GP bucket and a ripper. Which attachments fit depends on the machine size, so check the table above." },
   { q: "Which size rock breaker do I need?", a: "The hammer is matched to the machine, so pick the excavator that suits the job and we send the hammer that fits it. Tell us what you are breaking and the access to the site and we will help you choose." },
-  { q: "What auger sizes do you have?", a: "The auger drives for the 1.7T, 3.5T, 5.5T and 14.5T come with 200 mm, 300 mm and 450 mm drill sizes. The 0.8T and 1T take one auger attachment." },
-  { q: "How much does attachment hire cost?", a: "From $50 a day for a sieve bucket up to $250 a day for the 14.5T hammer, incl GST. Attachment rates are on top of the machine rate. Delivery and collection are quoted for your site." },
+  { q: "Does the auger come with more than one drill?", a: "No. Each auger drive comes with one drill. Tell us the hole size you need when you book and we will confirm it suits the job." },
+  { q: "How much does attachment hire cost?", a: "From $50 a day for a sieve bucket up to $250 a day for the 14.5T auger, incl GST. Attachment rates are on top of the machine rate. Delivery and collection are quoted for your site." },
   { q: "Do you supply an operator?", a: "No. We only dry hire. You or your crew run the machine and the attachment." },
 ];
 
@@ -91,7 +92,7 @@ const serviceSchema = {
     }
   },
   "areaServed": { "@type": "City", "name": "Sydney" },
-  "description": "Hydraulic hammers, auger drives, rock grabs and sieve buckets for hire with our excavators in Sydney. Matched to each machine from 0.8T to 14.5T. Delivery quoted for your site.",
+  "description": "Hydraulic hammers, auger drives, rock grabs and sieve buckets for hire in Sydney with our 1T to 14.5T excavators. We confirm fit and rate for your own machine. Delivery quoted for your site.",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Excavator attachments",
@@ -110,7 +111,7 @@ const serviceSchema = {
 <Layout
   crumbs={[{ name: "Equipment", path: "/equipment/" }, { name: "Excavator Attachment Hire", path: "/equipment/excavator-attachment-hire-sydney/" }]}
   title="Excavator Attachment Hire Sydney | Augers, Hammers, Rock Grabs | BuildHire"
-  description="Hire a rock breaker, auger, rock grab or sieve bucket with your excavator in Sydney. Matched to each machine from 0.8T to 14.5T. Daily rates shown, delivery quoted."
+  description="Hire a rock breaker, auger, rock grab or sieve bucket in Sydney with our 1T to 14.5T excavators, or ask about your own machine. Daily rates shown, delivery quoted."
   canonicalPath="/equipment/excavator-attachment-hire-sydney"
   ogImage="/og-image.png"
 >
@@ -124,7 +125,7 @@ const serviceSchema = {
         <div class="text-center mb-10">
           <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">Excavator Attachment Hire Sydney</h1>
           <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">
-            Excavator attachment hire across Sydney from our Arncliffe yard. Add a hydraulic hammer, auger drive, rock grab or sieve bucket to your excavator hire. Each one is matched to the machine, from <strong class="text-[var(--color-primary)]">${lowest} to ${highest} a day</strong> incl GST on top of the machine rate.
+            Excavator attachment hire across Sydney from our Arncliffe yard. Add a hydraulic hammer, auger drive, rock grab or sieve bucket to your excavator hire, or hire one for your own machine. Each one is matched to the machine, from <strong class="text-[var(--color-primary)]">${lowest} to ${highest} a day</strong> incl GST on top of the machine rate.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book a Machine and Attachment</a>
@@ -133,10 +134,10 @@ const serviceSchema = {
           </div>
         </div>
         <ul class="max-w-3xl mx-auto grid sm:grid-cols-2 gap-3 text-[var(--color-text-muted)]">
-          <li class="bg-white rounded-lg px-4 py-3 shadow-sm">Hydraulic hammer for every machine, 0.8T to 14.5T</li>
-          <li class="bg-white rounded-lg px-4 py-3 shadow-sm">Augers with 200, 300 and 450 mm drill sizes</li>
+          <li class="bg-white rounded-lg px-4 py-3 shadow-sm">Hydraulic hammer and auger for every machine, 1T to 14.5T</li>
           <li class="bg-white rounded-lg px-4 py-3 shadow-sm">Rock grabs for the 3.5T, 5.5T and 14.5T</li>
-          <li class="bg-white rounded-lg px-4 py-3 shadow-sm">Standard digging bucket comes with every excavator</li>
+          <li class="bg-white rounded-lg px-4 py-3 shadow-sm">Mud bucket, GP bucket and ripper come with every excavator</li>
+          <li class="bg-white rounded-lg px-4 py-3 shadow-sm">Attachments for your own machine too</li>
         </ul>
       </div>
     </section>
@@ -176,21 +177,24 @@ const serviceSchema = {
             </div>
           ))}
         </div>
-        <p class="text-xs text-[var(--color-text-muted)] mt-6 text-center">Prices include GST. Fuel is not included. The 8T and 23T are coming soon; ask us about attachments for them.</p>
+        <p class="text-xs text-[var(--color-text-muted)] mt-6 text-center">Prices include GST. Fuel is not included. The 0.8T does not take attachments. The 8T and 23T are coming soon; ask us about attachments for them.</p>
       </div>
     </section>
 
     <section class="bg-[var(--color-bg)] py-16">
       <div class="max-w-3xl mx-auto px-6">
         <h2 class="text-3xl font-bold text-[var(--color-text)] mb-6 text-center">Rock Breaker Hire</h2>
-        <p class="text-[var(--color-text-muted)] mb-4">When the bucket bounces off rock or an old slab, you need a hammer. We fit a hydraulic hammer sized to the excavator, so a small breaker goes on the mini excavators for tight backyard jobs and a heavier one goes on the 5.5T and 14.5T for bigger rock and concrete.</p>
-        <p class="text-[var(--color-text-muted)]">Broken rock and concrete are heavy. Most people hire a <a href="/equipment/tipper-truck-hire-sydney/" class="underline">tipper truck</a> or a <a href="/equipment/mini-dumper-hire-sydney/" class="underline">mini dumper</a> with the excavator to move it off site.</p>
+        <p class="text-[var(--color-text-muted)] mb-4">When the bucket bounces off rock or an old slab, you need a hammer. We fit a hydraulic hammer sized to the excavator, so a small breaker goes on the 1T and 1.7T for tight backyard jobs and a heavier one goes on the 5.5T and 14.5T for bigger rock and concrete.</p>
+        <p class="text-[var(--color-text-muted)]">Broken rock and concrete are heavy. A <a href="/equipment/mini-dumper-hire-sydney/" class="underline">mini dumper</a> hired with the excavator carries it to the skip bin.</p>
 
         <h2 class="text-3xl font-bold text-[var(--color-text)] mt-12 mb-6 text-center">Auger Hire for Post Holes and Piers</h2>
-        <p class="text-[var(--color-text-muted)]">An auger drive on an excavator drills straight, even holes much faster than a hand held post hole digger. Use it for fence posts, pier footings, retaining wall posts and stump holes. Pick the drill size for the job: 200 mm, 300 mm or 450 mm on the 1.7T and bigger machines.</p>
+        <p class="text-[var(--color-text-muted)]">An auger drive on an excavator drills straight, even holes much faster than a hand held post hole digger. Use it for fence posts, pier footings, retaining wall posts and stump holes. Each auger comes with one drill, matched to the machine.</p>
 
         <h2 class="text-3xl font-bold text-[var(--color-text)] mt-12 mb-6 text-center">Which Machine Do I Need?</h2>
         <p class="text-[var(--color-text-muted)]">Start with the access and the size of the job, then add the attachment. The <a href="/equipment/17t-mini-excavator-hire-sydney/" class="underline">1.7T mini excavator</a> suits most backyard jobs and takes a hammer, auger and sieve bucket. The <a href="/equipment/35t-excavator-hire-sydney/" class="underline">3.5T excavator</a> adds the rock grab and more power for bigger rock. See all our <a href="/equipment/mini-excavator-hire-sydney/" class="underline">mini excavator hire</a> options.</p>
+
+        <h2 class="text-3xl font-bold text-[var(--color-text)] mt-12 mb-6 text-center">Attachment Hire for Your Own Excavator</h2>
+        <p class="text-[var(--color-text-muted)]">Already have an excavator? You can hire just the attachment. Tell us the make and size of your machine and we will confirm which hammer, auger, rock grab or sieve bucket fits it and the daily rate.</p>
 
         <h2 class="text-2xl font-bold text-[var(--color-text)] mt-12 mb-4">How Hire Works</h2>
         <ol class="space-y-3 list-decimal pl-6 text-[var(--color-text-muted)]">
