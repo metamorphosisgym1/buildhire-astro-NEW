@@ -71,34 +71,32 @@ For any questions about licence requirements or machine selection, call BuildHir
     shortAnswer: "Mini excavator hire in Sydney starts from $200/day for a 0.8T machine. Delivery and collection are quoted for your site and hire dates. Weekly rates from $1,000/week. All prices include GST.",
     fullAnswer: `## Mini Excavator Hire Costs in Sydney — Complete Pricing Guide
 
-Understanding the real cost of hiring a mini excavator in Sydney requires looking beyond the headline daily rate. Many hire companies advertise low rates but add delivery fees, environmental levies, damage waivers, and fuel surcharges at checkout. BuildHire's pricing is all-inclusive — the rate you see is the rate you pay.
-
 ### BuildHire's Sydney Mini Excavator Hire Rates
 
 | Machine | Daily Rate | Weekly Rate | Delivery (Greater Sydney) |
 |---|---|---|---|
-| 0.8T Mini Excavator | $200/day | $1,000/week | $150 |
-| 1T Mini Excavator | $200/day | $1,000/week | $150 |
-| 1.7T Mini Excavator | $205/day | $1,100/week | $150 |
-| 3.5T Excavator | $340/day | $1,550/week | $250 |
+| 0.8T Mini Excavator | $200/day | $1,000/week | Quoted |
+| 1T Mini Excavator | $200/day | $1,000/week | Quoted |
+| 1.7T Mini Excavator | $205/day | $1,100/week | Quoted |
+| 3.5T Excavator | $340/day | $1,550/week | Quoted |
 | 5.5T Excavator | $370/day | $1,650/week | On enquiry |
 
 All prices include GST. Delivery and collection are quoted for your site and hire dates. For locations outside Greater Sydney — Wollongong and the Blue Mountains — delivery is quoted by distance. Contact BuildHire for a regional delivery quote.
 
 ### What's Included in BuildHire's Price
 
-BuildHire's all-inclusive pricing covers:
+BuildHire's hire price covers:
 - The machine for your nominated hire period
-- Delivery to your site on a low-loader trailer
-- Collection from your site at the end of hire
 - Full operating instructions and handover
 - GST
 
-There are no additional environmental levies, fuel surcharges, or mandatory damage waivers. BuildHire does offer optional damage protection for hirers who want additional peace of mind — this is optional, not mandatory.
+Delivery and collection are quoted for your site and hire dates.
+
+Return the machine with the same fuel level, or a refuelling charge applies (minimum $50 + GST). Cleaning charges may apply for mud, concrete or other build-up (minimum $150 + GST).
 
 ### Weekly vs Daily Hire: Which Is Cheaper?
 
-BuildHire's weekly rates are equivalent to 3.5 daily rates — meaning you get 5 days of hire for the price of 3.5 days. For any project lasting 5 or more days, weekly hire is significantly cheaper than paying the daily rate.
+On the 3.5T and 5.5T, a week costs less than 5 daily rates ($1,550 vs $1,700 and $1,650 vs $1,850). On the 0.8T and 1T a week costs the same as 5 days ($1,000), and on the 1.7T it costs $75 more ($1,100 vs $1,025).
 
 For projects lasting 3–4 weeks, BuildHire offers monthly rates. Contact BuildHire directly for monthly pricing.
 
@@ -114,7 +112,7 @@ For projects lasting 3–4 weeks, BuildHire offers monthly rates. Contact BuildH
 
 **Machine size:** Larger machines cost more. The 0.8T is the most affordable; the 5.5T is the most expensive.
 
-**Hire duration:** Daily rates are highest per day. Weekly rates offer significant savings. Monthly rates offer the best value for extended projects.
+**Hire duration:** Weekly rates are in the table above. Call 1300 157 882 for monthly pricing.
 
 **Location:** Delivery and collection are quoted for your site and hire dates. Regional NSW locations incur higher delivery costs based on distance.
 
@@ -124,10 +122,9 @@ For projects lasting 3–4 weeks, BuildHire offers monthly rates. Contact BuildH
 
 Book online at buildhire.com.au for the fastest booking experience. If your project runs longer than expected, contact BuildHire to extend your hire — extending is typically cheaper than returning and re-hiring. For projects lasting 3+ weeks, ask about monthly rates.`,
     relatedQuestions: [
-      { q: "What is included in BuildHire's mini excavator hire price in Sydney?", a: "BuildHire's hire price includes the machine, delivery to your site, collection after hire, full operating instructions, and GST. There are no additional environmental levies, damage waivers, or fuel surcharges." },
-      { q: "Is weekly hire cheaper than daily hire for a mini excavator?", a: "Yes. BuildHire's weekly rates offer significant savings: 0.8T and 1T at $1,000/week (5 days for the price of 5 daily rates), 1.7T at $1,100/week, 3.5T at $1,550/week, 5.5T at $1,650/week, and 14.5T at $2,100/week. For projects lasting 5 or more days, weekly hire is significantly cheaper." },
+      { q: "What is included in BuildHire's mini excavator hire price in Sydney?", a: "BuildHire's hire price includes the machine, full operating instructions and GST. Delivery and collection are quoted for your site and hire dates. Return the machine with the same fuel level, or a refuelling charge applies (minimum $50 + GST). Cleaning charges may apply for mud, concrete or other build-up (minimum $150 + GST)." },
+      { q: "Is weekly hire cheaper than daily hire for a mini excavator?", a: "On the 3.5T, 5.5T and 14.5T, a week costs less than 5 daily rates. On the 0.8T and 1T it costs the same as 5 days, and on the 1.7T it costs $75 more. Weekly rates incl GST: $1,000 for the 0.8T and 1T, $1,100 for the 1.7T, $1,550 for the 3.5T, $1,650 for the 5.5T and $2,100 for the 14.5T." },
       { q: "How much does delivery cost for a mini excavator in Sydney?", a: "Delivery and collection are quoted for your site and hire dates. Larger machines (5.5T+) are delivered by third-party transport at pricing on enquiry. For regional NSW locations, delivery costs vary by distance." },
-      { q: "How does BuildHire's pricing compare to traditional hire depots in Sydney?", a: "BuildHire's all-inclusive pricing is typically 15–30% cheaper than traditional hire depots when all fees (delivery, damage waiver, environmental levy) are accounted for." },
       { q: "How much does a sieve bucket attachment cost to hire?", a: "A sieve bucket (screening bucket) from Tiger Buckets costs $50/day when hired with a compatible excavator from BuildHire. Available on the 1.7T, 3.5T, 5.5T, and 14.5T excavators. Ideal for separating soil, screening topsoil, and sorting aggregate on site." },
       { q: "What auger drill sizes are available with BuildHire excavators?", a: "BuildHire's auger attachments are available in 200mm, 300mm, and 450mm drill sizes for the 1.7T through 14.5T excavators. The 200mm is ideal for fence posts and small piers; the 300mm for standard footings; the 450mm for large bored piers and tree planting." }
     ],
@@ -281,7 +278,7 @@ Choose your hire start date and end date. BuildHire's calendar shows real-time a
 Type in your site address. Delivery and collection are quoted for your site and hire dates. If you're in a regional area, the system will prompt you to contact BuildHire for a delivery quote.
 
 **Step 4: Review your order**
-Before payment, review your booking summary: machine, hire dates, delivery address, and total cost including GST. BuildHire's all-inclusive pricing means no surprises at checkout — the price shown is the price you pay.
+Before payment, review your booking summary: machine, hire dates, delivery address, and total cost including GST.
 
 **Step 5: Pay securely online**
 BuildHire accepts all major credit cards and debit cards. Payment is processed securely at checkout. You'll receive an email confirmation immediately after payment with your booking reference, delivery details, and contact information.
@@ -2304,11 +2301,11 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     slug: "excavator-hire-for-civil-works",
     question: "Can I hire an excavator for civil works in NSW?",
     category: "Use Case",
-    shortAnswer: "Yes — BuildHire supplies excavators from 1.7T to 8T+ for civil works including road construction, drainage, utilities, and earthworks across NSW.",
-    fullAnswer: `## Excavator Hire for Civil Works in NSW\n\nBuildHire supplies excavators for civil works projects across NSW. Our fleet includes machines suitable for a wide range of civil applications.\n\n### Common Civil Applications\n\n- **Road and pavement construction** — subgrade preparation, kerb and channel\n- **Drainage and stormwater** — trench excavation, pipe laying\n- **Utilities** — water, sewer, gas, and NBN trenching\n- **Earthworks** — cut and fill, bulk excavation, compaction\n- **Retaining structures** — sheet piling, bored piers, rock anchors\n\n### Equipment for Civil Works\n\n- **3.5T Excavator** — light civil, trenching, residential subdivision\n- **5.5T–8T Excavators** — medium civil works, road construction\n- **Tipper Trucks** — spoil removal and material delivery\n\nCall 1300 157 882 for civil project pricing and availability.`,
+    shortAnswer: "Yes. BuildHire supplies excavators from 1.7T to 8T+ for civil works including road construction, drainage, utilities, and earthworks across Sydney.",
+    fullAnswer: `## Excavator Hire for Civil Works in NSW\n\nBuildHire supplies excavators for civil works projects across Sydney. Our fleet includes machines suitable for a wide range of civil applications.\n\n### Common Civil Applications\n\n- **Road and pavement construction:** subgrade preparation, kerb and channel\n- **Drainage and stormwater:** trench excavation, pipe laying\n- **Utilities:** water, sewer, gas, and NBN trenching\n- **Earthworks:** cut and fill, bulk excavation, compaction\n- **Retaining structures:** sheet piling, bored piers, rock anchors\n\n### Equipment for Civil Works\n\n- **3.5T Excavator:** light civil, trenching, residential subdivision\n- **5.5T to 8T Excavators:** medium civil works, road construction\n- **Tipper Trucks:** spoil removal and material delivery\n\nCall 1300 157 882 for civil project pricing and availability.`,
     relatedQuestions: [
       { q: "What size excavator do I need for civil works?", a: "3.5T for light civil and trenching; 5.5T–8T for medium civil works. Call 1300 157 882 to discuss your project." },
-      { q: "Does BuildHire supply excavators for road construction?", a: "Yes. We supply excavators for road construction, drainage, and earthworks across NSW." }
+      { q: "Does BuildHire supply excavators for road construction?", a: "Yes. We supply excavators for road construction, drainage, and earthworks across Sydney." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -2316,8 +2313,8 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     slug: "excavator-hire-for-commercial-construction",
     question: "Can I hire an excavator for commercial construction?",
     category: "Use Case",
-    shortAnswer: "Yes — BuildHire supplies excavators for commercial construction including basement excavation, bulk earthworks, and site preparation across NSW.",
-    fullAnswer: `## Excavator Hire for Commercial Construction\n\nBuildHire supplies excavators for commercial construction projects. We work with builders, developers, and project managers on commercial sites across NSW.\n\n### Common Commercial Applications\n\n- **Basement and carpark excavation**\n- **Bulk earthworks and site preparation**\n- **Footing and pile cap excavation**\n- **Drainage and services trenching**\n- **Demolition and concrete removal**\n\n### Equipment\n\n- **3.5T Excavator** — light commercial, tight urban sites\n- **5.5T–8T Excavators** — medium commercial projects\n- **Tipper Trucks** — spoil removal\n\nCall 1300 157 882 for commercial project pricing and long-term hire rates.`,
+    shortAnswer: "Yes. BuildHire supplies excavators for commercial construction including basement excavation, bulk earthworks, and site preparation across Sydney.",
+    fullAnswer: `## Excavator Hire for Commercial Construction\n\nBuildHire supplies excavators for commercial construction projects. We work with builders, developers, and project managers on commercial sites across Sydney.\n\n### Common Commercial Applications\n\n- **Basement and carpark excavation**\n- **Bulk earthworks and site preparation**\n- **Footing and pile cap excavation**\n- **Drainage and services trenching**\n- **Demolition and concrete removal**\n\n### Equipment\n\n- **3.5T Excavator:** light commercial, tight urban sites\n- **5.5T to 8T Excavators:** medium commercial projects\n- **Tipper Trucks:** spoil removal\n\nCall 1300 157 882 for commercial project pricing and long-term hire rates.`,
     relatedQuestions: [
       { q: "Does BuildHire offer weekly or monthly hire rates for commercial projects?", a: "Yes. Call 1300 157 882 for weekly and monthly hire rates for commercial projects." },
       { q: "Can BuildHire supply an operator with the excavator?", a: "BuildHire offers dry hire (machine only). For wet hire (machine + operator), call 1300 157 882 to discuss options." }
@@ -2401,7 +2398,7 @@ BuildHire provides all hirers with a WHS information sheet at the time of bookin
     question: "Can I hire an excavator for house demolition?",
     category: "Use Case",
     shortAnswer: "Yes — BuildHire supplies excavators for residential demolition. A 5.5T–8T excavator is typically used for house demolition, with tipper trucks for debris removal.",
-    fullAnswer: `## Excavator Hire for House Demolition\n\nBuildHire supplies excavators for residential demolition projects across NSW.\n\n### Recommended Equipment\n\n- **5.5T–8T Excavator** — standard for house demolition; sufficient reach and force for single-storey residential\n- **Hydraulic Breaker** — for concrete slabs, footings, and brick walls\n- **Tipper Trucks** — for removing demolition debris\n\n### NSW Demolition Requirements\n\n- A demolition licence is required for buildings over a certain size — check with your local council\n- Asbestos must be removed by a licensed asbestos removalist before demolition begins\n- A Safe Work Method Statement (SWMS) is required\n\n### Booking\n\nCall 1300 157 882 for demolition project pricing. We can arrange the excavator, hydraulic breaker, and tipper trucks as a package.`,
+    fullAnswer: `## Excavator Hire for House Demolition\n\nBuildHire supplies excavators for residential demolition projects across Sydney.\n\n### Recommended Equipment\n\n- **5.5T to 8T Excavator:** standard for house demolition; sufficient reach and force for single-storey residential\n- **Hydraulic Breaker:** for concrete slabs, footings, and brick walls\n- **Tipper Trucks:** for removing demolition debris\n\n### NSW Demolition Requirements\n\n- A demolition licence is required for buildings over a certain size, check with your local council\n- Asbestos must be removed by a licensed asbestos removalist before demolition begins\n- A Safe Work Method Statement (SWMS) is required\n\n### Booking\n\nCall 1300 157 882 for demolition project pricing. We can arrange the excavator, hydraulic breaker, and tipper trucks as a package.`,
     relatedQuestions: [
       { q: "What size excavator do I need for house demolition?", a: "A 5.5T–8T excavator is standard for single-storey residential demolition. Call 1300 157 882 to discuss your project." },
       { q: "Does BuildHire supply a hydraulic breaker for demolition?", a: "Yes. Hydraulic breaker attachments are available for the 5.5T and 8T machines. Call 1300 157 882 to confirm availability." }

@@ -41,7 +41,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Completed a multi-lot residential development across several Sydney sites on schedule, with machines delivered and collected without disruption to the build programme.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "Transparent pricing is a BuildHire non-negotiable. Every quote includes delivery, collection, and fuel — no hidden fees, no surprises on the invoice. Our online booking system gives you an instant price in under 60 seconds, and our team is available via WhatsApp for same-day enquiries. For Sydney operators who need reliable equipment hire without the runaround, BuildHire is the answer.",
+    bodyParagraph3: "Daily rates are shown online, incl GST, and delivery and collection are quoted for your site. Our online booking tool shows the hire price straight away, and our team is on WhatsApp for same-day enquiries.",
     faqs: [
       { q: "Do you deliver excavators to all Sydney suburbs?", a: "Yes — BuildHire delivers to all Sydney metro suburbs, from the CBD and inner suburbs to Western Sydney, the Northern Beaches, Sutherland Shire, and beyond. Book by 12pm for guaranteed next-day delivery." },
       { q: "What is the minimum hire period for excavator hire in Sydney?", a: "Our minimum hire period is one day. We also offer weekly and monthly rates that provide significant savings for longer projects across Sydney." },
@@ -123,7 +123,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     faqs: [
       { q: "Do you deliver excavators to Liverpool and South Western Sydney?", a: "Yes — BuildHire delivers to Liverpool and all surrounding suburbs including Moorebank, Casula, Prestons, Fairfield, Cabramatta, and Warwick Farm." },
       { q: "What excavator sizes are best for Liverpool residential projects?", a: "The 3.5T Yanmar is the most popular choice for Liverpool residential work — pool excavations, retaining walls, drainage. For tight access, the 1T or 1.7T mini excavator is ideal." },
-      { q: "How do I get a quote for excavator hire in Liverpool?", a: "Use our online booking tool for an instant price in under 60 seconds, or WhatsApp our team for a personalised quote. Prices include delivery, collection, and GST — no hidden extras." }
+      { q: "How do I get a quote for excavator hire in Liverpool?", a: "Use our online booking tool for an instant price in under 60 seconds, or WhatsApp our team for a personalised quote. Prices include GST, and delivery and collection are quoted for your site." }
     ],
     nearbyAreas: ["Campbelltown", "Fairfield", "Bankstown", "Cabramatta", "Casula"],
     nearbyAreaSlugs: ["campbelltown", "fairfield", "bankstown", "cabramatta", "narellan"],
@@ -327,9 +327,9 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Wollongong residential project completed on schedule, with consistent machine performance in the Illawarra's varied soil conditions.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to all Wollongong suburbs and the broader Illawarra region including Kiama, Shellharbour, and the South Coast. Contact our team to confirm delivery timelines for your specific Illawarra location. Get an instant online price or WhatsApp us for a regional quote.",
+    bodyParagraph3: "BuildHire delivers to all Wollongong suburbs. Contact our team to confirm delivery timelines for your site. Get an instant online price or WhatsApp us for a regional quote.",
     faqs: [
-      { q: "Do you deliver excavators to Wollongong and the Illawarra?", a: "Yes — BuildHire delivers to Wollongong and the broader Illawarra region including Kiama, Shellharbour, Dapto, and the South Coast. Contact our team to confirm delivery timelines." },
+      { q: "Do you deliver excavators to Wollongong and the Illawarra?", a: "Yes. BuildHire delivers to Wollongong suburbs, including Dapto. Contact our team to confirm delivery timelines." },
       { q: "What excavator is best for coastal Wollongong projects?", a: "The 1.7T and 3.5T Yanmar excavators are the most popular choices for coastal Wollongong residential work — both handle the sandy and clay soils common in the Illawarra well." },
       { q: "Do you deliver to Kiama and Shellharbour?", a: "Yes — Kiama and Shellharbour are within our Illawarra delivery zone. Contact our team to confirm delivery lead times for these locations." }
     ],
@@ -502,7 +502,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     state: "NSW",
     suburbs: ["Castle Hill", "Baulkham Hills", "Kellyville", "Rouse Hill", "Norwest", "Bella Vista", "Winston Hills", "Cherrybrook"],
     intro: "BuildHire delivers excavators and construction equipment across the Hills District — late-model machines, next-day delivery, and pricing that's always transparent.",
-    bodyParagraph1: "The Hills District is one of Sydney's most consistently active residential construction markets. Large blocks, premium residential builds, and a high concentration of pool builders and landscapers create strong and consistent demand for reliable plant hire. BuildHire delivers to all Hills District suburbs with late-model Yanmar and Sumitomo machines, next-day delivery, and transparent pricing that includes delivery, collection, and GST.",
+    bodyParagraph1: "The Hills District is one of Sydney's most consistently active residential construction markets. Large blocks, premium residential builds, and a high concentration of pool builders and landscapers create strong and consistent demand for reliable plant hire. BuildHire delivers to all Hills District suburbs with late-model Yanmar and Sumitomo machines, next-day delivery, and transparent pricing, with delivery and collection quoted for your site.",
     bodyParagraph2: "Hills District residential lots are typically larger than inner-Sydney properties, which makes the 3.5T and 5.5T Yanmar excavators the most popular choices for pool excavations, retaining walls, and drainage work. For projects with tight access or established gardens, the 1T and 1.7T mini excavators provide the precision needed. Our mini dumpers are also popular across the Hills District for spoil removal on pool and landscaping projects.",
     caseStudy: {
       client: "Mac Developments",
@@ -554,7 +554,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     state: "NSW",
     suburbs: ["Kellyville", "Kellyville Ridge", "Beaumont Hills", "Rouse Hill", "Stanhope Gardens", "Parklea", "Glenwood", "Quakers Hill"],
     intro: "BuildHire delivers excavators and construction equipment to Kellyville and the Hills District — late-model machines, next-day delivery, and transparent pricing.",
-    bodyParagraph1: "Kellyville and Kellyville Ridge are among the Hills District's most active residential construction areas, with a mix of established homes and newer estate development across Beaumont Hills, Stanhope Gardens, and the surrounding suburbs. BuildHire delivers to Kellyville and all Hills District suburbs with late-model machines, next-day delivery, and pricing that includes delivery, collection, and GST.",
+    bodyParagraph1: "Kellyville and Kellyville Ridge are among the Hills District's most active residential construction areas, with a mix of established homes and newer estate development across Beaumont Hills, Stanhope Gardens, and the surrounding suburbs. BuildHire delivers to Kellyville and all Hills District suburbs with late-model machines, next-day delivery, and pricing with delivery and collection quoted for your site.",
     bodyParagraph2: "The 3.5T and 5.5T Yanmar excavators are the most popular choices for Kellyville residential work — pool excavations, retaining walls, drainage, and footing preparation. For projects with tight access, the 1.7T mini excavator provides the precision needed. Our mini dumpers are also popular in Kellyville for spoil removal on pool and landscaping projects.",
     caseStudy: {
       client: "FW Building",

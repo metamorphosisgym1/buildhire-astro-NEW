@@ -21,7 +21,7 @@ export async function getStaticPaths() {
 
 const { item, useCase } = Astro.props;
 const title = `${item.shortName} Hire for ${useCase.name} | From ${item.price} | BuildHire`;
-const description = `Hire a ${item.shortName.toLowerCase()} for ${useCase.name.toLowerCase()} anywhere in NSW. BuildHire offers late-model ${item.shortName.toLowerCase()} from ${item.price} with next-day delivery across Sydney and NSW.`;
+const description = `Hire a ${item.shortName.toLowerCase()} for ${useCase.name.toLowerCase()} in Sydney. BuildHire offers late-model ${item.shortName.toLowerCase()} from ${item.price} with delivery across Sydney, subject to availability.`;
 const canonicalPath = `/hire/${item.slug}/use-case/${useCase.slug}/`;
 
 // Top 6 locations for internal linking
@@ -106,7 +106,7 @@ const faqSchema = {
           {item.shortName} Hire for {useCase.name}
         </h1>
         <p class="text-white/70 text-xl mb-8 max-w-2xl">
-          {useCase.description} BuildHire supplies late-model {item.shortName.toLowerCase()} from {item.price} with next-day delivery across Sydney and NSW.
+          {useCase.description} BuildHire supplies late-model {item.shortName.toLowerCase()} from {item.price} with delivery across Sydney, subject to availability.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg text-center">
@@ -147,13 +147,13 @@ const faqSchema = {
           Why Use a {item.shortName} for {useCase.name}?
         </h2>
         <p class="text-[var(--color-text-muted)] text-lg mb-10">
-          The {item.shortName} is one of the most effective machines for {useCase.name.toLowerCase()} projects across NSW. {useCase.description}
+          The {item.shortName} is one of the most effective machines for {useCase.name.toLowerCase()} projects across Sydney. {useCase.description}
         </p>
         <div class="grid sm:grid-cols-2 gap-6">
           {[
             { icon: "⚡", title: "Purpose-Built Performance", desc: `The ${item.shortName} delivers the power and precision needed for ${useCase.name.toLowerCase()} work.` },
-            { icon: "🚛", title: "Next-Day Delivery", desc: "Book before 12pm for next-day delivery to your site anywhere in Greater Sydney and NSW." },
-            { icon: "💰", title: `From ${item.price}`, desc: "Transparent, all-inclusive pricing with no hidden fees or surprise surcharges." },
+            { icon: "🚛", title: "Sydney Delivery", desc: "Delivery across Sydney, subject to availability." },
+            { icon: "💰", title: `From ${item.price}`, desc: "Daily rates shown online, incl GST. Delivery and collection quoted for your site." },
             { icon: "🔧", title: "Late-Model Fleet", desc: "All machines are regularly serviced and maintained to the highest standards." }
           ].map(card => (
             <div class="bg-white rounded-xl p-6 shadow-sm">
@@ -210,7 +210,7 @@ const faqSchema = {
           Ready to Hire a {item.shortName} for {useCase.name}?
         </h2>
         <p class="text-white/80 mb-8 text-lg">
-          Book online in 60 seconds or call us for an instant quote. Next-day delivery available across Sydney & NSW.
+          Book online in 60 seconds or call us for an instant quote. Delivery across Sydney, subject to availability.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">

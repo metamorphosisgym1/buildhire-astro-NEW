@@ -7,7 +7,7 @@ import StickyBottomBar from '../components/StickyBottomBar';
 import { serviceAreaContent } from '../data/serviceAreaContent';
 
 const title = "Excavator Hire Service Areas | Sydney & NSW | BuildHire";
-const description = "BuildHire delivers excavators and construction equipment across Sydney and all of NSW. Find your service area and get an instant quote. Next-day delivery guaranteed.";
+const description = "BuildHire delivers excavators and construction equipment across Sydney. Find your service area and get an instant quote.";
 
 // Group locations by region
 const regions: Record<string, typeof serviceAreaContent> = {};
@@ -53,14 +53,14 @@ const breadcrumbSchema = {
         </nav>
 
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[hsl(var(--primary))]/10 text-[hsl(var(--primary))] text-sm font-semibold mb-6">
-          📍 Serving Sydney Metro & All of NSW
+          📍 Serving Sydney Metro
         </div>
 
         <h1 class="text-4xl md:text-5xl font-bold text-[hsl(var(--foreground))] mb-6 leading-tight tracking-tight">
           Excavator Hire Service Areas
         </h1>
         <p class="text-xl text-[hsl(var(--muted-foreground))] mb-8 max-w-3xl leading-relaxed">
-          BuildHire delivers late-model Yanmar and Sumitomo excavators across Sydney and all of NSW. Find your area below for local pricing, availability, and next-day delivery.
+          BuildHire delivers late-model Yanmar and Sumitomo excavators across Sydney. Find your area below for local pricing, availability, and next-day delivery.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="/#booking" class="bg-[hsl(var(--primary))] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg text-center">
@@ -114,12 +114,12 @@ const breadcrumbSchema = {
     <section class="bg-[hsl(var(--background))] py-16">
       <div class="max-w-5xl mx-auto px-6">
         <h2 class="text-3xl font-bold text-[hsl(var(--foreground))] mb-10 tracking-tight text-center">
-          Why Contractors Across NSW Choose BuildHire
+          Why Sydney Contractors Choose BuildHire
         </h2>
         <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { icon: "🚛", title: "Next-Day Delivery", desc: "Book before 12pm for guaranteed next-day delivery to your site." },
-            { icon: "💰", title: "All-In Pricing", desc: "Delivery, collection, and fuel included. No hidden fees, ever." },
+            { icon: "💰", title: "Rates Shown Online", desc: "Daily rates incl GST. Delivery and collection quoted for your site." },
             { icon: "🔧", title: "Late-Model Fleet", desc: "Low-hour Yanmar and Sumitomo machines maintained in-house." },
             { icon: "📱", title: "WhatsApp Booking", desc: "Message our team for same-day enquiries and instant pricing." }
           ].map(item => (
@@ -140,7 +140,7 @@ const breadcrumbSchema = {
           Can't Find Your Area?
         </h2>
         <p class="text-white/80 mb-8 text-lg">
-          We deliver across all of NSW. Call us or send a WhatsApp message and we'll confirm availability for your location within minutes.
+          Outside Sydney metro? Call us or send a WhatsApp message and we'll confirm availability for your location.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/#booking" class="bg-white text-[hsl(var(--primary))] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">

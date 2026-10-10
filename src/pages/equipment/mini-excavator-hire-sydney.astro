@@ -24,7 +24,7 @@ const serviceSchema = {
     }
   },
   "areaServed": { "@type": "State", "name": "New South Wales" },
-  "description": "Mini excavator dry hire in Sydney from $200/day. Choose from 0.8T, 1.7T, and 3.5T Yanmar machines. Next-day delivery across Sydney and NSW.",
+  "description": "Mini excavator dry hire in Sydney from $200/day. Choose from 0.8T, 1.7T, and 3.5T Yanmar machines. Delivery across Sydney, subject to availability.",
   "offers": {
     "@type": "AggregateOffer",
     "priceCurrency": "AUD",
@@ -75,7 +75,7 @@ const faqSchema = {
       "name": "What areas of Sydney does BuildHire deliver to?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BuildHire delivers across all of Greater Sydney including the CBD, Eastern Suburbs, Inner West, North Shore, Northern Beaches, Western Sydney, Hills District, and beyond. We also deliver NSW-wide — contact us for regional pricing."
+        "text": "BuildHire delivers across all of Greater Sydney including the CBD, Eastern Suburbs, Inner West, North Shore, Northern Beaches, Western Sydney and the Hills District. Outside Sydney metro? Contact us for a delivery quote."
       }
     }
   ]
@@ -85,7 +85,7 @@ const faqSchema = {
 <Layout
   crumbs={[{ name: "Equipment", path: "/equipment/" }, { name: "Mini Excavator Hire", path: "/equipment/mini-excavator-hire-sydney/" }]}
   title="Mini Excavator Hire Sydney | From $200/day Dry Hire | BuildHire"
-  description="Mini excavator hire Sydney from $200/day. 0.8T, 1.7T & 3.5T Yanmar machines available for dry hire. Next-day delivery across Sydney & NSW. Book online instantly."
+  description="Mini excavator hire Sydney from $200/day. 0.8T, 1.7T & 3.5T Yanmar machines available for dry hire. Delivery across Sydney, subject to availability. Book online instantly."
   canonicalPath="/equipment/mini-excavator-hire-sydney"
   ogImage="/og-image.png"
 >
@@ -104,7 +104,7 @@ const faqSchema = {
             Mini Excavator Hire Sydney
           </h1>
           <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">
-            Dry hire from <strong class="text-[var(--color-primary)]">$200/day</strong>. Choose from our fleet of 0.8T, 1.7T, and 3.5T Yanmar machines. Next-day delivery across Sydney & NSW. No hidden fees.
+            Dry hire from <strong class="text-[var(--color-primary)]">$200/day</strong>. Choose from our fleet of 0.8T, 1.7T, and 3.5T Yanmar machines. Delivery across Sydney, subject to availability.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">
@@ -198,7 +198,7 @@ const faqSchema = {
     <section class="bg-white py-16">
       <div class="max-w-5xl mx-auto px-6">
         <h2 class="text-3xl font-bold text-[var(--color-text)] mb-4 text-center">Sydney Delivery Areas</h2>
-        <p class="text-center text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto">We deliver mini excavators across all of Greater Sydney and NSW. Delivery and collection are quoted for your site.</p>
+        <p class="text-center text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto">We deliver mini excavators across Greater Sydney. Delivery and collection are quoted for your site.</p>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {["Sydney CBD", "Eastern Suburbs", "Inner West", "North Shore", "Northern Beaches", "Western Sydney", "Hills District", "South West Sydney", "Parramatta", "Blacktown", "Penrith", "Liverpool", "Sutherland Shire", "Cronulla", "Manly", "Chatswood"].map(area => (
             <div class="bg-[var(--color-bg)] rounded-lg px-4 py-3 text-sm font-medium text-[var(--color-text)] text-center">
@@ -219,7 +219,7 @@ const faqSchema = {
             { q: "What size mini excavator do I need?", a: "For tight access residential work (landscaping, small trenches, pool digging), a 0.8T or 1.7T is ideal. For heavier earthworks, site preparation, or deeper digging, a 3.5T is recommended. Call 1300 157 882 and our team will help you choose." },
             { q: "Do I need a licence to operate a mini excavator in NSW?", a: "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required." },
             { q: "How quickly can BuildHire deliver in Sydney?", a: "We offer next-day delivery for bookings placed before 12pm. Same-day delivery may be available — call 1300 157 882 to check availability." },
-            { q: "What areas of Sydney does BuildHire deliver to?", a: "BuildHire delivers across all of Greater Sydney including the CBD, Eastern Suburbs, Inner West, North Shore, Northern Beaches, Western Sydney, Hills District, and beyond. We also deliver NSW-wide." }
+            { q: "What areas of Sydney does BuildHire deliver to?", a: "BuildHire delivers across all of Greater Sydney including the CBD, Eastern Suburbs, Inner West, North Shore, Northern Beaches, Western Sydney and the Hills District. Outside Sydney metro? Contact us for a delivery quote." }
           ].map(item => (
             <details class="bg-white rounded-xl p-6 shadow-sm group">
               <summary class="font-semibold text-[var(--color-text)] cursor-pointer list-none flex justify-between items-center">
@@ -237,7 +237,7 @@ const faqSchema = {
     <section class="bg-[var(--color-primary)] py-16">
       <div class="max-w-3xl mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold text-white mb-4">Ready to Hire a Mini Excavator in Sydney?</h2>
-        <p class="text-white/80 mb-8 text-lg">Book online in 60 seconds or call us for an instant quote. Next-day delivery available across Sydney & NSW.</p>
+        <p class="text-white/80 mb-8 text-lg">Book online in 60 seconds or call us for an instant quote. Delivery across Sydney, subject to availability.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
             Book Online Now →

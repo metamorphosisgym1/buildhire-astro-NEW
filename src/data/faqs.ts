@@ -61,7 +61,7 @@ export const faqs: FAQ[] = [
   {
     slug: "how-do-i-book-equipment-hire-with-buildhire",
     question: "How do I book equipment hire with BuildHire?",
-    answer: "You can book with BuildHire by calling 1300 157 882 or submitting an enquiry through the website. Bookings placed before 12pm are eligible for next-day delivery across Greater Sydney and NSW. You will need to provide your delivery address, hire dates, and a valid ID.",
+    answer: "You can book with BuildHire by calling 1300 157 882 or submitting an enquiry through the website. Delivery across Greater Sydney is subject to availability. You will need to provide your delivery address, hire dates, and a valid ID.",
     category: "Pricing & Booking"
   },
   {
@@ -286,7 +286,7 @@ export const faqs: FAQ[] = [
   {
     slug: "does-buildhire-hire-to-owner-builders",
     question: "Does BuildHire hire to owner-builders?",
-    answer: "Yes, BuildHire regularly hires to owner-builders across Sydney and NSW. You do not need to be a licensed contractor to hire from us. Owner-builders are responsible for ensuring they comply with all relevant safety and licensing requirements for their specific project.",
+    answer: "Yes, BuildHire regularly hires to owner-builders across Sydney. You do not need to be a licensed contractor to hire from us. Owner-builders are responsible for ensuring they comply with all relevant safety and licensing requirements for their specific project.",
     category: "General"
   },
   {
@@ -333,7 +333,7 @@ export const faqs: FAQ[] = [
   { slug: "do-i-need-a-tipper-truck-with-an-excavator", question: "Do I need a tipper truck with an excavator?", answer: "For most excavation jobs, yes. The excavator digs the material, but you need a way to remove it from site. A tipper truck is the most efficient option for spoil removal. For backyard jobs where a truck cannot access, a mini dumper moves material to the front of the property where a skip bin or truck can collect it.", category: "Equipment Selection", relatedEquipment: ["tipper-truck", "mini-dumper-700kg"] },
 
   // Delivery & Logistics
-  { slug: "how-does-buildhire-deliver-equipment", question: "How does BuildHire deliver equipment?", answer: "BuildHire delivers all equipment on a tilt-tray or low-loader truck. The driver will unload the machine at the front of your property or as close to the work area as safely possible. You are responsible for moving the machine to the work area. Delivery is available across Greater Sydney and regional NSW.", category: "Delivery & Logistics" },
+  { slug: "how-does-buildhire-deliver-equipment", question: "How does BuildHire deliver equipment?", answer: "BuildHire delivers all equipment on a tilt-tray or low-loader truck. The driver will unload the machine at the front of your property or as close to the work area as safely possible. You are responsible for moving the machine to the work area. Delivery is available across Greater Sydney. Outside Sydney metro? Contact us to confirm delivery for your site.", category: "Delivery & Logistics" },
   { slug: "what-areas-does-buildhire-deliver-to", question: "What areas does BuildHire deliver to?", answer: "BuildHire delivers to all major Sydney suburbs and nearby areas including Wollongong and the Blue Mountains, and beyond. Delivery charges may vary for regional locations. Call 1300 157 882 to confirm delivery availability and pricing for your area.", category: "Delivery & Logistics" },
   { slug: "how-long-does-delivery-take", question: "How long does equipment delivery take?", answer: "For next-day delivery, book before 12pm the day prior. Delivery is typically completed in the morning between 7am and 12pm, though exact times depend on the delivery schedule. You will receive a call from the driver with an estimated arrival time on the morning of delivery.", category: "Delivery & Logistics" },
   { slug: "can-buildhire-deliver-to-a-construction-site", question: "Can BuildHire deliver to a construction site?", answer: "Yes, BuildHire regularly delivers to active construction sites. Please ensure there is a clear, safe area for the delivery truck to unload. If the site has restricted access or specific delivery requirements, contact us when booking to discuss logistics.", category: "Delivery & Logistics" },
@@ -349,7 +349,7 @@ export const faqs: FAQ[] = [
 
   // Civil Construction
   { slug: "what-excavator-for-civil-construction", question: "What size excavator is best for civil construction?", answer: "For civil construction, the 3.5T or 5.5T excavator is most commonly used. The 3.5T is ideal for drainage, road works, and service installation. The 5.5T provides more power and reach for larger civil projects. Both machines are available for daily, weekly, and monthly hire.", category: "Equipment Selection", relatedEquipment: ["3-5t-excavator", "5-5t-excavator"] },
-  { slug: "can-buildhire-supply-equipment-for-road-works", question: "Can BuildHire supply equipment for road works?", answer: "Yes, BuildHire supplies excavators and tipper trucks for road works projects across NSW. Our 3.5T and 5.5T excavators are suited to kerb and gutter excavation, stormwater drainage, and road base preparation. Contact us to discuss your project requirements and pricing.", category: "Equipment Selection", relatedEquipment: ["3-5t-excavator", "5-5t-excavator", "tipper-truck"] },
+  { slug: "can-buildhire-supply-equipment-for-road-works", question: "Can BuildHire supply equipment for road works?", answer: "Yes, BuildHire supplies excavators and tipper trucks for road works projects across Sydney. Our 3.5T and 5.5T excavators are suited to kerb and gutter excavation, stormwater drainage, and road base preparation. Contact us to discuss your project requirements and pricing.", category: "Equipment Selection", relatedEquipment: ["3-5t-excavator", "5-5t-excavator", "tipper-truck"] },
 
   // Driveway & Concrete
   { slug: "what-equipment-do-i-need-to-prepare-a-driveway", question: "What equipment do I need to prepare a driveway?", answer: "For driveway preparation, a 1.7T or 3.5T excavator handles excavation and grading. A tipper truck removes the excavated material. For compaction, a plate compactor (not currently in BuildHire's fleet) is typically required before pouring concrete or laying pavers.", category: "Equipment Selection", relatedEquipment: ["1-7t-mini-excavator", "3-5t-excavator", "tipper-truck"] },
@@ -394,5 +394,5 @@ export const faqs: FAQ[] = [
   { slug: "best-excavator-for-plumbers-sydney", question: "What is the best excavator for plumbers in Sydney?", answer: "For plumbing and drainage work, the 0.8T or 1T mini excavator is the most practical choice. These machines are narrow enough for tight residential access, precise enough for accurate trench digging, and easy to operate for experienced tradespeople. The 1.7T is better for deeper service trenches.", category: "Trenching", relatedEquipment: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator"] },
 
   // Comparison
-  { slug: "why-choose-buildhire-over-other-hire-companies", question: "Why should I choose BuildHire over other equipment hire companies?", answer: "BuildHire specialises exclusively in excavators, mini dumpers, and tipper trucks. This focus means a newer fleet, better-maintained machines, and a team with deep expertise in earthmoving equipment. We offer next-day delivery, all-inclusive pricing (no hidden fees), 7-day support, and a straightforward booking process. We are the specialist choice for excavation and earthmoving in NSW.", category: "General" }
+  { slug: "why-choose-buildhire-over-other-hire-companies", question: "Why should I choose BuildHire over other equipment hire companies?", answer: "BuildHire dry hires excavators from 0.8T to 14.5T, mini dumpers and an Isuzu tipper truck from our Arncliffe yard, open 7 days, 5am to 8pm. Daily rates are shown online, incl GST, and delivery and collection are quoted for your site.", category: "General" }
 ];

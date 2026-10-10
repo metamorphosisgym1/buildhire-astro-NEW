@@ -76,7 +76,7 @@ export default function Header({ overHero = false }: { overHero?: boolean }) {
       {showBanner && (
         <div className="fixed top-0 left-0 right-0 z-[60] bg-primary text-primary-foreground text-center text-sm py-2 px-6">
           <span className="font-medium">
-            🚛 Sydney & NSW Equipment Hire — Share your site details to confirm availability and delivery
+            🚛 Sydney Equipment Hire. Share your site details to confirm availability and delivery
           </span>
           <button
             onClick={() => setShowBanner(false)}

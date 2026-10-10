@@ -6,12 +6,13 @@ const stats = [
 ];
 function AnimatedNumber({ target, suffix }: { target: number | string; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(typeof target === "number" ? target : 0);
   useEffect(() => {
     if (typeof target !== "number") return;
     const steps = 60;
     const increment = target / steps;
     let current = 0;
+    setCount(0);
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {

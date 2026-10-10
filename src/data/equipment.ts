@@ -79,7 +79,7 @@ const equipmentCatalog: Equipment[] = [
     shortName: "1.7T Mini Excavator",
     category: "Excavators",
     description: "Our most popular mini excavator. Ideal for plumbing trenches, landscaping, and general earthmoving with true zero tail swing.",
-    longDescription: "The Yanmar ViO17 is BuildHire's most hired machine — and for good reason. It delivers the perfect balance of compact dimensions and serious digging power, making it the go-to choice for residential contractors across NSW.",
+    longDescription: "The Yanmar ViO17 is a 1.7T mini excavator for landscaping, trenching and residential earthworks across Sydney.",
     price: "$205/day",
     priceNum: "205",
     weeklyPrice: "$1,100/week",

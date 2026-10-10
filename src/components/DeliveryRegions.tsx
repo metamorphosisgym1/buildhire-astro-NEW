@@ -8,10 +8,10 @@ export default function DeliveryRegions() {
           Coverage
         </p>
         <h2 className="text-3xl md:text-5xl font-bold text-foreground text-center mb-6">
-          NSW Wide Delivery & Collection
+          Sydney Delivery & Collection
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16">
-          We deliver equipment across all of New South Wales — from Sydney metro to regional areas. No matter where your job site is, we've got you covered.
+          We deliver and collect across Sydney metro, the Blue Mountains and Wollongong. Outside these areas? Contact us to confirm delivery and collection for your site.
         </p>
         <div className="max-w-4xl mx-auto">
           {/* NSW Map outline */}
@@ -35,13 +35,6 @@ export default function DeliveryRegions() {
                 { x: 480, y: 320, label: "Sydney", main: true },
                 { x: 420, y: 260, label: "Blue Mountains" },
                 { x: 500, y: 380, label: "Wollongong" },
-                { x: 300, y: 350, label: "Canberra Region" },
-                { x: 200, y: 250, label: "Orange / Bathurst" },
-                { x: 150, y: 150, label: "Dubbo" },
-                { x: 400, y: 100, label: "Tamworth" },
-                { x: 480, y: 120, label: "Coffs Harbour" },
-                { x: 350, y: 420, label: "South Coast" },
-                { x: 100, y: 350, label: "Wagga Wagga" },
               ].map((loc) => (
                 <g key={loc.label}>
                   <circle
@@ -72,7 +65,7 @@ export default function DeliveryRegions() {
             {/* Coverage badge */}
             <div className="absolute top-4 right-4 bg-primary/10 border border-primary/30 rounded-full px-4 py-2 flex items-center gap-2">
               <Truck size={16} className="text-primary" />
-              <span className="text-sm font-semibold text-primary">NSW Wide</span>
+              <span className="text-sm font-semibold text-primary">Sydney</span>
             </div>
           </div>
           {/* Key areas */}
@@ -80,10 +73,7 @@ export default function DeliveryRegions() {
             {[
               "Greater Sydney",
               "Blue Mountains",
-              "Illawarra & Wollongong",
-              "South Coast",
-              "Central West",
-              "Regional NSW",
+              "Wollongong",
             ].map((area) => (
               <div
                 key={area}

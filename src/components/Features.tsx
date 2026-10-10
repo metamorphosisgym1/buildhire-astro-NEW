@@ -10,17 +10,17 @@ const features = [
   {
     icon: DollarSign,
     title: "Transparent Pricing",
-    desc: "Clear, competitive rates with zero hidden fees.",
+    desc: "Daily rates shown online, incl GST.",
   },
   {
     icon: Shield,
-    title: "Fully Compliant",
-    desc: "All equipment meets safety standards. No compromises.",
+    title: "Hire Terms Up Front",
+    desc: <>Read our <a href="/terms/#schedule" className="underline">dry hire terms and damage schedule</a> before you book.</>,
   },
   {
     icon: MapPin,
-    title: "NSW-Wide Delivery & Collection",
-    desc: "Fast delivery & collection across all of New South Wales.",
+    title: "Sydney Delivery & Collection",
+    desc: "Delivery and collection across Sydney metro, quoted for your site.",
   },
   {
     icon: HeadphonesIcon,

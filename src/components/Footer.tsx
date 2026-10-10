@@ -17,7 +17,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">BuildHire</span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
-              Sydney excavator hire and construction equipment rental. Reliable dry hire across NSW, with availability and delivery quoted for your job.
+              Sydney excavator hire and construction equipment rental. Dry hire across Sydney, with availability and delivery quoted for your job.
             </p>
             {/* Accreditation */}
             <div className="flex flex-wrap items-center gap-3 mt-2">
