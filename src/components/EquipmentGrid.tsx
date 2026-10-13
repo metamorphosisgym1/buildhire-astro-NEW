@@ -158,7 +158,7 @@ const availableEquipment: EquipmentItem[] = [
     category: "Excavators",
     image: vio80Img,
     rate: "$490/day",
-    badge: "available",
+    badge: "coming-soon",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2020/01/Sumitomo_SH235X-6_Tutt_Bryant.pdf",
     specs: {
       "Operating Weight": "25,100 kg",
