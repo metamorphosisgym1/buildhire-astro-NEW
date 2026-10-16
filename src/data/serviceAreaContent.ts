@@ -44,7 +44,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     bodyParagraph3: "Daily rates are shown online, incl GST, and delivery and collection are quoted for your site. Our online booking tool shows the hire price straight away, and our team is on WhatsApp for same-day enquiries.",
     faqs: [
       { q: "Do you deliver excavators to all Sydney suburbs?", a: "Yes — BuildHire delivers to all Sydney metro suburbs, from the CBD and inner suburbs to Western Sydney, the Northern Beaches, Sutherland Shire, and beyond. Book by 12pm for guaranteed next-day delivery." },
-      { q: "What is the minimum hire period for excavator hire in Sydney?", a: "Our minimum hire period is one day. We also offer weekly and monthly rates that provide significant savings for longer projects across Sydney." },
+      { q: "What is the minimum hire period for excavator hire in Sydney?", a: "Our minimum hire period is one day. We also offer weekly and monthly rates that cost less per day for longer projects across Sydney." },
       { q: "Do I need a licence to operate a mini excavator in Sydney?", a: "No licence is required to operate excavators under 10 tonnes in NSW. Our team provides a full machine induction on delivery so you're confident and safe from the first dig." }
     ],
     nearbyAreas: ["Parramatta", "Inner West", "Eastern Suburbs", "North Sydney", "Sutherland"],
@@ -97,7 +97,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     faqs: [
       { q: "Do you deliver excavators to Penrith and the Blue Mountains?", a: "Yes — BuildHire delivers to Penrith and all surrounding suburbs including Kingswood, St Marys, Emu Plains, and Glenmore Park. We also service the Blue Mountains and Hawkesbury regions." },
       { q: "What is the best excavator size for residential work in Penrith?", a: "For most Penrith residential projects — pools, retaining walls, drainage, footings — the 3.5T or 5.5T Yanmar excavator is the ideal choice. For tight access, the 1T or 1.7T mini excavator is the right fit." },
-      { q: "Can I hire an excavator in Penrith for just one day?", a: "Yes — our minimum hire period is one day. We also offer weekly rates that provide better value for projects running 5+ days." }
+      { q: "Can I hire an excavator in Penrith for just one day?", a: "Yes, our minimum hire period is one day. We also offer weekly rates that cost less than daily rates for projects running 6 to 7 days." }
     ],
     nearbyAreas: ["Blacktown", "Windsor", "Richmond", "Blue Mountains", "Liverpool"],
     nearbyAreaSlugs: ["blacktown", "windsor", "richmond", "blue-mountains", "liverpool"],

@@ -1,5 +1,4 @@
 import { useState } from "react";
-const boxTrailerImg = "/assets/box-trailer.webp";
 const sv08Img = "/assets/sv08-excavator.png";
 const kubotaU10Img = "/assets/kubota-u10-5-branded.webp";
 const vio17Img = "/assets/vio17-excavator.png";
@@ -17,8 +16,6 @@ const rockBreakerImg = "/assets/rock-breaker-buildhire.webp";
 const sieveBucketImg = "/assets/sieve-bucket-tiger.png";
 const augerImg = "/assets/auger-drive.jpg";
 const rockGrabImg = "/assets/rock-grab.webp";
-const demolitionHammerImg = "/assets/demolition-hammer.webp";
-const typhoonWasherImg = "/assets/typhoon-pressure-washer.webp";
 
 import {
   Dialog,
@@ -35,7 +32,7 @@ import {
 } from "@/components/ui/tooltip";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
-const categories = ["All", "Excavators", "Mini Dumpers", "Attachments", "Trailers", "Other tools"];
+const categories = ["All", "Excavators", "Mini Dumpers", "Attachments"];
 
 interface EquipmentItem {
   name: string;
@@ -170,18 +167,6 @@ const availableEquipment: EquipmentItem[] = [
     },
   },
   {
-    name: "Box Trailer",
-    category: "Trailers",
-    image: boxTrailerImg,
-    rate: "$150/day",
-    badge: "available",
-    specs: {
-      "Type": "Box Trailer",
-      "Capacity": "Standard",
-      "Suitable For": "General haulage & transport",
-    },
-  },
-  {
     name: "Cormidi C7x 700kg Petrol High Tip",
     category: "Mini Dumpers",
     image: cormidiC7xImg,
@@ -230,6 +215,7 @@ const availableEquipment: EquipmentItem[] = [
     useContain: true,
     specs: {
       "Type": "Hydraulic Auger (one drill)",
+      "Drill Sizes": "200, 300, 450 or 600 mm",
       "Suitable For": "1T to 14.5T Excavators",
     },
   },
@@ -256,32 +242,6 @@ const availableEquipment: EquipmentItem[] = [
       "Type": "Sieve / Skeleton Bucket",
       "Brand": "Tiger Buckets & Attachments",
       "Suitable For": "1.7T, 3.5T, 5.5T & 14.5T Excavators",
-    },
-  },
-  {
-    name: "Bosch GSH16-30 Demolition Hammer",
-    category: "Other tools",
-    image: demolitionHammerImg,
-    rate: "$110/day",
-    badge: "available",
-    useContain: true,
-    specs: {
-      "Type": "Demolition Hammer",
-      "Impact Energy": "41 J",
-      "Weight": "16.5 kg",
-    },
-  },
-  {
-    name: "Typhoon TPW4200H Pressure Washer",
-    category: "Other tools",
-    image: typhoonWasherImg,
-    rate: "$150/day",
-    badge: "available",
-    useContain: true,
-    specs: {
-      "Type": "Pressure Washer",
-      "Pressure": "4,200 PSI",
-      "Engine": "Petrol",
     },
   },
 ];

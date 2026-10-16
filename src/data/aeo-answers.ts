@@ -92,7 +92,7 @@ Return the machine with the same fuel level, or a refuelling charge applies (min
 
 ### Weekly vs Daily Hire: Which Is Cheaper?
 
-On the 3.5T and 5.5T, a week costs less than 5 daily rates ($1,550 vs $1,700 and $1,650 vs $1,850). On the 0.8T and 1T a week costs the same as 5 days ($1,000), and on the 1.7T it costs $75 more ($1,100 vs $1,025).
+A BuildHire week is 7 days. Against 5 daily rates, on the 3.5T and 5.5T a week costs less ($1,550 vs $1,700 and $1,650 vs $1,850). On the 0.8T and 1T a week costs the same as 5 days ($1,000), and on the 1.7T it costs $75 more ($1,100 vs $1,025).
 
 For projects lasting 3–4 weeks, BuildHire offers monthly rates. Contact BuildHire directly for monthly pricing.
 
@@ -119,10 +119,10 @@ For projects lasting 3–4 weeks, BuildHire offers monthly rates. Contact BuildH
 Book online at buildhire.com.au for the fastest booking experience. If your project runs longer than expected, contact BuildHire to extend your hire — extending is typically cheaper than returning and re-hiring. For projects lasting 3+ weeks, ask about monthly rates.`,
     relatedQuestions: [
       { q: "What is included in BuildHire's mini excavator hire price in Sydney?", a: "BuildHire's hire price includes the machine, full operating instructions and GST. Delivery and collection are quoted for your site and hire dates. Return the machine with the same fuel level, or a refuelling charge applies (minimum $50 + GST). Cleaning charges may apply for mud, concrete or other build-up (minimum $150 + GST)." },
-      { q: "Is weekly hire cheaper than daily hire for a mini excavator?", a: "No. On the 0.8T and 1T a week costs the same as 5 days, and on the 1.7T it costs $75 more. On the 3.5T, 5.5T and 14.5T a week costs less than 5 daily rates. Weekly rates incl GST: $1,000 for the 0.8T and 1T, $1,100 for the 1.7T, $1,550 for the 3.5T, $1,650 for the 5.5T and $2,000 for the 14.5T." },
+      { q: "Is weekly hire cheaper than daily hire for a mini excavator?", a: "Yes. A BuildHire week is 7 days and costs less than seven daily rates. Against 5 daily rates, a week costs the same on the 0.8T and 1T, $75 more on the 1.7T, and less on the 3.5T, 5.5T and 14.5T. Weekly rates incl GST: $1,000 for the 0.8T and 1T, $1,100 for the 1.7T, $1,550 for the 3.5T, $1,650 for the 5.5T and $2,000 for the 14.5T." },
       { q: "How much does delivery cost for a mini excavator in Sydney?", a: "Delivery and collection are quoted for your site and hire dates. Larger machines (5.5T+) are delivered by third-party transport at pricing on enquiry. For regional NSW locations, delivery costs vary by distance." },
       { q: "How much does a sieve bucket attachment cost to hire?", a: "A sieve bucket (screening bucket) from Tiger Buckets costs $50/day when hired with a compatible excavator from BuildHire. Available on the 1.7T, 3.5T, 5.5T, and 14.5T excavators. Ideal for separating soil, screening topsoil, and sorting aggregate on site." },
-      { q: "Does the BuildHire auger come with more than one drill?", a: "No. Each BuildHire auger drive comes with one drill. Augers are $180/day on the 1T, $190 on the 1.7T, $200 on the 3.5T and 5.5T, and $250 on the 14.5T, incl GST and on top of the machine rate." }
+      { q: "Does the BuildHire auger come with more than one drill?", a: "No. Each BuildHire auger drive comes with one drill, in 200, 300, 450 or 600 mm. Augers are $180/day on the 1T, $190 on the 1.7T, $200 on the 3.5T and 5.5T, and $250 on the 14.5T, incl GST and on top of the machine rate." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -653,7 +653,7 @@ Call BuildHire on 1300 157 882 to discuss your usage pattern and find the most c
     relatedQuestions: [
       { q: "How many days per year do I need to use an excavator before buying is cheaper than hiring?", a: "The break-even point is approximately 150–200 days of use per year when all ownership costs (insurance, maintenance, transport, depreciation) are factored in." },
       { q: "What does a second-hand 1.7T mini excavator cost in NSW?", a: "A used 1.7T mini excavator (3–5 years old) costs $25,000–$45,000 in NSW. New machines cost $55,000–$75,000." },
-      { q: "Does BuildHire offer long-term hire rates for frequent users?", a: "Yes. BuildHire offers weekly and monthly hire rates that provide significant savings over daily rates. Contact BuildHire on 1300 157 882 to discuss long-term hire options." }
+      { q: "Does BuildHire offer long-term hire rates for frequent users?", a: "Yes. BuildHire offers weekly and monthly hire rates that cost less than daily rates. Contact BuildHire on 1300 157 882 to discuss long-term hire options." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -1576,12 +1576,12 @@ All earthworks must be carried out in accordance with the approved engineering p
 
 ### Hiring for Subdivision Projects
 
-For subdivision projects, BuildHire recommends hiring the excavator for the full earthworks duration — typically 5–15 days depending on scope. Weekly and monthly rates provide significant savings over daily rates for extended projects.
+For subdivision projects, BuildHire recommends hiring the excavator for the full earthworks duration, typically 5 to 15 days depending on scope. Weekly and monthly rates cost less than daily rates for extended projects.
 
 Call BuildHire on 1300 157 882 to discuss your subdivision project and arrange a hire quote.`,
     relatedQuestions: [
       { q: "What excavator is best for service trenching in a residential subdivision?", a: "The 1.7T mini excavator is the standard choice for subdivision service trenching — fast, accurate, and compact enough to work between services." },
-      { q: "Does BuildHire offer weekly or monthly rates for subdivision projects?", a: "Yes. BuildHire offers weekly and monthly rates that provide significant savings over daily rates for extended projects. Call 1300 157 882 for a quote." }
+      { q: "Does BuildHire offer weekly or monthly rates for subdivision projects?", a: "Yes. BuildHire offers weekly and monthly rates that cost less than daily rates for extended projects. Call 1300 157 882 for a quote." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -1801,10 +1801,10 @@ Book online at buildhire.com.au or call 1300 157 882 for Inner West excavator hi
   {
     slug: "how-much-does-excavator-hire-cost-per-week",
     question: "How much does weekly excavator hire cost in NSW?",
-    shortAnswer: "Weekly excavator hire from BuildHire starts from $1,000/week for the 0.8T and 1T mini excavators. All weekly rates include GST and offer significant savings over daily rates for projects lasting 5 or more days.",
+    shortAnswer: "Weekly excavator hire from BuildHire starts from $1,000/week for the 0.8T and 1T mini excavators. All weekly rates include GST. A BuildHire week is 7 days, and it costs less than seven daily rates.",
     fullAnswer: `## Weekly Excavator Hire Costs in NSW
 
-For projects lasting 5 or more days, BuildHire's weekly hire rates provide significant savings over daily rates. Weekly hire is the most popular option for pool builders, landscapers, and contractors with multi-day projects.
+A BuildHire week is 7 days, and the weekly rate costs less than seven daily rates. Weekly hire is the most popular option for pool builders, landscapers, and contractors with multi-day projects.
 
 ### BuildHire Weekly Hire Rates
 
@@ -1822,7 +1822,7 @@ All prices include GST. Delivery and collection are quoted for your site and hir
 ### When Weekly Hire Makes Sense
 
 Weekly hire is the right choice when:
-- Your project will take 5 or more days
+- Your project will take 6 or 7 days
 - You want the machine available for the full week without daily rebooking
 - Your project may take longer than expected and you want flexibility
 - You're sequencing multiple tasks (excavation, trenching, backfilling) over a week
@@ -1839,7 +1839,7 @@ Weekly hire is the right choice when:
 
 ### Monthly Hire Rates
 
-For projects lasting 3+ weeks, BuildHire offers monthly hire rates. Monthly rates provide even greater savings than weekly rates. Contact BuildHire on 1300 157 882 for monthly hire pricing.
+For projects lasting 3+ weeks, BuildHire offers monthly hire rates. Contact BuildHire on 1300 157 882 for monthly hire pricing.
 
 ### How to Book Weekly Hire
 
@@ -1847,7 +1847,7 @@ Book online at buildhire.com.au — select your machine, choose your hire start 
 
 For bookings longer than 7 days, contact BuildHire directly to arrange the best rate.`,
     relatedQuestions: [
-      { q: "How much cheaper is weekly hire than daily hire for an excavator?", a: "On the 3.5T, 5.5T and 14.5T a week costs less than 5 daily rates, saving $150 to $450. The 0.8T and 1T are $1,000/week, the same as 5 days at the daily rate. The 14.5T is $2,000/week vs $2,450 for 5 days at the daily rate, a saving of $450." },
+      { q: "How much cheaper is weekly hire than daily hire for an excavator?", a: "On the 3.5T, 5.5T and 14.5T a week saves $150 to $450 against 5 daily rates, and a BuildHire week is 7 days. The 0.8T and 1T are $1,000/week, the same as 5 days at the daily rate. The 14.5T is $2,000/week vs $2,450 for 5 days at the daily rate, a saving of $450." },
       { q: "Does BuildHire offer monthly excavator hire rates?", a: "Yes. Contact BuildHire on 1300 157 882 for monthly hire pricing. Monthly rates provide greater savings than weekly rates for extended projects." },
       { q: "Is delivery charged per week or per hire for weekly excavator hire?", a: "Delivery and collection is charged once per hire — not per week. Delivery and collection are quoted for your site and hire dates." }
     ],
@@ -1917,9 +1917,9 @@ BuildHire's marketplace displays prices from multiple suppliers side by side. Th
 
 ### 2. Book Weekly or Monthly Rates
 
-For projects lasting 5 or more days, weekly rates provide significant savings over daily rates. BuildHire's weekly rate is equivalent to 3.5 daily rates — you get 5 days for the price of 3.5.
+A BuildHire week is 7 days, and the weekly rate costs less than seven daily rates.
 
-For projects lasting 3+ weeks, monthly rates provide even greater savings. Contact BuildHire on 1300 157 882 for monthly hire pricing.
+For projects lasting 3+ weeks, Contact BuildHire on 1300 157 882 for monthly hire pricing.
 
 ### 3. Book in Advance
 

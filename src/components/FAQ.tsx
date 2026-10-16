@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "What is your minimum hire period?",
-    a: "Our minimum hire period is one day. We offer daily, weekly, and monthly rates with significant discounts for longer-term hires.",
+    a: "Our minimum hire period is one day. We offer daily, weekly, and monthly rates with lower rates for longer hires.",
   },
   {
     q: "Do I need a licence to operate a mini excavator?",

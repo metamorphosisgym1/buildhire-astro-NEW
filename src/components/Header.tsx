@@ -7,9 +7,9 @@ const equipmentLinks = [
   { label: "1.7T Mini Excavator", href: "/equipment/17t-mini-excavator-hire-sydney/", price: "$205/day" },
   { label: "3.5T Excavator", href: "/equipment/35t-excavator-hire-sydney/", price: "$340/day" },
   { label: "5.5T Excavator", href: "/equipment/55t-excavator-hire-sydney/", price: "$370/day" },
-  { label: "8T Excavator", href: "/equipment/8t-excavator-hire-sydney/", price: "$420/day" },
+  { label: "8T Excavator", href: "/equipment/8t-excavator-hire-sydney/", price: "Coming soon" },
   { label: "14.5T Excavator", href: "/equipment/145t-excavator-hire-sydney/", price: "$490/day" },
-  { label: "23T Sumitomo SH235X-6", href: "/equipment/23t-excavator-hire-sydney/", price: "$490/day" },
+  { label: "23T Sumitomo SH235X-6", href: "/equipment/23t-excavator-hire-sydney/", price: "Coming soon" },
   { label: "Mini Dumper", href: "/equipment/mini-dumper-hire-sydney/", price: "$200/day" },
   { label: "Excavator Attachments", href: "/equipment/excavator-attachment-hire-sydney/", price: "From $50/day" },
 ];

@@ -44,7 +44,7 @@ export const industries: Industry[] = [
     faqs: [
       { q: "What excavator size do builders use for footing excavation?", a: "For standard residential footings, a 1.7T or 3.5T excavator is most common. The 3.5T offers more reach and bucket capacity, making it faster for larger slabs." },
       { q: "Can builders hire attachments with the excavator?", a: "Yes. Hydraulic hammers, augers, rock grabs and sieve buckets are hired by the day alongside the excavator, and every excavator comes with a mud bucket, GP bucket and ripper." },
-      { q: "Can BuildHire supply equipment for multi-day or weekly hires?", a: "Yes. We offer daily, weekly, and monthly hire rates. Weekly and monthly rates provide significant savings over daily rates." }
+      { q: "Can BuildHire supply equipment for multi-day or weekly hires?", a: "Yes. We offer daily, weekly, and monthly hire rates. A week costs less than seven daily rates." }
     ]
   },
   {
@@ -68,7 +68,7 @@ export const industries: Industry[] = [
     equipmentRecommendations: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator"],
     faqs: [
       { q: "What equipment do civil contractors typically hire from BuildHire?", a: "Civil contractors most commonly hire 3.5T and 5.5T excavators for earthworks and drainage, often with a hydraulic hammer or auger." },
-      { q: "Does BuildHire offer long-term hire for civil projects?", a: "Yes. BuildHire offers weekly and monthly hire rates with significant savings over daily rates. Contact us for project-specific pricing on extended hires." }
+      { q: "Does BuildHire offer long-term hire for civil projects?", a: "Yes. BuildHire offers weekly and monthly hire rates that cost less than daily rates. Contact us for project-specific pricing on extended hires." }
     ]
   },
   {

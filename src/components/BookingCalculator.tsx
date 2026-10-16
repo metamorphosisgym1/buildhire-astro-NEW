@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Check, Truck, Wrench, Cog, CircleDot } from "lucide-react";
+import { Check, Wrench, Cog } from "lucide-react";
 import { trackBuildHireEvent } from "../lib/analytics";
 
 // Custom SVG icon components
@@ -45,17 +45,13 @@ const rockBreakerImg = "/assets/rock-breaker-buildhire.webp";
 const sieveBucketImg = "/assets/sieve-bucket-tiger.png";
 const augerImg = "/assets/auger-drive.jpg";
 const rockGrabImg = "/assets/rock-grab.webp";
-const typhoonWasherImg = "/assets/typhoon-pressure-washer.webp";
-const demolitionHammerImg = "/assets/demolition-hammer.webp";
 
 const WHATSAPP_NUMBER = "61435421324";
 
 const categoryIcons: Record<string, React.ComponentType<any>> = {
   Excavators: ExcavatorIcon,
   "Mini Dumpers": MiniDumperIcon,
-  Trailers: Truck,
   Attachments: Wrench,
-  "Other tools": CircleDot,
 };
 
 const machineImages: Record<string, string> = {
@@ -67,7 +63,6 @@ const machineImages: Record<string, string> = {
   "8T Excavator (ViO80 Yanmar)": vio80Img,
   "14.5T Excavator (Case CX145C)": vio80Img,
   "23T Excavator (Sumitomo SH235X-6)": vio80Img,
-  "Box Trailer": boxTrailerImg,
   "Cormidi C7x 700kg Petrol High Tip": cormidiC7xImg,
   "Cormidi C85": cormidiC85Img,
   "Auger Drive 1T": augerImg,
@@ -88,8 +83,6 @@ const machineImages: Record<string, string> = {
   "Hydraulic Hammer 3.5T": rockBreakerImg,
   "Hydraulic Hammer 5.5T": rockBreakerImg,
   "Hydraulic Hammer 14.5T": rockBreakerImg,
-  "Bosch GSH16-30 Demolition Hammer": demolitionHammerImg,
-  "Typhoon TPW4200H Pressure Washer": typhoonWasherImg,
 };
 
 const equipmentData: Record<string, { name: string; rate: number; weeklyRate?: number; comingSoon?: boolean }[]> = {
@@ -105,10 +98,7 @@ const equipmentData: Record<string, { name: string; rate: number; weeklyRate?: n
   ],
   "Mini Dumpers": [
     { name: "Cormidi C7x 700kg Petrol High Tip", rate: 200, weeklyRate: 1000 },
-    { name: "Cormidi C85", rate: 200 },
-  ],
-  Trailers: [
-    { name: "Box Trailer", rate: 150 },
+    { name: "Cormidi C85", rate: 200, weeklyRate: 1000 },
   ],
   Attachments: [
     { name: "Hydraulic Hammer 1T", rate: 130 },
@@ -129,10 +119,6 @@ const equipmentData: Record<string, { name: string; rate: number; weeklyRate?: n
     { name: "Sieve Bucket 5.5T (Tiger Buckets)", rate: 50 },
     { name: "Sieve Bucket 14.5T (Tiger Buckets)", rate: 50 },
     { name: "Trailer (1.7T)", rate: 50 },
-  ],
-  "Other tools": [
-    { name: "Bosch GSH16-30 Demolition Hammer", rate: 110 },
-    { name: "Typhoon TPW4200H Pressure Washer", rate: 150 },
   ],
 };
 
