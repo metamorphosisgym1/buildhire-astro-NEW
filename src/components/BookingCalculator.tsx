@@ -32,7 +32,6 @@ const MiniDumperIcon = ({ size = 28, className = "" }: { size?: number; classNam
 
 const sv08Img = "/assets/sv08-excavator.png";
 const kubotaU10Img = "/assets/kubota-u10-5-branded.webp";
-const boxTrailerImg = "/assets/box-trailer.webp";
 const vio17Img = "/assets/vio17-excavator.png";
 const vio35Img = "/assets/vio35-excavator.png";
 const vio55Img = "/assets/vio55-excavator.png";
@@ -77,7 +76,6 @@ const machineImages: Record<string, string> = {
   "Sieve Bucket 3.5T (Tiger Buckets)": sieveBucketImg,
   "Sieve Bucket 5.5T (Tiger Buckets)": sieveBucketImg,
   "Sieve Bucket 14.5T (Tiger Buckets)": sieveBucketImg,
-  "Trailer (1.7T)": boxTrailerImg,
   "Hydraulic Hammer 1T": rockBreakerImg,
   "Hydraulic Hammer 1.7T": rockBreakerImg,
   "Hydraulic Hammer 3.5T": rockBreakerImg,
@@ -118,7 +116,7 @@ const equipmentData: Record<string, { name: string; rate: number; weeklyRate?: n
     { name: "Sieve Bucket 3.5T (Tiger Buckets)", rate: 50 },
     { name: "Sieve Bucket 5.5T (Tiger Buckets)", rate: 50 },
     { name: "Sieve Bucket 14.5T (Tiger Buckets)", rate: 50 },
-    { name: "Trailer (1.7T)", rate: 50 },
+    { name: "Plant trailer (1.7T collection)", rate: 50 },
   ],
 };
 

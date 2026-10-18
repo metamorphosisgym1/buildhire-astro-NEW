@@ -44,7 +44,7 @@ export const industries: Industry[] = [
     faqs: [
       { q: "What excavator size do builders use for footing excavation?", a: "For standard residential footings, a 1.7T or 3.5T excavator is most common. The 3.5T offers more reach and bucket capacity, making it faster for larger slabs." },
       { q: "Can builders hire attachments with the excavator?", a: "Yes. Hydraulic hammers, augers, rock grabs and sieve buckets are hired by the day alongside the excavator, and every excavator comes with a mud bucket, GP bucket and ripper." },
-      { q: "Can BuildHire supply equipment for multi-day or weekly hires?", a: "Yes. We offer daily, weekly, and monthly hire rates. A week costs less than seven daily rates." }
+      { q: "Can BuildHire supply equipment for multi-day or weekly hires?", a: "Yes. We offer daily and weekly hire rates. A week costs less than seven daily rates." }
     ]
   },
   {
@@ -68,7 +68,7 @@ export const industries: Industry[] = [
     equipmentRecommendations: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator"],
     faqs: [
       { q: "What equipment do civil contractors typically hire from BuildHire?", a: "Civil contractors most commonly hire 3.5T and 5.5T excavators for earthworks and drainage, often with a hydraulic hammer or auger." },
-      { q: "Does BuildHire offer long-term hire for civil projects?", a: "Yes. BuildHire offers weekly and monthly hire rates that cost less than daily rates. Contact us for project-specific pricing on extended hires." }
+      { q: "Does BuildHire offer weekly rates for civil projects?", a: "Yes. A BuildHire week is 7 days and costs less than seven daily rates. Call us for a quote." }
     ]
   },
   {
@@ -210,7 +210,7 @@ export const industries: Industry[] = [
     name: "Government & Councils",
     headline: "Equipment Hire for Government and Local Councils",
     description: "Excavators and attachments for local government infrastructure and maintenance projects across Sydney.",
-    longDescription: "Local councils and government contractors across Sydney use BuildHire's equipment for infrastructure maintenance, drainage works, park construction, and road maintenance. Our fleet is available on daily, weekly, and monthly terms with transparent pricing.",
+    longDescription: "Local councils and government contractors across Sydney use BuildHire's equipment for infrastructure maintenance, drainage works, park construction, and road maintenance. Our fleet is available on daily and weekly terms with transparent pricing.",
     equipmentRecommendations: ["1-7t-mini-excavator", "3-5t-excavator", "5-5t-excavator"],
     faqs: [
       { q: "Does BuildHire work with local councils and government contractors?", a: "Yes. BuildHire dry hires excavators to local councils and government contractors across Sydney. Call 1300 157 882 to talk through what your project needs." }

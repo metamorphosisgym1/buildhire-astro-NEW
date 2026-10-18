@@ -548,7 +548,7 @@ Call BuildHire on 1300 157 882 to discuss your usage pattern and find the most c
     relatedQuestions: [
       { q: "How many days per year do I need to use an excavator before buying is cheaper than hiring?", a: "The break-even point is approximately 150–200 days of use per year when all ownership costs (insurance, maintenance, transport, depreciation) are factored in." },
       { q: "What does a second-hand 1.7T mini excavator cost in NSW?", a: "A used 1.7T mini excavator (3–5 years old) costs $25,000–$45,000 in NSW. New machines cost $55,000–$75,000." },
-      { q: "Does BuildHire offer long-term hire rates for frequent users?", a: "Yes. BuildHire offers weekly and monthly hire rates that cost less than daily rates. Contact BuildHire on 1300 157 882 to discuss long-term hire options." }
+      { q: "Does BuildHire offer a weekly rate for frequent users?", a: "Yes. A BuildHire week is 7 days and costs less than seven daily rates. Call BuildHire on 1300 157 882 for a quote." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -1471,12 +1471,12 @@ All earthworks must be carried out in accordance with the approved engineering p
 
 ### Hiring for Subdivision Projects
 
-For subdivision projects, BuildHire recommends hiring the excavator for the full earthworks duration, typically 5 to 15 days depending on scope. Weekly and monthly rates cost less than daily rates for extended projects.
+For subdivision projects, BuildHire recommends hiring the excavator for the full earthworks duration, typically 5 to 15 days depending on scope. A week costs less than seven daily rates.
 
 Call BuildHire on 1300 157 882 to discuss your subdivision project and arrange a hire quote.`,
     relatedQuestions: [
       { q: "What excavator is best for service trenching in a residential subdivision?", a: "The 1.7T mini excavator is the standard choice for subdivision service trenching — fast, accurate, and compact enough to work between services." },
-      { q: "Does BuildHire offer weekly or monthly rates for subdivision projects?", a: "Yes. BuildHire offers weekly and monthly rates that cost less than daily rates for extended projects. Call 1300 157 882 for a quote." }
+      { q: "Does BuildHire offer weekly rates for subdivision projects?", a: "Yes. BuildHire offers a weekly rate that costs less than seven daily rates. Call 1300 157 882 for a quote." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -2010,9 +2010,9 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     question: "Can I hire an excavator for commercial construction?",
     category: "Use Case",
     shortAnswer: "Yes. BuildHire supplies excavators for commercial construction including basement excavation, bulk earthworks, and site preparation across Sydney.",
-    fullAnswer: `## Excavator Hire for Commercial Construction\n\nBuildHire supplies excavators for commercial construction projects. We work with builders, developers, and project managers on commercial sites across Sydney.\n\n### Common Commercial Applications\n\n- **Basement and carpark excavation**\n- **Bulk earthworks and site preparation**\n- **Footing and pile cap excavation**\n- **Drainage and services trenching**\n- **Demolition and concrete removal**\n\n### Equipment\n\n- **3.5T Excavator:** light commercial, tight urban sites\n- **5.5T to 8T Excavators:** medium commercial projects\n\nCall 1300 157 882 for commercial project pricing and long-term hire rates.`,
+    fullAnswer: `## Excavator Hire for Commercial Construction\n\nBuildHire supplies excavators for commercial construction projects. We work with builders, developers, and project managers on commercial sites across Sydney.\n\n### Common Commercial Applications\n\n- **Basement and carpark excavation**\n- **Bulk earthworks and site preparation**\n- **Footing and pile cap excavation**\n- **Drainage and services trenching**\n- **Demolition and concrete removal**\n\n### Equipment\n\n- **3.5T Excavator:** light commercial, tight urban sites\n- **5.5T to 8T Excavators:** medium commercial projects\n\nCall 1300 157 882 for commercial project pricing and weekly hire rates.`,
     relatedQuestions: [
-      { q: "Does BuildHire offer weekly or monthly hire rates for commercial projects?", a: "Yes. Call 1300 157 882 for weekly and monthly hire rates for commercial projects." },
+      { q: "Does BuildHire offer weekly hire rates for commercial projects?", a: "Yes. Call 1300 157 882 for weekly hire rates for commercial projects." },
       { q: "Can BuildHire supply an operator with the excavator?", a: "BuildHire offers dry hire (machine only). For wet hire (machine + operator), call 1300 157 882 to discuss options." }
     ],
     schema: { type: "FAQPage", speakable: true }

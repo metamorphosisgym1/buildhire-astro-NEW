@@ -223,7 +223,7 @@ export const faqs: FAQ[] = [
   {
     slug: "what-is-the-minimum-hire-period",
     question: "What is the minimum hire period for equipment?",
-    answer: "The minimum hire period for all BuildHire equipment is one day. There is no minimum booking for multiple days — you can hire for exactly as many days as your project requires. Weekly and monthly rates are available for longer projects.",
+    answer: "The minimum hire period for all BuildHire equipment is one day. There is no minimum booking for multiple days. You can hire for exactly as many days as your project requires. Weekly rates are available for longer projects.",
     category: "General"
   },
   {
@@ -269,7 +269,7 @@ export const faqs: FAQ[] = [
   { slug: "what-is-the-best-bucket-width-for-a-plumbing-trench", question: "What bucket width should I use for a plumbing trench?", answer: "For standard residential plumbing (100–150mm pipe), a 300mm bucket is ideal, creating a clean trench with minimal spoil. For larger pipes (200–300mm), a 400–450mm bucket is more appropriate. BuildHire's mini excavators come with a standard 300mm bucket. Contact us if you require a different bucket width.", category: "Trenching" },
 
   // Civil Construction
-  { slug: "what-excavator-for-civil-construction", question: "What size excavator is best for civil construction?", answer: "For civil construction, the 3.5T or 5.5T excavator is most commonly used. The 3.5T is ideal for drainage, road works, and service installation. The 5.5T provides more power and reach for larger civil projects. Both machines are available for daily, weekly, and monthly hire.", category: "Equipment Selection", relatedEquipment: ["3-5t-excavator", "5-5t-excavator"] },
+  { slug: "what-excavator-for-civil-construction", question: "What size excavator is best for civil construction?", answer: "For civil construction, the 3.5T or 5.5T excavator is most commonly used. The 3.5T is ideal for drainage, road works, and service installation. The 5.5T provides more power and reach for larger civil projects. Both machines are available for daily and weekly hire.", category: "Equipment Selection", relatedEquipment: ["3-5t-excavator", "5-5t-excavator"] },
   { slug: "can-buildhire-supply-equipment-for-road-works", question: "Can BuildHire supply equipment for road works?", answer: "Yes, BuildHire supplies excavators for road works projects across Sydney. Our 3.5T and 5.5T excavators are suited to kerb and gutter excavation, stormwater drainage, and road base preparation. Contact us to discuss your project requirements and pricing.", category: "Equipment Selection", relatedEquipment: ["3-5t-excavator", "5-5t-excavator"] },
 
   // Driveway & Concrete

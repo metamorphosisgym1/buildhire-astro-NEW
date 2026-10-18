@@ -47,7 +47,7 @@ const money = (n) => "$" + n.toLocaleString("en-AU");
 
 const faqs = [
   { q: "How much does it cost to hire a mini excavator in Sydney per day?", a: "Mini excavator hire starts at $200 a day for the 0.8T and 1T, and $205 a day for the 1.7T. A 3.5T is $340 a day. All prices include GST. Delivery and collection are quoted for your site." },
-  { q: "How much does weekly excavator hire cost?", a: "A BuildHire week is 7 days. It is $1,000 for the 0.8T or 1T, $1,100 for the 1.7T, $1,550 for the 3.5T, $1,650 for the 5.5T and $2,000 for the 14.5T, incl GST, and it costs less than seven daily rates. Against 5 daily rates, on the 3.5T, 5.5T and 14.5T a week costs less. On the 0.8T and 1T it costs the same as 5 days, and on the 1.7T it costs $75 more. Ask us about monthly hire." },
+  { q: "How much does weekly excavator hire cost?", a: "A BuildHire week is 7 days. It is $1,000 for the 0.8T or 1T, $1,100 for the 1.7T, $1,550 for the 3.5T, $1,650 for the 5.5T and $2,000 for the 14.5T, incl GST, and it costs less than seven daily rates. Against 5 daily rates, on the 3.5T, 5.5T and 14.5T a week costs less. On the 0.8T and 1T it costs the same as 5 days, and on the 1.7T it costs $75 more. Call us to talk about longer hires." },
   { q: "How much does delivery cost?", a: "Delivery and collection are quoted for your site and hire dates, so you know the full price before you book. The 5.5T and bigger machines go by third party transport, priced on enquiry." },
   { q: "What is included in excavator hire rates?", a: "The machine for your hire period, a mud bucket, a GP bucket and a ripper. Delivery and collection, fuel, attachments and an operator are not included. We only dry hire, so you or your crew run the machine. Return the machine with the same fuel level, or a refuelling charge applies (minimum $50 + GST). Cleaning charges may apply for mud, concrete or other build-up (minimum $150 + GST)." },
   { q: "How can I keep the cost of excavator hire down?", a: "Pick the smallest machine that can do the job, check the weekly rate against the days you need, and plan the work so the machine is busy every day you have it. Booking early helps you get the machine on the day you want it." },
@@ -147,15 +147,15 @@ const faqSchema = {
         <p class="text-[var(--color-text-muted)] mb-4">Delivery and collection are easy to forget when you budget. We quote them for your site and hire dates before you book, so there are no surprises. The price depends on the machine and how far your site is from our Arncliffe yard. The 5.5T and bigger machines go by third party transport, priced on enquiry.</p>
         <p class="text-[var(--color-text-muted)] mb-8">Send us the site address and dates <a href="/#booking" class="text-[var(--color-primary)] font-semibold">online</a>, on <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="text-[var(--color-primary)] font-semibold">WhatsApp</a> or on <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold">1300 157 882</a> for a delivery quote.</p>
 
-        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Weekly and Monthly Rates</h2>
-        <p class="text-[var(--color-text-muted)] mb-6">A BuildHire week is 7 days. On the 3.5T, 5.5T and 14.5T, a week costs less than 5 daily rates ($1,550 vs $1,700, $1,650 vs $1,850 and $2,000 vs $2,450). On the 0.8T and 1T a week costs the same as 5 days ($1,000), and on the 1.7T it costs $75 more ($1,100 vs $1,025). For hires of a month or longer, call <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold">1300 157 882</a> or <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="text-[var(--color-primary)] font-semibold">WhatsApp us</a> for a monthly rate.</p>
+        <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Weekly Rates</h2>
+        <p class="text-[var(--color-text-muted)] mb-6">A BuildHire week is 7 days. On the 3.5T, 5.5T and 14.5T, a week costs less than 5 daily rates ($1,550 vs $1,700, $1,650 vs $1,850 and $2,000 vs $2,450). On the 0.8T and 1T a week costs the same as 5 days ($1,000), and on the 1.7T it costs $75 more ($1,100 vs $1,025). If you need a machine for longer than a week, call <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold">1300 157 882</a> or <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="text-[var(--color-primary)] font-semibold">WhatsApp us</a>.</p>
 
         <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">What Affects the Cost of Excavator Hire?</h2>
         <p class="text-[var(--color-text-muted)] mb-4">Several factors influence the total cost of your excavator hire:</p>
         <div class="space-y-4 mb-8">
           {[
             { factor: "Machine size", detail: "Larger machines cost more per day. Choose the smallest machine that can do the job to keep costs down." },
-            { factor: "Hire duration", detail: "Weekly rates are in the table above, and monthly rates are available." },
+            { factor: "Hire duration", detail: "Weekly rates are in the table above." },
             { factor: "Delivery distance", detail: "The further your site is from our Arncliffe yard, the higher the delivery and collection cost." },
             { factor: "Attachments", detail: "Rock breakers, augers, and grabs are available to hire separately and add to the total cost." },
             { factor: "Timing", detail: "Spring and summer are busy. Book early to get the machine on the day you want it." },

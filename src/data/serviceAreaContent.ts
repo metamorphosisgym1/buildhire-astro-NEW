@@ -44,7 +44,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     bodyParagraph3: "Daily rates are shown online, incl GST, and delivery and collection are quoted for your site. Our online booking tool shows the hire price straight away, and our team is on WhatsApp for same-day enquiries.",
     faqs: [
       { q: "Do you deliver excavators to all Sydney suburbs?", a: "Yes — BuildHire delivers to all Sydney metro suburbs, from the CBD and inner suburbs to Western Sydney, the Northern Beaches, Sutherland Shire, and beyond. Book by 12pm for guaranteed next-day delivery." },
-      { q: "What is the minimum hire period for excavator hire in Sydney?", a: "Our minimum hire period is one day. We also offer weekly and monthly rates that cost less per day for longer projects across Sydney." },
+      { q: "What is the minimum hire period for excavator hire in Sydney?", a: "Our minimum hire period is one day. We also offer weekly rates that cost less per day for longer projects across Sydney." },
       { q: "Do I need a licence to operate a mini excavator in Sydney?", a: "No licence is required to operate excavators under 10 tonnes in NSW. Our team provides a full machine induction on delivery so you're confident and safe from the first dig." }
     ],
     nearbyAreas: ["Parramatta", "Inner West", "Eastern Suburbs", "North Sydney", "Sutherland"],
