@@ -197,35 +197,6 @@ const equipmentCatalog: Equipment[] = [
     ]
   },
   {
-    slug: "23t-excavator",
-    name: "23T Excavator (Sumitomo SH235X-6)",
-    shortName: "23T Excavator",
-    category: "Excavators",
-    description: "Large 23-tonne excavator delivering exceptional digging depth and power for major civil, commercial, and infrastructure projects. Coming soon.",
-    longDescription: "The Sumitomo SH235X-6 is a high-performance 23-tonne excavator engineered in Japan for demanding civil and commercial construction. Its minimum swing radius design maximises productivity on confined sites while delivering the digging depth and bucket capacity required for major earthworks. Coming soon — enquire for availability.",
-    price: "$490/day",
-    priceNum: "490",
-    weeklyPrice: "$2,100/week",
-    delivery: "Delivery & Collection* (third party transport — pricing on enquiry)",
-    specs: [
-      { label: "Operating Weight", value: "25,100 kg" },
-      { label: "Max Digging Depth", value: "6,120 mm" },
-      { label: "Bucket Capacity", value: "0.80 m\u00b3" },
-      { label: "Engine", value: "ISUZU GI-4HK1X, 117.3 kW" }
-    ],
-    useCases: [
-      { title: "Major Civil Construction", desc: "Road works, civil infrastructure, and large-scale earthmoving projects." },
-      { title: "Deep Trenching", desc: "Deep utility trenches for commercial and civil infrastructure at 6+ metre depth." },
-      { title: "Large Pool & Dam Excavation", desc: "Commercial pool, dam, and water feature excavation at scale." },
-      { title: "Bulk Earthworks", desc: "High-volume site preparation and bulk earthmoving for major construction." }
-    ],
-    faqs: [
-      { q: "How much does it cost to hire a 23T excavator?", a: "BuildHire's 23T Sumitomo SH235X-6 is available from $490/day (incl GST). Delivery is via third party transport — call 1300 157 882 for a delivery quote to your site." },
-      { q: "What is the maximum digging depth of the 23T excavator?", a: "The Sumitomo SH235X-6 has a maximum digging depth of 6,120mm (6.12 metres) with the standard 2.94m arm, making it suitable for deep civil trenches and major earthworks." },
-      { q: "Do I need a licence to operate a 23T excavator in NSW?", a: "Yes. A High Risk Work Licence (HRWL) for earthmoving equipment is required to operate a 23T excavator on any registered worksite in NSW." }
-    ]
-  },
-  {
     slug: "mini-dumper-700kg",
     name: "Cormidi C7X 700kg Petrol High Tip",
     shortName: "700kg Mini Dumper",

@@ -151,22 +151,6 @@ const availableEquipment: EquipmentItem[] = [
     },
   },
   {
-    name: "23T Excavator (Sumitomo SH235X-6)",
-    category: "Excavators",
-    image: vio80Img,
-    rate: "$490/day",
-    badge: "coming-soon",
-    brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2020/01/Sumitomo_SH235X-6_Tutt_Bryant.pdf",
-    specs: {
-      "Operating Weight": "25,100 kg",
-      "Dig Depth": "6,120 mm",
-      "Bucket Capacity": "0.80 m³",
-      "Engine Power": "117.3 kW",
-      "Tail Swing": "Minimum swing",
-      "Transport Width": "2,990 mm",
-    },
-  },
-  {
     name: "Cormidi C7x 700kg Petrol High Tip",
     category: "Mini Dumpers",
     image: cormidiC7xImg,
@@ -189,9 +173,9 @@ const availableEquipment: EquipmentItem[] = [
     useContain: true,
     specs: {
       "Payload": "850 kg",
-      "Width": "850 mm",
-      "Engine": "Petrol",
-      "Tip Type": "High Tip",
+      "Width": "810 mm",
+      "Tip Height": "1,500 mm",
+      "Tracks": "Tracked",
     },
   },
   {

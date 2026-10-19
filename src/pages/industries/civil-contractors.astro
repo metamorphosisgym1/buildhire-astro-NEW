@@ -19,7 +19,7 @@ const serviceSchema = {
   "name": "Excavator Hire for Civil Contractors Sydney",
   "provider": { "@type": "LocalBusiness", "@id": "https://buildhire.com.au/#organization", "name": "BuildHire", "url": "https://buildhire.com.au", "telephone": "+611300157882" },
   "areaServed": { "@type": "State", "name": "New South Wales" },
-  "description": "Dry hire excavators for civil contractors across Sydney. Bulk earthworks, road preparation, site excavation, and civil infrastructure. 3.5T to 23T available. From $340/day.",
+  "description": "Dry hire excavators for civil contractors across Sydney. Bulk earthworks, road preparation, site excavation, and civil infrastructure. 3.5T to 14.5T available. From $340/day.",
   "offers": { "@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "325", "highPrice": "490", "offerCount": "6" },
   "dateModified": "2026-05-27",
   "url": "https://buildhire.com.au/industries/civil-contractors",
@@ -34,14 +34,14 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What excavators does BuildHire have for civil work in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "BuildHire has a fleet from 0.8T to 23T for civil work in Sydney. For bulk earthworks and civil infrastructure, the 8T, 14.5T, and 23T Sumitomo machines are the most commonly hired. The 23T (Sumitomo SH235X-6) is our largest machine at $490/day and is suited to major civil earthworks, road preparation, and large-scale site excavation." } },
+    { "@type": "Question", "name": "What excavators does BuildHire have for civil work in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "BuildHire has a fleet from 0.8T to 14.5T for civil work in Sydney. Our largest machine is the 14.5T Case CX145C at $490/day, suited to bulk earthworks, civil infrastructure, road preparation and large-scale site excavation." } },
     { "@type": "Question", "name": "Does BuildHire offer weekly rates for civil contractors in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Weekly rates are available for civil contractors with ongoing projects. Call 1300 157 882 to discuss trade pricing. We work with civil contractors across Greater Sydney on multi-week projects." } }
   ]
 };
 ---
 <Layout
-  title="Excavator Hire for Civil Contractors Sydney | 8T to 23T | BuildHire"
-  description="Excavator dry hire for civil contractors in Sydney. 8T, 14.5T, and 23T machines for bulk earthworks, civil infrastructure, and road preparation. Trade rates available."
+  title="Excavator Hire for Civil Contractors Sydney | 3.5T to 14.5T | BuildHire"
+  description="Excavator dry hire for civil contractors in Sydney. 5.5T and 14.5T machines for bulk earthworks, civil infrastructure, and road preparation. Trade rates available."
   canonicalPath="/industries/civil-contractors"
   ogImage="/og-image.png"
 >
@@ -62,7 +62,7 @@ const faqSchema = {
         <div class="text-center mb-10">
           <span class="inline-block bg-[var(--color-primary)] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Civil Contractor Specialists</span>
           <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">Excavator Hire for Civil Contractors in Sydney</h1>
-          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">Bulk earthworks, civil infrastructure, road preparation, and large-scale site excavation. Fleet from 3.5T to 23T. Trade rates available for ongoing projects.</p>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">Bulk earthworks, civil infrastructure, road preparation, and large-scale site excavation. Fleet from 3.5T to 14.5T. Trade rates available for ongoing projects.</p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Get Instant Pricing →</a>
             <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">Call 1300 157 882</a>
@@ -88,7 +88,6 @@ const faqSchema = {
                 { machine: "5.5T Excavator", rate: "$370/day", weight: "5,500 kg", best: "Medium earthworks, drainage, site prep" },
                 { machine: "8T Excavator", rate: "$420/day", weight: "8,000 kg", best: "Bulk earthworks, road prep, civil infrastructure" },
                 { machine: "14.5T Excavator", rate: "$490/day", weight: "14,500 kg", best: "Large civil sites, heavy earthworks" },
-                { machine: "23T Sumitomo SH235X-6", rate: "$490/day", weight: "25,100 kg", best: "Major civil earthworks, large-scale excavation" },
               ].map((r, i) => (
                 <tr class={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
                   <td class="py-4 font-medium text-[var(--color-text)]">{r.machine}</td>
@@ -108,7 +107,7 @@ const faqSchema = {
         <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Civil Contractor FAQ</h2>
         <div class="space-y-6">
           {[
-            { q: "What excavators does BuildHire have for civil work in Sydney?", a: "BuildHire has a fleet from 0.8T to 23T for civil work in Sydney. For bulk earthworks and civil infrastructure, the 8T, 14.5T, and 23T Sumitomo machines are the most commonly hired. The 23T (Sumitomo SH235X-6) is our largest machine at $490/day and is suited to major civil earthworks, road preparation, and large-scale site excavation." },
+            { q: "What excavators does BuildHire have for civil work in Sydney?", a: "BuildHire has a fleet from 0.8T to 14.5T for civil work in Sydney. Our largest machine is the 14.5T Case CX145C at $490/day, suited to bulk earthworks, civil infrastructure, road preparation and large-scale site excavation." },
             { q: "Does BuildHire offer weekly rates for civil contractors in Sydney?", a: "Yes. Weekly rates are available for civil contractors with ongoing projects. Call 1300 157 882 to discuss trade pricing. We work with civil contractors across Greater Sydney on multi-week projects." },
           ].map(item => (
             <div class="border-b border-gray-200 pb-6">

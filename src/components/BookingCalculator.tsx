@@ -61,7 +61,6 @@ const machineImages: Record<string, string> = {
   "5.5T Excavator (ViO55 Yanmar)": vio55Img,
   "8T Excavator (ViO80 Yanmar)": vio80Img,
   "14.5T Excavator (Case CX145C)": vio80Img,
-  "23T Excavator (Sumitomo SH235X-6)": vio80Img,
   "Cormidi C7x 700kg Petrol High Tip": cormidiC7xImg,
   "Cormidi C85": cormidiC85Img,
   "Auger Drive 1T": augerImg,
@@ -92,7 +91,6 @@ const equipmentData: Record<string, { name: string; rate: number; weeklyRate?: n
     { name: "5.5T Excavator (ViO55 Yanmar)", rate: 370, weeklyRate: 1650 },
     { name: "8T Excavator (ViO80 Yanmar)", rate: 420, comingSoon: true },
     { name: "14.5T Excavator (Case CX145C)", rate: 490, weeklyRate: 2000 },
-    { name: "23T Excavator (Sumitomo SH235X-6)", rate: 490, weeklyRate: 2100, comingSoon: true },
   ],
   "Mini Dumpers": [
     { name: "Cormidi C7x 700kg Petrol High Tip", rate: 200, weeklyRate: 1000 },

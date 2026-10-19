@@ -31,9 +31,9 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     region: "Sydney Metro",
     state: "NSW",
     suburbs: ["CBD", "Surry Hills", "Newtown", "Redfern", "Alexandria", "Zetland", "Waterloo", "Pyrmont"],
-    intro: "BuildHire is a Sydney dry hire excavator company, delivering late-model Yanmar and Sumitomo machines across the Sydney metro area from our Arncliffe yard.",
+    intro: "BuildHire is a Sydney dry hire excavator company, delivering late-model Yanmar and Case machines across the Sydney metro area from our Arncliffe yard.",
     bodyParagraph1: "Sydney's construction and landscaping market moves fast. Whether you're a pool builder in the Eastern Suburbs, a plumber running drainage in the Inner West, or a builder pouring footings in the CBD fringe, downtime from unreliable equipment hire is not an option. BuildHire was built specifically for Sydney's pace — we own our fleet outright, maintain every machine in-house, and guarantee next-day delivery to any Sydney suburb when you book by 12pm.",
-    bodyParagraph2: "Our Sydney fleet covers every scale of project. The 0.8T and 1T mini excavators are ideal for tight residential access — narrow side gates, established gardens, and inner-city backyards where a full-size machine simply won't fit. The 3.5T and 5.5T excavators handle the heavier work: pool excavations, retaining walls, drainage trenches, and site clearing. For major civil and commercial projects, our 14.5T and 23T Sumitomo machines deliver the power and precision that large-scale Sydney builds demand.",
+    bodyParagraph2: "Our Sydney fleet covers every scale of project. The 0.8T and 1T mini excavators are ideal for tight access: narrow side gates, established gardens and inner-city backyards where a full-size machine simply won't fit. The 3.5T and 5.5T excavators handle the heavier work: pool excavations, retaining walls, drainage trenches, and site clearing. For major civil and commercial projects, our 14.5T Case excavator delivers the power and precision that large-scale Sydney builds demand.",
     caseStudy: {
       client: "FW Building",
       projectType: "Residential construction — footing excavation and site preparation",
@@ -59,7 +59,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Parramatta", "North Parramatta", "Westmead", "Harris Park", "Rosehill", "Woodville", "Granville", "South Granville"],
     intro: "BuildHire delivers excavators and construction equipment to Parramatta and all of Western Sydney — next-day arrival, transparent pricing, and machines maintained to the highest standard.",
     bodyParagraph1: "Parramatta is the engine room of Western Sydney's construction boom. From high-density residential development along Church Street and Church Street North to infrastructure upgrades around Westmead and the Parramatta Light Rail corridor, demand for reliable plant hire has never been higher. BuildHire services Parramatta and the surrounding Western Sydney suburbs with a full fleet of dry hire excavators, mini dumpers and attachments, all owned and maintained by our own team.",
-    bodyParagraph2: "For residential builders and landscapers working in Parramatta's established suburbs, our 1T and 1.7T mini excavators are the go-to choice — compact enough for side access and residential lots, powerful enough to handle pool excavations, retaining walls, and drainage work. Commercial builders and civil contractors in the Parramatta CBD and Westmead precinct rely on our 5.5T, 14.5T, and 23T machines for bulk earthworks, footing excavations, and site preparation on larger projects.",
+    bodyParagraph2: "For residential builders and landscapers working in Parramatta's established suburbs, our 1T and 1.7T mini excavators are the go-to choice, compact enough for side access and residential lots, powerful enough to handle pool excavations, retaining walls, and drainage work. Commercial builders and civil contractors in the Parramatta CBD and Westmead precinct rely on our 5.5T and 14.5T machines for bulk earthworks, footing excavations, and site preparation on larger projects.",
     caseStudy: {
       client: "Almighty Fencing",
       projectType: "Post-hole excavation and site preparation across multiple Western Sydney residential projects",
@@ -70,7 +70,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     bodyParagraph3: "BuildHire's delivery zone covers all of Parramatta LGA and the broader Western Sydney region including Granville, Merrylands, Wentworthville, Auburn, and Woodville. Book online for an instant price, or WhatsApp our team for a same-day quote. With next-day delivery guaranteed when you book by 12pm, BuildHire keeps your Parramatta project moving without delays.",
     faqs: [
       { q: "Do you deliver excavators to Parramatta and Western Sydney?", a: "Yes — BuildHire delivers to all Parramatta suburbs and the wider Western Sydney region including Granville, Merrylands, Wentworthville, Auburn, and Woodville. Next-day delivery is guaranteed when you book by 12pm." },
-      { q: "What excavator sizes are available for hire in Parramatta?", a: "We offer excavators from 0.8T to 23T in Parramatta. The 1T and 1.7T mini excavators are popular for residential work, while the 3.5T to 5.5T range suits pool builds and drainage. Our 14.5T and 23T machines handle large commercial and civil projects." },
+      { q: "What excavator sizes are available for hire in Parramatta?", a: "We offer excavators from 0.8T to 14.5T in Parramatta. The 1T and 1.7T mini excavators are popular for residential work, while the 3.5T to 5.5T range suits pool builds and drainage. Our 14.5T machine handles large commercial and civil projects." },
       { q: "How quickly can BuildHire deliver to Parramatta?", a: "Book by 12pm and your machine will be on site the next business day. For urgent requirements, contact our team via WhatsApp and we'll do our best to accommodate same-day delivery." }
     ],
     nearbyAreas: ["Blacktown", "Merrylands", "Granville", "Auburn", "Seven Hills"],
@@ -85,7 +85,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Penrith", "Kingswood", "St Marys", "Werrington", "Emu Plains", "Glenmore Park", "Jamisontown", "South Penrith"],
     intro: "BuildHire provides next-day excavator hire to Penrith and the greater Western Sydney region — late-model machines, transparent pricing, and a team that understands the demands of construction in Greater Western Sydney.",
     bodyParagraph1: "Penrith's construction sector is one of the fastest-growing in NSW, driven by the Western Sydney Airport at Badgerys Creek, the Penrith CBD renewal, and the ongoing residential expansion across Glenmore Park, Jordan Springs, and the Penrith Lakes precinct. BuildHire has been the trusted dry hire partner for Penrith builders, landscapers, plumbers, and civil contractors who need reliable equipment on site without the overhead of ownership.",
-    bodyParagraph2: "The terrain around Penrith presents unique challenges — from the clay-heavy soils of the Nepean floodplain to the rocky ground common in Emu Plains and the Blue Mountains foothills. Our fleet is selected and maintained to handle these conditions. The 3.5T and 5.5T Yanmar excavators are the workhorse choice for Penrith residential builds, while the 14.5T and 23T Sumitomo machines are built for the heavy earthworks that large-scale Western Sydney infrastructure projects demand.",
+    bodyParagraph2: "The terrain around Penrith presents unique challenges, from the clay-heavy soils of the Nepean floodplain to the rocky ground common in Emu Plains and the Blue Mountains foothills. Our fleet is selected and maintained to handle these conditions. The 3.5T and 5.5T Yanmar excavators are the workhorse choice for Penrith residential builds, while the 14.5T Case excavator is built for the heavy earthworks that large-scale Western Sydney infrastructure projects demand.",
     caseStudy: {
       client: "Mac Developments",
       projectType: "Multi-lot residential development — bulk earthworks and footing excavation",
@@ -111,7 +111,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Liverpool", "Moorebank", "Casula", "Prestons", "Warwick Farm", "Chipping Norton", "Miller", "Heckenberg"],
     intro: "BuildHire delivers excavators and construction equipment to Liverpool and South Western Sydney — owned fleet, next-day delivery, and pricing that's clear from the first click.",
     bodyParagraph1: "Liverpool is South Western Sydney's commercial and construction hub, with major residential development underway across Moorebank, Casula, Prestons, and the broader Liverpool LGA. The area's mix of established residential streets, new land releases, and industrial precincts creates demand for excavators across a wide range of project types — from pool builds and landscaping in established suburbs to bulk earthworks on new estates and drainage work in the Moorebank Intermodal precinct.",
-    bodyParagraph2: "BuildHire's Liverpool delivery zone covers the full LGA and extends to Fairfield, Cabramatta, Chipping Norton, and Warwick Farm. Our fleet includes the compact 0.8T and 1T mini excavators for tight residential access, the versatile 3.5T and 5.5T machines for mid-size projects, and the heavy 14.5T and 23T Sumitomo excavators for civil and commercial earthworks. Every machine is owned by BuildHire, maintained in-house, and delivered by our own drivers — not subcontracted.",
+    bodyParagraph2: "BuildHire's Liverpool delivery zone covers the full LGA and extends to Fairfield, Cabramatta, Chipping Norton, and Warwick Farm. Our fleet includes the compact 0.8T and 1T mini excavators for tight residential access, the versatile 3.5T and 5.5T machines for mid-size projects, and the 14.5T Case excavator for civil and commercial earthworks. Every machine is owned by BuildHire and maintained in-house. Our own drivers deliver all of them except the 14.5T, which goes by third-party transport quoted for your site.",
     caseStudy: {
       client: "FW Building",
       projectType: "Drainage and footing excavation across South Western Sydney residential projects",
@@ -137,7 +137,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Campbelltown", "Macquarie Fields", "Ingleburn", "Minto", "Leumeah", "Bradbury", "Airds", "Ruse"],
     intro: "BuildHire delivers excavators and equipment to Campbelltown and the Macarthur region — next-day delivery, late-model machines, and pricing that's always transparent.",
     bodyParagraph1: "Campbelltown and the Macarthur region are at the centre of South Western Sydney's most significant residential and infrastructure growth. From the new estates of Oran Park and Gregory Hills to the established suburbs of Minto, Ingleburn, and Macquarie Fields, construction activity is constant — and the demand for reliable, well-maintained plant hire is high. BuildHire has built a strong reputation in the Campbelltown area by delivering exactly what we promise: late-model machines, on time, at a fair price.",
-    bodyParagraph2: "The Campbelltown area's geology — predominantly shale and clay — requires excavators with the torque and bucket force to handle tough ground conditions. Our Yanmar ViO35 and ViO55 machines are well-suited to the conditions common across Campbelltown, Minto, and Ingleburn, while the 14.5T and 23T Sumitomo machines handle the heavy earthworks required on larger Macarthur developments. For residential landscaping and pool builds in established Campbelltown suburbs, the compact 1T and 1.7T mini excavators provide the access and precision needed in tight residential lots.",
+    bodyParagraph2: "The Campbelltown area's geology, predominantly shale and clay, requires excavators with the torque and bucket force to handle tough ground conditions. Our Yanmar ViO35 and ViO55 machines are well-suited to the conditions common across Campbelltown, Minto, and Ingleburn, while the 14.5T Case excavator handles the heavy earthworks required on larger Macarthur developments. For residential landscaping and pool builds in established Campbelltown suburbs, the compact 1T and 1.7T mini excavators provide the access and precision needed in tight residential lots.",
     caseStudy: {
       client: "Almighty Fencing",
       projectType: "Post-hole excavation and site preparation across Campbelltown residential projects",
@@ -163,7 +163,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Blacktown", "Seven Hills", "Kings Langley", "Quakers Hill", "Stanhope Gardens", "Marayong", "Lalor Park", "Kings Park"],
     intro: "BuildHire delivers excavators and construction equipment to Blacktown and the greater Western Sydney region — owned fleet, next-day delivery, and no hidden fees.",
     bodyParagraph1: "Blacktown is one of the most active construction markets in NSW. The LGA spans from the established suburbs of Seven Hills and Kings Langley through to the rapidly developing precincts of Stanhope Gardens, Quakers Hill, and the North West Growth Area. BuildHire has been the dry hire partner of choice for Blacktown builders, landscapers, pool contractors, and civil operators who need equipment that shows up on time and performs without fail.",
-    bodyParagraph2: "The diversity of project types across Blacktown LGA means our full fleet gets used here regularly. Compact 1T and 1.7T mini excavators handle the residential landscaping and pool work common in established Blacktown suburbs. The 3.5T and 5.5T Yanmar machines are the backbone of the residential construction trade — footings, drainage, retaining walls, and site clearing. For the large-scale civil and infrastructure projects across the North West Growth Area, our 14.5T and 23T Sumitomo excavators deliver the capacity and reliability that major projects demand.",
+    bodyParagraph2: "The diversity of project types across Blacktown LGA means our full fleet gets used here regularly. Compact 1T and 1.7T mini excavators handle the residential landscaping and pool work common in established Blacktown suburbs. The 3.5T and 5.5T Yanmar machines are the backbone of the residential construction trade: footings, drainage, retaining walls and site clearing. For the large-scale civil and infrastructure projects across the North West Growth Area, our 14.5T Case excavator delivers the capacity and reliability that major projects demand.",
     caseStudy: {
       client: "Mac Developments",
       projectType: "Residential subdivision — bulk earthworks and drainage",
@@ -319,7 +319,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Wollongong CBD", "Figtree", "Fairy Meadow", "Thirroul", "Corrimal", "Unanderra", "Dapto", "Shellharbour"],
     intro: "BuildHire delivers excavators and construction equipment to Wollongong and the Illawarra region — late-model machines, transparent pricing, and reliable delivery.",
     bodyParagraph1: "Wollongong and the Illawarra region have a strong and diverse construction market — from residential development and renovation in the coastal suburbs of Thirroul and Fairy Meadow to industrial and infrastructure projects in the Port Kembla precinct and the Dapto growth corridor. BuildHire delivers to the Illawarra with the same equipment quality and service standards we bring to every Sydney job.",
-    bodyParagraph2: "The Illawarra's terrain — coastal sand, clay, and the escarpment's rocky ground — requires a versatile fleet. Our compact 1T and 1.7T mini excavators handle residential landscaping and pool work in the coastal suburbs, while the 3.5T and 5.5T Yanmar machines are the workhorses for residential construction and drainage work across the broader Wollongong area. For industrial and civil projects in Port Kembla and Unanderra, our 14.5T and 23T Sumitomo excavators provide the capacity and reliability that heavy earthworks demand.",
+    bodyParagraph2: "The Illawarra's coastal sand, clay and rocky escarpment ground need a versatile fleet. Our compact 1T and 1.7T mini excavators handle residential landscaping and pool work in the coastal suburbs, while the 3.5T and 5.5T Yanmar machines are the workhorses for residential construction and drainage work across the broader Wollongong area. For industrial and civil projects in Port Kembla and Unanderra, our 14.5T Case excavator provides the capacity and reliability that heavy earthworks demand.",
     caseStudy: {
       client: "FW Building",
       projectType: "Residential construction — drainage and footing excavation in Wollongong",
@@ -502,7 +502,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     state: "NSW",
     suburbs: ["Castle Hill", "Baulkham Hills", "Kellyville", "Rouse Hill", "Norwest", "Bella Vista", "Winston Hills", "Cherrybrook"],
     intro: "BuildHire delivers excavators and construction equipment across the Hills District — late-model machines, next-day delivery, and pricing that's always transparent.",
-    bodyParagraph1: "The Hills District is one of Sydney's most consistently active residential construction markets. Large blocks, premium residential builds, and a high concentration of pool builders and landscapers create strong and consistent demand for reliable plant hire. BuildHire delivers to all Hills District suburbs with late-model Yanmar and Sumitomo machines, next-day delivery, and transparent pricing, with delivery and collection quoted for your site.",
+    bodyParagraph1: "The Hills District is one of Sydney's most consistently active residential construction markets. Large blocks, premium residential builds, and a high concentration of pool builders and landscapers create strong and consistent demand for reliable plant hire. BuildHire delivers to all Hills District suburbs with late-model Yanmar and Case machines, next-day delivery, and transparent pricing, with delivery and collection quoted for your site.",
     bodyParagraph2: "Hills District residential lots are typically larger than inner-Sydney properties, which makes the 3.5T and 5.5T Yanmar excavators the most popular choices for pool excavations, retaining walls, and drainage work. For projects with tight access or established gardens, the 1T and 1.7T mini excavators provide the precision needed. Our mini dumpers are also popular across the Hills District for spoil removal on pool and landscaping projects.",
     caseStudy: {
       client: "Mac Developments",
@@ -611,14 +611,14 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     caseStudy: {
       client: "Mac Developments",
       projectType: "Bulk earthworks and drainage across Marsden Park estate development",
-      equipment: "5.5T Excavator (ViO55 Yanmar) and 14.5T Sumitomo",
+      equipment: "5.5T Excavator (ViO55 Yanmar) and 14.5T Case",
       outcome: "Marsden Park estate development completed on schedule with machines delivered to multiple lots simultaneously.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
     bodyParagraph3: "BuildHire delivers to Marsden Park and all North West Sydney growth area suburbs including Riverstone, Schofields, Box Hill, and Colebee. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Marsden Park?", a: "Yes — BuildHire delivers to Marsden Park and all surrounding North West Sydney suburbs including Riverstone, Schofields, and Box Hill." },
-      { q: "What excavator is best for new estate construction in Marsden Park?", a: "The 5.5T Yanmar ViO55 and 14.5T Sumitomo are the most popular choices for Marsden Park estate construction — bulk earthworks and footing excavation." },
+      { q: "What excavator is best for new estate construction in Marsden Park?", a: "The 5.5T Yanmar ViO55 and 14.5T Case are the most popular choices for Marsden Park estate construction, for bulk earthworks and footing excavation." },
       { q: "How do I book excavator hire in Marsden Park?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Marsden Park." }
     ],
     nearbyAreas: ["Rouse Hill", "Box Hill", "Schofields", "Riverstone", "Blacktown"],
@@ -633,18 +633,18 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Box Hill", "Box Hill Industrial", "Rouse Hill", "Marsden Park", "Schofields", "Riverstone", "Kellyville Ridge", "Beaumont Hills"],
     intro: "BuildHire delivers excavators and construction equipment to Box Hill and North West Sydney — next-day delivery, late-model machines, and transparent pricing.",
     bodyParagraph1: "Box Hill is one of the newest and most rapidly developing residential precincts in NSW. The Box Hill Priority Growth Area spans thousands of hectares of new residential, commercial, and industrial land, creating enormous demand for reliable plant hire. BuildHire delivers to Box Hill and the surrounding North West Sydney growth corridor with late-model machines and next-day delivery.",
-    bodyParagraph2: "For Box Hill estate construction, the 5.5T, 14.5T, and 23T excavators handle the bulk earthworks, drainage, and footing preparation required on new residential and commercial lots. Our full fleet is available across the Box Hill precinct, with delivery coordinated to meet the fast-paced construction schedules common in new estate development.",
+    bodyParagraph2: "For Box Hill estate construction, the 5.5T and 14.5T excavators handle the bulk earthworks, drainage, and footing preparation required on new residential and commercial lots. Our full fleet is available across the Box Hill precinct, with delivery coordinated to meet the fast-paced construction schedules common in new estate development.",
     caseStudy: {
       client: "Mac Developments",
       projectType: "Bulk earthworks and drainage across Box Hill estate development",
-      equipment: "14.5T Sumitomo Excavator",
+      equipment: "14.5T Case Excavator",
       outcome: "Box Hill estate development progressed on schedule with heavy earthworks completed efficiently.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
     bodyParagraph3: "BuildHire delivers to Box Hill and all surrounding North West Sydney suburbs including Rouse Hill, Marsden Park, Schofields, and Riverstone. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Box Hill?", a: "Yes — BuildHire delivers to Box Hill and all surrounding North West Sydney suburbs including Rouse Hill, Marsden Park, Schofields, and Riverstone." },
-      { q: "What excavator is best for Box Hill estate construction?", a: "The 14.5T Sumitomo and 5.5T Yanmar are the most popular choices for Box Hill estate construction — bulk earthworks, drainage, and footing excavation." },
+      { q: "What excavator is best for Box Hill estate construction?", a: "The 14.5T Case and 5.5T Yanmar are the most popular choices for Box Hill estate construction, for bulk earthworks, drainage and footing excavation." },
       { q: "How do I book excavator hire in Box Hill?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Box Hill." }
     ],
     nearbyAreas: ["Rouse Hill", "Marsden Park", "Schofields", "Riverstone", "Kellyville"],
@@ -659,7 +659,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Schofields", "Riverstone", "Marsden Park", "Box Hill", "Rouse Hill", "Quakers Hill", "Colebee", "Grantham Farm"],
     intro: "BuildHire delivers excavators and construction equipment to Schofields and North West Sydney — next-day delivery, late-model machines, and transparent pricing.",
     bodyParagraph1: "Schofields and Riverstone are at the centre of North West Sydney's residential growth corridor. New estates, infrastructure upgrades, and commercial development create constant demand for reliable plant hire. BuildHire delivers to Schofields and all surrounding North West Sydney suburbs with late-model machines and next-day delivery.",
-    bodyParagraph2: "For Schofields estate construction, the 5.5T Yanmar and 14.5T Sumitomo are the most popular choices for bulk earthworks and footing preparation. For residential landscaping and pool work in established streets, the 3.5T Yanmar handles most project requirements. Our full fleet is available across the Schofields area.",
+    bodyParagraph2: "For Schofields estate construction, the 5.5T Yanmar and 14.5T Case are the most popular choices for bulk earthworks and footing preparation. For residential landscaping and pool work in established streets, the 3.5T Yanmar handles most project requirements. Our full fleet is available across the Schofields area.",
     caseStudy: {
       client: "FW Building",
       projectType: "Footing excavation and drainage across Schofields residential development",
@@ -685,7 +685,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Riverstone", "Schofields", "Marsden Park", "Quakers Hill", "Colebee", "Grantham Farm", "Box Hill", "Rouse Hill"],
     intro: "BuildHire delivers excavators and construction equipment to Riverstone and North West Sydney — next-day delivery, late-model machines, and transparent pricing.",
     bodyParagraph1: "Riverstone is a key suburb in North West Sydney's growth corridor, with new residential estates, commercial development, and infrastructure upgrades creating consistent demand for reliable plant hire. BuildHire delivers to Riverstone and all surrounding North West Sydney suburbs with late-model machines and next-day delivery.",
-    bodyParagraph2: "For Riverstone estate construction, the 5.5T Yanmar and 14.5T Sumitomo handle bulk earthworks and footing preparation. For residential landscaping and pool work, the 3.5T Yanmar is the most popular choice. Our full fleet is available across the Riverstone area.",
+    bodyParagraph2: "For Riverstone estate construction, the 5.5T Yanmar and 14.5T Case handle bulk earthworks and footing preparation. For residential landscaping and pool work, the 3.5T Yanmar is the most popular choice. Our full fleet is available across the Riverstone area.",
     caseStudy: {
       client: "Mac Developments",
       projectType: "Residential estate development — bulk earthworks in Riverstone",
@@ -763,7 +763,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Oran Park", "Gregory Hills", "Gledswood Hills", "Harrington Park", "Narellan", "Camden", "Elderslie", "Mount Annan"],
     intro: "BuildHire delivers excavators and construction equipment to Oran Park and the Camden growth corridor — next-day delivery, late-model machines, and transparent pricing.",
     bodyParagraph1: "Oran Park and the surrounding Camden growth corridor — Gregory Hills, Gledswood Hills, Harrington Park, and Narellan — are among the fastest-growing residential precincts in NSW. New land releases and estate development create constant demand for reliable plant hire. BuildHire delivers to Oran Park and the Camden corridor with late-model machines and next-day delivery.",
-    bodyParagraph2: "For Oran Park estate construction, the 5.5T Yanmar and 14.5T Sumitomo handle bulk earthworks and footing preparation. For residential landscaping and pool work in established streets, the 3.5T Yanmar is the most popular choice.",
+    bodyParagraph2: "For Oran Park estate construction, the 5.5T Yanmar and 14.5T Case handle bulk earthworks and footing preparation. For residential landscaping and pool work in established streets, the 3.5T Yanmar is the most popular choice.",
     caseStudy: {
       client: "Mac Developments",
       projectType: "Residential estate development — bulk earthworks in Oran Park",
@@ -789,7 +789,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Leppington", "Austral", "Edmondson Park", "Oran Park", "Denham Court", "Rossmore", "Bringelly", "Catherine Field"],
     intro: "BuildHire delivers excavators and construction equipment to Leppington and the South West Growth Area — next-day delivery, late-model machines, and transparent pricing.",
     bodyParagraph1: "Leppington and the South West Growth Area — Austral, Edmondson Park, Denham Court, and the surrounding precincts — are at the centre of Sydney's most significant residential expansion. New land releases and estate development across this corridor create enormous demand for reliable plant hire. BuildHire delivers to Leppington and the South West Growth Area with late-model machines and next-day delivery.",
-    bodyParagraph2: "For Leppington estate construction, the 5.5T Yanmar and 14.5T Sumitomo handle bulk earthworks and footing preparation. For residential landscaping and pool work in established streets, the 3.5T Yanmar is the most popular choice.",
+    bodyParagraph2: "For Leppington estate construction, the 5.5T Yanmar and 14.5T Case handle bulk earthworks and footing preparation. For residential landscaping and pool work in established streets, the 3.5T Yanmar is the most popular choice.",
     caseStudy: {
       client: "FW Building",
       projectType: "Bulk earthworks and drainage across Leppington estate development",
@@ -815,7 +815,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Edmondson Park", "Leppington", "Austral", "Denham Court", "Oran Park", "Bardia", "Prestons", "Casula"],
     intro: "BuildHire delivers excavators and construction equipment to Edmondson Park and South Western Sydney — next-day delivery, late-model machines, and transparent pricing.",
     bodyParagraph1: "Edmondson Park is a rapidly growing residential suburb in South Western Sydney, with new estates and infrastructure development creating consistent demand for reliable plant hire. BuildHire delivers to Edmondson Park and all surrounding South Western Sydney suburbs with late-model machines and next-day delivery.",
-    bodyParagraph2: "For Edmondson Park estate construction, the 5.5T Yanmar and 14.5T Sumitomo handle bulk earthworks and footing preparation. For residential landscaping and pool work, the 3.5T Yanmar is the most popular choice.",
+    bodyParagraph2: "For Edmondson Park estate construction, the 5.5T Yanmar and 14.5T Case handle bulk earthworks and footing preparation. For residential landscaping and pool work, the 3.5T Yanmar is the most popular choice.",
     caseStudy: {
       client: "Mac Developments",
       projectType: "Residential estate development in Edmondson Park",
@@ -841,7 +841,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Gregory Hills", "Gledswood Hills", "Oran Park", "Harrington Park", "Narellan Vale", "Camden South", "Cobbitty", "Kirkham"],
     intro: "BuildHire delivers excavators and construction equipment to Gregory Hills and the Camden growth corridor — next-day delivery, late-model machines, and transparent pricing.",
     bodyParagraph1: "Gregory Hills and Gledswood Hills are premium residential precincts in the Camden growth corridor, with a high concentration of new estate development and residential construction. BuildHire delivers to Gregory Hills and all Camden corridor suburbs with late-model machines and next-day delivery.",
-    bodyParagraph2: "For Gregory Hills estate construction, the 5.5T Yanmar and 14.5T Sumitomo handle bulk earthworks and footing preparation. For residential landscaping and pool work in established streets, the 3.5T Yanmar is the most popular choice.",
+    bodyParagraph2: "For Gregory Hills estate construction, the 5.5T Yanmar and 14.5T Case handle bulk earthworks and footing preparation. For residential landscaping and pool work in established streets, the 3.5T Yanmar is the most popular choice.",
     caseStudy: {
       client: "FW Building",
       projectType: "Pool excavation and retaining wall in Gregory Hills",
@@ -919,7 +919,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Picton", "Thirlmere", "Tahmoor", "Buxton", "Bargo", "Douglas Park", "Maldon", "Wilton"],
     intro: "BuildHire delivers excavators and construction equipment to Picton and the Southern Highlands gateway — next-day delivery, late-model machines, and transparent pricing.",
     bodyParagraph1: "Picton and the surrounding Wollondilly Shire are experiencing significant growth driven by the Western Sydney Airport and the Wilton New Town development. From rural residential properties in Thirlmere and Buxton to the new Wilton estate, BuildHire delivers reliable plant hire to the Picton area with late-model machines and next-day delivery.",
-    bodyParagraph2: "For Picton area projects, the 3.5T and 5.5T Yanmar excavators handle most residential and rural requirements. For the larger earthworks required in the Wilton New Town development, the 14.5T and 23T Sumitomo machines provide the capacity needed.",
+    bodyParagraph2: "For Picton area projects, the 3.5T and 5.5T Yanmar excavators handle most residential and rural requirements. For the larger earthworks required in the Wilton New Town development, the 14.5T Case excavator provides the capacity needed.",
     caseStudy: {
       client: "FW Building",
       projectType: "Rural residential development — site clearing and drainage in Picton",
@@ -945,7 +945,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Appin", "Wedderburn", "Gilead", "Menangle", "Menangle Park", "Douglas Park", "Wilton", "Bargo"],
     intro: "BuildHire delivers excavators and construction equipment to Appin and the Macarthur region — next-day delivery, late-model machines, and transparent pricing.",
     bodyParagraph1: "Appin and the surrounding Macarthur region are experiencing significant growth driven by the Western Sydney Airport and new residential development in Wilton and Menangle Park. BuildHire delivers reliable plant hire to the Appin area with late-model machines and next-day delivery.",
-    bodyParagraph2: "For Appin area projects, the 3.5T and 5.5T Yanmar excavators handle most residential and rural requirements. For larger earthworks in the Wilton New Town development, the 14.5T and 23T Sumitomo machines provide the capacity needed.",
+    bodyParagraph2: "For Appin area projects, the 3.5T and 5.5T Yanmar excavators handle most residential and rural requirements. For larger earthworks in the Wilton New Town development, the 14.5T Case excavator provides the capacity needed.",
     caseStudy: {
       client: "Mac Developments",
       projectType: "Rural residential development in Appin",

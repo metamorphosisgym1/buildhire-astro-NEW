@@ -82,8 +82,8 @@ https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
 /hire/5-5t-excavator/newcastle/*   /equipment/55t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/newcastle/    /equipment/145t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/newcastle/*   /equipment/145t-excavator-hire-sydney/  301
-/hire/23t-excavator/newcastle/    /equipment/23t-excavator-hire-sydney/  301
-/hire/23t-excavator/newcastle/*   /equipment/23t-excavator-hire-sydney/  301
+/hire/23t-excavator/newcastle/    /equipment/145t-excavator-hire-sydney/  301
+/hire/23t-excavator/newcastle/*   /equipment/145t-excavator-hire-sydney/  301
 /hire/mini-dumper-700kg/newcastle/    /equipment/mini-dumper-hire-sydney/  301
 /hire/mini-dumper-700kg/newcastle/*   /equipment/mini-dumper-hire-sydney/  301
 /hire/0-8t-mini-excavator/central-coast/    /equipment/08t-mini-excavator-hire-sydney/  301
@@ -98,8 +98,8 @@ https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
 /hire/5-5t-excavator/central-coast/*   /equipment/55t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/central-coast/    /equipment/145t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/central-coast/*   /equipment/145t-excavator-hire-sydney/  301
-/hire/23t-excavator/central-coast/    /equipment/23t-excavator-hire-sydney/  301
-/hire/23t-excavator/central-coast/*   /equipment/23t-excavator-hire-sydney/  301
+/hire/23t-excavator/central-coast/    /equipment/145t-excavator-hire-sydney/  301
+/hire/23t-excavator/central-coast/*   /equipment/145t-excavator-hire-sydney/  301
 /hire/mini-dumper-700kg/central-coast/    /equipment/mini-dumper-hire-sydney/  301
 /hire/mini-dumper-700kg/central-coast/*   /equipment/mini-dumper-hire-sydney/  301
 /hire/0-8t-mini-excavator/hunter-valley/    /equipment/08t-mini-excavator-hire-sydney/  301
@@ -114,8 +114,8 @@ https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
 /hire/5-5t-excavator/hunter-valley/*   /equipment/55t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/hunter-valley/    /equipment/145t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/hunter-valley/*   /equipment/145t-excavator-hire-sydney/  301
-/hire/23t-excavator/hunter-valley/    /equipment/23t-excavator-hire-sydney/  301
-/hire/23t-excavator/hunter-valley/*   /equipment/23t-excavator-hire-sydney/  301
+/hire/23t-excavator/hunter-valley/    /equipment/145t-excavator-hire-sydney/  301
+/hire/23t-excavator/hunter-valley/*   /equipment/145t-excavator-hire-sydney/  301
 /hire/mini-dumper-700kg/hunter-valley/    /equipment/mini-dumper-hire-sydney/  301
 /hire/mini-dumper-700kg/hunter-valley/*   /equipment/mini-dumper-hire-sydney/  301
 /hire/0-8t-mini-excavator/gosford/    /equipment/08t-mini-excavator-hire-sydney/  301
@@ -130,8 +130,8 @@ https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
 /hire/5-5t-excavator/gosford/*   /equipment/55t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/gosford/    /equipment/145t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/gosford/*   /equipment/145t-excavator-hire-sydney/  301
-/hire/23t-excavator/gosford/    /equipment/23t-excavator-hire-sydney/  301
-/hire/23t-excavator/gosford/*   /equipment/23t-excavator-hire-sydney/  301
+/hire/23t-excavator/gosford/    /equipment/145t-excavator-hire-sydney/  301
+/hire/23t-excavator/gosford/*   /equipment/145t-excavator-hire-sydney/  301
 /hire/mini-dumper-700kg/gosford/    /equipment/mini-dumper-hire-sydney/  301
 /hire/mini-dumper-700kg/gosford/*   /equipment/mini-dumper-hire-sydney/  301
 /hire/0-8t-mini-excavator/wyong/    /equipment/08t-mini-excavator-hire-sydney/  301
@@ -146,8 +146,8 @@ https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
 /hire/5-5t-excavator/wyong/*   /equipment/55t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/wyong/    /equipment/145t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/wyong/*   /equipment/145t-excavator-hire-sydney/  301
-/hire/23t-excavator/wyong/    /equipment/23t-excavator-hire-sydney/  301
-/hire/23t-excavator/wyong/*   /equipment/23t-excavator-hire-sydney/  301
+/hire/23t-excavator/wyong/    /equipment/145t-excavator-hire-sydney/  301
+/hire/23t-excavator/wyong/*   /equipment/145t-excavator-hire-sydney/  301
 /hire/mini-dumper-700kg/wyong/    /equipment/mini-dumper-hire-sydney/  301
 /hire/mini-dumper-700kg/wyong/*   /equipment/mini-dumper-hire-sydney/  301
 /hire/0-8t-mini-excavator/maitland/    /equipment/08t-mini-excavator-hire-sydney/  301
@@ -162,8 +162,8 @@ https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
 /hire/5-5t-excavator/maitland/*   /equipment/55t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/maitland/    /equipment/145t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/maitland/*   /equipment/145t-excavator-hire-sydney/  301
-/hire/23t-excavator/maitland/    /equipment/23t-excavator-hire-sydney/  301
-/hire/23t-excavator/maitland/*   /equipment/23t-excavator-hire-sydney/  301
+/hire/23t-excavator/maitland/    /equipment/145t-excavator-hire-sydney/  301
+/hire/23t-excavator/maitland/*   /equipment/145t-excavator-hire-sydney/  301
 /hire/mini-dumper-700kg/maitland/    /equipment/mini-dumper-hire-sydney/  301
 /hire/mini-dumper-700kg/maitland/*   /equipment/mini-dumper-hire-sydney/  301
 /hire/0-8t-mini-excavator/cessnock/    /equipment/08t-mini-excavator-hire-sydney/  301
@@ -178,8 +178,8 @@ https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
 /hire/5-5t-excavator/cessnock/*   /equipment/55t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/cessnock/    /equipment/145t-excavator-hire-sydney/  301
 /hire/14-5t-excavator/cessnock/*   /equipment/145t-excavator-hire-sydney/  301
-/hire/23t-excavator/cessnock/    /equipment/23t-excavator-hire-sydney/  301
-/hire/23t-excavator/cessnock/*   /equipment/23t-excavator-hire-sydney/  301
+/hire/23t-excavator/cessnock/    /equipment/145t-excavator-hire-sydney/  301
+/hire/23t-excavator/cessnock/*   /equipment/145t-excavator-hire-sydney/  301
 /hire/mini-dumper-700kg/cessnock/    /equipment/mini-dumper-hire-sydney/  301
 /hire/mini-dumper-700kg/cessnock/*   /equipment/mini-dumper-hire-sydney/  301
 /service-areas/newcastle/  /service-areas/  301
@@ -239,3 +239,9 @@ https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
 /faq/what-is-the-delivery-cost-for-equipment-hire/                          /blog/excavator-hire-cost-sydney/  301
 /faq/what-is-the-difference-between-a-mini-dumper-and-a-wheelbarrow         /equipment/mini-dumper-hire-sydney/  301
 /faq/what-is-the-difference-between-a-mini-dumper-and-a-wheelbarrow/        /equipment/mini-dumper-hire-sydney/  301
+
+# 23T, 19 Oct 2026: owner is not advertising the 23T yet. Page, /hire/ pages and links removed; send them to the 14.5T, our largest machine.
+/equipment/23t-excavator-hire-sydney    /equipment/145t-excavator-hire-sydney/  301
+/equipment/23t-excavator-hire-sydney/   /equipment/145t-excavator-hire-sydney/  301
+/hire/23t-excavator                     /equipment/145t-excavator-hire-sydney/  301
+/hire/23t-excavator/*                   /equipment/145t-excavator-hire-sydney/  301
