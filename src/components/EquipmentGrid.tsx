@@ -235,7 +235,7 @@ const comingSoonEquipment: EquipmentItem[] = [
     name: "8T Excavator (ViO80 Yanmar)",
     category: "Excavators",
     image: vio80Img,
-    rate: "$420/day",
+    rate: "",
     badge: "coming-soon",
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-ViO80-Excavator-Brochure.pdf",
     specs: {
@@ -321,7 +321,11 @@ function EquipmentCard({
         <div className="flex items-start gap-2 mb-1">
           <h3 className="text-lg font-bold text-foreground">{renderEquipmentName(item.name)}</h3>
         </div>
-        <p className="text-muted-foreground text-sm mb-1">From {item.rate} <span className="text-xs">(incl GST)</span></p>
+        {item.badge === "coming-soon" ? (
+          <p className="text-muted-foreground text-sm mb-1">Coming soon</p>
+        ) : (
+          <p className="text-muted-foreground text-sm mb-1">From {item.rate} <span className="text-xs">(incl GST)</span></p>
+        )}
         {item.deliveryNote && (
           <p className="text-xs text-primary/80 mb-4 font-medium">{item.deliveryNote}</p>
         )}
@@ -329,7 +333,7 @@ function EquipmentCard({
         <div className="flex flex-col gap-2">
           {item.badge === "coming-soon" ? (
             <span className="text-center text-sm font-medium text-muted-foreground py-2.5">
-              Enquire for Availability
+              Coming soon
             </span>
           ) : (
             <>

@@ -245,3 +245,7 @@ https://www.buildhire.com.au/*  https://buildhire.com.au/:splat   301!
 /equipment/23t-excavator-hire-sydney/   /equipment/145t-excavator-hire-sydney/  301
 /hire/23t-excavator                     /equipment/145t-excavator-hire-sydney/  301
 /hire/23t-excavator/*                   /equipment/145t-excavator-hire-sydney/  301
+
+# 19 Oct 2026: owner no longer hires to homeowners. The homeowner question page goes.
+/faq/does-buildhire-hire-to-homeowners    /404.html  410
+/faq/does-buildhire-hire-to-homeowners/   /404.html  410

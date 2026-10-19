@@ -23,9 +23,9 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What excavator do I need for footings and slab prep in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "For residential footings and slab preparation in Sydney, a 3.5T or 5.5T excavator is the most efficient choice. The 3.5T handles standard residential footings (600mm wide, 600mm deep) and slab prep on suburban blocks. For larger slabs, cut-and-fill sites, or harder ground conditions, the 5.5T or 8T is recommended for faster completion." } },
+    { "@type": "Question", "name": "What excavator do I need for footings and slab prep in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "For residential footings and slab preparation in Sydney, a 3.5T or 5.5T excavator is the most efficient choice. The 3.5T handles standard residential footings (600mm wide, 600mm deep) and slab prep on suburban blocks. For larger slabs, cut-and-fill sites, or harder ground conditions, the 5.5T is recommended for faster completion." } },
     { "@type": "Question", "name": "Can I hire an excavator for site preparation in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. BuildHire provides excavators for all stages of site preparation — stripping topsoil, bulk earthworks, cut and fill, footings excavation, and slab preparation. We deliver across all of Greater Sydney with next-day availability for most locations." } },
-    { "@type": "Question", "name": "What is the cost of excavator hire for a building site in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Excavator hire for building sites in Sydney starts from $340/day for a 3.5T, $370/day for a 5.5T, and $420/day for an 8T. Delivery & collection is charged separately. Weekly rates are available for ongoing projects — call 1300 157 882 for trade pricing." } }
+    { "@type": "Question", "name": "What is the cost of excavator hire for a building site in Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Excavator hire for building sites in Sydney starts from $340/day for a 3.5T, $370/day for a 5.5T and $490/day for a 14.5T. Delivery & collection is charged separately. Weekly rates are available for ongoing projects. Call 1300 157 882 for trade pricing." } }
   ]
 };
 const breadcrumbSchema = {
@@ -74,11 +74,11 @@ const breadcrumbSchema = {
         <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Machines for Every Stage of the Build</h2>
         <div class="grid md:grid-cols-2 gap-8">
           {[
-            { stage: "Site Stripping & Topsoil Removal", machines: "3.5T, 5.5T, 8T", detail: "Strip topsoil and vegetation from the building footprint before setting out. The 3.5T handles standard residential blocks; the 5.5T and 8T are faster on larger sites." },
-            { stage: "Cut & Fill Earthworks", machines: "5.5T, 8T, 14.5T", detail: "Level sloped sites, cut benches, and move bulk material. The 8T is the standard choice for residential cut-and-fill; the 14.5T handles larger commercial sites." },
+            { stage: "Site Stripping & Topsoil Removal", machines: "3.5T, 5.5T", detail: "Strip topsoil and vegetation from the building footprint before setting out. The 3.5T handles standard residential blocks; the 5.5T is faster on larger sites." },
+            { stage: "Cut & Fill Earthworks", machines: "5.5T, 14.5T", detail: "Level sloped sites, cut benches, and move bulk material. The 5.5T suits residential cut-and-fill; the 14.5T handles larger commercial sites." },
             { stage: "Footings Excavation", machines: "3.5T, 5.5T", detail: "Excavate strip footings, pad footings, and pier holes to engineer specifications. The 3.5T is ideal for standard residential footings; the 5.5T for deeper or wider commercial footings." },
             { stage: "Slab Preparation", machines: "3.5T, 5.5T", detail: "Trim and level the formation, excavate for edge beams, and prepare for the slab pour. Precision work — the 3.5T's bucket control is well suited to this stage." },
-            { stage: "Basement & Subfloor Excavation", machines: "5.5T, 8T", detail: "Excavate basement levels and subfloor voids for split-level homes. The 5.5T and 8T provide the reach and power for deeper excavations in tight urban sites." },
+            { stage: "Basement & Subfloor Excavation", machines: "5.5T", detail: "Excavate basement levels and subfloor voids for split-level homes. The 5.5T provides the reach and power for deeper excavations in tight urban sites." },
             { stage: "Backfilling & Compaction Prep", machines: "3.5T, 5.5T", detail: "Backfill around footings, retaining walls, and subfloor structures. Precise placement of fill material in layers for compaction." },
           ].map(item => (
             <div class="flex gap-4">
@@ -110,7 +110,7 @@ const breadcrumbSchema = {
               {[
                 { machine: "3.5T Excavator", rate: "$340/day", delivery: "Quoted", best: "Footings, slab prep, residential earthworks" },
                 { machine: "5.5T Excavator", rate: "$370/day", delivery: "on enquiry", best: "Cut & fill, deeper footings, larger sites" },
-                { machine: "8T Excavator", rate: "$420/day", delivery: "on enquiry", best: "Bulk earthworks, basement excavation" },
+                { machine: "8T Excavator", rate: "Coming soon", delivery: "Coming soon", best: "Bulk earthworks, basement excavation" },
                 { machine: "14.5T Excavator", rate: "$490/day", delivery: "on enquiry", best: "Large commercial sites, heavy earthworks" },
               ].map((r, i) => (
                 <tr class={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : ''}`}>
@@ -131,9 +131,9 @@ const breadcrumbSchema = {
         <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Builder FAQ</h2>
         <div class="space-y-6">
           {[
-            { q: "What excavator do I need for footings and slab prep in Sydney?", a: "For residential footings and slab preparation in Sydney, a 3.5T or 5.5T excavator is the most efficient choice. The 3.5T handles standard residential footings (600mm wide, 600mm deep) and slab prep on suburban blocks. For larger slabs, cut-and-fill sites, or harder ground conditions, the 5.5T or 8T is recommended for faster completion." },
+            { q: "What excavator do I need for footings and slab prep in Sydney?", a: "For residential footings and slab preparation in Sydney, a 3.5T or 5.5T excavator is the most efficient choice. The 3.5T handles standard residential footings (600mm wide, 600mm deep) and slab prep on suburban blocks. For larger slabs, cut-and-fill sites, or harder ground conditions, the 5.5T is recommended for faster completion." },
             { q: "Can I hire an excavator for site preparation in Sydney?", a: "Yes. BuildHire provides excavators for all stages of site preparation — stripping topsoil, bulk earthworks, cut and fill, footings excavation, and slab preparation. We deliver across all of Greater Sydney with next-day availability for most locations." },
-            { q: "What is the cost of excavator hire for a building site in Sydney?", a: "Excavator hire for building sites in Sydney starts from $340/day for a 3.5T, $370/day for a 5.5T, and $420/day for an 8T. Delivery & collection is charged separately. Weekly rates are available for ongoing projects — call 1300 157 882 for trade pricing." },
+            { q: "What is the cost of excavator hire for a building site in Sydney?", a: "Excavator hire for building sites in Sydney starts from $340/day for a 3.5T, $370/day for a 5.5T and $490/day for a 14.5T. Delivery & collection is charged separately. Weekly rates are available for ongoing projects. Call 1300 157 882 for trade pricing." },
           ].map(item => (
             <div class="border-b border-gray-200 pb-6">
               <h3 class="text-lg font-bold text-[var(--color-text)] mb-2">{item.q}</h3>

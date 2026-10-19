@@ -23,18 +23,7 @@ const serviceSchema = {
     }
   },
   "areaServed": { "@type": "State", "name": "New South Wales" },
-  "description": "8T excavator dry hire in Sydney from $420/day inc GST. Ideal for bulk earthworks, civil infrastructure, basement excavation, and large commercial projects. Next-day delivery.",
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "AUD",
-    "price": "420",
-    "priceSpecification": {
-      "@type": "UnitPriceSpecification",
-      "price": "420",
-      "priceCurrency": "AUD",
-      "unitText": "DAY"
-    }
-  }
+  "description": "The 8T excavator is coming soon to BuildHire in Sydney. For bulk earthworks and civil jobs now, hire the 5.5T or the 14.5T."
 };
 const faqSchema = {
   "@context": "https://schema.org",
@@ -42,10 +31,10 @@ const faqSchema = {
   "mainEntity": [
   {
     "@type": "Question",
-    "name": "How much does it cost to hire an 8T excavator in Sydney?",
+    "name": "Can I hire an 8T excavator from BuildHire now?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "BuildHire's 8T excavator starts from $420/day (incl GST). Delivery is via third-party transport, call 1300 157 882 for a delivery quote to your location. Weekly rates are available."
+      "text": "Not yet. The 8T is coming soon. For medium earthworks, hire the 5.5T from $370/day. For bulk earthworks, hire the 14.5T from $490/day. Both prices include GST. Call 1300 157 882 to talk through your job."
     }
   },
   {
@@ -63,14 +52,6 @@ const faqSchema = {
       "@type": "Answer",
       "text": "No licence is required to operate an excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) is required."
     }
-  },
-  {
-    "@type": "Question",
-    "name": "How is an 8T excavator delivered in Sydney?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The 8T is delivered via third-party heavy transport. Pricing depends on your location \u2014 call 1300 157 882 for a delivery quote. We arrange all transport logistics."
-    }
   }
 ]
 };
@@ -85,8 +66,8 @@ const breadcrumbSchema = {
 };
 ---
 <Layout
-  title="8T Excavator Hire Sydney | From $420/day | BuildHire"
-  description="8T excavator dry hire in Sydney from $420/day inc GST. Ideal for bulk earthworks, civil infrastructure, basement excavation, and large commercial projects. Next-day delivery."
+  title="8T Excavator Hire Sydney | Coming Soon | BuildHire"
+  description="The 8T excavator is coming soon to BuildHire. For bulk earthworks and civil jobs now, hire our 5.5T or 14.5T, delivered across Sydney."
   canonicalPath="/equipment/8t-excavator-hire-sydney"
   ogImage="/og-image.png"
 >
@@ -106,9 +87,10 @@ const breadcrumbSchema = {
         </nav>
         <div class="text-center mb-10">
           <h1 class="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">8T Excavator Hire Sydney</h1>
-          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">Bulk earthworks, civil infrastructure, basement excavation, and large commercial projects. From <strong>$420/day inc GST</strong>. Next-day delivery across Sydney.</p>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">The 8T is <strong>coming soon</strong>. For bulk earthworks, civil and basement jobs now, hire the 5.5T or the 14.5T.</p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book This Machine →</a>
+            <a href="/equipment/55t-excavator-hire-sydney/" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">See the 5.5T</a>
+            <a href="/equipment/145t-excavator-hire-sydney/" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">See the 14.5T</a>
             <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">Call 1300 157 882</a>
           </div>
         </div>
@@ -126,18 +108,17 @@ const breadcrumbSchema = {
                 <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Bucket Capacity</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">0.35 m³</td></tr>
                 <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Engine Power</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">47.5 kW</td></tr>
                 <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Max Reach</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">7,800 mm</td></tr>
-                <tr class="border-b border-gray-100"><td class="py-2 text-[var(--color-text-muted)]">Delivery</td><td class="py-2 font-semibold text-[var(--color-text)] text-right">Third-party transport — pricing on enquiry</td></tr>
               </tbody>
             </table>
           </div>
           <div>
             <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6">What It's Used For</h2>
             <div class="space-y-4">
-              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Bulk Earthworks</h3><p class="text-sm text-[var(--color-text-muted)]">The 8T is the standard choice for bulk earthworks on medium to large residential and commercial sites — faster cycle times and greater bucket capacity than the 5.5T.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Bulk Earthworks</h3><p class="text-sm text-[var(--color-text-muted)]">Bulk earthworks on medium to large residential and commercial sites, with more bucket capacity than the 5.5T.</p></div>
               <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Basement Excavation</h3><p class="text-sm text-[var(--color-text-muted)]">Excavate basement levels for residential and commercial developments. The 8T's 4,500mm dig depth and 7,800mm reach handles most basement excavation requirements.</p></div>
-              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Civil Infrastructure</h3><p class="text-sm text-[var(--color-text-muted)]">Road preparation, drainage infrastructure, and civil earthworks. The 8T is the most common machine for medium civil projects in Sydney.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Civil Infrastructure</h3><p class="text-sm text-[var(--color-text-muted)]">Road preparation, drainage infrastructure, and civil earthworks.</p></div>
               <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Large Retaining Walls</h3><p class="text-sm text-[var(--color-text-muted)]">Excavate for large retaining wall structures on development sites. The 8T handles the heavy material and deep excavation associated with major retaining structures.</p></div>
-              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Subdivision Earthworks</h3><p class="text-sm text-[var(--color-text-muted)]">Bulk earthworks for subdivision sites — stripping, cut and fill, and preparation for multiple dwelling footprints.</p></div>
+              <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Subdivision Earthworks</h3><p class="text-sm text-[var(--color-text-muted)]">Bulk earthworks for subdivision sites: stripping, cut and fill, and preparation for multiple dwelling footprints.</p></div>
               <div><h3 class="font-bold text-[var(--color-text)] text-sm mb-1">Demolition Support</h3><p class="text-sm text-[var(--color-text-muted)]">Material removal and site clearing for commercial demolition projects. The 8T's capacity makes it efficient for large volume material handling.</p></div>
             </div>
           </div>
@@ -148,10 +129,9 @@ const breadcrumbSchema = {
       <div class="max-w-3xl mx-auto px-6">
         <h2 class="text-3xl font-bold text-[var(--color-text)] mb-10 text-center">Frequently Asked Questions</h2>
         <div class="space-y-6">
-          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">How much does it cost to hire an 8T excavator in Sydney?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">BuildHire's 8T excavator starts from $420/day (incl GST). Delivery is via third-party transport, call 1300 157 882 for a delivery quote to your location. Weekly rates are available.</p></div>
+          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">Can I hire an 8T excavator from BuildHire now?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">Not yet. The 8T is coming soon. For medium earthworks, hire the 5.5T from $370/day. For bulk earthworks, hire the 14.5T from $490/day. Both prices include GST. Call 1300 157 882 to talk through your job.</p></div>
           <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">What is the difference between a 5.5T and 8T excavator?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">The 8T has greater digging depth (4,500mm vs 3,800mm), more bucket capacity (0.35m³ vs 0.21m³), and significantly more engine power (47.5kW vs 36.8kW). It is the better choice for bulk earthworks, basement excavation, civil infrastructure, and large commercial projects where the 5.5T lacks the power or capacity needed.</p></div>
           <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">Do I need a licence to operate an 8T excavator in NSW?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">No licence is required to operate an excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) is required.</p></div>
-          <div class="border-b border-gray-200 pb-6"><h3 class="text-lg font-bold text-[var(--color-text)] mb-2">How is an 8T excavator delivered in Sydney?</h3><p class="text-[var(--color-text-muted)] leading-relaxed">The 8T is delivered via third-party heavy transport. Pricing depends on your location — call 1300 157 882 for a delivery quote. We arrange all transport logistics.</p></div>
         </div>
       </div>
     </section>
@@ -159,8 +139,8 @@ const breadcrumbSchema = {
       <div class="max-w-5xl mx-auto px-6">
         <h2 class="text-2xl font-bold text-[var(--color-text)] mb-6 text-center">Other Machines Available</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
-          <a href="/equipment/08t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">0.8T Mini<br/><span class="font-bold">$200/day</span></a>
-          <a href="/equipment/1t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">1T Mini<br/><span class="font-bold">$200/day</span></a>
+          <a href="/equipment/55t-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">5.5T<br/><span class="font-bold">$370/day</span></a>
+          <a href="/equipment/145t-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">14.5T<br/><span class="font-bold">$490/day</span></a>
           <a href="/equipment/17t-mini-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">1.7T Mini<br/><span class="font-bold">$205/day</span></a>
           <a href="/equipment/35t-excavator-hire-sydney/" class="p-4 border border-gray-200 rounded-lg hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition">3.5T<br/><span class="font-bold">$340/day</span></a>
         </div>
@@ -168,10 +148,10 @@ const breadcrumbSchema = {
     </section>
     <section class="bg-[var(--color-primary)] py-14">
       <div class="max-w-3xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold text-white mb-4">Ready to Book the 8T Excavator?</h2>
-        <p class="text-white/80 mb-8 text-lg">Get instant pricing and availability. Next-day delivery across Sydney.</p>
+        <h2 class="text-3xl font-bold text-white mb-4">Need a Machine for This Job Now?</h2>
+        <p class="text-white/80 mb-8 text-lg">You can hire the 5.5T and 14.5T now, with delivery across Sydney.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book Now →</a>
+          <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book the 5.5T or 14.5T</a>
           <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">Call 1300 157 882</a>
         </div>
       </div>

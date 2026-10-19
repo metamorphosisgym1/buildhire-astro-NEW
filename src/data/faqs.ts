@@ -215,12 +215,6 @@ export const faqs: FAQ[] = [
     category: "General"
   },
   {
-    slug: "does-buildhire-hire-to-homeowners",
-    question: "Does BuildHire hire to homeowners?",
-    answer: "Yes, BuildHire hires to homeowners for residential projects including pool excavation, landscaping, driveway preparation, and site clearing. No trade licence is required. You will need a valid ID and to meet our standard hire terms and conditions.",
-    category: "General"
-  },
-  {
     slug: "what-is-the-minimum-hire-period",
     question: "What is the minimum hire period for equipment?",
     answer: "The minimum hire period for all BuildHire equipment is one day. There is no minimum booking for multiple days. You can hire for exactly as many days as your project requires. Weekly rates are available for longer projects.",

@@ -67,7 +67,7 @@ For any questions about licence requirements or machine selection, call BuildHir
     shortAnswer: "Most residential pools use a 1.7T or 3.5T excavator. A 1.7T fits through standard gates and suits pools up to 8m. A 3.5T is faster for larger pools or difficult soil conditions.",
     fullAnswer: `## What Size Excavator Do You Need for Pool Excavation?
 
-Choosing the right excavator size for pool excavation is one of the most common questions BuildHire receives from Sydney homeowners and pool builders. The answer depends on four factors: pool size, site access, soil conditions, and your timeline.
+Choosing the right excavator size for pool excavation is one of the most common questions BuildHire receives from Sydney pool builders and landscapers. The answer depends on four factors: pool size, site access, soil conditions, and your timeline.
 
 ### The Most Common Choice: 1.7T Mini Excavator
 
@@ -442,7 +442,7 @@ If you're facing an emergency situation — burst pipe, collapsed retaining wall
     shortAnswer: "A standard residential pool (6–8m) takes 1–2 days with a 1.7T mini excavator in average soil. Larger pools or difficult soil (clay, rock) may take 2–3 days.",
     fullAnswer: `## How Long Does Pool Excavation Take?
 
-One of the most common questions from Sydney homeowners planning a pool build is how long excavation will take — and therefore how many days of excavator hire to book. The answer depends on pool size, soil conditions, machine size, and operator experience.
+One of the most common questions from pool builders planning a dig is how long excavation will take, and therefore how many days of excavator hire to book. The answer depends on pool size, soil conditions, machine size, and operator experience.
 
 ### Standard Residential Pool: 1–2 Days
 
@@ -808,7 +808,7 @@ Many BuildHire customers hire an excavator for footing excavation and use the sa
     shortAnswer: "Yes. BuildHire offers weekend excavator hire across Sydney. Book online at buildhire.com.au or call 1300 157 882. Weekend rates are the same as weekday rates.",
     fullAnswer: `## Weekend Excavator Hire in Sydney
 
-Weekend excavator hire is one of BuildHire's most popular services. Many Sydney homeowners, owner builders, and tradies prefer to tackle excavation work on weekends when they have more time and the site is clear of other trades.
+Weekend excavator hire is one of BuildHire's most popular services. Many Sydney builders, landscapers and tradies book weekend hire when the site is clear of other trades.
 
 ### How Weekend Hire Works
 
@@ -1074,7 +1074,7 @@ Contact BuildHire on 1300 157 882 if you have questions about transport arrangem
     shortAnswer: "Pool removal with a hired excavator involves draining the pool, breaking up the shell (concrete or fibreglass), removing the debris, and backfilling. The 3.5T with a hydraulic breaker is the standard setup for concrete pool removal.",
     fullAnswer: `## Pool Removal Using a Hired Excavator in NSW
 
-Removing an unwanted pool is a common project in Sydney — particularly for homeowners selling their property, subdividing, or simply reclaiming backyard space. A mini excavator makes pool removal significantly faster and cheaper than manual demolition.
+Removing an unwanted pool is a common project in Sydney, particularly when a property is being sold, subdivided or redeveloped. A mini excavator makes pool removal significantly faster and cheaper than manual demolition.
 
 ### Types of Pools and Removal Methods
 
@@ -1242,7 +1242,7 @@ NBN cable installation requires a trench from the street boundary to the buildin
 
 Manual trenching for NBN cable is slow, physically demanding, and expensive. A 0.8T or 1T mini excavator can complete a standard NBN trench (20–30 metres) in 1–2 hours. The same job by hand takes a full day or more.
 
-For NBN installers, tradies, and homeowners, hiring a mini excavator for NBN trenching is one of the highest-value uses of a 1-day hire.
+For NBN installers and tradies, hiring a mini excavator for NBN trenching is one of the highest-value uses of a 1-day hire.
 
 ### NBN Trench Specifications
 
@@ -1733,7 +1733,7 @@ Dry hire is ideal for:
 - **Licensed operators** who need a machine without the cost of wet hire
 - **Owner builders** who hold the relevant licences
 - **Contractors** who have qualified operators on their team
-- **Homeowners** hiring mini excavators (under 3T) that don't require a licence
+- **Landscapers and trades** hiring mini excavators (under 3T) that don't require a licence
 
 Call BuildHire on 1300 157 882 to discuss whether dry hire is right for your project.`,
     relatedQuestions: [
@@ -1962,7 +1962,7 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     question: "Where can I hire an excavator in Parramatta?",
     category: "Location",
     shortAnswer: "BuildHire delivers excavators directly to Parramatta and all Western Sydney suburbs. Book online for next-day delivery — no depot pickup required.",
-    fullAnswer: `## Excavator Hire in Parramatta\n\nParramatta is one of BuildHire's busiest delivery zones. We service all of Western Sydney including Parramatta, Westmead, Granville, Harris Park, Merrylands, and Woodville.\n\n### Available Equipment\n\n- **0.8T Mini Excavator** — ideal for tight residential blocks, garden work, footings\n- **1.7T Mini Excavator** — most popular for Parramatta residential projects\n- **3.5T Excavator** — commercial and civil work in Parramatta CBD surrounds\n- **5.5T–8T Excavators** — available via quote for larger projects\n\n### Delivery to Parramatta\n\nDelivery and collection are quoted for your site and hire dates. Next-day delivery available for bookings placed before 12pm. Call 1300 157 882 or book online at buildhire.com.au.`,
+    fullAnswer: `## Excavator Hire in Parramatta\n\nParramatta is one of BuildHire's busiest delivery zones. We service all of Western Sydney including Parramatta, Westmead, Granville, Harris Park, Merrylands, and Woodville.\n\n### Available Equipment\n\n- **0.8T Mini Excavator:** tight residential blocks, garden work, footings\n- **1.7T Mini Excavator:** most popular for Parramatta residential projects\n- **3.5T Excavator:** commercial and civil work in Parramatta CBD surrounds\n- **5.5T and 14.5T Excavators:** larger projects\n\n### Delivery to Parramatta\n\nDelivery and collection are quoted for your site and hire dates. Next-day delivery available for bookings placed before 12pm. Call 1300 157 882 or book online at buildhire.com.au.`,
     relatedQuestions: [
       { q: "How much does excavator hire cost in Parramatta?", a: "From $205/day for a 1.7T mini excavator, plus delivery and collection quoted for your site. No hidden fees." },
       { q: "Does BuildHire deliver to Parramatta on weekends?", a: "Yes, weekend delivery is available. Book before 12pm Friday for Saturday delivery." }
@@ -1997,10 +1997,10 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     slug: "excavator-hire-for-civil-works",
     question: "Can I hire an excavator for civil works in NSW?",
     category: "Use Case",
-    shortAnswer: "Yes. BuildHire supplies excavators from 1.7T to 8T+ for civil works including road construction, drainage, utilities, and earthworks across Sydney.",
-    fullAnswer: `## Excavator Hire for Civil Works in NSW\n\nBuildHire supplies excavators for civil works projects across Sydney. Our fleet includes machines suitable for a wide range of civil applications.\n\n### Common Civil Applications\n\n- **Road and pavement construction:** subgrade preparation, kerb and channel\n- **Drainage and stormwater:** trench excavation, pipe laying\n- **Utilities:** water, sewer, gas, and NBN trenching\n- **Earthworks:** cut and fill, bulk excavation, compaction\n- **Retaining structures:** sheet piling, bored piers, rock anchors\n\n### Equipment for Civil Works\n\n- **3.5T Excavator:** light civil, trenching, residential subdivision\n- **5.5T to 8T Excavators:** medium civil works, road construction\n\nCall 1300 157 882 for civil project pricing and availability.`,
+    shortAnswer: "Yes. BuildHire supplies excavators from 1.7T to 14.5T for civil works including road construction, drainage, utilities, and earthworks across Sydney.",
+    fullAnswer: `## Excavator Hire for Civil Works in NSW\n\nBuildHire supplies excavators for civil works projects across Sydney. Our fleet includes machines suitable for a wide range of civil applications.\n\n### Common Civil Applications\n\n- **Road and pavement construction:** subgrade preparation, kerb and channel\n- **Drainage and stormwater:** trench excavation, pipe laying\n- **Utilities:** water, sewer, gas, and NBN trenching\n- **Earthworks:** cut and fill, bulk excavation, compaction\n- **Retaining structures:** sheet piling, bored piers, rock anchors\n\n### Equipment for Civil Works\n\n- **3.5T Excavator:** light civil, trenching, residential subdivision\n- **5.5T and 14.5T Excavators:** medium civil works, road construction\n\nCall 1300 157 882 for civil project pricing and availability.`,
     relatedQuestions: [
-      { q: "What size excavator do I need for civil works?", a: "3.5T for light civil and trenching; 5.5T–8T for medium civil works. Call 1300 157 882 to discuss your project." },
+      { q: "What size excavator do I need for civil works?", a: "3.5T for light civil and trenching; 5.5T for medium civil works; 14.5T for bulk earthworks. Call 1300 157 882 to discuss your project." },
       { q: "Does BuildHire supply excavators for road construction?", a: "Yes. We supply excavators for road construction, drainage, and earthworks across Sydney." }
     ],
     schema: { type: "FAQPage", speakable: true }
@@ -2010,7 +2010,7 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     question: "Can I hire an excavator for commercial construction?",
     category: "Use Case",
     shortAnswer: "Yes. BuildHire supplies excavators for commercial construction including basement excavation, bulk earthworks, and site preparation across Sydney.",
-    fullAnswer: `## Excavator Hire for Commercial Construction\n\nBuildHire supplies excavators for commercial construction projects. We work with builders, developers, and project managers on commercial sites across Sydney.\n\n### Common Commercial Applications\n\n- **Basement and carpark excavation**\n- **Bulk earthworks and site preparation**\n- **Footing and pile cap excavation**\n- **Drainage and services trenching**\n- **Demolition and concrete removal**\n\n### Equipment\n\n- **3.5T Excavator:** light commercial, tight urban sites\n- **5.5T to 8T Excavators:** medium commercial projects\n\nCall 1300 157 882 for commercial project pricing and weekly hire rates.`,
+    fullAnswer: `## Excavator Hire for Commercial Construction\n\nBuildHire supplies excavators for commercial construction projects. We work with builders, developers, and project managers on commercial sites across Sydney.\n\n### Common Commercial Applications\n\n- **Basement and carpark excavation**\n- **Bulk earthworks and site preparation**\n- **Footing and pile cap excavation**\n- **Drainage and services trenching**\n- **Demolition and concrete removal**\n\n### Equipment\n\n- **3.5T Excavator:** light commercial, tight urban sites\n- **5.5T and 14.5T Excavators:** medium to large commercial projects\n\nCall 1300 157 882 for commercial project pricing and weekly hire rates.`,
     relatedQuestions: [
       { q: "Does BuildHire offer weekly hire rates for commercial projects?", a: "Yes. Call 1300 157 882 for weekly hire rates for commercial projects." },
       { q: "Can BuildHire supply an operator with the excavator?", a: "BuildHire offers dry hire (machine only). For wet hire (machine + operator), call 1300 157 882 to discuss options." }
@@ -2022,7 +2022,7 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     question: "Can I hire an excavator for a rural property in NSW?",
     category: "Use Case",
     shortAnswer: "Yes — BuildHire delivers excavators to rural NSW properties for dam construction, fencing, irrigation, land clearing, and driveway work.",
-    fullAnswer: `## Excavator Hire for Rural Properties in NSW\n\nBuildHire delivers excavators to rural and semi-rural properties across NSW. We regularly service acreage, hobby farms, and rural residential properties.\n\n### Common Rural Applications\n\n- **Dam construction and desilting**\n- **Fencing — post hole excavation**\n- **Irrigation trenching**\n- **Land clearing and tree removal**\n- **Driveway and access road construction**\n- **Shed and barn footings**\n\n### Equipment\n\n- **1.7T Mini Excavator** — fencing, irrigation, small dams\n- **3.5T Excavator** — medium earthworks, larger dams\n- **5.5T–8T Excavators** — bulk earthworks, large dam construction\n\nCall 1300 157 882 for rural delivery pricing and availability.`,
+    fullAnswer: `## Excavator Hire for Rural Properties in NSW\n\nBuildHire delivers excavators to rural and semi-rural properties across NSW. We regularly service acreage, hobby farms, and rural residential properties.\n\n### Common Rural Applications\n\n- **Dam construction and desilting**\n- **Fencing post holes**\n- **Irrigation trenching**\n- **Land clearing and tree removal**\n- **Driveway and access road construction**\n- **Shed and barn footings**\n\n### Equipment\n\n- **1.7T Mini Excavator:** fencing, irrigation, small dams\n- **3.5T Excavator:** medium earthworks, larger dams\n- **5.5T and 14.5T Excavators:** bulk earthworks, large dam construction\n\nCall 1300 157 882 for rural delivery pricing and availability.`,
     relatedQuestions: [
       { q: "Can I hire an excavator for dam construction on a rural property?", a: "Yes. The 3.5T and 5.5T excavators are ideal for dam construction. Call 1300 157 882 for rural delivery pricing." },
       { q: "Does BuildHire deliver to rural NSW?", a: "Yes. We deliver to rural NSW — pricing is based on distance. Call 1300 157 882 for a quote." }
@@ -2034,7 +2034,7 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     question: "What do site managers need to know about hiring an excavator?",
     category: "Persona",
     shortAnswer: "Site managers hiring excavators need to confirm: machine size for the task, site access for delivery, operator licensing requirements, and insurance coverage before the hire starts.",
-    fullAnswer: `## Excavator Hire Guide for Site Managers\n\nAs a site manager, getting excavator hire right means zero downtime, no compliance issues, and a machine that fits the task. Here's what to confirm before booking.\n\n### 1. Machine Size\n\nMatch the machine to the task:\n- **0.8T–1.7T** — residential, tight access, landscaping\n- **3.5T** — light civil, trenching, residential subdivision\n- **5.5T–8T** — medium civil, bulk earthworks\n\n### 2. Site Access for Delivery\n\nConfirm the delivery truck can access your site:\n- Minimum 2.5m wide access path\n- Minimum 4m overhead clearance\n- Level or gently sloping unloading surface\n\n### 3. Operator Licensing\n\nIn NSW, no licence is required for excavators under 3T. For 3T and above, operators must hold a High Risk Work Licence (HRWL) — Dogging/Rigging is not required, but the plant operator licence (CV) is.\n\n### 4. Insurance\n\nBuildHire's machines are covered by our own fleet insurance. You are responsible for any damage caused by misuse or negligent operation. We recommend confirming your site's public liability insurance covers hired plant.\n\nCall 1300 157 882 or book online at buildhire.com.au.`,
+    fullAnswer: `## Excavator Hire Guide for Site Managers\n\nAs a site manager, getting excavator hire right means zero downtime, no compliance issues, and a machine that fits the task. Here's what to confirm before booking.\n\n### 1. Machine Size\n\nMatch the machine to the task:\n- **0.8T to 1.7T:** residential, tight access, landscaping\n- **3.5T:** light civil, trenching, residential subdivision\n- **5.5T and 14.5T:** medium civil and bulk earthworks\n\n### 2. Site Access for Delivery\n\nConfirm the delivery truck can access your site:\n- Minimum 2.5m wide access path\n- Minimum 4m overhead clearance\n- Level or gently sloping unloading surface\n\n### 3. Operator Licensing\n\nIn NSW, no licence is required for excavators under 3T. For 3T and above, operators must hold a High Risk Work Licence (HRWL). Dogging/Rigging is not required, but the plant operator licence (CV) is.\n\n### 4. Insurance\n\nBuildHire's machines are covered by our own fleet insurance. You are responsible for any damage caused by misuse or negligent operation. We recommend confirming your site's public liability insurance covers hired plant.\n\nCall 1300 157 882 or book online at buildhire.com.au.`,
     relatedQuestions: [
       { q: "Do operators need a licence to use a BuildHire excavator?", a: "No licence required for machines under 3T. For 3.5T and above, operators must hold a NSW High Risk Work Licence (plant operator — CV)." },
       { q: "What insurance do I need for a hired excavator on a construction site?", a: "BuildHire's machines are covered by our fleet insurance. Confirm your site's public liability insurance covers hired plant." }
@@ -2093,11 +2093,11 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     slug: "excavator-hire-for-house-demolition",
     question: "Can I hire an excavator for house demolition?",
     category: "Use Case",
-    shortAnswer: "Yes. BuildHire supplies excavators for residential demolition. A 5.5T to 8T excavator is typically used for house demolition, with skip bins or waste trucks for the debris.",
-    fullAnswer: `## Excavator Hire for House Demolition\n\nBuildHire supplies excavators for residential demolition projects across Sydney.\n\n### Recommended Equipment\n\n- **5.5T to 8T Excavator:** standard for house demolition; sufficient reach and force for single-storey residential\n- **Hydraulic Breaker:** for concrete slabs, footings, and brick walls\n\n### NSW Demolition Requirements\n\n- A demolition licence is required for buildings over a certain size, check with your local council\n- Asbestos must be removed by a licensed asbestos removalist before demolition begins\n- A Safe Work Method Statement (SWMS) is required\n\n### Booking\n\nCall 1300 157 882 for demolition project pricing. We can supply the excavator and hydraulic hammer together.`,
+    shortAnswer: "Yes. BuildHire supplies excavators for residential demolition. A 5.5T excavator is typically used for house demolition, with skip bins or waste trucks for the debris.",
+    fullAnswer: `## Excavator Hire for House Demolition\n\nBuildHire supplies excavators for residential demolition projects across Sydney.\n\n### Recommended Equipment\n\n- **5.5T Excavator:** standard for house demolition; sufficient reach and force for single-storey residential\n- **Hydraulic Breaker:** for concrete slabs, footings, and brick walls\n\n### NSW Demolition Requirements\n\n- A demolition licence is required for buildings over a certain size, check with your local council\n- Asbestos must be removed by a licensed asbestos removalist before demolition begins\n- A Safe Work Method Statement (SWMS) is required\n\n### Booking\n\nCall 1300 157 882 for demolition project pricing. We can supply the excavator and hydraulic hammer together.`,
     relatedQuestions: [
-      { q: "What size excavator do I need for house demolition?", a: "A 5.5T–8T excavator is standard for single-storey residential demolition. Call 1300 157 882 to discuss your project." },
-      { q: "Does BuildHire supply a hydraulic breaker for demolition?", a: "Yes. Hydraulic breaker attachments are available for the 5.5T and 8T machines. Call 1300 157 882 to confirm availability." }
+      { q: "What size excavator do I need for house demolition?", a: "A 5.5T excavator is standard for single-storey residential demolition. Call 1300 157 882 to discuss your project." },
+      { q: "Does BuildHire supply a hydraulic breaker for demolition?", a: "Yes. Hydraulic breaker attachments are available for the 5.5T and 14.5T machines. Call 1300 157 882 to confirm availability." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },

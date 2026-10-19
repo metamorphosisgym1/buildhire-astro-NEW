@@ -89,7 +89,7 @@ const equipmentData: Record<string, { name: string; rate: number; weeklyRate?: n
     { name: "1.7T Mini Excavator (ViO17 Yanmar)", rate: 205, weeklyRate: 1100 },
     { name: "3.5T Excavator (ViO35-7 Yanmar)", rate: 340, weeklyRate: 1550 },
     { name: "5.5T Excavator (ViO55 Yanmar)", rate: 370, weeklyRate: 1650 },
-    { name: "8T Excavator (ViO80 Yanmar)", rate: 420, comingSoon: true },
+    { name: "8T Excavator (ViO80 Yanmar)", rate: 0, comingSoon: true },
     { name: "14.5T Excavator (Case CX145C)", rate: 490, weeklyRate: 2000 },
   ],
   "Mini Dumpers": [
