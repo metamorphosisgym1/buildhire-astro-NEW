@@ -75,7 +75,7 @@ For standard residential pools in Sydney — typically 6–8 metres in length, 3
 
 **Access:** The 1.7T tracks pull in to about 950mm (about 1,280mm when spread out for digging), so it fits through side gates wider than about 950mm. This is the critical constraint for most Sydney backyards.
 
-**Digging depth:** The 1.7T has a maximum dig depth of 2,400mm — sufficient for most residential pool depths of 1,500–1,800mm.
+**Digging depth:** The 1.7T has a maximum dig depth of 2,210mm — sufficient for most residential pool depths of 1,500–1,800mm.
 
 **No licence required:** The 1.7T weighs under 3 tonnes, so no High Risk Work Licence is required in NSW. Owner builders and pool builders without an HRWL can operate it legally.
 
@@ -120,7 +120,7 @@ Before booking your excavator for pool work, confirm:
 BuildHire can deliver an excavator and a mini dumper for pool excavation projects. Call 1300 157 882 to discuss your project.`,
     relatedQuestions: [
       { q: "Can a mini excavator fit through a standard residential gate for pool work?", a: "Yes. The 1.7T mini excavator pulls its tracks in to about 950mm and fits through most standard residential gates. The 1T (about 750mm) and 0.8T (about 680mm) fit through narrower gates." },
-      { q: "How deep can a 1.7T excavator dig for a pool?", a: "The 1.7T mini excavator has a maximum dig depth of 2,400mm, which is sufficient for most residential pool depths of 1,500–1,800mm." },
+      { q: "How deep can a 1.7T excavator dig for a pool?", a: "The 1.7T mini excavator has a maximum dig depth of 2,210mm, which is sufficient for most residential pool depths of 1,500–1,800mm." },
       { q: "Do I need a licence to operate an excavator for pool work in NSW?", a: "In NSW, excavators under 3 tonnes do not require a licence. The 1.7T mini excavator is under 3 tonnes and can be operated without a licence." },
       { q: "How long does it take to excavate a pool with a 1.7T mini excavator?", a: "A standard residential pool (6–8m) in average soil conditions takes 1–2 days with a 1.7T mini excavator. Difficult soil (clay, rock) or larger pools may take longer." }
     ],
@@ -267,7 +267,7 @@ BuildHire's mini excavator range:
 
 Full-size excavators are machines above 6 tonnes, typically used for commercial construction, civil infrastructure, bulk earthmoving, and mining. They have significantly greater reach, bucket capacity, and digging force than mini excavators — but require large site access, cause more ground disturbance, and are considerably more expensive to hire.
 
-BuildHire does not currently offer full-size excavators above 5.5T. For projects requiring machines above 6 tonnes, contact BuildHire for a referral to a suitable supplier.
+BuildHire's full-size option is the 14.5T Case CX145C, for bulk earthworks and commercial sites. Call 1300 157 882 to check it is free for your dates.
 
 ### Key Differences at a Glance
 
@@ -302,7 +302,7 @@ For many projects in Sydney — larger residential builds, commercial landscapin
 
 Call BuildHire on 1300 157 882 to discuss which machine is right for your project.`,
     relatedQuestions: [
-      { q: "What is the largest mini excavator BuildHire offers?", a: "BuildHire's largest machine is the 5.5T excavator at about 1,990mm wide. It bridges the gap between mini and full-size excavators and is suitable for civil works and commercial construction." },
+      { q: "What is the largest mini excavator BuildHire offers?", a: "BuildHire's largest mini excavator is the 5.5T, at about 1,990mm wide. It suits civil works and commercial construction. Our largest machine overall is the 14.5T Case CX145C." },
       { q: "Can a mini excavator fit through a standard residential gate?", a: "Yes. The 1.7T mini excavator pulls its tracks in to about 950mm and fits through most standard residential gates. The 1T (about 750mm) and 0.8T (about 680mm) fit through even narrower gates." },
       { q: "Do I need a licence for a full-size excavator in NSW?", a: "Yes. All excavators 3 tonnes and above require a High Risk Work Licence (HRWL) for earthmoving plant in NSW." },
       { q: "What is the cheapest excavator to hire from BuildHire?", a: "The 0.8T mini excavator is BuildHire's most affordable machine at $200/day. It's ideal for tight access sites, fence post holes, and light landscaping." }
@@ -574,7 +574,7 @@ The 1T is ideal for:
 
 ### The 1.7T Mini Excavator: Best for Larger Landscaping Projects
 
-For larger landscaping projects — significant level changes, large retaining walls, or multiple drainage systems — the 1.7T mini excavator is more productive. It has a larger bucket (80L vs 50L), greater digging depth (2,400mm vs 2,200mm), and more digging force.
+For larger landscaping projects — significant level changes, large retaining walls, or multiple drainage systems — the 1.7T mini excavator is more productive. It digs deeper (2,210mm vs 1,800mm) and has more digging force.
 
 The 1.7T is ideal for:
 - Large retaining walls (over 1.2m high)
@@ -798,7 +798,7 @@ Many BuildHire customers hire an excavator for footing excavation and use the sa
     relatedQuestions: [
       { q: "What bucket width is best for strip footing excavation?", a: "A 450mm bucket matches standard strip footing widths and produces cleaner, more accurate footings. Ask BuildHire about bucket width options when booking." },
       { q: "Can a mini excavator dig pier holes for bored piers?", a: "Pier holes require an auger attachment, not a standard bucket. Contact BuildHire on 1300 157 882 about auger attachment availability." },
-      { q: "How deep can a 1.7T mini excavator dig for footings?", a: "The 1.7T has a maximum dig depth of 2,400mm — sufficient for most residential footing depths. For deeper footings, the 3.5T (3,800mm max depth) is more appropriate." }
+      { q: "How deep can a 1.7T mini excavator dig for footings?", a: "The 1.7T has a maximum dig depth of 2,210mm — sufficient for most residential footing depths. For deeper footings, the 3.5T (3,250mm max depth) is more appropriate." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -912,7 +912,7 @@ Many BuildHire customers combine drainage installation with other excavation wor
     relatedQuestions: [
       { q: "What excavator is best for installing ag-pipe in a Sydney backyard?", a: "The 1T mini excavator is ideal for ag-pipe installation (300–400mm wide, 600–800mm deep trenches). It's compact enough for residential gardens and doesn't require a licence." },
       { q: "Do I need council approval for stormwater drainage work in NSW?", a: "Stormwater connections to council infrastructure require council approval in most NSW councils. Check with your local council before starting drainage work." },
-      { q: "How deep can a 1T mini excavator dig for drainage trenches?", a: "The 1T mini excavator has a maximum dig depth of 2,200mm — sufficient for most residential drainage trenches (typically 600–900mm deep)." }
+      { q: "How deep can a 1T mini excavator dig for drainage trenches?", a: "The 1T mini excavator has a maximum dig depth of 1,800mm — sufficient for most residential drainage trenches (typically 600–900mm deep)." }
     ],
     schema: { type: "FAQPage", speakable: true }
   },
@@ -1515,7 +1515,7 @@ Sewer depth in Sydney varies significantly by location and age of the infrastruc
 - Inner Sydney (older suburbs): 1,500–3,000mm deep (deep sewers from the 19th century)
 - Outer Sydney (newer suburbs): 600–1,200mm deep
 
-For deep sewer work (over 1,500mm), trench shoring is required under NSW Work Health and Safety regulations. The 1.7T can excavate to 2,400mm; the 3.5T to 3,800mm.
+For deep sewer work (over 1,500mm), trench shoring is required under NSW Work Health and Safety regulations. The 1.7T can excavate to 2,210mm; the 3.5T to 3,250mm.
 
 ### Dial Before You Dig for Plumbing Work
 
@@ -1528,7 +1528,7 @@ Many Sydney plumbing jobs are in tight residential sites — narrow side passage
 Call BuildHire on 1300 157 882 to discuss your plumbing project and confirm the right machine.`,
     relatedQuestions: [
       { q: "What excavator is best for sewer repair in Sydney?", a: "The 1.7T mini excavator is the standard choice for sewer repair — its 450mm bucket matches standard sewer trench widths and it has sufficient dig depth for most Sydney sewers." },
-      { q: "How deep can a 1.7T mini excavator dig for plumbing work?", a: "The 1.7T has a maximum dig depth of 2,400mm. For deeper sewer work, the 3.5T (3,800mm max depth) is required." },
+      { q: "How deep can a 1.7T mini excavator dig for plumbing work?", a: "The 1.7T has a maximum dig depth of 2,210mm. For deeper sewer work, the 3.5T (3,250mm max depth) is required." },
       { q: "Does BuildHire deliver excavators to plumbers for same-day jobs?", a: "Yes. Same-day delivery is available subject to fleet availability. Call 1300 157 882 as early as possible for same-day hire." }
     ],
     schema: { type: "FAQPage", speakable: true }
@@ -2070,7 +2070,7 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     question: "What should a civil engineer consider when hiring an excavator?",
     category: "Persona",
     shortAnswer: "Civil engineers should consider: machine size relative to excavation depth and volume, ground conditions, site access constraints, and NSW WHS compliance requirements before hiring.",
-    fullAnswer: `## Excavator Hire Considerations for Civil Engineers\n\nCivil engineers specifying plant hire for projects need to consider several factors beyond just machine size.\n\n### Machine Selection\n\n- **Excavation depth** — standard mini excavators dig to 2.5m; larger machines to 5m+\n- **Bucket capacity** — match to soil type and cycle time requirements\n- **Attachments** — hydraulic breaker, auger, compactor plate\n- **Tail swing** — zero tail swing machines for confined urban sites\n\n### Ground Conditions\n\n- Confirm bearing capacity for machine weight\n- Rock or hard fill may require a hydraulic breaker attachment\n- High water table — confirm pump availability\n\n### NSW WHS Compliance\n\n- Excavations over 1.5m require a Safe Work Method Statement (SWMS)\n- Excavations over 4m require an engineer-certified shoring design\n- Operators of 3.5T+ machines require a High Risk Work Licence\n\n### Delivery and Access\n\n- Confirm low-loader access to site (2.5m wide, 4m overhead clearance)\n- For remote or difficult access sites, call 1300 157 882 to discuss options\n\nCall 1300 157 882 for civil project pricing and availability.`,
+    fullAnswer: `## Excavator Hire Considerations for Civil Engineers\n\nCivil engineers specifying plant hire for projects need to consider several factors beyond just machine size.\n\n### Machine Selection\n\n- **Excavation depth** — our 0.8T to 1.7T minis dig to about 1.46m to 2.21m, the 3.5T and 5.5T to 3.25m and 3.9m, and the 14.5T to about 5.5m\n- **Bucket capacity** — match to soil type and cycle time requirements\n- **Attachments** — hydraulic breaker, auger, compactor plate\n- **Tail swing** — zero tail swing machines for confined urban sites\n\n### Ground Conditions\n\n- Confirm bearing capacity for machine weight\n- Rock or hard fill may require a hydraulic breaker attachment\n- High water table — confirm pump availability\n\n### NSW WHS Compliance\n\n- Excavations over 1.5m require a Safe Work Method Statement (SWMS)\n- Excavations over 4m require an engineer-certified shoring design\n- Operators of 3.5T+ machines require a High Risk Work Licence\n\n### Delivery and Access\n\n- Confirm low-loader access to site (2.5m wide, 4m overhead clearance)\n- For remote or difficult access sites, call 1300 157 882 to discuss options\n\nCall 1300 157 882 for civil project pricing and availability.`,
     relatedQuestions: [
       { q: "What are the NSW WHS requirements for excavations?", a: "Excavations over 1.5m require a SWMS. Over 4m require engineer-certified shoring. Operators of 3.5T+ machines need a High Risk Work Licence." },
       { q: "Can BuildHire supply a hydraulic breaker attachment?", a: "Yes. Hydraulic breaker attachments are available for the 3.5T and larger machines. Call 1300 157 882 to confirm availability." }
@@ -2082,7 +2082,7 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     question: "What excavator do I need to dig a swimming pool?",
     category: "Use Case",
     shortAnswer: "A 3.5T excavator is the standard choice for residential pool excavation in Sydney. It has the reach, bucket capacity, and digging force to complete a standard pool in 1–2 days.",
-    fullAnswer: `## Excavator Hire for Swimming Pool Construction\n\nPool excavation is one of BuildHire's most common use cases. Here's exactly what you need.\n\n### Recommended Machine\n\n**3.5T Excavator:** the standard choice for residential pool excavation:\n- Digging depth: up to 4.5m\n- Bucket capacity: 0.12m³\n- Can complete a standard 8m × 4m pool in 1 to 2 days\n- About 1.74m wide, so it needs a gate wider than that\n\n### What to Expect\n\n- **Day 1:** Excavate the main pool shell, pile spoil for removal\n- **Day 2 (if needed):** Tidy up, excavate for equipment bay, load spoil for removal\n\n### Also Consider\n\n- **Skip bins or a soil truck:** for removing excavated soil (a standard pool generates 30 to 50m³ of spoil)\n- **Mini Dumper:** for moving spoil in tight backyards\n\n### Booking Tips\n\n- Confirm gate width before booking (wider than about 1.74m for the 3.5T)\n- Check for underground services before excavating (Dial Before You Dig)\n\nBook online at buildhire.com.au or call 1300 157 882.`,
+    fullAnswer: `## Excavator Hire for Swimming Pool Construction\n\nPool excavation is one of BuildHire's most common use cases. Here's exactly what you need.\n\n### Recommended Machine\n\n**3.5T Excavator:** the standard choice for residential pool excavation:\n- Digging depth: up to about 3.25m\n- Bucket capacity: 0.12m³\n- Can complete a standard 8m × 4m pool in 1 to 2 days\n- About 1.74m wide, so it needs a gate wider than that\n\n### What to Expect\n\n- **Day 1:** Excavate the main pool shell, pile spoil for removal\n- **Day 2 (if needed):** Tidy up, excavate for equipment bay, load spoil for removal\n\n### Also Consider\n\n- **Skip bins or a soil truck:** for removing excavated soil (a standard pool generates 30 to 50m³ of spoil)\n- **Mini Dumper:** for moving spoil in tight backyards\n\n### Booking Tips\n\n- Confirm gate width before booking (wider than about 1.74m for the 3.5T)\n- Check for underground services before excavating (Dial Before You Dig)\n\nBook online at buildhire.com.au or call 1300 157 882.`,
     relatedQuestions: [
       { q: "How long does it take to excavate a pool with a 3.5T excavator?", a: "A standard residential pool (8m × 4m × 1.8m deep) typically takes 1–2 days with a 3.5T excavator." },
       { q: "How much soil does a pool excavation produce?", a: "A standard pool generates 30–50m³ of spoil. You'll need 3–5 tipper truck loads to remove it." }
