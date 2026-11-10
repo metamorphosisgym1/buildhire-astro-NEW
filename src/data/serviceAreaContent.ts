@@ -215,7 +215,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     suburbs: ["Hornsby", "Waitara", "Normanhurst", "Thornleigh", "Pennant Hills", "Beecroft", "Cheltenham", "Asquith"],
     intro: "BuildHire delivers excavators and construction equipment to Hornsby and the Upper North Shore — late-model Yanmar machines, next-day delivery, and transparent pricing.",
     bodyParagraph1: "Hornsby and the Upper North Shore present some of Sydney's most challenging excavation conditions — steep blocks, sandstone bedrock, and established trees are common across the area's residential lots. BuildHire's fleet is selected and maintained to handle these conditions, and our team understands the specific requirements of Upper North Shore residential projects. Whether you're excavating a pool on a sloping Hornsby block, installing drainage in Pennant Hills, or preparing footings in Beecroft, we have the right machine for the job.",
-    bodyParagraph2: "The 1.7T and 3.5T Yanmar mini excavators are the most popular choices for Hornsby residential work — compact enough to navigate the tight access common on Upper North Shore properties, with the reach and bucket force needed for sandstone and clay conditions. For larger projects, the 5.5T Yanmar provides additional capacity without sacrificing the precision needed on sloping or constrained sites. Our mini dumpers are also in high demand in Hornsby for spoil removal where truck access is limited by steep driveways or narrow streets.",
+    bodyParagraph2: "The 1.7T and 3.5T Yanmar mini excavators are the most popular choices for Hornsby residential work, with the reach and bucket force needed for sandstone and clay conditions. The 1.7T pulls its tracks in to about 950mm for the tight access common on Upper North Shore properties; the 3.5T is about 1,740mm wide, so it needs a gate wider than that. For larger projects, the 5.5T Yanmar provides additional capacity without sacrificing the precision needed on sloping or constrained sites. Our mini dumpers are also in high demand in Hornsby for spoil removal where truck access is limited by steep driveways or narrow streets.",
     caseStudy: {
       client: "Almighty Fencing",
       projectType: "Post-hole excavation and retaining wall preparation across Upper North Shore residential projects",
@@ -278,7 +278,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     bodyParagraph3: "BuildHire delivers to all Lower North Shore suburbs including Chatswood, Willoughby, Artarmon, St Leonards, Crows Nest, Lane Cove, Lindfield, and Roseville. Get an instant online price in under 60 seconds, or WhatsApp our team for a same-day quote. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Chatswood and the Lower North Shore?", a: "Yes — BuildHire delivers to all Lower North Shore suburbs including Chatswood, Willoughby, Artarmon, St Leonards, Crows Nest, and Lane Cove." },
-      { q: "What is the best excavator for tight residential sites in Chatswood?", a: "The 0.8T and 1T mini excavators are ideal for tight Lower North Shore residential sites. For larger projects, the 1.7T or 3.5T Yanmar provides more capacity while still fitting through standard residential access." },
+      { q: "What is the best excavator for tight residential sites in Chatswood?", a: "The 0.8T and 1T mini excavators are ideal for tight Lower North Shore residential sites. For larger projects, the 1.7T (tracks pull in to about 950mm) or the 3.5T (about 1,740mm wide, so it needs a gate wider than that) provides more capacity." },
       { q: "Do you deliver to North Sydney and Crows Nest?", a: "Yes — North Sydney, Crows Nest, St Leonards, and Artarmon are all within our Lower North Shore delivery zone. Next-day delivery guaranteed when you book by 12pm." }
     ],
     nearbyAreas: ["North Sydney", "Lane Cove", "Mosman", "Hornsby", "Ryde"],
@@ -1086,7 +1086,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
     bodyParagraph3: "BuildHire delivers to Ryde and all surrounding Northern Sydney suburbs including Meadowbank, West Ryde, Eastwood, Ermington, and Gladesville. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Ryde and Meadowbank?", a: "Yes — BuildHire delivers to Ryde, Meadowbank, West Ryde, Eastwood, Ermington, and all surrounding Northern Sydney suburbs." },
-      { q: "What excavator is best for Ryde townhouse developments?", a: "The 3.5T Yanmar ViO35-7 is ideal for Ryde townhouse and dual-occupancy sites — powerful enough for footing excavation, compact enough for tight residential access." },
+      { q: "What excavator is best for Ryde townhouse developments?", a: "The 3.5T Yanmar ViO35-7 is ideal for Ryde townhouse and dual-occupancy sites: powerful enough for footing excavation, and about 1,740mm wide, so the site needs a gate or driveway wider than that." },
       { q: "How do I book excavator hire in Ryde?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Ryde." }
     ],
     nearbyAreas: ["Chatswood", "Parramatta", "North Sydney", "Hornsby", "Eastern Suburbs"],

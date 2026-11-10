@@ -24,7 +24,7 @@ export const useCases: UseCase[] = [
     description: "Earthmoving in confined spaces, narrow side passages, and standard residential gates.",
     equipmentRecommendations: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator", "mini-dumper-700kg"],
     faqs: [
-      { q: "What is the narrowest excavator available?", a: "Our 0.8T Yanmar SV08 has retractable tracks that narrow down to 690mm, allowing it to fit through standard doorways and narrow side gates." },
+      { q: "What is the narrowest excavator available?", a: "Our 0.8T Yanmar SV08 has retractable tracks that narrow down to 680mm, allowing it to fit through standard doorways and narrow side gates." },
       { q: "How do I move materials in tight access areas?", a: "Our 700kg mini dumper has a track width of just 600mm, making it the perfect companion for moving soil and materials in confined spaces." },
       { q: "Are zero tail swing excavators better for tight access?", a: "Yes, zero tail swing excavators allow you to rotate the cab without the rear counterweight extending beyond the tracks, preventing damage to walls and fences." }
     ]

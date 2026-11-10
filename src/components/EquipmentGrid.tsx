@@ -63,7 +63,7 @@ const availableEquipment: EquipmentItem[] = [
       "Bucket Capacity": "0.02 m³",
       "Engine Power": "7.1 kW",
       "Tail Swing": "Zero",
-      "Transport Width": "700 mm",
+      "Transport Width": "680 mm",
     },
   },
   {
@@ -96,7 +96,7 @@ const availableEquipment: EquipmentItem[] = [
       "Bucket Capacity": "0.04 m³",
       "Engine Power": "11.5 kW",
       "Tail Swing": "Zero",
-      "Transport Width": "980 mm",
+      "Transport Width": "950 mm",
     },
   },
   {
@@ -113,7 +113,7 @@ const availableEquipment: EquipmentItem[] = [
       "Bucket Capacity": "0.10 m³",
       "Engine Power": "20 kW",
       "Tail Swing": "Minimal",
-      "Transport Width": "1,500 mm",
+      "Transport Width": "1,740 mm",
     },
   },
   {
@@ -130,7 +130,7 @@ const availableEquipment: EquipmentItem[] = [
       "Bucket Capacity": "0.16 m³",
       "Engine Power": "30 kW",
       "Tail Swing": "Reduced",
-      "Transport Width": "1,960 mm",
+      "Transport Width": "1,990 mm",
     },
   },
   {
@@ -244,7 +244,7 @@ const comingSoonEquipment: EquipmentItem[] = [
       "Bucket Capacity": "0.28 m³",
       "Engine Power": "45 kW",
       "Tail Swing": "Conventional",
-      "Transport Width": "2,200 mm",
+      "Transport Width": "2,270 mm",
     },
   },
 ];

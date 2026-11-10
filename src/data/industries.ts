@@ -30,7 +30,7 @@ export const industries: Industry[] = [
     equipmentRecommendations: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator", "mini-dumper-700kg"],
     faqs: [
       { q: "What equipment do landscapers typically hire from BuildHire?", a: "Landscapers most commonly hire mini excavators (0.8T to 1.7T) for earthworks and retaining wall preparation, and mini dumpers for moving soil and aggregate." },
-      { q: "Can a mini excavator fit through a residential gate?", a: "Yes. Our 0.8T mini excavator is only 750mm wide and fits through gates as narrow as 800mm. The 1T is 900mm wide and the 1.7T is 1,300mm wide." },
+      { q: "Can a mini excavator fit through a residential gate?", a: "Yes. Our 0.8T mini excavator pulls in to about 680mm, so it fits through gates wider than that. The 1T pulls in to about 750mm and the 1.7T to about 950mm." },
       { q: "How much does it cost to hire a mini excavator for landscaping?", a: "Mini excavator hire starts from $200/day for the 0.8T. Delivery and collection are quoted for your site and hire dates. All prices include GST." }
     ]
   },
@@ -202,7 +202,7 @@ export const industries: Industry[] = [
     longDescription: "Strata managers and body corporate contractors across Sydney use BuildHire's mini excavators for drainage repairs, service upgrades, garden maintenance, and common area earthworks. Our compact machines work efficiently in strata environments with minimal disruption to residents.",
     equipmentRecommendations: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator", "mini-dumper-700kg"],
     faqs: [
-      { q: "Can BuildHire work in strata environments with limited access?", a: "Yes. Our 0.8T mini excavator is only 750mm wide and fits through standard pedestrian gates. It's ideal for strata environments where access is restricted." }
+      { q: "Can BuildHire work in strata environments with limited access?", a: "Yes. Our 0.8T mini excavator pulls in to about 680mm and fits through standard pedestrian gates. It's ideal for strata environments where access is restricted." }
     ]
   },
   {

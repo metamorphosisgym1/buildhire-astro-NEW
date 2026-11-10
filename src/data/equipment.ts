@@ -30,7 +30,7 @@ const equipmentCatalog: Equipment[] = [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "800 kg" },
       { label: "Max Digging Depth", value: "1,720 mm" },
-      { label: "Track Width (retracted)", value: "690 mm" },
+      { label: "Track Width (retracted)", value: "680 mm" },
       { label: "Engine", value: "Yanmar 3TNV70" }
     ],
     useCases: [
@@ -40,7 +40,7 @@ const equipmentCatalog: Equipment[] = [
       { title: "Pool Surrounds", desc: "Works in confined pool areas where larger machines can't access." }
     ],
     faqs: [
-      { q: "What is the minimum access width for the 0.8T mini excavator?", a: "The Yanmar SV08 tracks can retract to approximately 690mm, allowing it to pass through most standard residential gates and narrow side passages." },
+      { q: "What is the minimum access width for the 0.8T mini excavator?", a: "The Yanmar SV08 tracks can retract to approximately 680mm, allowing it to pass through most standard residential gates and narrow side passages." },
       { q: "Do I need a licence to operate a 0.8T mini excavator in NSW?", a: "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required." },
       { q: "How much does it cost to hire a 0.8T mini excavator?", a: "BuildHire's 0.8T Yanmar SV08 starts from $200/day (incl GST). Weekly rate is $1,000/week (incl GST). Delivery and collection are quoted for your site and hire dates." }
     ]
@@ -90,7 +90,7 @@ const equipmentCatalog: Equipment[] = [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "1,710 kg" },
       { label: "Max Digging Depth", value: "2,500 mm" },
-      { label: "Track Width (retracted)", value: "990 mm" },
+      { label: "Track Width (retracted)", value: "950 mm" },
       { label: "Engine", value: "Yanmar 3TNV76" }
     ],
     useCases: [
@@ -103,7 +103,7 @@ const equipmentCatalog: Equipment[] = [
       { q: "How much does it cost to hire a 1.7T mini excavator?", a: "BuildHire's 1.7T Yanmar ViO17 starts from $205/day (incl GST). Weekly rate is $1,100/week (incl GST). Delivery and collection are quoted for your site and hire dates." },
       { q: "What is the difference between a 0.8T and 1.7T mini excavator?", a: "The 1.7T excavator is larger and more powerful, offering greater digging depth (up to 2,500mm) and bucket capacity. It handles heavier earthworks and deeper trenches while still fitting through most residential access points." },
       { q: "Do I need a licence to operate a 1.7T mini excavator in NSW?", a: "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required." },
-      { q: "Can the 1.7T excavator fit through a standard gate?", a: "Yes. The Yanmar ViO17 has retractable tracks that narrow to approximately 990mm, allowing it to pass through most standard residential gates and access points." }
+      { q: "Can the 1.7T excavator fit through a standard gate?", a: "Yes. The Yanmar ViO17 has retractable tracks that narrow to approximately 950mm, allowing it to pass through most standard residential gates and access points." }
     ]
   },
   {
@@ -121,7 +121,7 @@ const equipmentCatalog: Equipment[] = [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "3,490 kg" },
       { label: "Max Digging Depth", value: "3,560 mm" },
-      { label: "Track Width", value: "1,500 mm" },
+      { label: "Machine Width", value: "1,740 mm" },
       { label: "Engine", value: "Yanmar 3TNV88" }
     ],
     useCases: [
@@ -151,7 +151,7 @@ const equipmentCatalog: Equipment[] = [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "5,490 kg" },
       { label: "Max Digging Depth", value: "3,960 mm" },
-      { label: "Track Width", value: "1,800 mm" },
+      { label: "Machine Width", value: "1,990 mm" },
       { label: "Engine", value: "Yanmar 4TNV98" }
     ],
     useCases: [

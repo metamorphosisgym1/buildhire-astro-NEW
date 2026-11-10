@@ -73,7 +73,7 @@ Choosing the right excavator size for pool excavation is one of the most common 
 
 For standard residential pools in Sydney — typically 6–8 metres in length, 3–4 metres wide, and 1.5–1.8 metres deep — the 1.7T mini excavator is the most popular choice. Here's why:
 
-**Access:** The 1.7T is 1,300mm wide, which fits through standard residential side gates (typically 1,200–1,500mm wide). This is the critical constraint for most Sydney backyards.
+**Access:** The 1.7T tracks pull in to about 950mm (about 1,280mm when spread out for digging), so it fits through side gates wider than about 950mm. This is the critical constraint for most Sydney backyards.
 
 **Digging depth:** The 1.7T has a maximum dig depth of 2,400mm — sufficient for most residential pool depths of 1,500–1,800mm.
 
@@ -88,13 +88,13 @@ The 3.5T excavator is the better choice when:
 - **Pool is larger than 8 metres** — the 3.5T's larger bucket (200L vs 80L) moves material faster
 - **Soil is difficult** — clay, compacted fill, or rock requires the 3.5T's greater digging force
 - **Timeline is tight** — the 3.5T can excavate a standard pool in half the time of the 1.7T
-- **Site access allows it** — the 3.5T is 1,800mm wide and requires a wider gate or driveway access
+- **Site access allows it** — the 3.5T is about 1,740mm wide and needs a gate or driveway wider than that
 
 Note: The 3.5T requires a High Risk Work Licence (HRWL) in NSW. Ensure you or your operator holds the appropriate licence before hiring.
 
 ### When to Choose Smaller Machines
 
-For pools with very tight access — gates under 1,200mm, narrow side passages, or restricted backyards — the 1T (900mm wide) or 0.8T (750mm wide) mini excavators may be the only option. These machines take longer to excavate but can access sites that larger machines cannot reach.
+For pools with very tight access — gates under about 950mm, narrow side passages, or restricted backyards — the 1T (about 750mm with tracks pulled in) or 0.8T (about 680mm) mini excavators may be the only option. These machines take longer to excavate but can access sites that larger machines cannot reach.
 
 ### Soil Conditions in Sydney
 
@@ -119,7 +119,7 @@ Before booking your excavator for pool work, confirm:
 
 BuildHire can deliver an excavator and a mini dumper for pool excavation projects. Call 1300 157 882 to discuss your project.`,
     relatedQuestions: [
-      { q: "Can a mini excavator fit through a standard residential gate for pool work?", a: "Yes. The 1.7T mini excavator is 1,300mm wide and fits through standard residential gates. The 1T (900mm) and 0.8T (750mm) fit through narrower gates." },
+      { q: "Can a mini excavator fit through a standard residential gate for pool work?", a: "Yes. The 1.7T mini excavator pulls its tracks in to about 950mm and fits through most standard residential gates. The 1T (about 750mm) and 0.8T (about 680mm) fit through narrower gates." },
       { q: "How deep can a 1.7T excavator dig for a pool?", a: "The 1.7T mini excavator has a maximum dig depth of 2,400mm, which is sufficient for most residential pool depths of 1,500–1,800mm." },
       { q: "Do I need a licence to operate an excavator for pool work in NSW?", a: "In NSW, excavators under 3 tonnes do not require a licence. The 1.7T mini excavator is under 3 tonnes and can be operated without a licence." },
       { q: "How long does it take to excavate a pool with a 1.7T mini excavator?", a: "A standard residential pool (6–8m) in average soil conditions takes 1–2 days with a 1.7T mini excavator. Difficult soil (clay, rock) or larger pools may take longer." }
@@ -257,11 +257,11 @@ The terms "mini excavator" and "full-size excavator" describe two distinct categ
 A mini excavator (also called a compact excavator) is an excavator with an operating weight under 6 tonnes. Mini excavators are designed for applications where access is limited, ground disturbance must be minimised, or the scale of work doesn't justify a larger machine.
 
 BuildHire's mini excavator range:
-- **0.8T** — 750mm wide, ideal for very tight access, fence post holes, narrow trenches
-- **1T** — 900mm wide, suits residential backyards and light landscaping
-- **1.7T** — 1,300mm wide, the most versatile residential machine; pools, footings, trenching
-- **3.5T** — 1,800mm wide, bridges the gap between mini and full-size; larger pools, commercial landscaping
-- **5.5T** — 2,200mm wide, compact but powerful; civil works, commercial construction
+- **0.8T** — about 680mm with tracks pulled in, ideal for very tight access, fence post holes, narrow trenches
+- **1T** — about 750mm with tracks pulled in, suits residential backyards and light landscaping
+- **1.7T** — about 950mm with tracks pulled in, the most versatile residential machine; pools, footings, trenching
+- **3.5T** — about 1,740mm wide, bridges the gap between mini and full-size; larger pools, commercial landscaping
+- **5.5T** — about 1,990mm wide, compact but powerful; civil works, commercial construction
 
 ### What Is a Full-Size Excavator?
 
@@ -274,8 +274,8 @@ BuildHire does not currently offer full-size excavators above 5.5T. For projects
 | Feature | Mini Excavator (0.8T–5.5T) | Full-Size Excavator (6T+) |
 |---|---|---|
 | Operating weight | Under 6 tonnes | 6 tonnes and above |
-| Machine width | 750mm–2,200mm | 2,500mm+ |
-| Gate access | Fits standard residential gates | Requires large access |
+| Machine width | About 680mm to 1,990mm | Our 8T about 2,270mm, our 14.5T about 2,490mm |
+| Gate access | 0.8T to 1.7T fit most side gates; the 3.5T and 5.5T need a gate wider than about 1,740mm or 1,990mm | Requires large access |
 | Ground pressure | Low — rubber tracks | High — can damage surfaces |
 | Licence (NSW) | Under 3T: no licence; 3T+: HRWL | HRWL required |
 | Hire cost | $200–$490/day | $600–$1,500+/day |
@@ -298,12 +298,12 @@ BuildHire does not currently offer full-size excavators above 5.5T. For projects
 
 ### The 3.5T and 5.5T: The Sweet Spot
 
-For many projects in Sydney — larger residential builds, commercial landscaping, light civil works — BuildHire's 3.5T and 5.5T excavators offer the best of both worlds: more power and productivity than a 1.7T, but still compact enough for most Sydney sites. The 3.5T fits through a 1,800mm gate; the 5.5T requires 2,200mm of access.
+For many projects in Sydney — larger residential builds, commercial landscaping, light civil works — BuildHire's 3.5T and 5.5T excavators offer the best of both worlds: more power and productivity than a 1.7T, but still compact enough for sites with wide gate or driveway access. The 3.5T is about 1,740mm wide and the 5.5T about 1,990mm, so the gate has to be wider than that.
 
 Call BuildHire on 1300 157 882 to discuss which machine is right for your project.`,
     relatedQuestions: [
-      { q: "What is the largest mini excavator BuildHire offers?", a: "BuildHire's largest machine is the 5.5T excavator at 2,200mm wide. It bridges the gap between mini and full-size excavators and is suitable for civil works and commercial construction." },
-      { q: "Can a mini excavator fit through a standard residential gate?", a: "Yes. The 1.7T mini excavator is 1,300mm wide and fits through standard residential gates. The 1T (900mm) and 0.8T (750mm) fit through even narrower gates." },
+      { q: "What is the largest mini excavator BuildHire offers?", a: "BuildHire's largest machine is the 5.5T excavator at about 1,990mm wide. It bridges the gap between mini and full-size excavators and is suitable for civil works and commercial construction." },
+      { q: "Can a mini excavator fit through a standard residential gate?", a: "Yes. The 1.7T mini excavator pulls its tracks in to about 950mm and fits through most standard residential gates. The 1T (about 750mm) and 0.8T (about 680mm) fit through even narrower gates." },
       { q: "Do I need a licence for a full-size excavator in NSW?", a: "Yes. All excavators 3 tonnes and above require a High Risk Work Licence (HRWL) for earthmoving plant in NSW." },
       { q: "What is the cheapest excavator to hire from BuildHire?", a: "The 0.8T mini excavator is BuildHire's most affordable machine at $200/day. It's ideal for tight access sites, fence post holes, and light landscaping." }
     ],
@@ -562,7 +562,7 @@ Landscaping projects in Sydney range from simple garden bed reshaping to complex
 
 ### The 1T Mini Excavator: Best for Tight Residential Sites
 
-The 1T mini excavator (900mm wide) is BuildHire's most popular choice for residential landscaping in Sydney. It fits through standard residential side gates (typically 900–1,200mm), has low ground pressure that minimises damage to existing lawns and gardens, and is manoeuvrable enough for tight backyard spaces.
+The 1T mini excavator (about 750mm with tracks pulled in) is BuildHire's most popular choice for residential landscaping in Sydney. It fits through standard residential side gates (typically 900–1,200mm), has low ground pressure that minimises damage to existing lawns and gardens, and is manoeuvrable enough for tight backyard spaces.
 
 The 1T is ideal for:
 - Retaining wall footings (up to 600mm wide, 600mm deep)
@@ -585,7 +585,7 @@ The 1.7T is ideal for:
 
 ### The 0.8T Mini Excavator: Best for Very Tight Access
 
-For sites with gates under 900mm or very sensitive existing gardens, the 0.8T mini excavator (750mm wide) is the only option. It's slower than larger machines but can access sites that nothing else can reach.
+For sites with gates under about 750mm or very sensitive existing gardens, the 0.8T mini excavator (about 680mm with tracks pulled in) is the only option. It's slower than larger machines but can access sites that nothing else can reach.
 
 ### Protecting Your Garden During Excavation
 
@@ -604,7 +604,7 @@ Mini excavators run on rubber tracks with low ground pressure — they're far ge
 
 Call BuildHire on 1300 157 882 to discuss your landscaping project and find the right machine.`,
     relatedQuestions: [
-      { q: "Can a mini excavator fit through a residential side gate for landscaping?", a: "Yes. The 1T mini excavator is 900mm wide and fits through most residential side gates. The 0.8T (750mm) fits through even narrower gates." },
+      { q: "Can a mini excavator fit through a residential side gate for landscaping?", a: "Yes. The 1T mini excavator pulls its tracks in to about 750mm and fits through most residential side gates. The 0.8T (about 680mm) fits through even narrower gates." },
       { q: "Will a mini excavator damage my lawn?", a: "Mini excavators run on rubber tracks with low ground pressure. Damage to existing lawns is minimal, especially if rubber mats are placed under the tracks." },
       { q: "What excavator do I need for a retaining wall in Sydney?", a: "The 1T or 1.7T mini excavator is standard for residential retaining wall footings. The 1.7T is more productive for larger walls (over 1.2m high)." }
     ],
@@ -1254,9 +1254,9 @@ Standard NBN trench requirements (as per NBN Co installation guidelines):
 
 ### Machine Selection
 
-**0.8T mini excavator (750mm wide):** Ideal for very tight access — narrow side passages, small residential lots, or sites with limited manoeuvring space. The 0.8T's narrow bucket (200mm) is perfect for NBN trench widths.
+**0.8T mini excavator (about 680mm with tracks pulled in):** Ideal for very tight access — narrow side passages, small residential lots, or sites with limited manoeuvring space. The 0.8T's narrow bucket (200mm) is perfect for NBN trench widths.
 
-**1T mini excavator (900mm wide):** The most popular choice for NBN trenching. Slightly more productive than the 0.8T and fits through most residential side gates.
+**1T mini excavator (about 750mm with tracks pulled in):** The most popular choice for NBN trenching. Slightly more productive than the 0.8T and fits through most residential side gates.
 
 ### Dial Before You Dig
 
@@ -1523,7 +1523,7 @@ Always call 1100 before any plumbing excavation. Sewer and water mains run along
 
 ### Plumbing Excavation in Tight Residential Sites
 
-Many Sydney plumbing jobs are in tight residential sites — narrow side passages, established gardens, or properties with limited access. BuildHire's 0.8T (750mm wide) and 1T (900mm wide) mini excavators are designed for exactly these situations.
+Many Sydney plumbing jobs are in tight residential sites — narrow side passages, established gardens, or properties with limited access. BuildHire's 0.8T (about 680mm) and 1T (about 750mm) mini excavators are designed for exactly these situations.
 
 Call BuildHire on 1300 157 882 to discuss your plumbing project and confirm the right machine.`,
     relatedQuestions: [
@@ -1622,7 +1622,7 @@ The Northern Beaches has predominantly sandy soil — one of the easiest soil ty
 
 ### Northern Beaches Site Access
 
-Northern Beaches properties often have challenging access — steep driveways, narrow side passages, and established gardens. BuildHire's 0.8T (750mm wide) and 1T (900mm wide) mini excavators are ideal for tight Northern Beaches sites.
+Northern Beaches properties often have challenging access — steep driveways, narrow side passages, and established gardens. BuildHire's 0.8T (about 680mm) and 1T (about 750mm) mini excavators are ideal for tight Northern Beaches sites.
 
 ### Popular Northern Beaches Applications
 
@@ -1911,7 +1911,7 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     slug: "excavator-hire-for-driveway",
     question: "What excavator do I need for driveway excavation in NSW?",
     shortAnswer: "The 1.7T or 3.5T mini excavator is ideal for most residential driveway excavation in NSW. The right machine depends on driveway length, width, and depth of excavation required.",
-    fullAnswer: `## Excavator Hire for Driveway Excavation in NSW\n\nDriveway excavation is one of the most common applications for mini excavator hire in Sydney. Whether you're installing a new driveway, replacing an existing one, or extending your current driveway, a mini excavator makes the job fast and efficient.\n\n### Types of Driveway Excavation\n\n**New driveway installation:**\nExcavating for a new driveway involves removing topsoil and soft material to the required sub-base depth (typically 150–200mm for a concrete driveway, 200–300mm for a paved driveway). The 1.7T is the standard choice for residential driveways.\n\n**Driveway replacement:**\nReplacing an existing concrete or asphalt driveway requires breaking up and removing the existing surface before excavating for the new sub-base. A hydraulic breaker attachment is required for concrete removal. Contact BuildHire about hydraulic breaker availability.\n\n**Driveway extension:**\nExtending an existing driveway requires matching the existing sub-base depth and surface level. The 1T or 1.7T is ideal for most driveway extensions.\n\n### Driveway Specifications\n\n| Driveway Type | Sub-base Depth | Recommended Machine |\n|---|---|---|\n| Concrete driveway | 150–200mm | 1.7T |\n| Paved driveway | 200–300mm | 1.7T |\n| Asphalt driveway | 150–200mm | 1.7T |\n| Gravel driveway | 100–150mm | 1T or 1.7T |\n\n### Driveway Crossover (Kerb Crossing)\n\nIf your new driveway requires a new kerb crossing (where the driveway meets the footpath and road), you will need council approval and a licensed contractor to construct the kerb crossing. Contact your local council for requirements.\n\n### Driveway Drainage\n\nAll driveways need adequate drainage to prevent water pooling and damage. Standard drainage solutions include:\n- A cross-fall (1–2% slope) to direct water to the sides\n- A channel drain at the base of the driveway\n- A pit and pipe system for larger driveways\n\nThe 1T or 1.7T mini excavator can install driveway drainage efficiently as part of the same hire.\n\n### Driveway Excavation in Tight Spaces\n\nMany Sydney driveways are in tight spaces — narrow side passages, established gardens, or properties with limited manoeuvring room. BuildHire's 0.8T (750mm wide) and 1T (900mm wide) mini excavators are ideal for tight driveway access.\n\nCall BuildHire on 1300 157 882 to discuss your driveway project and confirm the right machine.`,
+    fullAnswer: `## Excavator Hire for Driveway Excavation in NSW\n\nDriveway excavation is one of the most common applications for mini excavator hire in Sydney. Whether you're installing a new driveway, replacing an existing one, or extending your current driveway, a mini excavator makes the job fast and efficient.\n\n### Types of Driveway Excavation\n\n**New driveway installation:**\nExcavating for a new driveway involves removing topsoil and soft material to the required sub-base depth (typically 150–200mm for a concrete driveway, 200–300mm for a paved driveway). The 1.7T is the standard choice for residential driveways.\n\n**Driveway replacement:**\nReplacing an existing concrete or asphalt driveway requires breaking up and removing the existing surface before excavating for the new sub-base. A hydraulic breaker attachment is required for concrete removal. Contact BuildHire about hydraulic breaker availability.\n\n**Driveway extension:**\nExtending an existing driveway requires matching the existing sub-base depth and surface level. The 1T or 1.7T is ideal for most driveway extensions.\n\n### Driveway Specifications\n\n| Driveway Type | Sub-base Depth | Recommended Machine |\n|---|---|---|\n| Concrete driveway | 150–200mm | 1.7T |\n| Paved driveway | 200–300mm | 1.7T |\n| Asphalt driveway | 150–200mm | 1.7T |\n| Gravel driveway | 100–150mm | 1T or 1.7T |\n\n### Driveway Crossover (Kerb Crossing)\n\nIf your new driveway requires a new kerb crossing (where the driveway meets the footpath and road), you will need council approval and a licensed contractor to construct the kerb crossing. Contact your local council for requirements.\n\n### Driveway Drainage\n\nAll driveways need adequate drainage to prevent water pooling and damage. Standard drainage solutions include:\n- A cross-fall (1–2% slope) to direct water to the sides\n- A channel drain at the base of the driveway\n- A pit and pipe system for larger driveways\n\nThe 1T or 1.7T mini excavator can install driveway drainage efficiently as part of the same hire.\n\n### Driveway Excavation in Tight Spaces\n\nMany Sydney driveways are in tight spaces — narrow side passages, established gardens, or properties with limited manoeuvring room. BuildHire's 0.8T (about 680mm) and 1T (about 750mm) mini excavators are ideal for tight driveway access.\n\nCall BuildHire on 1300 157 882 to discuss your driveway project and confirm the right machine.`,
     relatedQuestions: [
       { q: "Do I need council approval for a new driveway in NSW?", a: "A new driveway kerb crossing requires council approval in most NSW councils. Check with your local council before starting work." },
       { q: "What excavator is best for removing an old concrete driveway?", a: "The 3.5T with a hydraulic breaker attachment is the standard choice for concrete driveway removal. Contact BuildHire about hydraulic breaker availability." },
@@ -2082,7 +2082,7 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     question: "What excavator do I need to dig a swimming pool?",
     category: "Use Case",
     shortAnswer: "A 3.5T excavator is the standard choice for residential pool excavation in Sydney. It has the reach, bucket capacity, and digging force to complete a standard pool in 1–2 days.",
-    fullAnswer: `## Excavator Hire for Swimming Pool Construction\n\nPool excavation is one of BuildHire's most common use cases. Here's exactly what you need.\n\n### Recommended Machine\n\n**3.5T Excavator:** the standard choice for residential pool excavation:\n- Digging depth: up to 4.5m\n- Bucket capacity: 0.12m³\n- Can complete a standard 8m × 4m pool in 1 to 2 days\n- Fits through a standard double gate (1.8m wide)\n\n### What to Expect\n\n- **Day 1:** Excavate the main pool shell, pile spoil for removal\n- **Day 2 (if needed):** Tidy up, excavate for equipment bay, load spoil for removal\n\n### Also Consider\n\n- **Skip bins or a soil truck:** for removing excavated soil (a standard pool generates 30 to 50m³ of spoil)\n- **Mini Dumper:** for moving spoil in tight backyards\n\n### Booking Tips\n\n- Confirm gate width before booking (minimum 1.8m for 3.5T)\n- Check for underground services before excavating (Dial Before You Dig)\n\nBook online at buildhire.com.au or call 1300 157 882.`,
+    fullAnswer: `## Excavator Hire for Swimming Pool Construction\n\nPool excavation is one of BuildHire's most common use cases. Here's exactly what you need.\n\n### Recommended Machine\n\n**3.5T Excavator:** the standard choice for residential pool excavation:\n- Digging depth: up to 4.5m\n- Bucket capacity: 0.12m³\n- Can complete a standard 8m × 4m pool in 1 to 2 days\n- About 1.74m wide, so it needs a gate wider than that\n\n### What to Expect\n\n- **Day 1:** Excavate the main pool shell, pile spoil for removal\n- **Day 2 (if needed):** Tidy up, excavate for equipment bay, load spoil for removal\n\n### Also Consider\n\n- **Skip bins or a soil truck:** for removing excavated soil (a standard pool generates 30 to 50m³ of spoil)\n- **Mini Dumper:** for moving spoil in tight backyards\n\n### Booking Tips\n\n- Confirm gate width before booking (wider than about 1.74m for the 3.5T)\n- Check for underground services before excavating (Dial Before You Dig)\n\nBook online at buildhire.com.au or call 1300 157 882.`,
     relatedQuestions: [
       { q: "How long does it take to excavate a pool with a 3.5T excavator?", a: "A standard residential pool (8m × 4m × 1.8m deep) typically takes 1–2 days with a 3.5T excavator." },
       { q: "How much soil does a pool excavation produce?", a: "A standard pool generates 30–50m³ of spoil. You'll need 3–5 tipper truck loads to remove it." }
