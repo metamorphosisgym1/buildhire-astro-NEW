@@ -28,8 +28,8 @@ const equipmentCatalog: Equipment[] = [
     delivery: "Quoted for your site",
     specs: [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
-      { label: "Operating Weight", value: "800 kg" },
-      { label: "Max Digging Depth", value: "1,720 mm" },
+      { label: "Operating Weight", value: "1,035 kg" },
+      { label: "Max Digging Depth", value: "1,460 mm" },
       { label: "Track Width (retracted)", value: "680 mm" },
       { label: "Engine", value: "Yanmar 3TNV70" }
     ],
@@ -59,7 +59,7 @@ const equipmentCatalog: Equipment[] = [
     specs: [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "1,010 kg" },
-      { label: "Max Digging Depth", value: "1,850 mm" },
+      { label: "Max Digging Depth", value: "1,800 mm" },
       { label: "Track Width (retracted)", value: "750 mm" },
       { label: "Engine", value: "Kubota D722" }
     ],
@@ -89,7 +89,7 @@ const equipmentCatalog: Equipment[] = [
     specs: [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "1,710 kg" },
-      { label: "Max Digging Depth", value: "2,500 mm" },
+      { label: "Max Digging Depth", value: "2,210 mm" },
       { label: "Track Width (retracted)", value: "950 mm" },
       { label: "Engine", value: "Yanmar 3TNV76" }
     ],
@@ -101,7 +101,7 @@ const equipmentCatalog: Equipment[] = [
     ],
     faqs: [
       { q: "How much does it cost to hire a 1.7T mini excavator?", a: "BuildHire's 1.7T Yanmar ViO17 starts from $205/day (incl GST). Weekly rate is $1,100/week (incl GST). Delivery and collection are quoted for your site and hire dates." },
-      { q: "What is the difference between a 0.8T and 1.7T mini excavator?", a: "The 1.7T excavator is larger and more powerful, offering greater digging depth (up to 2,500mm) and bucket capacity. It handles heavier earthworks and deeper trenches while still fitting through most residential access points." },
+      { q: "What is the difference between a 0.8T and 1.7T mini excavator?", a: "The 1.7T excavator is larger and more powerful, offering greater digging depth (up to 2,210mm) and bucket capacity. It handles heavier earthworks and deeper trenches while still fitting through most residential access points." },
       { q: "Do I need a licence to operate a 1.7T mini excavator in NSW?", a: "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required." },
       { q: "Can the 1.7T excavator fit through a standard gate?", a: "Yes. The Yanmar ViO17 has retractable tracks that narrow to approximately 950mm, allowing it to pass through most standard residential gates and access points." }
     ]
@@ -120,7 +120,7 @@ const equipmentCatalog: Equipment[] = [
     specs: [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "3,490 kg" },
-      { label: "Max Digging Depth", value: "3,560 mm" },
+      { label: "Max Digging Depth", value: "3,250 mm" },
       { label: "Machine Width", value: "1,740 mm" },
       { label: "Engine", value: "Yanmar 3TNV88" }
     ],
@@ -142,7 +142,7 @@ const equipmentCatalog: Equipment[] = [
     shortName: "5.5T Excavator",
     category: "Excavators",
     description: "Heavy-duty 5.5-tonne excavator built for serious earthmoving, deep trenching, and civil construction projects.",
-    longDescription: "The Yanmar ViO55 is BuildHire's most powerful machine, designed for demanding civil and commercial construction projects. With exceptional digging depth and bucket capacity, it handles the jobs that smaller machines simply can't.",
+    longDescription: "The Yanmar ViO55 is BuildHire's 5.5 tonne excavator, designed for demanding civil and commercial construction projects. With exceptional digging depth and bucket capacity, it handles the jobs that smaller machines simply can't.",
     price: "$370/day",
     priceNum: "370",
     weeklyPrice: "$1,650/week",
@@ -150,7 +150,7 @@ const equipmentCatalog: Equipment[] = [
     specs: [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "5,490 kg" },
-      { label: "Max Digging Depth", value: "3,960 mm" },
+      { label: "Max Digging Depth", value: "3,900 mm" },
       { label: "Machine Width", value: "1,990 mm" },
       { label: "Engine", value: "Yanmar 4TNV98" }
     ],
@@ -162,7 +162,7 @@ const equipmentCatalog: Equipment[] = [
     ],
     faqs: [
       { q: "How much does it cost to hire a 5.5T excavator?", a: "BuildHire's 5.5T Yanmar ViO55 starts from $370/day (incl GST). Weekly rate is $1,650/week (incl GST). Delivery is via third party transport — call 1300 157 882 for a quote." },
-      { q: "What is the maximum digging depth of the 5.5T excavator?", a: "The Yanmar ViO55 has a maximum digging depth of approximately 3,960mm (3.96 metres), making it suitable for deep utility trenches and civil construction." },
+      { q: "What is the maximum digging depth of the 5.5T excavator?", a: "The Yanmar ViO55 has a maximum digging depth of about 3,900mm (3.9 metres), making it suitable for deep utility trenches and civil construction." },
       { q: "Do I need a licence to operate a 5.5T excavator in NSW?", a: "Yes. A High Risk Work Licence (HRWL) for earthmoving equipment is required to operate a 5.5T excavator on any registered worksite in NSW." }
     ]
   },
@@ -180,7 +180,7 @@ const equipmentCatalog: Equipment[] = [
     specs: [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
       { label: "Operating Weight", value: "14,500 kg" },
-      { label: "Max Digging Depth", value: "5,830 mm" },
+      { label: "Max Digging Depth", value: "5,510 mm" },
       { label: "Bucket Capacity", value: "0.55 m\u00b3" },
       { label: "Engine", value: "Case F5HFL463A, 82 kW" }
     ],
@@ -192,7 +192,7 @@ const equipmentCatalog: Equipment[] = [
     ],
     faqs: [
       { q: "How much does it cost to hire a 14.5T excavator?", a: "BuildHire's 14.5T Case CX145C starts from $490/day. Weekly rate is $2,000/week (incl GST). Delivery and collection are quoted for your site. Call 1300 157 882 for a quote." },
-      { q: "What is the maximum digging depth of the 14.5T excavator?", a: "The Case CX145C has a maximum digging depth of 5,830mm, making it suitable for deep civil trenches and major earthworks." },
+      { q: "What is the maximum digging depth of the 14.5T excavator?", a: "The Case CX145C has a maximum digging depth of 5,510mm, making it suitable for deep civil trenches and major earthworks." },
       { q: "Do I need a licence to operate a 14.5T excavator in NSW?", a: "Yes. A High Risk Work Licence (HRWL) for earthmoving equipment is required to operate a 14.5T excavator on any registered worksite in NSW." }
     ]
   },

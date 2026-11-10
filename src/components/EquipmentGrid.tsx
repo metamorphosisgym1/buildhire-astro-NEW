@@ -58,8 +58,8 @@ const availableEquipment: EquipmentItem[] = [
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-SV08-Excavator-Brochure.pdf",
     specs: {
       "Included": "Mud bucket, GP bucket and ripper",
-      "Operating Weight": "980 kg",
-      "Dig Depth": "1,510 mm",
+      "Operating Weight": "1,035 kg",
+      "Dig Depth": "1,460 mm",
       "Bucket Capacity": "0.02 m³",
       "Engine Power": "7.1 kW",
       "Tail Swing": "Zero",
@@ -92,7 +92,7 @@ const availableEquipment: EquipmentItem[] = [
     specs: {
       "Included": "Mud bucket, GP bucket and ripper",
       "Operating Weight": "1,700 kg",
-      "Dig Depth": "2,430 mm",
+      "Dig Depth": "2,210 mm",
       "Bucket Capacity": "0.04 m³",
       "Engine Power": "11.5 kW",
       "Tail Swing": "Zero",
@@ -109,7 +109,7 @@ const availableEquipment: EquipmentItem[] = [
     specs: {
       "Included": "Mud bucket, GP bucket and ripper",
       "Operating Weight": "3,500 kg",
-      "Dig Depth": "3,200 mm",
+      "Dig Depth": "3,250 mm",
       "Bucket Capacity": "0.10 m³",
       "Engine Power": "20 kW",
       "Tail Swing": "Minimal",
@@ -126,7 +126,7 @@ const availableEquipment: EquipmentItem[] = [
     specs: {
       "Included": "Mud bucket, GP bucket and ripper",
       "Operating Weight": "5,500 kg",
-      "Dig Depth": "3,870 mm",
+      "Dig Depth": "3,900 mm",
       "Bucket Capacity": "0.16 m³",
       "Engine Power": "30 kW",
       "Tail Swing": "Reduced",
@@ -143,7 +143,7 @@ const availableEquipment: EquipmentItem[] = [
     specs: {
       "Included": "Mud bucket, GP bucket and ripper",
       "Operating Weight": "14,500 kg",
-      "Dig Depth": "5,830 mm",
+      "Dig Depth": "5,510 mm",
       "Bucket Capacity": "0.55 m³",
       "Engine Power": "82 kW",
       "Tail Swing": "Conventional",
@@ -240,7 +240,7 @@ const comingSoonEquipment: EquipmentItem[] = [
     brochureUrl: "https://tuttbryant.com.au/wp-content/uploads/2022/08/Yanmar-ViO80-Excavator-Brochure.pdf",
     specs: {
       "Operating Weight": "8,000 kg",
-      "Dig Depth": "4,500 mm",
+      "Dig Depth": "4,400 mm",
       "Bucket Capacity": "0.28 m³",
       "Engine Power": "45 kW",
       "Tail Swing": "Conventional",

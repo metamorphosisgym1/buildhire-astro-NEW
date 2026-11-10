@@ -78,9 +78,9 @@ const breadcrumbSchema = {
         <p class="text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto text-center">Pool excavation in Sydney presents unique challenges — tight side access, varying soil types from clay in the west to sandstone in the east, and strict site conditions in heritage areas. Here is how to match the machine to the job.</p>
         <div class="grid md:grid-cols-3 gap-6">
           {[
-            { machine: "0.8T Mini Excavator", price: "$200/day", access: "Share gate and access dimensions", depth: "1,720mm max digging depth", best: "Courtyard pools, inner-city terraces and projects where compact access is the priority", href: "/equipment/08t-mini-excavator-hire-sydney/" },
-            { machine: "1.7T Mini Excavator", price: "$205/day", access: "Confirm access with the team", depth: "2,500mm max digging depth", best: "Standard residential pool work, landscaping and soil removal alongside the dig", href: "/equipment/17t-mini-excavator-hire-sydney/", popular: true },
-            { machine: "3.5T Excavator", price: "$340/day", access: "Suitable site access required", depth: "3,560mm max digging depth", best: "Larger pool projects, earthworks and jobs that need more capacity than a mini excavator", href: "/equipment/35t-excavator-hire-sydney/" },
+            { machine: "0.8T Mini Excavator", price: "$200/day", access: "Share gate and access dimensions", depth: "1,460mm max digging depth", best: "Shallow courtyard pools, inner-city terraces and projects where compact access is the priority", href: "/equipment/08t-mini-excavator-hire-sydney/" },
+            { machine: "1.7T Mini Excavator", price: "$205/day", access: "Confirm access with the team", depth: "2,210mm max digging depth", best: "Standard residential pool work, landscaping and soil removal alongside the dig", href: "/equipment/17t-mini-excavator-hire-sydney/", popular: true },
+            { machine: "3.5T Excavator", price: "$340/day", access: "Suitable site access required", depth: "3,250mm max digging depth", best: "Larger pool projects, earthworks and jobs that need more capacity than a mini excavator", href: "/equipment/35t-excavator-hire-sydney/" },
           ].map(m => (
             <div class={`rounded-2xl p-8 border-2 ${m.popular ? 'border-[var(--color-primary)] bg-[var(--color-primary)]/5' : 'border-gray-200 bg-[var(--color-bg)]'} relative`}>
               {m.popular && <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[var(--color-primary)] text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular for Pools</span>}

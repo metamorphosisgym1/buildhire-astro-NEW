@@ -36,7 +36,7 @@ export const useCases: UseCase[] = [
     equipmentRecommendations: ["0-8t-mini-excavator", "1t-mini-excavator", "1-7t-mini-excavator", "3-5t-excavator"],
     faqs: [
       { q: "What is the best machine for digging plumbing trenches?", a: "A 1.7T mini excavator is the most popular choice for residential plumbing trenches, offering excellent digging depth and power." },
-      { q: "How deep can a mini excavator dig?", a: "A 1.7T mini excavator can dig up to 2.5 metres deep, while a 3.5T machine can reach depths of over 3.5 metres." },
+      { q: "How deep can a mini excavator dig?", a: "A 1.7T mini excavator can dig up to about 2.2 metres deep, while a 3.5T machine can reach about 3.25 metres." },
       { q: "Do you supply different bucket sizes for trenching?", a: "Yes, our excavators come with a range of bucket sizes, including narrow trenching buckets specifically designed for utility work." }
     ]
   },
