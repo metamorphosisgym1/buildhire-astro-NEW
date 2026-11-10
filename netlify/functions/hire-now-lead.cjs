@@ -1,8 +1,11 @@
 // Sends each /hire-now/ booking to GoHighLevel, so Will gets it even when the
 // customer never presses send in WhatsApp. The GHL inbound webhook starts the
 // workflow "HN-01 Hire Now page lead: text Will" (contact, tag hire-now-lead, SMS to Will).
-// The webhook URL lives only in the Netlify env var GHL_HIRE_NOW_WEBHOOK_URL (the repo is public).
-const WEBHOOK_URL = process.env.GHL_HIRE_NOW_WEBHOOK_URL;
+// Murphy chose (10 Nov 2026) to keep the URL here rather than wait for Netlify access.
+// If it is ever abused: make a new webhook in GHL HN-01 and set it in env GHL_HIRE_NOW_WEBHOOK_URL.
+const WEBHOOK_URL =
+  process.env.GHL_HIRE_NOW_WEBHOOK_URL ||
+  "https://services.leadconnectorhq.com/hooks/oEDxcuJNEfod9WbD2DAs/webhook-trigger/5538fa13-2b75-4ac1-84a3-3de990ae0b13";
 
 const clean = (value, max = 200) => String(value ?? "").trim().slice(0, max);
 
