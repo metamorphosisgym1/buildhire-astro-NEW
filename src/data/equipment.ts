@@ -31,7 +31,7 @@ const equipmentCatalog: Equipment[] = [
       { label: "Operating Weight", value: "1,035 kg" },
       { label: "Max Digging Depth", value: "1,460 mm" },
       { label: "Track Width (retracted)", value: "680 mm" },
-      { label: "Engine", value: "Yanmar 3TNV70" }
+      { label: "Engine", value: "402J-05, 7.7 kW" }
     ],
     useCases: [
       { title: "Tight Access Excavation", desc: "Fits through standard gates and narrow side passages." },
@@ -58,7 +58,7 @@ const equipmentCatalog: Equipment[] = [
     delivery: "Quoted for your site",
     specs: [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
-      { label: "Operating Weight", value: "1,010 kg" },
+      { label: "Operating Weight", value: "1,200 kg" },
       { label: "Max Digging Depth", value: "1,800 mm" },
       { label: "Track Width (retracted)", value: "750 mm" },
       { label: "Engine", value: "Kubota D722" }
@@ -88,10 +88,10 @@ const equipmentCatalog: Equipment[] = [
     delivery: "Quoted for your site",
     specs: [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
-      { label: "Operating Weight", value: "1,710 kg" },
+      { label: "Operating Weight", value: "1,785 kg" },
       { label: "Max Digging Depth", value: "2,210 mm" },
       { label: "Track Width (retracted)", value: "950 mm" },
-      { label: "Engine", value: "Yanmar 3TNV76" }
+      { label: "Engine", value: "Yanmar 3TNV70" }
     ],
     useCases: [
       { title: "Pool Excavation", desc: "Dig pool shells in residential backyards with precision and minimal disruption." },
@@ -152,7 +152,7 @@ const equipmentCatalog: Equipment[] = [
       { label: "Operating Weight", value: "5,490 kg" },
       { label: "Max Digging Depth", value: "3,900 mm" },
       { label: "Machine Width", value: "1,990 mm" },
-      { label: "Engine", value: "Yanmar 4TNV98" }
+      { label: "Engine", value: "Yanmar 4TNV84T" }
     ],
     useCases: [
       { title: "Civil Construction", desc: "Road works, civil infrastructure, and large-scale earthmoving." },
@@ -179,10 +179,10 @@ const equipmentCatalog: Equipment[] = [
     delivery: "Delivery & Collection* (third party transport \u2014 pricing on enquiry)",
     specs: [
       { label: "Included", value: "Mud bucket, GP bucket and ripper" },
-      { label: "Operating Weight", value: "14,500 kg" },
+      { label: "Operating Weight", value: "14,900 kg" },
       { label: "Max Digging Depth", value: "5,510 mm" },
-      { label: "Bucket Capacity", value: "0.55 m\u00b3" },
-      { label: "Engine", value: "Case F5HFL463A, 82 kW" }
+      { label: "Bucket Capacity", value: "0.50 m\u00b3" },
+      { label: "Engine", value: "Isuzu GJ-A4JJ1X, 70.9 kW" }
     ],
     useCases: [
       { title: "Major Civil Construction", desc: "Road works, civil infrastructure, and large-scale earthmoving projects." },

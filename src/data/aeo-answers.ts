@@ -85,7 +85,7 @@ For standard residential pools in Sydney — typically 6–8 metres in length, 3
 
 The 3.5T excavator is the better choice when:
 
-- **Pool is larger than 8 metres** — the 3.5T's larger bucket (200L vs 80L) moves material faster
+- **Pool is larger than 8 metres** — the 3.5T's larger bucket (110L vs 40L) moves material faster
 - **Soil is difficult** — clay, compacted fill, or rock requires the 3.5T's greater digging force
 - **Timeline is tight** — the 3.5T can excavate a standard pool in half the time of the 1.7T
 - **Site access allows it** — the 3.5T is about 1,740mm wide and needs a gate or driveway wider than that
@@ -2082,7 +2082,7 @@ Before operating an excavator near overhead power lines, contact Ausgrid or Ende
     question: "What excavator do I need to dig a swimming pool?",
     category: "Use Case",
     shortAnswer: "A 3.5T excavator is the standard choice for residential pool excavation in Sydney. It has the reach, bucket capacity, and digging force to complete a standard pool in 1–2 days.",
-    fullAnswer: `## Excavator Hire for Swimming Pool Construction\n\nPool excavation is one of BuildHire's most common use cases. Here's exactly what you need.\n\n### Recommended Machine\n\n**3.5T Excavator:** the standard choice for residential pool excavation:\n- Digging depth: up to about 3.25m\n- Bucket capacity: 0.12m³\n- Can complete a standard 8m × 4m pool in 1 to 2 days\n- About 1.74m wide, so it needs a gate wider than that\n\n### What to Expect\n\n- **Day 1:** Excavate the main pool shell, pile spoil for removal\n- **Day 2 (if needed):** Tidy up, excavate for equipment bay, load spoil for removal\n\n### Also Consider\n\n- **Skip bins or a soil truck:** for removing excavated soil (a standard pool generates 30 to 50m³ of spoil)\n- **Mini Dumper:** for moving spoil in tight backyards\n\n### Booking Tips\n\n- Confirm gate width before booking (wider than about 1.74m for the 3.5T)\n- Check for underground services before excavating (Dial Before You Dig)\n\nBook online at buildhire.com.au or call 1300 157 882.`,
+    fullAnswer: `## Excavator Hire for Swimming Pool Construction\n\nPool excavation is one of BuildHire's most common use cases. Here's exactly what you need.\n\n### Recommended Machine\n\n**3.5T Excavator:** the standard choice for residential pool excavation:\n- Digging depth: up to about 3.25m\n- Bucket capacity: 0.11m³\n- Can complete a standard 8m × 4m pool in 1 to 2 days\n- About 1.74m wide, so it needs a gate wider than that\n\n### What to Expect\n\n- **Day 1:** Excavate the main pool shell, pile spoil for removal\n- **Day 2 (if needed):** Tidy up, excavate for equipment bay, load spoil for removal\n\n### Also Consider\n\n- **Skip bins or a soil truck:** for removing excavated soil (a standard pool generates 30 to 50m³ of spoil)\n- **Mini Dumper:** for moving spoil in tight backyards\n\n### Booking Tips\n\n- Confirm gate width before booking (wider than about 1.74m for the 3.5T)\n- Check for underground services before excavating (Dial Before You Dig)\n\nBook online at buildhire.com.au or call 1300 157 882.`,
     relatedQuestions: [
       { q: "How long does it take to excavate a pool with a 3.5T excavator?", a: "A standard residential pool (8m × 4m × 1.8m deep) typically takes 1–2 days with a 3.5T excavator." },
       { q: "How much soil does a pool excavation produce?", a: "A standard pool generates 30–50m³ of spoil. You'll need 3–5 tipper truck loads to remove it." }
