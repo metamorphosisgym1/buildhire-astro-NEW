@@ -59,6 +59,32 @@ function buildWhatsAppUrl(answers: Record<AnswerKey, string>, name: string, phon
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
 }
 
+// Copy of the booking for GoHighLevel, so Will gets it even if WhatsApp is never sent.
+// Fire and forget: keepalive lets it finish after WhatsApp opens; a failure never blocks the customer.
+function sendLeadToCrm(answers: Record<AnswerKey, string>, name: string, phone: string, email: string) {
+  const params = new URLSearchParams(window.location.search);
+  try {
+    fetch("/.netlify/functions/hire-now-lead", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      keepalive: true,
+      body: JSON.stringify({
+        ...answers,
+        name,
+        phone,
+        email,
+        utm_source: params.get("utm_source") || "",
+        utm_medium: params.get("utm_medium") || "",
+        utm_campaign: params.get("utm_campaign") || "",
+        utm_content: params.get("utm_content") || "",
+        page_url: window.location.href,
+      }),
+    }).catch(() => {});
+  } catch {
+    // Never let the CRM copy stop WhatsApp opening.
+  }
+}
+
 export default function HireNowForm() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<AnswerKey, string>>({ who: "", machine: "", length: "" });
@@ -102,6 +128,7 @@ export default function HireNowForm() {
       booking_form: "hire_now",
     });
 
+    sendLeadToCrm(answers, name.trim(), phone.trim(), email.trim());
     const url = buildWhatsAppUrl(answers, name.trim(), phone.trim(), email.trim());
     setWhatsAppUrl(url);
     setStep(THANKS_STEP);
