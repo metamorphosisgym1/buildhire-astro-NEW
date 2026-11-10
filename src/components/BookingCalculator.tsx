@@ -45,7 +45,7 @@ const sieveBucketImg = "/assets/sieve-bucket-tiger.png";
 const augerImg = "/assets/auger-drive.jpg";
 const rockGrabImg = "/assets/rock-grab.webp";
 
-const WHATSAPP_NUMBER = "61435421324";
+export const WHATSAPP_NUMBER = "61435421324";
 
 const categoryIcons: Record<string, React.ComponentType<any>> = {
   Excavators: ExcavatorIcon,
@@ -82,7 +82,7 @@ const machineImages: Record<string, string> = {
   "Hydraulic Hammer 14.5T": rockBreakerImg,
 };
 
-const equipmentData: Record<string, { name: string; rate: number; weeklyRate?: number; comingSoon?: boolean }[]> = {
+export const equipmentData: Record<string,{ name: string; rate: number; weeklyRate?: number; comingSoon?: boolean }[]> = {
   Excavators: [
     { name: "0.8T Mini Excavator (SV08 Yanmar)", rate: 200, weeklyRate: 1000 },
     { name: "1T Mini Excavator (Kubota U10-5)", rate: 200, weeklyRate: 1000 },

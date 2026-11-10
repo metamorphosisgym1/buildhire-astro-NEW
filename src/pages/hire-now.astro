@@ -1,0 +1,143 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HireNowForm from '../components/HireNowForm';
+
+// Real Google review screenshots, captured from Build Hire's Google listing on 10 Nov 2026.
+// Files are numbered in Google's order. The list below is display order.
+const reviews = [
+  { file: 3, name: 'Enhanced Plumbing Solutions', w: 720, h: 561 },
+  { file: 12, name: 'Seth Ji', w: 720, h: 475 },
+  { file: 6, name: 'lorans aiso', w: 720, h: 447 },
+  { file: 10, name: 'Vanessa Bonett', w: 720, h: 475 },
+  { file: 5, name: 'Dean Krkovski', w: 720, h: 476 },
+  { file: 9, name: 'Corinne Coleman', w: 720, h: 476 },
+  { file: 11, name: 'Ehab Saadeddine', w: 720, h: 601 },
+  { file: 13, name: 'Kaveh Rad', w: 720, h: 447 },
+  { file: 1, name: 'Manuele Monastirakis', w: 720, h: 629 },
+  { file: 4, name: 'ashraf kamal (Ash)', w: 720, h: 686 },
+  { file: 7, name: 'Said Jawadi', w: 720, h: 505 },
+  { file: 2, name: 'Rosa scioscia', w: 720, h: 815 },
+  { file: 8, name: 'Zander Elmowy', w: 720, h: 560 },
+];
+const shownFirst = reviews.slice(0, 4);
+const shownOnTap = reviews.slice(4);
+const reviewSrc = (file: number) => `/assets/hire-now/reviews/review-${String(file).padStart(2, '0')}.webp`;
+
+const reasons = [
+  'All 7 days on a weekly hire, weekend included',
+  'Mud bucket, GP bucket and ripper included',
+  'Clean, well kept machines: 7 of our 13 Google reviews praise their condition',
+  'Bookings go straight to Will, the owner',
+];
+
+const faqs = [
+  { q: 'How fast can I get a machine?', a: 'Book before 12pm and it can be on your Sydney site the next day. That goes for the 1.7T, 3.5T and 5.5T. Will confirms availability when you book.' },
+  { q: 'What comes with the machine?', a: 'A mud bucket, GP bucket and ripper come with every 1.7T, 3.5T and 5.5T.' },
+  { q: 'How long is a hire week?', a: '7 days, weekend included.' },
+  { q: 'Can I hire by the day?', a: 'Yes, by the day or by the week. We do not do monthly or contract rates.' },
+  { q: 'Which size do I need?', a: 'The 1.7T tracks pull in to about 990 mm, so it gets through most standard side gates. The 3.5T is about 1,740 mm wide and the 5.5T is about 1,990 mm wide. Not sure? Pick "Not sure" on the form and Will can help you choose.' },
+  { q: 'Do you supply an operator?', a: 'No, we only do dry hire. You or your crew run the machine.' },
+  { q: 'Who do you hire to?', a: 'Builders, landscapers, contractors and owner-builders.' },
+  { q: 'Where do you deliver?', a: 'Across Sydney from our Arncliffe yard, plus Wollongong and the Blue Mountains.' },
+  { q: 'How much is delivery?', a: 'We quote it when you book, because it depends on your site and the machine.' },
+  { q: 'Can I pick it up myself?', a: 'You can collect the 1.7T from our Arncliffe yard on a plant trailer we hire out. For the 3.5T and 5.5T, ask Will.' },
+  { q: 'Who will I deal with?', a: 'Will, the owner. Bookings go straight to him on WhatsApp.' },
+  { q: 'How do I book?', a: 'Answer the 3 questions at the top of this page, add your details and press send in WhatsApp. Will then confirms your dates and delivery.' },
+  { q: 'Is GST included?', a: 'Yes, our hire rates include GST.' },
+  { q: 'Can I add attachments?', a: 'Yes. Ask about a rock breaker, auger drive or sieve bucket, or a rock grab on the 3.5T and 5.5T.' },
+  { q: 'What hours are you open?', a: '5am to 8pm, 7 days.' },
+];
+---
+<Layout
+  title="Excavator Hire, On Site Tomorrow | Build Hire"
+  description="1.7T, 3.5T and 5.5T Yanmar mini excavators from our Arncliffe yard. Book before 12pm for next-day delivery across Sydney."
+  canonicalPath="/hire-now/"
+  noindex
+>
+  <main>
+    <section class="bg-[hsl(var(--emerald))] text-white">
+      <div class="max-w-6xl mx-auto px-4 md:px-6 pb-6 lg:pb-14">
+        <div class="flex items-center justify-between h-14">
+          <span class="text-xl font-bold tracking-tight">BuildHire</span>
+          <a href="tel:1300157882" class="font-semibold text-base underline underline-offset-4">1300 157 882</a>
+        </div>
+        <div class="grid gap-x-12 lg:grid-cols-2 lg:pt-6">
+          <img
+            src="/assets/hire-now/yanmar-17t-clean.webp"
+            alt="A clean 1.7T Yanmar mini excavator from Build Hire parked outside a brick house"
+            width="1080"
+            height="750"
+            fetchpriority="high"
+            class="w-full h-40 sm:h-56 lg:h-auto object-cover object-[50%_72%] rounded-xl lg:col-start-1 lg:row-start-2 lg:mt-6"
+          />
+          <div class="mt-3 lg:mt-0 lg:col-start-1 lg:row-start-1">
+            <h1 class="text-[1.65rem] leading-[1.15] md:text-5xl font-bold">Get the excavator on site tomorrow and keep the job moving.</h1>
+            <p class="text-[15px] leading-snug md:text-lg mt-2 md:mt-4 text-white/90">1.7T, 3.5T and 5.5T Yanmar mini excavators from our Arncliffe yard, with buckets and ripper included and a full 7 day hire week. Book before 12pm for next-day delivery across Sydney.</p>
+          </div>
+          <div id="form" class="mt-4 lg:mt-0 lg:col-start-2 lg:row-start-1 lg:row-span-2 scroll-mt-4">
+            <HireNowForm client:load />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10 md:py-16 px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <ul class="grid gap-3 sm:grid-cols-2">
+          {reasons.map((reason) => (
+            <li class="bg-card rounded-xl border border-secondary px-4 py-3 font-medium">{reason}</li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section class="pb-10 md:pb-16 px-4 md:px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl md:text-4xl font-bold mb-5">Your trusted partner</h2>
+        <div class="columns-1 md:columns-2 gap-4">
+          {shownFirst.map((r) => (
+            <img src={reviewSrc(r.file)} alt={`Screenshot of a five star Google review from ${r.name}`} width={r.w} height={r.h} loading="lazy" class="w-full h-auto rounded-xl border border-secondary bg-white mb-4 break-inside-avoid" />
+          ))}
+        </div>
+        <details class="group">
+          <summary class="cursor-pointer list-none text-center rounded-xl border border-[hsl(var(--emerald))] text-[hsl(var(--emerald))] font-semibold py-3 group-open:hidden">Show all 13 reviews</summary>
+          <div class="columns-1 md:columns-2 gap-4">
+            {shownOnTap.map((r) => (
+              <img src={reviewSrc(r.file)} alt={`Screenshot of a five star Google review from ${r.name}`} width={r.w} height={r.h} loading="lazy" class="w-full h-auto rounded-xl border border-secondary bg-white mb-4 break-inside-avoid" />
+            ))}
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="pb-10 md:pb-16 px-4 md:px-6">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-4xl font-bold mb-5">Common questions</h2>
+        <div class="divide-y divide-secondary border-y border-secondary">
+          {faqs.map((item) => (
+            <details class="group py-3">
+              <summary class="cursor-pointer list-none font-semibold flex justify-between gap-4">
+                {item.q}
+                <span class="text-[hsl(var(--emerald))] group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
+              </summary>
+              <p class="mt-2 text-muted-foreground">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[hsl(var(--emerald))] text-white text-center py-10 px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Need a machine on site tomorrow?</h2>
+      <div class="mt-5 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#form" class="bg-primary text-black font-bold rounded-xl px-8 py-3">Check dates</a>
+        <a href="tel:1300157882" class="border border-white/60 font-bold rounded-xl px-8 py-3">Call 1300 157 882</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-muted-foreground py-6 px-4">
+    Build Hire Pty Ltd, ABN 88 690 624 429, 178 Princes Hwy, Arncliffe NSW 2205.
+    <a href="/privacy/" target="_blank" rel="noopener" class="underline">Privacy policy</a>
+  </footer>
+</Layout>
