@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import HireNowForm from '../components/HireNowForm';
+import { equipmentData } from '../components/BookingCalculator';
 
 // Real Google review screenshots, captured from Build Hire's Google listing on 10 Nov 2026.
 // Files are numbered in Google's order. The list below is display order.
@@ -19,30 +20,37 @@ const reviews = [
   { file: 2, name: 'Rosa scioscia', w: 720, h: 815 },
   { file: 8, name: 'Zander Elmowy', w: 720, h: 560 },
 ];
-const shownFirst = reviews.slice(0, 4);
-const shownOnTap = reviews.slice(4);
 const reviewSrc = (file: number) => `/assets/hire-now/reviews/review-${String(file).padStart(2, '0')}.webp`;
 
 const reasons = [
   'All 7 days on a weekly hire, weekend included',
   'Mud bucket, GP bucket and ripper included',
   'Clean, well kept machines: 7 of our 13 Google reviews praise their condition',
-  'Bookings go straight to Will, the owner',
+  'Bookings go straight to Build Hire on WhatsApp',
 ];
 
+// Day and week rates come from the same data as the main booking calculator,
+// so this page always matches the equipment pages. GST included.
+const priceRows = ['1.7T', '3.5T', '5.5T'].map((size) => {
+  const m = equipmentData.Excavators.find((e) => e.name.startsWith(size + ' '));
+  if (!m || !m.weeklyRate) throw new Error(`No rate for ${size}`);
+  return { size, day: m.rate, week: m.weeklyRate };
+});
+const money = (n: number) => `$${n.toLocaleString('en-AU')}`;
+
 const faqs = [
-  { q: 'How fast can I get a machine?', a: 'Book before 12pm and it can be on your Sydney site the next day. That goes for the 1.7T, 3.5T and 5.5T. Will confirms availability when you book.' },
+  { q: 'How fast can I get a machine?', a: 'Book before 12pm and it can be on your Sydney site the next day. That goes for the 1.7T, 3.5T and 5.5T. We confirm availability when you book.' },
   { q: 'What comes with the machine?', a: 'A mud bucket, GP bucket and ripper come with every 1.7T, 3.5T and 5.5T.' },
   { q: 'How long is a hire week?', a: '7 days, weekend included.' },
   { q: 'Can I hire by the day?', a: 'Yes, by the day or by the week. We do not do monthly or contract rates.' },
-  { q: 'Which size do I need?', a: 'The 1.7T tracks pull in to about 950 mm, so it gets through most standard side gates. The 3.5T is about 1,740 mm wide and the 5.5T is about 1,990 mm wide. Not sure? Pick "Not sure" on the form and Will can help you choose.' },
+  { q: 'Which size do I need?', a: 'The 1.7T tracks pull in to about 950 mm, so it gets through most standard side gates. The 3.5T is about 1,740 mm wide and the 5.5T is about 1,990 mm wide. Not sure? Pick "Not sure" on the form and we will help you choose.' },
   { q: 'Do you supply an operator?', a: 'No, we only do dry hire. You or your crew run the machine.' },
   { q: 'Who do you hire to?', a: 'Builders, landscapers, contractors and owner-builders.' },
   { q: 'Where do you deliver?', a: 'Across Sydney from our Arncliffe yard, plus Wollongong and the Blue Mountains.' },
   { q: 'How much is delivery?', a: 'We quote it when you book, because it depends on your site and the machine.' },
-  { q: 'Can I pick it up myself?', a: 'You can collect the 1.7T from our Arncliffe yard on a plant trailer we hire out. For the 3.5T and 5.5T, ask Will.' },
-  { q: 'Who will I deal with?', a: 'Will, the owner. Bookings go straight to him on WhatsApp.' },
-  { q: 'How do I book?', a: 'Answer the 3 questions at the top of this page, add your details and press send in WhatsApp. Will then confirms your dates and delivery.' },
+  { q: 'Can I pick it up myself?', a: 'You can collect the 1.7T from our Arncliffe yard on a plant trailer we hire out. For the 3.5T and 5.5T, ask us.' },
+  { q: 'Who will I deal with?', a: 'Build Hire. Bookings come straight to us on WhatsApp.' },
+  { q: 'How do I book?', a: 'Answer the 3 questions at the top of this page, add your details and press send in WhatsApp. We then confirm your dates and delivery.' },
   { q: 'Is GST included?', a: 'Yes, our hire rates include GST.' },
   { q: 'Can I add attachments?', a: 'Yes. Ask about a rock breaker, auger drive or sieve bucket, or a rock grab on the 3.5T and 5.5T.' },
   { q: 'What hours are you open?', a: '5am to 8pm, 7 days.' },
@@ -73,6 +81,16 @@ const faqs = [
           <div class="mt-3 lg:mt-0 lg:col-start-1 lg:row-start-1">
             <h1 class="text-[1.65rem] leading-[1.15] md:text-5xl font-bold">Get the excavator on site tomorrow and keep the job moving.</h1>
             <p class="text-[15px] leading-snug md:text-lg mt-2 md:mt-4 text-white/90">1.7T, 3.5T and 5.5T Yanmar mini excavators from our Arncliffe yard, with buckets and ripper included and a full 7 day hire week. Book before 12pm for next-day delivery across Sydney.</p>
+            <ul class="mt-3 md:mt-5 grid grid-cols-3 gap-2" aria-label="Hire rates, GST included">
+              {priceRows.map((p) => (
+                <li class="rounded-lg bg-white/10 border border-white/25 px-2 py-2 md:px-3 md:py-3">
+                  <span class="block font-bold text-base md:text-xl">{p.size}</span>
+                  <span class="block text-sm md:text-base">{money(p.day)} a day</span>
+                  <span class="block text-sm md:text-base">{money(p.week)} a week</span>
+                </li>
+              ))}
+            </ul>
+            <p class="text-xs md:text-sm mt-2 text-white/80">GST included. A hire week is 7 days. Delivery quoted when you book.</p>
           </div>
           <div id="form" class="mt-4 lg:mt-0 lg:col-start-2 lg:row-start-1 lg:row-span-2 scroll-mt-4">
             <HireNowForm client:load />
@@ -95,18 +113,10 @@ const faqs = [
       <div class="max-w-5xl mx-auto">
         <h2 class="text-2xl md:text-4xl font-bold mb-5">Your trusted partner</h2>
         <div class="columns-1 md:columns-2 gap-4">
-          {shownFirst.map((r) => (
+          {reviews.map((r) => (
             <img src={reviewSrc(r.file)} alt={`Screenshot of a five star Google review from ${r.name}`} width={r.w} height={r.h} loading="lazy" class="w-full h-auto rounded-xl border border-secondary bg-white mb-4 break-inside-avoid" />
           ))}
         </div>
-        <details class="group">
-          <summary class="cursor-pointer list-none text-center rounded-xl border border-[hsl(var(--emerald))] text-[hsl(var(--emerald))] font-semibold py-3 group-open:hidden">Show all 13 reviews</summary>
-          <div class="columns-1 md:columns-2 gap-4">
-            {shownOnTap.map((r) => (
-              <img src={reviewSrc(r.file)} alt={`Screenshot of a five star Google review from ${r.name}`} width={r.w} height={r.h} loading="lazy" class="w-full h-auto rounded-xl border border-secondary bg-white mb-4 break-inside-avoid" />
-            ))}
-          </div>
-        </details>
       </div>
     </section>
 
@@ -115,13 +125,10 @@ const faqs = [
         <h2 class="text-2xl md:text-4xl font-bold mb-5">Common questions</h2>
         <div class="divide-y divide-secondary border-y border-secondary">
           {faqs.map((item) => (
-            <details class="group py-3">
-              <summary class="cursor-pointer list-none font-semibold flex justify-between gap-4">
-                {item.q}
-                <span class="text-[hsl(var(--emerald))] group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
-              </summary>
-              <p class="mt-2 text-muted-foreground">{item.a}</p>
-            </details>
+            <div class="py-4">
+              <h3 class="font-semibold text-lg">{item.q}</h3>
+              <p class="mt-1 text-muted-foreground">{item.a}</p>
+            </div>
           ))}
         </div>
       </div>

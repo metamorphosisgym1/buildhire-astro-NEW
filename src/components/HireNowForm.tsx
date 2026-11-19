@@ -41,7 +41,7 @@ const isAustralianMobile = (value: string) => /^(?:\+?61|0)4\d{8}$/.test(value.r
 function buildWhatsAppUrl(answers: Record<AnswerKey, string>, name: string, phone: string, email: string) {
   const params = new URLSearchParams(window.location.search);
   const lines = [
-    "Hi Will, I'd like to hire a machine:",
+    "Hi Build Hire, I'd like to hire a machine:",
     "",
     `Machine: ${answers.machine}`,
     `How long: ${answers.length}`,
@@ -59,7 +59,7 @@ function buildWhatsAppUrl(answers: Record<AnswerKey, string>, name: string, phon
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
 }
 
-// Copy of the booking for GoHighLevel, so Will gets it even if WhatsApp is never sent.
+// Copy of the booking for GoHighLevel, so Build Hire gets it even if WhatsApp is never sent.
 // Fire and forget: keepalive lets it finish after WhatsApp opens; a failure never blocks the customer.
 function sendLeadToCrm(answers: Record<AnswerKey, string>, name: string, phone: string, email: string) {
   const params = new URLSearchParams(window.location.search);
@@ -175,7 +175,7 @@ export default function HireNowForm() {
 
       {step === CONTACT_STEP && (
         <form onSubmit={handleSubmit}>
-          <h2 className="text-xl font-bold mb-3 leading-snug">Where should Will reply?</h2>
+          <h2 className="text-xl font-bold mb-3 leading-snug">Where should we reply?</h2>
           <div className="space-y-3">
             <div>
               <label htmlFor="hn-name" className="text-sm font-medium mb-1 block">Full name</label>
@@ -210,7 +210,7 @@ export default function HireNowForm() {
             </div>
           </div>
           <button type="submit" className="mt-4 w-full h-14 rounded-xl bg-[hsl(var(--emerald))] text-white font-bold text-lg">
-            Send to Will
+            Send to Build Hire
           </button>
           <p className="text-xs text-muted-foreground mt-2 text-center">
             Opens WhatsApp with your details ready to send.{" "}
@@ -232,7 +232,7 @@ export default function HireNowForm() {
           </span>
           <h2 className="text-xl font-bold mb-2 leading-snug">Thanks {name.trim().split(/\s+/)[0]}. Last step: press send in WhatsApp.</h2>
           <p className="text-base mb-4">
-            Your details are in the message. Add your dates and delivery suburb, press send, and it goes straight to Will.
+            Your details are in the message. Add your dates and delivery suburb, press send, and it comes straight to us.
           </p>
           <a
             href={whatsAppUrl}
@@ -244,7 +244,7 @@ export default function HireNowForm() {
           </a>
           {rate && (
             <p className="text-sm mt-4">
-              Your {answers.machine.split(" ")[0]} hire: ${rate.rate} a day or ${rate.weeklyRate?.toLocaleString("en-AU")} for a 7 day week, including GST. Will quotes delivery when you book.
+              Your {answers.machine.split(" ")[0]} hire: ${rate.rate} a day or ${rate.weeklyRate?.toLocaleString("en-AU")} for a 7 day week, including GST. We quote delivery when you book.
             </p>
           )}
           <p className="text-sm mt-3">
