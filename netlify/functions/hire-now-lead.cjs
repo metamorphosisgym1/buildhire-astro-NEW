@@ -10,35 +10,17 @@ const WEBHOOK_URL =
 const clean = (value, max = 200) => String(value ?? "").trim().slice(0, max);
 
 // If GHL does not take a lead, email it to Build Hire so it can never vanish silently.
-// Same Resend sender and inbox as the paid booking emails; the key comes from env RESEND_API_KEY.
+// Sent by the Cloudflare Worker buildhire-lead-alert (code in cloudflare/lead-alert/), which can
+// only email info@buildhire.com.au, so no key is needed here.
+const ALERT_URL =
+  process.env.LEAD_ALERT_URL || "https://buildhire-lead-alert.khansayeem03.workers.dev";
+
 async function alertLeadNotInCrm(payload, reason) {
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    console.error("Lead alert not sent: RESEND_API_KEY is not set", reason);
-    return;
-  }
   try {
-    const response = await fetch("https://api.resend.com/emails", {
+    const response = await fetch(ALERT_URL, {
       method: "POST",
-      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        from: "bookings@buildhire.com.au",
-        to: ["info@buildhire.com.au"],
-        subject: `Hire Now lead NOT in GHL: call ${payload.name || "this customer"} now`,
-        text: [
-          "A /hire-now/ lead did not reach GHL, so no text went to your phone. Call them now.",
-          "",
-          `Name: ${payload.name}`,
-          `Mobile: ${payload.phone}`,
-          `Email: ${payload.email || "not given"}`,
-          `Machine: ${payload.machine}`,
-          `How long: ${payload.hire_length}`,
-          `Customer: ${payload.customer_type}`,
-          `Ad: ${payload.utm_content || "not_set"} / ${payload.utm_campaign || "not_set"}`,
-          "",
-          `Why: ${reason}`,
-        ].join("\n"),
-      }),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ...payload, reason }),
       signal: AbortSignal.timeout(8000),
     });
     if (!response.ok) console.error("Lead alert email failed", response.status);

@@ -1,0 +1,17 @@
+{
+  // Deploy: npx wrangler deploy (from this folder, Murphy's Cloudflare account)
+  "name": "buildhire-lead-alert",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-01",
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "destination_address": "info@buildhire.com.au",
+      "allowed_sender_addresses": ["alerts@presciaiq.com"]
+    }
+  ],
+  "ratelimits": [
+    { "name": "LIMIT", "namespace_id": "4101", "simple": { "limit": 10, "period": 60 } }
+  ],
+  "observability": { "enabled": true }
+}
