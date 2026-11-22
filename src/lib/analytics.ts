@@ -4,7 +4,8 @@ type EventParams = Record<string, EventValue>;
 declare global {
   interface Window {
     gtag?: (command: "event", eventName: string, params?: Record<string, EventValue>) => void;
-    fbq?: (command: "track", eventName: string, params?: Record<string, EventValue>) => void;
+    fbq?: (command: "track", eventName: string, params?: Record<string, EventValue>, options?: { eventID?: string }) => void;
+    bhEventId?: () => string;
   }
 }
 
@@ -12,15 +13,21 @@ declare global {
  * Sends non-identifying conversion context to GA4 when the tag is available.
  * Customer names, phone numbers, dates and free-text messages must never be passed here.
  */
-export function trackBuildHireEvent(eventName: string, params: EventParams = {}) {
+export function trackBuildHireEvent(eventName: string, params: EventParams = {}, metaEventId?: string) {
   if (typeof window === "undefined") return;
 
-  // Meta Pixel: a booking sent to WhatsApp counts as a Lead. Machine and category only.
+  // Meta Pixel: a sent booking counts as a Lead. Machine and category only.
+  // The event ID lets Meta match this browser Lead with its server copy and count it once.
   if (eventName === "generate_lead" && typeof window.fbq === "function") {
-    window.fbq("track", "Lead", {
-      content_category: params.equipment_category,
-      content_name: params.equipment_name,
-    });
+    window.fbq(
+      "track",
+      "Lead",
+      {
+        content_category: params.equipment_category,
+        content_name: params.equipment_name,
+      },
+      metaEventId ? { eventID: metaEventId } : undefined
+    );
   }
 
   if (typeof window.gtag !== "function") return;
