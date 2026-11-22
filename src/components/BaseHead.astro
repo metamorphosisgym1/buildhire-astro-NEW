@@ -229,7 +229,11 @@ const webPageSchema = {
   t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
   document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '885744557677432');
-  fbq('track', 'PageView');
+  // Event ID so Meta can match this browser event with its server copy and count it once.
+  window.bhEventId = function () {
+    return (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : Date.now() + '-' + Math.random().toString(36).slice(2);
+  };
+  fbq('track', 'PageView', {}, { eventID: window.bhEventId() });
   }
 </script>
 <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=885744557677432&ev=PageView&noscript=1" /></noscript>
@@ -242,7 +246,7 @@ const webPageSchema = {
 
     const href = link.getAttribute('href') || '';
     if (href.startsWith('tel:')) {
-      window.fbq?.('track', 'Contact', { content_category: 'phone' });
+      window.fbq?.('track', 'Contact', { content_category: 'phone' }, { eventID: window.bhEventId?.() });
       window.gtag?.('event', 'click_to_call', {
         contact_channel: 'phone',
         page_path: window.location.pathname,
@@ -250,7 +254,7 @@ const webPageSchema = {
     }
 
     if (href.includes('wa.me')) {
-      window.fbq?.('track', 'Contact', { content_category: 'whatsapp' });
+      window.fbq?.('track', 'Contact', { content_category: 'whatsapp' }, { eventID: window.bhEventId?.() });
       window.gtag?.('event', 'whatsapp_contact_click', {
         contact_channel: 'whatsapp',
         page_path: window.location.pathname,

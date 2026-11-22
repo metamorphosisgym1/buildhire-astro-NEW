@@ -49,7 +49,7 @@ function buildWhatsAppUrl(answers: Record<AnswerKey, string>, name: string, phon
     "",
     `Name: ${name}`,
     `Mobile: ${phone}`,
-    `Email: ${email}`,
+    ...(email ? [`Email: ${email}`] : []),
     "",
     `Ad: ${params.get("utm_content") || "not_set"} / ${params.get("utm_campaign") || "not_set"}`,
     `Landing Page: ${window.location.pathname}`,
@@ -59,9 +59,9 @@ function buildWhatsAppUrl(answers: Record<AnswerKey, string>, name: string, phon
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
 }
 
-// Copy of the booking for GoHighLevel, so Build Hire gets it even if WhatsApp is never sent.
-// Fire and forget: keepalive lets it finish after WhatsApp opens; a failure never blocks the customer.
-function sendLeadToCrm(answers: Record<AnswerKey, string>, name: string, phone: string, email: string) {
+// Sends the booking to GoHighLevel. The page no longer opens WhatsApp, so the call has time to finish.
+// eventId is the same ID as the browser Meta Lead, so a server copy can be matched to it.
+function sendLeadToCrm(answers: Record<AnswerKey, string>, name: string, phone: string, email: string, eventId: string) {
   const params = new URLSearchParams(window.location.search);
   try {
     fetch("/.netlify/functions/hire-now-lead", {
@@ -78,10 +78,11 @@ function sendLeadToCrm(answers: Record<AnswerKey, string>, name: string, phone: 
         utm_campaign: params.get("utm_campaign") || "",
         utm_content: params.get("utm_content") || "",
         page_url: window.location.href,
+        event_id: eventId,
       }),
     }).catch(() => {});
   } catch {
-    // Never let the CRM copy stop WhatsApp opening.
+    // Never let the CRM call stop the thank-you message showing.
   }
 }
 
@@ -114,25 +115,23 @@ export default function HireNowForm() {
     if (leadSent.current) return;
     leadSent.current = true;
 
-    trackBuildHireEvent("generate_lead", {
-      lead_channel: "whatsapp",
-      equipment_category: "Excavators",
-      equipment_name: answers.machine,
-      customer_type: answers.who,
-      hire_length: answers.length,
-      booking_form: "hire_now",
-    });
-    trackBuildHireEvent("whatsapp_booking_start", {
-      equipment_category: "Excavators",
-      equipment_name: answers.machine,
-      booking_form: "hire_now",
-    });
+    const eventId = window.bhEventId?.() ?? `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    trackBuildHireEvent(
+      "generate_lead",
+      {
+        lead_channel: "form",
+        equipment_category: "Excavators",
+        equipment_name: answers.machine,
+        customer_type: answers.who,
+        hire_length: answers.length,
+        booking_form: "hire_now",
+      },
+      eventId
+    );
 
-    sendLeadToCrm(answers, name.trim(), phone.trim(), email.trim());
-    const url = buildWhatsAppUrl(answers, name.trim(), phone.trim(), email.trim());
-    setWhatsAppUrl(url);
+    sendLeadToCrm(answers, name.trim(), phone.trim(), email.trim(), eventId);
+    setWhatsAppUrl(buildWhatsAppUrl(answers, name.trim(), phone.trim(), email.trim()));
     setStep(THANKS_STEP);
-    window.open(url, "_blank");
   };
 
   const question = QUESTIONS[step];
@@ -205,15 +204,15 @@ export default function HireNowForm() {
               )}
             </div>
             <div>
-              <label htmlFor="hn-email" className="text-sm font-medium mb-1 block">Email</label>
-              <input id="hn-email" name="email" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} className={inputClass} />
+              <label htmlFor="hn-email" className="text-sm font-medium mb-1 block">Email (optional)</label>
+              <input id="hn-email" name="email" type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} className={inputClass} />
             </div>
           </div>
           <button type="submit" className="mt-4 w-full h-14 rounded-xl bg-[hsl(var(--emerald))] text-white font-bold text-lg">
             Send to Build Hire
           </button>
           <p className="text-xs text-muted-foreground mt-2 text-center">
-            Opens WhatsApp with your details ready to send.{" "}
+            By sending, you're OK with Build Hire calling and texting you about your hire and machine availability.{" "}
             <a href="/privacy/" target="_blank" rel="noopener" className="underline">Privacy policy</a>
           </p>
         </form>
@@ -230,17 +229,21 @@ export default function HireNowForm() {
           <span className="w-11 h-11 rounded-full bg-[hsl(var(--emerald))] text-white flex items-center justify-center mb-3">
             <Check size={24} aria-hidden="true" />
           </span>
-          <h2 className="text-xl font-bold mb-2 leading-snug">Thanks {name.trim().split(/\s+/)[0]}. Last step: press send in WhatsApp.</h2>
-          <p className="text-base mb-4">
-            Your details are in the message. Add your dates and delivery suburb, press send, and it comes straight to us.
-          </p>
+          <h2 className="text-xl font-bold mb-4 leading-snug">Got it. We'll call you within 10 minutes.</h2>
           <a
             href={whatsAppUrl}
             target="_blank"
             rel="noopener"
+            onClick={() =>
+              trackBuildHireEvent("whatsapp_booking_start", {
+                equipment_category: "Excavators",
+                equipment_name: answers.machine,
+                booking_form: "hire_now",
+              })
+            }
             className="flex items-center justify-center w-full h-14 rounded-xl bg-[#25D366] text-white font-bold text-lg"
           >
-            Open WhatsApp again
+            Prefer WhatsApp? Message us
           </a>
           {rate && (
             <p className="text-sm mt-4">

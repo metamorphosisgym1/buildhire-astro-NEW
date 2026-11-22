@@ -9,6 +9,44 @@ const WEBHOOK_URL =
 
 const clean = (value, max = 200) => String(value ?? "").trim().slice(0, max);
 
+// If GHL does not take a lead, email it to Build Hire so it can never vanish silently.
+// Same Resend sender and inbox as the paid booking emails; the key comes from env RESEND_API_KEY.
+async function alertLeadNotInCrm(payload, reason) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.error("Lead alert not sent: RESEND_API_KEY is not set", reason);
+    return;
+  }
+  try {
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        from: "bookings@buildhire.com.au",
+        to: ["info@buildhire.com.au"],
+        subject: `Hire Now lead NOT in GHL: call ${payload.name || "this customer"} now`,
+        text: [
+          "A /hire-now/ lead did not reach GHL, so no text went to your phone. Call them now.",
+          "",
+          `Name: ${payload.name}`,
+          `Mobile: ${payload.phone}`,
+          `Email: ${payload.email || "not given"}`,
+          `Machine: ${payload.machine}`,
+          `How long: ${payload.hire_length}`,
+          `Customer: ${payload.customer_type}`,
+          `Ad: ${payload.utm_content || "not_set"} / ${payload.utm_campaign || "not_set"}`,
+          "",
+          `Why: ${reason}`,
+        ].join("\n"),
+      }),
+      signal: AbortSignal.timeout(8000),
+    });
+    if (!response.ok) console.error("Lead alert email failed", response.status);
+  } catch (error) {
+    console.error("Lead alert email error", error);
+  }
+}
+
 exports.handler = async function (event) {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method not allowed" };
@@ -45,6 +83,7 @@ exports.handler = async function (event) {
     utm_campaign: clean(input.utm_campaign, 150),
     utm_content: clean(input.utm_content, 150),
     page_url: clean(input.page_url, 500),
+    event_id: clean(input.event_id, 100),
   };
 
   try {
@@ -56,10 +95,12 @@ exports.handler = async function (event) {
     });
     if (!response.ok) {
       console.error("GHL webhook failed", response.status);
+      await alertLeadNotInCrm(payload, `GHL answered ${response.status}`);
       return { statusCode: 502, body: "CRM error" };
     }
   } catch (error) {
     console.error("GHL webhook error", error);
+    await alertLeadNotInCrm(payload, `GHL did not answer (${error && error.name ? error.name : "error"})`);
     return { statusCode: 502, body: "CRM error" };
   }
 
