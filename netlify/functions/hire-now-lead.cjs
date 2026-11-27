@@ -1,5 +1,5 @@
 // Sends each /hire-now/ booking to GoHighLevel, so Will gets it even when the
-// customer never presses send in WhatsApp. The GHL inbound webhook starts the
+// customer never calls. Both the /hire-now/ form and the booking calculator use it. The GHL webhook starts the
 // workflow "HN-01 Hire Now page lead: text Will" (contact, tag hire-now-lead, SMS to Will).
 // Murphy chose (10 Nov 2026) to keep the URL here rather than wait for Netlify access.
 // If it is ever abused: make a new webhook in GHL HN-01 and set it in env GHL_HIRE_NOW_WEBHOOK_URL.
@@ -69,8 +69,19 @@ exports.handler = async function (event) {
   // GHL matches and texts contacts by E.164, so 0412 345 678 becomes +61412345678.
   const phone = "+61" + digits.slice(-9);
 
+  // source stays the same for every form so HN-01 treats all website bookings alike;
+  // form says which one it came from (hire_now or booking_calculator).
   const payload = {
     source: "Meta ads /hire-now/",
+    form: clean(input.form, 30) || "hire_now",
+    start_date: clean(input.start_date, 20),
+    end_date: clean(input.end_date, 20),
+    suburb: clean(input.suburb, 100),
+    job_type: clean(input.job_type, 100),
+    site_access: clean(input.site_access, 100),
+    found_us: clean(input.found_us, 200),
+    estimate: clean(input.estimate, 100),
+    gclid: clean(input.gclid, 200),
     name: clean(input.name, 100),
     phone,
     email: clean(input.email, 150),

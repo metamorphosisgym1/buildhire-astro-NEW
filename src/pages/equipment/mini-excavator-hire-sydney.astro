@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import ChatWidget from '../../components/ChatWidget';
 import StickyBottomBar from '../../components/StickyBottomBar';
 
 const serviceSchema = {
@@ -110,8 +109,8 @@ const faqSchema = {
             <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">
               Get Instant Pricing →
             </a>
-            <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">
-              WhatsApp for a Quote
+            <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">
+              Call 1300 157 882
             </a>
           </div>
         </div>
@@ -250,7 +249,6 @@ const faqSchema = {
     </section>
 
     <Footer client:visible />
-    <ChatWidget client:load />
     <StickyBottomBar client:load />
   </div>
 </Layout>

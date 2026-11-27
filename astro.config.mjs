@@ -69,7 +69,9 @@ function deliveryCopyGuard() {
         const files = await htmlFiles(fileURLToPath(dir));
         for (const file of files) {
           // The ads landing page carries Will's confirmed next-day wording (27 Oct and 9 Nov 2026).
-          if (file.replace(/\\/g, '/').endsWith('/hire-now/index.html')) continue;
+          // The /book/ machine pages carry the same confirmed wording (1.7T, 3.5T, 5.5T only).
+          const unixPath = file.replace(/\\/g, '/');
+          if (unixPath.endsWith('/hire-now/index.html') || unixPath.includes('/book/')) continue;
           const html = await readFile(file, 'utf8');
           // Phrase swaps are safe anywhere. The sentence rewrites only run on
           // visible body text, never on <head> (titles, meta) or <script>
@@ -111,6 +113,7 @@ export default defineConfig({
 
         // The noindex ads landing page stays out of the sitemap
         if (page.includes('/hire-now/')) return false;
+        if (page.includes('/book/')) return false;
 
         // Noindex category pages stay out of the sitemap
         if (page.includes('/category/')) return false;

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Check, Wrench, Cog } from "lucide-react";
 import { trackBuildHireEvent } from "../lib/analytics";
+import { isAustralianMobile, newEventId, sendLead } from "../lib/sendLead";
 
 // Custom SVG icon components
 const ExcavatorIcon = ({ size = 28, className = "" }: { size?: number; className?: string }) => (
@@ -44,8 +45,6 @@ const rockBreakerImg = "/assets/rock-breaker-buildhire.webp";
 const sieveBucketImg = "/assets/sieve-bucket-tiger.png";
 const augerImg = "/assets/auger-drive.jpg";
 const rockGrabImg = "/assets/rock-grab.webp";
-
-export const WHATSAPP_NUMBER = "61435421324";
 
 const categoryIcons: Record<string, React.ComponentType<any>> = {
   Excavators: ExcavatorIcon,
@@ -148,6 +147,8 @@ export default function BookingCalculator() {
   const [phone, setPhone] = useState("");
   const [foundUs, setFoundUs] = useState("");
   const [aiAsked, setAiAsked] = useState("");
+  const [phoneError, setPhoneError] = useState(false);
+  const [sent, setSent] = useState(false);
 
   useEffect(() => {
     trackBuildHireEvent("booking_step_view", {
@@ -181,52 +182,47 @@ export default function BookingCalculator() {
       ? weeks * weeklyRate + remainingDays * (selectedMachine?.rate ?? 0)
       : (selectedMachine?.rate ?? 0) * days;
 
-  const buildWhatsAppMessage = () => {
-    const searchParams = new URLSearchParams(window.location.search);
-    const source = searchParams.get("utm_source") || "website";
-    const medium = searchParams.get("utm_medium") || "organic_or_direct";
-    const lines = [
-      "Hi Buildhire! I'd like to book the following:",
-      "",
-      `Equipment: ${machine}`,
-      `Start Date: ${formatDate(startDate)}`,
-      `End Date: ${formatDate(endDate)}`,
-      `Duration: ${days} day${days !== 1 ? "s" : ""}`,
-      `Estimated Hire Cost: $${effectiveEquipmentCost.toLocaleString()} (excl. delivery)`,
-      `Delivery Suburb: ${suburb}`,
-      `Delivery: Price on request`,
-      `Job Type: ${jobType || "Not provided"}`,
-      `Site Access: ${siteAccess || "Not provided"}`,
-      "",
-      `Name: ${name}`,
-      `Phone: ${phone}`,
-      "",
-      `Found us via: ${foundUs || "Not provided"}${aiAsked ? ` (asked: ${aiAsked})` : ""}`,
-      `Lead Source: ${source} / ${medium}`,
-      `Landing Page: ${window.location.pathname}`,
-    ];
-    return encodeURIComponent(lines.join("\n"));
-  };
-
-  const handleBookViaWhatsApp = () => {
-    trackBuildHireEvent("generate_lead", {
-      lead_channel: "whatsapp",
-      equipment_category: category,
-      equipment_name: machine,
-      hire_days: days,
-      delivery_suburb_provided: Boolean(suburb),
-      job_type: jobType || "not_provided",
-      site_access: siteAccess || "not_provided",
-      found_us: foundUs || "not_provided",
-    });
-    trackBuildHireEvent("whatsapp_booking_start", {
-      equipment_category: category,
-      equipment_name: machine,
-      hire_days: days,
-      job_type: jobType || "not_provided",
-    });
-    const msg = buildWhatsAppMessage();
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, "_blank");
+  // Sends the booking to GHL through the same route as the /hire-now/ form (WhatsApp retired 28 Nov 2026).
+  const handleSendBooking = () => {
+    if (!isAustralianMobile(phone)) {
+      setPhoneError(true);
+      return;
+    }
+    if (sent) return;
+    setSent(true);
+    const eventId = newEventId();
+    trackBuildHireEvent(
+      "generate_lead",
+      {
+        lead_channel: "form",
+        booking_form: "booking_calculator",
+        equipment_category: category,
+        equipment_name: machine,
+        hire_days: days,
+        delivery_suburb_provided: Boolean(suburb),
+        job_type: jobType || "not_provided",
+        site_access: siteAccess || "not_provided",
+        found_us: foundUs || "not_provided",
+      },
+      eventId
+    );
+    sendLead(
+      {
+        form: "booking_calculator",
+        name: name.trim(),
+        phone: phone.trim(),
+        machine,
+        length: `${days} day${days !== 1 ? "s" : ""}, ${formatDate(startDate)} to ${formatDate(endDate)}, ${suburb}`,
+        start_date: startDate,
+        end_date: endDate,
+        suburb,
+        job_type: jobType,
+        site_access: siteAccess,
+        found_us: aiAsked ? `${foundUs} (asked: ${aiAsked})` : foundUs,
+        estimate: `$${effectiveEquipmentCost.toLocaleString()} incl GST, delivery extra`,
+      },
+      eventId
+    );
   };
 
   return (
@@ -239,7 +235,7 @@ export default function BookingCalculator() {
           Instant Quote & Booking
         </h2>
         <p className="text-white/60 text-center text-sm mb-8 md:mb-12 max-w-xl mx-auto">
-          Book your equipment hire in seconds — confirm via WhatsApp.
+          Pick a machine and dates, and we'll call you to confirm.
         </p>
 
         {/* Progress bar */}
@@ -494,8 +490,8 @@ export default function BookingCalculator() {
             </div>
           )}
 
-          {/* ── Step 3: Name, phone & WhatsApp CTA ── */}
-          {step === 3 && (
+          {/* ── Step 3: Name, phone, send to Build Hire ── */}
+          {step === 3 && !sent && (
             <div className="animate-fade-in-up">
               <h3 className="text-xl font-bold text-foreground mb-6">Your Details</h3>
 
@@ -543,10 +539,19 @@ export default function BookingCalculator() {
                   <input
                     type="tel"
                     value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
+                    onChange={(e) => {
+                      setPhone(e.target.value);
+                      setPhoneError(false);
+                    }}
+                    aria-invalid={phoneError}
                     placeholder="e.g. 0412 345 678"
                     className="w-full bg-card border border-secondary rounded-lg px-4 py-3 text-sm text-foreground focus:border-primary focus:outline-none transition-colors placeholder:text-muted-foreground/50"
                   />
+                  {phoneError && (
+                    <p role="alert" className="text-sm text-destructive mt-1">
+                      Please enter an Australian mobile, for example 0412 345 678.
+                    </p>
+                  )}
                 </div>
                 <div>
                   <label htmlFor="found-us" className="label-text text-xs text-muted-foreground mb-2 block">How did you find us? (optional)</label>
@@ -589,20 +594,31 @@ export default function BookingCalculator() {
                   Back
                 </button>
                 <button
-                  onClick={handleBookViaWhatsApp}
+                  onClick={handleSendBooking}
                   disabled={!name || !phone}
-                  className="flex-1 flex items-center justify-center gap-3 bg-[#25D366] text-white h-12 md:h-14 rounded-md font-semibold text-base md:text-lg hover:scale-[1.02] hover:bg-[#1ebe5d] transition-all disabled:opacity-40 disabled:hover:scale-100"
+                  className="flex-1 bg-primary text-primary-foreground h-12 md:h-14 rounded-md font-semibold text-base md:text-lg hover:scale-[1.02] transition-transform disabled:opacity-40 disabled:hover:scale-100"
                 >
-                  {/* WhatsApp icon */}
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                  </svg>
-                  Book via WhatsApp
+                  Check Dates and Book
                 </button>
               </div>
 
               <p className="text-xs text-muted-foreground mt-4 text-center">
-                Tapping "Book via WhatsApp" will open WhatsApp with your booking details pre-filled. Our team will confirm availability and pricing.
+                By sending, you're OK with Build Hire calling and texting you about your hire and machine availability.{" "}
+                <a href="/privacy/" target="_blank" rel="noopener" className="underline">Privacy policy</a>
+              </p>
+            </div>
+          )}
+
+          {/* ── Sent ── */}
+          {step === 3 && sent && (
+            <div role="status" className="animate-fade-in-up text-center">
+              <span className="w-11 h-11 rounded-full bg-primary text-primary-foreground flex items-center justify-center mb-3 mx-auto">
+                <Check size={24} aria-hidden="true" />
+              </span>
+              <h3 className="text-xl font-bold text-foreground mb-3">Got it. We'll call you within 10 minutes.</h3>
+              <p className="text-sm text-muted-foreground">
+                We confirm the machine, dates and delivery price on the call. Rather talk now? Call{" "}
+                <a href="tel:1300157882" className="underline font-semibold text-foreground">1300 157 882</a>.
               </p>
             </div>
           )}

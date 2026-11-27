@@ -11,7 +11,6 @@ import DeliveryRegions from '../components/DeliveryRegions';
 import Features from '../components/Features';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
-import ChatWidget from '../components/ChatWidget';
 import StickyBottomBar from '../components/StickyBottomBar';
 
 // FAQ Schema for AEO
@@ -64,7 +63,7 @@ const faqSchema = {
       "name": "How do I book excavator hire in Sydney?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Use the booking calculator to select equipment, dates and site details, then send the pre-filled request to BuildHire on WhatsApp. The team confirms availability, hire pricing and delivery before the booking is finalised. You can also call 1300 157 882 for a quote."
+        "text": "Use the online booking form to pick the machine, dates and delivery suburb, then send it. The team calls you to confirm availability, delivery and the final price before the booking is locked in. You can also call 1300 157 882."
       }
     }
   ]
@@ -98,8 +97,8 @@ const howToSchema = {
     },
     {
       "@type": "HowToStep",
-      "name": "Send your WhatsApp booking request",
-      "text": "Review the pre-filled booking request and send it to BuildHire on WhatsApp. The team confirms availability, delivery pricing and the next steps.",
+      "name": "Send your booking request",
+      "text": "Add your name and mobile and send the request to BuildHire. The team calls you to confirm availability, delivery pricing and the next steps.",
       "position": 4
     },
     {
@@ -154,7 +153,7 @@ const serviceSchema = {
 
 <Layout
   title="Excavator Hire Sydney | Mini Excavator Dry Hire | BuildHire"
-  description="Sydney excavator dry hire from $200/day. Select your machine, dates and site details online, then confirm availability and a delivery quote with BuildHire on WhatsApp."
+  description="Sydney excavator dry hire from $200/day. Pick your machine and dates online and BuildHire calls you to confirm availability and a delivery quote."
   canonicalPath="/"
   ogImage="/og-image.png"
 >
@@ -176,7 +175,6 @@ const serviceSchema = {
     <Features client:visible />
     <FAQ client:visible />
     <Footer client:visible />
-    <ChatWidget client:load />
     <StickyBottomBar client:load />
   </div>
 </Layout>

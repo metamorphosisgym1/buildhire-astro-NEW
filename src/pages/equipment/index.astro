@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import ChatWidget from '../../components/ChatWidget';
 import StickyBottomBar from '../../components/StickyBottomBar';
 
 const machines = [
@@ -85,7 +84,6 @@ const itemListSchema = {
     </section>
 
     <Footer client:visible />
-    <ChatWidget client:load />
     <StickyBottomBar client:load />
   </div>
 </Layout>

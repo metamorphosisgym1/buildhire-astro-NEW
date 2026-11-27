@@ -1,0 +1,101 @@
+---
+// Google Ads machine landing pages (Chris Allchin, 27 Nov 2026). Data and facts: src/data/bookPages.ts.
+// noindex so they never compete with the /equipment/ pages in free results. No menu, no links out
+// except the phone number and the privacy policy.
+import Layout from '../../layouts/Layout.astro';
+import HireNowForm from '../../components/HireNowForm';
+import { bookPages, bookRate, type BookPage } from '../../data/bookPages';
+import { googleReviews, reviewSrc } from '../../data/googleReviews';
+
+export function getStaticPaths() {
+  return bookPages.map((page) => ({ params: { machine: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props as { page: BookPage };
+const r = bookRate(page);
+const money = (n: number) => `$${n.toLocaleString('en-AU')}`;
+const delivery = page.deliveryFrom ? `Delivery from ${page.deliveryFrom}.` : 'Delivery quoted when you book.';
+---
+<Layout title={page.title} description={page.description} canonicalPath={`/book/${page.slug}/`} noindex>
+  <main>
+    <section class="bg-[hsl(var(--emerald))] text-white">
+      <div class="max-w-6xl mx-auto px-4 md:px-6 pb-6 lg:pb-14">
+        <div class="flex items-center justify-between h-14">
+          <span class="text-xl font-bold tracking-tight">BuildHire</span>
+          <a href="tel:1300157882" class="font-semibold text-base underline underline-offset-4">1300 157 882</a>
+        </div>
+        <div class="grid gap-x-12 lg:grid-cols-2 lg:pt-6">
+          {page.image.src && (
+            <img
+              src={page.image.src}
+              alt={page.image.alt}
+              width={page.image.w}
+              height={page.image.h}
+              fetchpriority="high"
+              class="w-full h-40 sm:h-56 lg:h-auto object-contain bg-white rounded-xl lg:col-start-1 lg:row-start-2 lg:mt-6"
+            />
+          )}
+          <div class="mt-3 lg:mt-0 lg:col-start-1 lg:row-start-1" id="prices">
+            <h1 class="text-[1.65rem] leading-[1.15] md:text-5xl font-bold">{page.h1}</h1>
+            <p class="text-[15px] leading-snug md:text-lg mt-2 md:mt-4 text-white/90">
+              {page.intro}{page.nextDay && ' Book before 12pm for next-day delivery across Sydney.'}
+            </p>
+            <div class="mt-3 md:mt-5 rounded-lg bg-white/10 border border-white/25 px-3 py-3">
+              <p class="font-bold text-lg md:text-2xl">{page.short} excavator hire: {money(r.day)} a day, {money(r.week)} a week</p>
+              <ul class="mt-2 space-y-1 text-sm md:text-base">
+                {page.included.map((item) => <li>{item}</li>)}
+              </ul>
+            </div>
+            <p class="text-xs md:text-sm mt-2 text-white/80">GST included. {delivery}</p>
+          </div>
+          <div id="form" class="mt-4 lg:mt-0 lg:col-start-2 lg:row-start-1 lg:row-span-2 scroll-mt-4">
+            <HireNowForm client:load machine={page.machine} cta="Check Dates and Price" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="py-10 md:py-16 px-4 md:px-6 scroll-mt-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl md:text-4xl font-bold mb-5">What our customers say on Google</h2>
+        <div class="columns-1 md:columns-2 gap-4">
+          {googleReviews.map((rv) => (
+            <img src={reviewSrc(rv.file)} alt={`Screenshot of a five star Google review from ${rv.name}`} width={rv.w} height={rv.h} loading="lazy" class="w-full h-auto rounded-xl border border-secondary bg-white mb-4 break-inside-avoid" />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="delivery" class="pb-10 md:pb-16 px-4 md:px-6 scroll-mt-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-4xl font-bold mb-3">Where we deliver</h2>
+        <p class="text-muted-foreground">Across Sydney, plus Wollongong and the Blue Mountains. {page.deliveryNote}</p>
+      </div>
+    </section>
+
+    <section id="how" class="pb-10 md:pb-16 px-4 md:px-6 scroll-mt-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-4xl font-bold mb-3">How booking works</h2>
+        <ol class="list-decimal pl-5 space-y-2 text-muted-foreground">
+          <li>Answer the quick questions at the top and add your name and mobile.</li>
+          <li>We call you back to lock in your dates and delivery.</li>
+          <li>The machine arrives on site, ready to dig. Dry hire only, you run it.</li>
+        </ol>
+        <p class="mt-4 text-muted-foreground">We are open 5am to 8pm, 7 days.</p>
+      </div>
+    </section>
+
+    <section class="bg-[hsl(var(--emerald))] text-white text-center py-10 px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Ready to book {page.slug === 'tight-access-excavator' ? 'a tight access excavator' : `the ${page.short}`}?</h2>
+      <div class="mt-5 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#form" class="bg-primary text-black font-bold rounded-xl px-8 py-3">Check dates and price</a>
+        <a href="tel:1300157882" class="border border-white/60 font-bold rounded-xl px-8 py-3">Call 1300 157 882</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-muted-foreground py-6 px-4">
+    Build Hire Pty Ltd, ABN 88 690 624 429, 178 Princes Hwy, Arncliffe NSW 2205.
+    <a href="/privacy/" target="_blank" rel="noopener" class="underline">Privacy policy</a>
+  </footer>
+</Layout>

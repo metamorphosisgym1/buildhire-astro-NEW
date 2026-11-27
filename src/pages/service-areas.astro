@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import ChatWidget from '../components/ChatWidget';
 import StickyBottomBar from '../components/StickyBottomBar';
 import { serviceAreaContent } from '../data/serviceAreaContent';
 
@@ -121,7 +120,7 @@ const breadcrumbSchema = {
             { icon: "🚛", title: "Next-Day Delivery", desc: "Book before 12pm for guaranteed next-day delivery to your site." },
             { icon: "💰", title: "Rates Shown Online", desc: "Daily rates incl GST. Delivery and collection quoted for your site." },
             { icon: "🔧", title: "Late-Model Fleet", desc: "Low-hour Yanmar and Case machines maintained in-house." },
-            { icon: "📱", title: "WhatsApp Booking", desc: "Message our team for same-day enquiries and instant pricing." }
+            { icon: "📱", title: "Phone Booking", desc: "Call our team on 1300 157 882 for same-day enquiries and pricing." }
           ].map(item => (
             <div class="bg-white rounded-xl p-6 text-center shadow-sm border border-[hsl(var(--border))]">
               <div class="text-3xl mb-3">{item.icon}</div>
@@ -140,7 +139,7 @@ const breadcrumbSchema = {
           Can't Find Your Area?
         </h2>
         <p class="text-white/80 mb-8 text-lg">
-          Outside Sydney metro? Call us or send a WhatsApp message and we'll confirm availability for your location.
+          Outside Sydney metro? Call us and we'll confirm availability for your location.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/#booking" class="bg-white text-[hsl(var(--primary))] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
@@ -154,7 +153,6 @@ const breadcrumbSchema = {
     </section>
 
     <Footer client:visible />
-    <ChatWidget client:load />
     <StickyBottomBar client:load />
   </div>
 </Layout>

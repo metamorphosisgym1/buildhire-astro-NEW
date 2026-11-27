@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import ChatWidget from '../components/ChatWidget';
 import StickyBottomBar from '../components/StickyBottomBar';
 ---
 <Layout
@@ -22,7 +21,7 @@ import StickyBottomBar from '../components/StickyBottomBar';
       <section class="bg-white py-12">
         <div class="max-w-3xl mx-auto px-6 text-[var(--color-text-muted)] text-base leading-relaxed">
           <p class="mb-4">Build Hire Pty Ltd (ABN 88 690 624 429), trading as BuildHire. Last updated November 2026.</p>
-          <p class="mb-4">This policy explains what personal information we collect, why we collect it, and how we look after it. It covers our website (buildhire.com.au), our phone, WhatsApp and email enquiries, and our equipment hire.</p>
+          <p class="mb-4">This policy explains what personal information we collect, why we collect it, and how we look after it. It covers our website (buildhire.com.au), our phone, text and email enquiries, and our equipment hire.</p>
           <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">Who we are</h2>
           <p class="mb-4">BuildHire is an excavator and equipment dry hire business with a machine yard at 178 Princes Hwy, Arncliffe NSW 2205. We hire machines to builders, landscapers and contractors across Sydney.</p>
           <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">What we collect</h2>
@@ -38,8 +37,8 @@ import StickyBottomBar from '../components/StickyBottomBar';
           <p class="mb-4">If you only browse our website, we do not collect your name or contact details. Our analytics tool collects general information about your visit (see Cookies and analytics).</p>
           <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">How we collect it</h2>
           <ul class="list-disc pl-6 space-y-1 mb-4">
-            <li>When you call us, message us on WhatsApp, email us, or talk to us on site.</li>
-            <li>When you use the quote and booking tool on our website. The tool opens WhatsApp with your details already written in, and the information reaches us only when you send that message.</li>
+            <li>When you call us, text us, email us, or talk to us on site.</li>
+            <li>When you send a booking request on our website. Your name, mobile, any email you add and your hire details go to our customer system (HighLevel, also called LeadConnector), and a backup copy is emailed to our office.</li>
             <li>When you sign a hire form, accept a delivery or pay an invoice.</li>
             <li>From the GPS and telematics devices on our machines.</li>
           </ul>
@@ -59,15 +58,15 @@ import StickyBottomBar from '../components/StickyBottomBar';
           <p class="mb-4">We only share your information when we need to, with:</p>
           <ul class="list-disc pl-6 space-y-1 mb-4">
             <li>the people who help us run the business, such as our delivery drivers, accountant, insurer and IT and email providers</li>
-            <li>the services we use to talk to you and run our website, such as WhatsApp, Microsoft (email and Microsoft Clarity), Google (analytics and our Google Business Profile), Meta (Facebook and Instagram advertising) and our website host</li>
+            <li>the services we use to talk to you and run our website, such as HighLevel (our customer and text message system), Cloudflare (which emails us the copy of each booking request), Microsoft (email and Microsoft Clarity), Google (analytics and our Google Business Profile), Meta (Facebook and Instagram advertising) and our website host</li>
             <li>the police or other authorities, for example if a machine is stolen, or when the law requires it</li>
           </ul>
-          <p class="mb-4">Some of these providers, such as Google, Meta (WhatsApp) and Microsoft, may store information outside Australia, including in the United States.</p>
+          <p class="mb-4">Some of these providers, such as Google, Meta, HighLevel, Cloudflare and Microsoft, may store information outside Australia, including in the United States.</p>
           <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">Cookies and analytics</h2>
-          <p class="mb-4">Our website uses Google Analytics 4, Microsoft Clarity and the Meta Pixel. Google Analytics uses cookies to tell us which pages people visit, which buttons they click (for example the call and WhatsApp buttons), what device and browser they use, and roughly where they are. It does not tell us who you are.</p>
+          <p class="mb-4">Our website uses Google Analytics 4, Microsoft Clarity and the Meta Pixel. Google Analytics uses cookies to tell us which pages people visit, which buttons they click (for example the call and booking buttons), what device and browser they use, and roughly where they are. It does not tell us who you are.</p>
           <p class="mb-4">You can block or delete cookies in your browser settings, or install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" class="underline">Google Analytics opt-out browser add-on</a> to stop Google Analytics collecting data about your visits.</p>
           <p class="mb-4">We also use Microsoft Clarity to see how visitors use our website: where they click and tap, how far they scroll, and replays of visits, so we can find what is hard to use and fix it. Clarity masks anything you type into the website and numbers and email addresses on the page, so they are not recorded. Microsoft collects this data using cookies and may use it as described in the <a href="https://privacy.microsoft.com/en-US/privacystatement" target="_blank" rel="noopener" class="underline">Microsoft Privacy Statement</a>.</p>
-          <p class="mb-4">We use the Meta Pixel so we can measure our Facebook and Instagram ads and show ads to people who have visited our website. It tells Meta which pages you visit and when you tap call or WhatsApp or send a booking request, linked to your browser and, if you are logged in, your Meta account. It can also share details you type on our website, such as your name, phone number or email address, when you tap a button. It scrambles (hashes) them first, and Meta uses them to match the visit to your account. It does not send Meta your message. Meta uses cookies for this and handles the data as described in the <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener" class="underline">Meta Privacy Policy</a>. You can change the ads you see in your Facebook or Instagram ad preferences.</p>
+          <p class="mb-4">We use the Meta Pixel so we can measure our Facebook and Instagram ads and show ads to people who have visited our website. It tells Meta which pages you visit and when you tap call or send a booking request, linked to your browser and, if you are logged in, your Meta account. It can also share details you type on our website, such as your name, phone number or email address, when you tap a button. It scrambles (hashes) them first, and Meta uses them to match the visit to your account. It does not send Meta your message. Meta uses cookies for this and handles the data as described in the <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener" class="underline">Meta Privacy Policy</a>. You can change the ads you see in your Facebook or Instagram ad preferences.</p>
           <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">Keeping your information safe</h2>
           <p class="mb-4">We keep your information in password protected business systems and only share it as described above. We keep hire and invoice records for as long as we need them for the hire, our insurance, and our tax and legal obligations, then delete or destroy them.</p>
           <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-3">Seeing or correcting your information</h2>
@@ -82,7 +81,6 @@ import StickyBottomBar from '../components/StickyBottomBar';
       </section>
     </main>
     <Footer client:visible />
-    <ChatWidget client:load />
     <StickyBottomBar client:load />
   </div>
 </Layout>

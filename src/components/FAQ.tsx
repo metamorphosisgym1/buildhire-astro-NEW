@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "How do I book excavator hire in Sydney?",
-    a: "Use the online booking flow to select equipment, dates and site details, then send the request to BuildHire via WhatsApp. The team confirms availability, delivery and final quote details before the booking is completed. You can also call 1300 157 882.",
+    a: "Use the online booking form to pick the machine, dates and delivery suburb, then send it. The team calls you to confirm availability, delivery and the final price before the booking is locked in. You can also call 1300 157 882.",
   },
 ];
 

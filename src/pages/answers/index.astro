@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import ChatWidget from '../../components/ChatWidget';
 import StickyBottomBar from '../../components/StickyBottomBar';
 import { aeoAnswers } from '../../data/aeo-answers';
 
@@ -199,6 +198,5 @@ const answerMap = Object.fromEntries(aeoAnswers.map(a => [a.slug, a]));
   </main>
 
   <Footer client:load />
-  <ChatWidget client:load />
   <StickyBottomBar client:load />
 </Layout>

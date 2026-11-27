@@ -2,7 +2,6 @@
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
-import ChatWidget from '../../../components/ChatWidget';
 import StickyBottomBar from '../../../components/StickyBottomBar';
 import { equipment } from '../../../data/equipment';
 import { locations } from '../../../data/locations';
@@ -147,9 +146,6 @@ const faqSchema = {
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)]/90 transition text-lg text-center">
             Check Availability & Get a Quote →
-          </a>
-          <a href={`https://wa.me/61435421324?text=${encodeURIComponent(`Hi BuildHire, I’d like to check ${item.shortName} availability in ${location.name}. My hire dates and site details are:`)}`} class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg text-center">
-            WhatsApp for Availability
           </a>
           <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg text-center">
             Call 1300 157 882
@@ -299,9 +295,6 @@ const faqSchema = {
           <a href="/#booking" class="bg-white text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-lg">
             Start a Quote Request →
           </a>
-          <a href={`https://wa.me/61435421324?text=${encodeURIComponent(`Hi BuildHire, I’d like to check ${item.shortName} availability in ${location.name}. My hire dates and site details are:`)}`} class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
-            WhatsApp Us
-          </a>
           <a href="tel:1300157882" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[var(--color-primary)] transition text-lg">
             Call 1300 157 882
           </a>
@@ -310,7 +303,6 @@ const faqSchema = {
     </section>
 
     <Footer client:visible />
-    <ChatWidget client:load />
     <StickyBottomBar client:load />
   </div>
 </Layout>
