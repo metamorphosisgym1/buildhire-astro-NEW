@@ -109,10 +109,10 @@ const faqSchema = {
               ['Who can discuss a BuildHire trade partner arrangement?', 'BuildHire welcomes enquiries from trade businesses that regularly need dry-hire equipment, including builders, landscapers, pool builders, plumbers, drainage contractors, demolition crews and civil contractors.'],
               ['What details should a trade partner share when requesting equipment?', 'Share the equipment type, dates, delivery suburb, job type, site-access constraints and any attachment requirements. BuildHire can then confirm availability and delivery pricing for the specific job.'],
             ].map(([question, answer]) => (
-              <details class="bg-[var(--color-bg)] rounded-xl p-6 group">
-                <summary class="font-semibold text-[var(--color-text)] cursor-pointer list-none flex justify-between gap-4">{question}<span class="text-[var(--color-primary)] group-open:rotate-45 transition-transform">+</span></summary>
+              <div class="bg-[var(--color-bg)] rounded-xl p-6 group">
+                <h3 class="font-semibold text-[var(--color-text)]">{question}</h3>
                 <p class="text-sm leading-relaxed text-[var(--color-text-muted)] mt-4">{answer}</p>
-              </details>
+              </div>
             ))}
           </div>
         </div>

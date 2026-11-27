@@ -190,13 +190,10 @@ const faqSchema = {
         </h2>
         <div class="space-y-4">
           {useCase.faqs.map(faq => (
-            <details class="bg-white rounded-xl p-6 shadow-sm group">
-              <summary class="font-semibold text-[var(--color-text)] cursor-pointer list-none flex justify-between items-center">
-                {faq.q}
-                <span class="text-[var(--color-primary)] ml-4 text-xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
+            <div class="bg-white rounded-xl p-6 shadow-sm group">
+              <h3 class="font-semibold text-[var(--color-text)]">{faq.q}</h3>
               <p class="mt-4 text-[var(--color-text-muted)] text-sm leading-relaxed">{faq.a}</p>
-            </details>
+            </div>
           ))}
         </div>
       </div>

@@ -218,13 +218,10 @@ const faqSchema = {
             { q: "What can a 0.8T mini excavator be used for?", a: "The 0.8T mini excavator is ideal for landscaping, garden excavation, pool digging, trench digging, stump removal, footing excavation, and small demolition jobs in backyards and narrow sites." },
             { q: "How quickly can BuildHire deliver a mini excavator in Sydney?", a: "We offer next-day delivery for bookings placed before 12pm. Same-day delivery may be available — call 1300 157 882 to check availability." }
           ].map(item => (
-            <details class="bg-white rounded-xl p-6 shadow-sm group">
-              <summary class="font-semibold text-[var(--color-text)] cursor-pointer list-none flex justify-between items-center">
-                {item.q}
-                <span class="text-[var(--color-primary)] ml-4 text-xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
+            <div class="bg-white rounded-xl p-6 shadow-sm group">
+              <h3 class="font-semibold text-[var(--color-text)]">{item.q}</h3>
               <p class="mt-4 text-[var(--color-text-muted)] text-sm leading-relaxed">{item.a}</p>
-            </details>
+            </div>
           ))}
         </div>
       </div>
