@@ -6,7 +6,7 @@
   "send_email": [
     {
       "name": "EMAIL",
-      "destination_address": "info@buildhire.com.au",
+      "allowed_destination_addresses": ["info@buildhire.com.au", "murphy@presciaiq.com"],
       "allowed_sender_addresses": ["alerts@presciaiq.com"]
     }
   ],
