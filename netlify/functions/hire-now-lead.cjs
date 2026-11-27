@@ -9,23 +9,40 @@ const WEBHOOK_URL =
 
 const clean = (value, max = 200) => String(value ?? "").trim().slice(0, max);
 
-// If GHL does not take a lead, email it to Build Hire so it can never vanish silently.
-// Sent by the Cloudflare Worker buildhire-lead-alert (code in cloudflare/lead-alert/), which can
-// only email info@buildhire.com.au, so no key is needed here.
+// Every lead also goes to the Cloudflare Worker buildhire-lead-alert (code in cloudflare/lead-alert/),
+// so there is always a record outside GHL (Chris, 27 Nov 2026). kind "copy" emails Build Hire a
+// backup copy; kind "failed" emails Build Hire and Murphy to call the lead now. No key is needed:
+// the Worker can only email those two inboxes.
 const ALERT_URL =
   process.env.LEAD_ALERT_URL || "https://buildhire-lead-alert.khansayeem03.workers.dev";
 
-async function alertLeadNotInCrm(payload, reason) {
+async function sendLeadCopy(payload, kind, reason = "") {
   try {
     const response = await fetch(ALERT_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...payload, reason }),
+      body: JSON.stringify({ ...payload, kind, reason }),
       signal: AbortSignal.timeout(8000),
     });
-    if (!response.ok) console.error("Lead alert email failed", response.status);
+    if (!response.ok) console.error("Lead copy failed", kind, response.status);
   } catch (error) {
-    console.error("Lead alert email error", error);
+    console.error("Lead copy error", kind, error);
+  }
+}
+
+// GHL answers 200 when it takes the lead. Anything else (or no answer) counts as a miss.
+async function postToGhl(payload) {
+  try {
+    const response = await fetch(WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(8000),
+    });
+    if (response.ok) return "";
+    return `GHL answered ${response.status}`;
+  } catch (error) {
+    return `GHL did not answer (${error && error.name ? error.name : "error"})`;
   }
 }
 
@@ -68,23 +85,21 @@ exports.handler = async function (event) {
     event_id: clean(input.event_id, 100),
   };
 
-  try {
-    const response = await fetch(WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-      signal: AbortSignal.timeout(8000),
-    });
-    if (!response.ok) {
-      console.error("GHL webhook failed", response.status);
-      await alertLeadNotInCrm(payload, `GHL answered ${response.status}`);
-      return { statusCode: 502, body: "CRM error" };
-    }
-  } catch (error) {
-    console.error("GHL webhook error", error);
-    await alertLeadNotInCrm(payload, `GHL did not answer (${error && error.name ? error.name : "error"})`);
+  // Logged so each lead can be found by time in Netlify, Functions, hire-now-lead.
+  console.log("Lead received", payload.name, payload.phone, payload.machine, payload.event_id);
+
+  let failure = await postToGhl(payload);
+  if (failure) {
+    console.error("GHL webhook miss, retrying once", failure);
+    failure = await postToGhl(payload);
+  }
+  if (failure) {
+    console.error("GHL webhook failed twice", failure);
+    await sendLeadCopy(payload, "failed", failure);
     return { statusCode: 502, body: "CRM error" };
   }
+
+  await sendLeadCopy(payload, "copy");
 
   return { statusCode: 200, body: "ok" };
 };
