@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const faqs = [
   {
     q: "What areas of Sydney do you deliver to & collect from?",
@@ -27,38 +25,12 @@ const faqs = [
   },
 ];
 
-function AccordionItem({ faq, index }: { faq: typeof faqs[0]; index: number }) {
-  const [open, setOpen] = useState(false);
+// Every question shows its answer in full: no accordions (Murphy, 13 Nov 2026, WEB-36).
+function FaqItem({ faq }: { faq: typeof faqs[0] }) {
   return (
-    <div className="bg-background/90 backdrop-blur-sm border border-secondary rounded-2xl px-6">
-      <button
-        className="w-full text-left flex items-center justify-between py-5 text-foreground font-semibold hover:no-underline"
-        onClick={() => setOpen(!open)}
-        aria-expanded={open}
-        aria-controls={`faq-answer-${index}`}
-        id={`faq-question-${index}`}
-      >
-        <span>{faq.q}</span>
-        <svg
-          className={`w-5 h-5 text-primary flex-shrink-0 ml-4 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          aria-hidden="true"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      {open && (
-        <div
-          id={`faq-answer-${index}`}
-          role="region"
-          aria-labelledby={`faq-question-${index}`}
-          className="text-muted-foreground pb-5 leading-relaxed"
-        >
-          {faq.a}
-        </div>
-      )}
+    <div className="bg-background/90 backdrop-blur-sm border border-secondary rounded-2xl px-6 py-5">
+      <h3 className="text-foreground font-semibold">{faq.q}</h3>
+      <p className="text-muted-foreground mt-2 leading-relaxed">{faq.a}</p>
     </div>
   );
 }
@@ -77,7 +49,7 @@ export default function FAQ() {
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <AccordionItem key={i} faq={faq} index={i} />
+            <FaqItem key={i} faq={faq} />
           ))}
         </div>
       </div>
