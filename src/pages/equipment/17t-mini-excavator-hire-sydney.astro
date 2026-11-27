@@ -231,13 +231,10 @@ const faqSchema = {
             { q: "Do I need a licence to operate a 1.7T mini excavator in NSW?", a: "No licence is required to operate a mini excavator under 10 tonnes on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) may be required." },
             { q: "Can the 1.7T excavator fit through a standard gate?", a: "Yes. The Yanmar ViO17 has retractable tracks that narrow to approximately 950mm, allowing it to pass through most standard residential gates and access points." }
           ].map(item => (
-            <details class="bg-white rounded-xl p-6 shadow-sm group">
-              <summary class="font-semibold text-[var(--color-text)] cursor-pointer list-none flex justify-between items-center">
-                {item.q}
-                <span class="text-[var(--color-primary)] ml-4 text-xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
+            <div class="bg-white rounded-xl p-6 shadow-sm group">
+              <h3 class="font-semibold text-[var(--color-text)]">{item.q}</h3>
               <p class="mt-4 text-[var(--color-text-muted)] text-sm leading-relaxed">{item.a}</p>
-            </details>
+            </div>
           ))}
         </div>
       </div>

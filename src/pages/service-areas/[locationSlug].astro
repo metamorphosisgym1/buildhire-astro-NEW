@@ -238,13 +238,10 @@ const breadcrumbSchema = {
         </h2>
         <div class="space-y-3">
           {area.faqs.map((faq, i) => (
-            <details class="bg-white rounded-xl p-6 shadow-sm border border-[hsl(var(--border))] group" open={i === 0}>
-              <summary class="font-semibold text-[hsl(var(--foreground))] cursor-pointer list-none flex justify-between items-center gap-4">
-                <span>{faq.q}</span>
-                <span class="text-[hsl(var(--primary))] text-xl font-light shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
-              </summary>
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-[hsl(var(--border))] group">
+              <h3 class="font-semibold text-[hsl(var(--foreground))]"><span>{faq.q}</span></h3>
               <p class="mt-4 text-sm text-[hsl(var(--muted-foreground))] leading-relaxed">{faq.a}</p>
-            </details>
+            </div>
           ))}
         </div>
       </div>

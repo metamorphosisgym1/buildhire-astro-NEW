@@ -232,13 +232,10 @@ const faqSchema = {
             { q: "Do I need a licence to operate a 3.5T excavator in NSW?", a: "No licence is required on private property in NSW. On a registered worksite, a High Risk Work Licence (HRWL) is required for excavators over 3 tonnes." },
             { q: "How is a 3.5T excavator delivered in Sydney?", a: "The 3.5T Yanmar ViO35-7 is delivered via tilt-tray truck. Delivery and collection are quoted for your site. Contact us for pricing outside metro areas." }
           ].map(item => (
-            <details class="bg-white rounded-xl p-6 shadow-sm group">
-              <summary class="font-semibold text-[var(--color-text)] cursor-pointer list-none flex justify-between items-center">
-                {item.q}
-                <span class="text-[var(--color-primary)] ml-4 text-xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
+            <div class="bg-white rounded-xl p-6 shadow-sm group">
+              <h3 class="font-semibold text-[var(--color-text)]">{item.q}</h3>
               <p class="mt-4 text-[var(--color-text-muted)] text-sm leading-relaxed">{item.a}</p>
-            </details>
+            </div>
           ))}
         </div>
       </div>
