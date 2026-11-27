@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import ChatWidget from '../../components/ChatWidget';
 import StickyBottomBar from '../../components/StickyBottomBar';
 
 // Rates and machine matches come from the booking calculator (src/components/BookingCalculator.tsx),
@@ -130,7 +129,6 @@ const serviceSchema = {
           <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a href="/#booking" class="bg-[var(--color-primary)] text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition text-lg">Book a Machine and Attachment</a>
             <a href="tel:1300157882" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">Call 1300 157 882</a>
-            <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-bold px-8 py-4 rounded-lg hover:bg-[var(--color-primary)] hover:text-white transition text-lg">WhatsApp Us</a>
           </div>
         </div>
         <ul class="max-w-3xl mx-auto grid sm:grid-cols-2 gap-3 text-[var(--color-text-muted)]">
@@ -198,7 +196,7 @@ const serviceSchema = {
 
         <h2 class="text-2xl font-bold text-[var(--color-text)] mt-12 mb-4">How Hire Works</h2>
         <ol class="space-y-3 list-decimal pl-6 text-[var(--color-text-muted)]">
-          <li>Tell us the job, the site address, your dates and the attachment you need, online, by phone or on WhatsApp.</li>
+          <li>Tell us the job, the site address, your dates and the attachment you need, online or by phone.</li>
           <li>We confirm the machine and attachment are free and quote delivery for your site.</li>
           <li>We deliver the excavator with the attachment.</li>
           <li>We collect it when the job is done.</li>
@@ -236,7 +234,6 @@ const serviceSchema = {
     </section>
 
     <Footer client:visible />
-    <ChatWidget client:load />
     <StickyBottomBar client:load />
   </div>
 </Layout>

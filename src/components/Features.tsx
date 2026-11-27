@@ -5,7 +5,7 @@ const features = [
   {
     icon: Clock,
     title: "Support on Every Hire",
-    desc: "Call or WhatsApp us whenever a machine on hire needs help.",
+    desc: "Call us whenever a machine on hire needs help.",
   },
   {
     icon: DollarSign,

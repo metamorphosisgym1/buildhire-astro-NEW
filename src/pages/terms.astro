@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import ChatWidget from '../components/ChatWidget';
 import StickyBottomBar from '../components/StickyBottomBar';
 ---
 <Layout
@@ -389,7 +388,6 @@ import StickyBottomBar from '../components/StickyBottomBar';
       </section>
     </main>
     <Footer client:visible />
-    <ChatWidget client:load />
     <StickyBottomBar client:load />
   </div>
 </Layout>

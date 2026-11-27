@@ -41,7 +41,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Completed a multi-lot residential development across several Sydney sites on schedule, with machines delivered and collected without disruption to the build programme.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "Daily rates are shown online, incl GST, and delivery and collection are quoted for your site. Our online booking tool shows the hire price straight away, and our team is on WhatsApp for same-day enquiries.",
+    bodyParagraph3: "Daily rates are shown online, incl GST, and delivery and collection are quoted for your site. Our online booking tool shows the hire price straight away, and our team takes same-day enquiries on 1300 157 882.",
     faqs: [
       { q: "Do you deliver excavators to all Sydney suburbs?", a: "Yes — BuildHire delivers to all Sydney metro suburbs, from the CBD and inner suburbs to Western Sydney, the Northern Beaches, Sutherland Shire, and beyond. Book by 12pm for guaranteed next-day delivery." },
       { q: "What is the minimum hire period for excavator hire in Sydney?", a: "Our minimum hire period is one day. We also offer weekly rates that cost less per day for longer projects across Sydney." },
@@ -67,11 +67,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Completed fencing installations across Parramatta and surrounding suburbs on schedule, with consistent machine performance across all sites.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent — exactly what we need when we're running multiple jobs across Western Sydney."
     },
-    bodyParagraph3: "BuildHire's delivery zone covers all of Parramatta LGA and the broader Western Sydney region including Granville, Merrylands, Wentworthville, Auburn, and Woodville. Book online for an instant price, or WhatsApp our team for a same-day quote. With next-day delivery guaranteed when you book by 12pm, BuildHire keeps your Parramatta project moving without delays.",
+    bodyParagraph3: "BuildHire's delivery zone covers all of Parramatta LGA and the broader Western Sydney region including Granville, Merrylands, Wentworthville, Auburn, and Woodville. Book online for an instant price, or call our team for a same-day quote. With next-day delivery guaranteed when you book by 12pm, BuildHire keeps your Parramatta project moving without delays.",
     faqs: [
       { q: "Do you deliver excavators to Parramatta and Western Sydney?", a: "Yes — BuildHire delivers to all Parramatta suburbs and the wider Western Sydney region including Granville, Merrylands, Wentworthville, Auburn, and Woodville. Next-day delivery is guaranteed when you book by 12pm." },
       { q: "What excavator sizes are available for hire in Parramatta?", a: "We offer excavators from 0.8T to 14.5T in Parramatta. The 1T and 1.7T mini excavators are popular for residential work, while the 3.5T to 5.5T range suits pool builds and drainage. Our 14.5T machine handles large commercial and civil projects." },
-      { q: "How quickly can BuildHire deliver to Parramatta?", a: "Book by 12pm and your machine will be on site the next business day. For urgent requirements, contact our team via WhatsApp and we'll do our best to accommodate same-day delivery." }
+      { q: "How quickly can BuildHire deliver to Parramatta?", a: "Book by 12pm and your machine will be on site the next business day. For urgent requirements, call our team on 1300 157 882 and we'll do our best to accommodate same-day delivery." }
     ],
     nearbyAreas: ["Blacktown", "Merrylands", "Granville", "Auburn", "Seven Hills"],
     nearbyAreaSlugs: ["blacktown", "merrylands", "granville", "auburn", "seven-hills"],
@@ -119,11 +119,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Liverpool-area projects completed on schedule with consistent machine performance and reliable delivery.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "Booking excavator hire in Liverpool is straightforward with BuildHire. Get an instant online price in under 60 seconds, book your dates, and your machine will be on site the next business day when you book by 12pm. Our team is also available via WhatsApp for same-day enquiries and urgent requirements. No hidden fees, no fuel surcharges, no surprises.",
+    bodyParagraph3: "Booking excavator hire in Liverpool is straightforward with BuildHire. Get an instant online price in under 60 seconds, book your dates, and your machine will be on site the next business day when you book by 12pm. Our team is also on 1300 157 882 for same-day enquiries and urgent requirements. No hidden fees, no fuel surcharges, no surprises.",
     faqs: [
       { q: "Do you deliver excavators to Liverpool and South Western Sydney?", a: "Yes — BuildHire delivers to Liverpool and all surrounding suburbs including Moorebank, Casula, Prestons, Fairfield, Cabramatta, and Warwick Farm." },
       { q: "What excavator sizes are best for Liverpool residential projects?", a: "The 3.5T Yanmar is the most popular choice for Liverpool residential work — pool excavations, retaining walls, drainage. For tight access, the 1T or 1.7T mini excavator is ideal." },
-      { q: "How do I get a quote for excavator hire in Liverpool?", a: "Use our online booking tool for an instant price in under 60 seconds, or WhatsApp our team for a personalised quote. Prices include GST, and delivery and collection are quoted for your site." }
+      { q: "How do I get a quote for excavator hire in Liverpool?", a: "Use our online booking tool for an instant price in under 60 seconds, or call our team for a personalised quote. Prices include GST, and delivery and collection are quoted for your site." }
     ],
     nearbyAreas: ["Campbelltown", "Fairfield", "Bankstown", "Cabramatta", "Casula"],
     nearbyAreaSlugs: ["campbelltown", "fairfield", "bankstown", "cabramatta", "narellan"],
@@ -145,11 +145,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Campbelltown-area fencing installations completed efficiently with reliable machine performance throughout.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to all Campbelltown suburbs and the broader Macarthur region including Picton, Appin, Camden, and Narellan. Book online for an instant price or WhatsApp our team for a same-day quote. With next-day delivery guaranteed when you book by 12pm, BuildHire keeps your Campbelltown project on schedule.",
+    bodyParagraph3: "BuildHire delivers to all Campbelltown suburbs and the broader Macarthur region including Picton, Appin, Camden, and Narellan. Book online for an instant price or call our team for a same-day quote. With next-day delivery guaranteed when you book by 12pm, BuildHire keeps your Campbelltown project on schedule.",
     faqs: [
       { q: "Do you deliver excavators to Campbelltown and the Macarthur region?", a: "Yes — BuildHire delivers to Campbelltown and all surrounding areas including Minto, Ingleburn, Macquarie Fields, Oran Park, Gregory Hills, Camden, and Narellan." },
       { q: "What excavator is best for the clay and shale soils around Campbelltown?", a: "The 3.5T Yanmar ViO35 and 5.5T Yanmar ViO55 are the best choices for Campbelltown's soil conditions — both have the bucket force and torque to handle heavy clay and shale efficiently." },
-      { q: "Can I hire an excavator in Campbelltown for a weekend?", a: "Yes — we offer weekend hire. Book by 12pm Friday for Saturday delivery, or contact our team via WhatsApp to arrange weekend collection." }
+      { q: "Can I hire an excavator in Campbelltown for a weekend?", a: "Yes, we offer weekend hire. Book by 12pm Friday for Saturday delivery, or call our team to arrange weekend collection." }
     ],
     nearbyAreas: ["Liverpool", "Minto", "Camden", "Narellan", "Picton"],
     nearbyAreaSlugs: ["liverpool", "minto", "camden", "narellan", "picton"],
@@ -171,11 +171,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Delivered machines to multiple Blacktown-area sites on schedule, supporting a residential subdivision programme across several stages.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to all Blacktown suburbs including Seven Hills, Kings Langley, Quakers Hill, Stanhope Gardens, Marayong, Lalor Park, and Kings Park. Get an instant online price in under 60 seconds, or WhatsApp our team for urgent requirements. Next-day delivery is guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Blacktown suburbs including Seven Hills, Kings Langley, Quakers Hill, Stanhope Gardens, Marayong, Lalor Park, and Kings Park. Get an instant online price in under 60 seconds, or call our team for urgent requirements. Next-day delivery is guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Blacktown and surrounding suburbs?", a: "Yes — BuildHire delivers to all Blacktown suburbs including Seven Hills, Kings Langley, Quakers Hill, Stanhope Gardens, and Marayong. We also service the broader Hills District and North West Sydney." },
       { q: "What is the best excavator for residential work in Blacktown?", a: "The 3.5T Yanmar ViO35 is the most popular choice for Blacktown residential projects — pools, footings, drainage, and retaining walls. For tight access, the 1T or 1.7T mini excavator is ideal." },
-      { q: "How do I book excavator hire in Blacktown?", a: "Book online at buildhire.com.au for an instant price in under 60 seconds, or WhatsApp our team. Book by 12pm for next-day delivery to Blacktown." }
+      { q: "How do I book excavator hire in Blacktown?", a: "Book online at buildhire.com.au for an instant price in under 60 seconds, or call our team. Book by 12pm for next-day delivery to Blacktown." }
     ],
     nearbyAreas: ["Parramatta", "Castle Hill", "Seven Hills", "Baulkham Hills", "Rouse Hill"],
     nearbyAreaSlugs: ["parramatta", "castle-hill", "seven-hills", "baulkham-hills", "rouse-hill"],
@@ -197,7 +197,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Pool excavation and retaining wall completed on schedule, with spoil removed efficiently using the mini dumper combination.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to all Hills District suburbs including Castle Hill, Baulkham Hills, Norwest, Bella Vista, Kellyville, Rouse Hill, Winston Hills, and Pennant Hills. Book online for an instant price or WhatsApp our team. Next-day delivery is guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Hills District suburbs including Castle Hill, Baulkham Hills, Norwest, Bella Vista, Kellyville, Rouse Hill, Winston Hills, and Pennant Hills. Book online for an instant price or call our team. Next-day delivery is guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Castle Hill and the Hills District?", a: "Yes — BuildHire delivers to all Hills District suburbs including Castle Hill, Baulkham Hills, Norwest, Bella Vista, Kellyville, Rouse Hill, and Pennant Hills." },
       { q: "What excavator is best for pool excavation in the Hills District?", a: "The 3.5T Yanmar ViO35 is the most popular choice for Hills District pool excavations — it has the reach and bucket capacity for most residential pools while remaining manoeuvrable on standard residential lots." },
@@ -223,7 +223,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Hornsby-area projects completed efficiently, with the compact machine navigating tight residential access across the Upper North Shore.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to all Hornsby suburbs and the broader Upper North Shore including Waitara, Normanhurst, Thornleigh, Pennant Hills, Beecroft, Cheltenham, and Asquith. Get an instant online price in under 60 seconds, or WhatsApp our team for a same-day quote. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Hornsby suburbs and the broader Upper North Shore including Waitara, Normanhurst, Thornleigh, Pennant Hills, Beecroft, Cheltenham, and Asquith. Get an instant online price in under 60 seconds, or call our team for a same-day quote. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Hornsby and the Upper North Shore?", a: "Yes — BuildHire delivers to Hornsby and all Upper North Shore suburbs including Waitara, Normanhurst, Thornleigh, Pennant Hills, Beecroft, and Cheltenham." },
       { q: "What excavator is best for sandstone and steep blocks in Hornsby?", a: "The 1.7T Yanmar ViO17 and 3.5T Yanmar ViO35 are the best choices for Hornsby's sandstone and sloping block conditions — both have the precision and bucket force needed for these challenging sites." },
@@ -249,7 +249,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Pool excavation and retaining wall completed on schedule, with the machine performing consistently in the Shire's mixed soil conditions.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to all Sutherland Shire suburbs including Jannali, Loftus, Kirrawee, Gymea, Miranda, Caringbah, Cronulla, and Engadine. Book online for an instant price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Sutherland Shire suburbs including Jannali, Loftus, Kirrawee, Gymea, Miranda, Caringbah, Cronulla, and Engadine. Book online for an instant price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Sutherland Shire?", a: "Yes — BuildHire delivers to all Sutherland Shire suburbs including Sutherland, Miranda, Caringbah, Cronulla, Engadine, Kirrawee, and Gymea." },
       { q: "What excavator is best for pool excavation in the Sutherland Shire?", a: "The 3.5T Yanmar ViO35 is the most popular choice for Sutherland Shire pool excavations — it handles the area's sandstone and clay conditions well and fits most residential lots." },
@@ -275,7 +275,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Basement excavation completed efficiently on a constrained Lower North Shore site, with the machine performing precisely in tight conditions.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to all Lower North Shore suburbs including Chatswood, Willoughby, Artarmon, St Leonards, Crows Nest, Lane Cove, Lindfield, and Roseville. Get an instant online price in under 60 seconds, or WhatsApp our team for a same-day quote. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Lower North Shore suburbs including Chatswood, Willoughby, Artarmon, St Leonards, Crows Nest, Lane Cove, Lindfield, and Roseville. Get an instant online price in under 60 seconds, or call our team for a same-day quote. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Chatswood and the Lower North Shore?", a: "Yes — BuildHire delivers to all Lower North Shore suburbs including Chatswood, Willoughby, Artarmon, St Leonards, Crows Nest, and Lane Cove." },
       { q: "What is the best excavator for tight residential sites in Chatswood?", a: "The 0.8T and 1T mini excavators are ideal for tight Lower North Shore residential sites. For larger projects, the 1.7T (tracks pull in to about 950mm) or the 3.5T (about 1,740mm wide, so it needs a gate wider than that) provides more capacity." },
@@ -301,7 +301,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple St George area fencing installations completed efficiently, with the compact machine navigating tight residential access throughout the area.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to all St George suburbs including Kogarah, Hurstville, Rockdale, Bexley, Penshurst, Mortdale, Oatley, and Beverly Hills. Get an instant online price in under 60 seconds, or WhatsApp our team for a same-day quote. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all St George suburbs including Kogarah, Hurstville, Rockdale, Bexley, Penshurst, Mortdale, Oatley, and Beverly Hills. Get an instant online price in under 60 seconds, or call our team for a same-day quote. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Kogarah, Hurstville, and Rockdale?", a: "Yes — BuildHire delivers to all St George suburbs including Kogarah, Hurstville, Rockdale, Bexley, Penshurst, Mortdale, and Oatley." },
       { q: "What is the best excavator for tight residential sites in the St George area?", a: "The 0.8T and 1T mini excavators are ideal for the compact residential lots common in the St George area. For pool excavations and larger drainage work, the 1.7T or 3.5T Yanmar is the right choice." },
@@ -327,7 +327,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Wollongong residential project completed on schedule, with consistent machine performance in the Illawarra's varied soil conditions.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to all Wollongong suburbs. Contact our team to confirm delivery timelines for your site. Get an instant online price or WhatsApp us for a regional quote.",
+    bodyParagraph3: "BuildHire delivers to all Wollongong suburbs. Contact our team to confirm delivery timelines for your site. Get an instant online price or call us for a regional quote.",
     faqs: [
       { q: "Do you deliver excavators to Wollongong and the Illawarra?", a: "Yes. BuildHire delivers to Wollongong suburbs, including Dapto. Contact our team to confirm delivery timelines." },
       { q: "What excavator is best for coastal Wollongong projects?", a: "The 1.7T and 3.5T Yanmar excavators are the most popular choices for coastal Wollongong residential work — both handle the sandy and clay soils common in the Illawarra well." },
@@ -354,7 +354,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Northern Beaches fencing and retaining wall projects completed efficiently, with the compact machine handling coastal access conditions.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to all Northern Beaches suburbs including Manly, Fairlight, Balgowlah, Seaforth, Dee Why, Brookvale, Curl Curl, and Frenchs Forest. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Northern Beaches suburbs including Manly, Fairlight, Balgowlah, Seaforth, Dee Why, Brookvale, Curl Curl, and Frenchs Forest. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Manly and the Northern Beaches?", a: "Yes — BuildHire delivers to all Northern Beaches suburbs including Manly, Dee Why, Brookvale, Frenchs Forest, and Curl Curl." },
       { q: "What excavator handles sandy coastal soils best?", a: "The 1T and 1.7T mini excavators are ideal for sandy Northern Beaches soils — their compact size and precise controls are well-suited to coastal residential conditions." },
@@ -380,7 +380,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Pool excavation completed on a constrained Eastern Suburbs site, with spoil removed efficiently using the mini dumper combination.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to all Eastern Suburbs including Bondi, Bondi Junction, Tamarama, Bronte, Coogee, Randwick, and Maroubra. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Eastern Suburbs including Bondi, Bondi Junction, Tamarama, Bronte, Coogee, Randwick, and Maroubra. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Bondi and the Eastern Suburbs?", a: "Yes — BuildHire delivers to all Eastern Suburbs including Bondi, Coogee, Randwick, Maroubra, and Bronte." },
       { q: "What is the smallest excavator you hire in the Eastern Suburbs?", a: "Our smallest machine is the 0.8T Yanmar SV08 — it fits through a 900mm gate and can work in backyards where no other excavator can operate. It's the most popular choice for tight Eastern Suburbs sites." },
@@ -406,7 +406,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Bankstown-area fencing installations completed on schedule with consistent machine performance.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to all Bankstown suburbs including Punchbowl, Yagoona, Greenacre, Condell Park, Chester Hill, Bass Hill, and Sefton. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Bankstown suburbs including Punchbowl, Yagoona, Greenacre, Condell Park, Chester Hill, Bass Hill, and Sefton. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Bankstown and Canterbury?", a: "Yes — BuildHire delivers to all Bankstown and Canterbury suburbs including Punchbowl, Yagoona, Greenacre, Condell Park, and Chester Hill." },
       { q: "What excavator is best for residential work in Bankstown?", a: "The 1.7T Yanmar ViO17 is the most popular choice for Bankstown residential projects — compact enough for residential access, with the capacity for pool excavations and drainage work." },
@@ -432,7 +432,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Drainage and retaining wall completed on a constrained Inner West terrace site, with spoil removed efficiently using the mini dumper.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to all Inner West suburbs including Newtown, Marrickville, Leichhardt, Balmain, Rozelle, Annandale, Glebe, and Petersham. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Inner West suburbs including Newtown, Marrickville, Leichhardt, Balmain, Rozelle, Annandale, Glebe, and Petersham. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to the Inner West?", a: "Yes — BuildHire delivers to all Inner West suburbs including Newtown, Marrickville, Leichhardt, Balmain, Rozelle, and Glebe." },
       { q: "What is the best excavator for tight Inner West terrace sites?", a: "The 0.8T Yanmar SV08 is the best choice for tight Inner West terrace sites — it fits through a 900mm gate and can work in the compact backyards common across the Inner West." },
@@ -459,7 +459,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Northern Beaches pool and landscaping projects completed on schedule with consistent machine performance.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to all Northern Beaches suburbs from Manly to Palm Beach including Dee Why, Brookvale, Frenchs Forest, Narrabeen, Mona Vale, Newport, and Avalon. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Northern Beaches suburbs from Manly to Palm Beach including Dee Why, Brookvale, Frenchs Forest, Narrabeen, Mona Vale, Newport, and Avalon. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators across the Northern Beaches?", a: "Yes — BuildHire delivers to all Northern Beaches suburbs from Manly to Palm Beach including Dee Why, Brookvale, Narrabeen, Mona Vale, and Newport." },
       { q: "What excavator is best for sandy Northern Beaches soils?", a: "The 1T and 1.7T mini excavators are ideal for sandy Northern Beaches conditions — compact and precise, with the bucket force needed for coastal residential work." },
@@ -485,11 +485,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Pool excavation completed efficiently on a constrained Eastern Suburbs site with no damage to established gardens.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to all Eastern Suburbs including Bondi, Coogee, Randwick, Maroubra, Kingsford, Kensington, Paddington, and Woollahra. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Eastern Suburbs including Bondi, Coogee, Randwick, Maroubra, Kingsford, Kensington, Paddington, and Woollahra. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to the Eastern Suburbs?", a: "Yes — BuildHire delivers to all Eastern Suburbs including Bondi, Coogee, Randwick, Maroubra, Kingsford, Paddington, and Woollahra." },
       { q: "What is the smallest excavator available for Eastern Suburbs projects?", a: "Our 0.8T Yanmar SV08 is the smallest machine in our fleet — it fits through a 900mm gate and is ideal for the tight residential sites common across the Eastern Suburbs." },
-      { q: "How do I book an excavator for an Eastern Suburbs project?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to the Eastern Suburbs." }
+      { q: "How do I book an excavator for an Eastern Suburbs project?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to the Eastern Suburbs." }
     ],
     nearbyAreas: ["Bondi", "Sydney", "Inner West", "Randwick", "Coogee"],
     nearbyAreaSlugs: ["bondi", "sydney", "inner-west", "st-george", "ryde"],
@@ -511,7 +511,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Hills District pool and retaining wall projects completed on schedule with consistent machine performance.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to all Hills District suburbs including Castle Hill, Baulkham Hills, Kellyville, Rouse Hill, Norwest, Bella Vista, Winston Hills, and Cherrybrook. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to all Hills District suburbs including Castle Hill, Baulkham Hills, Kellyville, Rouse Hill, Norwest, Bella Vista, Winston Hills, and Cherrybrook. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators across the Hills District?", a: "Yes — BuildHire delivers to all Hills District suburbs including Castle Hill, Baulkham Hills, Kellyville, Rouse Hill, Norwest, and Bella Vista." },
       { q: "What excavator is best for pool excavation in the Hills District?", a: "The 3.5T Yanmar ViO35 is the most popular choice for Hills District pool excavations — it has the reach and capacity for most residential pools on Hills District blocks." },
@@ -537,11 +537,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Baulkham Hills fencing installation completed efficiently with consistent machine performance.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to Baulkham Hills and all surrounding Hills District suburbs including Winston Hills, Bella Vista, Norwest, Crestwood, and Stanhope Gardens. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Baulkham Hills and all surrounding Hills District suburbs including Winston Hills, Bella Vista, Norwest, Crestwood, and Stanhope Gardens. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Baulkham Hills?", a: "Yes — BuildHire delivers to Baulkham Hills and all surrounding Hills District suburbs including Winston Hills, Bella Vista, Norwest, and Stanhope Gardens." },
       { q: "What excavator is best for residential work in Baulkham Hills?", a: "The 3.5T Yanmar ViO35 is the most popular choice for Baulkham Hills residential projects — pool excavations, retaining walls, and drainage." },
-      { q: "How do I book excavator hire in Baulkham Hills?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Baulkham Hills." }
+      { q: "How do I book excavator hire in Baulkham Hills?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Baulkham Hills." }
     ],
     nearbyAreas: ["Castle Hill", "Kellyville", "Blacktown", "Parramatta", "Norwest"],
     nearbyAreaSlugs: ["castle-hill", "kellyville", "blacktown", "parramatta", "rouse-hill"],
@@ -563,11 +563,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Kellyville residential project completed on schedule with consistent machine performance.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to Kellyville and all surrounding Hills District suburbs including Kellyville Ridge, Beaumont Hills, Rouse Hill, and Stanhope Gardens. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Kellyville and all surrounding Hills District suburbs including Kellyville Ridge, Beaumont Hills, Rouse Hill, and Stanhope Gardens. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Kellyville?", a: "Yes — BuildHire delivers to Kellyville and all surrounding Hills District suburbs including Kellyville Ridge, Beaumont Hills, Rouse Hill, and Stanhope Gardens." },
       { q: "What excavator is best for Kellyville residential projects?", a: "The 3.5T Yanmar ViO35 is the most popular choice for Kellyville residential work — pool excavations, retaining walls, and drainage." },
-      { q: "How do I book excavator hire in Kellyville?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Kellyville." }
+      { q: "How do I book excavator hire in Kellyville?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Kellyville." }
     ],
     nearbyAreas: ["Castle Hill", "Baulkham Hills", "Rouse Hill", "Blacktown", "Parramatta"],
     nearbyAreaSlugs: ["castle-hill", "baulkham-hills", "rouse-hill", "blacktown", "parramatta"],
@@ -589,11 +589,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Rouse Hill estate lots completed on schedule with consistent machine performance across all stages.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to Rouse Hill and all North West Growth Area suburbs including Box Hill, Schofields, Riverstone, and Marsden Park. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Rouse Hill and all North West Growth Area suburbs including Box Hill, Schofields, Riverstone, and Marsden Park. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Rouse Hill and the North West Growth Area?", a: "Yes — BuildHire delivers to Rouse Hill, Box Hill, Schofields, Riverstone, and Marsden Park." },
       { q: "What excavator is best for new estate construction in Rouse Hill?", a: "The 5.5T Yanmar ViO55 is the most popular choice for Rouse Hill estate construction — bulk earthworks, footing excavation, and drainage." },
-      { q: "How do I book excavator hire in Rouse Hill?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Rouse Hill." }
+      { q: "How do I book excavator hire in Rouse Hill?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Rouse Hill." }
     ],
     nearbyAreas: ["Kellyville", "Box Hill", "Schofields", "Riverstone", "Marsden Park"],
     nearbyAreaSlugs: ["kellyville", "box-hill", "schofields", "riverstone", "marsden-park"],
@@ -615,11 +615,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Marsden Park estate development completed on schedule with machines delivered to multiple lots simultaneously.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to Marsden Park and all North West Sydney growth area suburbs including Riverstone, Schofields, Box Hill, and Colebee. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Marsden Park and all North West Sydney growth area suburbs including Riverstone, Schofields, Box Hill, and Colebee. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Marsden Park?", a: "Yes — BuildHire delivers to Marsden Park and all surrounding North West Sydney suburbs including Riverstone, Schofields, and Box Hill." },
       { q: "What excavator is best for new estate construction in Marsden Park?", a: "The 5.5T Yanmar ViO55 and 14.5T Case are the most popular choices for Marsden Park estate construction, for bulk earthworks and footing excavation." },
-      { q: "How do I book excavator hire in Marsden Park?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Marsden Park." }
+      { q: "How do I book excavator hire in Marsden Park?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Marsden Park." }
     ],
     nearbyAreas: ["Rouse Hill", "Box Hill", "Schofields", "Riverstone", "Blacktown"],
     nearbyAreaSlugs: ["rouse-hill", "box-hill", "schofields", "riverstone", "blacktown"],
@@ -641,11 +641,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Box Hill estate development progressed on schedule with heavy earthworks completed efficiently.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to Box Hill and all surrounding North West Sydney suburbs including Rouse Hill, Marsden Park, Schofields, and Riverstone. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Box Hill and all surrounding North West Sydney suburbs including Rouse Hill, Marsden Park, Schofields, and Riverstone. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Box Hill?", a: "Yes — BuildHire delivers to Box Hill and all surrounding North West Sydney suburbs including Rouse Hill, Marsden Park, Schofields, and Riverstone." },
       { q: "What excavator is best for Box Hill estate construction?", a: "The 14.5T Case and 5.5T Yanmar are the most popular choices for Box Hill estate construction, for bulk earthworks, drainage and footing excavation." },
-      { q: "How do I book excavator hire in Box Hill?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Box Hill." }
+      { q: "How do I book excavator hire in Box Hill?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Box Hill." }
     ],
     nearbyAreas: ["Rouse Hill", "Marsden Park", "Schofields", "Riverstone", "Kellyville"],
     nearbyAreaSlugs: ["rouse-hill", "marsden-park", "schofields", "riverstone", "kellyville"],
@@ -667,11 +667,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Schofields residential development completed on schedule with consistent machine performance.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to Schofields and all surrounding North West Sydney suburbs including Riverstone, Marsden Park, Box Hill, and Quakers Hill. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Schofields and all surrounding North West Sydney suburbs including Riverstone, Marsden Park, Box Hill, and Quakers Hill. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Schofields?", a: "Yes — BuildHire delivers to Schofields and all surrounding North West Sydney suburbs including Riverstone, Marsden Park, and Box Hill." },
       { q: "What excavator is best for Schofields residential construction?", a: "The 5.5T Yanmar ViO55 is the most popular choice for Schofields residential construction — bulk earthworks, footing excavation, and drainage." },
-      { q: "How do I book excavator hire in Schofields?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Schofields." }
+      { q: "How do I book excavator hire in Schofields?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Schofields." }
     ],
     nearbyAreas: ["Riverstone", "Marsden Park", "Box Hill", "Rouse Hill", "Blacktown"],
     nearbyAreaSlugs: ["riverstone", "marsden-park", "box-hill", "rouse-hill", "blacktown"],
@@ -693,11 +693,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Riverstone estate development completed on schedule with consistent machine performance.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to Riverstone and all surrounding North West Sydney suburbs including Schofields, Marsden Park, Box Hill, and Quakers Hill. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Riverstone and all surrounding North West Sydney suburbs including Schofields, Marsden Park, Box Hill, and Quakers Hill. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Riverstone?", a: "Yes — BuildHire delivers to Riverstone and all surrounding North West Sydney suburbs including Schofields, Marsden Park, and Box Hill." },
       { q: "What excavator is best for Riverstone estate construction?", a: "The 5.5T Yanmar ViO55 is the most popular choice for Riverstone estate construction." },
-      { q: "How do I book excavator hire in Riverstone?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Riverstone." }
+      { q: "How do I book excavator hire in Riverstone?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Riverstone." }
     ],
     nearbyAreas: ["Schofields", "Marsden Park", "Box Hill", "Rouse Hill", "Blacktown"],
     nearbyAreaSlugs: ["schofields", "marsden-park", "box-hill", "rouse-hill", "blacktown"],
@@ -719,7 +719,7 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Windsor acreage development completed on schedule with the machine handling the larger block conditions efficiently.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to Windsor and all Hawkesbury suburbs including Windsor Downs, McGraths Hill, Pitt Town, and Wilberforce. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Windsor and all Hawkesbury suburbs including Windsor Downs, McGraths Hill, Pitt Town, and Wilberforce. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Windsor and the Hawkesbury?", a: "Yes — BuildHire delivers to Windsor and all Hawkesbury suburbs including Windsor Downs, McGraths Hill, Pitt Town, and Wilberforce." },
       { q: "What excavator is best for acreage properties in Windsor?", a: "The 5.5T Yanmar ViO55 is the most popular choice for Windsor acreage projects — site clearing, drainage, and earthworks on larger rural blocks." },
@@ -745,11 +745,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Richmond-area fencing installations completed efficiently with consistent machine performance.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to Richmond and all Hawkesbury suburbs including North Richmond, Clarendon, Kurmond, and Glossodia. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Richmond and all Hawkesbury suburbs including North Richmond, Clarendon, Kurmond, and Glossodia. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Richmond and the Hawkesbury?", a: "Yes — BuildHire delivers to Richmond and all Hawkesbury suburbs including North Richmond, Clarendon, Kurmond, and Glossodia." },
       { q: "What excavator is best for Richmond residential projects?", a: "The 3.5T Yanmar ViO35 is the most popular choice for Richmond residential work — pool excavations, retaining walls, and drainage." },
-      { q: "How do I book excavator hire in Richmond?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Richmond." }
+      { q: "How do I book excavator hire in Richmond?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Richmond." }
     ],
     nearbyAreas: ["Windsor", "Penrith", "Rouse Hill", "Hawkesbury", "Blue Mountains"],
     nearbyAreaSlugs: ["windsor", "penrith", "rouse-hill", "marsden-park", "blue-mountains"],
@@ -771,11 +771,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Oran Park estate development completed on schedule with consistent machine performance.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to Oran Park and all Camden corridor suburbs including Gregory Hills, Gledswood Hills, Harrington Park, Narellan, and Camden. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Oran Park and all Camden corridor suburbs including Gregory Hills, Gledswood Hills, Harrington Park, Narellan, and Camden. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Oran Park and the Camden corridor?", a: "Yes — BuildHire delivers to Oran Park, Gregory Hills, Gledswood Hills, Harrington Park, Narellan, and Camden." },
       { q: "What excavator is best for Oran Park estate construction?", a: "The 5.5T Yanmar ViO55 is the most popular choice for Oran Park estate construction — bulk earthworks and footing excavation." },
-      { q: "How do I book excavator hire in Oran Park?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Oran Park." }
+      { q: "How do I book excavator hire in Oran Park?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Oran Park." }
     ],
     nearbyAreas: ["Gregory Hills", "Narellan", "Camden", "Campbelltown", "Liverpool"],
     nearbyAreaSlugs: ["gregory-hills", "narellan", "camden", "campbelltown", "liverpool"],
@@ -797,11 +797,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Leppington estate development completed on schedule with consistent machine performance.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to Leppington and all South West Growth Area suburbs including Austral, Edmondson Park, Denham Court, and Rossmore. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Leppington and all South West Growth Area suburbs including Austral, Edmondson Park, Denham Court, and Rossmore. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Leppington and the South West Growth Area?", a: "Yes — BuildHire delivers to Leppington, Austral, Edmondson Park, Denham Court, and the surrounding South West Growth Area suburbs." },
       { q: "What excavator is best for Leppington estate construction?", a: "The 5.5T Yanmar ViO55 is the most popular choice for Leppington estate construction." },
-      { q: "How do I book excavator hire in Leppington?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Leppington." }
+      { q: "How do I book excavator hire in Leppington?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Leppington." }
     ],
     nearbyAreas: ["Edmondson Park", "Oran Park", "Liverpool", "Campbelltown", "Narellan"],
     nearbyAreaSlugs: ["edmondson-park", "oran-park", "liverpool", "campbelltown", "narellan"],
@@ -823,11 +823,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Edmondson Park estate development completed on schedule.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to Edmondson Park and all surrounding South Western Sydney suburbs including Leppington, Austral, Denham Court, and Bardia. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Edmondson Park and all surrounding South Western Sydney suburbs including Leppington, Austral, Denham Court, and Bardia. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Edmondson Park?", a: "Yes — BuildHire delivers to Edmondson Park and all surrounding South Western Sydney suburbs." },
       { q: "What excavator is best for Edmondson Park residential construction?", a: "The 5.5T Yanmar ViO55 is the most popular choice for Edmondson Park estate construction." },
-      { q: "How do I book excavator hire in Edmondson Park?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Edmondson Park?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Leppington", "Oran Park", "Liverpool", "Campbelltown", "Prestons"],
     nearbyAreaSlugs: ["leppington", "oran-park", "liverpool", "campbelltown", "narellan"],
@@ -849,11 +849,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Gregory Hills residential project completed on schedule with consistent machine performance.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to Gregory Hills and all Camden corridor suburbs including Gledswood Hills, Oran Park, Harrington Park, and Narellan. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Gregory Hills and all Camden corridor suburbs including Gledswood Hills, Oran Park, Harrington Park, and Narellan. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Gregory Hills?", a: "Yes — BuildHire delivers to Gregory Hills and all Camden corridor suburbs including Gledswood Hills, Oran Park, and Narellan." },
       { q: "What excavator is best for Gregory Hills residential projects?", a: "The 3.5T Yanmar ViO35 is the most popular choice for Gregory Hills residential work — pool excavations, retaining walls, and drainage." },
-      { q: "How do I book excavator hire in Gregory Hills?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Gregory Hills?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Oran Park", "Narellan", "Camden", "Campbelltown", "Liverpool"],
     nearbyAreaSlugs: ["oran-park", "narellan", "camden", "campbelltown", "liverpool"],
@@ -875,11 +875,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Narellan-area fencing installations completed on schedule.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to Narellan and all Camden area suburbs including Narellan Vale, Mount Annan, Harrington Park, Currans Hill, and Elderslie. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Narellan and all Camden area suburbs including Narellan Vale, Mount Annan, Harrington Park, Currans Hill, and Elderslie. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Narellan and Camden?", a: "Yes — BuildHire delivers to Narellan and all Camden area suburbs including Narellan Vale, Mount Annan, Harrington Park, and Elderslie." },
       { q: "What excavator is best for Narellan residential projects?", a: "The 3.5T Yanmar ViO35 is the most popular choice for Narellan residential work." },
-      { q: "How do I book excavator hire in Narellan?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Narellan?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Camden", "Oran Park", "Gregory Hills", "Campbelltown", "Liverpool"],
     nearbyAreaSlugs: ["camden", "oran-park", "gregory-hills", "campbelltown", "liverpool"],
@@ -901,11 +901,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Camden residential project completed on schedule with consistent machine performance.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to Camden and all surrounding suburbs including Camden South, Elderslie, Spring Farm, Kirkham, Cobbitty, and Grasmere. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Camden and all surrounding suburbs including Camden South, Elderslie, Spring Farm, Kirkham, Cobbitty, and Grasmere. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Camden?", a: "Yes — BuildHire delivers to Camden and all surrounding suburbs including Camden South, Elderslie, Spring Farm, Cobbitty, and Grasmere." },
       { q: "What excavator is best for Camden residential projects?", a: "The 3.5T Yanmar ViO35 is the most popular choice for Camden residential work." },
-      { q: "How do I book excavator hire in Camden?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Camden?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Narellan", "Campbelltown", "Picton", "Oran Park", "Gregory Hills"],
     nearbyAreaSlugs: ["narellan", "campbelltown", "picton", "oran-park", "gregory-hills"],
@@ -927,11 +927,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Picton rural residential project completed on schedule.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to Picton and all Wollondilly Shire suburbs including Thirlmere, Tahmoor, Buxton, Bargo, Douglas Park, and Wilton. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Picton and all Wollondilly Shire suburbs including Thirlmere, Tahmoor, Buxton, Bargo, Douglas Park, and Wilton. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Picton and Wollondilly?", a: "Yes — BuildHire delivers to Picton and all Wollondilly Shire suburbs including Thirlmere, Tahmoor, Buxton, Bargo, and Wilton." },
       { q: "What excavator is best for rural residential projects in Picton?", a: "The 5.5T Yanmar ViO55 is the most popular choice for Picton rural residential projects — site clearing, drainage, and earthworks on larger blocks." },
-      { q: "How do I book excavator hire in Picton?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Picton?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Camden", "Campbelltown", "Appin", "Wollongong", "Southern Highlands"],
     nearbyAreaSlugs: ["camden", "campbelltown", "appin", "wollongong", "narellan"],
@@ -953,11 +953,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Appin rural residential project completed on schedule.",
       quote: "We've worked with Build Hire across a number of projects and they've been nothing but consistent. Their machines are new, well-maintained, and always arrive on time."
     },
-    bodyParagraph3: "BuildHire delivers to Appin and all surrounding Macarthur suburbs including Wedderburn, Menangle, Wilton, and Douglas Park. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Appin and all surrounding Macarthur suburbs including Wedderburn, Menangle, Wilton, and Douglas Park. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Appin?", a: "Yes — BuildHire delivers to Appin and all surrounding Macarthur suburbs including Wedderburn, Menangle, Wilton, and Douglas Park." },
       { q: "What excavator is best for Appin rural projects?", a: "The 5.5T Yanmar ViO55 is the most popular choice for Appin rural residential projects." },
-      { q: "How do I book excavator hire in Appin?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Appin?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Campbelltown", "Picton", "Camden", "Wollongong", "Liverpool"],
     nearbyAreaSlugs: ["campbelltown", "picton", "camden", "wollongong", "liverpool"],
@@ -979,11 +979,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Minto-area fencing installations completed on schedule.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to Minto and all surrounding South Western Sydney suburbs including Minto Heights, Ingleburn, Macquarie Fields, and Leumeah. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Minto and all surrounding South Western Sydney suburbs including Minto Heights, Ingleburn, Macquarie Fields, and Leumeah. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Minto and Ingleburn?", a: "Yes — BuildHire delivers to Minto, Ingleburn, Macquarie Fields, and all surrounding South Western Sydney suburbs." },
       { q: "What excavator is best for Minto residential projects?", a: "The 1.7T and 3.5T Yanmar excavators are the most popular choices for Minto residential work." },
-      { q: "How do I book excavator hire in Minto?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Minto?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Campbelltown", "Liverpool", "Ingleburn", "Macquarie Fields", "Narellan"],
     nearbyAreaSlugs: ["campbelltown", "liverpool", "narellan", "camden", "oran-park"],
@@ -1005,11 +1005,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Fairfield residential project completed on schedule.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to Fairfield and all surrounding South Western Sydney suburbs including Cabramatta, Canley Vale, Smithfield, and Wetherill Park. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Fairfield and all surrounding South Western Sydney suburbs including Cabramatta, Canley Vale, Smithfield, and Wetherill Park. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Fairfield and Cabramatta?", a: "Yes — BuildHire delivers to Fairfield, Cabramatta, Canley Vale, Smithfield, and all surrounding South Western Sydney suburbs." },
       { q: "What excavator is best for Fairfield residential projects?", a: "The 1.7T and 3.5T Yanmar excavators are the most popular choices for Fairfield residential work." },
-      { q: "How do I book excavator hire in Fairfield?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Fairfield?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Liverpool", "Bankstown", "Cabramatta", "Parramatta", "Campbelltown"],
     nearbyAreaSlugs: ["liverpool", "bankstown", "cabramatta", "parramatta", "campbelltown"],
@@ -1031,11 +1031,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Cabramatta-area fencing installations completed on schedule.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to Cabramatta and all surrounding South Western Sydney suburbs including Canley Vale, Canley Heights, Lansvale, Carramar, and Villawood. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Cabramatta and all surrounding South Western Sydney suburbs including Canley Vale, Canley Heights, Lansvale, Carramar, and Villawood. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Cabramatta?", a: "Yes — BuildHire delivers to Cabramatta, Canley Vale, Canley Heights, Villawood, and all surrounding South Western Sydney suburbs." },
       { q: "What excavator is best for Cabramatta residential projects?", a: "The 1.7T and 3.5T Yanmar excavators are the most popular choices for Cabramatta residential work." },
-      { q: "How do I book excavator hire in Cabramatta?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Cabramatta?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Fairfield", "Liverpool", "Bankstown", "Parramatta", "Campbelltown"],
     nearbyAreaSlugs: ["fairfield", "liverpool", "bankstown", "parramatta", "campbelltown"],
@@ -1057,11 +1057,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Pool excavation completed on schedule with no damage to surrounding landscaping.",
       quote: "BuildHire has been fantastic for our pool builds in the Shire. The machines always arrive on time and in perfect condition — exactly what you need when you're working to a tight programme."
     },
-    bodyParagraph3: "BuildHire delivers to Cronulla and all surrounding Sutherland Shire suburbs including Caringbah, Miranda, Gymea, Woolooware, and Kurnell. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Cronulla and all surrounding Sutherland Shire suburbs including Caringbah, Miranda, Gymea, Woolooware, and Kurnell. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Cronulla and the Sutherland Shire?", a: "Yes — BuildHire delivers to Cronulla, Caringbah, Miranda, Gymea, and all surrounding Sutherland Shire suburbs." },
       { q: "What excavator is best for pool excavations in Cronulla?", a: "The 3.5T Yanmar ViO35-7 is the most popular choice for pool excavations in Cronulla and the Shire — powerful enough for the job, compact enough for residential access." },
-      { q: "How do I book excavator hire in Cronulla?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Cronulla." }
+      { q: "How do I book excavator hire in Cronulla?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Cronulla." }
     ],
     nearbyAreas: ["Sutherland", "Miranda", "Caringbah", "Gymea", "St George"],
     nearbyAreaSlugs: ["sutherland", "st-george", "bankstown", "liverpool", "campbelltown"],
@@ -1083,11 +1083,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple townhouse sites prepared on schedule across the Ryde area.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to Ryde and all surrounding Northern Sydney suburbs including Meadowbank, West Ryde, Eastwood, Ermington, and Gladesville. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Ryde and all surrounding Northern Sydney suburbs including Meadowbank, West Ryde, Eastwood, Ermington, and Gladesville. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Ryde and Meadowbank?", a: "Yes — BuildHire delivers to Ryde, Meadowbank, West Ryde, Eastwood, Ermington, and all surrounding Northern Sydney suburbs." },
       { q: "What excavator is best for Ryde townhouse developments?", a: "The 3.5T Yanmar ViO35-7 is ideal for Ryde townhouse and dual-occupancy sites: powerful enough for footing excavation, and about 1,740mm wide, so the site needs a gate or driveway wider than that." },
-      { q: "How do I book excavator hire in Ryde?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Ryde." }
+      { q: "How do I book excavator hire in Ryde?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Ryde." }
     ],
     nearbyAreas: ["Chatswood", "Parramatta", "North Sydney", "Hornsby", "Eastern Suburbs"],
     nearbyAreaSlugs: ["chatswood", "parramatta", "hornsby", "northern-beaches", "eastern-suburbs"],
@@ -1109,11 +1109,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Strathfield-area fencing installations completed on schedule.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to Strathfield and all surrounding Inner West suburbs including Homebush, Homebush West, Flemington, North Strathfield, Burwood, and Croydon. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Strathfield and all surrounding Inner West suburbs including Homebush, Homebush West, Flemington, North Strathfield, Burwood, and Croydon. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Strathfield and Homebush?", a: "Yes — BuildHire delivers to Strathfield, Homebush, Burwood, Croydon, and all surrounding Inner West suburbs." },
       { q: "What excavator is best for Strathfield residential projects?", a: "The 0.8T and 1.7T mini excavators are ideal for tight Strathfield residential sites. For larger works, the 3.5T Yanmar is the most popular choice." },
-      { q: "How do I book excavator hire in Strathfield?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery to Strathfield." }
+      { q: "How do I book excavator hire in Strathfield?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery to Strathfield." }
     ],
     nearbyAreas: ["Inner West", "Parramatta", "Bankstown", "Chatswood", "Eastern Suburbs"],
     nearbyAreaSlugs: ["inner-west", "parramatta", "bankstown", "chatswood", "eastern-suburbs"],
@@ -1135,11 +1135,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Auburn residential project completed on schedule.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to Auburn and all surrounding Western Sydney suburbs including Lidcombe, Berala, Regents Park, Birrong, and Granville. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Auburn and all surrounding Western Sydney suburbs including Lidcombe, Berala, Regents Park, Birrong, and Granville. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Auburn and Lidcombe?", a: "Yes — BuildHire delivers to Auburn, Lidcombe, Berala, Regents Park, and all surrounding Western Sydney suburbs." },
       { q: "What excavator is best for Auburn residential projects?", a: "The 1.7T and 3.5T Yanmar excavators are the most popular choices for Auburn residential work." },
-      { q: "How do I book excavator hire in Auburn?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Auburn?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Parramatta", "Bankstown", "Strathfield", "Liverpool", "Blacktown"],
     nearbyAreaSlugs: ["parramatta", "bankstown", "strathfield", "liverpool", "blacktown"],
@@ -1161,11 +1161,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Multiple Seven Hills-area fencing installations completed on schedule.",
       quote: "We've used Build Hire a number of times now and they've been solid every single job. The machines are top quality and performance is always consistent."
     },
-    bodyParagraph3: "BuildHire delivers to Seven Hills and all surrounding Western Sydney suburbs including Toongabbie, Old Toongabbie, Girraween, Wentworthville, and Pendle Hill. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Seven Hills and all surrounding Western Sydney suburbs including Toongabbie, Old Toongabbie, Girraween, Wentworthville, and Pendle Hill. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Seven Hills and Toongabbie?", a: "Yes — BuildHire delivers to Seven Hills, Toongabbie, Girraween, Wentworthville, and all surrounding Western Sydney suburbs." },
       { q: "What excavator is best for Seven Hills residential projects?", a: "The 1.7T and 3.5T Yanmar excavators are the most popular choices for Seven Hills residential work." },
-      { q: "How do I book excavator hire in Seven Hills?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Seven Hills?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Blacktown", "Parramatta", "Castle Hill", "Baulkham Hills", "Penrith"],
     nearbyAreaSlugs: ["blacktown", "parramatta", "castle-hill", "baulkham-hills", "penrith"],
@@ -1187,11 +1187,11 @@ export const serviceAreaContent: ServiceAreaContent[] = [
       outcome: "Merrylands residential project completed on schedule.",
       quote: "We have used Build Hire on several occasions and couldn't be happier with the service. Their machines are unbelievable — always on site when they say, always in perfect condition."
     },
-    bodyParagraph3: "BuildHire delivers to Merrylands and all surrounding Western Sydney suburbs including Guildford, Guildford West, South Granville, Woodville, and Granville. Get an instant online price or WhatsApp our team. Next-day delivery guaranteed when you book by 12pm.",
+    bodyParagraph3: "BuildHire delivers to Merrylands and all surrounding Western Sydney suburbs including Guildford, Guildford West, South Granville, Woodville, and Granville. Get an instant online price or call our team. Next-day delivery guaranteed when you book by 12pm.",
     faqs: [
       { q: "Do you deliver excavators to Merrylands and Guildford?", a: "Yes — BuildHire delivers to Merrylands, Guildford, Granville, Harris Park, and all surrounding Western Sydney suburbs." },
       { q: "What excavator is best for Merrylands residential projects?", a: "The 1.7T and 3.5T Yanmar excavators are the most popular choices for Merrylands residential work." },
-      { q: "How do I book excavator hire in Merrylands?", a: "Book online at buildhire.com.au for an instant price, or WhatsApp our team. Book by 12pm for next-day delivery." }
+      { q: "How do I book excavator hire in Merrylands?", a: "Book online at buildhire.com.au for an instant price, or call our team. Book by 12pm for next-day delivery." }
     ],
     nearbyAreas: ["Parramatta", "Blacktown", "Auburn", "Liverpool", "Seven Hills"],
     nearbyAreaSlugs: ["parramatta", "blacktown", "auburn", "liverpool", "seven-hills"],

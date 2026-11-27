@@ -168,7 +168,10 @@ const webPageSchema = {
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- Performance: Preload critical assets -->
-<link rel="dns-prefetch" href="https://wa.me" />
+<!-- Google Ads click ID: kept for the visit so any booking form can send it to GHL (src/lib/sendLead.ts). -->
+<script is:inline>
+  try { var g = new URLSearchParams(location.search).get('gclid'); if (g) sessionStorage.setItem('bh_gclid', g); } catch (e) {}
+</script>
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalUrl} />
@@ -249,14 +252,6 @@ const webPageSchema = {
       window.fbq?.('track', 'Contact', { content_category: 'phone' }, { eventID: window.bhEventId?.() });
       window.gtag?.('event', 'click_to_call', {
         contact_channel: 'phone',
-        page_path: window.location.pathname,
-      });
-    }
-
-    if (href.includes('wa.me')) {
-      window.fbq?.('track', 'Contact', { content_category: 'whatsapp' }, { eventID: window.bhEventId?.() });
-      window.gtag?.('event', 'whatsapp_contact_click', {
-        contact_channel: 'whatsapp',
         page_path: window.location.pathname,
       });
     }

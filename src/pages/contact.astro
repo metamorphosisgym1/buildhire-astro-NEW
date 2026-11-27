@@ -2,13 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import ChatWidget from '../components/ChatWidget';
 import StickyBottomBar from '../components/StickyBottomBar';
 ---
 <Layout
   crumbs={[{ name: "Contact", path: "/contact/" }]}
   title="Contact BuildHire | 1300 157 882"
-  description="Contact BuildHire for excavator hire in Sydney. Call 1300 157 882, WhatsApp 0435 421 324 or email info@buildhire.com.au. Machine yard in Arncliffe NSW."
+  description="Contact BuildHire for excavator hire in Sydney. Call 1300 157 882 or email info@buildhire.com.au. Machine yard in Arncliffe NSW."
   canonicalPath="/contact/"
 >
   <div class="min-h-screen pb-20">
@@ -24,7 +23,6 @@ import StickyBottomBar from '../components/StickyBottomBar';
         <div class="max-w-3xl mx-auto px-6">
           <ul class="space-y-4 text-lg text-[var(--color-text)]">
             <li><strong>Phone:</strong> <a href="tel:1300157882" class="underline">1300 157 882</a></li>
-            <li><strong>WhatsApp:</strong> <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="underline">0435 421 324</a></li>
             <li><strong>Email:</strong> <a href="mailto:info@buildhire.com.au" class="underline">info@buildhire.com.au</a></li>
             <li><strong>Machine yard:</strong> 178 Princes Hwy, Arncliffe NSW 2205 (pickups by arrangement)</li>
             <li><strong>Hours:</strong> Open 7 days, 5am to 8pm</li>
@@ -34,7 +32,6 @@ import StickyBottomBar from '../components/StickyBottomBar';
       </section>
     </main>
     <Footer client:visible />
-    <ChatWidget client:load />
     <StickyBottomBar client:load />
   </div>
 </Layout>

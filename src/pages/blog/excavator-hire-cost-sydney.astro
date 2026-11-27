@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import ChatWidget from '../../components/ChatWidget';
 import StickyBottomBar from '../../components/StickyBottomBar';
 
 const articleSchema = {
@@ -144,10 +143,10 @@ const faqSchema = {
 
         <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Delivery and Collection Costs</h2>
         <p class="text-[var(--color-text-muted)] mb-4">Delivery and collection are easy to forget when you budget. We quote them for your site and hire dates before you book, so there are no surprises. The price depends on the machine and how far your site is from our Arncliffe yard. The 5.5T and bigger machines go by third party transport, priced on enquiry.</p>
-        <p class="text-[var(--color-text-muted)] mb-8">Send us the site address and dates <a href="/#booking" class="text-[var(--color-primary)] font-semibold">online</a>, on <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="text-[var(--color-primary)] font-semibold">WhatsApp</a> or on <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold">1300 157 882</a> for a delivery quote.</p>
+        <p class="text-[var(--color-text-muted)] mb-8">Send us the site address and dates <a href="/#booking" class="text-[var(--color-primary)] font-semibold">online</a> or on <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold">1300 157 882</a> for a delivery quote.</p>
 
         <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">Weekly Rates</h2>
-        <p class="text-[var(--color-text-muted)] mb-6">A BuildHire week is 7 days. On the 3.5T, 5.5T and 14.5T, a week costs less than 5 daily rates ($1,550 vs $1,700, $1,650 vs $1,850 and $2,000 vs $2,450). On the 0.8T and 1T a week costs the same as 5 days ($1,000), and on the 1.7T it costs $75 more ($1,100 vs $1,025). If you need a machine for longer than a week, call <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold">1300 157 882</a> or <a href="https://wa.me/61435421324" target="_blank" rel="noopener" class="text-[var(--color-primary)] font-semibold">WhatsApp us</a>.</p>
+        <p class="text-[var(--color-text-muted)] mb-6">A BuildHire week is 7 days. On the 3.5T, 5.5T and 14.5T, a week costs less than 5 daily rates ($1,550 vs $1,700, $1,650 vs $1,850 and $2,000 vs $2,450). On the 0.8T and 1T a week costs the same as 5 days ($1,000), and on the 1.7T it costs $75 more ($1,100 vs $1,025). If you need a machine for longer than a week, call <a href="tel:1300157882" class="text-[var(--color-primary)] font-semibold">1300 157 882</a>.</p>
 
         <h2 class="text-2xl font-bold text-[var(--color-text)] mt-10 mb-4">What Affects the Cost of Excavator Hire?</h2>
         <p class="text-[var(--color-text-muted)] mb-4">Several factors influence the total cost of your excavator hire:</p>
@@ -226,7 +225,6 @@ const faqSchema = {
     </section>
 
     <Footer client:visible />
-    <ChatWidget client:load />
     <StickyBottomBar client:load />
   </div>
 </Layout>
