@@ -212,6 +212,19 @@ const webPageSchema = {
   window.gtag = gtag;
   gtag('js', new Date());
   gtag('config', 'G-8W2E1TCKN2');
+
+  // Google Ads (account 514-083-3988, tag AW-18599815357). Added 28 Nov 2026 for the Search campaign.
+  // Live domain only, so previews and localhost never count as conversions.
+  // Counts a sent booking (lead) and a tap on a phone link (phone). No personal details are sent.
+  if (location.hostname === 'buildhire.com.au' || location.hostname === 'www.buildhire.com.au') {
+    gtag('config', 'AW-18599815357');
+    var bhAdsLabels = { lead: 'YWdeCJbRj8EdEL3RiqVF', phone: 'YBFYCJnRj8EdEL3RiqVF' };
+    window.bhAdsConversion = function (kind) {
+      var label = bhAdsLabels[kind];
+      if (!label) return;
+      gtag('event', 'conversion', { send_to: 'AW-18599815357/' + label, value: 1.0, currency: 'AUD' });
+    };
+  }
 </script>
 
 <!-- Microsoft Clarity (project ysnroup82i): recordings and heatmaps, inputs masked. Added 5 Oct 2026, owner approved; disclosed on /privacy/. -->
@@ -250,6 +263,7 @@ const webPageSchema = {
     const href = link.getAttribute('href') || '';
     if (href.startsWith('tel:')) {
       window.fbq?.('track', 'Contact', { content_category: 'phone' }, { eventID: window.bhEventId?.() });
+      window.bhAdsConversion?.('phone');
       window.gtag?.('event', 'click_to_call', {
         contact_channel: 'phone',
         page_path: window.location.pathname,
