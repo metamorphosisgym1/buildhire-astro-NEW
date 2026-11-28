@@ -6,6 +6,7 @@ declare global {
     gtag?: (command: "event", eventName: string, params?: Record<string, EventValue>) => void;
     fbq?: (command: "track", eventName: string, params?: Record<string, EventValue>, options?: { eventID?: string }) => void;
     bhEventId?: () => string;
+    bhAdsConversion?: (kind: "lead" | "phone") => void;
   }
 }
 
@@ -28,6 +29,11 @@ export function trackBuildHireEvent(eventName: string, params: EventParams = {},
       },
       metaEventId ? { eventID: metaEventId } : undefined
     );
+  }
+
+  // Google Ads: a sent booking counts as "Hire form submitted" (set up in BaseHead, live domain only).
+  if (eventName === "generate_lead") {
+    window.bhAdsConversion?.("lead");
   }
 
   if (typeof window.gtag !== "function") return;
